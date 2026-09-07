@@ -1,15 +1,45 @@
 # Research Continuum contributor tasks
 
-All 24 tasks start **PLANNED**. [STATUS.md](STATUS.md) is the mutable progress authority; this file is the initial task contract. [plan/tasks.json](plan/tasks.json) is the machine-readable copy of that initial contract. Update both task descriptions together when scope changes. Tanduna publication/review and task execution are separate operations.
+The three Wave 0 foundation tasks are **DONE** in the accepted architecture foundation. The original 24 implementation and research tasks remain **PLANNED**. [STATUS.md](STATUS.md) is the mutable progress authority; this file and [plan/tasks.json](plan/tasks.json) define the task contract and must change together. Tanduna publication/review and task execution are separate operations.
 
 Before an implementation task starts, bind it to an actual repository branch/commit, inspect existing paths and dependencies, identify one primary owner and record the exact verification commands available in that checkout. Proposed directory names below are ownership boundaries to establish, not claims of existing modules. Later outcome packages may need decomposition at their wave gate; do not treat all 24 as one autonomous job.
 
 Protected across every task: evaluator/holdouts outside the task's authority, accepted evidence, unrelated source, credentials, data rights, domain safety rules and resource ceilings. No production deploy, physical system connection, external outreach or paid compute is authorized by a task description. Do not commit, push or publish unless the specific contribution task authorizes it. The maintainer reviews source contributions and scientific claims separately.
+## Wave 0 — Architecture and research-programme foundation
+
+Wave 0 prepares the first reviewable repository foundation. `READY_FOR_REVIEW` means the named documents or validation tool exist in this working tree; it is not root acceptance, runtime proof or scientific evidence.
+
+## RC-F01 — Define the research-system architecture contract
+
+- Wave: 0; status: **DONE**; owner: foundation candidate, accepted by the active root under Lucas Santana's delegated implementation instruction.
+- Dependencies: none.
+- Owned scope: `README.md`, `ARCHITECTURE.md`, `EXPERIMENTS.md`, `SOURCES.md`.
+- Acceptance: Distinguish the inspected autoresearch baseline from proposed Research Continuum extensions; define the question–hypothesis–evidence graph, study and publication contracts, protected evaluation, domain-adapter seams, durable campaign/recovery model, isolation boundaries, allocation rules, local-first scale gates, cross-lab portability and explicit nonclaims with primary-source grounding.
+- Verification: Inspect all named documents; confirm every proposed component is labelled as future work, the upstream baseline is tied to its inspected revision, and source entries state their bounded planning use and limitations.
+- Delivery: A project-specific architecture that can drive implementation choices without claiming a research runtime, result or upstream superiority.
+
+## RC-F02 — Convert the vision into an outcome and dependency roadmap
+
+- Wave: 0; status: **DONE**; owner: foundation candidate, accepted by the active root under Lucas Santana's delegated implementation instruction.
+- Dependencies: RC-F01.
+- Owned scope: `ROADMAP.md`, `TASKS.md`, `STATUS.md`.
+- Acceptance: Prepend Wave 0, preserve all original Waves 1–8 and their 24 task IDs, acceptance text, dependency logic and gates, identify capacity and human/hardware/licensing decisions, and define stop, pivot, scale and replan conditions without speculative dates.
+- Verification: Compare the original 24 tasks with the baseline revision and run the repository-plan validator; all original task statuses remain `PLANNED`.
+- Delivery: A dependency-ordered programme whose first unaccepted implementation task cannot start before the foundation candidate is reviewed.
+
+## RC-F03 — Make the next work packet executable and validate the repository plan
+
+- Wave: 0; status: **DONE**; owner: foundation candidate, accepted by the active root under Lucas Santana's delegated implementation instruction.
+- Dependencies: RC-F02.
+- Owned scope: `plan/tasks.json`, `tools/validate_plan.py`, next-packet sections in planning documents.
+- Acceptance: Provide a standard-library validation command that checks task identity, status, documentation parity, dependency existence/order, DAG acyclicity, wave coverage and navigation links; prove its negative self-test detects an invalid plan; specify one RC-001 packet that can run locally without paid compute, model weights or dataset downloads.
+- Verification: `python3 tools/validate_plan.py` and `python3 tools/validate_plan.py --self-test` both exit zero; the self-test exits zero only after a deliberately missing dependency and one malformed in-memory plan are rejected without crashing.
+- Delivery: A small planning validator and exact handoff into RC-001; no simulator, experiment engine or fake research runtime.
 
 ## RC-001 — Analyze and scope the autoresearch baseline
 
 - Wave: 1; status: **PLANNED**; owner: unassigned until accepted by Lucas Santana.
-- Dependencies: none.
+- Dependencies: RC-F03 (foundation entry gate; original task dependencies: none).
 - Owned scope: `docs/baselines/`.
 - Acceptance: Record the upstream reference, attribution, narrow reproduction target and proposed differences; no superiority claim without tests.
 - Verification: reproduce the stated observable outcome; include one representative invalid/failure case when implementing behavior. Record exact commands and source revision after the harness exists; this plan makes no claim that those commands or tests currently exist.

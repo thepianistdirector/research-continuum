@@ -1,15 +1,60 @@
 {
   "schemaVersion": 1,
   "project": "research-continuum",
-  "contractVersion": "initial-2026-09-07",
+  "contractVersion": "architecture-foundation-2026-09-07",
   "stateAuthority": "../STATUS.md",
   "tasks": [
+    {
+      "id": "RC-F01",
+      "wave": 0,
+      "title": "Define the research-system architecture contract",
+      "status": "DONE",
+      "dependsOn": [],
+      "ownedPaths": [
+        "README.md",
+        "ARCHITECTURE.md",
+        "EXPERIMENTS.md",
+        "SOURCES.md"
+      ],
+      "acceptance": "Distinguish the inspected autoresearch baseline from proposed Research Continuum extensions; define the question\u2013hypothesis\u2013evidence graph, study and publication contracts, protected evaluation, domain-adapter seams, durable campaign/recovery model, isolation boundaries, allocation rules, local-first scale gates, cross-lab portability and explicit nonclaims with primary-source grounding."
+    },
+    {
+      "id": "RC-F02",
+      "wave": 0,
+      "title": "Convert the vision into an outcome and dependency roadmap",
+      "status": "DONE",
+      "dependsOn": [
+        "RC-F01"
+      ],
+      "ownedPaths": [
+        "ROADMAP.md",
+        "TASKS.md",
+        "STATUS.md"
+      ],
+      "acceptance": "Prepend Wave 0, preserve all original Waves 1\u20138 and their 24 task IDs, acceptance text, dependency logic and gates, identify capacity and human/hardware/licensing decisions, and define stop, pivot, scale and replan conditions without speculative dates."
+    },
+    {
+      "id": "RC-F03",
+      "wave": 0,
+      "title": "Make the next work packet executable and validate the repository plan",
+      "status": "DONE",
+      "dependsOn": [
+        "RC-F02"
+      ],
+      "ownedPaths": [
+        "plan/tasks.json",
+        "tools/validate_plan.py"
+      ],
+      "acceptance": "Provide a standard-library validation command that checks task identity, status, documentation parity, dependency existence/order, DAG acyclicity, wave coverage and navigation links; prove its negative self-test detects an invalid plan; specify one RC-001 packet that can run locally without paid compute, model weights or dataset downloads."
+    },
     {
       "id": "RC-001",
       "wave": 1,
       "title": "Analyze and scope the autoresearch baseline",
       "status": "PLANNED",
-      "dependsOn": [],
+      "dependsOn": [
+        "RC-F03"
+      ],
       "ownedPaths": [
         "docs/baselines/"
       ],

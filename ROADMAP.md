@@ -1,30 +1,57 @@
 # Research Continuum roadmap
 
-All eight waves and 24 tasks are **PLANNED**. No delivery date, compute allocation or completed research is promised.
+Wave 0 is **DONE**: its three architecture-foundation tasks were accepted by the authorized root after independent review and reproduced checks. All 24 original scientific/build tasks remain **PLANNED** across Waves 1–8. The programme now contains nine waves and 27 tasks; no scientific result or runtime is claimed.
 
 ## Product objective
 
 Build a general software research system, starting with AI, that can read approved sources, formulate hypotheses, design experiments, modify bounded code, execute under budgets, challenge its findings and preserve a usable body of evidence. Advance from a single optimization loop to multiple research questions and domains without allowing agents to rewrite the rules that judge them.
 
-## First milestone
+## First research milestone
 
 Reproduce a tiny bounded training-search loop and compare it with fixed random search under the same total budget. The producer may edit an experiment module; it cannot edit the evaluator or access the final holdout. A separate worker reruns any claimed improvement. A successful first result can be a clear negative finding with full evidence.
 
-Waves 1–3 establish the first integrated experiment. Wave 4 tests whether its evidence is robust. Later waves expand domains, add agents, improve collaboration and prepare an independently reproduced research preview. Wave order is an integration dependency, not a calendar. The explicit task dependencies are in [TASKS.md](TASKS.md).
+Wave 0 makes the programme executable without pretending the research runtime exists. Waves 1–3 then establish the first integrated experiment. Wave 4 tests whether its evidence is robust. Later waves expand domains, add research memory and allocation, improve inspection and prepare an independently reproduced research-system preview. Wave order is an integration dependency, not a calendar. The explicit task dependencies are in [TASKS.md](TASKS.md).
 
 ## Capacity and next planning window
 
-Assume one maintainer and one implementation owner per coherent surface. Human reviewer availability, hardware and paid-compute budget are currently unallocated. Plan the next one or two weeks around Waves 1–2 only after measuring the first task's throughput; later tasks are outcome packages to split when prerequisites exist. The conservative dependency graph waits for the previous wave's accepted gate. Within a wave, use disjoint work only when dependencies and shared resources permit it.
+Assume one maintainer and one implementation owner per coherent surface. Human reviewer availability, suitable GPU hardware and paid-compute budget are currently unallocated. No date forecast has a local throughput basis yet. Measure RC-001 and the first local skeleton packet before forecasting Waves 1–2; later tasks are outcome packages to split when prerequisites exist. The conservative dependency graph waits for the previous wave's accepted gate. Within a wave, use disjoint work only when dependencies, trust separation and shared resources permit it.
 
 Proposed initial experiment ceiling for future approval: one local worker, at most 20 trial runs, at most two elapsed compute hours and 5 GiB of new artifacts per campaign. Agent inference costs count toward an explicitly approved budget. These are draft limits, not permission to start or spend. Reduce the workload if the first benchmark cannot fit. GPU, cloud, domain-review time and additional workers need an explicit allocation before execution.
 
+Reserve baseline, confirmation and independent-reproduction capacity before exploration starts. Exploration cannot borrow those reserves. Scale beyond one local worker only after cancellation, restart reconciliation, duplicate prevention, fencing and aggregate resource accounting pass and measured queue time justifies concurrency. Remote workers additionally require a reproducible environment package, narrow revocable identity, partition recovery and explicit hardware/spend approval.
+
+## Executable next work packet after Wave 0 review
+
+**Packet:** RC-001 autoresearch baseline record.
+
+- Baseline: foundation candidate on `main` descended from `f558f21830246d4732bc1e590a83214d480cd94b`; verify exact source identity and clean/dirty state again at start.
+- Owned output: `docs/baselines/autoresearch.md` and source-link corrections strictly required by that record.
+- Inputs: official `karpathy/autoresearch` revision `228791fb499afffb54b46200aca536f79142f117`, its README, `program.md`, fixed/mutable code boundary and dependency metadata. Re-resolve the official branch before work and record any drift.
+- Outcome: an attributed, version-specific baseline describing the observable five-minute `val_bpb` loop, hardware/data/dependency assumptions, what a later reproduction would and would not establish, exact proposed differences and unresolved license/reuse questions.
+- Acceptance: the record can be reviewed without running training; it labels claims from source inspection, identifies the smallest later reproducible outcome, and makes no affiliation, superiority or scientific-validity claim.
+- Checks: `python3 tools/validate_plan.py`, local-link inspection and a diff against the accepted Wave 0 baseline. No install, model weight, dataset download, GPU, paid service, commit, push or publication is required.
+- Stop/escalate: hold code reuse on unclear license terms; hold the runtime reproduction until compatible hardware, data rights, dependency review and a bounded compute allocation are approved.
+
+The next throughput reforecast occurs after RC-001 is accepted and again after RC-003 proves a restartable synthetic skeleton. The first replaces document-effort guesses; the second supplies actual implementation, review and defect data.
+
 ## Waves and tasks
+
+## Wave 0: Architecture and research-programme foundation
+
+Outcome/gate: The proposed scientific contract, programme dependencies and exact next packet are coherent, source-grounded and reviewable without implying a research runtime.
+
+Entry: Documentation-only repository at `f558f21830246d4732bc1e590a83214d480cd94b`; no implementation, data or compute prerequisite.
+- **RC-F01: Define the research-system architecture contract.** Distinguish the inspected autoresearch baseline from proposed Research Continuum extensions; define the question–hypothesis–evidence graph, study and publication contracts, protected evaluation, domain-adapter seams, durable campaign/recovery model, isolation boundaries, allocation rules, local-first scale gates, cross-lab portability and explicit nonclaims with primary-source grounding.
+- **RC-F02: Convert the vision into an outcome and dependency roadmap.** Prepend Wave 0, preserve all original Waves 1–8 and their 24 task IDs, acceptance text, dependency logic and gates, identify capacity and human/hardware/licensing decisions, and define stop, pivot, scale and replan conditions without speculative dates.
+- **RC-F03: Make the next work packet executable and validate the repository plan.** Provide a standard-library validation command that checks task identity, status, documentation parity, dependency existence/order, DAG acyclicity, wave coverage and navigation links; prove its negative self-test detects an invalid plan; specify one RC-001 packet that can run locally without paid compute, model weights or dataset downloads.
+
+Gate decision: The active root may mark Wave 0 accepted under Lucas Santana's delegated implementation instruction after reviewing the complete foundation diff and reproducing the validator results. Otherwise revise or hold; `READY_FOR_REVIEW` is not acceptance.
 
 ## Wave 1: Research contract and baseline
 
 Outcome/gate: One question, budget and falsification protocol are fixed.
 
-Entry: No implementation prerequisite; inspect the initial plan.
+Entry: Wave 0 accepted; inspect the official baseline and current repository state again.
 - **RC-001: Analyze and scope the autoresearch baseline.** Record the upstream reference, attribution, narrow reproduction target and proposed differences; no superiority claim without tests.
 - **RC-002: Define budgets, safety and evaluation boundaries.** Specify permitted edits/tools, total resource accounting, protected evaluator, holdout access and stop conditions.
 - **RC-003: Build the durable experiment skeleton.** A local synthetic campaign survives restart with unique experiment IDs and explicit invalid/failed states; no model or cloud dependency is required.
