@@ -16,14 +16,15 @@
     "goal": "docs/GOAL-0.5.md",
     "scope": "Local research workbench: multiple numerical objectives and baselines, frozen multi-study campaigns, matched ablations, descriptive uncertainty, portable fresh reproduction, interactive offline evidence browser.",
     "contractBoundary": "This owner-authorized delivery slice does not satisfy unmet historical training, adaptive-search, independent-review or native-publication prerequisites.",
-    "publicRelease": "NOT PUBLISHED",
+    "publicRelease": "PUBLISHED",
     "nativeGoalEdited": false,
     "evidence": [
       "evidence/workbench/automated-final-source.json",
       "evidence/workbench/packaged-preflight.json",
       "evidence/workbench/browser-verification.json",
       "evidence/workbench/default-campaign/index.html",
-      "evidence/workbench/reproduction.json"
+      "evidence/workbench/reproduction.json",
+      "evidence/public-release-0.5.json"
     ]
   },
   "taskCount": 228,

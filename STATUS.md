@@ -2,16 +2,16 @@
 
 Last updated: 2026-09-08. Maintainer: Lucas Santana ([thepianistdirector](https://github.com/thepianistdirector)). The current task ledger is plan/tasks.json; generated task/roadmap views derive from it. This file records the current evidence and handoff, not a second task ledger.
 
-## Active 0.5 delivery
+## Verified 0.5 delivery and public release
 
 The owner instructed continued development through 0.5 on September 8 and selected
 **local research workbench** scope: multiple numerical objectives/baselines,
 multi-study campaigns, ablations, explicit uncertainty, portable reproduction and
 an interactive offline evidence browser. [The working goal](docs/GOAL-0.5.md) records
-the complete selected scope. The task title is now **Build Research Continuum 0.5**.
-The native Goal still contains the incomplete 0.1 objective: supported tools expose
-no objective editor, and the authorized Mac helper's Computer Use access to the
-Codex app was refused. No goal was deleted, falsely completed or reset.
+the complete selected scope. During 0.5 preparation, the task title was **Build Research Continuum 0.5**.
+The goal-editing limitation described in its working-goal document records that
+preparation history; it is not a current claim about the owner's task controls.
+No goal was falsely completed as part of this release.
 
 The local 0.5 candidate is implemented and verified. It includes three reviewed
 objective adapters and four policies, a frozen whole-campaign inventory bound to
@@ -29,7 +29,7 @@ inspection. The [workbench guide](docs/workbench.md) documents the complete flow
 | Recovery | [Two-study SIGKILL case](evidence/workbench/recovery-campaign/index.html) retains one failed attempt, 128 recorded evaluations and 136 charged units. The affected comparison stays INCONCLUSIVE and its ablation stays ineligible. |
 | Browser | [Eleven asserted interactions and four inspected screenshots](evidence/workbench/browser-verification.json): filtering, empty-state recovery, stable trial selection, keyboard expansion of all 128 observations, 320/390px reflow, 2× CSS zoom, reduced motion, horizontal table navigation and visible retained failures. Tested axe states have zero violations; clipped-table contrast incompletes are documented with measured color ratios. |
 | Human / scientific review | Pending. Agent checks do not substitute for independent human accessibility or qualified scientific review. |
-| Public 0.5 release | Not published. The exact source archive and verification packet are prepared for the owner's release decision; no 0.5 public distribution is claimed. |
+| Public 0.5 release | Published under explicit owner approval at source `99a5a9e53088983920538af16d08b9d96fb132aa`; [all four anonymous downloads match the approved packet](evidence/public-release-0.5.json). The approved source archive and tag are immutable. |
 
 The verified runtime is Linux x86_64, Python 3.12.14 and SQLite 3.53.1. Its runtime
 source identity is `2ee2c5d8fe75373f1aa0835641f46ec16ddd006f5b2e6d7e9d4a15ace8fafb2d`.

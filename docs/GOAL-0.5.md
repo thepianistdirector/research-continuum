@@ -1,5 +1,9 @@
 # Research Continuum 0.5 working goal
 
+Historical preparation contract. The exact 0.5.0 packet was subsequently approved,
+published and anonymously verified; see [release evidence](../evidence/public-release-0.5.json).
+The native-control section below records the observed preparation-time limitation.
+
 Owner instruction: September 8, 2026. Continue development through version 0.5.
 Owner-selected scope: local research workbench.
 
@@ -38,7 +42,7 @@ broader historical contracts in plan/tasks.json.
 
 ## Native Goal control
 
-The current native Goal still records the incomplete 0.1 objective. The available
+During 0.5 preparation, the native Goal recorded the incomplete 0.1 objective. The available
 Goal API exposes creation and terminal status updates, but no objective editing.
 The authorized Mac helper attempted the supported route. It confirmed that the
 tool catalog has no objective editor and Computer Use refuses access to the Codex

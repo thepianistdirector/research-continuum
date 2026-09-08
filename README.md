@@ -17,7 +17,7 @@ Created and maintained by **Lucas Santana**
 the complete nine-study packaged workflow, fresh MATCH reproduction, real process-death
 recovery and eleven browser interaction checks. [Open the included workbench](evidence/workbench/default-campaign/index.html)
 or read the [verification record](evidence/workbench/packaged-preflight.json).
-0.5 has not been publicly released; its concrete release packet awaits owner approval. The [public 0.1.0 release](https://github.com/thepianistdirector/research-continuum/releases/tag/v0.1.0)
+The owner-approved [0.5.0 release](https://github.com/thepianistdirector/research-continuum/releases/tag/v0.5.0) is public; [all four assets were anonymously downloaded and verified](evidence/public-release-0.5.json). The [public 0.1.0 release](https://github.com/thepianistdirector/research-continuum/releases/tag/v0.1.0)
 remains available and immutable. Independent human/qualified review and native
 Tanduna publication remain separate unfinished gates. See [STATUS.md](STATUS.md)
 and the [owner-selected 0.5 goal](docs/GOAL-0.5.md).
