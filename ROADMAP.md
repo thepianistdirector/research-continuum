@@ -8,13 +8,15 @@ This programme contains **228 current task rows in 28 waves**, including **50 na
 
 ## Objective and limits
 
-Publish a useful bounded numerical 0.1 with complete reproducible evidence and a verified native public Tanduna programme; preserve the wider scientific roadmap.
+Deliver the owner-selected local numerical research workbench through 0.5, while retaining the incomplete 0.1 native-publication and independent-review gates and the wider scientific roadmap.
+
+Active delivery: **0.5 — RUNTIME VERIFIED**. Local research workbench: multiple numerical objectives and baselines, frozen multi-study campaigns, matched ablations, descriptive uncertainty, portable fresh reproduction, interactive offline evidence browser. [Working goal](docs/GOAL-0.5.md). This owner-authorized delivery slice does not satisfy unmet historical training, adaptive-search, independent-review or native-publication prerequisites.
 
 - No autonomous-scientist, optimizer novelty, generality or autoresearch-superiority claim from 0.1.
 - No new dependencies, cloud spend, untrusted execution, external outreach or publication without exact authority.
 - Later and exploratory outcomes are conditional on their evidence, resource and owner decisions, not promised release dates.
 
-Release horizons express scope, not dates or approved hardware/spend. Later outcomes require their own accepted wave evidence, rights and resources. The historical training-first programme remains retained; the owner separately authorizes the narrow numerical 0.1 path.
+Release horizons express scope, not dates or approved hardware/spend. Later outcomes require their own accepted wave evidence, rights and resources. The historical training-first programme remains retained; the owner separately authorizes the numerical 0.1 path and the local workbench 0.5 delivery slice.
 
 ## Scope and current evidence
 
@@ -26,11 +28,11 @@ Release horizons express scope, not dates or approved hardware/spend. Later outc
 | long-term | 101 |
 | exploratory | 2 |
 
-Current row states: DONE: 3; IMPLEMENTED: 5; AUTOMATED PASS: 19; RUNTIME VERIFIED: 21; NOT TESTED: 1; USER VALIDATED: 1; RELEASE VERIFIED: 1; BLOCKED: 2; PLANNED: 175.
+Current row states: DONE: 3; IMPLEMENTED: 5; AUTOMATED PASS: 19; RUNTIME VERIFIED: 21; NOT TESTED: 1; USER VALIDATED: 1; RELEASE VERIFIED: 1; BLOCKED: 2; PLANNED: 150; IN PROGRESS: 25.
 
 ## Execution and replanning
 
-For an immediate task, the owner binds actual files, available commands, falsifiers and exit evidence in a bounded execution packet before implementation. Capacity, rights, environment and qualified-review gates are checked at entry. Cut extra objectives, rich UI, agent search and remote workers before real computation, reserved evidence, recovery or complete reporting. Replan at an observed failure or accepted wave gate; retain all negative results.
+For an immediate task, the owner binds actual files, available commands, falsifiers and exit evidence in a bounded execution packet before implementation. Capacity, rights, environment and qualified-review gates are checked at entry. Implement the owner-selected release scope with complete computation, reserved evidence, recovery and reporting. Do not silently substitute a narrower success criterion. Replan at an observed failure or accepted wave gate; retain all negative results.
 
 ## Outcome waves
 
@@ -275,10 +277,10 @@ Outcome: Researchers can verify that ablations challenge causal attribution.
 
 Horizon: **later 0.x**. Entry dependencies: RC-W11-T08. Assigned rows: 7.
 
-- **RC-W12-T01 — Register alternate explanations before ablation** (PLANNED).
+- **RC-W12-T01 — Register alternate explanations before ablation** (IN PROGRESS).
 - **RC-W12-T02 — Build independent reproduction workspaces** (PLANNED).
-- **RC-W12-T03 — Remove each material candidate change** (PLANNED).
-- **RC-W12-T04 — Compare ablations under matched costs** (PLANNED).
+- **RC-W12-T03 — Remove each material candidate change** (IN PROGRESS).
+- **RC-W12-T04 — Compare ablations under matched costs** (IN PROGRESS).
 - **RC-W12-T05 — Distinguish reproduction failure categories** (PLANNED).
 - **RC-W12-T06 — Test a claim under new conditions** (PLANNED).
 - **RC-W12-T07 — Revise attribution from complete evidence** (PLANNED).
@@ -293,14 +295,14 @@ Outcome: Researchers can verify that repeated selection has a declared method.
 
 Horizon: **later 0.x**. Entry dependencies: RC-W11-T08, RC-W08-T09. Assigned rows: 8.
 
-- **RC-W13-T01 — Define the actual comparison family** (PLANNED).
-- **RC-W13-T02 — Choose an appropriate uncertainty method** (PLANNED).
+- **RC-W13-T01 — Define the actual comparison family** (IN PROGRESS).
+- **RC-W13-T02 — Choose an appropriate uncertainty method** (IN PROGRESS).
 - **RC-W13-T03 — Account for sequential stopping** (PLANNED).
 - **RC-W13-T04 — Register the final confirmation decision** (PLANNED).
-- **RC-W13-T05 — Retain multiple-comparison history** (PLANNED).
+- **RC-W13-T05 — Retain multiple-comparison history** (IN PROGRESS).
 - **RC-W13-T06 — Reject unsupported generic corrections** (PLANNED).
 - **RC-W13-T07 — Challenge claimed error properties** (PLANNED).
-- **RC-W13-T08 — Report uncertainty without false certainty** (PLANNED).
+- **RC-W13-T08 — Report uncertainty without false certainty** (IN PROGRESS).
 
 Exit evidence: The final report states method, assumptions, estimation limits and inconclusive findings; deterministic reruns are not independent samples.
 
@@ -312,12 +314,12 @@ Outcome: Researchers can verify that reports retain contradictions and null find
 
 Horizon: **later 0.x**. Entry dependencies: RC-W11-T08, RC-W12-T07, RC-W13-T08. Assigned rows: 7.
 
-- **RC-W14-T01 — Resolve every conclusion to its evidence set** (PLANNED).
-- **RC-W14-T02 — Show negative and failed outcome denominators** (PLANNED).
+- **RC-W14-T01 — Resolve every conclusion to its evidence set** (IN PROGRESS).
+- **RC-W14-T02 — Show negative and failed outcome denominators** (IN PROGRESS).
 - **RC-W14-T03 — Separate evidence from generated interpretation** (PLANNED).
-- **RC-W14-T04 — Display confirmation and reproduction separately** (PLANNED).
+- **RC-W14-T04 — Display confirmation and reproduction separately** (IN PROGRESS).
 - **RC-W14-T05 — Expose protocol deviations and alternatives** (PLANNED).
-- **RC-W14-T06 — Audit complete resource totals in reports** (PLANNED).
+- **RC-W14-T06 — Audit complete resource totals in reports** (IN PROGRESS).
 - **RC-W14-T07 — Review a bounded scientific report** (PLANNED).
 
 Exit evidence: An independent reviewer can reproduce reported calculations and reject an injected unsupported conclusion; human disposition is retained.
@@ -368,12 +370,12 @@ Outcome: Researchers can verify that numerical adapters generalize beyond the fi
 
 Horizon: **long-term**. Entry dependencies: RC-W14-T07. Assigned rows: 8.
 
-- **RC-W17-T01 — Select a distinct numerical benchmark question** (PLANNED).
-- **RC-W17-T02 — Establish benchmark rights and reference provenance** (PLANNED).
+- **RC-W17-T01 — Select a distinct numerical benchmark question** (IN PROGRESS).
+- **RC-W17-T02 — Establish benchmark rights and reference provenance** (IN PROGRESS).
 - **RC-W17-T03 — Freeze residual and convergence requirements** (PLANNED).
-- **RC-W17-T04 — Challenge precision and invalid numerical states** (PLANNED).
-- **RC-W17-T05 — Implement the second numerical adapter contract** (PLANNED).
-- **RC-W17-T06 — Run matched numerical solver comparisons** (PLANNED).
+- **RC-W17-T04 — Challenge precision and invalid numerical states** (IN PROGRESS).
+- **RC-W17-T05 — Implement the second numerical adapter contract** (IN PROGRESS).
+- **RC-W17-T06 — Run matched numerical solver comparisons** (IN PROGRESS).
 - **RC-W17-T07 — Reproduce a numerical claim independently** (PLANNED).
 - **RC-W17-T08 — Assess actual adapter generality** (PLANNED).
 
@@ -443,12 +445,12 @@ Outcome: Researchers can verify that independent reproduction has its own author
 
 Horizon: **long-term**. Entry dependencies: RC-W12-T07, RC-W18-T08, RC-W20-T07. Assigned rows: 8.
 
-- **RC-W21-T01 — Bind reproduction to an explicit claim contract** (PLANNED).
+- **RC-W21-T01 — Bind reproduction to an explicit claim contract** (IN PROGRESS).
 - **RC-W21-T02 — Prepare producer-independent environments** (PLANNED).
 - **RC-W21-T03 — Separate reproduction from new-condition replication** (PLANNED).
-- **RC-W21-T04 — Record reproducibility obstacles without silent repairs** (PLANNED).
-- **RC-W21-T05 — Meter reproduction attempts independently** (PLANNED).
-- **RC-W21-T06 — Verify reproduction provenance and artifact identity** (PLANNED).
+- **RC-W21-T04 — Record reproducibility obstacles without silent repairs** (IN PROGRESS).
+- **RC-W21-T05 — Meter reproduction attempts independently** (IN PROGRESS).
+- **RC-W21-T06 — Verify reproduction provenance and artifact identity** (IN PROGRESS).
 - **RC-W21-T07 — Review discrepancies and claim consequences** (PLANNED).
 - **RC-W21-T08 — Provide an external reproduction handoff** (PLANNED).
 
@@ -462,14 +464,14 @@ Outcome: Researchers can verify that the workbench exposes the complete campaign
 
 Horizon: **long-term**. Entry dependencies: RC-W18-T08, RC-W19-T08, RC-W20-T07. Assigned rows: 8.
 
-- **RC-W22-T01 — Navigate question-to-evidence lineage** (PLANNED).
-- **RC-W22-T02 — Inspect full resource and outcome totals** (PLANNED).
+- **RC-W22-T01 — Navigate question-to-evidence lineage** (IN PROGRESS).
+- **RC-W22-T02 — Inspect full resource and outcome totals** (IN PROGRESS).
 - **RC-W22-T03 — Interrupt a campaign with clear authority** (PLANNED).
 - **RC-W22-T04 — Expose stale and contradictory evidence** (PLANNED).
-- **RC-W22-T05 — Support keyboard and assistive navigation** (PLANNED).
-- **RC-W22-T06 — Remain usable under narrow layouts and zoom** (PLANNED).
+- **RC-W22-T05 — Support keyboard and assistive navigation** (IN PROGRESS).
+- **RC-W22-T06 — Remain usable under narrow layouts and zoom** (IN PROGRESS).
 - **RC-W22-T07 — Recover from missing or corrupt artifacts visibly** (PLANNED).
-- **RC-W22-T08 — Export the inspected campaign consistently** (PLANNED).
+- **RC-W22-T08 — Export the inspected campaign consistently** (IN PROGRESS).
 
 Exit evidence: Workbench export uses the same complete versioned bundle as the CLI and reports exactly which evidence and limitations are included.
 

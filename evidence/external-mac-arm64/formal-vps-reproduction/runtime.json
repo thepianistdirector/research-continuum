@@ -1,0 +1,7 @@
+{
+  "platform": "Linux-6.8.0-117-generic-aarch64-with-glibc2.41",
+  "architecture": "aarch64",
+  "python": "3.12.13 (main, Jun 24 2026, 02:14:13) [GCC 14.2.0]",
+  "sqlite": "3.46.1",
+  "observed_at": "2026-09-08T15:57:48.766855+00:00"
+}

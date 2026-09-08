@@ -232,3 +232,47 @@ This architecture does not establish that agent-guided research beats random sea
 ## Owner-authorized numerical 0.1 decision path
 
 [Decision 001](docs/decisions/001-numerical-study.md) freezes the exact question, objective, policies, seeds, quality threshold, feedback and falsifier before computation. [Decision 002](docs/decisions/002-durable-local-campaign.md) adopts a trusted built-in API, SQLite append-only attempt/evaluation records, conservative finite reserved debits, flock liveness, terminal reconciliation and atomic exports. This narrow path derives from RC-015 while leaving its adapter-generality obligation and RC-004/005 adversarial isolation unfulfilled. The original training/agent-search requirements above remain historical/future contracts.
+
+## Owner-selected 0.5 workbench implementation
+
+The [0.5 working goal](docs/GOAL-0.5.md) selects a local numerical workbench.
+[Decision 003](docs/decisions/003-numerical-workbench.md) records its narrower
+implementation boundary; it does not promote the broader stages above.
+
+```mermaid
+flowchart LR
+  Draft[Editable campaign draft] --> Freeze[Frozen complete inventory]
+  Freeze -->|hash bound before admission| Ledgers[One durable ledger per study]
+  Ledgers --> Audit[Raw replay and cost validation]
+  Audit --> Bundle[Atomic campaign evidence bundle]
+  Bundle --> Browser[Offline study and trial browser]
+  Bundle --> Verify[Independent bundle verification]
+  Verify --> Fresh[Fresh source-bound campaign]
+  Fresh --> Comparison[Reproduction record with runtime deviations]
+```
+
+`study.py` validates versioned named objectives/policies. `numerical.py` owns the
+reviewed evaluators, known-answer controls and finite proposal/feedback policies.
+`store.py` retains single-study admission, conservative debits, locking and
+terminal recovery. `campaign.py` freezes the entire ordered inventory, binds it
+into each member's source records, enforces aggregate reserves, coordinates serial
+execution and verifies that no study was replaced or omitted.
+
+`analysis.py` derives conditional paired-seed resampling summaries and refuses to
+turn deterministic repeats into stochastic samples. Campaign ablation links allow
+one declared change with an unaffected random/grid baseline. `evidence.py` still
+replays raw computation and regenerates each study's claims and report.
+`workbench.py` renders the complete offline browser from those verified records;
+its filters and stable URL fragments select evidence without changing accounting.
+
+The browser has no execution credentials, write API or network dependency. A
+campaign bundle contains data and checksummed views, not commands to execute.
+Fresh reproduction creates a new complete inventory and separate member ledgers
+bound to the exact source snapshot. Environment differences remain explicit and
+prevent a strict MATCH. Source-bound databases are resumed only with their
+unchanged accepted runtime, including when all trials are already terminal.
+
+This topology remains one trusted local coordinator with serial built-in study
+execution. It does not implement arbitrary-code isolation, protected holdouts,
+adaptive agent proposals, live browser stop authority, remote workers or a shared
+research platform. The 228-task programme retains those separate contracts.

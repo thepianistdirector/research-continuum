@@ -13,33 +13,23 @@ from pathlib import Path
 import tarfile
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "0.1.0"
+VERSION = "0.5.0"
 FILES = ["README.md", "LICENSE", "CONTRIBUTING.md", "ARCHITECTURE.md", "EXPERIMENTS.md",
          "SOURCES.md", "ROADMAP.md", "TASKS.md", "STATUS.md"]
-DIRECTORIES = ["continuum", "examples", "tests", "tools", "docs", "plan"]
-SUFFIXES = {".py", ".json", ".md", ".html", ".txt", ".csv"}
+DIRECTORIES = ["continuum", "examples", "tests", "tools", "docs", "plan", "evidence"]
+SUFFIXES = {".py", ".json", ".md", ".html", ".txt", ".csv", ".png"}
 
 
 def sources() -> list[Path]:
     paths = {ROOT / name for name in FILES}
     for folder in DIRECTORIES:
         for path in (ROOT / folder).rglob("*"):
-            if "__pycache__" in path.parts:
+            if "__pycache__" in path.parts or (folder == "evidence" and "sources" in path.relative_to(ROOT / folder).parts):
                 continue
             if path.is_symlink():
                 raise ValueError(f"Release source must not be a symlink: {path.relative_to(ROOT)}")
             if path.is_file() and path.suffix in SUFFIXES:
                 paths.add(path)
-    for folder in [ROOT / "evidence" / "runtime"]:
-        if folder.exists():
-            for path in folder.rglob("*"):
-                if path.is_symlink():
-                    raise ValueError("Release evidence must not contain symlinks")
-                if path.is_file() and path.suffix in SUFFIXES:
-                    paths.add(path)
-    retrievals = ROOT / "evidence" / "source-retrievals.json"
-    if retrievals.is_file():
-        paths.add(retrievals)
     for path in paths:
         if not path.is_file() or path.is_symlink():
             raise ValueError(f"Missing or unsafe release input: {path.relative_to(ROOT)}")

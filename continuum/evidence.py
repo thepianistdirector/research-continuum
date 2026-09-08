@@ -29,8 +29,8 @@ BUNDLE_LIMIT = 256 * 1024 * 1024
 FILES = frozenset({"evidence.json", "summary.json", "records.json", "report.html"})
 STATUSES = frozenset({"COMPLETED", "FAILED", "INVALID", "CANCELLED", "TIMED_OUT"})
 LIMITATIONS = [
-    "This is one public, known-answer Rosenbrock fixture, not a secret holdout.",
-    "Coordinate refinement repeats are deterministic checks, not independent stochastic samples.",
+    "This is one public, known-answer numerical fixture, not a secret holdout.",
+    "Grid and coordinate policy repeats are deterministic checks, not independent stochastic samples.",
     "Medians are descriptive; no significance, confidence interval, causal, novelty, or general superiority claim is made.",
     "Equal charged evaluation units do not imply equal CPU or elapsed time.",
     "Recorded observations can undercount calls lost at process death; full admitted allowance remains charged.",
@@ -90,7 +90,7 @@ def _schedule(study):
     originals = []
     for phase, seeds in (("development", study.development_seeds),
                          ("confirmation", study.confirmation_seeds)):
-        for policy in ("uniform_random", "coordinate_refinement"):
+        for policy in (study.baseline, study.candidate):
             for seed in seeds:
                 originals.append({
                     "id": f"{phase}-{policy}-{seed}", "phase": phase,
@@ -346,7 +346,7 @@ def summarize(snapshot):
                 "context": "reserved fresh execution in the same coordinator; no independent human review"})
     groups = []
     for phase in ("development", "confirmation", "reproduction"):
-        for policy in ("uniform_random", "coordinate_refinement"):
+        for policy in (study.baseline, study.candidate):
             rows = [r for r in trial_results if r["phase"] == phase and r["policy"] == policy]
             bests = [r["best"] for r in rows if r["status"] == "COMPLETED"]
             groups.append({"phase": phase, "policy": policy, "scheduled_trials": len(rows),
@@ -371,7 +371,7 @@ def summarize(snapshot):
         verdict = "CANDIDATE_LOWER" if difference < 0 else "BASELINE_LOWER" if difference > 0 else "TIE"
         relation = "consistent" if difference < 0 else "contradicted"
     complete = all(r["status"] in ("COMPLETED", "EXHAUSTED") for r in trial_results)
-    return {"schema_version": 1, "campaign_id": snapshot["campaign_id"], "study_digest": study.digest,
+    result = {"schema_version": 1, "campaign_id": snapshot["campaign_id"], "study_digest": study.digest,
             "campaign_complete": complete, "verdict": verdict, "hypothesis_relation": relation,
             "claim_status": "UNREVIEWED", "independent_human_review": "PENDING",
             "inconclusive_reasons": reasons, "groups": groups, "trials": trial_results,
@@ -380,10 +380,16 @@ def summarize(snapshot):
             "reserved_evaluations": sum(r["capacity"] for r in snapshot["allocations"]),
             "control_objective_calls": sum(row["objectiveCalls"] for row in snapshot["controls"]),
             "failed_attempts": sum(g["failed_attempts"] for g in groups), "limitations": LIMITATIONS.copy()}
+    if study.schema_version == 2:
+        from .analysis import study_uncertainty
+        result["uncertainty"] = study_uncertainty(study, result)
+        result["limitations"][2] = "The frozen verdict is descriptive. Seed resampling intervals are conditional summaries, not population confidence or significance guarantees."
+    return result
 
 
 def _records(snapshot, summary):
     """Small versioned graph. Raw values remain in the single evidence snapshot."""
+    study = Study.from_dict(snapshot["study"])
     study_id = "study-" + snapshot["study_digest"]
     question_id, hypothesis_id = "question-" + snapshot["study_digest"], "hypothesis-" + snapshot["study_digest"]
     evaluations = [{"id": "evaluation-" + a["id"], "schema_version": 1, "type": "EvaluationRecord",
@@ -396,9 +402,9 @@ def _records(snapshot, summary):
                         if r["phase"] == "confirmation" and r["completed_attempt_id"] is not None]
     support, contradiction = [], []
     for spec in snapshot["trial_specs"]:
-        if spec["phase"] == "confirmation" and spec["policy"] == "coordinate_refinement":
+        if spec["phase"] == "confirmation" and spec["policy"] == study.candidate:
             candidate = by_trial[spec["id"]]
-            baseline = by_trial[f"confirmation-uniform_random-{spec['seed']}"]
+            baseline = by_trial[f"confirmation-{study.baseline}-{spec['seed']}"]
             if candidate["best"] is not None and baseline["best"] is not None:
                 refs = ["evaluation-" + r["completed_attempt_id"] for r in (baseline, candidate)]
                 (support if candidate["best"] < baseline["best"] else contradiction).extend(refs)
@@ -425,7 +431,7 @@ def _records(snapshot, summary):
                       "independent_human_review": "PENDING"},
             "report_design": {"audience": "technical", "surface": "offline semantic HTML",
                 "structure": "answer; frozen definitions; findings and exact trial lookup; methods; controls and recovery; limitations; next steps and questions",
-                "chart_omission": "Only two policies and identical candidate repeats; exact per-trial evidence lookup is primary, with no inferential graphic.",
+                "chart_omission": "The single-study report prioritizes exact per-trial evidence. The campaign browser plots recorded attempt traces and separates descriptive seed resampling from the frozen verdict.",
                 "dependencies": "Python standard library only; no external runtime resources"}}
 
 

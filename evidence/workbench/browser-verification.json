@@ -1,0 +1,920 @@
+{
+  "schema_version": 1,
+  "observed_at": "2026-09-08T16:52:27.877741+00:00",
+  "evidence_level": "AGENT_BROWSER_OBSERVATIONS",
+  "status": "PASS",
+  "browser": "Existing agent-browser 0.36.0 / Chromium 1193; no runtime dependency adoption",
+  "index_sha256": "bb88e8637bfb29181a5fbb51d7ebfee57cda7212c89a8602476c3e3dec22377c",
+  "recovery_index_sha256": "293ec0c3624bb6d2206cc651fe4834bce8a4db936554d3a92716408dd44f301d",
+  "checks": [
+    {
+      "check": "Initial inventory and confirmation selection",
+      "observed": {
+        "shown": 9,
+        "selected": "rosenbrock",
+        "trial": "confirmation-uniform_random-101"
+      }
+    },
+    {
+      "check": "Filter and detail stay consistent",
+      "observed": {
+        "shown": [
+          "sphere",
+          "sphere-fixed-step",
+          "sphere-grid"
+        ],
+        "selected": "sphere"
+      }
+    },
+    {
+      "check": "Keyboard expansion retains every observation and addressable trial",
+      "observed": {
+        "open": true,
+        "rows": 128,
+        "focused": "SUMMARY",
+        "hash": "#study=sphere&trial=confirmation-coordinate_refinement-202"
+      }
+    },
+    {
+      "check": "Direct trial link restores selection",
+      "observed": {
+        "selected": "sphere-grid",
+        "trial": "confirmation-coordinate_refinement-202"
+      }
+    },
+    {
+      "check": "Empty filter state contains no stale result",
+      "observed": {
+        "shown": 0,
+        "empty": true,
+        "detail": "No matching study"
+      }
+    },
+    {
+      "check": "320px reflow and reduced motion",
+      "observed": {
+        "width": 320,
+        "scroll": 320,
+        "reduced": true
+      }
+    },
+    {
+      "check": "2x CSS zoom reflow (not a browser-zoom or human test)",
+      "observed": {
+        "width": 320,
+        "right": 320,
+        "zoom": "2"
+      }
+    },
+    {
+      "check": "Raw table scrolls with keyboard at 320px",
+      "observed": {
+        "before": 0,
+        "after": 40
+      }
+    },
+    {
+      "check": "Computed text/background contrast for raw cells, muted text and button; assists review of axe scroll-clipping incompletes",
+      "observed": [
+        {
+          "text": "rgb(25, 45, 48)",
+          "background": "rgb(255, 255, 255)",
+          "contrast_ratio": 14.389779576422857
+        },
+        {
+          "text": "rgb(76, 99, 103)",
+          "background": "rgb(243, 245, 241)",
+          "contrast_ratio": 5.821992872505118
+        },
+        {
+          "text": "rgb(21, 90, 81)",
+          "background": "rgb(255, 255, 255)",
+          "contrast_ratio": 8.036223119777674
+        }
+      ]
+    },
+    {
+      "check": "Inconclusive outcome filter retains campaign costs",
+      "observed": {
+        "shown": [
+          "rosenbrock"
+        ],
+        "selected": "rosenbrock",
+        "totals": "2frozen studies136charged evaluations256reserved evaluations1retained failed attempts"
+      }
+    },
+    {
+      "check": "Recovered trial exposes original failed attempt and separately charged retry",
+      "observed": {
+        "attempts": 2,
+        "text": "Link to this trial selectionCOMPLETED \u00b7 16 charged units \u00b7 8 recorded evaluations \u00b7 1 failed attemptsAttempt 1 \u00b7 FAILED \u00b7 8 charged unitsAttempt identity: 177ad98ac7854f669e72e4ae00f79969Coordinator interrupted before validated result staging; full allowance retainedNo durable observations. Admitted costs remain charged.Attempt 2 \u00b7 COMPLETED \u00b7 8 charged unitsAttempt identity: d74e4caaac45421c888fc8ebebf85422Full frozen observation allowance evaluatedBest-so-far objective over recorded evaluations 1\u20138. Linear range: 26.51232465 to 146.0915304; final best: 26.51232465.Inspect all 8 points and values"
+      }
+    }
+  ],
+  "audits": [
+    {
+      "success": true,
+      "data": {
+        "axeVersion": "4.12.1",
+        "counts": {
+          "inapplicable": 38,
+          "incomplete": 0,
+          "passes": 51,
+          "violations": 0
+        },
+        "incomplete": [],
+        "lifecycle": {
+          "effectiveLaunch": {
+            "browserLaunched": true,
+            "engine": "chrome",
+            "launchHash": 16155740654197345125
+          },
+          "launched": false,
+          "relaunchedBrowser": false,
+          "restartedBackground": false,
+          "restoreStatus": "not_configured",
+          "reused": true,
+          "saveStatus": "not_attempted"
+        },
+        "url": "file://$PROJECT/.build/05-preflight2/bundle/index.html#study=rosenbrock&trial=confirmation-uniform_random-101",
+        "violations": []
+      },
+      "error": null
+    },
+    {
+      "success": true,
+      "data": {
+        "axeVersion": "4.12.1",
+        "counts": {
+          "inapplicable": 37,
+          "incomplete": 1,
+          "passes": 52,
+          "violations": 0
+        },
+        "incomplete": [
+          {
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=axeAPI",
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodeCount": 523,
+            "nodes": [
+              {
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+                "html": "<caption>Every recorded observation. Boundary duplicates consume allowance.</caption>",
+                "target": [
+                  "details[data-loaded=\"true\"] > .scroll[role=\"region\"] > table > caption"
+                ]
+              },
+              {
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content",
+                "html": "<th scope=\"row\">1</th>",
+                "target": [
+                  "details[data-loaded=\"true\"] > .scroll[role=\"region\"] > table > tbody > tr:nth-child(1) > th[scope=\"row\"]"
+                ]
+              },
+              {
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+                "html": "<td>-0.2209820179</td>",
+                "target": [
+                  "details[data-loaded=\"true\"] > .scroll[role=\"region\"] > table > tbody > tr:nth-child(1) > td:nth-child(3)"
+                ]
+              },
+              {
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+                "html": "<td>11.10676314</td>",
+                "target": [
+                  "details[data-loaded=\"true\"] > .scroll[role=\"region\"] > table > tbody > tr:nth-child(1) > td:nth-child(4)"
+                ]
+              },
+              {
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+                "html": "<td>11.10676314</td>",
+                "target": [
+                  "details[data-loaded=\"true\"] > .scroll[role=\"region\"] > table > tbody > tr:nth-child(1) > td:nth-child(5)"
+                ]
+              },
+              {
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content",
+                "html": "<th scope=\"row\">2</th>",
+                "target": [
+                  "details[data-loaded=\"true\"] > .scroll[role=\"region\"] > table > tbody > tr:nth-child(2) > th[scope=\"row\"]"
+                ]
+              },
+              {
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+                "html": "<td>2.695905607</td>",
+                "target": [
+                  "details[data-loaded=\"true\"] > .scroll[role=\"region\"] > table > tbody > tr:nth-child(2) > td:nth-child(3)"
+                ]
+              },
+              {
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+                "html": "<td>59.63649694</td>",
+                "target": [
+                  "details[data-loaded=\"true\"] > .scroll[role=\"region\"] > table > tbody > tr:nth-child(2) > td:nth-child(4)"
+                ]
+              },
+              {
+                "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+                "html": "<td>11.10676314</td>",
+                "target": [
+                  "details[data-loaded=\"true\"] > .scroll[role=\"region\"] > table > tbody > tr:nth-child(2) > td:nth-child(5)"
+                ]
+              },
+              {
+                "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content",
+                "html": "<th scope=\"row\">3</th>",
+                "target": [
+                  "details[data-loaded=\"true\"] > .scroll[role=\"region\"] > table > tbody > tr:nth-child(3) > th[scope=\"row\"]"
+                ]
+              }
+            ],
+            "tags": [
+              "cat.color",
+              "wcag2aa",
+              "wcag143",
+              "TTv5",
+              "TT13.c",
+              "EN-301-549",
+              "EN-9.1.4.3",
+              "ACT",
+              "RGAAv4",
+              "RGAA-3.2.1"
+            ]
+          }
+        ],
+        "lifecycle": {
+          "effectiveLaunch": {
+            "browserLaunched": true,
+            "engine": "chrome",
+            "launchHash": 16155740654197345125
+          },
+          "launched": false,
+          "relaunchedBrowser": false,
+          "restartedBackground": false,
+          "restoreStatus": "not_configured",
+          "reused": true,
+          "saveStatus": "not_attempted"
+        },
+        "url": "file://$PROJECT/.build/05-preflight2/bundle/index.html#main",
+        "violations": []
+      },
+      "error": null
+    },
+    {
+      "success": true,
+      "data": {
+        "axeVersion": "4.12.1",
+        "counts": {
+          "inapplicable": 38,
+          "incomplete": 0,
+          "passes": 51,
+          "violations": 0
+        },
+        "incomplete": [],
+        "lifecycle": {
+          "effectiveLaunch": {
+            "browserLaunched": true,
+            "engine": "chrome",
+            "launchHash": 16155740654197345125
+          },
+          "launched": false,
+          "relaunchedBrowser": false,
+          "restartedBackground": false,
+          "restoreStatus": "not_configured",
+          "reused": true,
+          "saveStatus": "not_attempted"
+        },
+        "url": "file://$PROJECT/.build/05-preflight2/recovery-bundle/index.html#study=rosenbrock&trial=development-uniform_random-11",
+        "violations": []
+      },
+      "error": null
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "screenshots/01-campaign-desktop.png",
+      "sha256": "d9c31bb257af7c4d57e930838a1fb2e68aabecd5a5ab41445b5ff0ef6518b2a6",
+      "visually_inspected": true
+    },
+    {
+      "path": "screenshots/02-trial-observations.png",
+      "sha256": "27bed6815da37c471ac9bd4d411c05f9a26b233337999ff3a6d63d000e9b47cf",
+      "visually_inspected": true
+    },
+    {
+      "path": "screenshots/03-campaign-phone.png",
+      "sha256": "ac07592d1bc226bd965d55157e5b25f0a7a4932cd15a9eccc2748f1649496ede",
+      "visually_inspected": true
+    },
+    {
+      "path": "screenshots/04-retained-failure.png",
+      "sha256": "6755ee9022d742b97d2bfa33bf856bd832561ec7f73d2e704ba05ae33ddc8233",
+      "visually_inspected": true
+    }
+  ],
+  "errors": "",
+  "records": [
+    {
+      "args": [
+        "open",
+        "file://$PROJECT/.build/05-preflight2/bundle/index.html"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Research Continuum \u00b7 numerical-workbench\n  file://$PROJECT/.build/05-preflight2/bundle/index.html#study=rosenbrock&trial=confirmation-uniform_random-101\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "set",
+        "viewport",
+        "1440",
+        "1000"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Done\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "eval",
+        "document.documentElement.style.zoom=\"1\""
+      ],
+      "exit_code": 0,
+      "stdout": "\"1\"\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "snapshot",
+        "-i"
+      ],
+      "exit_code": 0,
+      "stdout": "- link \"Skip to evidence\" [ref=e1]\n- heading \"Numerical research campaign\" [level=1, ref=e2]\n- heading \"Campaign evidence\" [level=2, ref=e3]\n- searchbox \"Find a study\" [ref=e16]\n- combobox \"Objective\" [expanded=false, ref=e17]: All objectives\n  - option \"All objectives\" [selected, ref=e72]\n  - option \"ellipsoid-2d-v1\" [ref=e73]\n  - option \"rosenbrock-2d-v1\" [ref=e74]\n  - option \"sphere-2d-v1\" [ref=e75]\n- combobox \"Outcome\" [expanded=false, ref=e18]: All outcomes\n  - option \"All outcomes\" [selected, ref=e76]\n  - option \"Candidate lower\" [ref=e77]\n  - option \"Baseline lower\" [ref=e78]\n  - option \"Tie\" [ref=e79]\n  - option \"Inconclusive\" [ref=e80]\n- combobox \"Order\" [expanded=false, ref=e19]: Frozen order\n  - option \"Frozen order\" [selected, ref=e81]\n  - option \"Highest charged cost\" [ref=e82]\n- button \"Reset filters\" [ref=e7]\n- heading \"rosenbrock\" [level=3, ref=e20]\n- button \"Inspect rosenbrock\" [ref=e21]\n- link \"Full report\" [ref=e22]\n- heading \"rosenbrock-fixed-step\" [level=3, ref=e23]\n- button \"Inspect rosenbrock-fixed-step\" [ref=e24]\n- link \"Full report\" [ref=e25]\n- heading \"rosenbrock-grid\" [level=3, ref=e26]\n- button \"Inspect rosenbrock-grid\" [ref=e27]\n- link \"Full report\" [ref=e28]\n- heading \"sphere\" [level=3, ref=e29]\n- button \"Inspect sphere\" [ref=e30]\n- link \"Full report\" [ref=e31]\n- heading \"sphere-fixed-step\" [level=3, ref=e32]\n- button \"Inspect sphere-fixed-step\" [ref=e33]\n- link \"Full report\" [ref=e34]\n- heading \"sphere-grid\" [level=3, ref=e35]\n- button \"Inspect sphere-grid\" [ref=e36]\n- link \"Full report\" [ref=e37]\n- heading \"ellipsoid\" [level=3, ref=e38]\n- button \"Inspect ellipsoid\" [ref=e39]\n- link \"Full report\" [ref=e40]\n- heading \"ellipsoid-fixed-step\" [level=3, ref=e41]\n- button \"Inspect ellipsoid-fixed-step\" [ref=e42]\n- link \"Full report\" [ref=e43]\n- heading \"ellipsoid-grid\" [level=3, ref=e44]\n- button \"Inspect ellipsoid-grid\" [ref=e45]\n- link \"Full report\" [ref=e46]\n- region \"Selected study evidence\" [ref=e4]\n  - heading \"rosenbrock\" [level=2, ref=e8]\n  - link \"Open full study report and provenance\" [ref=e9]\n  - heading \"Paired seed uncertainty\" [level=3, ref=e10]\n  - heading \"Trial evidence\" [level=3, ref=e11]\n  - combobox \"Choose a trial\" [expanded=false, ref=e12]: confirmation-uniform_random-101 \u00b7 COMPLETED\n    - option \"development-uniform_random-11 \u00b7 COMPLETED\" [ref=e48]\n    - option \"development-uniform_random-22 \u00b7 COMPLETED\" [ref=e49]\n    - option \"development-uniform_random-33 \u00b7 COMPLETED\" [ref=e50]\n    - option \"development-coordinate_refinement-11 \u00b7 COMPLETED\" [ref=e51]\n    - option \"development-coordinate_refinement-22 \u00b7 COMPLETED\" [ref=e52]\n    - option \"development-coordinate_refinement-33 \u00b7 COMPLETED\" [ref=e53]\n    - option \"confirmation-uniform_random-101 \u00b7 COMPLETED\" [selected, ref=e54]\n    - option \"confirmation-uniform_random-202 \u00b7 COMPLETED\" [ref=e55]\n    - option \"confirmation-uniform_random-303 \u00b7 COMPLETED\" [ref=e56]\n    - option \"confirmation-coordinate_refinement-101 \u00b7 COMPLETED\" [ref=e57]\n    - option \"confirmation-coordinate_refinement-202 \u00b7 COMPLETED\" [ref=e58]\n    - option \"confirmation-coordinate_refinement-303 \u00b7 COMPLETED\" [ref=e59]\n    - option \"reproduction-development-uniform_random-11 \u00b7 COMPLETED\" [ref=e60]\n    - option \"reproduction-development-uniform_random-22 \u00b7 COMPLETED\" [ref=e61]\n    - option \"reproduction-development-uniform_random-33 \u00b7 COMPLETED\" [ref=e62]\n    - option \"reproduction-development-coordinate_refinement-11 \u00b7 COMPLETED\" [ref=e63]\n    - option \"reproduction-development-coordinate_refinement-22 \u00b7 COMPLETED\" [ref=e64]\n    - option \"reproduction-development-coordinate_refinement-33 \u00b7 COMPLETED\" [ref=e65]\n    - option \"reproduction-confirmation-uniform_random-101 \u00b7 COMPLETED\" [ref=e66]\n    - option \"reproduction-confirmation-uniform_random-202 \u00b7 COMPLETED\" [ref=e67]\n    - option \"reproduction-confirmation-uniform_random-303 \u00b7 COMPLETED\" [ref=e68]\n    - option \"reproduction-confirmation-coordinate_refinement-101 \u00b7 COMPLETED\" [ref=e69]\n    - option \"reproduction-confirmation-coordinate_refinement-202 \u00b7 COMPLETED\" [ref=e70]\n    - option \"reproduction-confirmation-coordinate_refinement-303 \u00b7 COMPLETED\" [ref=e71]\n  - link \"Link to this trial selection\" [ref=e47]\n- region \"What changes when one mechanism changes?\" [ref=e5]\n  - heading \"What changes when one mechanism changes?\" [level=2, ref=e13]\n  - region \"Ablation contrasts\" [ref=e14] focusable [tabindex]\n    - columnheader \"Variant\" [ref=e101]\n    - columnheader \"Reference\" [ref=e102]\n    - columnheader \"Changed factor\" [ref=e103]\n    - columnheader \"Eligibility\" [ref=e104]\n    - columnheader \"Median variant \u2212 reference\" [ref=e105]\n    - columnheader \"Uncertainty status\" [ref=e106]\n    - rowheader \"rosenbrock-fixed-step\" [ref=e83]\n      - link \"rosenbrock-fixed-step\" [ref=e107]\n    - cell \"rosenbrock\" [ref=e84]\n      - link \"rosenbrock\" [ref=e108]\n    - cell \"candidate\" [ref=e85]\n    - cell \"Eligible\" [ref=e86]\n    - cell \"0.5446874177\" [ref=e87]\n    - cell \"Deterministic no sampling interval\" [ref=e88]\n    - rowheader \"sphere-fixed-step\" [ref=e89]\n      - link \"sphere-fixed-step\" [ref=e109]\n    - cell \"sphere\" [ref=e90]\n      - link \"sphere\" [ref=e110]\n    - cell \"candidate\" [ref=e91]\n    - cell \"Eligible\" [ref=e92]\n    - cell \"0.04\" [ref=e93]\n    - cell \"Deterministic no sampling interval\" [ref=e94]\n    - rowheader \"ellipsoid-fixed-step\" [ref=e95]\n      - link \"ellipsoid-fixed-step\" [ref=e111]\n    - cell \"ellipsoid\" [ref=e96]\n      - link \"ellipsoid\" [ref=e112]\n    - cell \"candidate\" [ref=e97]\n    - cell \"Eligible\" [ref=e98]\n    - cell \"0.04\" [ref=e99]\n    - cell \"Deterministic no sampling interval\" [ref=e100]\n- region \"Evidence has boundaries\" [ref=e6]\n  - heading \"Evidence has boundaries\" [level=2, ref=e15]\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "eval",
+        "JSON.stringify({shown:document.querySelectorAll(\".study:not([hidden])\").length,selected:document.querySelector(\"#study-detail h2\").textContent,trial:document.querySelector(\"#trial-select\").value})"
+      ],
+      "exit_code": 0,
+      "stdout": "\"{\\\"shown\\\":9,\\\"selected\\\":\\\"rosenbrock\\\",\\\"trial\\\":\\\"confirmation-uniform_random-101\\\"}\"\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "screenshot"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Screenshot saved to $BROWSER_SCREENSHOT_DIR/screenshot-1788886342587.png\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "a11y",
+        "--json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"success\":true,\"data\":{\"axeVersion\":\"4.12.1\",\"counts\":{\"inapplicable\":38,\"incomplete\":0,\"passes\":51,\"violations\":0},\"incomplete\":[],\"lifecycle\":{\"effectiveLaunch\":{\"browserLaunched\":true,\"engine\":\"chrome\",\"launchHash\":16155740654197345125},\"launched\":false,\"relaunchedBrowser\":false,\"restartedBackground\":false,\"restoreStatus\":\"not_configured\",\"reused\":true,\"saveStatus\":\"not_attempted\"},\"url\":\"file://$PROJECT/.build/05-preflight2/bundle/index.html#study=rosenbrock&trial=confirmation-uniform_random-101\",\"violations\":[]},\"error\":null}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "select",
+        "#objective",
+        "sphere-2d-v1"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Done\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "eval",
+        "JSON.stringify({shown:[...document.querySelectorAll(\".study:not([hidden])\")].map(e=>e.dataset.id),selected:document.querySelector(\"#study-detail h2\").textContent})"
+      ],
+      "exit_code": 0,
+      "stdout": "\"{\\\"shown\\\":[\\\"sphere\\\",\\\"sphere-fixed-step\\\",\\\"sphere-grid\\\"],\\\"selected\\\":\\\"sphere\\\"}\"\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "snapshot",
+        "-i"
+      ],
+      "exit_code": 0,
+      "stdout": "- link \"Skip to evidence\" [ref=e1]\n- heading \"Numerical research campaign\" [level=1, ref=e2]\n- heading \"Campaign evidence\" [level=2, ref=e3]\n- searchbox \"Find a study\" [ref=e16]\n- combobox \"Objective\" [expanded=false, ref=e17]: sphere-2d-v1\n  - option \"All objectives\" [ref=e54]\n  - option \"ellipsoid-2d-v1\" [ref=e55]\n  - option \"rosenbrock-2d-v1\" [ref=e56]\n  - option \"sphere-2d-v1\" [selected, ref=e57]\n- combobox \"Outcome\" [expanded=false, ref=e18]: All outcomes\n  - option \"All outcomes\" [selected, ref=e58]\n  - option \"Candidate lower\" [ref=e59]\n  - option \"Baseline lower\" [ref=e60]\n  - option \"Tie\" [ref=e61]\n  - option \"Inconclusive\" [ref=e62]\n- combobox \"Order\" [expanded=false, ref=e19]: Frozen order\n  - option \"Frozen order\" [selected, ref=e63]\n  - option \"Highest charged cost\" [ref=e64]\n- button \"Reset filters\" [ref=e7]\n- heading \"sphere\" [level=3, ref=e20]\n- button \"Inspect sphere\" [ref=e21]\n- link \"Full report\" [ref=e22]\n- heading \"sphere-fixed-step\" [level=3, ref=e23]\n- button \"Inspect sphere-fixed-step\" [ref=e24]\n- link \"Full report\" [ref=e25]\n- heading \"sphere-grid\" [level=3, ref=e26]\n- button \"Inspect sphere-grid\" [ref=e27]\n- link \"Full report\" [ref=e28]\n- region \"Selected study evidence\" [ref=e4]\n  - heading \"sphere\" [level=2, ref=e8]\n  - link \"Open full study report and provenance\" [ref=e9]\n  - heading \"Paired seed uncertainty\" [level=3, ref=e10]\n  - heading \"Trial evidence\" [level=3, ref=e11]\n  - combobox \"Choose a trial\" [expanded=false, ref=e12]: confirmation-uniform_random-101 \u00b7 COMPLETED\n    - option \"development-uniform_random-11 \u00b7 COMPLETED\" [ref=e30]\n    - option \"development-uniform_random-22 \u00b7 COMPLETED\" [ref=e31]\n    - option \"development-uniform_random-33 \u00b7 COMPLETED\" [ref=e32]\n    - option \"development-coordinate_refinement-11 \u00b7 COMPLETED\" [ref=e33]\n    - option \"development-coordinate_refinement-22 \u00b7 COMPLETED\" [ref=e34]\n    - option \"development-coordinate_refinement-33 \u00b7 COMPLETED\" [ref=e35]\n    - option \"confirmation-uniform_random-101 \u00b7 COMPLETED\" [selected, ref=e36]\n    - option \"confirmation-uniform_random-202 \u00b7 COMPLETED\" [ref=e37]\n    - option \"confirmation-uniform_random-303 \u00b7 COMPLETED\" [ref=e38]\n    - option \"confirmation-coordinate_refinement-101 \u00b7 COMPLETED\" [ref=e39]\n    - option \"confirmation-coordinate_refinement-202 \u00b7 COMPLETED\" [ref=e40]\n    - option \"confirmation-coordinate_refinement-303 \u00b7 COMPLETED\" [ref=e41]\n    - option \"reproduction-development-uniform_random-11 \u00b7 COMPLETED\" [ref=e42]\n    - option \"reproduction-development-uniform_random-22 \u00b7 COMPLETED\" [ref=e43]\n    - option \"reproduction-development-uniform_random-33 \u00b7 COMPLETED\" [ref=e44]\n    - option \"reproduction-development-coordinate_refinement-11 \u00b7 COMPLETED\" [ref=e45]\n    - option \"reproduction-development-coordinate_refinement-22 \u00b7 COMPLETED\" [ref=e46]\n    - option \"reproduction-development-coordinate_refinement-33 \u00b7 COMPLETED\" [ref=e47]\n    - option \"reproduction-confirmation-uniform_random-101 \u00b7 COMPLETED\" [ref=e48]\n    - option \"reproduction-confirmation-uniform_random-202 \u00b7 COMPLETED\" [ref=e49]\n    - option \"reproduction-confirmation-uniform_random-303 \u00b7 COMPLETED\" [ref=e50]\n    - option \"reproduction-confirmation-coordinate_refinement-101 \u00b7 COMPLETED\" [ref=e51]\n    - option \"reproduction-confirmation-coordinate_refinement-202 \u00b7 COMPLETED\" [ref=e52]\n    - option \"reproduction-confirmation-coordinate_refinement-303 \u00b7 COMPLETED\" [ref=e53]\n  - link \"Link to this trial selection\" [ref=e29]\n- region \"What changes when one mechanism changes?\" [ref=e5]\n  - heading \"What changes when one mechanism changes?\" [level=2, ref=e13]\n  - region \"Ablation contrasts\" [ref=e14] focusable [tabindex]\n    - columnheader \"Variant\" [ref=e83]\n    - columnheader \"Reference\" [ref=e84]\n    - columnheader \"Changed factor\" [ref=e85]\n    - columnheader \"Eligibility\" [ref=e86]\n    - columnheader \"Median variant \u2212 reference\" [ref=e87]\n    - columnheader \"Uncertainty status\" [ref=e88]\n    - rowheader \"rosenbrock-fixed-step\" [ref=e65]\n      - link \"rosenbrock-fixed-step\" [ref=e89]\n    - cell \"rosenbrock\" [ref=e66]\n      - link \"rosenbrock\" [ref=e90]\n    - cell \"candidate\" [ref=e67]\n    - cell \"Eligible\" [ref=e68]\n    - cell \"0.5446874177\" [ref=e69]\n    - cell \"Deterministic no sampling interval\" [ref=e70]\n    - rowheader \"sphere-fixed-step\" [ref=e71]\n      - link \"sphere-fixed-step\" [ref=e91]\n    - cell \"sphere\" [ref=e72]\n      - link \"sphere\" [ref=e92]\n    - cell \"candidate\" [ref=e73]\n    - cell \"Eligible\" [ref=e74]\n    - cell \"0.04\" [ref=e75]\n    - cell \"Deterministic no sampling interval\" [ref=e76]\n    - rowheader \"ellipsoid-fixed-step\" [ref=e77]\n      - link \"ellipsoid-fixed-step\" [ref=e93]\n    - cell \"ellipsoid\" [ref=e78]\n      - link \"ellipsoid\" [ref=e94]\n    - cell \"candidate\" [ref=e79]\n    - cell \"Eligible\" [ref=e80]\n    - cell \"0.04\" [ref=e81]\n    - cell \"Deterministic no sampling interval\" [ref=e82]\n- region \"Evidence has boundaries\" [ref=e6]\n  - heading \"Evidence has boundaries\" [level=2, ref=e15]\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "select",
+        "#trial-select",
+        "confirmation-coordinate_refinement-202"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Done\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "snapshot",
+        "-i"
+      ],
+      "exit_code": 0,
+      "stdout": "- link \"Skip to evidence\" [ref=e1]\n- heading \"Numerical research campaign\" [level=1, ref=e2]\n- heading \"Campaign evidence\" [level=2, ref=e3]\n- searchbox \"Find a study\" [ref=e16]\n- combobox \"Objective\" [expanded=false, ref=e17]: sphere-2d-v1\n  - option \"All objectives\" [ref=e54]\n  - option \"ellipsoid-2d-v1\" [ref=e55]\n  - option \"rosenbrock-2d-v1\" [ref=e56]\n  - option \"sphere-2d-v1\" [selected, ref=e57]\n- combobox \"Outcome\" [expanded=false, ref=e18]: All outcomes\n  - option \"All outcomes\" [selected, ref=e58]\n  - option \"Candidate lower\" [ref=e59]\n  - option \"Baseline lower\" [ref=e60]\n  - option \"Tie\" [ref=e61]\n  - option \"Inconclusive\" [ref=e62]\n- combobox \"Order\" [expanded=false, ref=e19]: Frozen order\n  - option \"Frozen order\" [selected, ref=e63]\n  - option \"Highest charged cost\" [ref=e64]\n- button \"Reset filters\" [ref=e7]\n- heading \"sphere\" [level=3, ref=e20]\n- button \"Inspect sphere\" [ref=e21]\n- link \"Full report\" [ref=e22]\n- heading \"sphere-fixed-step\" [level=3, ref=e23]\n- button \"Inspect sphere-fixed-step\" [ref=e24]\n- link \"Full report\" [ref=e25]\n- heading \"sphere-grid\" [level=3, ref=e26]\n- button \"Inspect sphere-grid\" [ref=e27]\n- link \"Full report\" [ref=e28]\n- region \"Selected study evidence\" [ref=e4]\n  - heading \"sphere\" [level=2, ref=e8]\n  - link \"Open full study report and provenance\" [ref=e9]\n  - heading \"Paired seed uncertainty\" [level=3, ref=e10]\n  - heading \"Trial evidence\" [level=3, ref=e11]\n  - combobox \"Choose a trial\" [expanded=false, ref=e12]: confirmation-coordinate_refinement-202 \u00b7 COMPLETED\n    - option \"development-uniform_random-11 \u00b7 COMPLETED\" [ref=e30]\n    - option \"development-uniform_random-22 \u00b7 COMPLETED\" [ref=e31]\n    - option \"development-uniform_random-33 \u00b7 COMPLETED\" [ref=e32]\n    - option \"development-coordinate_refinement-11 \u00b7 COMPLETED\" [ref=e33]\n    - option \"development-coordinate_refinement-22 \u00b7 COMPLETED\" [ref=e34]\n    - option \"development-coordinate_refinement-33 \u00b7 COMPLETED\" [ref=e35]\n    - option \"confirmation-uniform_random-101 \u00b7 COMPLETED\" [ref=e36]\n    - option \"confirmation-uniform_random-202 \u00b7 COMPLETED\" [ref=e37]\n    - option \"confirmation-uniform_random-303 \u00b7 COMPLETED\" [ref=e38]\n    - option \"confirmation-coordinate_refinement-101 \u00b7 COMPLETED\" [ref=e39]\n    - option \"confirmation-coordinate_refinement-202 \u00b7 COMPLETED\" [selected, ref=e40]\n    - option \"confirmation-coordinate_refinement-303 \u00b7 COMPLETED\" [ref=e41]\n    - option \"reproduction-development-uniform_random-11 \u00b7 COMPLETED\" [ref=e42]\n    - option \"reproduction-development-uniform_random-22 \u00b7 COMPLETED\" [ref=e43]\n    - option \"reproduction-development-uniform_random-33 \u00b7 COMPLETED\" [ref=e44]\n    - option \"reproduction-development-coordinate_refinement-11 \u00b7 COMPLETED\" [ref=e45]\n    - option \"reproduction-development-coordinate_refinement-22 \u00b7 COMPLETED\" [ref=e46]\n    - option \"reproduction-development-coordinate_refinement-33 \u00b7 COMPLETED\" [ref=e47]\n    - option \"reproduction-confirmation-uniform_random-101 \u00b7 COMPLETED\" [ref=e48]\n    - option \"reproduction-confirmation-uniform_random-202 \u00b7 COMPLETED\" [ref=e49]\n    - option \"reproduction-confirmation-uniform_random-303 \u00b7 COMPLETED\" [ref=e50]\n    - option \"reproduction-confirmation-coordinate_refinement-101 \u00b7 COMPLETED\" [ref=e51]\n    - option \"reproduction-confirmation-coordinate_refinement-202 \u00b7 COMPLETED\" [ref=e52]\n    - option \"reproduction-confirmation-coordinate_refinement-303 \u00b7 COMPLETED\" [ref=e53]\n  - link \"Link to this trial selection\" [ref=e29]\n- region \"What changes when one mechanism changes?\" [ref=e5]\n  - heading \"What changes when one mechanism changes?\" [level=2, ref=e13]\n  - region \"Ablation contrasts\" [ref=e14] focusable [tabindex]\n    - columnheader \"Variant\" [ref=e83]\n    - columnheader \"Reference\" [ref=e84]\n    - columnheader \"Changed factor\" [ref=e85]\n    - columnheader \"Eligibility\" [ref=e86]\n    - columnheader \"Median variant \u2212 reference\" [ref=e87]\n    - columnheader \"Uncertainty status\" [ref=e88]\n    - rowheader \"rosenbrock-fixed-step\" [ref=e65]\n      - link \"rosenbrock-fixed-step\" [ref=e89]\n    - cell \"rosenbrock\" [ref=e66]\n      - link \"rosenbrock\" [ref=e90]\n    - cell \"candidate\" [ref=e67]\n    - cell \"Eligible\" [ref=e68]\n    - cell \"0.5446874177\" [ref=e69]\n    - cell \"Deterministic no sampling interval\" [ref=e70]\n    - rowheader \"sphere-fixed-step\" [ref=e71]\n      - link \"sphere-fixed-step\" [ref=e91]\n    - cell \"sphere\" [ref=e72]\n      - link \"sphere\" [ref=e92]\n    - cell \"candidate\" [ref=e73]\n    - cell \"Eligible\" [ref=e74]\n    - cell \"0.04\" [ref=e75]\n    - cell \"Deterministic no sampling interval\" [ref=e76]\n    - rowheader \"ellipsoid-fixed-step\" [ref=e77]\n      - link \"ellipsoid-fixed-step\" [ref=e93]\n    - cell \"ellipsoid\" [ref=e78]\n      - link \"ellipsoid\" [ref=e94]\n    - cell \"candidate\" [ref=e79]\n    - cell \"Eligible\" [ref=e80]\n    - cell \"0.04\" [ref=e81]\n    - cell \"Deterministic no sampling interval\" [ref=e82]\n- region \"Evidence has boundaries\" [ref=e6]\n  - heading \"Evidence has boundaries\" [level=2, ref=e15]\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "focus",
+        "#trial-detail details details > summary"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Done\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "press",
+        "Enter"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Done\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "eval",
+        "JSON.stringify({open:document.querySelector(\"#trial-detail details details\").open,rows:document.querySelectorAll(\"#trial-detail tbody tr\").length,focused:document.activeElement.tagName,hash:location.hash})"
+      ],
+      "exit_code": 0,
+      "stdout": "\"{\\\"open\\\":true,\\\"rows\\\":128,\\\"focused\\\":\\\"SUMMARY\\\",\\\"hash\\\":\\\"#study=sphere&trial=confirmation-coordinate_refinement-202\\\"}\"\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "eval",
+        "document.querySelector(\"#trial-select\").scrollIntoView({block:\"start\"})"
+      ],
+      "exit_code": 0,
+      "stdout": "null\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "screenshot"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Screenshot saved to $BROWSER_SCREENSHOT_DIR/screenshot-1788886343299.png\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "open",
+        "file://$PROJECT/.build/05-preflight2/bundle/index.html#study=sphere-grid&trial=confirmation-coordinate_refinement-202"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Research Continuum \u00b7 numerical-workbench\n  file://$PROJECT/.build/05-preflight2/bundle/index.html#study=sphere-grid&trial=confirmation-coordinate_refinement-202\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "eval",
+        "JSON.stringify({selected:document.querySelector(\"#study-detail h2\").textContent,trial:document.querySelector(\"#trial-select\").value})"
+      ],
+      "exit_code": 0,
+      "stdout": "\"{\\\"selected\\\":\\\"sphere-grid\\\",\\\"trial\\\":\\\"confirmation-coordinate_refinement-202\\\"}\"\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "snapshot",
+        "-i"
+      ],
+      "exit_code": 0,
+      "stdout": "- link \"Skip to evidence\" [ref=e1]\n- heading \"Numerical research campaign\" [level=1, ref=e2]\n- heading \"Campaign evidence\" [level=2, ref=e3]\n- searchbox \"Find a study\" [ref=e16]\n- combobox \"Objective\" [expanded=false, ref=e17]: All objectives\n  - option \"All objectives\" [selected, ref=e72]\n  - option \"ellipsoid-2d-v1\" [ref=e73]\n  - option \"rosenbrock-2d-v1\" [ref=e74]\n  - option \"sphere-2d-v1\" [ref=e75]\n- combobox \"Outcome\" [expanded=false, ref=e18]: All outcomes\n  - option \"All outcomes\" [selected, ref=e76]\n  - option \"Candidate lower\" [ref=e77]\n  - option \"Baseline lower\" [ref=e78]\n  - option \"Tie\" [ref=e79]\n  - option \"Inconclusive\" [ref=e80]\n- combobox \"Order\" [expanded=false, ref=e19]: Frozen order\n  - option \"Frozen order\" [selected, ref=e81]\n  - option \"Highest charged cost\" [ref=e82]\n- button \"Reset filters\" [ref=e7]\n- heading \"rosenbrock\" [level=3, ref=e20]\n- button \"Inspect rosenbrock\" [ref=e21]\n- link \"Full report\" [ref=e22]\n- heading \"rosenbrock-fixed-step\" [level=3, ref=e23]\n- button \"Inspect rosenbrock-fixed-step\" [ref=e24]\n- link \"Full report\" [ref=e25]\n- heading \"rosenbrock-grid\" [level=3, ref=e26]\n- button \"Inspect rosenbrock-grid\" [ref=e27]\n- link \"Full report\" [ref=e28]\n- heading \"sphere\" [level=3, ref=e29]\n- button \"Inspect sphere\" [ref=e30]\n- link \"Full report\" [ref=e31]\n- heading \"sphere-fixed-step\" [level=3, ref=e32]\n- button \"Inspect sphere-fixed-step\" [ref=e33]\n- link \"Full report\" [ref=e34]\n- heading \"sphere-grid\" [level=3, ref=e35]\n- button \"Inspect sphere-grid\" [ref=e36]\n- link \"Full report\" [ref=e37]\n- heading \"ellipsoid\" [level=3, ref=e38]\n- button \"Inspect ellipsoid\" [ref=e39]\n- link \"Full report\" [ref=e40]\n- heading \"ellipsoid-fixed-step\" [level=3, ref=e41]\n- button \"Inspect ellipsoid-fixed-step\" [ref=e42]\n- link \"Full report\" [ref=e43]\n- heading \"ellipsoid-grid\" [level=3, ref=e44]\n- button \"Inspect ellipsoid-grid\" [ref=e45]\n- link \"Full report\" [ref=e46]\n- region \"Selected study evidence\" [ref=e4]\n  - heading \"sphere-grid\" [level=2, ref=e8]\n  - link \"Open full study report and provenance\" [ref=e9]\n  - heading \"Paired seed uncertainty\" [level=3, ref=e10]\n  - heading \"Trial evidence\" [level=3, ref=e11]\n  - combobox \"Choose a trial\" [expanded=false, ref=e12]: confirmation-coordinate_refinement-202 \u00b7 COMPLETED\n    - option \"development-grid_search-11 \u00b7 COMPLETED\" [ref=e48]\n    - option \"development-grid_search-22 \u00b7 COMPLETED\" [ref=e49]\n    - option \"development-grid_search-33 \u00b7 COMPLETED\" [ref=e50]\n    - option \"development-coordinate_refinement-11 \u00b7 COMPLETED\" [ref=e51]\n    - option \"development-coordinate_refinement-22 \u00b7 COMPLETED\" [ref=e52]\n    - option \"development-coordinate_refinement-33 \u00b7 COMPLETED\" [ref=e53]\n    - option \"confirmation-grid_search-101 \u00b7 COMPLETED\" [ref=e54]\n    - option \"confirmation-grid_search-202 \u00b7 COMPLETED\" [ref=e55]\n    - option \"confirmation-grid_search-303 \u00b7 COMPLETED\" [ref=e56]\n    - option \"confirmation-coordinate_refinement-101 \u00b7 COMPLETED\" [ref=e57]\n    - option \"confirmation-coordinate_refinement-202 \u00b7 COMPLETED\" [selected, ref=e58]\n    - option \"confirmation-coordinate_refinement-303 \u00b7 COMPLETED\" [ref=e59]\n    - option \"reproduction-development-grid_search-11 \u00b7 COMPLETED\" [ref=e60]\n    - option \"reproduction-development-grid_search-22 \u00b7 COMPLETED\" [ref=e61]\n    - option \"reproduction-development-grid_search-33 \u00b7 COMPLETED\" [ref=e62]\n    - option \"reproduction-development-coordinate_refinement-11 \u00b7 COMPLETED\" [ref=e63]\n    - option \"reproduction-development-coordinate_refinement-22 \u00b7 COMPLETED\" [ref=e64]\n    - option \"reproduction-development-coordinate_refinement-33 \u00b7 COMPLETED\" [ref=e65]\n    - option \"reproduction-confirmation-grid_search-101 \u00b7 COMPLETED\" [ref=e66]\n    - option \"reproduction-confirmation-grid_search-202 \u00b7 COMPLETED\" [ref=e67]\n    - option \"reproduction-confirmation-grid_search-303 \u00b7 COMPLETED\" [ref=e68]\n    - option \"reproduction-confirmation-coordinate_refinement-101 \u00b7 COMPLETED\" [ref=e69]\n    - option \"reproduction-confirmation-coordinate_refinement-202 \u00b7 COMPLETED\" [ref=e70]\n    - option \"reproduction-confirmation-coordinate_refinement-303 \u00b7 COMPLETED\" [ref=e71]\n  - link \"Link to this trial selection\" [ref=e47]\n- region \"What changes when one mechanism changes?\" [ref=e5]\n  - heading \"What changes when one mechanism changes?\" [level=2, ref=e13]\n  - region \"Ablation contrasts\" [ref=e14] focusable [tabindex]\n    - columnheader \"Variant\" [ref=e101]\n    - columnheader \"Reference\" [ref=e102]\n    - columnheader \"Changed factor\" [ref=e103]\n    - columnheader \"Eligibility\" [ref=e104]\n    - columnheader \"Median variant \u2212 reference\" [ref=e105]\n    - columnheader \"Uncertainty status\" [ref=e106]\n    - rowheader \"rosenbrock-fixed-step\" [ref=e83]\n      - link \"rosenbrock-fixed-step\" [ref=e107]\n    - cell \"rosenbrock\" [ref=e84]\n      - link \"rosenbrock\" [ref=e108]\n    - cell \"candidate\" [ref=e85]\n    - cell \"Eligible\" [ref=e86]\n    - cell \"0.5446874177\" [ref=e87]\n    - cell \"Deterministic no sampling interval\" [ref=e88]\n    - rowheader \"sphere-fixed-step\" [ref=e89]\n      - link \"sphere-fixed-step\" [ref=e109]\n    - cell \"sphere\" [ref=e90]\n      - link \"sphere\" [ref=e110]\n    - cell \"candidate\" [ref=e91]\n    - cell \"Eligible\" [ref=e92]\n    - cell \"0.04\" [ref=e93]\n    - cell \"Deterministic no sampling interval\" [ref=e94]\n    - rowheader \"ellipsoid-fixed-step\" [ref=e95]\n      - link \"ellipsoid-fixed-step\" [ref=e111]\n    - cell \"ellipsoid\" [ref=e96]\n      - link \"ellipsoid\" [ref=e112]\n    - cell \"candidate\" [ref=e97]\n    - cell \"Eligible\" [ref=e98]\n    - cell \"0.04\" [ref=e99]\n    - cell \"Deterministic no sampling interval\" [ref=e100]\n- region \"Evidence has boundaries\" [ref=e6]\n  - heading \"Evidence has boundaries\" [level=2, ref=e15]\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "fill",
+        "#search",
+        "no-such-study"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Done\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "eval",
+        "JSON.stringify({shown:document.querySelectorAll(\".study:not([hidden])\").length,empty:!document.querySelector(\"#empty\").hidden,detail:document.querySelector(\"#study-detail h2\").textContent})"
+      ],
+      "exit_code": 0,
+      "stdout": "\"{\\\"shown\\\":0,\\\"empty\\\":true,\\\"detail\\\":\\\"No matching study\\\"}\"\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "snapshot",
+        "-i"
+      ],
+      "exit_code": 0,
+      "stdout": "- link \"Skip to evidence\" [ref=e1]\n- heading \"Numerical research campaign\" [level=1, ref=e2]\n- heading \"Campaign evidence\" [level=2, ref=e3]\n- searchbox \"Find a study\" [ref=e12]: no-such-study\n- combobox \"Objective\" [expanded=false, ref=e13]: All objectives\n  - option \"All objectives\" [selected, ref=e16]\n  - option \"ellipsoid-2d-v1\" [ref=e17]\n  - option \"rosenbrock-2d-v1\" [ref=e18]\n  - option \"sphere-2d-v1\" [ref=e19]\n- combobox \"Outcome\" [expanded=false, ref=e14]: All outcomes\n  - option \"All outcomes\" [selected, ref=e20]\n  - option \"Candidate lower\" [ref=e21]\n  - option \"Baseline lower\" [ref=e22]\n  - option \"Tie\" [ref=e23]\n  - option \"Inconclusive\" [ref=e24]\n- combobox \"Order\" [expanded=false, ref=e15]: Frozen order\n  - option \"Frozen order\" [selected, ref=e25]\n  - option \"Highest charged cost\" [ref=e26]\n- button \"Reset filters\" [ref=e7]\n- region \"Selected study evidence\" [ref=e4]\n  - heading \"No matching study\" [level=2, ref=e8]\n- region \"What changes when one mechanism changes?\" [ref=e5]\n  - heading \"What changes when one mechanism changes?\" [level=2, ref=e9]\n  - region \"Ablation contrasts\" [ref=e10] focusable [tabindex]\n    - columnheader \"Variant\" [ref=e45]\n    - columnheader \"Reference\" [ref=e46]\n    - columnheader \"Changed factor\" [ref=e47]\n    - columnheader \"Eligibility\" [ref=e48]\n    - columnheader \"Median variant \u2212 reference\" [ref=e49]\n    - columnheader \"Uncertainty status\" [ref=e50]\n    - rowheader \"rosenbrock-fixed-step\" [ref=e27]\n      - link \"rosenbrock-fixed-step\" [ref=e51]\n    - cell \"rosenbrock\" [ref=e28]\n      - link \"rosenbrock\" [ref=e52]\n    - cell \"candidate\" [ref=e29]\n    - cell \"Eligible\" [ref=e30]\n    - cell \"0.5446874177\" [ref=e31]\n    - cell \"Deterministic no sampling interval\" [ref=e32]\n    - rowheader \"sphere-fixed-step\" [ref=e33]\n      - link \"sphere-fixed-step\" [ref=e53]\n    - cell \"sphere\" [ref=e34]\n      - link \"sphere\" [ref=e54]\n    - cell \"candidate\" [ref=e35]\n    - cell \"Eligible\" [ref=e36]\n    - cell \"0.04\" [ref=e37]\n    - cell \"Deterministic no sampling interval\" [ref=e38]\n    - rowheader \"ellipsoid-fixed-step\" [ref=e39]\n      - link \"ellipsoid-fixed-step\" [ref=e55]\n    - cell \"ellipsoid\" [ref=e40]\n      - link \"ellipsoid\" [ref=e56]\n    - cell \"candidate\" [ref=e41]\n    - cell \"Eligible\" [ref=e42]\n    - cell \"0.04\" [ref=e43]\n    - cell \"Deterministic no sampling interval\" [ref=e44]\n- region \"Evidence has boundaries\" [ref=e6]\n  - heading \"Evidence has boundaries\" [level=2, ref=e11]\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "click",
+        "#reset"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Done\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "eval",
+        "document.activeElement.id"
+      ],
+      "exit_code": 0,
+      "stdout": "\"search\"\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "set",
+        "viewport",
+        "390",
+        "844"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Done\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "open",
+        "file://$PROJECT/.build/05-preflight2/bundle/index.html"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Research Continuum \u00b7 numerical-workbench\n  file://$PROJECT/.build/05-preflight2/bundle/index.html#study=rosenbrock&trial=confirmation-uniform_random-101\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "snapshot",
+        "-i"
+      ],
+      "exit_code": 0,
+      "stdout": "- link \"Skip to evidence\" [ref=e1]\n- heading \"Numerical research campaign\" [level=1, ref=e2]\n- heading \"Campaign evidence\" [level=2, ref=e3]\n- searchbox \"Find a study\" [ref=e16]\n- combobox \"Objective\" [expanded=false, ref=e17]: All objectives\n  - option \"All objectives\" [selected, ref=e72]\n  - option \"ellipsoid-2d-v1\" [ref=e73]\n  - option \"rosenbrock-2d-v1\" [ref=e74]\n  - option \"sphere-2d-v1\" [ref=e75]\n- combobox \"Outcome\" [expanded=false, ref=e18]: All outcomes\n  - option \"All outcomes\" [selected, ref=e76]\n  - option \"Candidate lower\" [ref=e77]\n  - option \"Baseline lower\" [ref=e78]\n  - option \"Tie\" [ref=e79]\n  - option \"Inconclusive\" [ref=e80]\n- combobox \"Order\" [expanded=false, ref=e19]: Frozen order\n  - option \"Frozen order\" [selected, ref=e81]\n  - option \"Highest charged cost\" [ref=e82]\n- button \"Reset filters\" [ref=e7]\n- heading \"rosenbrock\" [level=3, ref=e20]\n- button \"Inspect rosenbrock\" [ref=e21]\n- link \"Full report\" [ref=e22]\n- heading \"rosenbrock-fixed-step\" [level=3, ref=e23]\n- button \"Inspect rosenbrock-fixed-step\" [ref=e24]\n- link \"Full report\" [ref=e25]\n- heading \"rosenbrock-grid\" [level=3, ref=e26]\n- button \"Inspect rosenbrock-grid\" [ref=e27]\n- link \"Full report\" [ref=e28]\n- heading \"sphere\" [level=3, ref=e29]\n- button \"Inspect sphere\" [ref=e30]\n- link \"Full report\" [ref=e31]\n- heading \"sphere-fixed-step\" [level=3, ref=e32]\n- button \"Inspect sphere-fixed-step\" [ref=e33]\n- link \"Full report\" [ref=e34]\n- heading \"sphere-grid\" [level=3, ref=e35]\n- button \"Inspect sphere-grid\" [ref=e36]\n- link \"Full report\" [ref=e37]\n- heading \"ellipsoid\" [level=3, ref=e38]\n- button \"Inspect ellipsoid\" [ref=e39]\n- link \"Full report\" [ref=e40]\n- heading \"ellipsoid-fixed-step\" [level=3, ref=e41]\n- button \"Inspect ellipsoid-fixed-step\" [ref=e42]\n- link \"Full report\" [ref=e43]\n- heading \"ellipsoid-grid\" [level=3, ref=e44]\n- button \"Inspect ellipsoid-grid\" [ref=e45]\n- link \"Full report\" [ref=e46]\n- region \"Selected study evidence\" [ref=e4]\n  - heading \"rosenbrock\" [level=2, ref=e8]\n  - link \"Open full study report and provenance\" [ref=e9]\n  - heading \"Paired seed uncertainty\" [level=3, ref=e10]\n  - heading \"Trial evidence\" [level=3, ref=e11]\n  - combobox \"Choose a trial\" [expanded=false, ref=e12]: confirmation-uniform_random-101 \u00b7 COMPLETED\n    - option \"development-uniform_random-11 \u00b7 COMPLETED\" [ref=e48]\n    - option \"development-uniform_random-22 \u00b7 COMPLETED\" [ref=e49]\n    - option \"development-uniform_random-33 \u00b7 COMPLETED\" [ref=e50]\n    - option \"development-coordinate_refinement-11 \u00b7 COMPLETED\" [ref=e51]\n    - option \"development-coordinate_refinement-22 \u00b7 COMPLETED\" [ref=e52]\n    - option \"development-coordinate_refinement-33 \u00b7 COMPLETED\" [ref=e53]\n    - option \"confirmation-uniform_random-101 \u00b7 COMPLETED\" [selected, ref=e54]\n    - option \"confirmation-uniform_random-202 \u00b7 COMPLETED\" [ref=e55]\n    - option \"confirmation-uniform_random-303 \u00b7 COMPLETED\" [ref=e56]\n    - option \"confirmation-coordinate_refinement-101 \u00b7 COMPLETED\" [ref=e57]\n    - option \"confirmation-coordinate_refinement-202 \u00b7 COMPLETED\" [ref=e58]\n    - option \"confirmation-coordinate_refinement-303 \u00b7 COMPLETED\" [ref=e59]\n    - option \"reproduction-development-uniform_random-11 \u00b7 COMPLETED\" [ref=e60]\n    - option \"reproduction-development-uniform_random-22 \u00b7 COMPLETED\" [ref=e61]\n    - option \"reproduction-development-uniform_random-33 \u00b7 COMPLETED\" [ref=e62]\n    - option \"reproduction-development-coordinate_refinement-11 \u00b7 COMPLETED\" [ref=e63]\n    - option \"reproduction-development-coordinate_refinement-22 \u00b7 COMPLETED\" [ref=e64]\n    - option \"reproduction-development-coordinate_refinement-33 \u00b7 COMPLETED\" [ref=e65]\n    - option \"reproduction-confirmation-uniform_random-101 \u00b7 COMPLETED\" [ref=e66]\n    - option \"reproduction-confirmation-uniform_random-202 \u00b7 COMPLETED\" [ref=e67]\n    - option \"reproduction-confirmation-uniform_random-303 \u00b7 COMPLETED\" [ref=e68]\n    - option \"reproduction-confirmation-coordinate_refinement-101 \u00b7 COMPLETED\" [ref=e69]\n    - option \"reproduction-confirmation-coordinate_refinement-202 \u00b7 COMPLETED\" [ref=e70]\n    - option \"reproduction-confirmation-coordinate_refinement-303 \u00b7 COMPLETED\" [ref=e71]\n  - link \"Link to this trial selection\" [ref=e47]\n- region \"What changes when one mechanism changes?\" [ref=e5]\n  - heading \"What changes when one mechanism changes?\" [level=2, ref=e13]\n  - region \"Ablation contrasts\" [ref=e14] focusable [tabindex]\n    - columnheader \"Variant\" [ref=e101]\n    - columnheader \"Reference\" [ref=e102]\n    - columnheader \"Changed factor\" [ref=e103]\n    - columnheader \"Eligibility\" [ref=e104]\n    - columnheader \"Median variant \u2212 reference\" [ref=e105]\n    - columnheader \"Uncertainty status\" [ref=e106]\n    - rowheader \"rosenbrock-fixed-step\" [ref=e83]\n      - link \"rosenbrock-fixed-step\" [ref=e107]\n    - cell \"rosenbrock\" [ref=e84]\n      - link \"rosenbrock\" [ref=e108]\n    - cell \"candidate\" [ref=e85]\n    - cell \"Eligible\" [ref=e86]\n    - cell \"0.5446874177\" [ref=e87]\n    - cell \"Deterministic no sampling interval\" [ref=e88]\n    - rowheader \"sphere-fixed-step\" [ref=e89]\n      - link \"sphere-fixed-step\" [ref=e109]\n    - cell \"sphere\" [ref=e90]\n      - link \"sphere\" [ref=e110]\n    - cell \"candidate\" [ref=e91]\n    - cell \"Eligible\" [ref=e92]\n    - cell \"0.04\" [ref=e93]\n    - cell \"Deterministic no sampling interval\" [ref=e94]\n    - rowheader \"ellipsoid-fixed-step\" [ref=e95]\n      - link \"ellipsoid-fixed-step\" [ref=e111]\n    - cell \"ellipsoid\" [ref=e96]\n      - link \"ellipsoid\" [ref=e112]\n    - cell \"candidate\" [ref=e97]\n    - cell \"Eligible\" [ref=e98]\n    - cell \"0.04\" [ref=e99]\n    - cell \"Deterministic no sampling interval\" [ref=e100]\n- region \"Evidence has boundaries\" [ref=e6]\n  - heading \"Evidence has boundaries\" [level=2, ref=e15]\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "screenshot"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Screenshot saved to $BROWSER_SCREENSHOT_DIR/screenshot-1788886343760.png\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "focus",
+        ".skip"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Done\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "press",
+        "Enter"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Done\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "eval",
+        "document.activeElement.id"
+      ],
+      "exit_code": 0,
+      "stdout": "\"main\"\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "set",
+        "viewport",
+        "320",
+        "800"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Done\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "set",
+        "media",
+        "light",
+        "reduced-motion"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Done\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "eval",
+        "JSON.stringify({width:innerWidth,scroll:document.documentElement.scrollWidth,reduced:matchMedia(\"(prefers-reduced-motion: reduce)\").matches})"
+      ],
+      "exit_code": 0,
+      "stdout": "\"{\\\"width\\\":320,\\\"scroll\\\":320,\\\"reduced\\\":true}\"\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "eval",
+        "document.documentElement.style.zoom=\"2\""
+      ],
+      "exit_code": 0,
+      "stdout": "\"2\"\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "eval",
+        "JSON.stringify({width:innerWidth,right:document.body.getBoundingClientRect().right,zoom:getComputedStyle(document.documentElement).zoom})"
+      ],
+      "exit_code": 0,
+      "stdout": "\"{\\\"width\\\":320,\\\"right\\\":320,\\\"zoom\\\":\\\"2\\\"}\"\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "eval",
+        "document.documentElement.style.zoom=\"1\""
+      ],
+      "exit_code": 0,
+      "stdout": "\"1\"\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "snapshot",
+        "-i"
+      ],
+      "exit_code": 0,
+      "stdout": "- link \"Skip to evidence\" [ref=e1]\n- heading \"Numerical research campaign\" [level=1, ref=e2]\n- heading \"Campaign evidence\" [level=2, ref=e3]\n- searchbox \"Find a study\" [ref=e16]\n- combobox \"Objective\" [expanded=false, ref=e17]: All objectives\n  - option \"All objectives\" [selected, ref=e72]\n  - option \"ellipsoid-2d-v1\" [ref=e73]\n  - option \"rosenbrock-2d-v1\" [ref=e74]\n  - option \"sphere-2d-v1\" [ref=e75]\n- combobox \"Outcome\" [expanded=false, ref=e18]: All outcomes\n  - option \"All outcomes\" [selected, ref=e76]\n  - option \"Candidate lower\" [ref=e77]\n  - option \"Baseline lower\" [ref=e78]\n  - option \"Tie\" [ref=e79]\n  - option \"Inconclusive\" [ref=e80]\n- combobox \"Order\" [expanded=false, ref=e19]: Frozen order\n  - option \"Frozen order\" [selected, ref=e81]\n  - option \"Highest charged cost\" [ref=e82]\n- button \"Reset filters\" [ref=e7]\n- heading \"rosenbrock\" [level=3, ref=e20]\n- button \"Inspect rosenbrock\" [ref=e21]\n- link \"Full report\" [ref=e22]\n- heading \"rosenbrock-fixed-step\" [level=3, ref=e23]\n- button \"Inspect rosenbrock-fixed-step\" [ref=e24]\n- link \"Full report\" [ref=e25]\n- heading \"rosenbrock-grid\" [level=3, ref=e26]\n- button \"Inspect rosenbrock-grid\" [ref=e27]\n- link \"Full report\" [ref=e28]\n- heading \"sphere\" [level=3, ref=e29]\n- button \"Inspect sphere\" [ref=e30]\n- link \"Full report\" [ref=e31]\n- heading \"sphere-fixed-step\" [level=3, ref=e32]\n- button \"Inspect sphere-fixed-step\" [ref=e33]\n- link \"Full report\" [ref=e34]\n- heading \"sphere-grid\" [level=3, ref=e35]\n- button \"Inspect sphere-grid\" [ref=e36]\n- link \"Full report\" [ref=e37]\n- heading \"ellipsoid\" [level=3, ref=e38]\n- button \"Inspect ellipsoid\" [ref=e39]\n- link \"Full report\" [ref=e40]\n- heading \"ellipsoid-fixed-step\" [level=3, ref=e41]\n- button \"Inspect ellipsoid-fixed-step\" [ref=e42]\n- link \"Full report\" [ref=e43]\n- heading \"ellipsoid-grid\" [level=3, ref=e44]\n- button \"Inspect ellipsoid-grid\" [ref=e45]\n- link \"Full report\" [ref=e46]\n- region \"Selected study evidence\" [ref=e4]\n  - heading \"rosenbrock\" [level=2, ref=e8]\n  - link \"Open full study report and provenance\" [ref=e9]\n  - heading \"Paired seed uncertainty\" [level=3, ref=e10]\n  - heading \"Trial evidence\" [level=3, ref=e11]\n  - combobox \"Choose a trial\" [expanded=false, ref=e12]: confirmation-uniform_random-101 \u00b7 COMPLETED\n    - option \"development-uniform_random-11 \u00b7 COMPLETED\" [ref=e48]\n    - option \"development-uniform_random-22 \u00b7 COMPLETED\" [ref=e49]\n    - option \"development-uniform_random-33 \u00b7 COMPLETED\" [ref=e50]\n    - option \"development-coordinate_refinement-11 \u00b7 COMPLETED\" [ref=e51]\n    - option \"development-coordinate_refinement-22 \u00b7 COMPLETED\" [ref=e52]\n    - option \"development-coordinate_refinement-33 \u00b7 COMPLETED\" [ref=e53]\n    - option \"confirmation-uniform_random-101 \u00b7 COMPLETED\" [selected, ref=e54]\n    - option \"confirmation-uniform_random-202 \u00b7 COMPLETED\" [ref=e55]\n    - option \"confirmation-uniform_random-303 \u00b7 COMPLETED\" [ref=e56]\n    - option \"confirmation-coordinate_refinement-101 \u00b7 COMPLETED\" [ref=e57]\n    - option \"confirmation-coordinate_refinement-202 \u00b7 COMPLETED\" [ref=e58]\n    - option \"confirmation-coordinate_refinement-303 \u00b7 COMPLETED\" [ref=e59]\n    - option \"reproduction-development-uniform_random-11 \u00b7 COMPLETED\" [ref=e60]\n    - option \"reproduction-development-uniform_random-22 \u00b7 COMPLETED\" [ref=e61]\n    - option \"reproduction-development-uniform_random-33 \u00b7 COMPLETED\" [ref=e62]\n    - option \"reproduction-development-coordinate_refinement-11 \u00b7 COMPLETED\" [ref=e63]\n    - option \"reproduction-development-coordinate_refinement-22 \u00b7 COMPLETED\" [ref=e64]\n    - option \"reproduction-development-coordinate_refinement-33 \u00b7 COMPLETED\" [ref=e65]\n    - option \"reproduction-confirmation-uniform_random-101 \u00b7 COMPLETED\" [ref=e66]\n    - option \"reproduction-confirmation-uniform_random-202 \u00b7 COMPLETED\" [ref=e67]\n    - option \"reproduction-confirmation-uniform_random-303 \u00b7 COMPLETED\" [ref=e68]\n    - option \"reproduction-confirmation-coordinate_refinement-101 \u00b7 COMPLETED\" [ref=e69]\n    - option \"reproduction-confirmation-coordinate_refinement-202 \u00b7 COMPLETED\" [ref=e70]\n    - option \"reproduction-confirmation-coordinate_refinement-303 \u00b7 COMPLETED\" [ref=e71]\n  - link \"Link to this trial selection\" [ref=e47]\n- region \"What changes when one mechanism changes?\" [ref=e5]\n  - heading \"What changes when one mechanism changes?\" [level=2, ref=e13]\n  - region \"Ablation contrasts\" [ref=e14] focusable [tabindex]\n    - columnheader \"Variant\" [ref=e101]\n    - columnheader \"Reference\" [ref=e102]\n    - columnheader \"Changed factor\" [ref=e103]\n    - columnheader \"Eligibility\" [ref=e104]\n    - columnheader \"Median variant \u2212 reference\" [ref=e105]\n    - columnheader \"Uncertainty status\" [ref=e106]\n    - rowheader \"rosenbrock-fixed-step\" [ref=e83]\n      - link \"rosenbrock-fixed-step\" [ref=e107]\n    - cell \"rosenbrock\" [ref=e84]\n      - link \"rosenbrock\" [ref=e108]\n    - cell \"candidate\" [ref=e85]\n    - cell \"Eligible\" [ref=e86]\n    - cell \"0.5446874177\" [ref=e87]\n    - cell \"Deterministic no sampling interval\" [ref=e88]\n    - rowheader \"sphere-fixed-step\" [ref=e89]\n      - link \"sphere-fixed-step\" [ref=e109]\n    - cell \"sphere\" [ref=e90]\n      - link \"sphere\" [ref=e110]\n    - cell \"candidate\" [ref=e91]\n    - cell \"Eligible\" [ref=e92]\n    - cell \"0.04\" [ref=e93]\n    - cell \"Deterministic no sampling interval\" [ref=e94]\n    - rowheader \"ellipsoid-fixed-step\" [ref=e95]\n      - link \"ellipsoid-fixed-step\" [ref=e111]\n    - cell \"ellipsoid\" [ref=e96]\n      - link \"ellipsoid\" [ref=e112]\n    - cell \"candidate\" [ref=e97]\n    - cell \"Eligible\" [ref=e98]\n    - cell \"0.04\" [ref=e99]\n    - cell \"Deterministic no sampling interval\" [ref=e100]\n- region \"Evidence has boundaries\" [ref=e6]\n  - heading \"Evidence has boundaries\" [level=2, ref=e15]\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "focus",
+        "#trial-detail details details > summary"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Done\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "press",
+        "Enter"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Done\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "snapshot",
+        "-i"
+      ],
+      "exit_code": 0,
+      "stdout": "- link \"Skip to evidence\" [ref=e1]\n- heading \"Numerical research campaign\" [level=1, ref=e2]\n- heading \"Campaign evidence\" [level=2, ref=e3]\n- searchbox \"Find a study\" [ref=e16]\n- combobox \"Objective\" [expanded=false, ref=e17]: All objectives\n  - option \"All objectives\" [selected, ref=e72]\n  - option \"ellipsoid-2d-v1\" [ref=e73]\n  - option \"rosenbrock-2d-v1\" [ref=e74]\n  - option \"sphere-2d-v1\" [ref=e75]\n- combobox \"Outcome\" [expanded=false, ref=e18]: All outcomes\n  - option \"All outcomes\" [selected, ref=e76]\n  - option \"Candidate lower\" [ref=e77]\n  - option \"Baseline lower\" [ref=e78]\n  - option \"Tie\" [ref=e79]\n  - option \"Inconclusive\" [ref=e80]\n- combobox \"Order\" [expanded=false, ref=e19]: Frozen order\n  - option \"Frozen order\" [selected, ref=e81]\n  - option \"Highest charged cost\" [ref=e82]\n- button \"Reset filters\" [ref=e7]\n- heading \"rosenbrock\" [level=3, ref=e20]\n- button \"Inspect rosenbrock\" [ref=e21]\n- link \"Full report\" [ref=e22]\n- heading \"rosenbrock-fixed-step\" [level=3, ref=e23]\n- button \"Inspect rosenbrock-fixed-step\" [ref=e24]\n- link \"Full report\" [ref=e25]\n- heading \"rosenbrock-grid\" [level=3, ref=e26]\n- button \"Inspect rosenbrock-grid\" [ref=e27]\n- link \"Full report\" [ref=e28]\n- heading \"sphere\" [level=3, ref=e29]\n- button \"Inspect sphere\" [ref=e30]\n- link \"Full report\" [ref=e31]\n- heading \"sphere-fixed-step\" [level=3, ref=e32]\n- button \"Inspect sphere-fixed-step\" [ref=e33]\n- link \"Full report\" [ref=e34]\n- heading \"sphere-grid\" [level=3, ref=e35]\n- button \"Inspect sphere-grid\" [ref=e36]\n- link \"Full report\" [ref=e37]\n- heading \"ellipsoid\" [level=3, ref=e38]\n- button \"Inspect ellipsoid\" [ref=e39]\n- link \"Full report\" [ref=e40]\n- heading \"ellipsoid-fixed-step\" [level=3, ref=e41]\n- button \"Inspect ellipsoid-fixed-step\" [ref=e42]\n- link \"Full report\" [ref=e43]\n- heading \"ellipsoid-grid\" [level=3, ref=e44]\n- button \"Inspect ellipsoid-grid\" [ref=e45]\n- link \"Full report\" [ref=e46]\n- region \"Selected study evidence\" [ref=e4]\n  - heading \"rosenbrock\" [level=2, ref=e8]\n  - link \"Open full study report and provenance\" [ref=e9]\n  - heading \"Paired seed uncertainty\" [level=3, ref=e10]\n  - heading \"Trial evidence\" [level=3, ref=e11]\n  - combobox \"Choose a trial\" [expanded=false, ref=e12]: confirmation-uniform_random-101 \u00b7 COMPLETED\n    - option \"development-uniform_random-11 \u00b7 COMPLETED\" [ref=e48]\n    - option \"development-uniform_random-22 \u00b7 COMPLETED\" [ref=e49]\n    - option \"development-uniform_random-33 \u00b7 COMPLETED\" [ref=e50]\n    - option \"development-coordinate_refinement-11 \u00b7 COMPLETED\" [ref=e51]\n    - option \"development-coordinate_refinement-22 \u00b7 COMPLETED\" [ref=e52]\n    - option \"development-coordinate_refinement-33 \u00b7 COMPLETED\" [ref=e53]\n    - option \"confirmation-uniform_random-101 \u00b7 COMPLETED\" [selected, ref=e54]\n    - option \"confirmation-uniform_random-202 \u00b7 COMPLETED\" [ref=e55]\n    - option \"confirmation-uniform_random-303 \u00b7 COMPLETED\" [ref=e56]\n    - option \"confirmation-coordinate_refinement-101 \u00b7 COMPLETED\" [ref=e57]\n    - option \"confirmation-coordinate_refinement-202 \u00b7 COMPLETED\" [ref=e58]\n    - option \"confirmation-coordinate_refinement-303 \u00b7 COMPLETED\" [ref=e59]\n    - option \"reproduction-development-uniform_random-11 \u00b7 COMPLETED\" [ref=e60]\n    - option \"reproduction-development-uniform_random-22 \u00b7 COMPLETED\" [ref=e61]\n    - option \"reproduction-development-uniform_random-33 \u00b7 COMPLETED\" [ref=e62]\n    - option \"reproduction-development-coordinate_refinement-11 \u00b7 COMPLETED\" [ref=e63]\n    - option \"reproduction-development-coordinate_refinement-22 \u00b7 COMPLETED\" [ref=e64]\n    - option \"reproduction-development-coordinate_refinement-33 \u00b7 COMPLETED\" [ref=e65]\n    - option \"reproduction-confirmation-uniform_random-101 \u00b7 COMPLETED\" [ref=e66]\n    - option \"reproduction-confirmation-uniform_random-202 \u00b7 COMPLETED\" [ref=e67]\n    - option \"reproduction-confirmation-uniform_random-303 \u00b7 COMPLETED\" [ref=e68]\n    - option \"reproduction-confirmation-coordinate_refinement-101 \u00b7 COMPLETED\" [ref=e69]\n    - option \"reproduction-confirmation-coordinate_refinement-202 \u00b7 COMPLETED\" [ref=e70]\n    - option \"reproduction-confirmation-coordinate_refinement-303 \u00b7 COMPLETED\" [ref=e71]\n  - link \"Link to this trial selection\" [ref=e47]\n  - region \"Every recorded observation. Boundary duplicates consume allowance.\" [ref=e83] focusable [tabindex]\n    - columnheader \"Evaluation\" [ref=e754]\n    - columnheader \"x\" [ref=e755]\n    - columnheader \"y\" [ref=e756]\n    - columnheader \"Objective\" [ref=e757]\n    - columnheader \"Best so far\" [ref=e758]\n    - rowheader \"1\" [ref=e114]\n    - cell \"0.32460853\" [ref=e115]\n    - cell \"-0.2209820179\" [ref=e116]\n    - cell \"11.10676314\" [ref=e117]\n    - cell \"11.10676314\" [ref=e118]\n    - rowheader \"2\" [ref=e119]\n    - cell \"1.861004428\" [ref=e120]\n    - cell \"2.695905607\" [ref=e121]\n    - cell \"59.63649694\" [ref=e122]\n    - cell \"11.10676314\" [ref=e123]\n    - rowheader \"3\" [ref=e124]\n    - cell \"-0.1314452872\" [ref=e125]\n    - cell \"1.653882578\" [ref=e126]\n    - cell \"269.1276676\" [ref=e127]\n    - cell \"11.10676314\" [ref=e128]\n    - rowheader \"4\" [ref=e129]\n    - cell \"-1.141908121\" [ref=e130]\n    - cell \"-0.1132150019\" [ref=e131]\n    - cell \"205.4246129\" [ref=e132]\n    - cell \"11.10676314\" [ref=e133]\n    - rowheader \"5\" [ref=e134]\n    - cell \"-0.8459102665\" [ref=e135]\n    - cell \"1.769690984\" [ref=e136]\n    - cell \"114.5257168\" [ref=e137]\n    - cell \"11.10676314\" [ref=e138]\n    - rowheader \"6\" [ref=e139]\n    - cell \"-1.150492927\" [ref=e140]\n    - cell \"2.884423805\" [ref=e141]\n    - cell \"248.2311096\" [ref=e142]\n    - cell \"11.10676314\" [ref=e143]\n    - rowheader \"7\" [ref=e144]\n    - cell \"-1.718578063\" [ref=e145]\n    - cell \"-0.2268534851\" [ref=e146]\n    - cell \"1018.862211\" [ref=e147]\n    - cell \"11.10676314\" [ref=e148]\n    - rowheader \"8\" [ref=e149]\n    - cell \"-1.644545721\" [ref=e150]\n    - cell \"2.079567746\" [ref=e151]\n    - cell \"46.05148232\" [ref=e152]\n    - cell \"11.10676314\" [ref=e153]\n    - rowheader \"9\" [ref=e154]\n    - cell \"-0.5339401009\" [ref=e155]\n    - cell \"0.8867290552\" [ref=e156]\n    - cell \"38.54968308\" [ref=e157]\n    - cell \"11.10676314\" [ref=e158]\n    - rowheader \"10\" [ref=e159]\n    - cell \"-0.6958869326\" [ref=e160]\n    - cell \"1.549707675\" [ref=e161]\n    - cell \"116.3942007\" [ref=e162]\n    - cell \"11.10676314\" [ref=e163]\n    - rowheader \"11\" [ref=e164]\n    - cell \"-0.3844226771\" [ref=e165]\n    - cell \"-0.1669291835\" [ref=e166]\n    - cell \"11.82086319\" [ref=e167]\n    - cell \"11.10676314\" [ref=e168]\n    - rowheader \"12\" [ref=e169]\n    - cell \"-0.279383854\" [ref=e170]\n    - cell \"0.2171592477\" [ref=e171]\n    - cell \"3.57181282\" [ref=e172]\n    - cell \"3.57181282\" [ref=e173]\n    - rowheader \"13\" [ref=e174]\n    - cell \"-1.556803416\" [ref=e175]\n    - cell \"2.293565977\" [ref=e176]\n    - cell \"8.229087547\" [ref=e177]\n    - cell \"3.57181282\" [ref=e178]\n    - rowheader \"14\" [ref=e179]\n    - cell \"0.7205879786\" [ref=e180]\n    - cell \"1.659164454\" [ref=e181]\n    - cell \"130.0192434\" [ref=e182]\n    - cell \"3.57181282\" [ref=e183]\n    - rowheader \"15\" [ref=e184]\n    - cell \"1.529786267\" [ref=e185]\n    - cell \"0.5785717303\" [ref=e186]\n    - cell \"310.6303046\" [ref=e187]\n    - cell \"3.57181282\" [ref=e188]\n    - rowheader \"16\" [ref=e189]\n    - cell \"-0.4828866652\" [ref=e190]\n    - cell \"0.6918681287\" [ref=e191]\n    - cell \"23.23847579\" [ref=e192]\n    - cell \"3.57181282\" [ref=e193]\n    - rowheader \"17\" [ref=e194]\n    - cell \"-0.3817822711\" [ref=e195]\n    - cell \"1.675740672\" [ref=e196]\n    - cell \"235.9941108\" [ref=e197]\n    - cell \"3.57181282\" [ref=e198]\n    - rowheader \"18\" [ref=e199]\n    - cell \"-1.973925594\" [ref=e200]\n    - cell \"0.8564216261\" [ref=e201]\n    - cell \"932.9802941\" [ref=e202]\n    - cell \"3.57181282\" [ref=e203]\n    - rowheader \"19\" [ref=e204]\n    - cell \"0.1403342812\" [ref=e205]\n    - cell \"0.3820567368\" [ref=e206]\n    - cell \"13.86972143\" [ref=e207]\n    - cell \"3.57181282\" [ref=e208]\n    - rowheader \"20\" [ref=e209]\n    - cell \"-1.912535358\" [ref=e210]\n    - cell \"1.818381678\" [ref=e211]\n    - cell \"346.8257105\" [ref=e212]\n    - cell \"3.57181282\" [ref=e213]\n    - rowheader \"21\" [ref=e214]\n    - cell \"-1.962224565\" [ref=e215]\n    - cell \"1.257641847\" [ref=e216]\n    - cell \"680.9754942\" [ref=e217]\n    - cell \"3.57181282\" [ref=e218]\n    - rowheader \"22\" [ref=e219]\n    - cell \"-1.386533171\" [ref=e220]\n    - cell \"-0.8616708686\" [ref=e221]\n    - cell \"780.8419366\" [ref=e222]\n    - cell \"3.57181282\" [ref=e223]\n    - rowheader \"23\" [ref=e224]\n    - cell \"-1.276632211\" [ref=e225]\n    - cell \"-0.7370438348\" [ref=e226]\n    - cell \"565.3732011\" [ref=e227]\n    - cell \"3.57181282\" [ref=e228]\n    - rowheader \"24\" [ref=e229]\n    - cell \"-1.396965045\" [ref=e230]\n    - cell \"1.739470839\" [ref=e231]\n    - cell \"10.24155864\" [ref=e232]\n    - cell \"3.57181282\" [ref=e233]\n    - rowheader \"25\" [ref=e234]\n    - cell \"0.9131054827\" [ref=e235]\n    - cell \"0.45113748\" [ref=e236]\n    - cell \"14.6476741\" [ref=e237]\n    - cell \"3.57181282\" [ref=e238]\n    - rowheader \"26\" [ref=e239]\n    - cell \"0.6095547846\" [ref=e240]\n    - cell \"0.9005365123\" [ref=e241]\n    - cell \"28.13437617\" [ref=e242]\n    - cell \"3.57181282\" [ref=e243]\n    - rowheader \"27\" [ref=e244]\n    - cell \"-0.006193135862\" [ref=e245]\n    - cell \"2.503603503\" [ref=e246]\n    - cell \"627.7962699\" [ref=e247]\n    - cell \"3.57181282\" [ref=e248]\n    - rowheader \"28\" [ref=e249]\n    - cell \"-0.7548235098\" [ref=e250]\n    - cell \"2.479962056\" [ref=e251]\n    - cell \"367.9671564\" [ref=e252]\n    - cell \"3.57181282\" [ref=e253]\n    - rowheader \"29\" [ref=e254]\n    - cell \"0.7643211344\" [ref=e255]\n    - cell \"1.733826157\" [ref=e256]\n    - cell \"132.2226104\" [ref=e257]\n    - cell \"3.57181282\" [ref=e258]\n    - rowheader \"30\" [ref=e259]\n    - cell \"-1.976209105\" [ref=e260]\n    - cell \"-0.66375464\" [ref=e261]\n    - cell \"2096.577452\" [ref=e262]\n    - cell \"3.57181282\" [ref=e263]\n    - rowheader \"31\" [ref=e264]\n    - cell \"-1.872028274\" [ref=e265]\n    - cell \"0.3830616335\" [ref=e266]\n    - cell \"982.579963\" [ref=e267]\n    - cell \"3.57181282\" [ref=e268]\n    - rowheader \"32\" [ref=e269]\n    - cell \"1.784393689\" [ref=e270]\n    - cell \"2.502828313\" [ref=e271]\n    - cell \"47.02304871\" [ref=e272]\n    - cell \"3.57181282\" [ref=e273]\n    - rowheader \"33\" [ref=e274]\n    - cell \"1.35430255\" [ref=e275]\n    - cell \"-0.5245117344\" [ref=e276]\n    - cell \"556.4471591\" [ref=e277]\n    - cell \"3.57181282\" [ref=e278]\n    - rowheader \"34\" [ref=e279]\n    - cell \"0.8228980485\" [ref=e280]\n    - cell \"2.09791525\" [ref=e281]\n    - cell \"201.8855727\" [ref=e282]\n    - cell \"3.57181282\" [ref=e283]\n    - rowheader \"35\" [ref=e284]\n    - cell \"1.237027361\" [ref=e285]\n    - cell \"2.168936689\" [ref=e286]\n    - cell \"40.84995064\" [ref=e287]\n    - cell \"3.57181282\" [ref=e288]\n    - rowheader \"36\" [ref=e289]\n    - cell \"-1.438736657\" [ref=e290]\n    - cell \"-0.2846705042\" [ref=e291]\n    - cell \"560.3774092\" [ref=e292]\n    - cell \"3.57181282\" [ref=e293]\n    - rowheader \"37\" [ref=e294]\n    - cell \"1.170240468\" [ref=e295]\n    - cell \"1.952866552\" [ref=e296]\n    - cell \"34.06498117\" [ref=e297]\n    - cell \"3.57181282\" [ref=e298]\n    - rowheader \"38\" [ref=e299]\n    - cell \"1.569797651\" [ref=e300]\n    - cell \"0.7859050326\" [ref=e301]\n    - cell \"282.0137754\" [ref=e302]\n    - cell \"3.57181282\" [ref=e303]\n    - rowheader \"39\" [ref=e304]\n    - cell \"1.558288901\" [ref=e305]\n    - cell \"-0.4423640942\" [ref=e306]\n    - cell \"824.3624239\" [ref=e307]\n    - cell \"3.57181282\" [ref=e308]\n    - rowheader \"40\" [ref=e309]\n    - cell \"1.828493927\" [ref=e310]\n    - cell \"2.53789998\" [ref=e311]\n    - cell \"65.56782623\" [ref=e312]\n    - cell \"3.57181282\" [ref=e313]\n    - rowheader \"41\" [ref=e314]\n    - cell \"-0.6497735865\" [ref=e315]\n    - cell \"-0.7297891361\" [ref=e316]\n    - cell \"135.4309663\" [ref=e317]\n    - cell \"3.57181282\" [ref=e318]\n    - rowheader \"42\" [ref=e319]\n    - cell \"0.1941471264\" [ref=e320]\n    - cell \"1.75682196\" [ref=e321]\n    - cell \"296.1898003\" [ref=e322]\n    - cell \"3.57181282\" [ref=e323]\n    - rowheader \"43\" [ref=e324]\n    - cell \"-0.5985015493\" [ref=e325]\n    - cell \"-0.7700266781\" [ref=e326]\n    - cell \"129.8456771\" [ref=e327]\n    - cell \"3.57181282\" [ref=e328]\n    - rowheader \"44\" [ref=e329]\n    - cell \"-0.885317961\" [ref=e330]\n    - cell \"2.298006395\" [ref=e331]\n    - cell \"232.8401914\" [ref=e332]\n    - cell \"3.57181282\" [ref=e333]\n    - rowheader \"45\" [ref=e334]\n    - cell \"-1.637483916\" [ref=e335]\n    - cell \"2.749037956\" [ref=e336]\n    - cell \"7.414438935\" [ref=e337]\n    - cell \"3.57181282\" [ref=e338]\n    - rowheader \"46\" [ref=e339]\n    - cell \"-0.9999271194\" [ref=e340]\n    - cell \"-0.1822475962\" [ref=e341]\n    - cell \"143.7361846\" [ref=e342]\n    - cell \"3.57181282\" [ref=e343]\n    - rowheader \"47\" [ref=e344]\n    - cell \"-1.551229431\" [ref=e345]\n    - cell \"2.924125487\" [ref=e346]\n    - cell \"33.32177472\" [ref=e347]\n    - cell \"3.57181282\" [ref=e348]\n    - rowheader \"48\" [ref=e349]\n    - cell \"1.604201494\" [ref=e350]\n    - cell \"0.2766208423\" [ref=e351]\n    - cell \"527.9131895\" [ref=e352]\n    - cell \"3.57181282\" [ref=e353]\n    - rowheader \"49\" [ref=e354]\n    - cell \"-1.617500178\" [ref=e355]\n    - cell \"1.613238692\" [ref=e356]\n    - cell \"107.4658751\" [ref=e357]\n    - cell \"3.57181282\" [ref=e358]\n    - rowheader \"50\" [ref=e359]\n    - cell \"1.550298875\" [ref=e360]\n    - cell \"-0.9515552219\" [ref=e361]\n    - cell \"1125.893132\" [ref=e362]\n    - cell \"3.57181282\" [ref=e363]\n    - rowheader \"51\" [ref=e364]\n    - cell \"0.5321829735\" [ref=e365]\n    - cell \"2.426871288\" [ref=e366]\n    - cell \"459.7434873\" [ref=e367]\n    - cell \"3.57181282\" [ref=e368]\n    - rowheader \"52\" [ref=e369]\n    - cell \"-0.1647207541\" [ref=e370]\n    - cell \"1.277500243\" [ref=e371]\n    - cell \"157.698417\" [ref=e372]\n    - cell \"3.57181282\" [ref=e373]\n    - rowheader \"53\" [ref=e374]\n    - cell \"1.217074613\" [ref=e375]\n    - cell \"-0.04590777186\" [ref=e376]\n    - cell \"233.2745034\" [ref=e377]\n    - cell \"3.57181282\" [ref=e378]\n    - rowheader \"54\" [ref=e379]\n    - cell \"-0.9070145645\" [ref=e380]\n    - cell \"1.641632384\" [ref=e381]\n    - cell \"70.70575538\" [ref=e382]\n    - cell \"3.57181282\" [ref=e383]\n    - rowheader \"55\" [ref=e384]\n    - cell \"0.2093483386\" [ref=e385]\n    - cell \"1.14138929\" [ref=e386]\n    - cell \"121.089488\" [ref=e387]\n    - cell \"3.57181282\" [ref=e388]\n    - rowheader \"56\" [ref=e389]\n    - cell \"-0.66258043\" [ref=e390]\n    - cell \"2.747897122\" [ref=e391]\n    - cell \"535.858843\" [ref=e392]\n    - cell \"3.57181282\" [ref=e393]\n    - rowheader \"57\" [ref=e394]\n    - cell \"-0.8473943071\" [ref=e395]\n    - cell \"1.715541791\" [ref=e396]\n    - cell \"102.9064443\" [ref=e397]\n    - cell \"3.57181282\" [ref=e398]\n    - rowheader \"58\" [ref=e399]\n    - cell \"1.576640469\" [ref=e400]\n    - cell \"0.6031869542\" [ref=e401]\n    - cell \"354.753883\" [ref=e402]\n    - cell \"3.57181282\" [ref=e403]\n    - rowheader \"59\" [ref=e404]\n    - cell \"-1.782671727\" [ref=e405]\n    - cell \"-0.1184074427\" [ref=e406]\n    - cell \"1094.319726\" [ref=e407]\n    - cell \"3.57181282\" [ref=e408]\n    - rowheader \"60\" [ref=e409]\n    - cell \"-1.734832578\" [ref=e410]\n    - cell \"-0.4074954192\" [ref=e411]\n    - cell \"1175.163542\" [ref=e412]\n    - cell \"3.57181282\" [ref=e413]\n    - rowheader \"61\" [ref=e414]\n    - cell \"-1.518219616\" [ref=e415]\n    - cell \"0.369992975\" [ref=e416]\n    - cell \"380.7630888\" [ref=e417]\n    - cell \"3.57181282\" [ref=e418]\n    - rowheader \"62\" [ref=e419]\n    - cell \"-0.5202666514\" [ref=e420]\n    - cell \"0.7895337302\" [ref=e421]\n    - cell \"29.23240101\" [ref=e422]\n    - cell \"3.57181282\" [ref=e423]\n    - rowheader \"63\" [ref=e424]\n    - cell \"0.6603757799\" [ref=e425]\n    - cell \"1.706807663\" [ref=e426]\n    - cell \"161.5861143\" [ref=e427]\n    - cell \"3.57181282\" [ref=e428]\n    - rowheader \"64\" [ref=e429]\n    - cell \"0.7489725895\" [ref=e430]\n    - cell \"0.4574076388\" [ref=e431]\n    - cell \"1.135322664\" [ref=e432]\n    - cell \"1.135322664\" [ref=e433]\n    - rowheader \"65\" [ref=e434]\n    - cell \"0.6514446028\" [ref=e435]\n    - cell \"1.199222124\" [ref=e436]\n    - cell \"60.15951163\" [ref=e437]\n    - cell \"1.135322664\" [ref=e438]\n    - rowheader \"66\" [ref=e439]\n    - cell \"-1.489914404\" [ref=e440]\n    - cell \"1.183366732\" [ref=e441]\n    - cell \"113.6283791\" [ref=e442]\n    - cell \"1.135322664\" [ref=e443]\n    - rowheader \"67\" [ref=e444]\n    - cell \"-0.7266044527\" [ref=e445]\n    - cell \"1.703612992\" [ref=e446]\n    - cell \"141.1985623\" [ref=e447]\n    - cell \"1.135322664\" [ref=e448]\n    - rowheader \"68\" [ref=e449]\n    - cell \"0.9390987532\" [ref=e450]\n    - cell \"-0.03711036199\" [ref=e451]\n    - cell \"84.46290239\" [ref=e452]\n    - cell \"1.135322664\" [ref=e453]\n    - rowheader \"69\" [ref=e454]\n    - cell \"-0.2594986795\" [ref=e455]\n    - cell \"0.8196066312\" [ref=e456]\n    - cell \"58.17691086\" [ref=e457]\n    - cell \"1.135322664\" [ref=e458]\n    - rowheader \"70\" [ref=e459]\n    - cell \"-0.8124252036\" [ref=e460]\n    - cell \"-0.8379765974\" [ref=e461]\n    - cell \"227.6886732\" [ref=e462]\n    - cell \"1.135322664\" [ref=e463]\n    - rowheader \"71\" [ref=e464]\n    - cell \"-1.801543338\" [ref=e465]\n    - cell \"2.971275966\" [ref=e466]\n    - cell \"15.37173033\" [ref=e467]\n    - cell \"1.135322664\" [ref=e468]\n    - rowheader \"72\" [ref=e469]\n    - cell \"0.9597272241\" [ref=e470]\n    - cell \"0.7550457549\" [ref=e471]\n    - cell \"2.75823757\" [ref=e472]\n    - cell \"1.135322664\" [ref=e473]\n    - rowheader \"73\" [ref=e474]\n    - cell \"0.6666587309\" [ref=e475]\n    - cell \"0.07594423153\" [ref=e476]\n    - cell \"13.68957728\" [ref=e477]\n    - cell \"1.135322664\" [ref=e478]\n    - rowheader \"74\" [ref=e479]\n    - cell \"0.8415242494\" [ref=e480]\n    - cell \"2.803327293\" [ref=e481]\n    - cell \"438.99643\" [ref=e482]\n    - cell \"1.135322664\" [ref=e483]\n    - rowheader \"75\" [ref=e484]\n    - cell \"1.092860755\" [ref=e485]\n    - cell \"0.8606370084\" [ref=e486]\n    - cell \"11.14470083\" [ref=e487]\n    - cell \"1.135322664\" [ref=e488]\n    - rowheader \"76\" [ref=e489]\n    - cell \"1.934242774\" [ref=e490]\n    - cell \"2.68838721\" [ref=e491]\n    - cell \"111.7343135\" [ref=e492]\n    - cell \"1.135322664\" [ref=e493]\n    - rowheader \"77\" [ref=e494]\n    - cell \"-1.767016172\" [ref=e495]\n    - cell \"0.6472698428\" [ref=e496]\n    - cell \"620.2566522\" [ref=e497]\n    - cell \"1.135322664\" [ref=e498]\n    - rowheader \"78\" [ref=e499]\n    - cell \"-0.1917100946\" [ref=e500]\n    - cell \"0.09653558642\" [ref=e501]\n    - cell \"1.777571579\" [ref=e502]\n    - cell \"1.135322664\" [ref=e503]\n    - rowheader \"79\" [ref=e504]\n    - cell \"0.4658140825\" [ref=e505]\n    - cell \"-0.4262025509\" [ref=e506]\n    - cell \"41.65408894\" [ref=e507]\n    - cell \"1.135322664\" [ref=e508]\n    - rowheader \"80\" [ref=e509]\n    - cell \"0.9885784926\" [ref=e510]\n    - cell \"2.430756707\" [ref=e511]\n    - cell \"211.2574227\" [ref=e512]\n    - cell \"1.135322664\" [ref=e513]\n    - rowheader \"81\" [ref=e514]\n    - cell \"-1.753673403\" [ref=e515]\n    - cell \"1.76844066\" [ref=e516]\n    - cell \"178.3892533\" [ref=e517]\n    - cell \"1.135322664\" [ref=e518]\n    - rowheader \"82\" [ref=e519]\n    - cell \"-0.9360833286\" [ref=e520]\n    - cell \"1.553078715\" [ref=e521]\n    - cell \"49.55785908\" [ref=e522]\n    - cell \"1.135322664\" [ref=e523]\n    - rowheader \"83\" [ref=e524]\n    - cell \"0.7648281779\" [ref=e525]\n    - cell \"2.906734783\" [ref=e526]\n    - cell \"539.1181257\" [ref=e527]\n    - cell \"1.135322664\" [ref=e528]\n    - rowheader \"84\" [ref=e529]\n    - cell \"1.192277385\" [ref=e530]\n    - cell \"0.3558491624\" [ref=e531]\n    - cell \"113.6035472\" [ref=e532]\n    - cell \"1.135322664\" [ref=e533]\n    - rowheader \"85\" [ref=e534]\n    - cell \"0.920135083\" [ref=e535]\n    - cell \"-0.4127914766\" [ref=e536]\n    - cell \"158.6253017\" [ref=e537]\n    - cell \"1.135322664\" [ref=e538]\n    - rowheader \"86\" [ref=e539]\n    - cell \"0.854511141\" [ref=e540]\n    - cell \"0.6685898336\" [ref=e541]\n    - cell \"0.4006163124\" [ref=e542]\n    - cell \"0.4006163124\" [ref=e543]\n    - rowheader \"87\" [ref=e544]\n    - cell \"-0.939281225\" [ref=e545]\n    - cell \"-0.0459656609\" [ref=e546]\n    - cell \"89.91909812\" [ref=e547]\n    - cell \"0.4006163124\" [ref=e548]\n    - rowheader \"88\" [ref=e549]\n    - cell \"-1.132892709\" [ref=e550]\n    - cell \"2.185471342\" [ref=e551]\n    - cell \"85.91422303\" [ref=e552]\n    - cell \"0.4006163124\" [ref=e553]\n    - rowheader \"89\" [ref=e554]\n    - cell \"-1.615605653\" [ref=e555]\n    - cell \"-0.07064480384\" [ref=e556]\n    - cell \"725.5244274\" [ref=e557]\n    - cell \"0.4006163124\" [ref=e558]\n    - rowheader \"90\" [ref=e559]\n    - cell \"-1.230846326\" [ref=e560]\n    - cell \"-0.3677804121\" [ref=e561]\n    - cell \"359.4563608\" [ref=e562]\n    - cell \"0.4006163124\" [ref=e563]\n    - rowheader \"91\" [ref=e564]\n    - cell \"0.9199937557\" [ref=e565]\n    - cell \"1.349335217\" [ref=e566]\n    - cell \"25.30193995\" [ref=e567]\n    - cell \"0.4006163124\" [ref=e568]\n    - rowheader \"92\" [ref=e569]\n    - cell \"0.6591746133\" [ref=e570]\n    - cell \"2.60097841\" [ref=e571]\n    - cell \"469.4741918\" [ref=e572]\n    - cell \"0.4006163124\" [ref=e573]\n    - rowheader \"93\" [ref=e574]\n    - cell \"-0.2050719518\" [ref=e575]\n    - cell \"-0.848739386\" [ref=e576]\n    - cell \"80.80357412\" [ref=e577]\n    - cell \"0.4006163124\" [ref=e578]\n    - rowheader \"94\" [ref=e579]\n    - cell \"-1.242880258\" [ref=e580]\n    - cell \"1.066220282\" [ref=e581]\n    - cell \"27.92970883\" [ref=e582]\n    - cell \"0.4006163124\" [ref=e583]\n    - rowheader \"95\" [ref=e584]\n    - cell \"0.8612154363\" [ref=e585]\n    - cell \"2.674126228\" [ref=e586]\n    - cell \"373.4494551\" [ref=e587]\n    - cell \"0.4006163124\" [ref=e588]\n    - rowheader \"96\" [ref=e589]\n    - cell \"0.04479390026\" [ref=e590]\n    - cell \"-0.09285926506\" [ref=e591]\n    - cell \"1.812369908\" [ref=e592]\n    - cell \"0.4006163124\" [ref=e593]\n    - rowheader \"97\" [ref=e594]\n    - cell \"0.3706745961\" [ref=e595]\n    - cell \"2.738947869\" [ref=e596]\n    - cell \"677.2013607\" [ref=e597]\n    - cell \"0.4006163124\" [ref=e598]\n    - rowheader \"98\" [ref=e599]\n    - cell \"-0.6680777698\" [ref=e600]\n    - cell \"2.72422944\" [ref=e601]\n    - cell \"521.6660232\" [ref=e602]\n    - cell \"0.4006163124\" [ref=e603]\n    - rowheader \"99\" [ref=e604]\n    - cell \"1.615240667\" [ref=e605]\n    - cell \"1.307551493\" [ref=e606]\n    - cell \"169.7559707\" [ref=e607]\n    - cell \"0.4006163124\" [ref=e608]\n    - rowheader \"100\" [ref=e609]\n    - cell \"-0.07593342937\" [ref=e610]\n    - cell \"-0.4844035176\" [ref=e611]\n    - cell \"25.18423713\" [ref=e612]\n    - cell \"0.4006163124\" [ref=e613]\n    - rowheader \"101\" [ref=e614]\n    - cell \"-1.558056772\" [ref=e615]\n    - cell \"-0.8362863526\" [ref=e616]\n    - cell \"1071.800491\" [ref=e617]\n    - cell \"0.4006163124\" [ref=e618]\n    - rowheader \"102\" [ref=e619]\n    - cell \"0.4455304912\" [ref=e620]\n    - cell \"1.850795086\" [ref=e621]\n    - cell \"273.3161948\" [ref=e622]\n    - cell \"0.4006163124\" [ref=e623]\n    - rowheader \"103\" [ref=e624]\n    - cell \"1.973498691\" [ref=e625]\n    - cell \"1.409942868\" [ref=e626]\n    - cell \"618.3480498\" [ref=e627]\n    - cell \"0.4006163124\" [ref=e628]\n    - rowheader \"104\" [ref=e629]\n    - cell \"1.975129225\" [ref=e630]\n    - cell \"0.6116583572\" [ref=e631]\n    - cell \"1083.016835\" [ref=e632]\n    - cell \"0.4006163124\" [ref=e633]\n    - rowheader \"105\" [ref=e634]\n    - cell \"-1.464352408\" [ref=e635]\n    - cell \"-0.7616589631\" [ref=e636]\n    - cell \"850.5490412\" [ref=e637]\n    - cell \"0.4006163124\" [ref=e638]\n    - rowheader \"106\" [ref=e639]\n    - cell \"-0.8470615541\" [ref=e640]\n    - cell \"1.123030277\" [ref=e641]\n    - cell \"19.85604016\" [ref=e642]\n    - cell \"0.4006163124\" [ref=e643]\n    - rowheader \"107\" [ref=e644]\n    - cell \"1.944826814\" [ref=e645]\n    - cell \"0.1889060822\" [ref=e646]\n    - cell \"1292.177578\" [ref=e647]\n    - cell \"0.4006163124\" [ref=e648]\n    - rowheader \"108\" [ref=e649]\n    - cell \"-1.059226001\" [ref=e650]\n    - cell \"1.89294901\" [ref=e651]\n    - cell \"63.68285993\" [ref=e652]\n    - cell \"0.4006163124\" [ref=e653]\n    - rowheader \"109\" [ref=e654]\n    - cell \"-0.4463224514\" [ref=e655]\n    - cell \"1.233550381\" [ref=e656]\n    - cell \"109.079148\" [ref=e657]\n    - cell \"0.4006163124\" [ref=e658]\n    - rowheader \"110\" [ref=e659]\n    - cell \"-1.394323295\" [ref=e660]\n    - cell \"2.413050439\" [ref=e661]\n    - cell \"27.72072299\" [ref=e662]\n    - cell \"0.4006163124\" [ref=e663]\n    - rowheader \"111\" [ref=e664]\n    - cell \"1.677457682\" [ref=e665]\n    - cell \"2.020450554\" [ref=e666]\n    - cell \"63.409482\" [ref=e667]\n    - cell \"0.4006163124\" [ref=e668]\n    - rowheader \"112\" [ref=e669]\n    - cell \"1.742792297\" [ref=e670]\n    - cell \"0.3301455288\" [ref=e671]\n    - cell \"733.4338049\" [ref=e672]\n    - cell \"0.4006163124\" [ref=e673]\n    - rowheader \"113\" [ref=e674]\n    - cell \"-1.870317571\" [ref=e675]\n    - cell \"0.2196268257\" [ref=e676]\n    - cell \"1083.06937\" [ref=e677]\n    - cell \"0.4006163124\" [ref=e678]\n    - rowheader \"114\" [ref=e679]\n    - cell \"1.591278203\" [ref=e680]\n    - cell \"0.8777376188\" [ref=e681]\n    - cell \"274.063042\" [ref=e682]\n    - cell \"0.4006163124\" [ref=e683]\n    - rowheader \"115\" [ref=e684]\n    - cell \"-1.198449689\" [ref=e685]\n    - cell \"-0.3952860952\" [ref=e686]\n    - cell \"340.2972241\" [ref=e687]\n    - cell \"0.4006163124\" [ref=e688]\n    - rowheader \"116\" [ref=e689]\n    - cell \"-1.343026951\" [ref=e690]\n    - cell \"0.7561239745\" [ref=e691]\n    - cell \"115.2358101\" [ref=e692]\n    - cell \"0.4006163124\" [ref=e693]\n    - rowheader \"117\" [ref=e694]\n    - cell \"1.702920204\" [ref=e695]\n    - cell \"2.535586127\" [ref=e696]\n    - cell \"13.76926886\" [ref=e697]\n    - cell \"0.4006163124\" [ref=e698]\n    - rowheader \"118\" [ref=e699]\n    - cell \"1.030995847\" [ref=e700]\n    - cell \"2.024471668\" [ref=e701]\n    - cell \"92.45288408\" [ref=e702]\n    - cell \"0.4006163124\" [ref=e703]\n    - rowheader \"119\" [ref=e704]\n    - cell \"-1.236557563\" [ref=e705]\n    - cell \"2.110079707\" [ref=e706]\n    - cell \"38.75888231\" [ref=e707]\n    - cell \"0.4006163124\" [ref=e708]\n    - rowheader \"120\" [ref=e709]\n    - cell \"-1.10392802\" [ref=e710]\n    - cell \"1.102737226\" [ref=e711]\n    - cell \"5.770254228\" [ref=e712]\n    - cell \"0.4006163124\" [ref=e713]\n    - rowheader \"121\" [ref=e714]\n    - cell \"-1.866064407\" [ref=e715]\n    - cell \"2.569564503\" [ref=e716]\n    - cell \"91.50401773\" [ref=e717]\n    - cell \"0.4006163124\" [ref=e718]\n    - rowheader \"122\" [ref=e719]\n    - cell \"-1.486102037\" [ref=e720]\n    - cell \"1.370638693\" [ref=e721]\n    - cell \"76.38173704\" [ref=e722]\n    - cell \"0.4006163124\" [ref=e723]\n    - rowheader \"123\" [ref=e724]\n    - cell \"0.6488669134\" [ref=e725]\n    - cell \"1.575868158\" [ref=e726]\n    - cell \"133.4888108\" [ref=e727]\n    - cell \"0.4006163124\" [ref=e728]\n    - rowheader \"124\" [ref=e729]\n    - cell \"0.7292398994\" [ref=e730]\n    - cell \"0.477256798\" [ref=e731]\n    - cell \"0.3707071066\" [ref=e732]\n    - cell \"0.3707071066\" [ref=e733]\n    - rowheader \"125\" [ref=e734]\n    - cell \"1.1690357\" [ref=e735]\n    - cell \"2.753847076\" [ref=e736]\n    - cell \"192.4616807\" [ref=e737]\n    - cell \"0.3707071066\" [ref=e738]\n    - rowheader \"126\" [ref=e739]\n    - cell \"0.4683615546\" [ref=e740]\n    - cell \"2.918644049\" [ref=e741]\n    - cell \"728.8947026\" [ref=e742]\n    - cell \"0.3707071066\" [ref=e743]\n    - rowheader \"127\" [ref=e744]\n    - cell \"1.399369865\" [ref=e745]\n    - cell \"-0.777865605\" [ref=e746]\n    - cell \"748.7847061\" [ref=e747]\n    - cell \"0.3707071066\" [ref=e748]\n    - rowheader \"128\" [ref=e749]\n    - cell \"0.686580667\" [ref=e750]\n    - cell \"-0.6340903289\" [ref=e751]\n    - cell \"122.3075734\" [ref=e752]\n    - cell \"0.3707071066\" [ref=e753]\n- region \"What changes when one mechanism changes?\" [ref=e5]\n  - heading \"What changes when one mechanism changes?\" [level=2, ref=e13]\n  - region \"Ablation contrasts\" [ref=e14] focusable [tabindex]\n    - columnheader \"Variant\" [ref=e102]\n    - columnheader \"Reference\" [ref=e103]\n    - columnheader \"Changed factor\" [ref=e104]\n    - columnheader \"Eligibility\" [ref=e105]\n    - columnheader \"Median variant \u2212 reference\" [ref=e106]\n    - columnheader \"Uncertainty status\" [ref=e107]\n    - rowheader \"rosenbrock-fixed-step\" [ref=e84]\n      - link \"rosenbrock-fixed-step\" [ref=e108]\n    - cell \"rosenbrock\" [ref=e85]\n      - link \"rosenbrock\" [ref=e109]\n    - cell \"candidate\" [ref=e86]\n    - cell \"Eligible\" [ref=e87]\n    - cell \"0.5446874177\" [ref=e88]\n    - cell \"Deterministic no sampling interval\" [ref=e89]\n    - rowheader \"sphere-fixed-step\" [ref=e90]\n      - link \"sphere-fixed-step\" [ref=e110]\n    - cell \"sphere\" [ref=e91]\n      - link \"sphere\" [ref=e111]\n    - cell \"candidate\" [ref=e92]\n    - cell \"Eligible\" [ref=e93]\n    - cell \"0.04\" [ref=e94]\n    - cell \"Deterministic no sampling interval\" [ref=e95]\n    - rowheader \"ellipsoid-fixed-step\" [ref=e96]\n      - link \"ellipsoid-fixed-step\" [ref=e112]\n    - cell \"ellipsoid\" [ref=e97]\n      - link \"ellipsoid\" [ref=e113]\n    - cell \"candidate\" [ref=e98]\n    - cell \"Eligible\" [ref=e99]\n    - cell \"0.04\" [ref=e100]\n    - cell \"Deterministic no sampling interval\" [ref=e101]\n- region \"Evidence has boundaries\" [ref=e6]\n  - heading \"Evidence has boundaries\" [level=2, ref=e15]\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "focus",
+        "#trial-detail .scroll"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Done\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "eval",
+        "document.activeElement.scrollLeft"
+      ],
+      "exit_code": 0,
+      "stdout": "0\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "press",
+        "ArrowRight"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Done\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "wait",
+        "200"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Done\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "eval",
+        "document.activeElement.scrollLeft"
+      ],
+      "exit_code": 0,
+      "stdout": "40\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "a11y",
+        "--json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"success\":true,\"data\":{\"axeVersion\":\"4.12.1\",\"counts\":{\"inapplicable\":37,\"incomplete\":1,\"passes\":52,\"violations\":0},\"incomplete\":[{\"help\":\"Elements must meet minimum color contrast ratio thresholds\",\"helpUrl\":\"https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=axeAPI\",\"id\":\"color-contrast\",\"impact\":\"serious\",\"nodeCount\":523,\"nodes\":[{\"failureSummary\":\"Fix any of the following:\\n  Element's background color could not be determined because it's partially obscured by another element\",\"html\":\"<caption>Every recorded observation. Boundary duplicates consume allowance.</caption>\",\"target\":[\"details[data-loaded=\\\"true\\\"] > .scroll[role=\\\"region\\\"] > table > caption\"]},{\"failureSummary\":\"Fix any of the following:\\n  Element content is too short to determine if it is actual text content\",\"html\":\"<th scope=\\\"row\\\">1</th>\",\"target\":[\"details[data-loaded=\\\"true\\\"] > .scroll[role=\\\"region\\\"] > table > tbody > tr:nth-child(1) > th[scope=\\\"row\\\"]\"]},{\"failureSummary\":\"Fix any of the following:\\n  Element's background color could not be determined because it's partially obscured by another element\",\"html\":\"<td>-0.2209820179</td>\",\"target\":[\"details[data-loaded=\\\"true\\\"] > .scroll[role=\\\"region\\\"] > table > tbody > tr:nth-child(1) > td:nth-child(3)\"]},{\"failureSummary\":\"Fix any of the following:\\n  Element's background color could not be determined because it's partially obscured by another element\",\"html\":\"<td>11.10676314</td>\",\"target\":[\"details[data-loaded=\\\"true\\\"] > .scroll[role=\\\"region\\\"] > table > tbody > tr:nth-child(1) > td:nth-child(4)\"]},{\"failureSummary\":\"Fix any of the following:\\n  Element's background color could not be determined because it's partially obscured by another element\",\"html\":\"<td>11.10676314</td>\",\"target\":[\"details[data-loaded=\\\"true\\\"] > .scroll[role=\\\"region\\\"] > table > tbody > tr:nth-child(1) > td:nth-child(5)\"]},{\"failureSummary\":\"Fix any of the following:\\n  Element content is too short to determine if it is actual text content\",\"html\":\"<th scope=\\\"row\\\">2</th>\",\"target\":[\"details[data-loaded=\\\"true\\\"] > .scroll[role=\\\"region\\\"] > table > tbody > tr:nth-child(2) > th[scope=\\\"row\\\"]\"]},{\"failureSummary\":\"Fix any of the following:\\n  Element's background color could not be determined because it's partially obscured by another element\",\"html\":\"<td>2.695905607</td>\",\"target\":[\"details[data-loaded=\\\"true\\\"] > .scroll[role=\\\"region\\\"] > table > tbody > tr:nth-child(2) > td:nth-child(3)\"]},{\"failureSummary\":\"Fix any of the following:\\n  Element's background color could not be determined because it's partially obscured by another element\",\"html\":\"<td>59.63649694</td>\",\"target\":[\"details[data-loaded=\\\"true\\\"] > .scroll[role=\\\"region\\\"] > table > tbody > tr:nth-child(2) > td:nth-child(4)\"]},{\"failureSummary\":\"Fix any of the following:\\n  Element's background color could not be determined because it's partially obscured by another element\",\"html\":\"<td>11.10676314</td>\",\"target\":[\"details[data-loaded=\\\"true\\\"] > .scroll[role=\\\"region\\\"] > table > tbody > tr:nth-child(2) > td:nth-child(5)\"]},{\"failureSummary\":\"Fix any of the following:\\n  Element content is too short to determine if it is actual text content\",\"html\":\"<th scope=\\\"row\\\">3</th>\",\"target\":[\"details[data-loaded=\\\"true\\\"] > .scroll[role=\\\"region\\\"] > table > tbody > tr:nth-child(3) > th[scope=\\\"row\\\"]\"]}],\"tags\":[\"cat.color\",\"wcag2aa\",\"wcag143\",\"TTv5\",\"TT13.c\",\"EN-301-549\",\"EN-9.1.4.3\",\"ACT\",\"RGAAv4\",\"RGAA-3.2.1\"]}],\"lifecycle\":{\"effectiveLaunch\":{\"browserLaunched\":true,\"engine\":\"chrome\",\"launchHash\":16155740654197345125},\"launched\":false,\"relaunchedBrowser\":false,\"restartedBackground\":false,\"restoreStatus\":\"not_configured\",\"reused\":true,\"saveStatus\":\"not_attempted\"},\"url\":\"file://$PROJECT/.build/05-preflight2/bundle/index.html#main\",\"violations\":[]},\"error\":null}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "eval",
+        "JSON.stringify([document.querySelector(\"#trial-detail td\"),document.querySelector(\".muted\"),document.querySelector(\"button\")].map(e=>{let p=e,bg=\"rgba(0, 0, 0, 0)\";while(p&&bg===\"rgba(0, 0, 0, 0)\"){bg=getComputedStyle(p).backgroundColor;p=p.parentElement}return {text:getComputedStyle(e).color,background:bg}}))"
+      ],
+      "exit_code": 0,
+      "stdout": "\"[{\\\"text\\\":\\\"rgb(25, 45, 48)\\\",\\\"background\\\":\\\"rgb(255, 255, 255)\\\"},{\\\"text\\\":\\\"rgb(76, 99, 103)\\\",\\\"background\\\":\\\"rgb(243, 245, 241)\\\"},{\\\"text\\\":\\\"rgb(21, 90, 81)\\\",\\\"background\\\":\\\"rgb(255, 255, 255)\\\"}]\"\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "set",
+        "viewport",
+        "1440",
+        "1000"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Done\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "open",
+        "file://$PROJECT/.build/05-preflight2/recovery-bundle/index.html"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Research Continuum \u00b7 numerical-workbench\n  file://$PROJECT/.build/05-preflight2/recovery-bundle/index.html#study=rosenbrock&trial=confirmation-uniform_random-101\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "snapshot",
+        "-i"
+      ],
+      "exit_code": 0,
+      "stdout": "- link \"Skip to evidence\" [ref=e1]\n- heading \"Numerical research campaign\" [level=1, ref=e2]\n- heading \"Campaign evidence\" [level=2, ref=e3]\n- searchbox \"Find a study\" [ref=e16]\n- combobox \"Objective\" [expanded=false, ref=e17]: All objectives\n  - option \"All objectives\" [selected, ref=e35]\n  - option \"rosenbrock-2d-v1\" [ref=e36]\n- combobox \"Outcome\" [expanded=false, ref=e18]: All outcomes\n  - option \"All outcomes\" [selected, ref=e37]\n  - option \"Candidate lower\" [ref=e38]\n  - option \"Baseline lower\" [ref=e39]\n  - option \"Tie\" [ref=e40]\n  - option \"Inconclusive\" [ref=e41]\n- combobox \"Order\" [expanded=false, ref=e19]: Frozen order\n  - option \"Frozen order\" [selected, ref=e42]\n  - option \"Highest charged cost\" [ref=e43]\n- button \"Reset filters\" [ref=e7]\n- heading \"rosenbrock\" [level=3, ref=e20]\n- button \"Inspect rosenbrock\" [ref=e21]\n- link \"Full report\" [ref=e22]\n- heading \"rosenbrock-fixed-step\" [level=3, ref=e23]\n- button \"Inspect rosenbrock-fixed-step\" [ref=e24]\n- link \"Full report\" [ref=e25]\n- region \"Selected study evidence\" [ref=e4]\n  - heading \"rosenbrock\" [level=2, ref=e8]\n  - link \"Open full study report and provenance\" [ref=e9]\n  - heading \"Paired seed uncertainty\" [level=3, ref=e10]\n  - heading \"Trial evidence\" [level=3, ref=e11]\n  - combobox \"Choose a trial\" [expanded=false, ref=e12]: confirmation-uniform_random-101 \u00b7 COMPLETED\n    - option \"development-uniform_random-11 \u00b7 COMPLETED\" [ref=e27]\n    - option \"development-coordinate_refinement-11 \u00b7 COMPLETED\" [ref=e28]\n    - option \"confirmation-uniform_random-101 \u00b7 COMPLETED\" [selected, ref=e29]\n    - option \"confirmation-coordinate_refinement-101 \u00b7 COMPLETED\" [ref=e30]\n    - option \"reproduction-development-uniform_random-11 \u00b7 COMPLETED\" [ref=e31]\n    - option \"reproduction-development-coordinate_refinement-11 \u00b7 COMPLETED\" [ref=e32]\n    - option \"reproduction-confirmation-uniform_random-101 \u00b7 COMPLETED\" [ref=e33]\n    - option \"reproduction-confirmation-coordinate_refinement-101 \u00b7 COMPLETED\" [ref=e34]\n  - link \"Link to this trial selection\" [ref=e26]\n- region \"What changes when one mechanism changes?\" [ref=e5]\n  - heading \"What changes when one mechanism changes?\" [level=2, ref=e13]\n  - region \"Ablation contrasts\" [ref=e14] focusable [tabindex]\n    - columnheader \"Variant\" [ref=e50]\n    - columnheader \"Reference\" [ref=e51]\n    - columnheader \"Changed factor\" [ref=e52]\n    - columnheader \"Eligibility\" [ref=e53]\n    - columnheader \"Median variant \u2212 reference\" [ref=e54]\n    - columnheader \"Uncertainty status\" [ref=e55]\n    - rowheader \"rosenbrock-fixed-step\" [ref=e44]\n      - link \"rosenbrock-fixed-step\" [ref=e56]\n    - cell \"rosenbrock\" [ref=e45]\n      - link \"rosenbrock\" [ref=e57]\n    - cell \"candidate\" [ref=e46]\n    - cell \"INCONCLUSIVE\" [ref=e47]\n    - cell \"0\" [ref=e48]\n    - cell \"Ineligible\" [ref=e49]\n- region \"Evidence has boundaries\" [ref=e6]\n  - heading \"Evidence has boundaries\" [level=2, ref=e15]\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "select",
+        "#verdict",
+        "INCONCLUSIVE"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Done\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "eval",
+        "JSON.stringify({shown:[...document.querySelectorAll(\".study:not([hidden])\")].map(e=>e.dataset.id),selected:document.querySelector(\"#study-detail h2\").textContent,totals:document.querySelector(\".metrics\").textContent})"
+      ],
+      "exit_code": 0,
+      "stdout": "\"{\\\"shown\\\":[\\\"rosenbrock\\\"],\\\"selected\\\":\\\"rosenbrock\\\",\\\"totals\\\":\\\"2frozen studies136charged evaluations256reserved evaluations1retained failed attempts\\\"}\"\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "snapshot",
+        "-i"
+      ],
+      "exit_code": 0,
+      "stdout": "- link \"Skip to evidence\" [ref=e1]\n- heading \"Numerical research campaign\" [level=1, ref=e2]\n- heading \"Campaign evidence\" [level=2, ref=e3]\n- searchbox \"Find a study\" [ref=e16]\n- combobox \"Objective\" [expanded=false, ref=e17]: All objectives\n  - option \"All objectives\" [selected, ref=e32]\n  - option \"rosenbrock-2d-v1\" [ref=e33]\n- combobox \"Outcome\" [expanded=false, ref=e18]: Inconclusive\n  - option \"All outcomes\" [ref=e34]\n  - option \"Candidate lower\" [ref=e35]\n  - option \"Baseline lower\" [ref=e36]\n  - option \"Tie\" [ref=e37]\n  - option \"Inconclusive\" [selected, ref=e38]\n- combobox \"Order\" [expanded=false, ref=e19]: Frozen order\n  - option \"Frozen order\" [selected, ref=e39]\n  - option \"Highest charged cost\" [ref=e40]\n- button \"Reset filters\" [ref=e7]\n- heading \"rosenbrock\" [level=3, ref=e20]\n- button \"Inspect rosenbrock\" [ref=e21]\n- link \"Full report\" [ref=e22]\n- region \"Selected study evidence\" [ref=e4]\n  - heading \"rosenbrock\" [level=2, ref=e8]\n  - link \"Open full study report and provenance\" [ref=e9]\n  - heading \"Paired seed uncertainty\" [level=3, ref=e10]\n  - heading \"Trial evidence\" [level=3, ref=e11]\n  - combobox \"Choose a trial\" [expanded=false, ref=e12]: confirmation-uniform_random-101 \u00b7 COMPLETED\n    - option \"development-uniform_random-11 \u00b7 COMPLETED\" [ref=e24]\n    - option \"development-coordinate_refinement-11 \u00b7 COMPLETED\" [ref=e25]\n    - option \"confirmation-uniform_random-101 \u00b7 COMPLETED\" [selected, ref=e26]\n    - option \"confirmation-coordinate_refinement-101 \u00b7 COMPLETED\" [ref=e27]\n    - option \"reproduction-development-uniform_random-11 \u00b7 COMPLETED\" [ref=e28]\n    - option \"reproduction-development-coordinate_refinement-11 \u00b7 COMPLETED\" [ref=e29]\n    - option \"reproduction-confirmation-uniform_random-101 \u00b7 COMPLETED\" [ref=e30]\n    - option \"reproduction-confirmation-coordinate_refinement-101 \u00b7 COMPLETED\" [ref=e31]\n  - link \"Link to this trial selection\" [ref=e23]\n- region \"What changes when one mechanism changes?\" [ref=e5]\n  - heading \"What changes when one mechanism changes?\" [level=2, ref=e13]\n  - region \"Ablation contrasts\" [ref=e14] focusable [tabindex]\n    - columnheader \"Variant\" [ref=e47]\n    - columnheader \"Reference\" [ref=e48]\n    - columnheader \"Changed factor\" [ref=e49]\n    - columnheader \"Eligibility\" [ref=e50]\n    - columnheader \"Median variant \u2212 reference\" [ref=e51]\n    - columnheader \"Uncertainty status\" [ref=e52]\n    - rowheader \"rosenbrock-fixed-step\" [ref=e41]\n      - link \"rosenbrock-fixed-step\" [ref=e53]\n    - cell \"rosenbrock\" [ref=e42]\n      - link \"rosenbrock\" [ref=e54]\n    - cell \"candidate\" [ref=e43]\n    - cell \"INCONCLUSIVE\" [ref=e44]\n    - cell \"0\" [ref=e45]\n    - cell \"Ineligible\" [ref=e46]\n- region \"Evidence has boundaries\" [ref=e6]\n  - heading \"Evidence has boundaries\" [level=2, ref=e15]\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "select",
+        "#trial-select",
+        "development-uniform_random-11"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Done\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "eval",
+        "JSON.stringify({attempts:document.querySelectorAll(\"#trial-detail > details\").length,text:document.querySelector(\"#trial-detail\").textContent})"
+      ],
+      "exit_code": 0,
+      "stdout": "\"{\\\"attempts\\\":2,\\\"text\\\":\\\"Link to this trial selectionCOMPLETED \u00b7 16 charged units \u00b7 8 recorded evaluations \u00b7 1 failed attemptsAttempt 1 \u00b7 FAILED \u00b7 8 charged unitsAttempt identity: 177ad98ac7854f669e72e4ae00f79969Coordinator interrupted before validated result staging; full allowance retainedNo durable observations. Admitted costs remain charged.Attempt 2 \u00b7 COMPLETED \u00b7 8 charged unitsAttempt identity: d74e4caaac45421c888fc8ebebf85422Full frozen observation allowance evaluatedBest-so-far objective over recorded evaluations 1\u20138. Linear range: 26.51232465 to 146.0915304; final best: 26.51232465.Inspect all 8 points and values\\\"}\"\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "eval",
+        "document.querySelector(\"#trial-select\").scrollIntoView({block:\"start\"})"
+      ],
+      "exit_code": 0,
+      "stdout": "null\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "screenshot"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Screenshot saved to $BROWSER_SCREENSHOT_DIR/screenshot-1788886347259.png\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "a11y",
+        "--json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"success\":true,\"data\":{\"axeVersion\":\"4.12.1\",\"counts\":{\"inapplicable\":38,\"incomplete\":0,\"passes\":51,\"violations\":0},\"incomplete\":[],\"lifecycle\":{\"effectiveLaunch\":{\"browserLaunched\":true,\"engine\":\"chrome\",\"launchHash\":16155740654197345125},\"launched\":false,\"relaunchedBrowser\":false,\"restartedBackground\":false,\"restoreStatus\":\"not_configured\",\"reused\":true,\"saveStatus\":\"not_attempted\"},\"url\":\"file://$PROJECT/.build/05-preflight2/recovery-bundle/index.html#study=rosenbrock&trial=development-uniform_random-11\",\"violations\":[]},\"error\":null}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "errors"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "open",
+        "file://$PROJECT/.build/05-preflight2/bundle/index.html"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Research Continuum \u00b7 numerical-workbench\n  file://$PROJECT/.build/05-preflight2/bundle/index.html#study=rosenbrock&trial=confirmation-uniform_random-101\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "set",
+        "viewport",
+        "1440",
+        "1000"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Done\n",
+      "stderr": ""
+    }
+  ],
+  "limitations": [
+    "No independent human accessibility or screen-reader observation.",
+    "CSS zoom is not a claim of actual browser zoom testing.",
+    "Axe may mark partially clipped horizontal-table cells for manual contrast review; actual color values and keyboard scrolling are checked separately.",
+    "These are recorded offline evidence flows, not an interactive execution/stop UI."
+  ],
+  "runtime_source_digest": "2ee2c5d8fe75373f1aa0835641f46ec16ddd006f5b2e6d7e9d4a15ace8fafb2d",
+  "visual_review": {
+    "observer": "Primary GPT-6 Astra agent",
+    "accepted_screenshots": 4,
+    "findings": [
+      "Campaign inventory, filters and selected-study detail are legible on desktop.",
+      "Keyboard-expanded trial view shows the actual curve and all 128 point/value rows.",
+      "390px overview reflows without horizontal page overflow; 320px and 2x CSS zoom were checked separately.",
+      "Recovered trial visibly retains the failed first attempt and the separately charged completed retry."
+    ],
+    "limitations": [
+      "No human or assistive-technology user observation.",
+      "Desktop trace/failure screenshots intentionally show the inspection section after scrolling, not the entire page."
+    ]
+  }
+}

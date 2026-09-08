@@ -12,7 +12,7 @@ import tempfile
 import uuid
 
 from . import __version__
-from .study import DEFAULT_STUDY, Study, load_study
+from .study import DEFAULT_STUDY, OBJECTIVES, POLICIES, Study, builtin_study, load_study
 
 
 def write_new_json(path: str | Path, value: object) -> None:
@@ -46,6 +46,9 @@ def parser() -> argparse.ArgumentParser:
     commands = p.add_subparsers(dest="command", required=True)
     study = commands.add_parser("study", help="Inspect the default protocol, or create an editable study draft")
     study.add_argument("--out", help="New JSON draft path; never replaces an existing file")
+    study.add_argument("--objective", choices=OBJECTIVES, help="Create a schema-2 built-in study")
+    study.add_argument("--baseline", choices=POLICIES)
+    study.add_argument("--candidate", choices=POLICIES)
     init = commands.add_parser("init", help="Validate and freeze a study in a new campaign database")
     init.add_argument("--study", required=True)
     init.add_argument("--db", required=True)
@@ -67,6 +70,25 @@ def parser() -> argparse.ArgumentParser:
     reproduce.add_argument("--bundle", required=True)
     reproduce.add_argument("--db", required=True, help="New database, or an interrupted reproduction of this study")
     reproduce.add_argument("--record", required=True, help="New reproduction record JSON path")
+    draft = commands.add_parser("campaign", help="Inspect or create an editable multi-study campaign draft")
+    draft.add_argument("--out")
+    for name in ("campaign-init", "campaign-run", "campaign-resume", "campaign-inspect", "campaign-export"):
+        sub = commands.add_parser(name, help="Manage a frozen finite multi-study campaign")
+        sub.add_argument("--dir", required=True, help="Local campaign directory")
+        if name == "campaign-init":
+            sub.add_argument("--plan", required=True)
+        if name in ("campaign-run", "campaign-resume"):
+            sub.add_argument("--pause-after", type=int, metavar="N")
+        if name == "campaign-inspect":
+            sub.add_argument("--json", action="store_true", help="Include all raw member evidence")
+        if name == "campaign-export":
+            sub.add_argument("--out", required=True)
+    check = commands.add_parser("campaign-verify", help="Verify complete portable campaign evidence")
+    check.add_argument("--bundle", required=True)
+    replay = commands.add_parser("campaign-reproduce", help="Fresh source-bound execution of a complete campaign bundle")
+    replay.add_argument("--bundle", required=True)
+    replay.add_argument("--dir", required=True)
+    replay.add_argument("--record", required=True)
     return p
 
 
@@ -78,8 +100,50 @@ def main(argv: list[str] | None = None) -> int:
     from . import store
     from .evidence import canonical_bytes, compare_reproduction, export_bundle, summarize, verify_bundle
     try:
-        if args.command == "study":
-            study = Study.from_dict(DEFAULT_STUDY)
+        if args.command == "campaign" or args.command.startswith("campaign-"):
+            from . import campaign
+            if args.command == "campaign":
+                draft = campaign.default_plan()
+                if args.out:
+                    write_new_json(args.out, draft)
+                    print("Created campaign draft. Inspect every study and the aggregate reserve before campaign-init.")
+                else:
+                    emit(draft)
+            elif args.command == "campaign-init":
+                emit(campaign.summarize_campaign(campaign.create(campaign.read_json(args.plan), args.dir)))
+            elif args.command in ("campaign-run", "campaign-resume"):
+                emit(campaign.summarize_campaign(campaign.run(args.dir, max_trials=args.pause_after)))
+            elif args.command == "campaign-inspect":
+                current = campaign.inspect(args.dir)
+                emit(current if args.json else campaign.summarize_campaign(current))
+            elif args.command == "campaign-export":
+                print("Exported verified campaign:", campaign.export(campaign.inspect(args.dir), args.out))
+            elif args.command == "campaign-verify":
+                current = campaign.verify(args.bundle)
+                emit({"verified": True, "summary": campaign.summarize_campaign(current)})
+            elif args.command == "campaign-reproduce":
+                bundle, directory, record = (Path(p).resolve() for p in (args.bundle, args.dir, args.record))
+                if (any(p == bundle or bundle in p.parents for p in (directory, record))
+                        or directory == record or directory in record.parents or record in directory.parents
+                        or directory in bundle.parents):
+                    raise ValueError("Reproduction bundle, campaign and record paths must be separate")
+                if os.path.lexists(args.record):
+                    raise ValueError("Reproduction record already exists")
+                record.parent.mkdir(parents=True, exist_ok=True)
+                with tempfile.TemporaryFile(dir=record.parent):
+                    pass
+                already_terminal = (directory.exists()
+                                    and campaign.summarize_campaign(campaign.inspect(args.dir))["complete"])
+                proof = campaign.reproduce(args.bundle, args.dir)
+                proof["publication_context"] = ("reconciled record for a completed source-bound campaign reproduction; no new execution claimed"
+                                                if already_terminal else "record from this new or resumed source-bound campaign execution")
+                write_new_json(args.record, proof)
+                emit(proof)
+                return 0 if proof["status"] == "MATCH" else 1
+        elif args.command == "study":
+            study = (builtin_study(args.objective or OBJECTIVES[0], args.baseline or "uniform_random",
+                                   args.candidate or "coordinate_refinement")
+                     if any((args.objective, args.baseline, args.candidate)) else Study.from_dict(DEFAULT_STUDY))
             if args.out:
                 write_new_json(args.out, study.to_dict())
                 print("Created study draft. Inspect bounded fields before init freezes a campaign.")

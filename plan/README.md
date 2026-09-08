@@ -12,6 +12,13 @@ The renderer writes `ROADMAP.md`, `TASKS.md`, `plan/exports/tanduna-plan.json` a
 
 The plan contains 228 outcome rows across 28 waves: three retained foundation outcomes, 50 narrow 0.1 outcomes, and 175 conditional later or exploratory outcomes. Wave sizes follow feature and evidence coverage; they are not an equal-row quota. The five-wave numerical path is separate from the original training/agent research graph.
 
+The owner additionally selected the local numerical workbench through 0.5 on
+September 8. `activeDelivery` records that scope; `implementationSlice` describes
+bounded progress and remaining acceptance on relevant later rows. These rows stay
+IN PROGRESS while their broader historical acceptance or prerequisites remain
+unfulfilled. The current local export includes this new development scope; it does
+not alter the already frozen native 0.1 submission revision or claim publication.
+
 ## Progress and evidence interface
 
 Update only the relevant task's `status` and `evidenceRefs` when actual evidence supports advancement. The vocabulary is `PLANNED`, `IN PROGRESS`, `IMPLEMENTED`, `AUTOMATED PASS`, `RUNTIME VERIFIED`, `USER VALIDATED`, `RELEASE VERIFIED`, `BLOCKED`, `FAILED` and `NOT TESTED`. A higher label is not an automatic replacement for missing human or release evidence. Evidence references identify actual project-relative artifacts or public evidence locations. `DONE` is reserved for the three retained historical foundation rows.

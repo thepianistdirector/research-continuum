@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "observed_at": "2026-09-08T16:57:09.892700+00:00",
+  "runtime": {
+    "python": "3.12.14",
+    "implementation": "CPython",
+    "system": "Linux",
+    "machine": "x86_64",
+    "sqlite": "3.53.1",
+    "package_version": "0.5.0",
+    "runtime_digest": "2ee2c5d8fe75373f1aa0835641f46ec16ddd006f5b2e6d7e9d4a15ace8fafb2d"
+  },
+  "source_bundle_matches_database": true,
+  "fresh_bundle_matches_database": true,
+  "recovery_bundle_matches_database": true,
+  "all_reproduction_records_rederived": true,
+  "source_digest": "b528e745db07235e34f45528ca0cf3f3db4c59a30575b59e7404f2b3ebcff7ff",
+  "fresh_digest": "4a3f40a3dd2bc8ed971c52545f3d38823408072720de487f6556728936f84527",
+  "recovery_digest": "d4c6fc2b5d269793c6ba686ba1d5f7368d4648ea566efd5e325c15a27fcaa341",
+  "reproduction_status": "MATCH",
+  "limitations": [
+    "Root agent verification; not independent human review or a separate machine."
+  ]
+}

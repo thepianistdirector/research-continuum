@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "observed_at": "2026-09-08T15:58:17.581151+00:00",
+  "evidence_level": "AGENT_RUNTIME",
+  "proposal_id": "prp_df7f3bd9e870117e57f01e5c8937764c",
+  "saved_revision": 1,
+  "poll_option": "yes",
+  "url": "https://tanduna.com/p/research-continuum/proposals/prp_df7f3bd9e870117e57f01e5c8937764c/tasks",
+  "visible_diagnostic": {
+    "status": "Review failed",
+    "error_category": "input",
+    "text": "The review did not complete (input). Reload status before retrying.",
+    "review_or_job_id": null,
+    "validation_detail": null,
+    "input_limit": null,
+    "failure_timestamp": null,
+    "retry_metadata": null,
+    "available_controls": [
+      "Reload saved status",
+      "Retry queued review"
+    ],
+    "frozen_record": "Poll: prp_df7f3bd9e870117e57f01e5c8937764c \u00b7 Option: yes"
+  },
+  "retained_state": {
+    "frozen": true,
+    "task_count": 228,
+    "published": false,
+    "previous_supported_retry_count": 1
+  },
+  "conclusion": "Cause remains unknown beyond the exposed input category. The UI exposes no review/job identifier, size limit, offending field, schema detail, failure timestamp or retry audit metadata. No specific minimal plan correction can be justified from this evidence.",
+  "limitations": [
+    "The dispatcher-reported aggregate snapshot size of 2050906 bytes does not establish a review input-size failure.",
+    "Frozen plan, tasks, contracts, dependencies and poll were not edited. No extra retry, vote, application/database access or outreach."
+  ],
+  "observer": "Authorized Mac helper; GPT-6 Astra; read-only supported UI inspection",
+  "status": "BLOCKED",
+  "next_supported_step": "Obtain a platform-side diagnostic or changed reviewer condition. No additional unchanged retry, recreation, resubmission or vote was performed."
+}

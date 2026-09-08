@@ -1,0 +1,25 @@
+{
+  "campaign_id": "7c535935a3104c0ebc3f8ccf0b1d3e63",
+  "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+  "files": {
+    "evidence.json": {
+      "bytes": 45299,
+      "sha256": "167e4313b59bd8e0fb31776e1b59b2bc662e60b868213d65d0856901b3a7d376"
+    },
+    "records.json": {
+      "bytes": 24576,
+      "sha256": "ae5b0c9a20a71549025456a6970f46c854e0ed94e56ee4e92efe2f511d9e736b"
+    },
+    "report.html": {
+      "bytes": 20960,
+      "sha256": "b83203186e252f0b416a8b9b1a51509e5a394a97105e9f05e938b24a2d302915"
+    },
+    "summary.json": {
+      "bytes": 10551,
+      "sha256": "91f3caff88a5271da13473f1733772d92742eff80127682af7c2675b8162bf52"
+    }
+  },
+  "schema_version": 1,
+  "study_digest": "ea75a1a507856a0adc44f927b5b1c133cdc3cfb754c54854c462f69686443843",
+  "type": "PublicationBundle"
+}

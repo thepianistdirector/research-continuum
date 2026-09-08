@@ -1,0 +1,672 @@
+{
+  "campaign_complete": true,
+  "campaign_id": "acc347a817b04515932caf21c663695c",
+  "charged_evaluations": 3072,
+  "claim_status": "UNREVIEWED",
+  "control_objective_calls": 2,
+  "failed_attempts": 0,
+  "groups": [
+    {
+      "charged_evaluations": 384,
+      "completed_trials": 3,
+      "failed_attempts": 0,
+      "median_best": 0.9444444444444432,
+      "phase": "development",
+      "policy": "grid_search",
+      "quality_met_trials": 0,
+      "recorded_evaluations": 384,
+      "scheduled_trials": 3
+    },
+    {
+      "charged_evaluations": 384,
+      "completed_trials": 3,
+      "failed_attempts": 0,
+      "median_best": 4.655312582291663,
+      "phase": "development",
+      "policy": "coordinate_refinement",
+      "quality_met_trials": 0,
+      "recorded_evaluations": 384,
+      "scheduled_trials": 3
+    },
+    {
+      "charged_evaluations": 384,
+      "completed_trials": 3,
+      "failed_attempts": 0,
+      "median_best": 0.9444444444444432,
+      "phase": "confirmation",
+      "policy": "grid_search",
+      "quality_met_trials": 0,
+      "recorded_evaluations": 384,
+      "scheduled_trials": 3
+    },
+    {
+      "charged_evaluations": 384,
+      "completed_trials": 3,
+      "failed_attempts": 0,
+      "median_best": 4.655312582291663,
+      "phase": "confirmation",
+      "policy": "coordinate_refinement",
+      "quality_met_trials": 0,
+      "recorded_evaluations": 384,
+      "scheduled_trials": 3
+    },
+    {
+      "charged_evaluations": 768,
+      "completed_trials": 6,
+      "failed_attempts": 0,
+      "median_best": 0.9444444444444432,
+      "phase": "reproduction",
+      "policy": "grid_search",
+      "quality_met_trials": 0,
+      "recorded_evaluations": 768,
+      "scheduled_trials": 6
+    },
+    {
+      "charged_evaluations": 768,
+      "completed_trials": 6,
+      "failed_attempts": 0,
+      "median_best": 4.655312582291663,
+      "phase": "reproduction",
+      "policy": "coordinate_refinement",
+      "quality_met_trials": 0,
+      "recorded_evaluations": 768,
+      "scheduled_trials": 6
+    }
+  ],
+  "hypothesis_relation": "contradicted",
+  "inconclusive_reasons": [],
+  "independent_human_review": "PENDING",
+  "limitations": [
+    "This is one public, known-answer numerical fixture, not a secret holdout.",
+    "Grid and coordinate policy repeats are deterministic checks, not independent stochastic samples.",
+    "The frozen verdict is descriptive. Seed resampling intervals are conditional summaries, not population confidence or significance guarantees.",
+    "Equal charged evaluation units do not imply equal CPU or elapsed time.",
+    "Recorded observations can undercount calls lost at process death; full admitted allowance remains charged.",
+    "Operator-invoked audits recompute objectives outside admitted search; campaign counts exclude that verification overhead.",
+    "Reserved reproduction runs use the same coordinator and built-ins; independent external execution is a separate gate.",
+    "Trusted built-ins share a process. Logical interfaces are not adversarial code isolation.",
+    "Checksums detect integrity changes; they are not signatures or scientific validation.",
+    "Independent human and qualified domain review are pending."
+  ],
+  "recorded_evaluations": 3072,
+  "reproductions": [
+    {
+      "attempt_id": "a6d77517fa3444329b527b044ebb3638",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-development-grid_search-11",
+      "schema_version": 1,
+      "source_attempt_id": "e314a05be1504c6798a50bbeeea685d8",
+      "source_trial_id": "development-grid_search-11",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-development-grid_search-11",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "f9e0f687c83a4425b395479839e59e21",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-development-grid_search-22",
+      "schema_version": 1,
+      "source_attempt_id": "e363aaf3ccf9494aa45bcd31bbef9d55",
+      "source_trial_id": "development-grid_search-22",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-development-grid_search-22",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "c8b7a3ba2a2142f7992c8522f26dbb64",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-development-grid_search-33",
+      "schema_version": 1,
+      "source_attempt_id": "c6817fa92bc247778b1b904161115aca",
+      "source_trial_id": "development-grid_search-33",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-development-grid_search-33",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "9fca12d4e2ca484bae13f4a92163282d",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-development-coordinate_refinement-11",
+      "schema_version": 1,
+      "source_attempt_id": "e52d1fb828de4270bcbbc060f49d804d",
+      "source_trial_id": "development-coordinate_refinement-11",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-development-coordinate_refinement-11",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "95bd3673aa074d5ca0ff8edcc690e3c1",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-development-coordinate_refinement-22",
+      "schema_version": 1,
+      "source_attempt_id": "83ccf8b200234de9a2bc8965bcc7a973",
+      "source_trial_id": "development-coordinate_refinement-22",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-development-coordinate_refinement-22",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "27426c2aa898478abdfb5ebbf57fe685",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-development-coordinate_refinement-33",
+      "schema_version": 1,
+      "source_attempt_id": "a6552096cc2246d88fd39a9400b07114",
+      "source_trial_id": "development-coordinate_refinement-33",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-development-coordinate_refinement-33",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "5a6ec53aef474f39a1d9321675093020",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-confirmation-grid_search-101",
+      "schema_version": 1,
+      "source_attempt_id": "16e1e41acede4b7a86549d1983d7b93e",
+      "source_trial_id": "confirmation-grid_search-101",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-confirmation-grid_search-101",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "43301659fda94d34b22526f1c09b86e5",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-confirmation-grid_search-202",
+      "schema_version": 1,
+      "source_attempt_id": "eb7f9c02a1d04146a713431dac2a45b6",
+      "source_trial_id": "confirmation-grid_search-202",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-confirmation-grid_search-202",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "87d22e03682b471f8e0f81d4ca26d8cb",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-confirmation-grid_search-303",
+      "schema_version": 1,
+      "source_attempt_id": "45bf833eabbc4ca4be512460d5fd6f57",
+      "source_trial_id": "confirmation-grid_search-303",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-confirmation-grid_search-303",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "520ff21987464d2e918237eed8d5e24a",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-confirmation-coordinate_refinement-101",
+      "schema_version": 1,
+      "source_attempt_id": "86882d3882804fb096d470a8b885dcb0",
+      "source_trial_id": "confirmation-coordinate_refinement-101",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-confirmation-coordinate_refinement-101",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "e2ede66b2b8844e6aa5519cf222e1835",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-confirmation-coordinate_refinement-202",
+      "schema_version": 1,
+      "source_attempt_id": "ba8c2eda27fc4e06a14a5ace2e5623b0",
+      "source_trial_id": "confirmation-coordinate_refinement-202",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-confirmation-coordinate_refinement-202",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "7b128698db294c35ae90bc767e47577d",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-confirmation-coordinate_refinement-303",
+      "schema_version": 1,
+      "source_attempt_id": "843a26253a204f2fb2acc3fc7ce3e6a9",
+      "source_trial_id": "confirmation-coordinate_refinement-303",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-confirmation-coordinate_refinement-303",
+      "type": "ReproductionRecord"
+    }
+  ],
+  "reserved_evaluations": 6144,
+  "schema_version": 1,
+  "study_digest": "e36c74c4ebbe19551999d21ceb97d1bada61c2e905cad9b0be73dac1ae874bb6",
+  "trials": [
+    {
+      "attempt_ids": [
+        "e314a05be1504c6798a50bbeeea685d8"
+      ],
+      "best": 0.9444444444444432,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "e314a05be1504c6798a50bbeeea685d8",
+      "failed_attempts": 0,
+      "phase": "development",
+      "policy": "grid_search",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 11,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "development-grid_search-11"
+    },
+    {
+      "attempt_ids": [
+        "e363aaf3ccf9494aa45bcd31bbef9d55"
+      ],
+      "best": 0.9444444444444432,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "e363aaf3ccf9494aa45bcd31bbef9d55",
+      "failed_attempts": 0,
+      "phase": "development",
+      "policy": "grid_search",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 22,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "development-grid_search-22"
+    },
+    {
+      "attempt_ids": [
+        "c6817fa92bc247778b1b904161115aca"
+      ],
+      "best": 0.9444444444444432,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "c6817fa92bc247778b1b904161115aca",
+      "failed_attempts": 0,
+      "phase": "development",
+      "policy": "grid_search",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 33,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "development-grid_search-33"
+    },
+    {
+      "attempt_ids": [
+        "e52d1fb828de4270bcbbc060f49d804d"
+      ],
+      "best": 4.655312582291663,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "e52d1fb828de4270bcbbc060f49d804d",
+      "failed_attempts": 0,
+      "phase": "development",
+      "policy": "coordinate_refinement",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 11,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "development-coordinate_refinement-11"
+    },
+    {
+      "attempt_ids": [
+        "83ccf8b200234de9a2bc8965bcc7a973"
+      ],
+      "best": 4.655312582291663,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "83ccf8b200234de9a2bc8965bcc7a973",
+      "failed_attempts": 0,
+      "phase": "development",
+      "policy": "coordinate_refinement",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 22,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "development-coordinate_refinement-22"
+    },
+    {
+      "attempt_ids": [
+        "a6552096cc2246d88fd39a9400b07114"
+      ],
+      "best": 4.655312582291663,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "a6552096cc2246d88fd39a9400b07114",
+      "failed_attempts": 0,
+      "phase": "development",
+      "policy": "coordinate_refinement",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 33,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "development-coordinate_refinement-33"
+    },
+    {
+      "attempt_ids": [
+        "16e1e41acede4b7a86549d1983d7b93e"
+      ],
+      "best": 0.9444444444444432,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "16e1e41acede4b7a86549d1983d7b93e",
+      "failed_attempts": 0,
+      "phase": "confirmation",
+      "policy": "grid_search",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 101,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "confirmation-grid_search-101"
+    },
+    {
+      "attempt_ids": [
+        "eb7f9c02a1d04146a713431dac2a45b6"
+      ],
+      "best": 0.9444444444444432,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "eb7f9c02a1d04146a713431dac2a45b6",
+      "failed_attempts": 0,
+      "phase": "confirmation",
+      "policy": "grid_search",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 202,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "confirmation-grid_search-202"
+    },
+    {
+      "attempt_ids": [
+        "45bf833eabbc4ca4be512460d5fd6f57"
+      ],
+      "best": 0.9444444444444432,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "45bf833eabbc4ca4be512460d5fd6f57",
+      "failed_attempts": 0,
+      "phase": "confirmation",
+      "policy": "grid_search",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 303,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "confirmation-grid_search-303"
+    },
+    {
+      "attempt_ids": [
+        "86882d3882804fb096d470a8b885dcb0"
+      ],
+      "best": 4.655312582291663,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "86882d3882804fb096d470a8b885dcb0",
+      "failed_attempts": 0,
+      "phase": "confirmation",
+      "policy": "coordinate_refinement",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 101,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "confirmation-coordinate_refinement-101"
+    },
+    {
+      "attempt_ids": [
+        "ba8c2eda27fc4e06a14a5ace2e5623b0"
+      ],
+      "best": 4.655312582291663,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "ba8c2eda27fc4e06a14a5ace2e5623b0",
+      "failed_attempts": 0,
+      "phase": "confirmation",
+      "policy": "coordinate_refinement",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 202,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "confirmation-coordinate_refinement-202"
+    },
+    {
+      "attempt_ids": [
+        "843a26253a204f2fb2acc3fc7ce3e6a9"
+      ],
+      "best": 4.655312582291663,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "843a26253a204f2fb2acc3fc7ce3e6a9",
+      "failed_attempts": 0,
+      "phase": "confirmation",
+      "policy": "coordinate_refinement",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 303,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "confirmation-coordinate_refinement-303"
+    },
+    {
+      "attempt_ids": [
+        "a6d77517fa3444329b527b044ebb3638"
+      ],
+      "best": 0.9444444444444432,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "a6d77517fa3444329b527b044ebb3638",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "grid_search",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 11,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-development-grid_search-11"
+    },
+    {
+      "attempt_ids": [
+        "f9e0f687c83a4425b395479839e59e21"
+      ],
+      "best": 0.9444444444444432,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "f9e0f687c83a4425b395479839e59e21",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "grid_search",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 22,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-development-grid_search-22"
+    },
+    {
+      "attempt_ids": [
+        "c8b7a3ba2a2142f7992c8522f26dbb64"
+      ],
+      "best": 0.9444444444444432,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "c8b7a3ba2a2142f7992c8522f26dbb64",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "grid_search",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 33,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-development-grid_search-33"
+    },
+    {
+      "attempt_ids": [
+        "9fca12d4e2ca484bae13f4a92163282d"
+      ],
+      "best": 4.655312582291663,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "9fca12d4e2ca484bae13f4a92163282d",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "coordinate_refinement",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 11,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-development-coordinate_refinement-11"
+    },
+    {
+      "attempt_ids": [
+        "95bd3673aa074d5ca0ff8edcc690e3c1"
+      ],
+      "best": 4.655312582291663,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "95bd3673aa074d5ca0ff8edcc690e3c1",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "coordinate_refinement",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 22,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-development-coordinate_refinement-22"
+    },
+    {
+      "attempt_ids": [
+        "27426c2aa898478abdfb5ebbf57fe685"
+      ],
+      "best": 4.655312582291663,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "27426c2aa898478abdfb5ebbf57fe685",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "coordinate_refinement",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 33,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-development-coordinate_refinement-33"
+    },
+    {
+      "attempt_ids": [
+        "5a6ec53aef474f39a1d9321675093020"
+      ],
+      "best": 0.9444444444444432,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "5a6ec53aef474f39a1d9321675093020",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "grid_search",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 101,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-confirmation-grid_search-101"
+    },
+    {
+      "attempt_ids": [
+        "43301659fda94d34b22526f1c09b86e5"
+      ],
+      "best": 0.9444444444444432,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "43301659fda94d34b22526f1c09b86e5",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "grid_search",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 202,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-confirmation-grid_search-202"
+    },
+    {
+      "attempt_ids": [
+        "87d22e03682b471f8e0f81d4ca26d8cb"
+      ],
+      "best": 0.9444444444444432,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "87d22e03682b471f8e0f81d4ca26d8cb",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "grid_search",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 303,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-confirmation-grid_search-303"
+    },
+    {
+      "attempt_ids": [
+        "520ff21987464d2e918237eed8d5e24a"
+      ],
+      "best": 4.655312582291663,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "520ff21987464d2e918237eed8d5e24a",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "coordinate_refinement",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 101,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-confirmation-coordinate_refinement-101"
+    },
+    {
+      "attempt_ids": [
+        "e2ede66b2b8844e6aa5519cf222e1835"
+      ],
+      "best": 4.655312582291663,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "e2ede66b2b8844e6aa5519cf222e1835",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "coordinate_refinement",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 202,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-confirmation-coordinate_refinement-202"
+    },
+    {
+      "attempt_ids": [
+        "7b128698db294c35ae90bc767e47577d"
+      ],
+      "best": 4.655312582291663,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "7b128698db294c35ae90bc767e47577d",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "coordinate_refinement",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 303,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-confirmation-coordinate_refinement-303"
+    }
+  ],
+  "uncertainty": {
+    "differences": [
+      3.71086813784722,
+      3.71086813784722,
+      3.71086813784722
+    ],
+    "estimand": "median of paired candidate-minus-reference best objectives",
+    "interpretation": "Descriptive resampling of these frozen seeds only; no population coverage, significance or general superiority claim. The median paired difference can differ from the difference of medians used for the study verdict.",
+    "interval": null,
+    "median_difference": 3.71086813784722,
+    "method": "paired-median-bootstrap-percentile-v1",
+    "n_pairs": 3,
+    "range": [
+      3.71086813784722,
+      3.71086813784722
+    ],
+    "resample_seed": 1729,
+    "resamples": 0,
+    "status": "DETERMINISTIC_NO_SAMPLING_INTERVAL"
+  },
+  "verdict": "BASELINE_LOWER"
+}

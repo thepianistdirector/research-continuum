@@ -1,0 +1,19 @@
+{
+  "source_campaign_id": "c5bc8d6fed264b3e944f160ba249f5ae",
+  "source_environment": {
+    "implementation": "CPython",
+    "machine": "x86_64",
+    "package_version": "0.1.0",
+    "python": "3.12.14",
+    "runtime_digest": "74245e190f1a711677ec38dce61401ba1bd475bfeaa72895b8a5c50b1bb95fe0",
+    "sqlite": "3.53.1",
+    "system": "Linux"
+  },
+  "source_bundle_files": {
+    "evidence.json": "342a02deadaf779419dcded68fcdeae580f919a3b011014029b0011499ff7442",
+    "manifest.json": "3d963b043062cf996fbbb6f4fbe2c94a008f6bd457deb8ee3f363fdcef3d2036",
+    "records.json": "30688cf63eb62fbf4a5685679b0725835d075c1cbf3dfb243531be0ab6ac0677",
+    "report.html": "d6502e0d8abb72e494ffe4ea645b2379e93cca6e9b931f7e989641ce0ec4eb60",
+    "summary.json": "a3197b0d6b912b1287cfba3799322c51fb05dceda54ec279d1edaa590dcaeae4"
+  }
+}

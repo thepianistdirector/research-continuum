@@ -1,4 +1,4 @@
-"""Strict immutable contracts for the single trusted version-one adapter."""
+"""Strict immutable contracts for the trusted versioned numerical adapters."""
 
 from dataclasses import asdict, dataclass, fields
 import hashlib
@@ -6,6 +6,10 @@ import json
 import math
 from pathlib import Path
 import re
+
+
+OBJECTIVES = ("rosenbrock-2d-v1", "sphere-2d-v1", "ellipsoid-2d-v1")
+POLICIES = ("uniform_random", "grid_search", "coordinate_refinement", "coordinate_fixed_step")
 
 
 class StudyError(ValueError):
@@ -73,7 +77,7 @@ class Study:
     attempt_timeout_seconds: int
 
     def __post_init__(self) -> None:
-        _integer(self.schema_version, "schema_version", 1, 1)
+        _integer(self.schema_version, "schema_version", 1, 2)
         for name in ("study_id", "revision"):
             value = _text(getattr(self, name), name, 80)
             if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9._-]*", value):
@@ -87,6 +91,14 @@ class Study:
             "feedback": "own-scalar-only-fresh-policy-per-run",
             "comparison": "descriptive-confirmation-median-best-v1",
         }
+        if self.schema_version == 2:
+            for name, choices in (("evaluator", OBJECTIVES), ("baseline", POLICIES), ("candidate", POLICIES)):
+                value = getattr(self, name)
+                if type(value) is not str or value not in choices:
+                    raise StudyError(f"{name} must be a reviewed built-in: {choices}")
+                del constants[name]
+            if self.baseline == self.candidate:
+                raise StudyError("baseline and candidate must be distinct policies")
         for name, expected in constants.items():
             if type(getattr(self, name)) is not str or getattr(self, name) != expected:
                 raise StudyError(f"{name} must be {expected!r}")
@@ -209,3 +221,14 @@ DEFAULT_STUDY = {
     "max_attempts_per_trial": 2,
     "attempt_timeout_seconds": 10,
 }
+
+
+def builtin_study(evaluator="rosenbrock-2d-v1", baseline="uniform_random", candidate="coordinate_refinement") -> Study:
+    """New schema-2 draft; no accepted schema-1 study is silently upgraded."""
+    data = dict(DEFAULT_STUDY, schema_version=2, evaluator=evaluator, baseline=baseline, candidate=candidate,
+                study_id=f"{evaluator}-{candidate}-v-{baseline}",
+                question=f"On {evaluator}, does {candidate} obtain a lower confirmation median best objective than {baseline} at equal evaluation allowance?",
+                hypothesis=f"{candidate} will obtain a lower confirmation median best objective than {baseline}.")
+    if evaluator != "rosenbrock-2d-v1":
+        data.update(domain=[[-2.0, 2.0], [-2.0, 2.0]], start=[-1.2, 1.0])
+    return Study.from_dict(data)

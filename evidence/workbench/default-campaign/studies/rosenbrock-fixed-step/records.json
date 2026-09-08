@@ -1,0 +1,1602 @@
+{
+  "claim": {
+    "all_evaluation_ids": [
+      "evaluation-d51097415cad4703a7adf4b3d1900e40",
+      "evaluation-b6ea924a6691409d9c2bb1b538ba8275",
+      "evaluation-d45eb0e2b2624cef8126e4c1e55230e0",
+      "evaluation-bd4e8e92f9104a1ea8bafd545fb3cb98",
+      "evaluation-a85873c3185c4d7ba24b23cf6f77b655",
+      "evaluation-8de28cf804454646b9beb565c8af3c40",
+      "evaluation-30cd087c825d4c47b2bc54f3bcf7740b",
+      "evaluation-3109bf77ade24b5987f371164fd70d3a",
+      "evaluation-6c8e0712c9bb4c7ebeb345998a7e5881",
+      "evaluation-2e3bcadfeefe4f57a00c0b088dae607e",
+      "evaluation-ddd17a642386453cbbdb6560e9e05e52",
+      "evaluation-0fc052250f3945c2b6c9a3aa0f3b76f6",
+      "evaluation-f2622ba946c5492588e54889b71bc71e",
+      "evaluation-c0222fd783db4e18b6e94d0e04e29ca4",
+      "evaluation-53859858e4374826a637971b9f6032af",
+      "evaluation-f4433c9289314253abcd3af544ef1419",
+      "evaluation-40895fb2630c49edb338d2b8ce208492",
+      "evaluation-56c37c23fd3c407ca12d87255ecb602b",
+      "evaluation-884933fca37548609da8e5b17da610e8",
+      "evaluation-fd6cec9918d941af9b5f7f06fcab1e14",
+      "evaluation-150d5eec102846578d5257c1a7499e49",
+      "evaluation-d2de3155c4f14b93b301a1b8f942aff1",
+      "evaluation-4643eb976a1d4dde8a8b7c172367c64f",
+      "evaluation-8b7dc2202afa42e984a70f7b1c00c8fb"
+    ],
+    "comparison_evaluation_ids": [
+      "evaluation-30cd087c825d4c47b2bc54f3bcf7740b",
+      "evaluation-3109bf77ade24b5987f371164fd70d3a",
+      "evaluation-6c8e0712c9bb4c7ebeb345998a7e5881",
+      "evaluation-2e3bcadfeefe4f57a00c0b088dae607e",
+      "evaluation-ddd17a642386453cbbdb6560e9e05e52",
+      "evaluation-0fc052250f3945c2b6c9a3aa0f3b76f6"
+    ],
+    "contradiction_evaluation_ids": [
+      "evaluation-30cd087c825d4c47b2bc54f3bcf7740b",
+      "evaluation-2e3bcadfeefe4f57a00c0b088dae607e",
+      "evaluation-3109bf77ade24b5987f371164fd70d3a",
+      "evaluation-ddd17a642386453cbbdb6560e9e05e52",
+      "evaluation-6c8e0712c9bb4c7ebeb345998a7e5881",
+      "evaluation-0fc052250f3945c2b6c9a3aa0f3b76f6"
+    ],
+    "hypothesis_id": "hypothesis-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+    "hypothesis_relation": "contradicted",
+    "id": "claim-a66b3eed8e4144c18eca22c4d76cf697",
+    "independent_human_review": "PENDING",
+    "limitations": [
+      "This is one public, known-answer numerical fixture, not a secret holdout.",
+      "Grid and coordinate policy repeats are deterministic checks, not independent stochastic samples.",
+      "The frozen verdict is descriptive. Seed resampling intervals are conditional summaries, not population confidence or significance guarantees.",
+      "Equal charged evaluation units do not imply equal CPU or elapsed time.",
+      "Recorded observations can undercount calls lost at process death; full admitted allowance remains charged.",
+      "Operator-invoked audits recompute objectives outside admitted search; campaign counts exclude that verification overhead.",
+      "Reserved reproduction runs use the same coordinator and built-ins; independent external execution is a separate gate.",
+      "Trusted built-ins share a process. Logical interfaces are not adversarial code isolation.",
+      "Checksums detect integrity changes; they are not signatures or scientific validation.",
+      "Independent human and qualified domain review are pending."
+    ],
+    "question_id": "question-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+    "reproduction_ids": [
+      "reproduction-record-reproduction-development-uniform_random-11",
+      "reproduction-record-reproduction-development-uniform_random-22",
+      "reproduction-record-reproduction-development-uniform_random-33",
+      "reproduction-record-reproduction-development-coordinate_fixed_step-11",
+      "reproduction-record-reproduction-development-coordinate_fixed_step-22",
+      "reproduction-record-reproduction-development-coordinate_fixed_step-33",
+      "reproduction-record-reproduction-confirmation-uniform_random-101",
+      "reproduction-record-reproduction-confirmation-uniform_random-202",
+      "reproduction-record-reproduction-confirmation-uniform_random-303",
+      "reproduction-record-reproduction-confirmation-coordinate_fixed_step-101",
+      "reproduction-record-reproduction-confirmation-coordinate_fixed_step-202",
+      "reproduction-record-reproduction-confirmation-coordinate_fixed_step-303"
+    ],
+    "schema_version": 1,
+    "scope": "descriptive median for this frozen fixture only",
+    "status": "UNREVIEWED",
+    "study_id": "study-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+    "support_evaluation_ids": [],
+    "type": "ResearchClaim",
+    "verdict": "BASELINE_LOWER"
+  },
+  "evaluations": [
+    {
+      "eligible": true,
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "id": "evaluation-d51097415cad4703a7adf4b3d1900e40",
+      "observation_source": {
+        "attempt_id": "d51097415cad4703a7adf4b3d1900e40",
+        "file": "evidence.json"
+      },
+      "result": {
+        "best": 0.1731013159801553,
+        "cpu_seconds": 0.03178806099999987,
+        "elapsed_seconds": 0.3435505300294608,
+        "ended_at": "2026-09-08T16:46:39.825427+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "run_id": "run-d51097415cad4703a7adf4b3d1900e40",
+      "schema_version": 1,
+      "trial_id": "development-uniform_random-11",
+      "type": "EvaluationRecord"
+    },
+    {
+      "eligible": true,
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "id": "evaluation-b6ea924a6691409d9c2bb1b538ba8275",
+      "observation_source": {
+        "attempt_id": "b6ea924a6691409d9c2bb1b538ba8275",
+        "file": "evidence.json"
+      },
+      "result": {
+        "best": 0.1802121529734757,
+        "cpu_seconds": 0.03431020599999979,
+        "elapsed_seconds": 0.35660473798634484,
+        "ended_at": "2026-09-08T16:46:40.188099+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "run_id": "run-b6ea924a6691409d9c2bb1b538ba8275",
+      "schema_version": 1,
+      "trial_id": "development-uniform_random-22",
+      "type": "EvaluationRecord"
+    },
+    {
+      "eligible": true,
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "id": "evaluation-d45eb0e2b2624cef8126e4c1e55230e0",
+      "observation_source": {
+        "attempt_id": "d45eb0e2b2624cef8126e4c1e55230e0",
+        "file": "evidence.json"
+      },
+      "result": {
+        "best": 0.7441787749988042,
+        "cpu_seconds": 0.032417209999999974,
+        "elapsed_seconds": 0.354801082983613,
+        "ended_at": "2026-09-08T16:46:40.550356+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "run_id": "run-d45eb0e2b2624cef8126e4c1e55230e0",
+      "schema_version": 1,
+      "trial_id": "development-uniform_random-33",
+      "type": "EvaluationRecord"
+    },
+    {
+      "eligible": true,
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "id": "evaluation-bd4e8e92f9104a1ea8bafd545fb3cb98",
+      "observation_source": {
+        "attempt_id": "bd4e8e92f9104a1ea8bafd545fb3cb98",
+        "file": "evidence.json"
+      },
+      "result": {
+        "best": 5.200000000000001,
+        "cpu_seconds": 0.03263150100000001,
+        "elapsed_seconds": 0.3389521950157359,
+        "ended_at": "2026-09-08T16:46:40.895340+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "run_id": "run-bd4e8e92f9104a1ea8bafd545fb3cb98",
+      "schema_version": 1,
+      "trial_id": "development-coordinate_fixed_step-11",
+      "type": "EvaluationRecord"
+    },
+    {
+      "eligible": true,
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "id": "evaluation-a85873c3185c4d7ba24b23cf6f77b655",
+      "observation_source": {
+        "attempt_id": "a85873c3185c4d7ba24b23cf6f77b655",
+        "file": "evidence.json"
+      },
+      "result": {
+        "best": 5.200000000000001,
+        "cpu_seconds": 0.03339921300000004,
+        "elapsed_seconds": 0.3497836369788274,
+        "ended_at": "2026-09-08T16:46:41.251191+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "run_id": "run-a85873c3185c4d7ba24b23cf6f77b655",
+      "schema_version": 1,
+      "trial_id": "development-coordinate_fixed_step-22",
+      "type": "EvaluationRecord"
+    },
+    {
+      "eligible": true,
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "id": "evaluation-8de28cf804454646b9beb565c8af3c40",
+      "observation_source": {
+        "attempt_id": "8de28cf804454646b9beb565c8af3c40",
+        "file": "evidence.json"
+      },
+      "result": {
+        "best": 5.200000000000001,
+        "cpu_seconds": 0.03291057900000016,
+        "elapsed_seconds": 0.3701247230055742,
+        "ended_at": "2026-09-08T16:46:41.628763+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "run_id": "run-8de28cf804454646b9beb565c8af3c40",
+      "schema_version": 1,
+      "trial_id": "development-coordinate_fixed_step-33",
+      "type": "EvaluationRecord"
+    },
+    {
+      "eligible": true,
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "id": "evaluation-30cd087c825d4c47b2bc54f3bcf7740b",
+      "observation_source": {
+        "attempt_id": "30cd087c825d4c47b2bc54f3bcf7740b",
+        "file": "evidence.json"
+      },
+      "result": {
+        "best": 0.37070710657631817,
+        "cpu_seconds": 0.03678503500000008,
+        "elapsed_seconds": 0.364488416002132,
+        "ended_at": "2026-09-08T16:46:42.000560+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "run_id": "run-30cd087c825d4c47b2bc54f3bcf7740b",
+      "schema_version": 1,
+      "trial_id": "confirmation-uniform_random-101",
+      "type": "EvaluationRecord"
+    },
+    {
+      "eligible": true,
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "id": "evaluation-3109bf77ade24b5987f371164fd70d3a",
+      "observation_source": {
+        "attempt_id": "3109bf77ade24b5987f371164fd70d3a",
+        "file": "evidence.json"
+      },
+      "result": {
+        "best": 0.25900796897177875,
+        "cpu_seconds": 0.04019502500000005,
+        "elapsed_seconds": 0.36163865396520123,
+        "ended_at": "2026-09-08T16:46:42.369781+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "run_id": "run-3109bf77ade24b5987f371164fd70d3a",
+      "schema_version": 1,
+      "trial_id": "confirmation-uniform_random-202",
+      "type": "EvaluationRecord"
+    },
+    {
+      "eligible": true,
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "id": "evaluation-6c8e0712c9bb4c7ebeb345998a7e5881",
+      "observation_source": {
+        "attempt_id": "6c8e0712c9bb4c7ebeb345998a7e5881",
+        "file": "evidence.json"
+      },
+      "result": {
+        "best": 0.03865770457327981,
+        "cpu_seconds": 0.03722659499999992,
+        "elapsed_seconds": 0.3529921870213002,
+        "ended_at": "2026-09-08T16:46:42.731127+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "run_id": "run-6c8e0712c9bb4c7ebeb345998a7e5881",
+      "schema_version": 1,
+      "trial_id": "confirmation-uniform_random-303",
+      "type": "EvaluationRecord"
+    },
+    {
+      "eligible": true,
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "id": "evaluation-2e3bcadfeefe4f57a00c0b088dae607e",
+      "observation_source": {
+        "attempt_id": "2e3bcadfeefe4f57a00c0b088dae607e",
+        "file": "evidence.json"
+      },
+      "result": {
+        "best": 5.200000000000001,
+        "cpu_seconds": 0.03383855000000002,
+        "elapsed_seconds": 0.3505440010339953,
+        "ended_at": "2026-09-08T16:46:43.089272+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "run_id": "run-2e3bcadfeefe4f57a00c0b088dae607e",
+      "schema_version": 1,
+      "trial_id": "confirmation-coordinate_fixed_step-101",
+      "type": "EvaluationRecord"
+    },
+    {
+      "eligible": true,
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "id": "evaluation-ddd17a642386453cbbdb6560e9e05e52",
+      "observation_source": {
+        "attempt_id": "ddd17a642386453cbbdb6560e9e05e52",
+        "file": "evidence.json"
+      },
+      "result": {
+        "best": 5.200000000000001,
+        "cpu_seconds": 0.03294029499999995,
+        "elapsed_seconds": 0.33116028597578406,
+        "ended_at": "2026-09-08T16:46:43.427483+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "run_id": "run-ddd17a642386453cbbdb6560e9e05e52",
+      "schema_version": 1,
+      "trial_id": "confirmation-coordinate_fixed_step-202",
+      "type": "EvaluationRecord"
+    },
+    {
+      "eligible": true,
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "id": "evaluation-0fc052250f3945c2b6c9a3aa0f3b76f6",
+      "observation_source": {
+        "attempt_id": "0fc052250f3945c2b6c9a3aa0f3b76f6",
+        "file": "evidence.json"
+      },
+      "result": {
+        "best": 5.200000000000001,
+        "cpu_seconds": 0.03370549899999986,
+        "elapsed_seconds": 0.3430534150102176,
+        "ended_at": "2026-09-08T16:46:43.776547+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "run_id": "run-0fc052250f3945c2b6c9a3aa0f3b76f6",
+      "schema_version": 1,
+      "trial_id": "confirmation-coordinate_fixed_step-303",
+      "type": "EvaluationRecord"
+    },
+    {
+      "eligible": true,
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "id": "evaluation-f2622ba946c5492588e54889b71bc71e",
+      "observation_source": {
+        "attempt_id": "f2622ba946c5492588e54889b71bc71e",
+        "file": "evidence.json"
+      },
+      "result": {
+        "best": 0.1731013159801553,
+        "cpu_seconds": 0.11601245799999993,
+        "elapsed_seconds": 0.4836963010020554,
+        "ended_at": "2026-09-08T16:46:44.268213+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "run_id": "run-f2622ba946c5492588e54889b71bc71e",
+      "schema_version": 1,
+      "trial_id": "reproduction-development-uniform_random-11",
+      "type": "EvaluationRecord"
+    },
+    {
+      "eligible": true,
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "id": "evaluation-c0222fd783db4e18b6e94d0e04e29ca4",
+      "observation_source": {
+        "attempt_id": "c0222fd783db4e18b6e94d0e04e29ca4",
+        "file": "evidence.json"
+      },
+      "result": {
+        "best": 0.1802121529734757,
+        "cpu_seconds": 0.06760263100000019,
+        "elapsed_seconds": 0.4366745940060355,
+        "ended_at": "2026-09-08T16:46:44.716648+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "run_id": "run-c0222fd783db4e18b6e94d0e04e29ca4",
+      "schema_version": 1,
+      "trial_id": "reproduction-development-uniform_random-22",
+      "type": "EvaluationRecord"
+    },
+    {
+      "eligible": true,
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "id": "evaluation-53859858e4374826a637971b9f6032af",
+      "observation_source": {
+        "attempt_id": "53859858e4374826a637971b9f6032af",
+        "file": "evidence.json"
+      },
+      "result": {
+        "best": 0.7441787749988042,
+        "cpu_seconds": 0.05931002399999974,
+        "elapsed_seconds": 0.3983135099988431,
+        "ended_at": "2026-09-08T16:46:45.127282+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "run_id": "run-53859858e4374826a637971b9f6032af",
+      "schema_version": 1,
+      "trial_id": "reproduction-development-uniform_random-33",
+      "type": "EvaluationRecord"
+    },
+    {
+      "eligible": true,
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "id": "evaluation-f4433c9289314253abcd3af544ef1419",
+      "observation_source": {
+        "attempt_id": "f4433c9289314253abcd3af544ef1419",
+        "file": "evidence.json"
+      },
+      "result": {
+        "best": 5.200000000000001,
+        "cpu_seconds": 0.06625236800000023,
+        "elapsed_seconds": 0.4196538749965839,
+        "ended_at": "2026-09-08T16:46:45.554964+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "run_id": "run-f4433c9289314253abcd3af544ef1419",
+      "schema_version": 1,
+      "trial_id": "reproduction-development-coordinate_fixed_step-11",
+      "type": "EvaluationRecord"
+    },
+    {
+      "eligible": true,
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "id": "evaluation-40895fb2630c49edb338d2b8ce208492",
+      "observation_source": {
+        "attempt_id": "40895fb2630c49edb338d2b8ce208492",
+        "file": "evidence.json"
+      },
+      "result": {
+        "best": 5.200000000000001,
+        "cpu_seconds": 0.045061781999999884,
+        "elapsed_seconds": 0.37942178995581344,
+        "ended_at": "2026-09-08T16:46:45.942779+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "run_id": "run-40895fb2630c49edb338d2b8ce208492",
+      "schema_version": 1,
+      "trial_id": "reproduction-development-coordinate_fixed_step-22",
+      "type": "EvaluationRecord"
+    },
+    {
+      "eligible": true,
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "id": "evaluation-56c37c23fd3c407ca12d87255ecb602b",
+      "observation_source": {
+        "attempt_id": "56c37c23fd3c407ca12d87255ecb602b",
+        "file": "evidence.json"
+      },
+      "result": {
+        "best": 5.200000000000001,
+        "cpu_seconds": 0.032864870999999685,
+        "elapsed_seconds": 0.35460076900199056,
+        "ended_at": "2026-09-08T16:46:46.304758+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "run_id": "run-56c37c23fd3c407ca12d87255ecb602b",
+      "schema_version": 1,
+      "trial_id": "reproduction-development-coordinate_fixed_step-33",
+      "type": "EvaluationRecord"
+    },
+    {
+      "eligible": true,
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "id": "evaluation-884933fca37548609da8e5b17da610e8",
+      "observation_source": {
+        "attempt_id": "884933fca37548609da8e5b17da610e8",
+        "file": "evidence.json"
+      },
+      "result": {
+        "best": 0.37070710657631817,
+        "cpu_seconds": 0.03742088499999996,
+        "elapsed_seconds": 0.331340964010451,
+        "ended_at": "2026-09-08T16:46:46.643581+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "run_id": "run-884933fca37548609da8e5b17da610e8",
+      "schema_version": 1,
+      "trial_id": "reproduction-confirmation-uniform_random-101",
+      "type": "EvaluationRecord"
+    },
+    {
+      "eligible": true,
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "id": "evaluation-fd6cec9918d941af9b5f7f06fcab1e14",
+      "observation_source": {
+        "attempt_id": "fd6cec9918d941af9b5f7f06fcab1e14",
+        "file": "evidence.json"
+      },
+      "result": {
+        "best": 0.25900796897177875,
+        "cpu_seconds": 0.03727888899999998,
+        "elapsed_seconds": 0.35770113801117986,
+        "ended_at": "2026-09-08T16:46:47.012162+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "run_id": "run-fd6cec9918d941af9b5f7f06fcab1e14",
+      "schema_version": 1,
+      "trial_id": "reproduction-confirmation-uniform_random-202",
+      "type": "EvaluationRecord"
+    },
+    {
+      "eligible": true,
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "id": "evaluation-150d5eec102846578d5257c1a7499e49",
+      "observation_source": {
+        "attempt_id": "150d5eec102846578d5257c1a7499e49",
+        "file": "evidence.json"
+      },
+      "result": {
+        "best": 0.03865770457327981,
+        "cpu_seconds": 0.039860242000000046,
+        "elapsed_seconds": 0.3516746149980463,
+        "ended_at": "2026-09-08T16:46:47.371339+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "run_id": "run-150d5eec102846578d5257c1a7499e49",
+      "schema_version": 1,
+      "trial_id": "reproduction-confirmation-uniform_random-303",
+      "type": "EvaluationRecord"
+    },
+    {
+      "eligible": true,
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "id": "evaluation-d2de3155c4f14b93b301a1b8f942aff1",
+      "observation_source": {
+        "attempt_id": "d2de3155c4f14b93b301a1b8f942aff1",
+        "file": "evidence.json"
+      },
+      "result": {
+        "best": 5.200000000000001,
+        "cpu_seconds": 0.03900827799999984,
+        "elapsed_seconds": 0.34936625097179785,
+        "ended_at": "2026-09-08T16:46:47.730819+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "run_id": "run-d2de3155c4f14b93b301a1b8f942aff1",
+      "schema_version": 1,
+      "trial_id": "reproduction-confirmation-coordinate_fixed_step-101",
+      "type": "EvaluationRecord"
+    },
+    {
+      "eligible": true,
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "id": "evaluation-4643eb976a1d4dde8a8b7c172367c64f",
+      "observation_source": {
+        "attempt_id": "4643eb976a1d4dde8a8b7c172367c64f",
+        "file": "evidence.json"
+      },
+      "result": {
+        "best": 5.200000000000001,
+        "cpu_seconds": 0.04078680999999973,
+        "elapsed_seconds": 0.35106191504746675,
+        "ended_at": "2026-09-08T16:46:48.088485+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "run_id": "run-4643eb976a1d4dde8a8b7c172367c64f",
+      "schema_version": 1,
+      "trial_id": "reproduction-confirmation-coordinate_fixed_step-202",
+      "type": "EvaluationRecord"
+    },
+    {
+      "eligible": true,
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "id": "evaluation-8b7dc2202afa42e984a70f7b1c00c8fb",
+      "observation_source": {
+        "attempt_id": "8b7dc2202afa42e984a70f7b1c00c8fb",
+        "file": "evidence.json"
+      },
+      "result": {
+        "best": 5.200000000000001,
+        "cpu_seconds": 0.04054930500000031,
+        "elapsed_seconds": 0.3668746760231443,
+        "ended_at": "2026-09-08T16:46:48.462909+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "run_id": "run-8b7dc2202afa42e984a70f7b1c00c8fb",
+      "schema_version": 1,
+      "trial_id": "reproduction-confirmation-coordinate_fixed_step-303",
+      "type": "EvaluationRecord"
+    }
+  ],
+  "hypothesis": {
+    "falsifier": "The candidate confirmation median is greater than or equal to the baseline median; invalid or missing runs or unequal charged costs make the comparison inconclusive.",
+    "id": "hypothesis-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+    "question_id": "question-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+    "schema_version": 1,
+    "text": "coordinate_fixed_step will obtain a lower confirmation median best objective than uniform_random.",
+    "type": "HypothesisRevision"
+  },
+  "question": {
+    "id": "question-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+    "schema_version": 1,
+    "source_ids": [
+      "source-rosenbrock-2d-v1",
+      "source-workbench-9bc92c50780849d792731b587d797b07-rosenbrock-fixed-step"
+    ],
+    "text": "On rosenbrock-2d-v1, does coordinate_fixed_step obtain a lower confirmation median best objective than uniform_random at equal evaluation allowance?",
+    "type": "QuestionRevision"
+  },
+  "report_design": {
+    "audience": "technical",
+    "chart_omission": "The single-study report prioritizes exact per-trial evidence. The campaign browser plots recorded attempt traces and separates descriptive seed resampling from the frozen verdict.",
+    "dependencies": "Python standard library only; no external runtime resources",
+    "structure": "answer; frozen definitions; findings and exact trial lookup; methods; controls and recovery; limitations; next steps and questions",
+    "surface": "offline semantic HTML"
+  },
+  "reproductions": [
+    {
+      "attempt_id": "f2622ba946c5492588e54889b71bc71e",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-development-uniform_random-11",
+      "schema_version": 1,
+      "source_attempt_id": "d51097415cad4703a7adf4b3d1900e40",
+      "source_trial_id": "development-uniform_random-11",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-development-uniform_random-11",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "c0222fd783db4e18b6e94d0e04e29ca4",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-development-uniform_random-22",
+      "schema_version": 1,
+      "source_attempt_id": "b6ea924a6691409d9c2bb1b538ba8275",
+      "source_trial_id": "development-uniform_random-22",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-development-uniform_random-22",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "53859858e4374826a637971b9f6032af",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-development-uniform_random-33",
+      "schema_version": 1,
+      "source_attempt_id": "d45eb0e2b2624cef8126e4c1e55230e0",
+      "source_trial_id": "development-uniform_random-33",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-development-uniform_random-33",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "f4433c9289314253abcd3af544ef1419",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-development-coordinate_fixed_step-11",
+      "schema_version": 1,
+      "source_attempt_id": "bd4e8e92f9104a1ea8bafd545fb3cb98",
+      "source_trial_id": "development-coordinate_fixed_step-11",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-development-coordinate_fixed_step-11",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "40895fb2630c49edb338d2b8ce208492",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-development-coordinate_fixed_step-22",
+      "schema_version": 1,
+      "source_attempt_id": "a85873c3185c4d7ba24b23cf6f77b655",
+      "source_trial_id": "development-coordinate_fixed_step-22",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-development-coordinate_fixed_step-22",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "56c37c23fd3c407ca12d87255ecb602b",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-development-coordinate_fixed_step-33",
+      "schema_version": 1,
+      "source_attempt_id": "8de28cf804454646b9beb565c8af3c40",
+      "source_trial_id": "development-coordinate_fixed_step-33",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-development-coordinate_fixed_step-33",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "884933fca37548609da8e5b17da610e8",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-confirmation-uniform_random-101",
+      "schema_version": 1,
+      "source_attempt_id": "30cd087c825d4c47b2bc54f3bcf7740b",
+      "source_trial_id": "confirmation-uniform_random-101",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-confirmation-uniform_random-101",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "fd6cec9918d941af9b5f7f06fcab1e14",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-confirmation-uniform_random-202",
+      "schema_version": 1,
+      "source_attempt_id": "3109bf77ade24b5987f371164fd70d3a",
+      "source_trial_id": "confirmation-uniform_random-202",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-confirmation-uniform_random-202",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "150d5eec102846578d5257c1a7499e49",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-confirmation-uniform_random-303",
+      "schema_version": 1,
+      "source_attempt_id": "6c8e0712c9bb4c7ebeb345998a7e5881",
+      "source_trial_id": "confirmation-uniform_random-303",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-confirmation-uniform_random-303",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "d2de3155c4f14b93b301a1b8f942aff1",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-confirmation-coordinate_fixed_step-101",
+      "schema_version": 1,
+      "source_attempt_id": "2e3bcadfeefe4f57a00c0b088dae607e",
+      "source_trial_id": "confirmation-coordinate_fixed_step-101",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-confirmation-coordinate_fixed_step-101",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "4643eb976a1d4dde8a8b7c172367c64f",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-confirmation-coordinate_fixed_step-202",
+      "schema_version": 1,
+      "source_attempt_id": "ddd17a642386453cbbdb6560e9e05e52",
+      "source_trial_id": "confirmation-coordinate_fixed_step-202",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-confirmation-coordinate_fixed_step-202",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "8b7dc2202afa42e984a70f7b1c00c8fb",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-confirmation-coordinate_fixed_step-303",
+      "schema_version": 1,
+      "source_attempt_id": "0fc052250f3945c2b6c9a3aa0f3b76f6",
+      "source_trial_id": "confirmation-coordinate_fixed_step-303",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-confirmation-coordinate_fixed_step-303",
+      "type": "ReproductionRecord"
+    }
+  ],
+  "runs": [
+    {
+      "attempt_id": "d51097415cad4703a7adf4b3d1900e40",
+      "charged_evaluations": 128,
+      "id": "run-d51097415cad4703a7adf4b3d1900e40",
+      "retry_of": null,
+      "schema_version": 1,
+      "terminal": {
+        "best": 0.1731013159801553,
+        "cpu_seconds": 0.03178806099999987,
+        "elapsed_seconds": 0.3435505300294608,
+        "ended_at": "2026-09-08T16:46:39.825427+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "trial_id": "development-uniform_random-11",
+      "type": "RunResult"
+    },
+    {
+      "attempt_id": "b6ea924a6691409d9c2bb1b538ba8275",
+      "charged_evaluations": 128,
+      "id": "run-b6ea924a6691409d9c2bb1b538ba8275",
+      "retry_of": null,
+      "schema_version": 1,
+      "terminal": {
+        "best": 0.1802121529734757,
+        "cpu_seconds": 0.03431020599999979,
+        "elapsed_seconds": 0.35660473798634484,
+        "ended_at": "2026-09-08T16:46:40.188099+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "trial_id": "development-uniform_random-22",
+      "type": "RunResult"
+    },
+    {
+      "attempt_id": "d45eb0e2b2624cef8126e4c1e55230e0",
+      "charged_evaluations": 128,
+      "id": "run-d45eb0e2b2624cef8126e4c1e55230e0",
+      "retry_of": null,
+      "schema_version": 1,
+      "terminal": {
+        "best": 0.7441787749988042,
+        "cpu_seconds": 0.032417209999999974,
+        "elapsed_seconds": 0.354801082983613,
+        "ended_at": "2026-09-08T16:46:40.550356+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "trial_id": "development-uniform_random-33",
+      "type": "RunResult"
+    },
+    {
+      "attempt_id": "bd4e8e92f9104a1ea8bafd545fb3cb98",
+      "charged_evaluations": 128,
+      "id": "run-bd4e8e92f9104a1ea8bafd545fb3cb98",
+      "retry_of": null,
+      "schema_version": 1,
+      "terminal": {
+        "best": 5.200000000000001,
+        "cpu_seconds": 0.03263150100000001,
+        "elapsed_seconds": 0.3389521950157359,
+        "ended_at": "2026-09-08T16:46:40.895340+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "trial_id": "development-coordinate_fixed_step-11",
+      "type": "RunResult"
+    },
+    {
+      "attempt_id": "a85873c3185c4d7ba24b23cf6f77b655",
+      "charged_evaluations": 128,
+      "id": "run-a85873c3185c4d7ba24b23cf6f77b655",
+      "retry_of": null,
+      "schema_version": 1,
+      "terminal": {
+        "best": 5.200000000000001,
+        "cpu_seconds": 0.03339921300000004,
+        "elapsed_seconds": 0.3497836369788274,
+        "ended_at": "2026-09-08T16:46:41.251191+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "trial_id": "development-coordinate_fixed_step-22",
+      "type": "RunResult"
+    },
+    {
+      "attempt_id": "8de28cf804454646b9beb565c8af3c40",
+      "charged_evaluations": 128,
+      "id": "run-8de28cf804454646b9beb565c8af3c40",
+      "retry_of": null,
+      "schema_version": 1,
+      "terminal": {
+        "best": 5.200000000000001,
+        "cpu_seconds": 0.03291057900000016,
+        "elapsed_seconds": 0.3701247230055742,
+        "ended_at": "2026-09-08T16:46:41.628763+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "trial_id": "development-coordinate_fixed_step-33",
+      "type": "RunResult"
+    },
+    {
+      "attempt_id": "30cd087c825d4c47b2bc54f3bcf7740b",
+      "charged_evaluations": 128,
+      "id": "run-30cd087c825d4c47b2bc54f3bcf7740b",
+      "retry_of": null,
+      "schema_version": 1,
+      "terminal": {
+        "best": 0.37070710657631817,
+        "cpu_seconds": 0.03678503500000008,
+        "elapsed_seconds": 0.364488416002132,
+        "ended_at": "2026-09-08T16:46:42.000560+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "trial_id": "confirmation-uniform_random-101",
+      "type": "RunResult"
+    },
+    {
+      "attempt_id": "3109bf77ade24b5987f371164fd70d3a",
+      "charged_evaluations": 128,
+      "id": "run-3109bf77ade24b5987f371164fd70d3a",
+      "retry_of": null,
+      "schema_version": 1,
+      "terminal": {
+        "best": 0.25900796897177875,
+        "cpu_seconds": 0.04019502500000005,
+        "elapsed_seconds": 0.36163865396520123,
+        "ended_at": "2026-09-08T16:46:42.369781+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "trial_id": "confirmation-uniform_random-202",
+      "type": "RunResult"
+    },
+    {
+      "attempt_id": "6c8e0712c9bb4c7ebeb345998a7e5881",
+      "charged_evaluations": 128,
+      "id": "run-6c8e0712c9bb4c7ebeb345998a7e5881",
+      "retry_of": null,
+      "schema_version": 1,
+      "terminal": {
+        "best": 0.03865770457327981,
+        "cpu_seconds": 0.03722659499999992,
+        "elapsed_seconds": 0.3529921870213002,
+        "ended_at": "2026-09-08T16:46:42.731127+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "trial_id": "confirmation-uniform_random-303",
+      "type": "RunResult"
+    },
+    {
+      "attempt_id": "2e3bcadfeefe4f57a00c0b088dae607e",
+      "charged_evaluations": 128,
+      "id": "run-2e3bcadfeefe4f57a00c0b088dae607e",
+      "retry_of": null,
+      "schema_version": 1,
+      "terminal": {
+        "best": 5.200000000000001,
+        "cpu_seconds": 0.03383855000000002,
+        "elapsed_seconds": 0.3505440010339953,
+        "ended_at": "2026-09-08T16:46:43.089272+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "trial_id": "confirmation-coordinate_fixed_step-101",
+      "type": "RunResult"
+    },
+    {
+      "attempt_id": "ddd17a642386453cbbdb6560e9e05e52",
+      "charged_evaluations": 128,
+      "id": "run-ddd17a642386453cbbdb6560e9e05e52",
+      "retry_of": null,
+      "schema_version": 1,
+      "terminal": {
+        "best": 5.200000000000001,
+        "cpu_seconds": 0.03294029499999995,
+        "elapsed_seconds": 0.33116028597578406,
+        "ended_at": "2026-09-08T16:46:43.427483+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "trial_id": "confirmation-coordinate_fixed_step-202",
+      "type": "RunResult"
+    },
+    {
+      "attempt_id": "0fc052250f3945c2b6c9a3aa0f3b76f6",
+      "charged_evaluations": 128,
+      "id": "run-0fc052250f3945c2b6c9a3aa0f3b76f6",
+      "retry_of": null,
+      "schema_version": 1,
+      "terminal": {
+        "best": 5.200000000000001,
+        "cpu_seconds": 0.03370549899999986,
+        "elapsed_seconds": 0.3430534150102176,
+        "ended_at": "2026-09-08T16:46:43.776547+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "trial_id": "confirmation-coordinate_fixed_step-303",
+      "type": "RunResult"
+    },
+    {
+      "attempt_id": "f2622ba946c5492588e54889b71bc71e",
+      "charged_evaluations": 128,
+      "id": "run-f2622ba946c5492588e54889b71bc71e",
+      "retry_of": null,
+      "schema_version": 1,
+      "terminal": {
+        "best": 0.1731013159801553,
+        "cpu_seconds": 0.11601245799999993,
+        "elapsed_seconds": 0.4836963010020554,
+        "ended_at": "2026-09-08T16:46:44.268213+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "trial_id": "reproduction-development-uniform_random-11",
+      "type": "RunResult"
+    },
+    {
+      "attempt_id": "c0222fd783db4e18b6e94d0e04e29ca4",
+      "charged_evaluations": 128,
+      "id": "run-c0222fd783db4e18b6e94d0e04e29ca4",
+      "retry_of": null,
+      "schema_version": 1,
+      "terminal": {
+        "best": 0.1802121529734757,
+        "cpu_seconds": 0.06760263100000019,
+        "elapsed_seconds": 0.4366745940060355,
+        "ended_at": "2026-09-08T16:46:44.716648+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "trial_id": "reproduction-development-uniform_random-22",
+      "type": "RunResult"
+    },
+    {
+      "attempt_id": "53859858e4374826a637971b9f6032af",
+      "charged_evaluations": 128,
+      "id": "run-53859858e4374826a637971b9f6032af",
+      "retry_of": null,
+      "schema_version": 1,
+      "terminal": {
+        "best": 0.7441787749988042,
+        "cpu_seconds": 0.05931002399999974,
+        "elapsed_seconds": 0.3983135099988431,
+        "ended_at": "2026-09-08T16:46:45.127282+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "trial_id": "reproduction-development-uniform_random-33",
+      "type": "RunResult"
+    },
+    {
+      "attempt_id": "f4433c9289314253abcd3af544ef1419",
+      "charged_evaluations": 128,
+      "id": "run-f4433c9289314253abcd3af544ef1419",
+      "retry_of": null,
+      "schema_version": 1,
+      "terminal": {
+        "best": 5.200000000000001,
+        "cpu_seconds": 0.06625236800000023,
+        "elapsed_seconds": 0.4196538749965839,
+        "ended_at": "2026-09-08T16:46:45.554964+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "trial_id": "reproduction-development-coordinate_fixed_step-11",
+      "type": "RunResult"
+    },
+    {
+      "attempt_id": "40895fb2630c49edb338d2b8ce208492",
+      "charged_evaluations": 128,
+      "id": "run-40895fb2630c49edb338d2b8ce208492",
+      "retry_of": null,
+      "schema_version": 1,
+      "terminal": {
+        "best": 5.200000000000001,
+        "cpu_seconds": 0.045061781999999884,
+        "elapsed_seconds": 0.37942178995581344,
+        "ended_at": "2026-09-08T16:46:45.942779+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "trial_id": "reproduction-development-coordinate_fixed_step-22",
+      "type": "RunResult"
+    },
+    {
+      "attempt_id": "56c37c23fd3c407ca12d87255ecb602b",
+      "charged_evaluations": 128,
+      "id": "run-56c37c23fd3c407ca12d87255ecb602b",
+      "retry_of": null,
+      "schema_version": 1,
+      "terminal": {
+        "best": 5.200000000000001,
+        "cpu_seconds": 0.032864870999999685,
+        "elapsed_seconds": 0.35460076900199056,
+        "ended_at": "2026-09-08T16:46:46.304758+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "trial_id": "reproduction-development-coordinate_fixed_step-33",
+      "type": "RunResult"
+    },
+    {
+      "attempt_id": "884933fca37548609da8e5b17da610e8",
+      "charged_evaluations": 128,
+      "id": "run-884933fca37548609da8e5b17da610e8",
+      "retry_of": null,
+      "schema_version": 1,
+      "terminal": {
+        "best": 0.37070710657631817,
+        "cpu_seconds": 0.03742088499999996,
+        "elapsed_seconds": 0.331340964010451,
+        "ended_at": "2026-09-08T16:46:46.643581+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "trial_id": "reproduction-confirmation-uniform_random-101",
+      "type": "RunResult"
+    },
+    {
+      "attempt_id": "fd6cec9918d941af9b5f7f06fcab1e14",
+      "charged_evaluations": 128,
+      "id": "run-fd6cec9918d941af9b5f7f06fcab1e14",
+      "retry_of": null,
+      "schema_version": 1,
+      "terminal": {
+        "best": 0.25900796897177875,
+        "cpu_seconds": 0.03727888899999998,
+        "elapsed_seconds": 0.35770113801117986,
+        "ended_at": "2026-09-08T16:46:47.012162+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "trial_id": "reproduction-confirmation-uniform_random-202",
+      "type": "RunResult"
+    },
+    {
+      "attempt_id": "150d5eec102846578d5257c1a7499e49",
+      "charged_evaluations": 128,
+      "id": "run-150d5eec102846578d5257c1a7499e49",
+      "retry_of": null,
+      "schema_version": 1,
+      "terminal": {
+        "best": 0.03865770457327981,
+        "cpu_seconds": 0.039860242000000046,
+        "elapsed_seconds": 0.3516746149980463,
+        "ended_at": "2026-09-08T16:46:47.371339+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "trial_id": "reproduction-confirmation-uniform_random-303",
+      "type": "RunResult"
+    },
+    {
+      "attempt_id": "d2de3155c4f14b93b301a1b8f942aff1",
+      "charged_evaluations": 128,
+      "id": "run-d2de3155c4f14b93b301a1b8f942aff1",
+      "retry_of": null,
+      "schema_version": 1,
+      "terminal": {
+        "best": 5.200000000000001,
+        "cpu_seconds": 0.03900827799999984,
+        "elapsed_seconds": 0.34936625097179785,
+        "ended_at": "2026-09-08T16:46:47.730819+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "trial_id": "reproduction-confirmation-coordinate_fixed_step-101",
+      "type": "RunResult"
+    },
+    {
+      "attempt_id": "4643eb976a1d4dde8a8b7c172367c64f",
+      "charged_evaluations": 128,
+      "id": "run-4643eb976a1d4dde8a8b7c172367c64f",
+      "retry_of": null,
+      "schema_version": 1,
+      "terminal": {
+        "best": 5.200000000000001,
+        "cpu_seconds": 0.04078680999999973,
+        "elapsed_seconds": 0.35106191504746675,
+        "ended_at": "2026-09-08T16:46:48.088485+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "trial_id": "reproduction-confirmation-coordinate_fixed_step-202",
+      "type": "RunResult"
+    },
+    {
+      "attempt_id": "8b7dc2202afa42e984a70f7b1c00c8fb",
+      "charged_evaluations": 128,
+      "id": "run-8b7dc2202afa42e984a70f7b1c00c8fb",
+      "retry_of": null,
+      "schema_version": 1,
+      "terminal": {
+        "best": 5.200000000000001,
+        "cpu_seconds": 0.04054930500000031,
+        "elapsed_seconds": 0.3668746760231443,
+        "ended_at": "2026-09-08T16:46:48.462909+00:00",
+        "observed_evaluations": 128,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "trial_id": "reproduction-confirmation-coordinate_fixed_step-303",
+      "type": "RunResult"
+    }
+  ],
+  "schema_version": 1,
+  "source_records": [
+    {
+      "description": "Original implementation of public known-answer rosenbrock-2d-v1 and reviewed search policies",
+      "id": "source-rosenbrock-2d-v1",
+      "license": "AGPL-3.0-only",
+      "locator": "docs/decisions/003-numerical-workbench.md",
+      "schema_version": 1,
+      "type": "SourceRecord"
+    },
+    {
+      "description": "Complete workbench inventory accepted before this study was admitted",
+      "id": "source-workbench-9bc92c50780849d792731b587d797b07-rosenbrock-fixed-step",
+      "license": "AGPL-3.0-only",
+      "locator": "sha256:d6bf10563a3a6167020851e5a6d0e291639c4045e2761f1406309c14400e2350",
+      "schema_version": 1,
+      "type": "SourceRecord"
+    }
+  ],
+  "study": {
+    "design": {
+      "attempt_timeout_seconds": 10,
+      "baseline": "uniform_random",
+      "candidate": "coordinate_fixed_step",
+      "comparison": "descriptive-confirmation-median-best-v1",
+      "confirmation_seeds": [
+        101,
+        202,
+        303
+      ],
+      "development_seeds": [
+        11,
+        22,
+        33
+      ],
+      "domain": [
+        [
+          -2.0,
+          2.0
+        ],
+        [
+          -1.0,
+          3.0
+        ]
+      ],
+      "evaluations_per_policy": 128,
+      "evaluator": "rosenbrock-2d-v1",
+      "falsifier": "The candidate confirmation median is greater than or equal to the baseline median; invalid or missing runs or unequal charged costs make the comparison inconclusive.",
+      "feedback": "own-scalar-only-fresh-policy-per-run",
+      "hypothesis": "coordinate_fixed_step will obtain a lower confirmation median best objective than uniform_random.",
+      "initial_step": 0.5,
+      "max_attempts_per_trial": 2,
+      "quality_threshold": 0.01,
+      "question": "On rosenbrock-2d-v1, does coordinate_fixed_step obtain a lower confirmation median best objective than uniform_random at equal evaluation allowance?",
+      "reproduction_tolerance": 1e-12,
+      "revision": "1",
+      "schema_version": 2,
+      "start": [
+        -1.2,
+        1.0
+      ],
+      "study_id": "rosenbrock-2d-v1-coordinate_fixed_step-v-uniform_random"
+    },
+    "hypothesis_id": "hypothesis-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+    "id": "study-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+    "question_id": "question-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+    "schema_version": 1,
+    "type": "StudyDesign"
+  },
+  "trials": [
+    {
+      "allocation": 256,
+      "id": "development-uniform_random-11",
+      "phase": "development",
+      "policy": "uniform_random",
+      "pool": "development:uniform_random",
+      "reproduces": null,
+      "schema_version": 1,
+      "seed": 11,
+      "source_phase": "development",
+      "study_id": "study-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+      "type": "TrialSpec"
+    },
+    {
+      "allocation": 256,
+      "id": "development-uniform_random-22",
+      "phase": "development",
+      "policy": "uniform_random",
+      "pool": "development:uniform_random",
+      "reproduces": null,
+      "schema_version": 1,
+      "seed": 22,
+      "source_phase": "development",
+      "study_id": "study-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+      "type": "TrialSpec"
+    },
+    {
+      "allocation": 256,
+      "id": "development-uniform_random-33",
+      "phase": "development",
+      "policy": "uniform_random",
+      "pool": "development:uniform_random",
+      "reproduces": null,
+      "schema_version": 1,
+      "seed": 33,
+      "source_phase": "development",
+      "study_id": "study-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+      "type": "TrialSpec"
+    },
+    {
+      "allocation": 256,
+      "id": "development-coordinate_fixed_step-11",
+      "phase": "development",
+      "policy": "coordinate_fixed_step",
+      "pool": "development:coordinate_fixed_step",
+      "reproduces": null,
+      "schema_version": 1,
+      "seed": 11,
+      "source_phase": "development",
+      "study_id": "study-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+      "type": "TrialSpec"
+    },
+    {
+      "allocation": 256,
+      "id": "development-coordinate_fixed_step-22",
+      "phase": "development",
+      "policy": "coordinate_fixed_step",
+      "pool": "development:coordinate_fixed_step",
+      "reproduces": null,
+      "schema_version": 1,
+      "seed": 22,
+      "source_phase": "development",
+      "study_id": "study-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+      "type": "TrialSpec"
+    },
+    {
+      "allocation": 256,
+      "id": "development-coordinate_fixed_step-33",
+      "phase": "development",
+      "policy": "coordinate_fixed_step",
+      "pool": "development:coordinate_fixed_step",
+      "reproduces": null,
+      "schema_version": 1,
+      "seed": 33,
+      "source_phase": "development",
+      "study_id": "study-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+      "type": "TrialSpec"
+    },
+    {
+      "allocation": 256,
+      "id": "confirmation-uniform_random-101",
+      "phase": "confirmation",
+      "policy": "uniform_random",
+      "pool": "confirmation:uniform_random",
+      "reproduces": null,
+      "schema_version": 1,
+      "seed": 101,
+      "source_phase": "confirmation",
+      "study_id": "study-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+      "type": "TrialSpec"
+    },
+    {
+      "allocation": 256,
+      "id": "confirmation-uniform_random-202",
+      "phase": "confirmation",
+      "policy": "uniform_random",
+      "pool": "confirmation:uniform_random",
+      "reproduces": null,
+      "schema_version": 1,
+      "seed": 202,
+      "source_phase": "confirmation",
+      "study_id": "study-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+      "type": "TrialSpec"
+    },
+    {
+      "allocation": 256,
+      "id": "confirmation-uniform_random-303",
+      "phase": "confirmation",
+      "policy": "uniform_random",
+      "pool": "confirmation:uniform_random",
+      "reproduces": null,
+      "schema_version": 1,
+      "seed": 303,
+      "source_phase": "confirmation",
+      "study_id": "study-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+      "type": "TrialSpec"
+    },
+    {
+      "allocation": 256,
+      "id": "confirmation-coordinate_fixed_step-101",
+      "phase": "confirmation",
+      "policy": "coordinate_fixed_step",
+      "pool": "confirmation:coordinate_fixed_step",
+      "reproduces": null,
+      "schema_version": 1,
+      "seed": 101,
+      "source_phase": "confirmation",
+      "study_id": "study-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+      "type": "TrialSpec"
+    },
+    {
+      "allocation": 256,
+      "id": "confirmation-coordinate_fixed_step-202",
+      "phase": "confirmation",
+      "policy": "coordinate_fixed_step",
+      "pool": "confirmation:coordinate_fixed_step",
+      "reproduces": null,
+      "schema_version": 1,
+      "seed": 202,
+      "source_phase": "confirmation",
+      "study_id": "study-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+      "type": "TrialSpec"
+    },
+    {
+      "allocation": 256,
+      "id": "confirmation-coordinate_fixed_step-303",
+      "phase": "confirmation",
+      "policy": "coordinate_fixed_step",
+      "pool": "confirmation:coordinate_fixed_step",
+      "reproduces": null,
+      "schema_version": 1,
+      "seed": 303,
+      "source_phase": "confirmation",
+      "study_id": "study-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+      "type": "TrialSpec"
+    },
+    {
+      "allocation": 256,
+      "id": "reproduction-development-uniform_random-11",
+      "phase": "reproduction",
+      "policy": "uniform_random",
+      "pool": "reproduction:uniform_random",
+      "reproduces": "development-uniform_random-11",
+      "schema_version": 1,
+      "seed": 11,
+      "source_phase": "development",
+      "study_id": "study-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+      "type": "TrialSpec"
+    },
+    {
+      "allocation": 256,
+      "id": "reproduction-development-uniform_random-22",
+      "phase": "reproduction",
+      "policy": "uniform_random",
+      "pool": "reproduction:uniform_random",
+      "reproduces": "development-uniform_random-22",
+      "schema_version": 1,
+      "seed": 22,
+      "source_phase": "development",
+      "study_id": "study-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+      "type": "TrialSpec"
+    },
+    {
+      "allocation": 256,
+      "id": "reproduction-development-uniform_random-33",
+      "phase": "reproduction",
+      "policy": "uniform_random",
+      "pool": "reproduction:uniform_random",
+      "reproduces": "development-uniform_random-33",
+      "schema_version": 1,
+      "seed": 33,
+      "source_phase": "development",
+      "study_id": "study-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+      "type": "TrialSpec"
+    },
+    {
+      "allocation": 256,
+      "id": "reproduction-development-coordinate_fixed_step-11",
+      "phase": "reproduction",
+      "policy": "coordinate_fixed_step",
+      "pool": "reproduction:coordinate_fixed_step",
+      "reproduces": "development-coordinate_fixed_step-11",
+      "schema_version": 1,
+      "seed": 11,
+      "source_phase": "development",
+      "study_id": "study-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+      "type": "TrialSpec"
+    },
+    {
+      "allocation": 256,
+      "id": "reproduction-development-coordinate_fixed_step-22",
+      "phase": "reproduction",
+      "policy": "coordinate_fixed_step",
+      "pool": "reproduction:coordinate_fixed_step",
+      "reproduces": "development-coordinate_fixed_step-22",
+      "schema_version": 1,
+      "seed": 22,
+      "source_phase": "development",
+      "study_id": "study-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+      "type": "TrialSpec"
+    },
+    {
+      "allocation": 256,
+      "id": "reproduction-development-coordinate_fixed_step-33",
+      "phase": "reproduction",
+      "policy": "coordinate_fixed_step",
+      "pool": "reproduction:coordinate_fixed_step",
+      "reproduces": "development-coordinate_fixed_step-33",
+      "schema_version": 1,
+      "seed": 33,
+      "source_phase": "development",
+      "study_id": "study-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+      "type": "TrialSpec"
+    },
+    {
+      "allocation": 256,
+      "id": "reproduction-confirmation-uniform_random-101",
+      "phase": "reproduction",
+      "policy": "uniform_random",
+      "pool": "reproduction:uniform_random",
+      "reproduces": "confirmation-uniform_random-101",
+      "schema_version": 1,
+      "seed": 101,
+      "source_phase": "confirmation",
+      "study_id": "study-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+      "type": "TrialSpec"
+    },
+    {
+      "allocation": 256,
+      "id": "reproduction-confirmation-uniform_random-202",
+      "phase": "reproduction",
+      "policy": "uniform_random",
+      "pool": "reproduction:uniform_random",
+      "reproduces": "confirmation-uniform_random-202",
+      "schema_version": 1,
+      "seed": 202,
+      "source_phase": "confirmation",
+      "study_id": "study-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+      "type": "TrialSpec"
+    },
+    {
+      "allocation": 256,
+      "id": "reproduction-confirmation-uniform_random-303",
+      "phase": "reproduction",
+      "policy": "uniform_random",
+      "pool": "reproduction:uniform_random",
+      "reproduces": "confirmation-uniform_random-303",
+      "schema_version": 1,
+      "seed": 303,
+      "source_phase": "confirmation",
+      "study_id": "study-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+      "type": "TrialSpec"
+    },
+    {
+      "allocation": 256,
+      "id": "reproduction-confirmation-coordinate_fixed_step-101",
+      "phase": "reproduction",
+      "policy": "coordinate_fixed_step",
+      "pool": "reproduction:coordinate_fixed_step",
+      "reproduces": "confirmation-coordinate_fixed_step-101",
+      "schema_version": 1,
+      "seed": 101,
+      "source_phase": "confirmation",
+      "study_id": "study-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+      "type": "TrialSpec"
+    },
+    {
+      "allocation": 256,
+      "id": "reproduction-confirmation-coordinate_fixed_step-202",
+      "phase": "reproduction",
+      "policy": "coordinate_fixed_step",
+      "pool": "reproduction:coordinate_fixed_step",
+      "reproduces": "confirmation-coordinate_fixed_step-202",
+      "schema_version": 1,
+      "seed": 202,
+      "source_phase": "confirmation",
+      "study_id": "study-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+      "type": "TrialSpec"
+    },
+    {
+      "allocation": 256,
+      "id": "reproduction-confirmation-coordinate_fixed_step-303",
+      "phase": "reproduction",
+      "policy": "coordinate_fixed_step",
+      "pool": "reproduction:coordinate_fixed_step",
+      "reproduces": "confirmation-coordinate_fixed_step-303",
+      "schema_version": 1,
+      "seed": 303,
+      "source_phase": "confirmation",
+      "study_id": "study-9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+      "type": "TrialSpec"
+    }
+  ]
+}

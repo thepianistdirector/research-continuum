@@ -69,7 +69,7 @@ def trial_specs(study: Study) -> list[dict]:
     originals = []
     for phase, seeds in (("development", study.development_seeds),
                          ("confirmation", study.confirmation_seeds)):
-        for policy in ("uniform_random", "coordinate_refinement"):
+        for policy in (study.baseline, study.candidate):
             for seed in seeds:
                 originals.append({
                     "id": f"{phase}-{policy}-{seed}", "phase": phase,
@@ -166,7 +166,7 @@ CREATE TRIGGER observations_no_staging BEFORE INSERT ON observations
 
 
 def create(study: Study, database: str | Path, *, expected_evaluator: str | None = None,
-           reproduction_source: dict | None = None) -> dict:
+           reproduction_source: dict | None = None, campaign_source: dict | None = None) -> dict:
     """Freeze a new campaign; refuse replacing any existing database, even a partial one."""
     path = _path(database)
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -183,12 +183,23 @@ def create(study: Study, database: str | Path, *, expected_evaluator: str | None
             "schema_version": 1, "campaign_id": uuid.uuid4().hex,
             "study": study.to_dict(), "study_digest": study.digest,
             "evaluator_digest": expected, "environment": environment(), "created_at": now(),
-            "source_records": [{"id": "source-rosenbrock", "type": "SourceRecord",
-                "schema_version": 1, "description": "Original implementation of the public known-answer Rosenbrock fixture and fixed search policies",
-                "license": "AGPL-3.0-only", "locator": "docs/decisions/001-numerical-study.md"}],
+            "source_records": [{"id": "source-" + study.evaluator, "type": "SourceRecord",
+                "schema_version": 1, "description": "Original implementation of public known-answer " + study.evaluator + " and reviewed search policies",
+                "license": "AGPL-3.0-only", "locator": "docs/decisions/001-numerical-study.md" if study.schema_version == 1 else "docs/decisions/003-numerical-workbench.md"}],
             "trial_specs": trial_specs(study), "allocations": allocations(study),
             "controls": control_results,
         }
+        if campaign_source is not None:
+            if (type(campaign_source) is not dict or set(campaign_source) != {"id", "digest"}
+                    or type(campaign_source["id"]) is not str or not campaign_source["id"]
+                    or type(campaign_source["digest"]) is not str
+                    or len(campaign_source["digest"]) != 64
+                    or any(c not in "0123456789abcdef" for c in campaign_source["digest"])):
+                raise CampaignError("Invalid workbench campaign binding")
+            meta["source_records"].append({"id": "source-workbench-" + campaign_source["id"],
+                "type": "SourceRecord", "schema_version": 1,
+                "description": "Complete workbench inventory accepted before this study was admitted",
+                "license": "AGPL-3.0-only", "locator": "sha256:" + campaign_source["digest"]})
         if reproduction_source is not None:
             if (set(reproduction_source) != {"campaign_id", "evidence_digest"}
                     or not isinstance(reproduction_source["campaign_id"], str)
@@ -362,6 +373,8 @@ def run(database: str | Path, *, max_trials: int | None = None, _crash_at: str |
                 if any(r["payload"] and json.loads(r["payload"])["status"] == "COMPLETED" for r in prior):
                     continue
                 remaining = study.max_attempts_per_trial - len(prior)
+                if remaining <= 0:
+                    continue
                 for _ in range(remaining):
                     attempt_id = _admit(db, trial, study)
                     start_wall, start_cpu = time.monotonic(), time.process_time()

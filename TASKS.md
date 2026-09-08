@@ -1740,13 +1740,15 @@ Prerequisite RC-W11-T07: Provides the shared contract for this wave.
 
 - Outcome: Researchers can register alternate explanations before ablation.
 - Area: replication and ablation; wave: RC-W12; release horizon: later 0.x.
-- Status: **PLANNED**; basis: expanded source requirement.
+- Status: **IN PROGRESS**; basis: expanded source requirement.
 - Prerequisites: RC-W11-T08.
 - Acceptance: Proposed mechanisms, confounders and change-removal interventions are declared before ablation results and linked to the original claim.
-- Source contracts: RC-010; decisions: OWNER-LAUNCH-2026-09-07.
+- Source contracts: RC-010; decisions: OWNER-LAUNCH-2026-09-07, WORKBENCH-005.
 - Risk and evidence needs: Ablations can change more than one cause; reviewer judgment and registered interventions are required before causal language.
-- Recorded evidence: none.
+- Recorded evidence: docs/GOAL-0.5.md, docs/decisions/003-numerical-workbench.md, docs/workbench.md, tests/test_workbench.py, evidence/workbench/automated-final-source.json, evidence/workbench/packaged-preflight.json, evidence/workbench/browser-verification.json.
 - Native platform ID: tsk_ea16407589027c98033f76e193bd6f92.
+
+Bounded 0.5 implementation progress: Campaign manifests predeclare coordinate step-halving interventions and reference/variant links. Broader candidate mechanisms and original claim prerequisites remain unfulfilled.
 
 Prerequisite RC-W11-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -1768,13 +1770,15 @@ Prerequisite RC-W12-T01: Provides the shared contract for this wave.
 
 - Outcome: Researchers can remove each material candidate change.
 - Area: replication and ablation; wave: RC-W12; release horizon: later 0.x.
-- Status: **PLANNED**; basis: expanded source requirement.
+- Status: **IN PROGRESS**; basis: expanded source requirement.
 - Prerequisites: RC-W12-T01.
 - Acceptance: Each planned ablation neutralizes one material change while preserving the declared controls; its exact diff is retained.
-- Source contracts: RC-010; decisions: OWNER-LAUNCH-2026-09-07.
+- Source contracts: RC-010; decisions: OWNER-LAUNCH-2026-09-07, WORKBENCH-005.
 - Risk and evidence needs: Ablations can change more than one cause; reviewer judgment and registered interventions are required before causal language.
-- Recorded evidence: none.
+- Recorded evidence: docs/GOAL-0.5.md, docs/decisions/003-numerical-workbench.md, docs/workbench.md, tests/test_workbench.py, evidence/workbench/automated-final-source.json, evidence/workbench/packaged-preflight.json, evidence/workbench/browser-verification.json.
 - Native platform ID: tsk_c420a8bc8d91a7747419b3c1a5a81400.
+
+Bounded 0.5 implementation progress: Fixed-step coordinate search removes only step halving. Arbitrary multi-change agent/training candidates and exact code-diff attribution remain later work.
 
 Prerequisite RC-W12-T01: Provides the shared contract for this wave.
 
@@ -1782,13 +1786,15 @@ Prerequisite RC-W12-T01: Provides the shared contract for this wave.
 
 - Outcome: Researchers can compare ablations under matched costs.
 - Area: replication and ablation; wave: RC-W12; release horizon: later 0.x.
-- Status: **PLANNED**; basis: expanded source requirement.
+- Status: **IN PROGRESS**; basis: expanded source requirement.
 - Prerequisites: RC-W12-T01.
 - Acceptance: Full candidate, unchanged baseline and ablations use the predeclared budget and sampling plan; failures remain charged.
-- Source contracts: RC-010; decisions: OWNER-LAUNCH-2026-09-07.
+- Source contracts: RC-010; decisions: OWNER-LAUNCH-2026-09-07, WORKBENCH-005.
 - Risk and evidence needs: Ablations can change more than one cause; reviewer judgment and registered interventions are required before causal language.
-- Recorded evidence: none.
+- Recorded evidence: docs/GOAL-0.5.md, docs/decisions/003-numerical-workbench.md, docs/workbench.md, tests/test_workbench.py, evidence/workbench/automated-final-source.json, evidence/workbench/packaged-preflight.json, evidence/workbench/browser-verification.json.
 - Native platform ID: tsk_a95ae0a00ae7dce93190da061bd8319a.
+
+Bounded 0.5 implementation progress: Numerical ablations retain equal budgets, seed pairs and charged failures. Original agent-versus-baseline prerequisites remain unfulfilled.
 
 Prerequisite RC-W12-T01: Provides the shared contract for this wave.
 
@@ -1850,13 +1856,15 @@ Prerequisite RC-W12-T06: Provides the shared contract for this wave.
 
 - Outcome: Researchers can define the actual comparison family.
 - Area: statistical validity; wave: RC-W13; release horizon: later 0.x.
-- Status: **PLANNED**; basis: expanded source requirement.
+- Status: **IN PROGRESS**; basis: expanded source requirement.
 - Prerequisites: RC-W11-T08, RC-W08-T09.
 - Acceptance: Hypotheses, endpoints, adaptive selection and dependence structure are recorded; hidden extra comparisons invalidate the declared analysis.
-- Source contracts: RC-011; decisions: OWNER-LAUNCH-2026-09-07.
+- Source contracts: RC-011; decisions: OWNER-LAUNCH-2026-09-07, WORKBENCH-005.
 - Risk and evidence needs: Needs qualified methodological review; no universal p-value or reusable-holdout guarantee is promised.
-- Recorded evidence: none.
+- Recorded evidence: docs/GOAL-0.5.md, docs/decisions/003-numerical-workbench.md, docs/workbench.md, tests/test_workbench.py, evidence/workbench/automated-final-source.json, evidence/workbench/packaged-preflight.json, evidence/workbench/browser-verification.json.
 - Native platform ID: tsk_2b84b154d474124aea697af01bcac182.
+
+Bounded 0.5 implementation progress: Whole numerical campaign inventory and paired seed estimands are frozen. Adaptive selection families and protected-evaluation prerequisites remain later work.
 
 Prerequisite RC-W11-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -1866,13 +1874,15 @@ Prerequisite RC-W08-T09: Provides the frozen contract and accepted predecessor e
 
 - Outcome: Researchers can choose an appropriate uncertainty method.
 - Area: statistical validity; wave: RC-W13; release horizon: later 0.x.
-- Status: **PLANNED**; basis: expanded source requirement.
+- Status: **IN PROGRESS**; basis: expanded source requirement.
 - Prerequisites: RC-W13-T01.
 - Acceptance: The estimator or descriptive-only rationale matches sampling and dependence assumptions and is reviewed before confirmation.
-- Source contracts: RC-011; decisions: OWNER-LAUNCH-2026-09-07.
+- Source contracts: RC-011; decisions: OWNER-LAUNCH-2026-09-07, WORKBENCH-005.
 - Risk and evidence needs: Needs qualified methodological review; no universal p-value or reusable-holdout guarantee is promised.
-- Recorded evidence: none.
+- Recorded evidence: docs/GOAL-0.5.md, docs/decisions/003-numerical-workbench.md, docs/workbench.md, tests/test_workbench.py, evidence/workbench/automated-final-source.json, evidence/workbench/packaged-preflight.json, evidence/workbench/browser-verification.json.
 - Native platform ID: tsk_16a84cc1557a502f06a063c82475acb3.
+
+Bounded 0.5 implementation progress: Descriptive paired bootstrap and deterministic/insufficient/ineligible labels are implemented. Qualified review of assumptions remains pending.
 
 Prerequisite RC-W13-T01: Provides the shared contract for this wave.
 
@@ -1908,13 +1918,15 @@ Prerequisite RC-W13-T01: Provides the shared contract for this wave.
 
 - Outcome: Researchers can retain multiple-comparison history.
 - Area: statistical validity; wave: RC-W13; release horizon: later 0.x.
-- Status: **PLANNED**; basis: expanded source requirement.
+- Status: **IN PROGRESS**; basis: expanded source requirement.
 - Prerequisites: RC-W13-T01.
 - Acceptance: All tests and selection decisions remain linkable, including abandoned hypotheses; omitting an unfavorable comparison fails validation.
-- Source contracts: RC-011; decisions: OWNER-LAUNCH-2026-09-07.
+- Source contracts: RC-011; decisions: OWNER-LAUNCH-2026-09-07, WORKBENCH-005.
 - Risk and evidence needs: Needs qualified methodological review; no universal p-value or reusable-holdout guarantee is promised.
-- Recorded evidence: none.
+- Recorded evidence: docs/GOAL-0.5.md, docs/decisions/003-numerical-workbench.md, docs/workbench.md, tests/test_workbench.py, evidence/workbench/automated-final-source.json, evidence/workbench/packaged-preflight.json, evidence/workbench/browser-verification.json.
 - Native platform ID: tsk_6354d15c9e33d2747a0fb6027724ff4d.
+
+Bounded 0.5 implementation progress: Campaign inventory binding rejects dropped studies and retains null/failed outcomes. Adaptive hypothesis-selection history remains later work.
 
 Prerequisite RC-W13-T01: Provides the shared contract for this wave.
 
@@ -1950,13 +1962,15 @@ Prerequisite RC-W13-T01: Provides the shared contract for this wave.
 
 - Outcome: Researchers can report uncertainty without false certainty.
 - Area: statistical validity; wave: RC-W13; release horizon: later 0.x.
-- Status: **PLANNED**; basis: expanded source requirement.
+- Status: **IN PROGRESS**; basis: expanded source requirement.
 - Prerequisites: RC-W11-T08, RC-W08-T09, RC-W13-T01, RC-W13-T02, RC-W13-T03, RC-W13-T04, RC-W13-T05, RC-W13-T06, RC-W13-T07.
 - Acceptance: The final report states method, assumptions, estimation limits and inconclusive findings; deterministic reruns are not independent samples.
-- Source contracts: RC-011; decisions: OWNER-LAUNCH-2026-09-07.
+- Source contracts: RC-011; decisions: OWNER-LAUNCH-2026-09-07, WORKBENCH-005.
 - Risk and evidence needs: Needs qualified methodological review; no universal p-value or reusable-holdout guarantee is promised.
-- Recorded evidence: none.
+- Recorded evidence: docs/GOAL-0.5.md, docs/decisions/003-numerical-workbench.md, docs/workbench.md, tests/test_workbench.py, evidence/workbench/automated-final-source.json, evidence/workbench/packaged-preflight.json, evidence/workbench/browser-verification.json.
 - Native platform ID: tsk_6f45352eca6c0032f7fb237c1490846d.
+
+Bounded 0.5 implementation progress: Study and campaign views state conditional resampling limits and refuse deterministic sampling intervals. Full historical statistical prerequisites remain unfulfilled.
 
 Prerequisite RC-W11-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -1980,13 +1994,15 @@ Prerequisite RC-W13-T07: Provides the shared contract for this wave.
 
 - Outcome: Researchers can resolve every conclusion to its evidence set.
 - Area: scientific reporting; wave: RC-W14; release horizon: later 0.x.
-- Status: **PLANNED**; basis: expanded source requirement.
+- Status: **IN PROGRESS**; basis: expanded source requirement.
 - Prerequisites: RC-W11-T08, RC-W12-T07, RC-W13-T08.
 - Acceptance: A report reader can follow each conclusion to exact sources, study, trials and evaluations; unsupported references fail generation.
-- Source contracts: RC-012; decisions: OWNER-LAUNCH-2026-09-07.
+- Source contracts: RC-012; decisions: OWNER-LAUNCH-2026-09-07, WORKBENCH-005.
 - Risk and evidence needs: Citation presence and fluent prose do not establish validity; completeness and reviewer disposition need direct evidence.
-- Recorded evidence: none.
+- Recorded evidence: docs/GOAL-0.5.md, docs/decisions/003-numerical-workbench.md, docs/workbench.md, tests/test_workbench.py, evidence/workbench/automated-final-source.json, evidence/workbench/packaged-preflight.json, evidence/workbench/browser-verification.json.
 - Native platform ID: tsk_0ec25e5d0bcbded81cbb23faf671b1d5.
+
+Bounded 0.5 implementation progress: Numerical study reports link source/question/hypothesis/trial/evaluation/claim records. Broad research-memory and independent-review prerequisites remain later work.
 
 Prerequisite RC-W11-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -1998,13 +2014,15 @@ Prerequisite RC-W13-T08: Provides the frozen contract and accepted predecessor e
 
 - Outcome: Researchers can show negative and failed outcome denominators.
 - Area: scientific reporting; wave: RC-W14; release horizon: later 0.x.
-- Status: **PLANNED**; basis: expanded source requirement.
+- Status: **IN PROGRESS**; basis: expanded source requirement.
 - Prerequisites: RC-W14-T01.
 - Acceptance: Tables include all applicable invalid, failed, null and adverse results with reasons and correct cost/reliability denominators.
-- Source contracts: RC-012; decisions: OWNER-LAUNCH-2026-09-07.
+- Source contracts: RC-012; decisions: OWNER-LAUNCH-2026-09-07, WORKBENCH-005.
 - Risk and evidence needs: Citation presence and fluent prose do not establish validity; completeness and reviewer disposition need direct evidence.
-- Recorded evidence: none.
+- Recorded evidence: docs/GOAL-0.5.md, docs/decisions/003-numerical-workbench.md, docs/workbench.md, tests/test_workbench.py, evidence/workbench/automated-final-source.json, evidence/workbench/packaged-preflight.json, evidence/workbench/browser-verification.json.
 - Native platform ID: tsk_7d25ce9204c3d8b48d2ff0bce7b34c48.
+
+Bounded 0.5 implementation progress: All frozen numerical studies, attempts, costs and inconclusive outcomes are visible. Broader agent experiment denominators remain later work.
 
 Prerequisite RC-W14-T01: Provides the shared contract for this wave.
 
@@ -2026,13 +2044,15 @@ Prerequisite RC-W14-T01: Provides the shared contract for this wave.
 
 - Outcome: Researchers can display confirmation and reproduction separately.
 - Area: scientific reporting; wave: RC-W14; release horizon: later 0.x.
-- Status: **PLANNED**; basis: expanded source requirement.
+- Status: **IN PROGRESS**; basis: expanded source requirement.
 - Prerequisites: RC-W14-T01.
 - Acceptance: Evaluated, confirmed, reproduced, replicated and reviewer-supported states remain distinct in reports and exports.
-- Source contracts: RC-012; decisions: OWNER-LAUNCH-2026-09-07.
+- Source contracts: RC-012; decisions: OWNER-LAUNCH-2026-09-07, WORKBENCH-005.
 - Risk and evidence needs: Citation presence and fluent prose do not establish validity; completeness and reviewer disposition need direct evidence.
-- Recorded evidence: none.
+- Recorded evidence: docs/GOAL-0.5.md, docs/decisions/003-numerical-workbench.md, docs/workbench.md, tests/test_workbench.py, evidence/workbench/automated-final-source.json, evidence/workbench/packaged-preflight.json, evidence/workbench/browser-verification.json.
 - Native platform ID: tsk_bf211c6345aefe84e0e2f301186c653d.
+
+Bounded 0.5 implementation progress: Numerical development, confirmation, reserved replay and fresh reproduction remain distinct. Replication and reviewer-supported states remain unverified.
 
 Prerequisite RC-W14-T01: Provides the shared contract for this wave.
 
@@ -2054,13 +2074,15 @@ Prerequisite RC-W14-T01: Provides the shared contract for this wave.
 
 - Outcome: Researchers can audit complete resource totals in reports.
 - Area: scientific reporting; wave: RC-W14; release horizon: later 0.x.
-- Status: **PLANNED**; basis: expanded source requirement.
+- Status: **IN PROGRESS**; basis: expanded source requirement.
 - Prerequisites: RC-W14-T01.
 - Acceptance: Proposal, execution, failed-run and evaluator totals reconcile to source ledgers and state units without conflating time and money.
-- Source contracts: RC-012; decisions: OWNER-LAUNCH-2026-09-07.
+- Source contracts: RC-012; decisions: OWNER-LAUNCH-2026-09-07, WORKBENCH-005.
 - Risk and evidence needs: Citation presence and fluent prose do not establish validity; completeness and reviewer disposition need direct evidence.
-- Recorded evidence: none.
+- Recorded evidence: docs/GOAL-0.5.md, docs/decisions/003-numerical-workbench.md, docs/workbench.md, tests/test_workbench.py, evidence/workbench/automated-final-source.json, evidence/workbench/packaged-preflight.json, evidence/workbench/browser-verification.json.
 - Native platform ID: tsk_41057e4c6e17829445fd99f55ea6d716.
+
+Bounded 0.5 implementation progress: Numerical campaign totals reconcile to member ledgers and retain retry costs. Proposal-model and remote resource accounting remain later work.
 
 Prerequisite RC-W14-T01: Provides the shared contract for this wave.
 
@@ -2350,13 +2372,15 @@ Prerequisite RC-W16-T07: Provides the shared contract for this wave.
 
 - Outcome: Researchers can select a distinct numerical benchmark question.
 - Area: numerical generality; wave: RC-W17; release horizon: long-term.
-- Status: **PLANNED**; basis: expanded source requirement.
+- Status: **IN PROGRESS**; basis: expanded source requirement.
 - Prerequisites: RC-W14-T07.
 - Acceptance: A reviewed non-LLM objective/constraint family differs materially from the Rosenbrock fixture and has a documented applicability boundary.
-- Source contracts: RC-015; decisions: OWNER-LAUNCH-2026-09-07.
+- Source contracts: RC-015; decisions: OWNER-LAUNCH-2026-09-07, WORKBENCH-005.
 - Risk and evidence needs: The 0.1 fixture is partial lineage only; genuine cross-domain portability and numerical applicability require this wider evidence.
-- Recorded evidence: none.
+- Recorded evidence: docs/GOAL-0.5.md, docs/decisions/003-numerical-workbench.md, docs/workbench.md, tests/test_workbench.py, evidence/workbench/automated-final-source.json, evidence/workbench/packaged-preflight.json, evidence/workbench/browser-verification.json.
 - Native platform ID: tsk_1b7c89b31e84f2f606305a817e39d098.
+
+Bounded 0.5 implementation progress: Sphere and anisotropic quadratic fixtures are independently authored and bounded. Qualified review and broader distinct-domain acceptance remain pending.
 
 Prerequisite RC-W14-T07: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -2364,13 +2388,15 @@ Prerequisite RC-W14-T07: Provides the frozen contract and accepted predecessor e
 
 - Outcome: Researchers can establish benchmark rights and reference provenance.
 - Area: numerical generality; wave: RC-W17; release horizon: long-term.
-- Status: **PLANNED**; basis: expanded source requirement.
+- Status: **IN PROGRESS**; basis: expanded source requirement.
 - Prerequisites: RC-W17-T01.
 - Acceptance: Exact equations, reference solutions, fixtures and reused solver terms are recorded before adoption or redistribution.
-- Source contracts: RC-015; decisions: OWNER-LAUNCH-2026-09-07.
+- Source contracts: RC-015; decisions: OWNER-LAUNCH-2026-09-07, WORKBENCH-005.
 - Risk and evidence needs: The 0.1 fixture is partial lineage only; genuine cross-domain portability and numerical applicability require this wider evidence.
-- Recorded evidence: none.
+- Recorded evidence: docs/GOAL-0.5.md, docs/decisions/003-numerical-workbench.md, docs/workbench.md, tests/test_workbench.py, evidence/workbench/automated-final-source.json, evidence/workbench/packaged-preflight.json, evidence/workbench/browser-verification.json.
 - Native platform ID: tsk_cb1a4edc3b67d449ab06ef5173ebdb83.
+
+Bounded 0.5 implementation progress: Exact original equations, known minima, controls and policy rules are documented with original-code licensing. Wider external solver adoption remains outside this slice.
 
 Prerequisite RC-W17-T01: Provides the shared contract for this wave.
 
@@ -2392,13 +2418,15 @@ Prerequisite RC-W17-T01: Provides the shared contract for this wave.
 
 - Outcome: Researchers can challenge precision and invalid numerical states.
 - Area: numerical generality; wave: RC-W17; release horizon: long-term.
-- Status: **PLANNED**; basis: expanded source requirement.
+- Status: **IN PROGRESS**; basis: expanded source requirement.
 - Prerequisites: RC-W17-T01.
 - Acceptance: Ill-conditioned cases, overflow, non-finite values and infeasible proposals fail appropriately with retained diagnostics.
-- Source contracts: RC-015; decisions: OWNER-LAUNCH-2026-09-07.
+- Source contracts: RC-015; decisions: OWNER-LAUNCH-2026-09-07, WORKBENCH-005.
 - Risk and evidence needs: The 0.1 fixture is partial lineage only; genuine cross-domain portability and numerical applicability require this wider evidence.
-- Recorded evidence: none.
+- Recorded evidence: docs/GOAL-0.5.md, docs/decisions/003-numerical-workbench.md, docs/workbench.md, tests/test_workbench.py, evidence/workbench/automated-final-source.json, evidence/workbench/packaged-preflight.json, evidence/workbench/browser-verification.json.
 - Native platform ID: tsk_d940fb9ac38ad709ebc1fd546671ebbd.
+
+Bounded 0.5 implementation progress: New fixtures share invalid/non-finite/out-of-domain and identity rejection. Broad conditioning, precision and constraint-family coverage remains later work.
 
 Prerequisite RC-W17-T01: Provides the shared contract for this wave.
 
@@ -2406,13 +2434,15 @@ Prerequisite RC-W17-T01: Provides the shared contract for this wave.
 
 - Outcome: Researchers can implement the second numerical adapter contract.
 - Area: numerical generality; wave: RC-W17; release horizon: long-term.
-- Status: **PLANNED**; basis: expanded source requirement.
+- Status: **IN PROGRESS**; basis: expanded source requirement.
 - Prerequisites: RC-W17-T01.
 - Acceptance: The distinct benchmark uses shared run/evaluate/reproduce interfaces without custom coordinator authority or generic-score shortcuts.
-- Source contracts: RC-015; decisions: OWNER-LAUNCH-2026-09-07.
+- Source contracts: RC-015; decisions: OWNER-LAUNCH-2026-09-07, WORKBENCH-005.
 - Risk and evidence needs: The 0.1 fixture is partial lineage only; genuine cross-domain portability and numerical applicability require this wider evidence.
-- Recorded evidence: none.
+- Recorded evidence: docs/GOAL-0.5.md, docs/decisions/003-numerical-workbench.md, docs/workbench.md, tests/test_workbench.py, evidence/workbench/automated-final-source.json, evidence/workbench/packaged-preflight.json, evidence/workbench/browser-verification.json.
 - Native platform ID: tsk_8d9b237377214cceb320757cc25f22a3.
+
+Bounded 0.5 implementation progress: Three fixtures use the shared validated study/run/evaluate/reproduce engine. Training-to-numerical contract transfer is not demonstrated.
 
 Prerequisite RC-W17-T01: Provides the shared contract for this wave.
 
@@ -2420,13 +2450,15 @@ Prerequisite RC-W17-T01: Provides the shared contract for this wave.
 
 - Outcome: Researchers can run matched numerical solver comparisons.
 - Area: numerical generality; wave: RC-W17; release horizon: long-term.
-- Status: **PLANNED**; basis: expanded source requirement.
+- Status: **IN PROGRESS**; basis: expanded source requirement.
 - Prerequisites: RC-W17-T01.
 - Acceptance: Transparent baselines and candidates consume the frozen comparable budget and retain full convergence histories and failures.
-- Source contracts: RC-015; decisions: OWNER-LAUNCH-2026-09-07.
+- Source contracts: RC-015; decisions: OWNER-LAUNCH-2026-09-07, WORKBENCH-005.
 - Risk and evidence needs: The 0.1 fixture is partial lineage only; genuine cross-domain portability and numerical applicability require this wider evidence.
-- Recorded evidence: none.
+- Recorded evidence: docs/GOAL-0.5.md, docs/decisions/003-numerical-workbench.md, docs/workbench.md, tests/test_workbench.py, evidence/workbench/automated-final-source.json, evidence/workbench/packaged-preflight.json, evidence/workbench/browser-verification.json.
 - Native platform ID: tsk_15870d121189f99a790f7228dbfe880a.
+
+Bounded 0.5 implementation progress: Random/grid/coordinate comparisons run at frozen budgets with full observation traces. Broader numerical-method acceptance prerequisites remain unfulfilled.
 
 Prerequisite RC-W17-T01: Provides the shared contract for this wave.
 
@@ -2866,13 +2898,15 @@ Prerequisite RC-W20-T06: Provides the shared contract for this wave.
 
 - Outcome: Researchers can bind reproduction to an explicit claim contract.
 - Area: reproduction governance; wave: RC-W21; release horizon: long-term.
-- Status: **PLANNED**; basis: expanded source requirement.
+- Status: **IN PROGRESS**; basis: expanded source requirement.
 - Prerequisites: RC-W12-T07, RC-W18-T08, RC-W20-T07.
 - Acceptance: Each request names source artifacts, target observation, tolerance, allowed deviations and finite independent resources.
-- Source contracts: RC-010, RC-021; decisions: OWNER-LAUNCH-2026-09-07.
+- Source contracts: RC-010, RC-021; decisions: OWNER-LAUNCH-2026-09-07, WORKBENCH-005.
 - Risk and evidence needs: An agent rerun is runtime evidence, not fabricated human or external validation; source of every observation must be recorded.
-- Recorded evidence: none.
+- Recorded evidence: docs/GOAL-0.5.md, docs/decisions/003-numerical-workbench.md, docs/workbench.md, tests/test_workbench.py, evidence/workbench/automated-final-source.json, evidence/workbench/packaged-preflight.json, evidence/workbench/browser-verification.json.
 - Native platform ID: tsk_dc39a8c5654aa7cc2c2c801ef3f1d4f6.
+
+Bounded 0.5 implementation progress: Portable numerical campaign reproduction binds the full source evidence, finite budgets and fixed tolerance before admission. Broad claim-memory/policy prerequisites remain later work.
 
 Prerequisite RC-W12-T07: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -2912,13 +2946,15 @@ Prerequisite RC-W21-T01: Provides the shared contract for this wave.
 
 - Outcome: Researchers can record reproducibility obstacles without silent repairs.
 - Area: reproduction governance; wave: RC-W21; release horizon: long-term.
-- Status: **PLANNED**; basis: expanded source requirement.
+- Status: **IN PROGRESS**; basis: expanded source requirement.
 - Prerequisites: RC-W21-T01.
 - Acceptance: Missing dependencies, incompatible hardware and ambiguous instructions produce durable unsuccessful observations and proposed corrections.
-- Source contracts: RC-010, RC-021; decisions: OWNER-LAUNCH-2026-09-07.
+- Source contracts: RC-010, RC-021; decisions: OWNER-LAUNCH-2026-09-07, WORKBENCH-005.
 - Risk and evidence needs: An agent rerun is runtime evidence, not fabricated human or external validation; source of every observation must be recorded.
-- Recorded evidence: none.
+- Recorded evidence: docs/GOAL-0.5.md, docs/decisions/003-numerical-workbench.md, docs/workbench.md, tests/test_workbench.py, evidence/workbench/automated-final-source.json, evidence/workbench/packaged-preflight.json, evidence/workbench/browser-verification.json.
 - Native platform ID: tsk_409fbede4c3a536e5615fd30bde1fb8e.
+
+Bounded 0.5 implementation progress: Formal reproduction retains runtime deviations and unsuccessful results. Full missing-environment remediation workflow remains later work.
 
 Prerequisite RC-W21-T01: Provides the shared contract for this wave.
 
@@ -2926,13 +2962,15 @@ Prerequisite RC-W21-T01: Provides the shared contract for this wave.
 
 - Outcome: Researchers can meter reproduction attempts independently.
 - Area: reproduction governance; wave: RC-W21; release horizon: long-term.
-- Status: **PLANNED**; basis: expanded source requirement.
+- Status: **IN PROGRESS**; basis: expanded source requirement.
 - Prerequisites: RC-W21-T01.
 - Acceptance: Failed reruns and retries remain in their own finite resource ledger and cannot borrow exploration or publication authority.
-- Source contracts: RC-010, RC-021; decisions: OWNER-LAUNCH-2026-09-07.
+- Source contracts: RC-010, RC-021; decisions: OWNER-LAUNCH-2026-09-07, WORKBENCH-005.
 - Risk and evidence needs: An agent rerun is runtime evidence, not fabricated human or external validation; source of every observation must be recorded.
-- Recorded evidence: none.
+- Recorded evidence: docs/GOAL-0.5.md, docs/decisions/003-numerical-workbench.md, docs/workbench.md, tests/test_workbench.py, evidence/workbench/automated-final-source.json, evidence/workbench/packaged-preflight.json, evidence/workbench/browser-verification.json.
 - Native platform ID: tsk_4ed82039227da2fbde23a4b86365bcf0.
+
+Bounded 0.5 implementation progress: Fresh reproduction owns separate ledgers and charges retries. Broader autonomous allocation/authority requirements remain unfulfilled.
 
 Prerequisite RC-W21-T01: Provides the shared contract for this wave.
 
@@ -2940,13 +2978,15 @@ Prerequisite RC-W21-T01: Provides the shared contract for this wave.
 
 - Outcome: Researchers can verify reproduction provenance and artifact identity.
 - Area: reproduction governance; wave: RC-W21; release horizon: long-term.
-- Status: **PLANNED**; basis: expanded source requirement.
+- Status: **IN PROGRESS**; basis: expanded source requirement.
 - Prerequisites: RC-W21-T01.
 - Acceptance: Inputs, code, environment and evaluator identity match the declared contract; mismatches prevent a reproduced status.
-- Source contracts: RC-010, RC-021; decisions: OWNER-LAUNCH-2026-09-07.
+- Source contracts: RC-010, RC-021; decisions: OWNER-LAUNCH-2026-09-07, WORKBENCH-005.
 - Risk and evidence needs: An agent rerun is runtime evidence, not fabricated human or external validation; source of every observation must be recorded.
-- Recorded evidence: none.
+- Recorded evidence: docs/GOAL-0.5.md, docs/decisions/003-numerical-workbench.md, docs/workbench.md, tests/test_workbench.py, evidence/workbench/automated-final-source.json, evidence/workbench/packaged-preflight.json, evidence/workbench/browser-verification.json.
 - Native platform ID: tsk_f039df4024f49bab937d4fff4096703d.
+
+Bounded 0.5 implementation progress: Source-bound campaign reproduction verifies inventory, raw replay and runtime identity; mismatches cannot become MATCH. Broader provenance graph prerequisites remain later work.
 
 Prerequisite RC-W21-T01: Provides the shared contract for this wave.
 
@@ -3000,13 +3040,15 @@ Prerequisite RC-W21-T07: Provides the shared contract for this wave.
 
 - Outcome: Researchers can navigate question-to-evidence lineage.
 - Area: accessible workbench; wave: RC-W22; release horizon: long-term.
-- Status: **PLANNED**; basis: expanded source requirement.
+- Status: **IN PROGRESS**; basis: expanded source requirement.
 - Prerequisites: RC-W18-T08, RC-W19-T08, RC-W20-T07.
 - Acceptance: A reader can move from a question to all hypotheses, trials, failures and claims with stable addressable selections.
-- Source contracts: RC-019; decisions: OWNER-LAUNCH-2026-09-07.
+- Source contracts: RC-019; decisions: OWNER-LAUNCH-2026-09-07, WORKBENCH-005.
 - Risk and evidence needs: A usable workbench needs actual interaction and accessibility observations; static screenshots are insufficient.
-- Recorded evidence: none.
+- Recorded evidence: docs/GOAL-0.5.md, docs/decisions/003-numerical-workbench.md, docs/workbench.md, tests/test_workbench.py, evidence/workbench/automated-final-source.json, evidence/workbench/packaged-preflight.json, evidence/workbench/browser-verification.json.
 - Native platform ID: tsk_d1d4e767b9a493e6cc248258c9346078.
+
+Bounded 0.5 implementation progress: Offline study/trial selections expose question-to-evidence detail and stable URL fragments. General research-memory and adaptive-policy lineage remain later work.
 
 Prerequisite RC-W18-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -3018,13 +3060,15 @@ Prerequisite RC-W20-T07: Provides the frozen contract and accepted predecessor e
 
 - Outcome: Researchers can inspect full resource and outcome totals.
 - Area: accessible workbench; wave: RC-W22; release horizon: long-term.
-- Status: **PLANNED**; basis: expanded source requirement.
+- Status: **IN PROGRESS**; basis: expanded source requirement.
 - Prerequisites: RC-W22-T01.
 - Acceptance: Visible arm/phase totals reconcile to the ledger and expose retry costs, invalid results and pending evidence.
-- Source contracts: RC-019; decisions: OWNER-LAUNCH-2026-09-07.
+- Source contracts: RC-019; decisions: OWNER-LAUNCH-2026-09-07, WORKBENCH-005.
 - Risk and evidence needs: A usable workbench needs actual interaction and accessibility observations; static screenshots are insufficient.
-- Recorded evidence: none.
+- Recorded evidence: docs/GOAL-0.5.md, docs/decisions/003-numerical-workbench.md, docs/workbench.md, tests/test_workbench.py, evidence/workbench/automated-final-source.json, evidence/workbench/packaged-preflight.json, evidence/workbench/browser-verification.json.
 - Native platform ID: tsk_da170779e07fb3294dc3a2e3a83e7dc7.
+
+Bounded 0.5 implementation progress: Offline summaries retain whole-inventory costs and all attempt outcomes. Broader live workbench authority and resource types remain later work.
 
 Prerequisite RC-W22-T01: Provides the shared contract for this wave.
 
@@ -3060,13 +3104,15 @@ Prerequisite RC-W22-T01: Provides the shared contract for this wave.
 
 - Outcome: Researchers can support keyboard and assistive navigation.
 - Area: accessible workbench; wave: RC-W22; release horizon: long-term.
-- Status: **PLANNED**; basis: expanded source requirement.
+- Status: **IN PROGRESS**; basis: expanded source requirement.
 - Prerequisites: RC-W22-T01.
 - Acceptance: Keyboard focus, names, status announcements and reading order complete inspection and stop flows with recorded manual observations.
-- Source contracts: RC-019; decisions: OWNER-LAUNCH-2026-09-07.
+- Source contracts: RC-019; decisions: OWNER-LAUNCH-2026-09-07, WORKBENCH-005.
 - Risk and evidence needs: A usable workbench needs actual interaction and accessibility observations; static screenshots are insufficient.
-- Recorded evidence: none.
+- Recorded evidence: docs/GOAL-0.5.md, docs/decisions/003-numerical-workbench.md, docs/workbench.md, tests/test_workbench.py, evidence/workbench/automated-final-source.json, evidence/workbench/packaged-preflight.json, evidence/workbench/browser-verification.json.
 - Native platform ID: tsk_6b97871b3ca8e9a92581d87e79812be2.
+
+Bounded 0.5 implementation progress: Agent browser checks exercise labelled filters, focus and inspection; independent human and stop-flow observations remain pending.
 
 Prerequisite RC-W22-T01: Provides the shared contract for this wave.
 
@@ -3074,13 +3120,15 @@ Prerequisite RC-W22-T01: Provides the shared contract for this wave.
 
 - Outcome: Researchers can remain usable under narrow layouts and zoom.
 - Area: accessible workbench; wave: RC-W22; release horizon: long-term.
-- Status: **PLANNED**; basis: expanded source requirement.
+- Status: **IN PROGRESS**; basis: expanded source requirement.
 - Prerequisites: RC-W22-T01.
 - Acceptance: Core tables/lineage retain labels and navigation at narrow width and zoom without relying on color, hover or animation.
-- Source contracts: RC-019; decisions: OWNER-LAUNCH-2026-09-07.
+- Source contracts: RC-019; decisions: OWNER-LAUNCH-2026-09-07, WORKBENCH-005.
 - Risk and evidence needs: A usable workbench needs actual interaction and accessibility observations; static screenshots are insufficient.
-- Recorded evidence: none.
+- Recorded evidence: docs/GOAL-0.5.md, docs/decisions/003-numerical-workbench.md, docs/workbench.md, tests/test_workbench.py, evidence/workbench/automated-final-source.json, evidence/workbench/packaged-preflight.json, evidence/workbench/browser-verification.json.
 - Native platform ID: tsk_df0a98b7c6e5b7e1cca8861d6ce1589e.
+
+Bounded 0.5 implementation progress: Offline evidence browser is being checked at narrow widths and zoom; this does not establish all later live workbench flows.
 
 Prerequisite RC-W22-T01: Provides the shared contract for this wave.
 
@@ -3102,13 +3150,15 @@ Prerequisite RC-W22-T01: Provides the shared contract for this wave.
 
 - Outcome: Researchers can export the inspected campaign consistently.
 - Area: accessible workbench; wave: RC-W22; release horizon: long-term.
-- Status: **PLANNED**; basis: expanded source requirement.
+- Status: **IN PROGRESS**; basis: expanded source requirement.
 - Prerequisites: RC-W18-T08, RC-W19-T08, RC-W20-T07, RC-W22-T01, RC-W22-T02, RC-W22-T03, RC-W22-T04, RC-W22-T05, RC-W22-T06, RC-W22-T07.
 - Acceptance: Workbench export uses the same complete versioned bundle as the CLI and reports exactly which evidence and limitations are included.
-- Source contracts: RC-019; decisions: OWNER-LAUNCH-2026-09-07.
+- Source contracts: RC-019; decisions: OWNER-LAUNCH-2026-09-07, WORKBENCH-005.
 - Risk and evidence needs: A usable workbench needs actual interaction and accessibility observations; static screenshots are insufficient.
-- Recorded evidence: none.
+- Recorded evidence: docs/GOAL-0.5.md, docs/decisions/003-numerical-workbench.md, docs/workbench.md, tests/test_workbench.py, evidence/workbench/automated-final-source.json, evidence/workbench/packaged-preflight.json, evidence/workbench/browser-verification.json.
 - Native platform ID: tsk_0c0b6edbe2da5de9d149a44e05a060f7.
+
+Bounded 0.5 implementation progress: The exported offline browser uses the same full checksummed campaign bundle as the CLI. In-browser campaign mutation/export authority remains outside this read-only slice.
 
 Prerequisite RC-W18-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -4150,3 +4200,4 @@ Source/decision locators:
 
 - OWNER-LAUNCH-2026-09-07: [owner decision](docs/decisions/002-durable-local-campaign.md) — Owner-authorized narrow numerical 0.1 and 200–400-row roadmap; full original contracts retained.
 - NUMERICAL-001: [implementation decision](docs/decisions/001-numerical-study.md) — Frozen known-answer comparison, strict customization and descriptive-only interpretation.
+- WORKBENCH-005: [owner-selected implementation decision](docs/GOAL-0.5.md) — September 8 owner instruction to continue through 0.5 with the selected local research workbench scope; original historical gates remain intact.

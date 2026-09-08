@@ -185,3 +185,34 @@ The executable example is [rosenbrock-study.json](examples/rosenbrock-study.json
 All attempts, including failures, consume their entire admitted allowance conservatively; actual durable observations are counted separately. Recovery never refunds costs. Unequal charged costs or missing/invalid trials makes the comparison inconclusive. The complete ledger and report retain every outcome. A valid random-search advantage falsifies the candidate hypothesis and must remain visible.
 
 The logical built-in evaluator API does not satisfy the protected hostile-code/holdout obligations of the original training programme. Public known-answer seeds are not secret confirmation data. Human/domain review and externally obtained release reproduction remain separately required evidence, never replaced by an agent walkthrough.
+
+## Numerical 0.5 campaign protocol
+
+The [workbench campaign](examples/workbench-campaign.json) freezes all nine
+comparisons before execution. Rosenbrock, sphere and anisotropic quadratic each
+receive random-baseline, fixed-step-ablation and grid-baseline studies. The
+coordinate ablation removes only step halving, with identical objective, baseline,
+seed plan, observation allowance and comparison rule. These are three numerical
+fixtures, not evidence of three independent scientific domains.
+
+Each study preserves the original development/confirmation/reserved-reproduction
+separation. The whole campaign reserves 55,296 evaluation units for 27,648 clean
+search observations and their permitted retries. All original failed attempts
+remain charged and in the evidence. There is no adaptive selection between studies
+or pooled ranking across objectives with different scales.
+
+The frozen verdict remains the difference in confirmation medians at matched
+aggregate costs. The additional uncertainty estimand is the median paired
+candidate-minus-baseline best objective over the same confirmation seeds. A
+2,000-resample, fixed-seed percentile interval describes resampling of eligible
+observed pairs; it makes no population-coverage or significance guarantee.
+Deterministic policy pairs receive no sampling interval. Incomplete or ineligible
+comparisons keep their observations without an interval. Exact choices and
+limitations are in [Decision 003](docs/decisions/003-numerical-workbench.md).
+
+The [default evidence](evidence/workbench/default-campaign/index.html),
+[fresh reproduction](evidence/workbench/reproduced-campaign/index.html) and
+[retained recovery case](evidence/workbench/recovery-campaign/index.html) expose
+all frozen studies. A baseline advantage, null outcome or cost-invalid comparison
+is retained. These demonstrations do not satisfy the broader human-review,
+training/agent-search, sandbox or independent scientific-validity contracts above.

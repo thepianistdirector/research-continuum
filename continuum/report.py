@@ -54,9 +54,11 @@ def _table(caption, headings, rows, label):
 
 def render(snapshot, summary):
     """Render only prevalidated evidence and derived data; escape all input text."""
+    from .numerical import OBJECTIVE_INFO
     study = snapshot["study"]
-    titles = {"CANDIDATE_LOWER": "Coordinate refinement has the lower confirmation median.",
-              "BASELINE_LOWER": "Uniform random search has the lower confirmation median.",
+    formula = OBJECTIVE_INFO[study["evaluator"]]["formula"]
+    titles = {"CANDIDATE_LOWER": f"{study['candidate']} has the lower confirmation median.",
+              "BASELINE_LOWER": f"{study['baseline']} has the lower confirmation median.",
               "TIE": "The confirmation medians are tied.",
               "INCONCLUSIVE": "The comparison is inconclusive."}
     answer = titles[summary["verdict"]]
@@ -111,6 +113,14 @@ def render(snapshot, summary):
     sources = "".join(f'<li><strong>{_e(row["id"])}</strong>: {_e(row["description"])} '
                       f'({_e(row["license"])}). Source locator: <code>{_e(row["locator"])}</code>.</li>'
                       for row in snapshot["source_records"])
+    uncertainty_html = ""
+    if "uncertainty" in summary:
+        uncertainty = summary["uncertainty"]
+        interval = "Not estimated" if uncertainty["interval"] is None else " to ".join(_n(x) for x in uncertainty["interval"])
+        uncertainty_html = (f'<h3>Paired seed uncertainty</h3><p>{_e(uncertainty["status"])} · '
+                            f'{uncertainty["n_pairs"]} original confirmation pairs. Median candidate minus baseline paired best: '
+                            f'{_n(uncertainty["median_difference"])}. Descriptive interval: {interval}.</p>'
+                            f'<p>{_e(uncertainty["interpretation"])}</p>')
     state = "Terminal evidence complete" if summary["campaign_complete"] else "Campaign in progress"
     return f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -136,7 +146,7 @@ Lower is better; the analytic minimum is zero. Deterministic coordinate repeats 
 <section id="design" aria-labelledby="design-title"><h2 id="design-title">The contract was frozen before execution</h2>
 <dl><dt>Study revision</dt><dd>{_e(study['study_id'])} · {_e(study['revision'])}</dd>
 <dt>Hypothesis</dt><dd>{_e(study['hypothesis'])}</dd><dt>Falsifier</dt><dd>{_e(study['falsifier'])}</dd>
-<dt>Objective</dt><dd><code>100(y − x²)² + (1 − x)²</code>, dimensionless, minimized</dd>
+<dt>Objective</dt><dd><code>{_e(formula)}</code>, dimensionless, minimized</dd>
 <dt>Closed domain</dt><dd>{_e(study['domain'])}</dd><dt>Candidate start / step</dt><dd>{_e(study['start'])} / {_e(study['initial_step'])}</dd>
 <dt>Run allowance</dt><dd>{study['evaluations_per_policy']} evaluations, including boundary duplicates and the candidate initial point</dd>
 <dt>Development seeds</dt><dd>{_e(study['development_seeds'])}</dd><dt>Confirmation seeds</dt><dd>{_e(study['confirmation_seeds'])}</dd>
@@ -144,11 +154,12 @@ Lower is better; the analytic minimum is zero. Deterministic coordinate repeats 
 <dt>Attempt limit / timeout</dt><dd>{study['max_attempts_per_trial']} attempts per trial / {study['attempt_timeout_seconds']} seconds per attempt</dd></dl>
 <p>Uniform random search draws each coordinate independently from the frozen bounds using the seed. Coordinate refinement tests
 +x, −x, +y, −y in order, clips to bounds, accepts strict improvements immediately, and halves the step after a sweep with no improvement.
+Fixed-step coordinate search omits the step halving. Grid search visits cell centres in row order on a ceil(sqrt(allowance)) square lattice, stopping at the allowance; an incomplete last row is not area-uniform.
 Each policy receives only its own scalar feedback and starts fresh for every run.</p></section>
 <section id="comparison" aria-labelledby="comparison-title"><h2 id="comparison-title">Every phase and confirmation outcome is visible</h2>
 <p>Confirmation medians answer the frozen question only when every original trial completes, charged costs match within each original phase,
 and reserved reproduction succeeds. Development and reproduction summaries provide context. Missing or ineligible trials never receive a zero score.</p>
-{groups}{confirmation}<p>Failed attempts can increase costs even when a retry succeeds. Equal admitted allowances and equal consumed costs are different conditions.
+{groups}{confirmation}{uncertainty_html}<p>Failed attempts can increase costs even when a retry succeeds. Equal admitted allowances and equal consumed costs are different conditions.
 Elapsed and CPU time remain separate measurements; these tables do not establish statistical significance.</p></section>
 <section id="ledger" aria-labelledby="ledger-title"><h2 id="ledger-title">Failures and retries remain in the ledger</h2>
 <p>Admission charges the full allowance. A crash cannot refund it. Recorded calls count only durable observations, so a call interrupted before persistence
@@ -170,5 +181,5 @@ Record the actual operator, runtime and unsuccessful outcomes. A qualified revie
 <dt>Created (UTC)</dt><dd>{_e(snapshot['created_at'])}</dd><dt>Study SHA-256</dt><dd><code>{_e(snapshot['study_digest'])}</code></dd>
 <dt>Evaluator SHA-256</dt><dd><code>{_e(snapshot['evaluator_digest'])}</code></dd>{environment}</dl><ul>{sources}</ul>
 <p><a href="manifest.json">Bundle manifest</a> · <a href="summary.json">Machine-readable summary</a>. Digests detect changes, not authorship or scientific validity.</p></details></section>
-</main><footer>Research Continuum 0.1 · Trusted built-ins, finite budgets, retained evidence. This offline report uses system fonts and no scripts or remote resources.</footer>
+</main><footer>Research Continuum · Trusted built-ins, finite budgets, retained evidence. This offline report uses system fonts and no scripts or remote resources.</footer>
 </body></html>'''

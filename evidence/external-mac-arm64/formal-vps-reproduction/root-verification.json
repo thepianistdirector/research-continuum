@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "evidence_level": "ROOT_REVALIDATED_EXTERNAL_AGENT_RUNTIME",
+  "status": "VERIFIED",
+  "formal_reproduction_status": "INCONCLUSIVE",
+  "trace_matches": 24,
+  "deviations": [
+    "environment machine differs",
+    "environment python differs",
+    "environment sqlite differs"
+  ],
+  "source_campaign_id": "c5bc8d6fed264b3e944f160ba249f5ae",
+  "fresh_campaign_id": "af14aa6aafaa49488ca3ab3ca042a22e",
+  "source_evidence_sha256": "342a02deadaf779419dcded68fcdeae580f919a3b011014029b0011499ff7442",
+  "fresh_evidence_sha256": "0316636e7b9791f520d0a4120d273923a530bf1e54d7340bd42e05e8ab50da2c",
+  "bundle_matches_database_and_ledger": true,
+  "formal_record_rederived": true,
+  "runtime_verifier": "unchanged approved Research Continuum 0.1.0 public archive",
+  "limitations": [
+    "External Mac-hosted Linux ARM64 agent execution, not human review.",
+    "Architecture, Python and SQLite differ; the strict formal result remains INCONCLUSIVE.",
+    "No native macOS support or external x86_64 parity claim."
+  ]
+}

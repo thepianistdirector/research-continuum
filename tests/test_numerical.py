@@ -53,7 +53,7 @@ class StudyTests(unittest.TestCase):
 
     def test_invalid_contracts_fail_closed(self):
         changes = [
-            {"schema_version": True}, {"schema_version": 2}, {"revision": "../escape"},
+            {"schema_version": True}, {"schema_version": 3}, {"revision": "../escape"},
             {"question": ""}, {"evaluations_per_policy": True}, {"evaluations_per_policy": 7},
             {"evaluations_per_policy": 4097}, {"max_attempts_per_trial": 3},
             {"attempt_timeout_seconds": 100}, {"domain": [[-2, 2], [1, 3]]},

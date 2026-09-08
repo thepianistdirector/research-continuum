@@ -1,0 +1,302 @@
+{
+  "campaign_complete": true,
+  "campaign_id": "7c535935a3104c0ebc3f8ccf0b1d3e63",
+  "charged_evaluations": 64,
+  "claim_status": "UNREVIEWED",
+  "control_objective_calls": 2,
+  "failed_attempts": 0,
+  "groups": [
+    {
+      "charged_evaluations": 8,
+      "completed_trials": 1,
+      "failed_attempts": 0,
+      "median_best": 26.51232464987383,
+      "phase": "development",
+      "policy": "uniform_random",
+      "quality_met_trials": 0,
+      "recorded_evaluations": 8,
+      "scheduled_trials": 1
+    },
+    {
+      "charged_evaluations": 8,
+      "completed_trials": 1,
+      "failed_attempts": 0,
+      "median_best": 5.200000000000001,
+      "phase": "development",
+      "policy": "coordinate_fixed_step",
+      "quality_met_trials": 0,
+      "recorded_evaluations": 8,
+      "scheduled_trials": 1
+    },
+    {
+      "charged_evaluations": 8,
+      "completed_trials": 1,
+      "failed_attempts": 0,
+      "median_best": 11.106763137244469,
+      "phase": "confirmation",
+      "policy": "uniform_random",
+      "quality_met_trials": 0,
+      "recorded_evaluations": 8,
+      "scheduled_trials": 1
+    },
+    {
+      "charged_evaluations": 8,
+      "completed_trials": 1,
+      "failed_attempts": 0,
+      "median_best": 5.200000000000001,
+      "phase": "confirmation",
+      "policy": "coordinate_fixed_step",
+      "quality_met_trials": 0,
+      "recorded_evaluations": 8,
+      "scheduled_trials": 1
+    },
+    {
+      "charged_evaluations": 16,
+      "completed_trials": 2,
+      "failed_attempts": 0,
+      "median_best": 18.809543893559148,
+      "phase": "reproduction",
+      "policy": "uniform_random",
+      "quality_met_trials": 0,
+      "recorded_evaluations": 16,
+      "scheduled_trials": 2
+    },
+    {
+      "charged_evaluations": 16,
+      "completed_trials": 2,
+      "failed_attempts": 0,
+      "median_best": 5.200000000000001,
+      "phase": "reproduction",
+      "policy": "coordinate_fixed_step",
+      "quality_met_trials": 0,
+      "recorded_evaluations": 16,
+      "scheduled_trials": 2
+    }
+  ],
+  "hypothesis_relation": "consistent",
+  "inconclusive_reasons": [],
+  "independent_human_review": "PENDING",
+  "limitations": [
+    "This is one public, known-answer numerical fixture, not a secret holdout.",
+    "Grid and coordinate policy repeats are deterministic checks, not independent stochastic samples.",
+    "The frozen verdict is descriptive. Seed resampling intervals are conditional summaries, not population confidence or significance guarantees.",
+    "Equal charged evaluation units do not imply equal CPU or elapsed time.",
+    "Recorded observations can undercount calls lost at process death; full admitted allowance remains charged.",
+    "Operator-invoked audits recompute objectives outside admitted search; campaign counts exclude that verification overhead.",
+    "Reserved reproduction runs use the same coordinator and built-ins; independent external execution is a separate gate.",
+    "Trusted built-ins share a process. Logical interfaces are not adversarial code isolation.",
+    "Checksums detect integrity changes; they are not signatures or scientific validation.",
+    "Independent human and qualified domain review are pending."
+  ],
+  "recorded_evaluations": 64,
+  "reproductions": [
+    {
+      "attempt_id": "4bdad8ca135345ef8daf1854942e38ae",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-development-uniform_random-11",
+      "schema_version": 1,
+      "source_attempt_id": "669878d939214b929ec8175dcc63728d",
+      "source_trial_id": "development-uniform_random-11",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-development-uniform_random-11",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "bf41c8719c8e400b8e388e2882e30c02",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-development-coordinate_fixed_step-11",
+      "schema_version": 1,
+      "source_attempt_id": "cb4ac170ce474e7e9e4fb23df41c40d5",
+      "source_trial_id": "development-coordinate_fixed_step-11",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-development-coordinate_fixed_step-11",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "93307d33fb9a4fbbb2a8ce6196d9283d",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-confirmation-uniform_random-101",
+      "schema_version": 1,
+      "source_attempt_id": "e72ac8355f06452ba137e071bf36f966",
+      "source_trial_id": "confirmation-uniform_random-101",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-confirmation-uniform_random-101",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "090ae7ce51364b6d91cdd61abe174ea1",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-confirmation-coordinate_fixed_step-101",
+      "schema_version": 1,
+      "source_attempt_id": "ffdaa1d2abbf47dc860fc669edaf5494",
+      "source_trial_id": "confirmation-coordinate_fixed_step-101",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-confirmation-coordinate_fixed_step-101",
+      "type": "ReproductionRecord"
+    }
+  ],
+  "reserved_evaluations": 128,
+  "schema_version": 1,
+  "study_digest": "ea75a1a507856a0adc44f927b5b1c133cdc3cfb754c54854c462f69686443843",
+  "trials": [
+    {
+      "attempt_ids": [
+        "669878d939214b929ec8175dcc63728d"
+      ],
+      "best": 26.51232464987383,
+      "charged_evaluations": 8,
+      "completed_attempt_id": "669878d939214b929ec8175dcc63728d",
+      "failed_attempts": 0,
+      "phase": "development",
+      "policy": "uniform_random",
+      "quality_met": false,
+      "recorded_evaluations": 8,
+      "seed": 11,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "development-uniform_random-11"
+    },
+    {
+      "attempt_ids": [
+        "cb4ac170ce474e7e9e4fb23df41c40d5"
+      ],
+      "best": 5.200000000000001,
+      "charged_evaluations": 8,
+      "completed_attempt_id": "cb4ac170ce474e7e9e4fb23df41c40d5",
+      "failed_attempts": 0,
+      "phase": "development",
+      "policy": "coordinate_fixed_step",
+      "quality_met": false,
+      "recorded_evaluations": 8,
+      "seed": 11,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "development-coordinate_fixed_step-11"
+    },
+    {
+      "attempt_ids": [
+        "e72ac8355f06452ba137e071bf36f966"
+      ],
+      "best": 11.106763137244469,
+      "charged_evaluations": 8,
+      "completed_attempt_id": "e72ac8355f06452ba137e071bf36f966",
+      "failed_attempts": 0,
+      "phase": "confirmation",
+      "policy": "uniform_random",
+      "quality_met": false,
+      "recorded_evaluations": 8,
+      "seed": 101,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "confirmation-uniform_random-101"
+    },
+    {
+      "attempt_ids": [
+        "ffdaa1d2abbf47dc860fc669edaf5494"
+      ],
+      "best": 5.200000000000001,
+      "charged_evaluations": 8,
+      "completed_attempt_id": "ffdaa1d2abbf47dc860fc669edaf5494",
+      "failed_attempts": 0,
+      "phase": "confirmation",
+      "policy": "coordinate_fixed_step",
+      "quality_met": false,
+      "recorded_evaluations": 8,
+      "seed": 101,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "confirmation-coordinate_fixed_step-101"
+    },
+    {
+      "attempt_ids": [
+        "4bdad8ca135345ef8daf1854942e38ae"
+      ],
+      "best": 26.51232464987383,
+      "charged_evaluations": 8,
+      "completed_attempt_id": "4bdad8ca135345ef8daf1854942e38ae",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "uniform_random",
+      "quality_met": false,
+      "recorded_evaluations": 8,
+      "seed": 11,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-development-uniform_random-11"
+    },
+    {
+      "attempt_ids": [
+        "bf41c8719c8e400b8e388e2882e30c02"
+      ],
+      "best": 5.200000000000001,
+      "charged_evaluations": 8,
+      "completed_attempt_id": "bf41c8719c8e400b8e388e2882e30c02",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "coordinate_fixed_step",
+      "quality_met": false,
+      "recorded_evaluations": 8,
+      "seed": 11,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-development-coordinate_fixed_step-11"
+    },
+    {
+      "attempt_ids": [
+        "93307d33fb9a4fbbb2a8ce6196d9283d"
+      ],
+      "best": 11.106763137244469,
+      "charged_evaluations": 8,
+      "completed_attempt_id": "93307d33fb9a4fbbb2a8ce6196d9283d",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "uniform_random",
+      "quality_met": false,
+      "recorded_evaluations": 8,
+      "seed": 101,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-confirmation-uniform_random-101"
+    },
+    {
+      "attempt_ids": [
+        "090ae7ce51364b6d91cdd61abe174ea1"
+      ],
+      "best": 5.200000000000001,
+      "charged_evaluations": 8,
+      "completed_attempt_id": "090ae7ce51364b6d91cdd61abe174ea1",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "coordinate_fixed_step",
+      "quality_met": false,
+      "recorded_evaluations": 8,
+      "seed": 101,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-confirmation-coordinate_fixed_step-101"
+    }
+  ],
+  "uncertainty": {
+    "differences": [
+      -5.906763137244468
+    ],
+    "estimand": "median of paired candidate-minus-reference best objectives",
+    "interpretation": "Descriptive resampling of these frozen seeds only; no population coverage, significance or general superiority claim. The median paired difference can differ from the difference of medians used for the study verdict.",
+    "interval": null,
+    "median_difference": -5.906763137244468,
+    "method": "paired-median-bootstrap-percentile-v1",
+    "n_pairs": 1,
+    "range": [
+      -5.906763137244468,
+      -5.906763137244468
+    ],
+    "resample_seed": 1729,
+    "resamples": 0,
+    "status": "INSUFFICIENT_PAIRS"
+  },
+  "verdict": "CANDIDATE_LOWER"
+}

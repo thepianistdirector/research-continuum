@@ -1,0 +1,177 @@
+{
+  "comparisons": [
+    {
+      "fresh_attempt_id": "d5a10614b55b4bd6878db489fe6ef911",
+      "source_attempt_id": "2c58de80d41a416394f3e3ed11cab12d",
+      "status": "MATCH",
+      "trial_id": "development-uniform_random-11"
+    },
+    {
+      "fresh_attempt_id": "f7c458a610874b868e3c3d5884ca557a",
+      "source_attempt_id": "d3cbdb5362724ab18ca09d3859ec7973",
+      "status": "MATCH",
+      "trial_id": "development-uniform_random-22"
+    },
+    {
+      "fresh_attempt_id": "3a1fa6da106444bcbd28aafe18424ad7",
+      "source_attempt_id": "14c01b6295db4116a96ecf20ceadca73",
+      "status": "MATCH",
+      "trial_id": "development-uniform_random-33"
+    },
+    {
+      "fresh_attempt_id": "60868cc15bf04024af9cab5aff213a5f",
+      "source_attempt_id": "ba7c61688e0d44d1bc8158874b9af658",
+      "status": "MATCH",
+      "trial_id": "development-coordinate_refinement-11"
+    },
+    {
+      "fresh_attempt_id": "11d41cd2eccd4ed89638ee057a1939c6",
+      "source_attempt_id": "6ac70f45625044509c42df61bb12cf86",
+      "status": "MATCH",
+      "trial_id": "development-coordinate_refinement-22"
+    },
+    {
+      "fresh_attempt_id": "843e9dffb8cf455da394ce4e533210da",
+      "source_attempt_id": "7b3d7a3d3ef4439a9c5ab387308d6c23",
+      "status": "MATCH",
+      "trial_id": "development-coordinate_refinement-33"
+    },
+    {
+      "fresh_attempt_id": "181f19bd50834d37ba8a182a176f9217",
+      "source_attempt_id": "e7f830930f6640cd8df7a7147dc04abf",
+      "status": "MATCH",
+      "trial_id": "confirmation-uniform_random-101"
+    },
+    {
+      "fresh_attempt_id": "6538fa39d5644425a875416c68b25136",
+      "source_attempt_id": "76379129b8c04f3484ed722a73103e41",
+      "status": "MATCH",
+      "trial_id": "confirmation-uniform_random-202"
+    },
+    {
+      "fresh_attempt_id": "47c636d3829044ffb961791078741065",
+      "source_attempt_id": "5b7a3da522ba4d5da1bfe107ca56b601",
+      "status": "MATCH",
+      "trial_id": "confirmation-uniform_random-303"
+    },
+    {
+      "fresh_attempt_id": "179bd27054fd47ddb2ef9a4e09e9c778",
+      "source_attempt_id": "2904ab33e282425aa0ac2c19dc25337e",
+      "status": "MATCH",
+      "trial_id": "confirmation-coordinate_refinement-101"
+    },
+    {
+      "fresh_attempt_id": "1062c5c274ba40e0a269ff59f3cc42d4",
+      "source_attempt_id": "0d155865486e4c35a13f2eca4482f4e0",
+      "status": "MATCH",
+      "trial_id": "confirmation-coordinate_refinement-202"
+    },
+    {
+      "fresh_attempt_id": "0164a16aa31c44adaef3833edb115b07",
+      "source_attempt_id": "963bd8491b4244a09482527f3b65e456",
+      "status": "MATCH",
+      "trial_id": "confirmation-coordinate_refinement-303"
+    },
+    {
+      "fresh_attempt_id": "f5b29d42f11540edb3e5d5dfd22282c2",
+      "source_attempt_id": "a55b5acc7776461c8b40a592d4b72a7b",
+      "status": "MATCH",
+      "trial_id": "reproduction-development-uniform_random-11"
+    },
+    {
+      "fresh_attempt_id": "42dbd4d30b2f416e9b8fcf35d1a6e130",
+      "source_attempt_id": "f5258b825d774120ba836926dbe8f3e2",
+      "status": "MATCH",
+      "trial_id": "reproduction-development-uniform_random-22"
+    },
+    {
+      "fresh_attempt_id": "860e5419d25f46c5ab6263d874672b4b",
+      "source_attempt_id": "6e9454fa348b4a9c8fbf67b2aff1191e",
+      "status": "MATCH",
+      "trial_id": "reproduction-development-uniform_random-33"
+    },
+    {
+      "fresh_attempt_id": "597b203c525c4b1b87db5f1dbbcec9eb",
+      "source_attempt_id": "1896a52d75f949dcb8dd61a6f1dd04b5",
+      "status": "MATCH",
+      "trial_id": "reproduction-development-coordinate_refinement-11"
+    },
+    {
+      "fresh_attempt_id": "b8eee7e1460d418abbb84ce1a1b55aaa",
+      "source_attempt_id": "b2c8a9db3b3848b283e5761c363e09de",
+      "status": "MATCH",
+      "trial_id": "reproduction-development-coordinate_refinement-22"
+    },
+    {
+      "fresh_attempt_id": "8b1e6b2f09654a93808b4897202ae21d",
+      "source_attempt_id": "6cefc5b772f24ccc99072fe59d9243e1",
+      "status": "MATCH",
+      "trial_id": "reproduction-development-coordinate_refinement-33"
+    },
+    {
+      "fresh_attempt_id": "2e1cccff50254b718974b1a1e66548d2",
+      "source_attempt_id": "be9641cd3bb24ddeb54f0591d5347eed",
+      "status": "MATCH",
+      "trial_id": "reproduction-confirmation-uniform_random-101"
+    },
+    {
+      "fresh_attempt_id": "653c5e86cfd4487bbff51652fb82da5f",
+      "source_attempt_id": "6034d010987c4e3e90816e9e9231c556",
+      "status": "MATCH",
+      "trial_id": "reproduction-confirmation-uniform_random-202"
+    },
+    {
+      "fresh_attempt_id": "b63b4070da984f119feb554ff99205f5",
+      "source_attempt_id": "7a4befd141e546f397ed4b109d99d7f1",
+      "status": "MATCH",
+      "trial_id": "reproduction-confirmation-uniform_random-303"
+    },
+    {
+      "fresh_attempt_id": "0b5e02e92d9a4fdca85d7cd5991f242c",
+      "source_attempt_id": "e640ff0ef7e74cf2ae8819d556f5f1f5",
+      "status": "MATCH",
+      "trial_id": "reproduction-confirmation-coordinate_refinement-101"
+    },
+    {
+      "fresh_attempt_id": "1ef685aa37ed4f53ab02bcb2ea7ff144",
+      "source_attempt_id": "b834f518ca454cc6aacec95a542aee03",
+      "status": "MATCH",
+      "trial_id": "reproduction-confirmation-coordinate_refinement-202"
+    },
+    {
+      "fresh_attempt_id": "a36c48459f8549a998f1f024023efda7",
+      "source_attempt_id": "ac7555965fd94b518b9be2cb0d9e5613",
+      "status": "MATCH",
+      "trial_id": "reproduction-confirmation-coordinate_refinement-303"
+    }
+  ],
+  "deviations": [
+    "environment machine differs",
+    "environment python differs",
+    "environment sqlite differs"
+  ],
+  "evaluator_digest": "f08c6eca517099a4435b0a43ecdaa85a3869e7c1e8528634faf966d1c8194600",
+  "execution_created_at": "2026-09-08T15:57:51.125980+00:00",
+  "fresh_campaign_id": "af14aa6aafaa49488ca3ab3ca042a22e",
+  "fresh_environment": {
+    "implementation": "CPython",
+    "machine": "aarch64",
+    "package_version": "0.1.0",
+    "python": "3.12.13",
+    "runtime_digest": "74245e190f1a711677ec38dce61401ba1bd475bfeaa72895b8a5c50b1bb95fe0",
+    "sqlite": "3.46.1",
+    "system": "Linux"
+  },
+  "fresh_evidence_digest": "0316636e7b9791f520d0a4120d273923a530bf1e54d7340bd42e05e8ab50da2c",
+  "independent_human_review": "PENDING",
+  "observation_context": "fresh local execution; independence not established",
+  "publication_context": "record from this new or resumed source-bound execution",
+  "review_status": "UNREVIEWED",
+  "schema_version": 1,
+  "source_campaign_id": "c5bc8d6fed264b3e944f160ba249f5ae",
+  "source_evidence_digest": "342a02deadaf779419dcded68fcdeae580f919a3b011014029b0011499ff7442",
+  "status": "INCONCLUSIVE",
+  "study_digest": "625cea9555008c0de81ccf3e7f790027ffb6ccb0f7285b910d10ddc184337ddf",
+  "tolerance": 1e-12,
+  "type": "ReproductionRecord"
+}

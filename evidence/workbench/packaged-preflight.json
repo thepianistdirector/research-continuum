@@ -1,0 +1,335 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "evidence_level": "PACKAGED_RUNTIME",
+  "started_at": "2026-09-08T16:45:32.081649+00:00",
+  "finished_at": "2026-09-08T16:49:51.400836+00:00",
+  "archive_sha256": "0e401e86a327cdc556fb925b25a018fd4e3d4777216d429bce1874a1afacd1c3",
+  "version": "0.5.0",
+  "package_files": 95,
+  "default": {
+    "study_count": 9,
+    "complete": true,
+    "charged_evaluations": 27648,
+    "recorded_evaluations": 27648,
+    "reserved_evaluations": 55296,
+    "failed_attempts": 0
+  },
+  "reproduction": {
+    "status": "MATCH",
+    "numerical_sequences_match": true,
+    "source_execution_id": "9bc92c50780849d792731b587d797b07",
+    "fresh_execution_id": "1e03cbef90854de1b9c75f89ae54f6d0"
+  },
+  "recovery": {
+    "complete": true,
+    "charged_evaluations": 136,
+    "recorded_evaluations": 128,
+    "failed_attempts": 1
+  },
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "continuum",
+        "--version"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_seconds": 0.03373981500044465,
+      "stdout_sha256": "5fc12f7093beda9b3cc983dbf80b036e07aaad5e5c1d433d19b7fe74371fc07c",
+      "stdout_bytes": 25,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "tools/validate_plan.py",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_seconds": 0.21121303702238947,
+      "stdout_sha256": "608ce3aca7f99e963ca4301a43265ef76b3e195b5283866e8b84a87ab97ddd28",
+      "stdout_bytes": 188,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "tools/render_plan.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_seconds": 0.03194543701829389,
+      "stdout_sha256": "b3aacec5bd619dfbc07045dee00705ee87673ba5edf7e0fd714bb9702020cf2f",
+      "stdout_bytes": 73,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_seconds": 56.293413908046205,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0,
+      "stderr": "test_bound_interrupted_reproduction_resumes (test_cli.CliTests.test_bound_interrupted_reproduction_resumes) ... ok\ntest_cached_completed_campaign_cannot_be_relabelled_fresh (test_cli.CliTests.test_cached_completed_campaign_cannot_be_relabelled_fresh) ... ok\ntest_invalid_study_fails_before_creating_database (test_cli.CliTests.test_invalid_study_fails_before_creating_database) ... ok\ntest_real_kill_after_final_reproduction_before_record_is_recoverable (test_cli.CliTests.test_real_kill_after_final_reproduction_before_record_is_recoverable) ... ok\ntest_record_parent_failure_is_detected_before_any_fresh_trials (test_cli.CliTests.test_record_parent_failure_is_detected_before_any_fresh_trials) ... ok\ntest_reproduce_executes_a_new_campaign_and_record (test_cli.CliTests.test_reproduce_executes_a_new_campaign_and_record) ... ok\ntest_reproduction_outputs_cannot_mutate_the_input_bundle (test_cli.CliTests.test_reproduction_outputs_cannot_mutate_the_input_bundle) ... ok\ntest_unbound_partial_campaign_cannot_be_adopted_as_reproduction (test_cli.CliTests.test_unbound_partial_campaign_cannot_be_adopted_as_reproduction) ... ok\ntest_bundle_roundtrip_retains_all_records_and_refuses_overwrite (test_evidence.EvidenceTests.test_bundle_roundtrip_retains_all_records_and_refuses_overwrite) ... ok\ntest_complete_campaign_derives_only_unreviewed_descriptive_claim (test_evidence.EvidenceTests.test_complete_campaign_derives_only_unreviewed_descriptive_claim) ... ok\ntest_event_deletion_duplicate_and_terminal_disagreement_rejected (test_evidence.EvidenceTests.test_event_deletion_duplicate_and_terminal_disagreement_rejected) ... ok\ntest_exhausted_failures_export_with_inconclusive_claim_and_no_erased_cost (test_evidence.EvidenceTests.test_exhausted_failures_export_with_inconclusive_claim_and_no_erased_cost) ... ok\ntest_extra_files_symlinks_duplicate_json_and_nonfinite_json_rejected (test_evidence.EvidenceTests.test_extra_files_symlinks_duplicate_json_and_nonfinite_json_rejected) ... ok\ntest_failure_before_atomic_rename_does_not_publish_partial_bundle (test_evidence.EvidenceTests.test_failure_before_atomic_rename_does_not_publish_partial_bundle) ... ok\ntest_fresh_reproduction_rejects_reuse_and_records_runtime_deviations (test_evidence.EvidenceTests.test_fresh_reproduction_rejects_reuse_and_records_runtime_deviations) ... ok\ntest_missing_duplicate_and_wrong_raw_values_rejected (test_evidence.EvidenceTests.test_missing_duplicate_and_wrong_raw_values_rejected) ... ok\ntest_partial_campaign_valid_for_inspection_but_not_export (test_evidence.EvidenceTests.test_partial_campaign_valid_for_inspection_but_not_export) ... ok\ntest_racing_destination_is_never_overwritten (test_evidence.EvidenceTests.test_racing_destination_is_never_overwritten) ... ok\ntest_recomputed_checksums_do_not_make_false_claims_valid (test_evidence.EvidenceTests.test_recomputed_checksums_do_not_make_false_claims_valid) ... ok\ntest_relabelled_source_attempts_cannot_be_a_fresh_reproduction (test_evidence.EvidenceTests.test_relabelled_source_attempts_cannot_be_a_fresh_reproduction) ... ok\ntest_report_escapes_text_and_has_semantic_keyboard_navigation (test_evidence.EvidenceTests.test_report_escapes_text_and_has_semantic_keyboard_navigation) ... ok\ntest_schedule_evaluator_budget_and_lineage_tampering_rejected (test_evidence.EvidenceTests.test_schedule_evaluator_budget_and_lineage_tampering_rejected) ... ok\ntest_bad_candidate_and_invalid_numbers_do_not_call_objective (test_numerical.NumericalTests.test_bad_candidate_and_invalid_numbers_do_not_call_objective) ... ok\ntest_clipped_duplicate_and_failed_initial_observation_still_consume_slots (test_numerical.NumericalTests.test_clipped_duplicate_and_failed_initial_observation_still_consume_slots) ... ok\ntest_controls_have_explicit_real_call_accounting (test_numerical.NumericalTests.test_controls_have_explicit_real_call_accounting) ... ok\ntest_coordinate_sweep_uses_immediate_improvement_and_halves_only_after_failed_sweep (test_numerical.NumericalTests.test_coordinate_sweep_uses_immediate_improvement_and_halves_only_after_failed_sweep) ... ok\ntest_equal_finite_allowance_and_deterministic_replay (test_numerical.NumericalTests.test_equal_finite_allowance_and_deterministic_replay) ... ok\ntest_known_values_and_independent_polynomial_form (test_numerical.NumericalTests.test_known_values_and_independent_polynomial_form) ... ok\ntest_mutation_before_initial_identity_capture_is_rejected (test_numerical.NumericalTests.test_mutation_before_initial_identity_capture_is_rejected) ... ok\ntest_objective_replacement_and_code_mutation_detected (test_numerical.NumericalTests.test_objective_replacement_and_code_mutation_detected) ... ok\ntest_policy_rejects_wrong_feedback_and_missing_feedback (test_numerical.NumericalTests.test_policy_rejects_wrong_feedback_and_missing_feedback) ... ok\ntest_random_trace_matches_independent_affine_draws (test_numerical.NumericalTests.test_random_trace_matches_independent_affine_draws) ... ok\ntest_source_mutation_and_wrong_expected_identity_detected (test_numerical.NumericalTests.test_source_mutation_and_wrong_expected_identity_detected) ... ok\ntest_aggregate_limit_and_new_supported_revision (test_numerical.StudyTests.test_aggregate_limit_and_new_supported_revision) ... ok\ntest_example_is_exact_default_and_roundtrips (test_numerical.StudyTests.test_example_is_exact_default_and_roundtrips) ... ok\ntest_immutable_and_detached_from_input_and_output (test_numerical.StudyTests.test_immutable_and_detached_from_input_and_output) ... ok\ntest_invalid_contracts_fail_closed (test_numerical.StudyTests.test_invalid_contracts_fail_closed) ... ok\ntest_json_rejects_duplicates_nonfinite_and_oversize (test_numerical.StudyTests.test_json_rejects_duplicates_nonfinite_and_oversize) ... ok\ntest_oversized_integer_parser_failure_is_normalized (test_numerical.StudyTests.test_oversized_integer_parser_failure_is_normalized) ... ok\ntest_cancelled_attempt_keeps_full_debit (test_store.StoreTests.test_cancelled_attempt_keeps_full_debit) ... ok\ntest_changed_environment_blocks_without_admission (test_store.StoreTests.test_changed_environment_blocks_without_admission) ... ok\ntest_deliberately_bad_candidate_is_invalid_not_a_zero (test_store.StoreTests.test_deliberately_bad_candidate_is_invalid_not_a_zero) ... ok\ntest_duplicate_terminal_and_mutations_are_rejected_by_sqlite (test_store.StoreTests.test_duplicate_terminal_and_mutations_are_rejected_by_sqlite) ... ok\ntest_finite_clean_campaign_has_every_call_and_reserve (test_store.StoreTests.test_finite_clean_campaign_has_every_call_and_reserve) ... ok\ntest_new_identity_cannot_stamp_source_changed_since_import (test_store.StoreTests.test_new_identity_cannot_stamp_source_changed_since_import) ... ok\ntest_pause_resume_preserves_prior_evidence_exactly (test_store.StoreTests.test_pause_resume_preserves_prior_evidence_exactly) ... ok\ntest_real_kill_after_admission_retains_cost_and_retry_identity (test_store.StoreTests.test_real_kill_after_admission_retains_cost_and_retry_identity) ... ok\ntest_real_kill_after_execution_retains_full_partial_trace (test_store.StoreTests.test_real_kill_after_execution_retains_full_partial_trace) ... ok\ntest_real_kill_after_staging_finalizes_once_without_retry (test_store.StoreTests.test_real_kill_after_staging_finalizes_once_without_retry) ... ok\ntest_refuses_overwrite_and_missing_database_has_no_side_effect (test_store.StoreTests.test_refuses_overwrite_and_missing_database_has_no_side_effect) ... ok\ntest_second_live_coordinator_cannot_assume_lock_owner_dead (test_store.StoreTests.test_second_live_coordinator_cannot_assume_lock_owner_dead) ... ok\ntest_timeout_is_explicit_and_finite (test_store.StoreTests.test_timeout_is_explicit_and_finite) ... ok\ntest_two_kills_exhaust_only_their_trial_reserve (test_store.StoreTests.test_two_kills_exhaust_only_their_trial_reserve) ... ok\ntest_fixed_step_only_changes_failed_sweep_halving (test_workbench.AdapterTests.test_fixed_step_only_changes_failed_sweep_halving) ... ok\ntest_grid_is_finite_cell_centre_sequence_independent_of_feedback (test_workbench.AdapterTests.test_grid_is_finite_cell_centre_sequence_independent_of_feedback) ... ok\ntest_new_objective_runtime_replacement_fails_before_call (test_workbench.AdapterTests.test_new_objective_runtime_replacement_fails_before_call) ... ok\ntest_new_objectives_match_independent_known_answers (test_workbench.AdapterTests.test_new_objectives_match_independent_known_answers) ... ok\ntest_schema_one_does_not_adopt_new_policy_or_objective (test_workbench.AdapterTests.test_schema_one_does_not_adopt_new_policy_or_objective) ... ok\ntest_bundle_rejects_derived_tampering_even_with_new_checksum (test_workbench.CampaignTests.test_bundle_rejects_derived_tampering_even_with_new_checksum) ... ok\ntest_cli_full_campaign_workflow_and_record_no_overwrite (test_workbench.CampaignTests.test_cli_full_campaign_workflow_and_record_no_overwrite) ... ok\ntest_completed_campaign_cannot_resume_under_a_changed_runtime (test_workbench.CampaignTests.test_completed_campaign_cannot_resume_under_a_changed_runtime) ... ok\ntest_concurrent_campaign_coordinator_refused (test_workbench.CampaignTests.test_concurrent_campaign_coordinator_refused) ... ok\ntest_export_verify_fresh_reproduce_and_cached_refusal (test_workbench.CampaignTests.test_export_verify_fresh_reproduce_and_cached_refusal) ... ok\ntest_extra_database_sidecar_name_cannot_hide_an_extra_member (test_workbench.CampaignTests.test_extra_database_sidecar_name_cannot_hide_an_extra_member) ... ok\ntest_frozen_question_mutation_breaks_all_member_bindings (test_workbench.CampaignTests.test_frozen_question_mutation_breaks_all_member_bindings) ... ok\ntest_html_untrusted_text_is_data_and_every_study_has_fallback_link (test_workbench.CampaignTests.test_html_untrusted_text_is_data_and_every_study_has_fallback_link) ... ok\ntest_inventory_cannot_be_shrunk_even_with_updated_plan_hash (test_workbench.CampaignTests.test_inventory_cannot_be_shrunk_even_with_updated_plan_hash) ... ok\ntest_no_op_or_confounded_ablation_is_rejected (test_workbench.CampaignTests.test_no_op_or_confounded_ablation_is_rejected) ... ok\ntest_pause_after_skips_previously_exhausted_trials (test_workbench.CampaignTests.test_pause_after_skips_previously_exhausted_trials) ... ok\ntest_pause_resume_preserves_attempts_and_full_frozen_reserve (test_workbench.CampaignTests.test_pause_resume_preserves_attempts_and_full_frozen_reserve) ... ok\ntest_plan_rejects_hidden_changes_duplicate_ids_and_overbudget (test_workbench.CampaignTests.test_plan_rejects_hidden_changes_duplicate_ids_and_overbudget) ... ok\ntest_real_process_death_retains_charge_and_ineligible_ablation (test_workbench.CampaignTests.test_real_process_death_retains_charge_and_ineligible_ablation) ... ok\ntest_reproduction_resumes_bound_partial_campaign (test_workbench.CampaignTests.test_reproduction_resumes_bound_partial_campaign) ... ok\ntest_reproduction_runtime_deviation_is_retained (test_workbench.CampaignTests.test_reproduction_runtime_deviation_is_retained) ... ok\ntest_deterministic_and_small_samples_never_get_sampling_intervals (test_workbench.UncertaintyTests.test_deterministic_and_small_samples_never_get_sampling_intervals) ... ok\ntest_interval_and_estimand_match_independent_resampling (test_workbench.UncertaintyTests.test_interval_and_estimand_match_independent_resampling) ... ok\n\n----------------------------------------------------------------------\nRan 76 tests in 56.209s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "continuum",
+        "campaign",
+        "--out",
+        "$WORK/draft.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_seconds": 0.05805303202942014,
+      "stdout_sha256": "ac01470b9ba34832b1d719e863b85ef7e8056441ce64c01133f431308a77aa4a",
+      "stdout_bytes": 92,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "continuum",
+        "campaign-init",
+        "--plan",
+        "$WORK/draft.json",
+        "--dir",
+        "$WORK/campaign"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_seconds": 0.666676758963149,
+      "stdout_sha256": "6e38c1dd9fe12766d60404d3c0d631853f0c759f555cb6fdf2ac52ed674c7bfb",
+      "stdout_bytes": 224003,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "continuum",
+        "campaign-run",
+        "--dir",
+        "$WORK/campaign",
+        "--pause-after",
+        "2"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_seconds": 0.897030106978491,
+      "stdout_sha256": "950706b689dc8859578eb97a08303321be5b558d79aecc7aabb535ef081138f0",
+      "stdout_bytes": 224390,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "continuum",
+        "campaign-inspect",
+        "--dir",
+        "$WORK/campaign"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_seconds": 0.09935160097666085,
+      "stdout_sha256": "950706b689dc8859578eb97a08303321be5b558d79aecc7aabb535ef081138f0",
+      "stdout_bytes": 224390,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "continuum",
+        "campaign-resume",
+        "--dir",
+        "$WORK/campaign"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_seconds": 86.71910110098543,
+      "stdout_sha256": "7781b53ef794dfdadfc55c26c16b7c92603810c4b70a27036930fc50116541c8",
+      "stdout_bytes": 256747,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "continuum",
+        "campaign-export",
+        "--dir",
+        "$WORK/campaign",
+        "--out",
+        "$WORK/bundle"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_seconds": 13.29249607399106,
+      "stdout_sha256": "642359f24ca35ae955374a96df7c19331eb6fb85146706c04971acfe05593ceb",
+      "stdout_bytes": 116,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "continuum",
+        "campaign-verify",
+        "--bundle",
+        "$WORK/bundle"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_seconds": 5.396968429966364,
+      "stdout_sha256": "f662b13fd06050e0f84a653832d0ca8c5302ef0ed9545d7280d2d68168fd3768",
+      "stdout_bytes": 269398,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "continuum",
+        "campaign-reproduce",
+        "--bundle",
+        "$WORK/bundle",
+        "--dir",
+        "$WORK/fresh",
+        "--record",
+        "$WORK/reproduction.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_seconds": 94.43349120405037,
+      "stdout_sha256": "5b4f639c2e2bb73b87e968336c1e6af3d6bfc87ea9e47b8cc6709aaa3ffbeaee",
+      "stdout_bytes": 64866,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "continuum",
+        "campaign-reproduce",
+        "--bundle",
+        "$WORK/bundle",
+        "--dir",
+        "$WORK/fresh",
+        "--record",
+        "$WORK/reproduction.json"
+      ],
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "elapsed_seconds": 0.05152495502261445,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0,
+      "stderr": "ERROR: Reproduction record already exists\n"
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "continuum",
+        "campaign-init",
+        "--plan",
+        "$WORK/recovery-draft.json",
+        "--dir",
+        "$WORK/recovery"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_seconds": 0.19306108402088284,
+      "stdout_sha256": "f5cc5abf9a6a4da3af7ffd9c7b45ffc2973ea4b2ac4df150c946eefa33e4d105",
+      "stdout_bytes": 24989,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-c",
+        "import sys; from continuum.store import run; run(sys.argv[1], _crash_at=\"after-admission\")",
+        "$WORK/recovery/studies/rosenbrock.sqlite"
+      ],
+      "exit_code": -9,
+      "expected_exit_code": -9,
+      "elapsed_seconds": 0.043423641996923834,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "continuum",
+        "campaign-resume",
+        "--dir",
+        "$WORK/recovery"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_seconds": 0.575656600005459,
+      "stdout_sha256": "9f561fb319cd8cf0b81a4c40a39e47596e084fcb2c23766b5ba971bc2feab3e3",
+      "stdout_bytes": 27320,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "continuum",
+        "campaign-export",
+        "--dir",
+        "$WORK/recovery",
+        "--out",
+        "$WORK/recovery-bundle"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_seconds": 0.1549565379973501,
+      "stdout_sha256": "f6ce6f4aeb36305102a93d3467e79d338518a9a0e63539a6845052479d3757c2",
+      "stdout_bytes": 125,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "continuum",
+        "campaign-verify",
+        "--bundle",
+        "$WORK/recovery-bundle"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_seconds": 0.09751536400290206,
+      "stdout_sha256": "f11be80d278bab50993bd478d83cdd64d3b2e3f74b4b7e7d7a79bcf48b098fb5",
+      "stdout_bytes": 28709,
+      "stderr": ""
+    }
+  ],
+  "source_unchanged": true,
+  "limitations": [
+    "Agent execution in a fresh extraction on the same host; not external or human evidence.",
+    "Real SIGKILL recovery does not establish hardware power-loss durability.",
+    "No publication or independent scientific validity is established."
+  ]
+}

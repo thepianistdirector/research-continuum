@@ -28,6 +28,25 @@ def objective(point: Point) -> float:
     return 100.0 * (point.y - point.x * point.x) ** 2 + (1.0 - point.x) ** 2
 
 
+def sphere(point: Point) -> float:
+    return point.x ** 2 + point.y ** 2
+
+
+def ellipsoid(point: Point) -> float:
+    return point.x ** 2 + 100.0 * point.y ** 2
+
+
+OBJECTIVE_INFO = {
+    "rosenbrock-2d-v1": {"formula": "100(y − x²)² + (1 − x)²", "minimum": [1.0, 1.0], "control": [0.0, 0.0], "control_value": 1.0},
+    "sphere-2d-v1": {"formula": "x² + y²", "minimum": [0.0, 0.0], "control": [1.0, 1.0], "control_value": 2.0},
+    "ellipsoid-2d-v1": {"formula": "x² + 100y²", "minimum": [0.0, 0.0], "control": [1.0, 1.0], "control_value": 101.0},
+}
+_ORIGINAL_FUNCTIONS = tuple((name, func, func.__code__) for name, func in
+                            (("objective", objective), ("sphere", sphere), ("ellipsoid", ellipsoid)))
+_OBJECTIVES = {"rosenbrock-2d-v1": objective, "sphere-2d-v1": sphere, "ellipsoid-2d-v1": ellipsoid}
+
+_ORIGINAL_REGISTRY = _OBJECTIVES.copy()
+
 _ORIGINAL_OBJECTIVE = objective
 _ORIGINAL_CODE = objective.__code__
 
@@ -76,11 +95,12 @@ def _valid_point(point: object, domain: tuple) -> Point:
 class Evaluator:
     """Only validated proposals cross the reviewed objective boundary."""
 
-    __slots__ = ("_domain", "_identity", "_objective_calls")
+    __slots__ = ("_domain", "_identity", "_objective_calls", "_function")
 
     def __init__(self, study: Study, expected_identity: str | None = None):
         if type(study) is not Study:
             raise ValueError("evaluator requires a validated Study")
+        self._function = _OBJECTIVES[study.evaluator]
         self._domain = study.domain
         self._identity = evaluator_identity() if expected_identity is None else expected_identity
         self._objective_calls = 0
@@ -92,6 +112,10 @@ class Evaluator:
 
     def verify_identity(self) -> None:
         if (objective is not _ORIGINAL_OBJECTIVE or objective.__code__ is not _ORIGINAL_CODE
+                or _OBJECTIVES != _ORIGINAL_REGISTRY
+                or any(globals()[name] is not func or func.__code__ is not code
+                       for name, func, code in _ORIGINAL_FUNCTIONS)
+                or self._function not in tuple(f for _, f, _ in _ORIGINAL_FUNCTIONS)
                 or evaluator_identity() != self._identity):
             raise EvaluatorMismatch("frozen evaluator identity changed; use the accepted original release")
 
@@ -99,7 +123,7 @@ class Evaluator:
         self.verify_identity()
         accepted = _valid_point(point, self._domain)
         self._objective_calls += 1
-        result = _finite_number(objective(accepted), "objective")
+        result = _finite_number(self._function(accepted), "objective")
         if result < 0.0:
             raise ValueError("objective violated its nonnegative invariant")
         return result
@@ -153,14 +177,29 @@ class UniformRandom(_Policy):
         return Point(*values)
 
 
-class CoordinateRefinement(_Policy):
-    __slots__ = ("_incumbent", "_best", "_step", "_direction", "_sweep_improved")
+class GridSearch(_Policy):
+    """Cell-centre square lattice; a partial last row still consumes exact allowance."""
+    __slots__ = ("_side",)
 
-    def __init__(self, domain: tuple, limit: int, start: tuple, step: float):
+    def __init__(self, domain: tuple, limit: int):
+        super().__init__(domain, limit)
+        self._side = math.isqrt(limit - 1) + 1
+
+    def _next(self) -> Point:
+        indices = (self._count % self._side, self._count // self._side)
+        return Point(*(low + (high - low) * (index + 0.5) / self._side
+                       for index, (low, high) in zip(indices, self._domain)))
+
+
+class CoordinateRefinement(_Policy):
+    __slots__ = ("_incumbent", "_best", "_step", "_direction", "_sweep_improved", "_shrink")
+
+    def __init__(self, domain: tuple, limit: int, start: tuple, step: float, shrink: bool = True):
         super().__init__(domain, limit)
         self._incumbent = Point(*start)
         self._best = math.inf
         self._step = step
+        self._shrink = shrink
         self._direction = 0
         self._sweep_improved = False
 
@@ -182,7 +221,7 @@ class CoordinateRefinement(_Policy):
         if self._count > 0:
             self._direction += 1
             if self._direction == 4:
-                if not self._sweep_improved:
+                if not self._sweep_improved and self._shrink:
                     self._step *= 0.5
                 self._direction = 0
                 self._sweep_improved = False
@@ -195,17 +234,21 @@ def make_policy(name: str, study: Study, seed: int) -> _Policy:
         raise ValueError("seed must be an integer from zero to 2^32-1")
     if name == "uniform_random":
         return UniformRandom(study.domain, study.evaluations_per_policy, seed)
-    if name == "coordinate_refinement":
-        return CoordinateRefinement(study.domain, study.evaluations_per_policy, study.start, study.initial_step)
-    raise ValueError("only uniform_random and coordinate_refinement policies are supported")
+    if name == "grid_search" and study.schema_version == 2:
+        return GridSearch(study.domain, study.evaluations_per_policy)
+    if name == "coordinate_refinement" or (name == "coordinate_fixed_step" and study.schema_version == 2):
+        return CoordinateRefinement(study.domain, study.evaluations_per_policy, study.start,
+                                    study.initial_step, shrink=name == "coordinate_refinement")
+    raise ValueError("only reviewed policies for this schema version are supported")
 
 
 def controls(study: Study) -> list[dict]:
     evaluator = Evaluator(study)
     records = []
+    info = OBJECTIVE_INFO[study.evaluator]
     for name, point, expected in (
-        ("known_minimum", Point(1.0, 1.0), 0.0),
-        ("known_nonzero", Point(0.0, 0.0), 1.0),
+        ("known_minimum", Point(*info["minimum"]), 0.0),
+        ("known_nonzero", Point(*info["control"]), info["control_value"]),
     ):
         before = evaluator.objective_calls
         observed = evaluator.evaluate(point)

@@ -4,12 +4,28 @@
   "project": "research-continuum",
   "projectId": "prj_def88c61770d94181ab97d1c2e2125a0",
   "contractVersion": "owner-numerical-0.1-2026-09-07",
-  "objective": "Publish a useful bounded numerical 0.1 with complete reproducible evidence and a verified native public Tanduna programme; preserve the wider scientific roadmap.",
+  "objective": "Deliver the owner-selected local numerical research workbench through 0.5, while retaining the incomplete 0.1 native-publication and independent-review gates and the wider scientific roadmap.",
   "limits": [
     "No autonomous-scientist, optimizer novelty, generality or autoresearch-superiority claim from 0.1.",
     "No new dependencies, cloud spend, untrusted execution, external outreach or publication without exact authority.",
     "Later and exploratory outcomes are conditional on their evidence, resource and owner decisions, not promised release dates."
   ],
+  "activeDelivery": {
+    "version": "0.5",
+    "status": "RUNTIME VERIFIED",
+    "goal": "docs/GOAL-0.5.md",
+    "scope": "Local research workbench: multiple numerical objectives and baselines, frozen multi-study campaigns, matched ablations, descriptive uncertainty, portable fresh reproduction, interactive offline evidence browser.",
+    "contractBoundary": "This owner-authorized delivery slice does not satisfy unmet historical training, adaptive-search, independent-review or native-publication prerequisites.",
+    "publicRelease": "NOT PUBLISHED",
+    "nativeGoalEdited": false,
+    "evidence": [
+      "evidence/workbench/automated-final-source.json",
+      "evidence/workbench/packaged-preflight.json",
+      "evidence/workbench/browser-verification.json",
+      "evidence/workbench/default-campaign/index.html",
+      "evidence/workbench/reproduction.json"
+    ]
+  },
   "taskCount": 228,
   "waveCount": 28,
   "horizonCounts": {
@@ -4102,15 +4118,28 @@
         "RC-010"
       ],
       "decisionRefs": [
-        "OWNER-LAUNCH-2026-09-07"
+        "OWNER-LAUNCH-2026-09-07",
+        "WORKBENCH-005"
       ],
       "riskEvidenceNeeds": "Ablations can change more than one cause; reviewer judgment and registered interventions are required before causal language.",
-      "status": "PLANNED",
-      "evidenceRefs": [],
+      "status": "IN PROGRESS",
+      "evidenceRefs": [
+        "docs/GOAL-0.5.md",
+        "docs/decisions/003-numerical-workbench.md",
+        "docs/workbench.md",
+        "tests/test_workbench.py",
+        "evidence/workbench/automated-final-source.json",
+        "evidence/workbench/packaged-preflight.json",
+        "evidence/workbench/browser-verification.json"
+      ],
       "basis": "expanded source requirement",
       "platformId": "tsk_ea16407589027c98033f76e193bd6f92",
       "dependencyRationale": {
         "RC-W11-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated."
+      },
+      "implementationSlice": {
+        "version": "0.5",
+        "scopeAndRemainingAcceptance": "Campaign manifests predeclare coordinate step-halving interventions and reference/variant links. Broader candidate mechanisms and original claim prerequisites remain unfulfilled."
       }
     },
     {
@@ -4154,15 +4183,28 @@
         "RC-010"
       ],
       "decisionRefs": [
-        "OWNER-LAUNCH-2026-09-07"
+        "OWNER-LAUNCH-2026-09-07",
+        "WORKBENCH-005"
       ],
       "riskEvidenceNeeds": "Ablations can change more than one cause; reviewer judgment and registered interventions are required before causal language.",
-      "status": "PLANNED",
-      "evidenceRefs": [],
+      "status": "IN PROGRESS",
+      "evidenceRefs": [
+        "docs/GOAL-0.5.md",
+        "docs/decisions/003-numerical-workbench.md",
+        "docs/workbench.md",
+        "tests/test_workbench.py",
+        "evidence/workbench/automated-final-source.json",
+        "evidence/workbench/packaged-preflight.json",
+        "evidence/workbench/browser-verification.json"
+      ],
       "basis": "expanded source requirement",
       "platformId": "tsk_c420a8bc8d91a7747419b3c1a5a81400",
       "dependencyRationale": {
         "RC-W12-T01": "Provides the shared contract for this wave."
+      },
+      "implementationSlice": {
+        "version": "0.5",
+        "scopeAndRemainingAcceptance": "Fixed-step coordinate search removes only step halving. Arbitrary multi-change agent/training candidates and exact code-diff attribution remain later work."
       }
     },
     {
@@ -4180,15 +4222,28 @@
         "RC-010"
       ],
       "decisionRefs": [
-        "OWNER-LAUNCH-2026-09-07"
+        "OWNER-LAUNCH-2026-09-07",
+        "WORKBENCH-005"
       ],
       "riskEvidenceNeeds": "Ablations can change more than one cause; reviewer judgment and registered interventions are required before causal language.",
-      "status": "PLANNED",
-      "evidenceRefs": [],
+      "status": "IN PROGRESS",
+      "evidenceRefs": [
+        "docs/GOAL-0.5.md",
+        "docs/decisions/003-numerical-workbench.md",
+        "docs/workbench.md",
+        "tests/test_workbench.py",
+        "evidence/workbench/automated-final-source.json",
+        "evidence/workbench/packaged-preflight.json",
+        "evidence/workbench/browser-verification.json"
+      ],
       "basis": "expanded source requirement",
       "platformId": "tsk_a95ae0a00ae7dce93190da061bd8319a",
       "dependencyRationale": {
         "RC-W12-T01": "Provides the shared contract for this wave."
+      },
+      "implementationSlice": {
+        "version": "0.5",
+        "scopeAndRemainingAcceptance": "Numerical ablations retain equal budgets, seed pairs and charged failures. Original agent-versus-baseline prerequisites remain unfulfilled."
       }
     },
     {
@@ -4297,16 +4352,29 @@
         "RC-011"
       ],
       "decisionRefs": [
-        "OWNER-LAUNCH-2026-09-07"
+        "OWNER-LAUNCH-2026-09-07",
+        "WORKBENCH-005"
       ],
       "riskEvidenceNeeds": "Needs qualified methodological review; no universal p-value or reusable-holdout guarantee is promised.",
-      "status": "PLANNED",
-      "evidenceRefs": [],
+      "status": "IN PROGRESS",
+      "evidenceRefs": [
+        "docs/GOAL-0.5.md",
+        "docs/decisions/003-numerical-workbench.md",
+        "docs/workbench.md",
+        "tests/test_workbench.py",
+        "evidence/workbench/automated-final-source.json",
+        "evidence/workbench/packaged-preflight.json",
+        "evidence/workbench/browser-verification.json"
+      ],
       "basis": "expanded source requirement",
       "platformId": "tsk_2b84b154d474124aea697af01bcac182",
       "dependencyRationale": {
         "RC-W11-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W08-T09": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated."
+      },
+      "implementationSlice": {
+        "version": "0.5",
+        "scopeAndRemainingAcceptance": "Whole numerical campaign inventory and paired seed estimands are frozen. Adaptive selection families and protected-evaluation prerequisites remain later work."
       }
     },
     {
@@ -4324,15 +4392,28 @@
         "RC-011"
       ],
       "decisionRefs": [
-        "OWNER-LAUNCH-2026-09-07"
+        "OWNER-LAUNCH-2026-09-07",
+        "WORKBENCH-005"
       ],
       "riskEvidenceNeeds": "Needs qualified methodological review; no universal p-value or reusable-holdout guarantee is promised.",
-      "status": "PLANNED",
-      "evidenceRefs": [],
+      "status": "IN PROGRESS",
+      "evidenceRefs": [
+        "docs/GOAL-0.5.md",
+        "docs/decisions/003-numerical-workbench.md",
+        "docs/workbench.md",
+        "tests/test_workbench.py",
+        "evidence/workbench/automated-final-source.json",
+        "evidence/workbench/packaged-preflight.json",
+        "evidence/workbench/browser-verification.json"
+      ],
       "basis": "expanded source requirement",
       "platformId": "tsk_16a84cc1557a502f06a063c82475acb3",
       "dependencyRationale": {
         "RC-W13-T01": "Provides the shared contract for this wave."
+      },
+      "implementationSlice": {
+        "version": "0.5",
+        "scopeAndRemainingAcceptance": "Descriptive paired bootstrap and deterministic/insufficient/ineligible labels are implemented. Qualified review of assumptions remains pending."
       }
     },
     {
@@ -4402,15 +4483,28 @@
         "RC-011"
       ],
       "decisionRefs": [
-        "OWNER-LAUNCH-2026-09-07"
+        "OWNER-LAUNCH-2026-09-07",
+        "WORKBENCH-005"
       ],
       "riskEvidenceNeeds": "Needs qualified methodological review; no universal p-value or reusable-holdout guarantee is promised.",
-      "status": "PLANNED",
-      "evidenceRefs": [],
+      "status": "IN PROGRESS",
+      "evidenceRefs": [
+        "docs/GOAL-0.5.md",
+        "docs/decisions/003-numerical-workbench.md",
+        "docs/workbench.md",
+        "tests/test_workbench.py",
+        "evidence/workbench/automated-final-source.json",
+        "evidence/workbench/packaged-preflight.json",
+        "evidence/workbench/browser-verification.json"
+      ],
       "basis": "expanded source requirement",
       "platformId": "tsk_6354d15c9e33d2747a0fb6027724ff4d",
       "dependencyRationale": {
         "RC-W13-T01": "Provides the shared contract for this wave."
+      },
+      "implementationSlice": {
+        "version": "0.5",
+        "scopeAndRemainingAcceptance": "Campaign inventory binding rejects dropped studies and retains null/failed outcomes. Adaptive hypothesis-selection history remains later work."
       }
     },
     {
@@ -4488,11 +4582,20 @@
         "RC-011"
       ],
       "decisionRefs": [
-        "OWNER-LAUNCH-2026-09-07"
+        "OWNER-LAUNCH-2026-09-07",
+        "WORKBENCH-005"
       ],
       "riskEvidenceNeeds": "Needs qualified methodological review; no universal p-value or reusable-holdout guarantee is promised.",
-      "status": "PLANNED",
-      "evidenceRefs": [],
+      "status": "IN PROGRESS",
+      "evidenceRefs": [
+        "docs/GOAL-0.5.md",
+        "docs/decisions/003-numerical-workbench.md",
+        "docs/workbench.md",
+        "tests/test_workbench.py",
+        "evidence/workbench/automated-final-source.json",
+        "evidence/workbench/packaged-preflight.json",
+        "evidence/workbench/browser-verification.json"
+      ],
       "basis": "expanded source requirement",
       "platformId": "tsk_6f45352eca6c0032f7fb237c1490846d",
       "dependencyRationale": {
@@ -4505,6 +4608,10 @@
         "RC-W13-T05": "Provides the shared contract for this wave.",
         "RC-W13-T06": "Provides the shared contract for this wave.",
         "RC-W13-T07": "Provides the shared contract for this wave."
+      },
+      "implementationSlice": {
+        "version": "0.5",
+        "scopeAndRemainingAcceptance": "Study and campaign views state conditional resampling limits and refuse deterministic sampling intervals. Full historical statistical prerequisites remain unfulfilled."
       }
     },
     {
@@ -4524,17 +4631,30 @@
         "RC-012"
       ],
       "decisionRefs": [
-        "OWNER-LAUNCH-2026-09-07"
+        "OWNER-LAUNCH-2026-09-07",
+        "WORKBENCH-005"
       ],
       "riskEvidenceNeeds": "Citation presence and fluent prose do not establish validity; completeness and reviewer disposition need direct evidence.",
-      "status": "PLANNED",
-      "evidenceRefs": [],
+      "status": "IN PROGRESS",
+      "evidenceRefs": [
+        "docs/GOAL-0.5.md",
+        "docs/decisions/003-numerical-workbench.md",
+        "docs/workbench.md",
+        "tests/test_workbench.py",
+        "evidence/workbench/automated-final-source.json",
+        "evidence/workbench/packaged-preflight.json",
+        "evidence/workbench/browser-verification.json"
+      ],
       "basis": "expanded source requirement",
       "platformId": "tsk_0ec25e5d0bcbded81cbb23faf671b1d5",
       "dependencyRationale": {
         "RC-W11-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W12-T07": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W13-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated."
+      },
+      "implementationSlice": {
+        "version": "0.5",
+        "scopeAndRemainingAcceptance": "Numerical study reports link source/question/hypothesis/trial/evaluation/claim records. Broad research-memory and independent-review prerequisites remain later work."
       }
     },
     {
@@ -4552,15 +4672,28 @@
         "RC-012"
       ],
       "decisionRefs": [
-        "OWNER-LAUNCH-2026-09-07"
+        "OWNER-LAUNCH-2026-09-07",
+        "WORKBENCH-005"
       ],
       "riskEvidenceNeeds": "Citation presence and fluent prose do not establish validity; completeness and reviewer disposition need direct evidence.",
-      "status": "PLANNED",
-      "evidenceRefs": [],
+      "status": "IN PROGRESS",
+      "evidenceRefs": [
+        "docs/GOAL-0.5.md",
+        "docs/decisions/003-numerical-workbench.md",
+        "docs/workbench.md",
+        "tests/test_workbench.py",
+        "evidence/workbench/automated-final-source.json",
+        "evidence/workbench/packaged-preflight.json",
+        "evidence/workbench/browser-verification.json"
+      ],
       "basis": "expanded source requirement",
       "platformId": "tsk_7d25ce9204c3d8b48d2ff0bce7b34c48",
       "dependencyRationale": {
         "RC-W14-T01": "Provides the shared contract for this wave."
+      },
+      "implementationSlice": {
+        "version": "0.5",
+        "scopeAndRemainingAcceptance": "All frozen numerical studies, attempts, costs and inconclusive outcomes are visible. Broader agent experiment denominators remain later work."
       }
     },
     {
@@ -4604,15 +4737,28 @@
         "RC-012"
       ],
       "decisionRefs": [
-        "OWNER-LAUNCH-2026-09-07"
+        "OWNER-LAUNCH-2026-09-07",
+        "WORKBENCH-005"
       ],
       "riskEvidenceNeeds": "Citation presence and fluent prose do not establish validity; completeness and reviewer disposition need direct evidence.",
-      "status": "PLANNED",
-      "evidenceRefs": [],
+      "status": "IN PROGRESS",
+      "evidenceRefs": [
+        "docs/GOAL-0.5.md",
+        "docs/decisions/003-numerical-workbench.md",
+        "docs/workbench.md",
+        "tests/test_workbench.py",
+        "evidence/workbench/automated-final-source.json",
+        "evidence/workbench/packaged-preflight.json",
+        "evidence/workbench/browser-verification.json"
+      ],
       "basis": "expanded source requirement",
       "platformId": "tsk_bf211c6345aefe84e0e2f301186c653d",
       "dependencyRationale": {
         "RC-W14-T01": "Provides the shared contract for this wave."
+      },
+      "implementationSlice": {
+        "version": "0.5",
+        "scopeAndRemainingAcceptance": "Numerical development, confirmation, reserved replay and fresh reproduction remain distinct. Replication and reviewer-supported states remain unverified."
       }
     },
     {
@@ -4656,15 +4802,28 @@
         "RC-012"
       ],
       "decisionRefs": [
-        "OWNER-LAUNCH-2026-09-07"
+        "OWNER-LAUNCH-2026-09-07",
+        "WORKBENCH-005"
       ],
       "riskEvidenceNeeds": "Citation presence and fluent prose do not establish validity; completeness and reviewer disposition need direct evidence.",
-      "status": "PLANNED",
-      "evidenceRefs": [],
+      "status": "IN PROGRESS",
+      "evidenceRefs": [
+        "docs/GOAL-0.5.md",
+        "docs/decisions/003-numerical-workbench.md",
+        "docs/workbench.md",
+        "tests/test_workbench.py",
+        "evidence/workbench/automated-final-source.json",
+        "evidence/workbench/packaged-preflight.json",
+        "evidence/workbench/browser-verification.json"
+      ],
       "basis": "expanded source requirement",
       "platformId": "tsk_41057e4c6e17829445fd99f55ea6d716",
       "dependencyRationale": {
         "RC-W14-T01": "Provides the shared contract for this wave."
+      },
+      "implementationSlice": {
+        "version": "0.5",
+        "scopeAndRemainingAcceptance": "Numerical campaign totals reconcile to member ledgers and retain retry costs. Proposal-model and remote resource accounting remain later work."
       }
     },
     {
@@ -5168,15 +5327,28 @@
         "RC-015"
       ],
       "decisionRefs": [
-        "OWNER-LAUNCH-2026-09-07"
+        "OWNER-LAUNCH-2026-09-07",
+        "WORKBENCH-005"
       ],
       "riskEvidenceNeeds": "The 0.1 fixture is partial lineage only; genuine cross-domain portability and numerical applicability require this wider evidence.",
-      "status": "PLANNED",
-      "evidenceRefs": [],
+      "status": "IN PROGRESS",
+      "evidenceRefs": [
+        "docs/GOAL-0.5.md",
+        "docs/decisions/003-numerical-workbench.md",
+        "docs/workbench.md",
+        "tests/test_workbench.py",
+        "evidence/workbench/automated-final-source.json",
+        "evidence/workbench/packaged-preflight.json",
+        "evidence/workbench/browser-verification.json"
+      ],
       "basis": "expanded source requirement",
       "platformId": "tsk_1b7c89b31e84f2f606305a817e39d098",
       "dependencyRationale": {
         "RC-W14-T07": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated."
+      },
+      "implementationSlice": {
+        "version": "0.5",
+        "scopeAndRemainingAcceptance": "Sphere and anisotropic quadratic fixtures are independently authored and bounded. Qualified review and broader distinct-domain acceptance remain pending."
       }
     },
     {
@@ -5194,15 +5366,28 @@
         "RC-015"
       ],
       "decisionRefs": [
-        "OWNER-LAUNCH-2026-09-07"
+        "OWNER-LAUNCH-2026-09-07",
+        "WORKBENCH-005"
       ],
       "riskEvidenceNeeds": "The 0.1 fixture is partial lineage only; genuine cross-domain portability and numerical applicability require this wider evidence.",
-      "status": "PLANNED",
-      "evidenceRefs": [],
+      "status": "IN PROGRESS",
+      "evidenceRefs": [
+        "docs/GOAL-0.5.md",
+        "docs/decisions/003-numerical-workbench.md",
+        "docs/workbench.md",
+        "tests/test_workbench.py",
+        "evidence/workbench/automated-final-source.json",
+        "evidence/workbench/packaged-preflight.json",
+        "evidence/workbench/browser-verification.json"
+      ],
       "basis": "expanded source requirement",
       "platformId": "tsk_cb1a4edc3b67d449ab06ef5173ebdb83",
       "dependencyRationale": {
         "RC-W17-T01": "Provides the shared contract for this wave."
+      },
+      "implementationSlice": {
+        "version": "0.5",
+        "scopeAndRemainingAcceptance": "Exact original equations, known minima, controls and policy rules are documented with original-code licensing. Wider external solver adoption remains outside this slice."
       }
     },
     {
@@ -5246,15 +5431,28 @@
         "RC-015"
       ],
       "decisionRefs": [
-        "OWNER-LAUNCH-2026-09-07"
+        "OWNER-LAUNCH-2026-09-07",
+        "WORKBENCH-005"
       ],
       "riskEvidenceNeeds": "The 0.1 fixture is partial lineage only; genuine cross-domain portability and numerical applicability require this wider evidence.",
-      "status": "PLANNED",
-      "evidenceRefs": [],
+      "status": "IN PROGRESS",
+      "evidenceRefs": [
+        "docs/GOAL-0.5.md",
+        "docs/decisions/003-numerical-workbench.md",
+        "docs/workbench.md",
+        "tests/test_workbench.py",
+        "evidence/workbench/automated-final-source.json",
+        "evidence/workbench/packaged-preflight.json",
+        "evidence/workbench/browser-verification.json"
+      ],
       "basis": "expanded source requirement",
       "platformId": "tsk_d940fb9ac38ad709ebc1fd546671ebbd",
       "dependencyRationale": {
         "RC-W17-T01": "Provides the shared contract for this wave."
+      },
+      "implementationSlice": {
+        "version": "0.5",
+        "scopeAndRemainingAcceptance": "New fixtures share invalid/non-finite/out-of-domain and identity rejection. Broad conditioning, precision and constraint-family coverage remains later work."
       }
     },
     {
@@ -5272,15 +5470,28 @@
         "RC-015"
       ],
       "decisionRefs": [
-        "OWNER-LAUNCH-2026-09-07"
+        "OWNER-LAUNCH-2026-09-07",
+        "WORKBENCH-005"
       ],
       "riskEvidenceNeeds": "The 0.1 fixture is partial lineage only; genuine cross-domain portability and numerical applicability require this wider evidence.",
-      "status": "PLANNED",
-      "evidenceRefs": [],
+      "status": "IN PROGRESS",
+      "evidenceRefs": [
+        "docs/GOAL-0.5.md",
+        "docs/decisions/003-numerical-workbench.md",
+        "docs/workbench.md",
+        "tests/test_workbench.py",
+        "evidence/workbench/automated-final-source.json",
+        "evidence/workbench/packaged-preflight.json",
+        "evidence/workbench/browser-verification.json"
+      ],
       "basis": "expanded source requirement",
       "platformId": "tsk_8d9b237377214cceb320757cc25f22a3",
       "dependencyRationale": {
         "RC-W17-T01": "Provides the shared contract for this wave."
+      },
+      "implementationSlice": {
+        "version": "0.5",
+        "scopeAndRemainingAcceptance": "Three fixtures use the shared validated study/run/evaluate/reproduce engine. Training-to-numerical contract transfer is not demonstrated."
       }
     },
     {
@@ -5298,15 +5509,28 @@
         "RC-015"
       ],
       "decisionRefs": [
-        "OWNER-LAUNCH-2026-09-07"
+        "OWNER-LAUNCH-2026-09-07",
+        "WORKBENCH-005"
       ],
       "riskEvidenceNeeds": "The 0.1 fixture is partial lineage only; genuine cross-domain portability and numerical applicability require this wider evidence.",
-      "status": "PLANNED",
-      "evidenceRefs": [],
+      "status": "IN PROGRESS",
+      "evidenceRefs": [
+        "docs/GOAL-0.5.md",
+        "docs/decisions/003-numerical-workbench.md",
+        "docs/workbench.md",
+        "tests/test_workbench.py",
+        "evidence/workbench/automated-final-source.json",
+        "evidence/workbench/packaged-preflight.json",
+        "evidence/workbench/browser-verification.json"
+      ],
       "basis": "expanded source requirement",
       "platformId": "tsk_15870d121189f99a790f7228dbfe880a",
       "dependencyRationale": {
         "RC-W17-T01": "Provides the shared contract for this wave."
+      },
+      "implementationSlice": {
+        "version": "0.5",
+        "scopeAndRemainingAcceptance": "Random/grid/coordinate comparisons run at frozen budgets with full observation traces. Broader numerical-method acceptance prerequisites remain unfulfilled."
       }
     },
     {
@@ -6059,17 +6283,30 @@
         "RC-021"
       ],
       "decisionRefs": [
-        "OWNER-LAUNCH-2026-09-07"
+        "OWNER-LAUNCH-2026-09-07",
+        "WORKBENCH-005"
       ],
       "riskEvidenceNeeds": "An agent rerun is runtime evidence, not fabricated human or external validation; source of every observation must be recorded.",
-      "status": "PLANNED",
-      "evidenceRefs": [],
+      "status": "IN PROGRESS",
+      "evidenceRefs": [
+        "docs/GOAL-0.5.md",
+        "docs/decisions/003-numerical-workbench.md",
+        "docs/workbench.md",
+        "tests/test_workbench.py",
+        "evidence/workbench/automated-final-source.json",
+        "evidence/workbench/packaged-preflight.json",
+        "evidence/workbench/browser-verification.json"
+      ],
       "basis": "expanded source requirement",
       "platformId": "tsk_dc39a8c5654aa7cc2c2c801ef3f1d4f6",
       "dependencyRationale": {
         "RC-W12-T07": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W18-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W20-T07": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated."
+      },
+      "implementationSlice": {
+        "version": "0.5",
+        "scopeAndRemainingAcceptance": "Portable numerical campaign reproduction binds the full source evidence, finite budgets and fixed tolerance before admission. Broad claim-memory/policy prerequisites remain later work."
       }
     },
     {
@@ -6142,15 +6379,28 @@
         "RC-021"
       ],
       "decisionRefs": [
-        "OWNER-LAUNCH-2026-09-07"
+        "OWNER-LAUNCH-2026-09-07",
+        "WORKBENCH-005"
       ],
       "riskEvidenceNeeds": "An agent rerun is runtime evidence, not fabricated human or external validation; source of every observation must be recorded.",
-      "status": "PLANNED",
-      "evidenceRefs": [],
+      "status": "IN PROGRESS",
+      "evidenceRefs": [
+        "docs/GOAL-0.5.md",
+        "docs/decisions/003-numerical-workbench.md",
+        "docs/workbench.md",
+        "tests/test_workbench.py",
+        "evidence/workbench/automated-final-source.json",
+        "evidence/workbench/packaged-preflight.json",
+        "evidence/workbench/browser-verification.json"
+      ],
       "basis": "expanded source requirement",
       "platformId": "tsk_409fbede4c3a536e5615fd30bde1fb8e",
       "dependencyRationale": {
         "RC-W21-T01": "Provides the shared contract for this wave."
+      },
+      "implementationSlice": {
+        "version": "0.5",
+        "scopeAndRemainingAcceptance": "Formal reproduction retains runtime deviations and unsuccessful results. Full missing-environment remediation workflow remains later work."
       }
     },
     {
@@ -6169,15 +6419,28 @@
         "RC-021"
       ],
       "decisionRefs": [
-        "OWNER-LAUNCH-2026-09-07"
+        "OWNER-LAUNCH-2026-09-07",
+        "WORKBENCH-005"
       ],
       "riskEvidenceNeeds": "An agent rerun is runtime evidence, not fabricated human or external validation; source of every observation must be recorded.",
-      "status": "PLANNED",
-      "evidenceRefs": [],
+      "status": "IN PROGRESS",
+      "evidenceRefs": [
+        "docs/GOAL-0.5.md",
+        "docs/decisions/003-numerical-workbench.md",
+        "docs/workbench.md",
+        "tests/test_workbench.py",
+        "evidence/workbench/automated-final-source.json",
+        "evidence/workbench/packaged-preflight.json",
+        "evidence/workbench/browser-verification.json"
+      ],
       "basis": "expanded source requirement",
       "platformId": "tsk_4ed82039227da2fbde23a4b86365bcf0",
       "dependencyRationale": {
         "RC-W21-T01": "Provides the shared contract for this wave."
+      },
+      "implementationSlice": {
+        "version": "0.5",
+        "scopeAndRemainingAcceptance": "Fresh reproduction owns separate ledgers and charges retries. Broader autonomous allocation/authority requirements remain unfulfilled."
       }
     },
     {
@@ -6196,15 +6459,28 @@
         "RC-021"
       ],
       "decisionRefs": [
-        "OWNER-LAUNCH-2026-09-07"
+        "OWNER-LAUNCH-2026-09-07",
+        "WORKBENCH-005"
       ],
       "riskEvidenceNeeds": "An agent rerun is runtime evidence, not fabricated human or external validation; source of every observation must be recorded.",
-      "status": "PLANNED",
-      "evidenceRefs": [],
+      "status": "IN PROGRESS",
+      "evidenceRefs": [
+        "docs/GOAL-0.5.md",
+        "docs/decisions/003-numerical-workbench.md",
+        "docs/workbench.md",
+        "tests/test_workbench.py",
+        "evidence/workbench/automated-final-source.json",
+        "evidence/workbench/packaged-preflight.json",
+        "evidence/workbench/browser-verification.json"
+      ],
       "basis": "expanded source requirement",
       "platformId": "tsk_f039df4024f49bab937d4fff4096703d",
       "dependencyRationale": {
         "RC-W21-T01": "Provides the shared contract for this wave."
+      },
+      "implementationSlice": {
+        "version": "0.5",
+        "scopeAndRemainingAcceptance": "Source-bound campaign reproduction verifies inventory, raw replay and runtime identity; mismatches cannot become MATCH. Broader provenance graph prerequisites remain later work."
       }
     },
     {
@@ -6296,17 +6572,30 @@
         "RC-019"
       ],
       "decisionRefs": [
-        "OWNER-LAUNCH-2026-09-07"
+        "OWNER-LAUNCH-2026-09-07",
+        "WORKBENCH-005"
       ],
       "riskEvidenceNeeds": "A usable workbench needs actual interaction and accessibility observations; static screenshots are insufficient.",
-      "status": "PLANNED",
-      "evidenceRefs": [],
+      "status": "IN PROGRESS",
+      "evidenceRefs": [
+        "docs/GOAL-0.5.md",
+        "docs/decisions/003-numerical-workbench.md",
+        "docs/workbench.md",
+        "tests/test_workbench.py",
+        "evidence/workbench/automated-final-source.json",
+        "evidence/workbench/packaged-preflight.json",
+        "evidence/workbench/browser-verification.json"
+      ],
       "basis": "expanded source requirement",
       "platformId": "tsk_d1d4e767b9a493e6cc248258c9346078",
       "dependencyRationale": {
         "RC-W18-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W19-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W20-T07": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated."
+      },
+      "implementationSlice": {
+        "version": "0.5",
+        "scopeAndRemainingAcceptance": "Offline study/trial selections expose question-to-evidence detail and stable URL fragments. General research-memory and adaptive-policy lineage remain later work."
       }
     },
     {
@@ -6324,15 +6613,28 @@
         "RC-019"
       ],
       "decisionRefs": [
-        "OWNER-LAUNCH-2026-09-07"
+        "OWNER-LAUNCH-2026-09-07",
+        "WORKBENCH-005"
       ],
       "riskEvidenceNeeds": "A usable workbench needs actual interaction and accessibility observations; static screenshots are insufficient.",
-      "status": "PLANNED",
-      "evidenceRefs": [],
+      "status": "IN PROGRESS",
+      "evidenceRefs": [
+        "docs/GOAL-0.5.md",
+        "docs/decisions/003-numerical-workbench.md",
+        "docs/workbench.md",
+        "tests/test_workbench.py",
+        "evidence/workbench/automated-final-source.json",
+        "evidence/workbench/packaged-preflight.json",
+        "evidence/workbench/browser-verification.json"
+      ],
       "basis": "expanded source requirement",
       "platformId": "tsk_da170779e07fb3294dc3a2e3a83e7dc7",
       "dependencyRationale": {
         "RC-W22-T01": "Provides the shared contract for this wave."
+      },
+      "implementationSlice": {
+        "version": "0.5",
+        "scopeAndRemainingAcceptance": "Offline summaries retain whole-inventory costs and all attempt outcomes. Broader live workbench authority and resource types remain later work."
       }
     },
     {
@@ -6402,15 +6704,28 @@
         "RC-019"
       ],
       "decisionRefs": [
-        "OWNER-LAUNCH-2026-09-07"
+        "OWNER-LAUNCH-2026-09-07",
+        "WORKBENCH-005"
       ],
       "riskEvidenceNeeds": "A usable workbench needs actual interaction and accessibility observations; static screenshots are insufficient.",
-      "status": "PLANNED",
-      "evidenceRefs": [],
+      "status": "IN PROGRESS",
+      "evidenceRefs": [
+        "docs/GOAL-0.5.md",
+        "docs/decisions/003-numerical-workbench.md",
+        "docs/workbench.md",
+        "tests/test_workbench.py",
+        "evidence/workbench/automated-final-source.json",
+        "evidence/workbench/packaged-preflight.json",
+        "evidence/workbench/browser-verification.json"
+      ],
       "basis": "expanded source requirement",
       "platformId": "tsk_6b97871b3ca8e9a92581d87e79812be2",
       "dependencyRationale": {
         "RC-W22-T01": "Provides the shared contract for this wave."
+      },
+      "implementationSlice": {
+        "version": "0.5",
+        "scopeAndRemainingAcceptance": "Agent browser checks exercise labelled filters, focus and inspection; independent human and stop-flow observations remain pending."
       }
     },
     {
@@ -6428,15 +6743,28 @@
         "RC-019"
       ],
       "decisionRefs": [
-        "OWNER-LAUNCH-2026-09-07"
+        "OWNER-LAUNCH-2026-09-07",
+        "WORKBENCH-005"
       ],
       "riskEvidenceNeeds": "A usable workbench needs actual interaction and accessibility observations; static screenshots are insufficient.",
-      "status": "PLANNED",
-      "evidenceRefs": [],
+      "status": "IN PROGRESS",
+      "evidenceRefs": [
+        "docs/GOAL-0.5.md",
+        "docs/decisions/003-numerical-workbench.md",
+        "docs/workbench.md",
+        "tests/test_workbench.py",
+        "evidence/workbench/automated-final-source.json",
+        "evidence/workbench/packaged-preflight.json",
+        "evidence/workbench/browser-verification.json"
+      ],
       "basis": "expanded source requirement",
       "platformId": "tsk_df0a98b7c6e5b7e1cca8861d6ce1589e",
       "dependencyRationale": {
         "RC-W22-T01": "Provides the shared contract for this wave."
+      },
+      "implementationSlice": {
+        "version": "0.5",
+        "scopeAndRemainingAcceptance": "Offline evidence browser is being checked at narrow widths and zoom; this does not establish all later live workbench flows."
       }
     },
     {
@@ -6489,11 +6817,20 @@
         "RC-019"
       ],
       "decisionRefs": [
-        "OWNER-LAUNCH-2026-09-07"
+        "OWNER-LAUNCH-2026-09-07",
+        "WORKBENCH-005"
       ],
       "riskEvidenceNeeds": "A usable workbench needs actual interaction and accessibility observations; static screenshots are insufficient.",
-      "status": "PLANNED",
-      "evidenceRefs": [],
+      "status": "IN PROGRESS",
+      "evidenceRefs": [
+        "docs/GOAL-0.5.md",
+        "docs/decisions/003-numerical-workbench.md",
+        "docs/workbench.md",
+        "tests/test_workbench.py",
+        "evidence/workbench/automated-final-source.json",
+        "evidence/workbench/packaged-preflight.json",
+        "evidence/workbench/browser-verification.json"
+      ],
       "basis": "expanded source requirement",
       "platformId": "tsk_0c0b6edbe2da5de9d149a44e05a060f7",
       "dependencyRationale": {
@@ -6507,6 +6844,10 @@
         "RC-W22-T05": "Provides the shared contract for this wave.",
         "RC-W22-T06": "Provides the shared contract for this wave.",
         "RC-W22-T07": "Provides the shared contract for this wave."
+      },
+      "implementationSlice": {
+        "version": "0.5",
+        "scopeAndRemainingAcceptance": "The exported offline browser uses the same full checksummed campaign bundle as the CLI. In-browser campaign mutation/export authority remains outside this read-only slice."
       }
     },
     {
@@ -10891,6 +11232,12 @@
       "decision": "Per-task progress is recorded only in plan/tasks.json; generated views and export are projections, while STATUS.md is the narrative and evidence summary.",
       "evidence": "Renderer parity validation detects stale views. Historical statuses never change in lineage.",
       "status": "implementation decision"
+    },
+    {
+      "id": "PLAN-004",
+      "decision": "Build the separately owner-selected 0.5 local workbench as bounded implementation slices of later outcomes. Preserve every original acceptance and dependency; partial implementation is IN PROGRESS, never acceptance of unmet broad prerequisites.",
+      "evidence": "docs/GOAL-0.5.md; docs/decisions/003-numerical-workbench.md; tests/test_workbench.py",
+      "status": "owner-selected scope"
     }
   ]
 }

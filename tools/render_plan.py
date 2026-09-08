@@ -37,19 +37,23 @@ def generated_files(plan):
         'New outcomes do not retroactively complete the original contracts.\n\n'
     )
     roadmap = ['# Research Continuum roadmap\n\n', preface, '## Objective and limits\n\n', plan['objective'] + '\n\n']
+    if plan.get('activeDelivery'):
+        delivery = plan['activeDelivery']
+        roadmap += [f'Active delivery: **{delivery["version"]} — {delivery["status"]}**. {delivery["scope"]} '
+                    f'[Working goal]({delivery["goal"]}). {delivery["contractBoundary"]}\n\n']
     roadmap += ['- ' + value + '\n' for value in plan['limits']]
     roadmap += ['\nRelease horizons express scope, not dates or approved hardware/spend. Later outcomes require '
                 'their own accepted wave evidence, rights and resources. The historical training-first '
-                'programme remains retained; the owner separately authorizes the narrow numerical 0.1 path.\n\n',
+                'programme remains retained; the owner separately authorizes the numerical 0.1 path and the local workbench 0.5 delivery slice.\n\n',
                 '## Scope and current evidence\n\n', '| Horizon | Rows |\n| --- | ---: |\n']
     roadmap += [f'| {key} | {value} |\n' for key, value in counts.items()]
     roadmap += ['\nCurrent row states: ' + '; '.join(f'{key}: {value}' for key, value in states.items()) + '.\n\n',
                 '## Execution and replanning\n\n',
                 'For an immediate task, the owner binds actual files, available commands, falsifiers and '
                 'exit evidence in a bounded execution packet before implementation. Capacity, rights, '
-                'environment and qualified-review gates are checked at entry. Cut extra objectives, rich UI, '
-                'agent search and remote workers before real computation, reserved evidence, recovery or '
-                'complete reporting. Replan at an observed failure or accepted wave gate; retain all negative results.\n\n',
+                'environment and qualified-review gates are checked at entry. Implement the owner-selected release scope '
+                'with complete computation, reserved evidence, recovery and reporting. Do not silently substitute '
+                'a narrower success criterion. Replan at an observed failure or accepted wave gate; retain all negative results.\n\n',
                 '## Outcome waves\n\n']
     for wave in plan['waves']:
         roadmap += [f'### {wave["id"]}: {wave["title"]}\n\n',
@@ -98,6 +102,9 @@ def generated_files(plan):
                       f'- Risk and evidence needs: {task["riskEvidenceNeeds"]}\n',
                       f'- Recorded evidence: {joined(task["evidenceRefs"])}.\n',
                       f'- Native platform ID: {task["platformId"] or "not assigned"}.\n\n']
+        if task.get('implementationSlice'):
+            part = task['implementationSlice']
+            contracts += [f'Bounded {part["version"]} implementation progress: {part["scopeAndRemainingAcceptance"]}\n\n']
         for dependency, reason in task['dependencyRationale'].items():
             contracts += [f'Prerequisite {dependency}: {reason}\n\n']
     contracts += ['## Immutable source contracts and mapping\n\n']
@@ -121,6 +128,7 @@ def generated_files(plan):
         'notice': 'Review/import material only. Not a platform API request, publication approval or completion claim.',
         'project': plan['project'], 'projectId': publication['projectId'],
         'contractVersion': plan['contractVersion'], 'objective': plan['objective'], 'limits': plan['limits'],
+        'activeDelivery': plan.get('activeDelivery'),
         'taskCount': len(tasks), 'waveCount': len(plan['waves']), 'horizonCounts': dict(counts),
         'waves': plan['waves'], 'tasks': tasks, 'sourceMappings': plan['sourceMappings'],
         'publication': publication, 'planningDecisions': plan['planningDecisions'],

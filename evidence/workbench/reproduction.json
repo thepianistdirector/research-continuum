@@ -1,0 +1,1554 @@
+{
+  "fresh_digest": "4a3f40a3dd2bc8ed971c52545f3d38823408072720de487f6556728936f84527",
+  "fresh_execution_id": "1e03cbef90854de1b9c75f89ae54f6d0",
+  "numerical_sequences_match": true,
+  "publication_context": "record from this new or resumed source-bound campaign execution",
+  "records": {
+    "ellipsoid": {
+      "comparisons": [
+        {
+          "fresh_attempt_id": "3d15f3483372437eb1414bab2e7e9332",
+          "source_attempt_id": "43f4a1a5ce52446c80d58ca79d77de8c",
+          "status": "MATCH",
+          "trial_id": "development-uniform_random-11"
+        },
+        {
+          "fresh_attempt_id": "1cc6da35f3564f929caa4d459e561724",
+          "source_attempt_id": "e30193068e2a413f99ce3b01997a62b1",
+          "status": "MATCH",
+          "trial_id": "development-uniform_random-22"
+        },
+        {
+          "fresh_attempt_id": "9ceed3c059984692b446ab8039801fea",
+          "source_attempt_id": "87bb5b1d95e54d9b9fddfa8c97d36061",
+          "status": "MATCH",
+          "trial_id": "development-uniform_random-33"
+        },
+        {
+          "fresh_attempt_id": "3581a792680646058887d60bfa4cf598",
+          "source_attempt_id": "47c4a571364c405580ecf48d4fb9b53b",
+          "status": "MATCH",
+          "trial_id": "development-coordinate_refinement-11"
+        },
+        {
+          "fresh_attempt_id": "d2d92ec10415431ca4a392f1361d132f",
+          "source_attempt_id": "69815b875dda46c2822c7f75cd34611e",
+          "status": "MATCH",
+          "trial_id": "development-coordinate_refinement-22"
+        },
+        {
+          "fresh_attempt_id": "6b8a723c2e4c486e8d7a31fedc84c20d",
+          "source_attempt_id": "7cc7ec83558746a5abd8cdad00e8d079",
+          "status": "MATCH",
+          "trial_id": "development-coordinate_refinement-33"
+        },
+        {
+          "fresh_attempt_id": "068fa29042d541f8b0c350472648157f",
+          "source_attempt_id": "1f932ccc58e04103b8e429497aa5c30b",
+          "status": "MATCH",
+          "trial_id": "confirmation-uniform_random-101"
+        },
+        {
+          "fresh_attempt_id": "53878e15f4d64a11b957bda8d3fc7ef2",
+          "source_attempt_id": "502a796835654e41a1d5543350f49d14",
+          "status": "MATCH",
+          "trial_id": "confirmation-uniform_random-202"
+        },
+        {
+          "fresh_attempt_id": "ef4100c3ebaf4b3ba82d65bec2ea107c",
+          "source_attempt_id": "2d8b56891ca246bfae787d3f3d11df6f",
+          "status": "MATCH",
+          "trial_id": "confirmation-uniform_random-303"
+        },
+        {
+          "fresh_attempt_id": "7258417999944153b47b8612176960d2",
+          "source_attempt_id": "e66d3f96cba04d82b79a8634d8a87b86",
+          "status": "MATCH",
+          "trial_id": "confirmation-coordinate_refinement-101"
+        },
+        {
+          "fresh_attempt_id": "da8ee86bb8ae427fafc43a03f578488e",
+          "source_attempt_id": "3c98680d7c734ab08090ecc9fdd4a8bc",
+          "status": "MATCH",
+          "trial_id": "confirmation-coordinate_refinement-202"
+        },
+        {
+          "fresh_attempt_id": "755faea484954578941488bc4202ebe7",
+          "source_attempt_id": "35e25263d57b46df8d0341a259c5c3be",
+          "status": "MATCH",
+          "trial_id": "confirmation-coordinate_refinement-303"
+        },
+        {
+          "fresh_attempt_id": "0f146e7c002d4af5b976514ec9f907d3",
+          "source_attempt_id": "8fff57aa047c42529c27c6ccca6d9456",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-uniform_random-11"
+        },
+        {
+          "fresh_attempt_id": "4c2cd2f0192e434e94923ab8a616548c",
+          "source_attempt_id": "c4eee64d57d24e76ae3cba88f877a4a7",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-uniform_random-22"
+        },
+        {
+          "fresh_attempt_id": "f2a8cfc0a8d2491a9d416339d7b1552a",
+          "source_attempt_id": "4beacac6a36443baa66646e61ac0cf07",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-uniform_random-33"
+        },
+        {
+          "fresh_attempt_id": "f4df9c28539b4449a5d66763ad88b66f",
+          "source_attempt_id": "e4630e7a915a4a8aaff8bf2a6fcb3400",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-coordinate_refinement-11"
+        },
+        {
+          "fresh_attempt_id": "dbb49532244c494f86613cf9f3eb3fde",
+          "source_attempt_id": "8adc4b4ea01e48588eb65aaacdafe0e2",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-coordinate_refinement-22"
+        },
+        {
+          "fresh_attempt_id": "9967c691dd864498ac1723490f708b4a",
+          "source_attempt_id": "c9e75dd20b104db084645aaa43a9de01",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-coordinate_refinement-33"
+        },
+        {
+          "fresh_attempt_id": "31e593ccec454f51a0e3a85cdb51b289",
+          "source_attempt_id": "f0bb185c0d27436aa1e83abfb2573a24",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-uniform_random-101"
+        },
+        {
+          "fresh_attempt_id": "cbfb82cb096847b6995044b6808295ac",
+          "source_attempt_id": "81823ce8740e4bb58031528b3ece222d",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-uniform_random-202"
+        },
+        {
+          "fresh_attempt_id": "8e95246f044e42ccaae2189dee1113e4",
+          "source_attempt_id": "d34cde18de0e4fe18d30299092a4e32b",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-uniform_random-303"
+        },
+        {
+          "fresh_attempt_id": "c556007b70464b05aa239f94a7f1eea4",
+          "source_attempt_id": "d1342b046ae544bbade78a7625325360",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-coordinate_refinement-101"
+        },
+        {
+          "fresh_attempt_id": "99ee4836ab1a4f9299ae4b713e8e84bb",
+          "source_attempt_id": "2e71e1aa08bb4bb8838856a87faaa30b",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-coordinate_refinement-202"
+        },
+        {
+          "fresh_attempt_id": "4a92dabdaa4b4cc7b0d7f94bdb26a0c4",
+          "source_attempt_id": "4ffbde4ca9b04efca0d9ee55ea0fc309",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-coordinate_refinement-303"
+        }
+      ],
+      "deviations": [],
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "fresh_campaign_id": "d8011c55f48e401496a365d2646c39cd",
+      "fresh_environment": {
+        "implementation": "CPython",
+        "machine": "x86_64",
+        "package_version": "0.5.0",
+        "python": "3.12.14",
+        "runtime_digest": "2ee2c5d8fe75373f1aa0835641f46ec16ddd006f5b2e6d7e9d4a15ace8fafb2d",
+        "sqlite": "3.53.1",
+        "system": "Linux"
+      },
+      "fresh_evidence_digest": "84d4ff324340178a667c001241b805058123416aef8e22e16cdeb0f5956c2abd",
+      "independent_human_review": "PENDING",
+      "observation_context": "fresh local execution; independence not established",
+      "review_status": "UNREVIEWED",
+      "schema_version": 1,
+      "source_campaign_id": "da04f0e8a49e4e9680a1d15873670dff",
+      "source_evidence_digest": "317906ce305dbfe9e7a5335a16a5eaf0b6c82b047fd06a486c087bd31ecb24b2",
+      "status": "MATCH",
+      "study_digest": "140f9302aee2a390db7cef266b87deb8a6e83cdd6ef11650fb85de88e605af43",
+      "tolerance": 1e-12,
+      "type": "ReproductionRecord"
+    },
+    "ellipsoid-fixed-step": {
+      "comparisons": [
+        {
+          "fresh_attempt_id": "3e1794714eaf42e497860e7fe9d65ae8",
+          "source_attempt_id": "6128ea1ed5334df98da4fff4b2b1195a",
+          "status": "MATCH",
+          "trial_id": "development-uniform_random-11"
+        },
+        {
+          "fresh_attempt_id": "1916d3270a92495c8c86badc0ab21bac",
+          "source_attempt_id": "cd7d63498bae4e0fb3591b70bddd2f84",
+          "status": "MATCH",
+          "trial_id": "development-uniform_random-22"
+        },
+        {
+          "fresh_attempt_id": "319c62af3b7a419ba367f2233fc9baf3",
+          "source_attempt_id": "42acfa2128bf486f9cbce64bb8c67166",
+          "status": "MATCH",
+          "trial_id": "development-uniform_random-33"
+        },
+        {
+          "fresh_attempt_id": "a2cdf28efd9c4d7f9e4a2f72ad82a5fc",
+          "source_attempt_id": "e3447e1b43ce4713a5f17459aea67dff",
+          "status": "MATCH",
+          "trial_id": "development-coordinate_fixed_step-11"
+        },
+        {
+          "fresh_attempt_id": "35dd3a9af01246aab9363dfb808ed225",
+          "source_attempt_id": "3a7b8617a3b248b7b51c51a4051f632f",
+          "status": "MATCH",
+          "trial_id": "development-coordinate_fixed_step-22"
+        },
+        {
+          "fresh_attempt_id": "f7105cd448dc4308b0ae0c12f4394ad3",
+          "source_attempt_id": "0506f5f192954ad59daa49197b215a4f",
+          "status": "MATCH",
+          "trial_id": "development-coordinate_fixed_step-33"
+        },
+        {
+          "fresh_attempt_id": "668ae143195e44ce86f0fb129c2d6616",
+          "source_attempt_id": "a23dee19a89e4344b89862f812a98bb9",
+          "status": "MATCH",
+          "trial_id": "confirmation-uniform_random-101"
+        },
+        {
+          "fresh_attempt_id": "4bb76c8143d249d4a190bbe6bc3fafcb",
+          "source_attempt_id": "49785f970bd4474fbc612534b7f77bcf",
+          "status": "MATCH",
+          "trial_id": "confirmation-uniform_random-202"
+        },
+        {
+          "fresh_attempt_id": "621d465d40334ddd84540df65cabfb49",
+          "source_attempt_id": "35c58fc20eb041829301fac6700d3450",
+          "status": "MATCH",
+          "trial_id": "confirmation-uniform_random-303"
+        },
+        {
+          "fresh_attempt_id": "9d959698d07e4b75ba644588030a7de0",
+          "source_attempt_id": "9f5a76adff394563a29b71754721b3eb",
+          "status": "MATCH",
+          "trial_id": "confirmation-coordinate_fixed_step-101"
+        },
+        {
+          "fresh_attempt_id": "1a3d2dc7abc7420990557b7d1172088c",
+          "source_attempt_id": "0af51becfdb54e36891dba3b389142cb",
+          "status": "MATCH",
+          "trial_id": "confirmation-coordinate_fixed_step-202"
+        },
+        {
+          "fresh_attempt_id": "4ac014f7d17143f1a9b6c518b5b66f3f",
+          "source_attempt_id": "80e3cb92ff9b4db8954972dacd25b7a8",
+          "status": "MATCH",
+          "trial_id": "confirmation-coordinate_fixed_step-303"
+        },
+        {
+          "fresh_attempt_id": "ed90aaf029f64dff8431ad4014099753",
+          "source_attempt_id": "107e7066677c401aa0018a401f84a6e9",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-uniform_random-11"
+        },
+        {
+          "fresh_attempt_id": "b02b6725d2be4aa290da0c7ef4cdbd5a",
+          "source_attempt_id": "107ee4da9faa42b1bea5d615a17c4f3a",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-uniform_random-22"
+        },
+        {
+          "fresh_attempt_id": "44cf6d2de5ab4dd1af439e10f9146e7a",
+          "source_attempt_id": "2ba045374ea1489fa2abb13d924b5841",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-uniform_random-33"
+        },
+        {
+          "fresh_attempt_id": "ffea627adadd459b98d410714d9b5ffe",
+          "source_attempt_id": "7bdf0c53d568475f8d52f1878a11f89d",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-coordinate_fixed_step-11"
+        },
+        {
+          "fresh_attempt_id": "57011fd52fc540548f5b4cf301384637",
+          "source_attempt_id": "f908e8bb023346418f994d8579f1f7d8",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-coordinate_fixed_step-22"
+        },
+        {
+          "fresh_attempt_id": "4c1710d91c3445b980e554ea6b7733f7",
+          "source_attempt_id": "692bab76887f4ab6b987bd3a9c0b7f84",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-coordinate_fixed_step-33"
+        },
+        {
+          "fresh_attempt_id": "09158aae82844807948619d90f65c842",
+          "source_attempt_id": "ca70603997624639ad37fbae5dbc9c8d",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-uniform_random-101"
+        },
+        {
+          "fresh_attempt_id": "0345435d52d842da83a9b9c71f08a9fd",
+          "source_attempt_id": "c06d882b06ba4917a706d29753bab63a",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-uniform_random-202"
+        },
+        {
+          "fresh_attempt_id": "6edfd378ae9645c0a8b2e1c79f9644f2",
+          "source_attempt_id": "5dacf5da502446c7839b7c5edb903bc4",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-uniform_random-303"
+        },
+        {
+          "fresh_attempt_id": "824c2b19f18c4b74ba2a0f02b74a9aa3",
+          "source_attempt_id": "ecf5af7091ee42ad826aa2785a9cb499",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-coordinate_fixed_step-101"
+        },
+        {
+          "fresh_attempt_id": "ba9991d6a2034bb097347498685f0fd4",
+          "source_attempt_id": "f3f8c2232780421ea95f66951077d3ce",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-coordinate_fixed_step-202"
+        },
+        {
+          "fresh_attempt_id": "34bba6becc6d4b039e834059b9af1c49",
+          "source_attempt_id": "7a084a4a44a84bbd82f1e32a622a4222",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-coordinate_fixed_step-303"
+        }
+      ],
+      "deviations": [],
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "fresh_campaign_id": "ac0c70d36a7b45c5a8e78e2450882d7d",
+      "fresh_environment": {
+        "implementation": "CPython",
+        "machine": "x86_64",
+        "package_version": "0.5.0",
+        "python": "3.12.14",
+        "runtime_digest": "2ee2c5d8fe75373f1aa0835641f46ec16ddd006f5b2e6d7e9d4a15ace8fafb2d",
+        "sqlite": "3.53.1",
+        "system": "Linux"
+      },
+      "fresh_evidence_digest": "2f60541649941a35da14cdf6c79a1167cc3fa4a5815fcf63c0ff645bb689c365",
+      "independent_human_review": "PENDING",
+      "observation_context": "fresh local execution; independence not established",
+      "review_status": "UNREVIEWED",
+      "schema_version": 1,
+      "source_campaign_id": "75d89d92017e4714a88f3a1bc7fa34da",
+      "source_evidence_digest": "38c71a3c3f2f428d916f335d0eea9d1064aa4f0dc8437a5323df79940dc2ef1b",
+      "status": "MATCH",
+      "study_digest": "ffaa5df423982e897056ba751f475db3dd62d35ac856b70fbc54c5bb3ca42afe",
+      "tolerance": 1e-12,
+      "type": "ReproductionRecord"
+    },
+    "ellipsoid-grid": {
+      "comparisons": [
+        {
+          "fresh_attempt_id": "e4e88341ed5d4fdb81c409bb93ce18a9",
+          "source_attempt_id": "e49d41308b7c4a598ed51fa7aa943fd6",
+          "status": "MATCH",
+          "trial_id": "development-grid_search-11"
+        },
+        {
+          "fresh_attempt_id": "c9a9ece7544f4866bf7127267abc04df",
+          "source_attempt_id": "c28a88c2e5ba4967b3dd4cd80d1bab6f",
+          "status": "MATCH",
+          "trial_id": "development-grid_search-22"
+        },
+        {
+          "fresh_attempt_id": "10625b73daa64e8699cd81a8a009fd4e",
+          "source_attempt_id": "4a016cb84b9b40fba180c8322da71556",
+          "status": "MATCH",
+          "trial_id": "development-grid_search-33"
+        },
+        {
+          "fresh_attempt_id": "d36783686b6e41b785a626359b869539",
+          "source_attempt_id": "82ca59668e7c42008b729d806d1869f6",
+          "status": "MATCH",
+          "trial_id": "development-coordinate_refinement-11"
+        },
+        {
+          "fresh_attempt_id": "1a6df89bb020426ab38a3315469d933a",
+          "source_attempt_id": "0cc35054b51945269cfa5dff9a8b4763",
+          "status": "MATCH",
+          "trial_id": "development-coordinate_refinement-22"
+        },
+        {
+          "fresh_attempt_id": "0e6ea83ccf454bfd9127809d0b241716",
+          "source_attempt_id": "595f0a42dd4044028c7b9f6dbaac3c26",
+          "status": "MATCH",
+          "trial_id": "development-coordinate_refinement-33"
+        },
+        {
+          "fresh_attempt_id": "892249e46f524ce58479b767afdc2bef",
+          "source_attempt_id": "676a26799f9f40b892302c869cb4b6ea",
+          "status": "MATCH",
+          "trial_id": "confirmation-grid_search-101"
+        },
+        {
+          "fresh_attempt_id": "f17af0e9c1084c4f95cbaa6c0c6e9244",
+          "source_attempt_id": "4cb4e3131941474abed54ee22754d1e2",
+          "status": "MATCH",
+          "trial_id": "confirmation-grid_search-202"
+        },
+        {
+          "fresh_attempt_id": "01acb6d40791452bae73cfe267f5f019",
+          "source_attempt_id": "473b9f4114064083a430fe20eb633e96",
+          "status": "MATCH",
+          "trial_id": "confirmation-grid_search-303"
+        },
+        {
+          "fresh_attempt_id": "e4344d3fdc7d4a8993a2ec2ddd00e362",
+          "source_attempt_id": "0d5bfd06f088453faeece168e6f02f0c",
+          "status": "MATCH",
+          "trial_id": "confirmation-coordinate_refinement-101"
+        },
+        {
+          "fresh_attempt_id": "9073123b136b44e7aaa50151826f3043",
+          "source_attempt_id": "353cb50c75b04b2191fc32db2c8a0fbf",
+          "status": "MATCH",
+          "trial_id": "confirmation-coordinate_refinement-202"
+        },
+        {
+          "fresh_attempt_id": "0eb9cfa3d9ab46c580431262cbb9c5ea",
+          "source_attempt_id": "5d218d36772d4dc78ee25667feeb2a0b",
+          "status": "MATCH",
+          "trial_id": "confirmation-coordinate_refinement-303"
+        },
+        {
+          "fresh_attempt_id": "288479ab4478479e8ea0cee142f3cf3c",
+          "source_attempt_id": "b0c51507184f410da8c8289ec67407bb",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-grid_search-11"
+        },
+        {
+          "fresh_attempt_id": "8895cbd9d321413cb88006aa0cdcf9cc",
+          "source_attempt_id": "2fb1c53f5a854eff82a80e7e05cfc386",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-grid_search-22"
+        },
+        {
+          "fresh_attempt_id": "f06ab6150de9458ca86cf926a4b26914",
+          "source_attempt_id": "16e64c669a814757a13e27f2a753b1ce",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-grid_search-33"
+        },
+        {
+          "fresh_attempt_id": "a8329fc2b0cd46b196af7e711f9d1dce",
+          "source_attempt_id": "2d2adaa70c6e405b8d38db4fd0332642",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-coordinate_refinement-11"
+        },
+        {
+          "fresh_attempt_id": "920cbc6871624ba08ef816ef44fc4506",
+          "source_attempt_id": "5f2928a7c1b64c7fbece8dd71f063726",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-coordinate_refinement-22"
+        },
+        {
+          "fresh_attempt_id": "dcc85a5581324cd0859552533f4907df",
+          "source_attempt_id": "365b61b584ae4a89a94b6a68f3073245",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-coordinate_refinement-33"
+        },
+        {
+          "fresh_attempt_id": "0dc0cd2338604314b1af64a0796a75de",
+          "source_attempt_id": "c14991be29eb478f853e4cac1c074e39",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-grid_search-101"
+        },
+        {
+          "fresh_attempt_id": "8ebfb510c9014a1780d897b89a5c115e",
+          "source_attempt_id": "a347c6b249584407a454a2233b9dc3b9",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-grid_search-202"
+        },
+        {
+          "fresh_attempt_id": "16acbd53b9b44c07ac5c191c5116bfe3",
+          "source_attempt_id": "1413e097356d4ab5805ab84696764099",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-grid_search-303"
+        },
+        {
+          "fresh_attempt_id": "ca3cb0af89f6470bad80eb8a46041929",
+          "source_attempt_id": "6e9c80152c5d43909af3174a2cf09a2f",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-coordinate_refinement-101"
+        },
+        {
+          "fresh_attempt_id": "cf0fa8933fa84e99a43cc3262402ca2e",
+          "source_attempt_id": "9d3ddd475076496a91335f029d620daf",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-coordinate_refinement-202"
+        },
+        {
+          "fresh_attempt_id": "9a9af6240643469d8a8ef306971ec2f6",
+          "source_attempt_id": "1083924151cb4b0f9eeec46072b0fd27",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-coordinate_refinement-303"
+        }
+      ],
+      "deviations": [],
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "fresh_campaign_id": "7dea08ef321142ca9bb2fdf14665912b",
+      "fresh_environment": {
+        "implementation": "CPython",
+        "machine": "x86_64",
+        "package_version": "0.5.0",
+        "python": "3.12.14",
+        "runtime_digest": "2ee2c5d8fe75373f1aa0835641f46ec16ddd006f5b2e6d7e9d4a15ace8fafb2d",
+        "sqlite": "3.53.1",
+        "system": "Linux"
+      },
+      "fresh_evidence_digest": "af1e60c0e85c2b4b3afabed0a5da5ee00b6bbda861e8c5db4d3b22ac9c841b56",
+      "independent_human_review": "PENDING",
+      "observation_context": "fresh local execution; independence not established",
+      "review_status": "UNREVIEWED",
+      "schema_version": 1,
+      "source_campaign_id": "c6e66d17b5774dd59f528f9be6f19f32",
+      "source_evidence_digest": "5c41d19559d85ca79a1b0b479a6a41658b6df319a3a9bcbeaf8df2aa6dd96c55",
+      "status": "MATCH",
+      "study_digest": "d6a3724a2a9e99652b7fde8d9d5cb552afa5f641e752d8a5aa31c43647b5a66f",
+      "tolerance": 1e-12,
+      "type": "ReproductionRecord"
+    },
+    "rosenbrock": {
+      "comparisons": [
+        {
+          "fresh_attempt_id": "e20e5d64ef9d4bf099e66eff659ab0e1",
+          "source_attempt_id": "bbfe1de208e541f499cb8ed2f3e19648",
+          "status": "MATCH",
+          "trial_id": "development-uniform_random-11"
+        },
+        {
+          "fresh_attempt_id": "4a8ec7d5eb67408293f763081401c017",
+          "source_attempt_id": "8e3ece8e28e744f59db889c52276895e",
+          "status": "MATCH",
+          "trial_id": "development-uniform_random-22"
+        },
+        {
+          "fresh_attempt_id": "f658eaddf05d41f08fd35cd3a8f404a8",
+          "source_attempt_id": "8fc572d40891421a889fd1d4beb49775",
+          "status": "MATCH",
+          "trial_id": "development-uniform_random-33"
+        },
+        {
+          "fresh_attempt_id": "e52cd3bc97f14adc94724e76ad0e0010",
+          "source_attempt_id": "9b48ddab8ad94d2285caa7a9dd9916a4",
+          "status": "MATCH",
+          "trial_id": "development-coordinate_refinement-11"
+        },
+        {
+          "fresh_attempt_id": "6d322cf7fc554951a1c3153a0a2c4198",
+          "source_attempt_id": "d989c53709e942f289b4f01996cf45ee",
+          "status": "MATCH",
+          "trial_id": "development-coordinate_refinement-22"
+        },
+        {
+          "fresh_attempt_id": "b70c2e26f336492f86553f06bb668654",
+          "source_attempt_id": "a3459eaea5c34f06947d5f3da75fd001",
+          "status": "MATCH",
+          "trial_id": "development-coordinate_refinement-33"
+        },
+        {
+          "fresh_attempt_id": "febfd02694774d08ab4e68587d95938d",
+          "source_attempt_id": "e7d36d68fea74ff790a7bc8454b3b74e",
+          "status": "MATCH",
+          "trial_id": "confirmation-uniform_random-101"
+        },
+        {
+          "fresh_attempt_id": "9b31fe12230240c58dda1b8ae420f251",
+          "source_attempt_id": "af55e709280844cfad097f2a23c3dd4d",
+          "status": "MATCH",
+          "trial_id": "confirmation-uniform_random-202"
+        },
+        {
+          "fresh_attempt_id": "05b846ff8de44276a87c877dc766b2b2",
+          "source_attempt_id": "80621b9ce83c4977941910d998c09005",
+          "status": "MATCH",
+          "trial_id": "confirmation-uniform_random-303"
+        },
+        {
+          "fresh_attempt_id": "0898676a0c8241ba9eab942875ca1b7c",
+          "source_attempt_id": "54a672b71c1d4744aea849ee5431512f",
+          "status": "MATCH",
+          "trial_id": "confirmation-coordinate_refinement-101"
+        },
+        {
+          "fresh_attempt_id": "6b02b92dd9d74cb5b9ccf76a6d168b62",
+          "source_attempt_id": "618a196df3ce4457a87e1aa11dfe4194",
+          "status": "MATCH",
+          "trial_id": "confirmation-coordinate_refinement-202"
+        },
+        {
+          "fresh_attempt_id": "d8f943d8a42c45658801015d32cdd2c1",
+          "source_attempt_id": "22acd6a98c844332a95177811b003848",
+          "status": "MATCH",
+          "trial_id": "confirmation-coordinate_refinement-303"
+        },
+        {
+          "fresh_attempt_id": "72061fc49381402ea8e7a296edda673c",
+          "source_attempt_id": "b55eac7771a94bbcbaafc007ded6509c",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-uniform_random-11"
+        },
+        {
+          "fresh_attempt_id": "e48af8600bea4bd696bbbcdda8484907",
+          "source_attempt_id": "5440fa2a95744d49902ec185f2ee1690",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-uniform_random-22"
+        },
+        {
+          "fresh_attempt_id": "8e0096bb1ea8438589c468be69944158",
+          "source_attempt_id": "52794254a2954210b43b6cf20cf5f4e7",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-uniform_random-33"
+        },
+        {
+          "fresh_attempt_id": "51d63765a68a4f41afd77c2b817e07c9",
+          "source_attempt_id": "7ee6810d5c8542f7913c6b1bfac451e7",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-coordinate_refinement-11"
+        },
+        {
+          "fresh_attempt_id": "5b59083ec6de45a9bdb89b0841612aa0",
+          "source_attempt_id": "ff9c3242f5bc43b989a3379402d14d9d",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-coordinate_refinement-22"
+        },
+        {
+          "fresh_attempt_id": "57995d9948d5450cbb3b3cb5f60d0081",
+          "source_attempt_id": "147daf27c07149dc8eaf8f8557c51acd",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-coordinate_refinement-33"
+        },
+        {
+          "fresh_attempt_id": "f0f02f70015045988f72367ff59f8e93",
+          "source_attempt_id": "3013c616380d404d8808647e79a78210",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-uniform_random-101"
+        },
+        {
+          "fresh_attempt_id": "546eea989f4e4f27986998c5dff8d40c",
+          "source_attempt_id": "0b392cb8f90a44ae953a872a54a53b74",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-uniform_random-202"
+        },
+        {
+          "fresh_attempt_id": "d3eba824cf374437b7ec78123afd7c21",
+          "source_attempt_id": "6c2c707c55184b3f8ed2b6deaf9bd60b",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-uniform_random-303"
+        },
+        {
+          "fresh_attempt_id": "dbfbb3bb303045d4b053b8f0fc48973c",
+          "source_attempt_id": "19d8533d4b824a96803335e1957a039c",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-coordinate_refinement-101"
+        },
+        {
+          "fresh_attempt_id": "466bb612c41147698c7dc09436c2a192",
+          "source_attempt_id": "a4d56b94a60d488ab3871778e36d8ad7",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-coordinate_refinement-202"
+        },
+        {
+          "fresh_attempt_id": "804108e3905d462c8b9b15a85aac393f",
+          "source_attempt_id": "d189e8bc5b364b7bbf6d85d674f97e68",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-coordinate_refinement-303"
+        }
+      ],
+      "deviations": [],
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "fresh_campaign_id": "2c805819eeae49dea8e752e81c4e0a10",
+      "fresh_environment": {
+        "implementation": "CPython",
+        "machine": "x86_64",
+        "package_version": "0.5.0",
+        "python": "3.12.14",
+        "runtime_digest": "2ee2c5d8fe75373f1aa0835641f46ec16ddd006f5b2e6d7e9d4a15ace8fafb2d",
+        "sqlite": "3.53.1",
+        "system": "Linux"
+      },
+      "fresh_evidence_digest": "d17644f76d56aa365b439ead09486f8cef9414210c3110cbeaf4a92b7f0f6873",
+      "independent_human_review": "PENDING",
+      "observation_context": "fresh local execution; independence not established",
+      "review_status": "UNREVIEWED",
+      "schema_version": 1,
+      "source_campaign_id": "42ffa142bfe340c2b5848d68952ff605",
+      "source_evidence_digest": "8a91ec62a248d4b80b2e26a28babc047594f2cee3d5d65d034ba1f59f5d28aa7",
+      "status": "MATCH",
+      "study_digest": "44befc2cfdbbf9a0ac33c32ee72d45ab0cd21528e55866dff668d40ddd6342e0",
+      "tolerance": 1e-12,
+      "type": "ReproductionRecord"
+    },
+    "rosenbrock-fixed-step": {
+      "comparisons": [
+        {
+          "fresh_attempt_id": "a970f46b58c645b4a0b9f56fd0eb20cf",
+          "source_attempt_id": "d51097415cad4703a7adf4b3d1900e40",
+          "status": "MATCH",
+          "trial_id": "development-uniform_random-11"
+        },
+        {
+          "fresh_attempt_id": "8e41fcfb831146f6ab86031b3bbac603",
+          "source_attempt_id": "b6ea924a6691409d9c2bb1b538ba8275",
+          "status": "MATCH",
+          "trial_id": "development-uniform_random-22"
+        },
+        {
+          "fresh_attempt_id": "da23cfc09a2742d992dc983f12031b7a",
+          "source_attempt_id": "d45eb0e2b2624cef8126e4c1e55230e0",
+          "status": "MATCH",
+          "trial_id": "development-uniform_random-33"
+        },
+        {
+          "fresh_attempt_id": "fe44e278a1a149969c59c3eca8e3bd8b",
+          "source_attempt_id": "bd4e8e92f9104a1ea8bafd545fb3cb98",
+          "status": "MATCH",
+          "trial_id": "development-coordinate_fixed_step-11"
+        },
+        {
+          "fresh_attempt_id": "423a859dfc2e4fb7b3ff362120848635",
+          "source_attempt_id": "a85873c3185c4d7ba24b23cf6f77b655",
+          "status": "MATCH",
+          "trial_id": "development-coordinate_fixed_step-22"
+        },
+        {
+          "fresh_attempt_id": "bddbadb5294a414c888a527b304c73b5",
+          "source_attempt_id": "8de28cf804454646b9beb565c8af3c40",
+          "status": "MATCH",
+          "trial_id": "development-coordinate_fixed_step-33"
+        },
+        {
+          "fresh_attempt_id": "9756a1dd75c64b4ba839dffeb9aa5f66",
+          "source_attempt_id": "30cd087c825d4c47b2bc54f3bcf7740b",
+          "status": "MATCH",
+          "trial_id": "confirmation-uniform_random-101"
+        },
+        {
+          "fresh_attempt_id": "3f5c589c7ef245ec8d532820fe586dae",
+          "source_attempt_id": "3109bf77ade24b5987f371164fd70d3a",
+          "status": "MATCH",
+          "trial_id": "confirmation-uniform_random-202"
+        },
+        {
+          "fresh_attempt_id": "1e0e32f93cd542639ed0ae2bc0ccd7c3",
+          "source_attempt_id": "6c8e0712c9bb4c7ebeb345998a7e5881",
+          "status": "MATCH",
+          "trial_id": "confirmation-uniform_random-303"
+        },
+        {
+          "fresh_attempt_id": "7c9e798554ae4e87b4a392bbd194584c",
+          "source_attempt_id": "2e3bcadfeefe4f57a00c0b088dae607e",
+          "status": "MATCH",
+          "trial_id": "confirmation-coordinate_fixed_step-101"
+        },
+        {
+          "fresh_attempt_id": "1d5bc3a2de6c4638a0615de7f030a868",
+          "source_attempt_id": "ddd17a642386453cbbdb6560e9e05e52",
+          "status": "MATCH",
+          "trial_id": "confirmation-coordinate_fixed_step-202"
+        },
+        {
+          "fresh_attempt_id": "9a4a55a492b84bfaa70befdfd4013c17",
+          "source_attempt_id": "0fc052250f3945c2b6c9a3aa0f3b76f6",
+          "status": "MATCH",
+          "trial_id": "confirmation-coordinate_fixed_step-303"
+        },
+        {
+          "fresh_attempt_id": "9a4496f77fae46618fc2ed310311b273",
+          "source_attempt_id": "f2622ba946c5492588e54889b71bc71e",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-uniform_random-11"
+        },
+        {
+          "fresh_attempt_id": "8fd19121d1154ec08fac922c3efc822e",
+          "source_attempt_id": "c0222fd783db4e18b6e94d0e04e29ca4",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-uniform_random-22"
+        },
+        {
+          "fresh_attempt_id": "dfb1a32782f14764aa3769a2d4cad183",
+          "source_attempt_id": "53859858e4374826a637971b9f6032af",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-uniform_random-33"
+        },
+        {
+          "fresh_attempt_id": "7942fbddf0a441eaba9a5542ee8488c5",
+          "source_attempt_id": "f4433c9289314253abcd3af544ef1419",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-coordinate_fixed_step-11"
+        },
+        {
+          "fresh_attempt_id": "49dfee53f304419eaf03702fac325515",
+          "source_attempt_id": "40895fb2630c49edb338d2b8ce208492",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-coordinate_fixed_step-22"
+        },
+        {
+          "fresh_attempt_id": "a6a74494c56c4abda94bf30ec7e7502b",
+          "source_attempt_id": "56c37c23fd3c407ca12d87255ecb602b",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-coordinate_fixed_step-33"
+        },
+        {
+          "fresh_attempt_id": "917aee3e4fba40ccacc8ecdd6c06d26c",
+          "source_attempt_id": "884933fca37548609da8e5b17da610e8",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-uniform_random-101"
+        },
+        {
+          "fresh_attempt_id": "08f48164ad4040bcb75f457b0062abbd",
+          "source_attempt_id": "fd6cec9918d941af9b5f7f06fcab1e14",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-uniform_random-202"
+        },
+        {
+          "fresh_attempt_id": "9fa6b51c56cb423dba9683a2412f2977",
+          "source_attempt_id": "150d5eec102846578d5257c1a7499e49",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-uniform_random-303"
+        },
+        {
+          "fresh_attempt_id": "ef0bd46827834dc4acf088e3a5c14788",
+          "source_attempt_id": "d2de3155c4f14b93b301a1b8f942aff1",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-coordinate_fixed_step-101"
+        },
+        {
+          "fresh_attempt_id": "d2dadeffac054cd686fc7c75304103d6",
+          "source_attempt_id": "4643eb976a1d4dde8a8b7c172367c64f",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-coordinate_fixed_step-202"
+        },
+        {
+          "fresh_attempt_id": "3c4090bc82e0463db3fc39dd3415b673",
+          "source_attempt_id": "8b7dc2202afa42e984a70f7b1c00c8fb",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-coordinate_fixed_step-303"
+        }
+      ],
+      "deviations": [],
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "fresh_campaign_id": "3aadf43d273843a1bdfaecedb24b4bd8",
+      "fresh_environment": {
+        "implementation": "CPython",
+        "machine": "x86_64",
+        "package_version": "0.5.0",
+        "python": "3.12.14",
+        "runtime_digest": "2ee2c5d8fe75373f1aa0835641f46ec16ddd006f5b2e6d7e9d4a15ace8fafb2d",
+        "sqlite": "3.53.1",
+        "system": "Linux"
+      },
+      "fresh_evidence_digest": "3999e9182754433e706439993f337996243fe1d10adb991f5c0a035d6f1b96f3",
+      "independent_human_review": "PENDING",
+      "observation_context": "fresh local execution; independence not established",
+      "review_status": "UNREVIEWED",
+      "schema_version": 1,
+      "source_campaign_id": "a66b3eed8e4144c18eca22c4d76cf697",
+      "source_evidence_digest": "c1cae551c5cecbfb3e94335f90fbe68d31ef12532d72cefe4a222ecdd6e4e9cb",
+      "status": "MATCH",
+      "study_digest": "9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+      "tolerance": 1e-12,
+      "type": "ReproductionRecord"
+    },
+    "rosenbrock-grid": {
+      "comparisons": [
+        {
+          "fresh_attempt_id": "e314a05be1504c6798a50bbeeea685d8",
+          "source_attempt_id": "3430a70aa5d841a09e7accdc5f393cd0",
+          "status": "MATCH",
+          "trial_id": "development-grid_search-11"
+        },
+        {
+          "fresh_attempt_id": "e363aaf3ccf9494aa45bcd31bbef9d55",
+          "source_attempt_id": "45b01a7e32fb4a39b949d992c3e439b8",
+          "status": "MATCH",
+          "trial_id": "development-grid_search-22"
+        },
+        {
+          "fresh_attempt_id": "c6817fa92bc247778b1b904161115aca",
+          "source_attempt_id": "7cea02bbff5446d5be487a14755e28ce",
+          "status": "MATCH",
+          "trial_id": "development-grid_search-33"
+        },
+        {
+          "fresh_attempt_id": "e52d1fb828de4270bcbbc060f49d804d",
+          "source_attempt_id": "68d39736b1e6499ba5cad2ce816ec52c",
+          "status": "MATCH",
+          "trial_id": "development-coordinate_refinement-11"
+        },
+        {
+          "fresh_attempt_id": "83ccf8b200234de9a2bc8965bcc7a973",
+          "source_attempt_id": "13222173c02f403ba53f313bbb999713",
+          "status": "MATCH",
+          "trial_id": "development-coordinate_refinement-22"
+        },
+        {
+          "fresh_attempt_id": "a6552096cc2246d88fd39a9400b07114",
+          "source_attempt_id": "769ec36f446b42df9abec9987d960e35",
+          "status": "MATCH",
+          "trial_id": "development-coordinate_refinement-33"
+        },
+        {
+          "fresh_attempt_id": "16e1e41acede4b7a86549d1983d7b93e",
+          "source_attempt_id": "22b13ebcebc6418b82cbef9a480c0ffc",
+          "status": "MATCH",
+          "trial_id": "confirmation-grid_search-101"
+        },
+        {
+          "fresh_attempt_id": "eb7f9c02a1d04146a713431dac2a45b6",
+          "source_attempt_id": "9d439173e090441289f8650c2e135ff1",
+          "status": "MATCH",
+          "trial_id": "confirmation-grid_search-202"
+        },
+        {
+          "fresh_attempt_id": "45bf833eabbc4ca4be512460d5fd6f57",
+          "source_attempt_id": "01ca86b3e17841dfb31df50db259be65",
+          "status": "MATCH",
+          "trial_id": "confirmation-grid_search-303"
+        },
+        {
+          "fresh_attempt_id": "86882d3882804fb096d470a8b885dcb0",
+          "source_attempt_id": "511f9f6d558c4502bd466059edebcd04",
+          "status": "MATCH",
+          "trial_id": "confirmation-coordinate_refinement-101"
+        },
+        {
+          "fresh_attempt_id": "ba8c2eda27fc4e06a14a5ace2e5623b0",
+          "source_attempt_id": "c935580a350a414396be1c831f62e69f",
+          "status": "MATCH",
+          "trial_id": "confirmation-coordinate_refinement-202"
+        },
+        {
+          "fresh_attempt_id": "843a26253a204f2fb2acc3fc7ce3e6a9",
+          "source_attempt_id": "f4cf2ed481a34897a696d9c2c72b1946",
+          "status": "MATCH",
+          "trial_id": "confirmation-coordinate_refinement-303"
+        },
+        {
+          "fresh_attempt_id": "a6d77517fa3444329b527b044ebb3638",
+          "source_attempt_id": "295d5fb3bfc04b2087e0de6aed874d4f",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-grid_search-11"
+        },
+        {
+          "fresh_attempt_id": "f9e0f687c83a4425b395479839e59e21",
+          "source_attempt_id": "444afd81575040ea8c66de98b70b53e3",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-grid_search-22"
+        },
+        {
+          "fresh_attempt_id": "c8b7a3ba2a2142f7992c8522f26dbb64",
+          "source_attempt_id": "be64d45faf184831b51e6a4f76b0f76e",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-grid_search-33"
+        },
+        {
+          "fresh_attempt_id": "9fca12d4e2ca484bae13f4a92163282d",
+          "source_attempt_id": "34347d50925f471cbf24a92d0f544e6c",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-coordinate_refinement-11"
+        },
+        {
+          "fresh_attempt_id": "95bd3673aa074d5ca0ff8edcc690e3c1",
+          "source_attempt_id": "72b329a1770e42dd984c940179746a29",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-coordinate_refinement-22"
+        },
+        {
+          "fresh_attempt_id": "27426c2aa898478abdfb5ebbf57fe685",
+          "source_attempt_id": "feb8cba4ab9049cca978b24f2bbde094",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-coordinate_refinement-33"
+        },
+        {
+          "fresh_attempt_id": "5a6ec53aef474f39a1d9321675093020",
+          "source_attempt_id": "966d6dfdc7af47e2b8db95fd7fd4cf41",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-grid_search-101"
+        },
+        {
+          "fresh_attempt_id": "43301659fda94d34b22526f1c09b86e5",
+          "source_attempt_id": "ba77fef20bd7477c9eff07a17f6cf5b6",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-grid_search-202"
+        },
+        {
+          "fresh_attempt_id": "87d22e03682b471f8e0f81d4ca26d8cb",
+          "source_attempt_id": "92dd0f43a5194bc7a30a88c97c2cc7ba",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-grid_search-303"
+        },
+        {
+          "fresh_attempt_id": "520ff21987464d2e918237eed8d5e24a",
+          "source_attempt_id": "6fb3106991e44fbea44d523411c49c76",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-coordinate_refinement-101"
+        },
+        {
+          "fresh_attempt_id": "e2ede66b2b8844e6aa5519cf222e1835",
+          "source_attempt_id": "ab0fa212c5274dd29c58285497663a2b",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-coordinate_refinement-202"
+        },
+        {
+          "fresh_attempt_id": "7b128698db294c35ae90bc767e47577d",
+          "source_attempt_id": "cd63c2695b7e41929cfc8de2c825ccac",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-coordinate_refinement-303"
+        }
+      ],
+      "deviations": [],
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "fresh_campaign_id": "acc347a817b04515932caf21c663695c",
+      "fresh_environment": {
+        "implementation": "CPython",
+        "machine": "x86_64",
+        "package_version": "0.5.0",
+        "python": "3.12.14",
+        "runtime_digest": "2ee2c5d8fe75373f1aa0835641f46ec16ddd006f5b2e6d7e9d4a15ace8fafb2d",
+        "sqlite": "3.53.1",
+        "system": "Linux"
+      },
+      "fresh_evidence_digest": "55db7eeca4158a5ae91c59747aeee07c69bc02e0cafbef203f267ca88f2a90e3",
+      "independent_human_review": "PENDING",
+      "observation_context": "fresh local execution; independence not established",
+      "review_status": "UNREVIEWED",
+      "schema_version": 1,
+      "source_campaign_id": "d3f12237019b4e18aa073f6ea7ce5aba",
+      "source_evidence_digest": "23b52277f4041cd17dc1a2996fc10db6c03911f27e641c333717bf9dddeab9c7",
+      "status": "MATCH",
+      "study_digest": "e36c74c4ebbe19551999d21ceb97d1bada61c2e905cad9b0be73dac1ae874bb6",
+      "tolerance": 1e-12,
+      "type": "ReproductionRecord"
+    },
+    "sphere": {
+      "comparisons": [
+        {
+          "fresh_attempt_id": "95d02a0b28b94409873499b83d1a29dd",
+          "source_attempt_id": "af74a3eb700c491b9f8185a540220d04",
+          "status": "MATCH",
+          "trial_id": "development-uniform_random-11"
+        },
+        {
+          "fresh_attempt_id": "0267b4b159a340a98ba4d5ba1ed646e7",
+          "source_attempt_id": "df1a2645936f4f5a93a5baf31ecc22fb",
+          "status": "MATCH",
+          "trial_id": "development-uniform_random-22"
+        },
+        {
+          "fresh_attempt_id": "07f8f5fd7a674b6da4bf7ead2e65ce0e",
+          "source_attempt_id": "78da0175633c4ce8a4efd547b3ff8a25",
+          "status": "MATCH",
+          "trial_id": "development-uniform_random-33"
+        },
+        {
+          "fresh_attempt_id": "547f559e5d764a798c9886154df68908",
+          "source_attempt_id": "b825bff57aa0485ebe72ef5b72bd3561",
+          "status": "MATCH",
+          "trial_id": "development-coordinate_refinement-11"
+        },
+        {
+          "fresh_attempt_id": "36efa671c7db470d995064d7d955e9d1",
+          "source_attempt_id": "8b814ac93a02447d92b8be8bb2a8e4bb",
+          "status": "MATCH",
+          "trial_id": "development-coordinate_refinement-22"
+        },
+        {
+          "fresh_attempt_id": "22f726936b864395888e93897e3bf22b",
+          "source_attempt_id": "1f9203c8378d45f590e36b4768411aa5",
+          "status": "MATCH",
+          "trial_id": "development-coordinate_refinement-33"
+        },
+        {
+          "fresh_attempt_id": "908a65cc1ab941cc8e96b983c8fdcc97",
+          "source_attempt_id": "9654c3a2fb4d423d9f1ae8cf89675c8a",
+          "status": "MATCH",
+          "trial_id": "confirmation-uniform_random-101"
+        },
+        {
+          "fresh_attempt_id": "06ce9fc4168f46f388858cf77ad16d4d",
+          "source_attempt_id": "333b58eb5fae49e2b08b9957a795b991",
+          "status": "MATCH",
+          "trial_id": "confirmation-uniform_random-202"
+        },
+        {
+          "fresh_attempt_id": "b2a0d40526114ec583d9413ffe8a9a27",
+          "source_attempt_id": "4fb370d3ca8345148676a70c3cb59bd6",
+          "status": "MATCH",
+          "trial_id": "confirmation-uniform_random-303"
+        },
+        {
+          "fresh_attempt_id": "1625255acb7343bbb934e7b301fc6609",
+          "source_attempt_id": "3eb5c89d67f748be87ccff60b0ae4b50",
+          "status": "MATCH",
+          "trial_id": "confirmation-coordinate_refinement-101"
+        },
+        {
+          "fresh_attempt_id": "4ef1bda49e2f40e58b5851ddfc779e35",
+          "source_attempt_id": "a208c433b63a44efa3df8ce5b3423a0b",
+          "status": "MATCH",
+          "trial_id": "confirmation-coordinate_refinement-202"
+        },
+        {
+          "fresh_attempt_id": "aa2a4f1504ae42cc9593d752931a0dc8",
+          "source_attempt_id": "8fa8dcb61bd34a848f156e0f52570ce1",
+          "status": "MATCH",
+          "trial_id": "confirmation-coordinate_refinement-303"
+        },
+        {
+          "fresh_attempt_id": "76a66c83b03f43c48749169804ec91d4",
+          "source_attempt_id": "bb27375d441a42bbab5dbb87869a137f",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-uniform_random-11"
+        },
+        {
+          "fresh_attempt_id": "e25c2e582f6249b4909edd8687cc7ed8",
+          "source_attempt_id": "9a29c997724b44c4a5e0dba477e64da0",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-uniform_random-22"
+        },
+        {
+          "fresh_attempt_id": "faa7c3499c6741a19ca6e869e04d9383",
+          "source_attempt_id": "2e6c23327cfb4aabb2252384aaf1f774",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-uniform_random-33"
+        },
+        {
+          "fresh_attempt_id": "7f0e7ee08e1240978d197b960bba1f99",
+          "source_attempt_id": "1e2c584d85844af9be788c50fdfcb9ad",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-coordinate_refinement-11"
+        },
+        {
+          "fresh_attempt_id": "769018728c5e4266ac7a4a74c3419155",
+          "source_attempt_id": "ad5518c90a1d413d98fcf02846a6b3e4",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-coordinate_refinement-22"
+        },
+        {
+          "fresh_attempt_id": "a5f8d488645c434684dc5354e5efc1ea",
+          "source_attempt_id": "fe96874f23a74ce6946054a4fe5fd3b1",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-coordinate_refinement-33"
+        },
+        {
+          "fresh_attempt_id": "f13de2c1db4f4cacb0824ac5cebaed5d",
+          "source_attempt_id": "3e1549fcbbe1423290c6daaa1ecb4cab",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-uniform_random-101"
+        },
+        {
+          "fresh_attempt_id": "2b08121f178c412287408e693e5c5d8b",
+          "source_attempt_id": "eea4f682e6c349e5bbf83ababa273b63",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-uniform_random-202"
+        },
+        {
+          "fresh_attempt_id": "3384ed2b00904c0690c7807f106b65a8",
+          "source_attempt_id": "bc0ae953d277443ebcb2c5a053dc765f",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-uniform_random-303"
+        },
+        {
+          "fresh_attempt_id": "3835fe62b99d4b869a7722542bd9f25e",
+          "source_attempt_id": "327de5a28d7c4411bff56bfa3b9b6ef8",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-coordinate_refinement-101"
+        },
+        {
+          "fresh_attempt_id": "9580e419da5748e7add8d7489e5d97a6",
+          "source_attempt_id": "ef7f51de5cad409f93df4873f6f234f6",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-coordinate_refinement-202"
+        },
+        {
+          "fresh_attempt_id": "d2fc7758bfef4e76972a2ef3788170d5",
+          "source_attempt_id": "050a0a5b15f2461fae779d4bf54b8ba9",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-coordinate_refinement-303"
+        }
+      ],
+      "deviations": [],
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "fresh_campaign_id": "48e399973b8b4d12aba78dab8bb45c10",
+      "fresh_environment": {
+        "implementation": "CPython",
+        "machine": "x86_64",
+        "package_version": "0.5.0",
+        "python": "3.12.14",
+        "runtime_digest": "2ee2c5d8fe75373f1aa0835641f46ec16ddd006f5b2e6d7e9d4a15ace8fafb2d",
+        "sqlite": "3.53.1",
+        "system": "Linux"
+      },
+      "fresh_evidence_digest": "ea971b31ff939e94a77bf3788dd8dd0afb4baae080f30c42a63a362e65584009",
+      "independent_human_review": "PENDING",
+      "observation_context": "fresh local execution; independence not established",
+      "review_status": "UNREVIEWED",
+      "schema_version": 1,
+      "source_campaign_id": "b4dae8ef0d0a4130914a0d8099af8ea8",
+      "source_evidence_digest": "6601b853cef3acb1343de5c43f1a2c8c494dd532a880e1577522ceac167c84d8",
+      "status": "MATCH",
+      "study_digest": "94c287b9d6c9b7346342b5b6db0cccaa9a0e007c7a91003071bd6a70012ffc87",
+      "tolerance": 1e-12,
+      "type": "ReproductionRecord"
+    },
+    "sphere-fixed-step": {
+      "comparisons": [
+        {
+          "fresh_attempt_id": "ebdc07df4a79421e988c6d4e911284b9",
+          "source_attempt_id": "3312d2c4c3c24c8b9f135541af0c90ff",
+          "status": "MATCH",
+          "trial_id": "development-uniform_random-11"
+        },
+        {
+          "fresh_attempt_id": "ba106955bd5341b7a2bb7bfdebb40ab8",
+          "source_attempt_id": "b90acc0818b24ebab35385231ed36224",
+          "status": "MATCH",
+          "trial_id": "development-uniform_random-22"
+        },
+        {
+          "fresh_attempt_id": "47a46570b0424c0d80c2ba4e26eca712",
+          "source_attempt_id": "c3ccad88e93c4a878b3cac3b36a12a90",
+          "status": "MATCH",
+          "trial_id": "development-uniform_random-33"
+        },
+        {
+          "fresh_attempt_id": "0c8ad9a63f0f46e8b204951270b6e33c",
+          "source_attempt_id": "a48e66a3ee714b3e8afe84a3acd160d2",
+          "status": "MATCH",
+          "trial_id": "development-coordinate_fixed_step-11"
+        },
+        {
+          "fresh_attempt_id": "4652c85c81134969928f248b8129d136",
+          "source_attempt_id": "9839a9aca77a4fcb85912e7f2b9c45d7",
+          "status": "MATCH",
+          "trial_id": "development-coordinate_fixed_step-22"
+        },
+        {
+          "fresh_attempt_id": "c868a20516af41b784242cfb4bbce862",
+          "source_attempt_id": "d09e6e359f8f403aad9a4e5f5106e557",
+          "status": "MATCH",
+          "trial_id": "development-coordinate_fixed_step-33"
+        },
+        {
+          "fresh_attempt_id": "a108b1df2a69450694286c05416c63f8",
+          "source_attempt_id": "17b8d4aad8574e41a6727eaaa5b951b6",
+          "status": "MATCH",
+          "trial_id": "confirmation-uniform_random-101"
+        },
+        {
+          "fresh_attempt_id": "4657a117532b402494827c7c912fd9ec",
+          "source_attempt_id": "ece1624de631481ba23539ed0ea6b714",
+          "status": "MATCH",
+          "trial_id": "confirmation-uniform_random-202"
+        },
+        {
+          "fresh_attempt_id": "eabd38c8fd91467fac04670af4c86011",
+          "source_attempt_id": "b172469ea8814e1a8ac1eec70a2ae65b",
+          "status": "MATCH",
+          "trial_id": "confirmation-uniform_random-303"
+        },
+        {
+          "fresh_attempt_id": "59aad709c638436cb92d50c28f7f1d24",
+          "source_attempt_id": "20c5b48184ea4d11a8346bc3b00298bc",
+          "status": "MATCH",
+          "trial_id": "confirmation-coordinate_fixed_step-101"
+        },
+        {
+          "fresh_attempt_id": "de2dfcc3d2be4a2e8e7bbbb8330a383a",
+          "source_attempt_id": "dc7920951b4d44db85fec83bcc3ae2d3",
+          "status": "MATCH",
+          "trial_id": "confirmation-coordinate_fixed_step-202"
+        },
+        {
+          "fresh_attempt_id": "1b994ee3ef22467686943d2358aae714",
+          "source_attempt_id": "9ba61f8b11ba4abcb09fceabe9d8bc52",
+          "status": "MATCH",
+          "trial_id": "confirmation-coordinate_fixed_step-303"
+        },
+        {
+          "fresh_attempt_id": "a0714f99bcb94ceabebf8f7039e56d82",
+          "source_attempt_id": "f935bb201ba84bad82fb3cf4527bba86",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-uniform_random-11"
+        },
+        {
+          "fresh_attempt_id": "9bb989b093784001a14b39e1143ce017",
+          "source_attempt_id": "72f163c133234f49b659ed1241893b80",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-uniform_random-22"
+        },
+        {
+          "fresh_attempt_id": "64988eaf6e2e48078f1a2d886eedac30",
+          "source_attempt_id": "fa7bf420f35b4ddb86990c5185c9846d",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-uniform_random-33"
+        },
+        {
+          "fresh_attempt_id": "a973b784142b47acae095648e1cdb1f7",
+          "source_attempt_id": "132acc2e33cf406ea7ca91a9137a0d51",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-coordinate_fixed_step-11"
+        },
+        {
+          "fresh_attempt_id": "2639c711c2f141e4b8136409ddd3ed29",
+          "source_attempt_id": "68fab8641b564ce5ae71631609dd37b2",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-coordinate_fixed_step-22"
+        },
+        {
+          "fresh_attempt_id": "661d806953da4fffa7019d32f08fc0a1",
+          "source_attempt_id": "7390d40089194f8d9f766eacdc3bc414",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-coordinate_fixed_step-33"
+        },
+        {
+          "fresh_attempt_id": "40b8e2cbc8394e73bb29e6d13f0ffb83",
+          "source_attempt_id": "b9580faf87684197adb39e58b71746e8",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-uniform_random-101"
+        },
+        {
+          "fresh_attempt_id": "88fdbdb0d09a4f34a8799b74e1bd6cca",
+          "source_attempt_id": "73c0c90ce9d541259388a064a477bf18",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-uniform_random-202"
+        },
+        {
+          "fresh_attempt_id": "0c3725f020224d4cb60eb0283319b539",
+          "source_attempt_id": "2da62af9af394599801132bda5e63303",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-uniform_random-303"
+        },
+        {
+          "fresh_attempt_id": "0b86a0ec547c408dbb87736f6aee6f18",
+          "source_attempt_id": "57e423a6b92b4627a324ccb30abba213",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-coordinate_fixed_step-101"
+        },
+        {
+          "fresh_attempt_id": "d9ce23c9250c47b89c62412eda48d8d4",
+          "source_attempt_id": "66d683e1c0ef4c099396757c2aad2670",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-coordinate_fixed_step-202"
+        },
+        {
+          "fresh_attempt_id": "a08b7c3b4f1b46fc845081808ff3dc5c",
+          "source_attempt_id": "bebc3ff47bf740e3ad3a6e9f4ffb8599",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-coordinate_fixed_step-303"
+        }
+      ],
+      "deviations": [],
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "fresh_campaign_id": "876faf3f53d24064a67b6e01e6cb07ab",
+      "fresh_environment": {
+        "implementation": "CPython",
+        "machine": "x86_64",
+        "package_version": "0.5.0",
+        "python": "3.12.14",
+        "runtime_digest": "2ee2c5d8fe75373f1aa0835641f46ec16ddd006f5b2e6d7e9d4a15ace8fafb2d",
+        "sqlite": "3.53.1",
+        "system": "Linux"
+      },
+      "fresh_evidence_digest": "5a4724550aab21ac7f53d6f46711f41c3f4458e77af45846a99a743d7b877c0c",
+      "independent_human_review": "PENDING",
+      "observation_context": "fresh local execution; independence not established",
+      "review_status": "UNREVIEWED",
+      "schema_version": 1,
+      "source_campaign_id": "a5ba87da7aad4ea084875c642c0be5ad",
+      "source_evidence_digest": "a598549dc8538c4bc5a5cf0d3725df461dada943320646bbe8277f939c8fe82a",
+      "status": "MATCH",
+      "study_digest": "94dcd16d366b07d3fb615533b0bb50c217cc11f449d081c54cd5f58a079ebe26",
+      "tolerance": 1e-12,
+      "type": "ReproductionRecord"
+    },
+    "sphere-grid": {
+      "comparisons": [
+        {
+          "fresh_attempt_id": "0a591a57442047ed9ec63fc731032fa8",
+          "source_attempt_id": "51e1ff1ec1674fd0b0a76bebffd452c4",
+          "status": "MATCH",
+          "trial_id": "development-grid_search-11"
+        },
+        {
+          "fresh_attempt_id": "ada7f9fc0a7c40e8ad46f782d46ab029",
+          "source_attempt_id": "cc85b9c21f284b75b530a937e026b5b5",
+          "status": "MATCH",
+          "trial_id": "development-grid_search-22"
+        },
+        {
+          "fresh_attempt_id": "4754e437e74d4a5b94a517bd06f4e7c1",
+          "source_attempt_id": "8ff6c128820947bf9b364aeecdc72ed3",
+          "status": "MATCH",
+          "trial_id": "development-grid_search-33"
+        },
+        {
+          "fresh_attempt_id": "da46e1d296a94ebd8a513c3bd1c8bc38",
+          "source_attempt_id": "e662bdc9b5844171b9dbad570c5a20d6",
+          "status": "MATCH",
+          "trial_id": "development-coordinate_refinement-11"
+        },
+        {
+          "fresh_attempt_id": "f0e8505475e847fc968d119ec502fc45",
+          "source_attempt_id": "948d2cbfdbac495dae927102962e5e91",
+          "status": "MATCH",
+          "trial_id": "development-coordinate_refinement-22"
+        },
+        {
+          "fresh_attempt_id": "311a44147ab546f68363a60c23442d15",
+          "source_attempt_id": "3eeaeebfa534465289f56570beca5f02",
+          "status": "MATCH",
+          "trial_id": "development-coordinate_refinement-33"
+        },
+        {
+          "fresh_attempt_id": "af6bebba59c848ed8eba4a3cc9bbeb8a",
+          "source_attempt_id": "a6649c3ec171438e8fdd8c0134fbf107",
+          "status": "MATCH",
+          "trial_id": "confirmation-grid_search-101"
+        },
+        {
+          "fresh_attempt_id": "68cb347daa3949ad8d9102ff49b44945",
+          "source_attempt_id": "e809d176e35f455980f201f31e05636f",
+          "status": "MATCH",
+          "trial_id": "confirmation-grid_search-202"
+        },
+        {
+          "fresh_attempt_id": "912a4af0c9d54120a30c187dccc5cfca",
+          "source_attempt_id": "1a402468abd44df1b01691702cc1497d",
+          "status": "MATCH",
+          "trial_id": "confirmation-grid_search-303"
+        },
+        {
+          "fresh_attempt_id": "c66e4cd2d3f44324800f2f2d0d968794",
+          "source_attempt_id": "7373dc58aa7d4e26be7fad45e20877d1",
+          "status": "MATCH",
+          "trial_id": "confirmation-coordinate_refinement-101"
+        },
+        {
+          "fresh_attempt_id": "416d9b736f78455884b18f90136b3f12",
+          "source_attempt_id": "24226a66d3514279954a4ab3180a735f",
+          "status": "MATCH",
+          "trial_id": "confirmation-coordinate_refinement-202"
+        },
+        {
+          "fresh_attempt_id": "62c0e5d836f246ab95ddb6a648bd16fb",
+          "source_attempt_id": "861e1a9c0795419da45d86266ca15948",
+          "status": "MATCH",
+          "trial_id": "confirmation-coordinate_refinement-303"
+        },
+        {
+          "fresh_attempt_id": "dceb6cfce6cb426bb372778c19e17449",
+          "source_attempt_id": "51634e9ce1164bb58f996938eab65798",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-grid_search-11"
+        },
+        {
+          "fresh_attempt_id": "6a070f20542e4ab4b8173992b7289d29",
+          "source_attempt_id": "441bd837d5bf4d3e99c189ce5deb8832",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-grid_search-22"
+        },
+        {
+          "fresh_attempt_id": "5a835b2d381f42638e12397cb34e5db3",
+          "source_attempt_id": "48afbc993d62410f97df4083f36303d2",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-grid_search-33"
+        },
+        {
+          "fresh_attempt_id": "2c5bf1b358cf49c4b24797cf48379281",
+          "source_attempt_id": "5fab89b6f3714a3b93e7b0ce3836f125",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-coordinate_refinement-11"
+        },
+        {
+          "fresh_attempt_id": "898cae49afb7489b9869d8f15fcef078",
+          "source_attempt_id": "3762317cb2294429ae5939302fc07c89",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-coordinate_refinement-22"
+        },
+        {
+          "fresh_attempt_id": "d2de3915586f48979f52ae8d3869dcac",
+          "source_attempt_id": "c97b85d08a0a4fd99f10323a874e3ccb",
+          "status": "MATCH",
+          "trial_id": "reproduction-development-coordinate_refinement-33"
+        },
+        {
+          "fresh_attempt_id": "a43f484b490e484c80db7458a77b9df6",
+          "source_attempt_id": "54eb74d05f2444d9b2deb8c8eee6d419",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-grid_search-101"
+        },
+        {
+          "fresh_attempt_id": "39db527a0c084982a6accd0cf8f04b2c",
+          "source_attempt_id": "63690df507b14caa91fb274f54b897ef",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-grid_search-202"
+        },
+        {
+          "fresh_attempt_id": "51fb48713a2e4fe39deb142f8b8a1f40",
+          "source_attempt_id": "26bacaea4d1541789a3bde84a70ad877",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-grid_search-303"
+        },
+        {
+          "fresh_attempt_id": "f8e267ddce9d4bf5a7b41004f1662f1d",
+          "source_attempt_id": "aa354f831d2b4654a153673e6d592b41",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-coordinate_refinement-101"
+        },
+        {
+          "fresh_attempt_id": "cf5948b5deb24b7da4602c1fcd203c81",
+          "source_attempt_id": "62334ba13ddf4b499ccca624687bed6e",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-coordinate_refinement-202"
+        },
+        {
+          "fresh_attempt_id": "e8baf5560ef54d9c8f54ae7fce350a1c",
+          "source_attempt_id": "955cc59a8086437d864d57ddf1bdb88b",
+          "status": "MATCH",
+          "trial_id": "reproduction-confirmation-coordinate_refinement-303"
+        }
+      ],
+      "deviations": [],
+      "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+      "fresh_campaign_id": "1c5bae56e8384d8e809fb2ea308ffed2",
+      "fresh_environment": {
+        "implementation": "CPython",
+        "machine": "x86_64",
+        "package_version": "0.5.0",
+        "python": "3.12.14",
+        "runtime_digest": "2ee2c5d8fe75373f1aa0835641f46ec16ddd006f5b2e6d7e9d4a15ace8fafb2d",
+        "sqlite": "3.53.1",
+        "system": "Linux"
+      },
+      "fresh_evidence_digest": "84f6a5f7a1cbb97b2e44042f40fc95b7d64e6ae2371763e6d64e019ec52d9188",
+      "independent_human_review": "PENDING",
+      "observation_context": "fresh local execution; independence not established",
+      "review_status": "UNREVIEWED",
+      "schema_version": 1,
+      "source_campaign_id": "e0528de08e404dcdb8e01b8109c10ac2",
+      "source_evidence_digest": "65c588450b3886f37776925f176c9ce75e6da6fe065524516aa14a9623774241",
+      "status": "MATCH",
+      "study_digest": "24ddb4c2cc2c7e8fa2220a0ae7f099349a40fbe9543356a3030e82c715744a0b",
+      "tolerance": 1e-12,
+      "type": "ReproductionRecord"
+    }
+  },
+  "review_status": "UNREVIEWED",
+  "schema_version": 1,
+  "scope": "Fresh source-bound execution; runtime deviations remain explicit and may make the overall result inconclusive.",
+  "source_digest": "b528e745db07235e34f45528ca0cf3f3db4c59a30575b59e7404f2b3ebcff7ff",
+  "source_execution_id": "9bc92c50780849d792731b587d797b07",
+  "status": "MATCH",
+  "type": "CampaignReproduction"
+}

@@ -1,0 +1,679 @@
+{
+  "campaign_complete": true,
+  "campaign_id": "a66b3eed8e4144c18eca22c4d76cf697",
+  "charged_evaluations": 3072,
+  "claim_status": "UNREVIEWED",
+  "control_objective_calls": 2,
+  "failed_attempts": 0,
+  "groups": [
+    {
+      "charged_evaluations": 384,
+      "completed_trials": 3,
+      "failed_attempts": 0,
+      "median_best": 0.1802121529734757,
+      "phase": "development",
+      "policy": "uniform_random",
+      "quality_met_trials": 0,
+      "recorded_evaluations": 384,
+      "scheduled_trials": 3
+    },
+    {
+      "charged_evaluations": 384,
+      "completed_trials": 3,
+      "failed_attempts": 0,
+      "median_best": 5.200000000000001,
+      "phase": "development",
+      "policy": "coordinate_fixed_step",
+      "quality_met_trials": 0,
+      "recorded_evaluations": 384,
+      "scheduled_trials": 3
+    },
+    {
+      "charged_evaluations": 384,
+      "completed_trials": 3,
+      "failed_attempts": 0,
+      "median_best": 0.25900796897177875,
+      "phase": "confirmation",
+      "policy": "uniform_random",
+      "quality_met_trials": 0,
+      "recorded_evaluations": 384,
+      "scheduled_trials": 3
+    },
+    {
+      "charged_evaluations": 384,
+      "completed_trials": 3,
+      "failed_attempts": 0,
+      "median_best": 5.200000000000001,
+      "phase": "confirmation",
+      "policy": "coordinate_fixed_step",
+      "quality_met_trials": 0,
+      "recorded_evaluations": 384,
+      "scheduled_trials": 3
+    },
+    {
+      "charged_evaluations": 768,
+      "completed_trials": 6,
+      "failed_attempts": 0,
+      "median_best": 0.21961006097262722,
+      "phase": "reproduction",
+      "policy": "uniform_random",
+      "quality_met_trials": 0,
+      "recorded_evaluations": 768,
+      "scheduled_trials": 6
+    },
+    {
+      "charged_evaluations": 768,
+      "completed_trials": 6,
+      "failed_attempts": 0,
+      "median_best": 5.200000000000001,
+      "phase": "reproduction",
+      "policy": "coordinate_fixed_step",
+      "quality_met_trials": 0,
+      "recorded_evaluations": 768,
+      "scheduled_trials": 6
+    }
+  ],
+  "hypothesis_relation": "contradicted",
+  "inconclusive_reasons": [],
+  "independent_human_review": "PENDING",
+  "limitations": [
+    "This is one public, known-answer numerical fixture, not a secret holdout.",
+    "Grid and coordinate policy repeats are deterministic checks, not independent stochastic samples.",
+    "The frozen verdict is descriptive. Seed resampling intervals are conditional summaries, not population confidence or significance guarantees.",
+    "Equal charged evaluation units do not imply equal CPU or elapsed time.",
+    "Recorded observations can undercount calls lost at process death; full admitted allowance remains charged.",
+    "Operator-invoked audits recompute objectives outside admitted search; campaign counts exclude that verification overhead.",
+    "Reserved reproduction runs use the same coordinator and built-ins; independent external execution is a separate gate.",
+    "Trusted built-ins share a process. Logical interfaces are not adversarial code isolation.",
+    "Checksums detect integrity changes; they are not signatures or scientific validation.",
+    "Independent human and qualified domain review are pending."
+  ],
+  "recorded_evaluations": 3072,
+  "reproductions": [
+    {
+      "attempt_id": "f2622ba946c5492588e54889b71bc71e",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-development-uniform_random-11",
+      "schema_version": 1,
+      "source_attempt_id": "d51097415cad4703a7adf4b3d1900e40",
+      "source_trial_id": "development-uniform_random-11",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-development-uniform_random-11",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "c0222fd783db4e18b6e94d0e04e29ca4",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-development-uniform_random-22",
+      "schema_version": 1,
+      "source_attempt_id": "b6ea924a6691409d9c2bb1b538ba8275",
+      "source_trial_id": "development-uniform_random-22",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-development-uniform_random-22",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "53859858e4374826a637971b9f6032af",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-development-uniform_random-33",
+      "schema_version": 1,
+      "source_attempt_id": "d45eb0e2b2624cef8126e4c1e55230e0",
+      "source_trial_id": "development-uniform_random-33",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-development-uniform_random-33",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "f4433c9289314253abcd3af544ef1419",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-development-coordinate_fixed_step-11",
+      "schema_version": 1,
+      "source_attempt_id": "bd4e8e92f9104a1ea8bafd545fb3cb98",
+      "source_trial_id": "development-coordinate_fixed_step-11",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-development-coordinate_fixed_step-11",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "40895fb2630c49edb338d2b8ce208492",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-development-coordinate_fixed_step-22",
+      "schema_version": 1,
+      "source_attempt_id": "a85873c3185c4d7ba24b23cf6f77b655",
+      "source_trial_id": "development-coordinate_fixed_step-22",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-development-coordinate_fixed_step-22",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "56c37c23fd3c407ca12d87255ecb602b",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-development-coordinate_fixed_step-33",
+      "schema_version": 1,
+      "source_attempt_id": "8de28cf804454646b9beb565c8af3c40",
+      "source_trial_id": "development-coordinate_fixed_step-33",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-development-coordinate_fixed_step-33",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "884933fca37548609da8e5b17da610e8",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-confirmation-uniform_random-101",
+      "schema_version": 1,
+      "source_attempt_id": "30cd087c825d4c47b2bc54f3bcf7740b",
+      "source_trial_id": "confirmation-uniform_random-101",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-confirmation-uniform_random-101",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "fd6cec9918d941af9b5f7f06fcab1e14",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-confirmation-uniform_random-202",
+      "schema_version": 1,
+      "source_attempt_id": "3109bf77ade24b5987f371164fd70d3a",
+      "source_trial_id": "confirmation-uniform_random-202",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-confirmation-uniform_random-202",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "150d5eec102846578d5257c1a7499e49",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-confirmation-uniform_random-303",
+      "schema_version": 1,
+      "source_attempt_id": "6c8e0712c9bb4c7ebeb345998a7e5881",
+      "source_trial_id": "confirmation-uniform_random-303",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-confirmation-uniform_random-303",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "d2de3155c4f14b93b301a1b8f942aff1",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-confirmation-coordinate_fixed_step-101",
+      "schema_version": 1,
+      "source_attempt_id": "2e3bcadfeefe4f57a00c0b088dae607e",
+      "source_trial_id": "confirmation-coordinate_fixed_step-101",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-confirmation-coordinate_fixed_step-101",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "4643eb976a1d4dde8a8b7c172367c64f",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-confirmation-coordinate_fixed_step-202",
+      "schema_version": 1,
+      "source_attempt_id": "ddd17a642386453cbbdb6560e9e05e52",
+      "source_trial_id": "confirmation-coordinate_fixed_step-202",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-confirmation-coordinate_fixed_step-202",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "8b7dc2202afa42e984a70f7b1c00c8fb",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-confirmation-coordinate_fixed_step-303",
+      "schema_version": 1,
+      "source_attempt_id": "0fc052250f3945c2b6c9a3aa0f3b76f6",
+      "source_trial_id": "confirmation-coordinate_fixed_step-303",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-confirmation-coordinate_fixed_step-303",
+      "type": "ReproductionRecord"
+    }
+  ],
+  "reserved_evaluations": 6144,
+  "schema_version": 1,
+  "study_digest": "9e954899d21b56ccac28ac09536353ee7931f46d246515c5c59d9cc2ded8a2f1",
+  "trials": [
+    {
+      "attempt_ids": [
+        "d51097415cad4703a7adf4b3d1900e40"
+      ],
+      "best": 0.1731013159801553,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "d51097415cad4703a7adf4b3d1900e40",
+      "failed_attempts": 0,
+      "phase": "development",
+      "policy": "uniform_random",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 11,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "development-uniform_random-11"
+    },
+    {
+      "attempt_ids": [
+        "b6ea924a6691409d9c2bb1b538ba8275"
+      ],
+      "best": 0.1802121529734757,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "b6ea924a6691409d9c2bb1b538ba8275",
+      "failed_attempts": 0,
+      "phase": "development",
+      "policy": "uniform_random",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 22,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "development-uniform_random-22"
+    },
+    {
+      "attempt_ids": [
+        "d45eb0e2b2624cef8126e4c1e55230e0"
+      ],
+      "best": 0.7441787749988042,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "d45eb0e2b2624cef8126e4c1e55230e0",
+      "failed_attempts": 0,
+      "phase": "development",
+      "policy": "uniform_random",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 33,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "development-uniform_random-33"
+    },
+    {
+      "attempt_ids": [
+        "bd4e8e92f9104a1ea8bafd545fb3cb98"
+      ],
+      "best": 5.200000000000001,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "bd4e8e92f9104a1ea8bafd545fb3cb98",
+      "failed_attempts": 0,
+      "phase": "development",
+      "policy": "coordinate_fixed_step",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 11,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "development-coordinate_fixed_step-11"
+    },
+    {
+      "attempt_ids": [
+        "a85873c3185c4d7ba24b23cf6f77b655"
+      ],
+      "best": 5.200000000000001,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "a85873c3185c4d7ba24b23cf6f77b655",
+      "failed_attempts": 0,
+      "phase": "development",
+      "policy": "coordinate_fixed_step",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 22,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "development-coordinate_fixed_step-22"
+    },
+    {
+      "attempt_ids": [
+        "8de28cf804454646b9beb565c8af3c40"
+      ],
+      "best": 5.200000000000001,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "8de28cf804454646b9beb565c8af3c40",
+      "failed_attempts": 0,
+      "phase": "development",
+      "policy": "coordinate_fixed_step",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 33,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "development-coordinate_fixed_step-33"
+    },
+    {
+      "attempt_ids": [
+        "30cd087c825d4c47b2bc54f3bcf7740b"
+      ],
+      "best": 0.37070710657631817,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "30cd087c825d4c47b2bc54f3bcf7740b",
+      "failed_attempts": 0,
+      "phase": "confirmation",
+      "policy": "uniform_random",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 101,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "confirmation-uniform_random-101"
+    },
+    {
+      "attempt_ids": [
+        "3109bf77ade24b5987f371164fd70d3a"
+      ],
+      "best": 0.25900796897177875,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "3109bf77ade24b5987f371164fd70d3a",
+      "failed_attempts": 0,
+      "phase": "confirmation",
+      "policy": "uniform_random",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 202,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "confirmation-uniform_random-202"
+    },
+    {
+      "attempt_ids": [
+        "6c8e0712c9bb4c7ebeb345998a7e5881"
+      ],
+      "best": 0.03865770457327981,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "6c8e0712c9bb4c7ebeb345998a7e5881",
+      "failed_attempts": 0,
+      "phase": "confirmation",
+      "policy": "uniform_random",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 303,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "confirmation-uniform_random-303"
+    },
+    {
+      "attempt_ids": [
+        "2e3bcadfeefe4f57a00c0b088dae607e"
+      ],
+      "best": 5.200000000000001,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "2e3bcadfeefe4f57a00c0b088dae607e",
+      "failed_attempts": 0,
+      "phase": "confirmation",
+      "policy": "coordinate_fixed_step",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 101,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "confirmation-coordinate_fixed_step-101"
+    },
+    {
+      "attempt_ids": [
+        "ddd17a642386453cbbdb6560e9e05e52"
+      ],
+      "best": 5.200000000000001,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "ddd17a642386453cbbdb6560e9e05e52",
+      "failed_attempts": 0,
+      "phase": "confirmation",
+      "policy": "coordinate_fixed_step",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 202,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "confirmation-coordinate_fixed_step-202"
+    },
+    {
+      "attempt_ids": [
+        "0fc052250f3945c2b6c9a3aa0f3b76f6"
+      ],
+      "best": 5.200000000000001,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "0fc052250f3945c2b6c9a3aa0f3b76f6",
+      "failed_attempts": 0,
+      "phase": "confirmation",
+      "policy": "coordinate_fixed_step",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 303,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "confirmation-coordinate_fixed_step-303"
+    },
+    {
+      "attempt_ids": [
+        "f2622ba946c5492588e54889b71bc71e"
+      ],
+      "best": 0.1731013159801553,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "f2622ba946c5492588e54889b71bc71e",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "uniform_random",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 11,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-development-uniform_random-11"
+    },
+    {
+      "attempt_ids": [
+        "c0222fd783db4e18b6e94d0e04e29ca4"
+      ],
+      "best": 0.1802121529734757,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "c0222fd783db4e18b6e94d0e04e29ca4",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "uniform_random",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 22,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-development-uniform_random-22"
+    },
+    {
+      "attempt_ids": [
+        "53859858e4374826a637971b9f6032af"
+      ],
+      "best": 0.7441787749988042,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "53859858e4374826a637971b9f6032af",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "uniform_random",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 33,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-development-uniform_random-33"
+    },
+    {
+      "attempt_ids": [
+        "f4433c9289314253abcd3af544ef1419"
+      ],
+      "best": 5.200000000000001,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "f4433c9289314253abcd3af544ef1419",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "coordinate_fixed_step",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 11,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-development-coordinate_fixed_step-11"
+    },
+    {
+      "attempt_ids": [
+        "40895fb2630c49edb338d2b8ce208492"
+      ],
+      "best": 5.200000000000001,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "40895fb2630c49edb338d2b8ce208492",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "coordinate_fixed_step",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 22,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-development-coordinate_fixed_step-22"
+    },
+    {
+      "attempt_ids": [
+        "56c37c23fd3c407ca12d87255ecb602b"
+      ],
+      "best": 5.200000000000001,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "56c37c23fd3c407ca12d87255ecb602b",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "coordinate_fixed_step",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 33,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-development-coordinate_fixed_step-33"
+    },
+    {
+      "attempt_ids": [
+        "884933fca37548609da8e5b17da610e8"
+      ],
+      "best": 0.37070710657631817,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "884933fca37548609da8e5b17da610e8",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "uniform_random",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 101,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-confirmation-uniform_random-101"
+    },
+    {
+      "attempt_ids": [
+        "fd6cec9918d941af9b5f7f06fcab1e14"
+      ],
+      "best": 0.25900796897177875,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "fd6cec9918d941af9b5f7f06fcab1e14",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "uniform_random",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 202,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-confirmation-uniform_random-202"
+    },
+    {
+      "attempt_ids": [
+        "150d5eec102846578d5257c1a7499e49"
+      ],
+      "best": 0.03865770457327981,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "150d5eec102846578d5257c1a7499e49",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "uniform_random",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 303,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-confirmation-uniform_random-303"
+    },
+    {
+      "attempt_ids": [
+        "d2de3155c4f14b93b301a1b8f942aff1"
+      ],
+      "best": 5.200000000000001,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "d2de3155c4f14b93b301a1b8f942aff1",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "coordinate_fixed_step",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 101,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-confirmation-coordinate_fixed_step-101"
+    },
+    {
+      "attempt_ids": [
+        "4643eb976a1d4dde8a8b7c172367c64f"
+      ],
+      "best": 5.200000000000001,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "4643eb976a1d4dde8a8b7c172367c64f",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "coordinate_fixed_step",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 202,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-confirmation-coordinate_fixed_step-202"
+    },
+    {
+      "attempt_ids": [
+        "8b7dc2202afa42e984a70f7b1c00c8fb"
+      ],
+      "best": 5.200000000000001,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "8b7dc2202afa42e984a70f7b1c00c8fb",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "coordinate_fixed_step",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 303,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-confirmation-coordinate_fixed_step-303"
+    }
+  ],
+  "uncertainty": {
+    "differences": [
+      4.829292893423683,
+      4.940992031028222,
+      5.161342295426722
+    ],
+    "estimand": "median of paired candidate-minus-reference best objectives",
+    "interpretation": "Descriptive resampling of these frozen seeds only; no population coverage, significance or general superiority claim. The median paired difference can differ from the difference of medians used for the study verdict.",
+    "interval": [
+      4.829292893423683,
+      5.161342295426722
+    ],
+    "median_difference": 4.940992031028222,
+    "method": "paired-median-bootstrap-percentile-v1",
+    "n_pairs": 3,
+    "percentile_levels": [
+      0.025,
+      0.975
+    ],
+    "range": [
+      4.829292893423683,
+      5.161342295426722
+    ],
+    "resample_seed": 1729,
+    "resamples": 2000,
+    "status": "DESCRIPTIVE"
+  },
+  "verdict": "BASELINE_LOWER"
+}

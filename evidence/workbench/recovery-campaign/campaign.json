@@ -1,0 +1,103 @@
+{
+  "created_at": "2026-09-08T16:49:50.374536+00:00",
+  "execution_id": "5def4417ca694b63b628a19b34e40f0c",
+  "plan": {
+    "campaign_id": "numerical-workbench",
+    "question": "How do bounded coordinate search and its step-halving ablation compare with random and grid baselines across three public numerical fixtures?",
+    "schema_version": 1,
+    "studies": [
+      {
+        "ablation_of": null,
+        "factor": null,
+        "id": "rosenbrock",
+        "study": {
+          "attempt_timeout_seconds": 10,
+          "baseline": "uniform_random",
+          "candidate": "coordinate_refinement",
+          "comparison": "descriptive-confirmation-median-best-v1",
+          "confirmation_seeds": [
+            101
+          ],
+          "development_seeds": [
+            11
+          ],
+          "domain": [
+            [
+              -2.0,
+              2.0
+            ],
+            [
+              -1.0,
+              3.0
+            ]
+          ],
+          "evaluations_per_policy": 8,
+          "evaluator": "rosenbrock-2d-v1",
+          "falsifier": "The candidate confirmation median is greater than or equal to the baseline median; invalid or missing runs or unequal charged costs make the comparison inconclusive.",
+          "feedback": "own-scalar-only-fresh-policy-per-run",
+          "hypothesis": "coordinate_refinement will obtain a lower confirmation median best objective than uniform_random.",
+          "initial_step": 0.5,
+          "max_attempts_per_trial": 2,
+          "quality_threshold": 0.01,
+          "question": "On rosenbrock-2d-v1, does coordinate_refinement obtain a lower confirmation median best objective than uniform_random at equal evaluation allowance?",
+          "reproduction_tolerance": 1e-12,
+          "revision": "1",
+          "schema_version": 2,
+          "start": [
+            -1.2,
+            1.0
+          ],
+          "study_id": "rosenbrock-2d-v1-coordinate_refinement-v-uniform_random"
+        }
+      },
+      {
+        "ablation_of": "rosenbrock",
+        "factor": "candidate",
+        "id": "rosenbrock-fixed-step",
+        "study": {
+          "attempt_timeout_seconds": 10,
+          "baseline": "uniform_random",
+          "candidate": "coordinate_fixed_step",
+          "comparison": "descriptive-confirmation-median-best-v1",
+          "confirmation_seeds": [
+            101
+          ],
+          "development_seeds": [
+            11
+          ],
+          "domain": [
+            [
+              -2.0,
+              2.0
+            ],
+            [
+              -1.0,
+              3.0
+            ]
+          ],
+          "evaluations_per_policy": 8,
+          "evaluator": "rosenbrock-2d-v1",
+          "falsifier": "The candidate confirmation median is greater than or equal to the baseline median; invalid or missing runs or unequal charged costs make the comparison inconclusive.",
+          "feedback": "own-scalar-only-fresh-policy-per-run",
+          "hypothesis": "coordinate_fixed_step will obtain a lower confirmation median best objective than uniform_random.",
+          "initial_step": 0.5,
+          "max_attempts_per_trial": 2,
+          "quality_threshold": 0.01,
+          "question": "On rosenbrock-2d-v1, does coordinate_fixed_step obtain a lower confirmation median best objective than uniform_random at equal evaluation allowance?",
+          "reproduction_tolerance": 1e-12,
+          "revision": "1",
+          "schema_version": 2,
+          "start": [
+            -1.2,
+            1.0
+          ],
+          "study_id": "rosenbrock-2d-v1-coordinate_fixed_step-v-uniform_random"
+        }
+      }
+    ]
+  },
+  "plan_digest": "83da7b38d83d1fee404d0ca816fc7ca5bf1dffa56a97e6fbe019a87582fc3ecb",
+  "reproduction_source": null,
+  "schema_version": 1,
+  "type": "FrozenCampaign"
+}

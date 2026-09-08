@@ -2,6 +2,52 @@
 
 Last updated: 2026-09-08. Maintainer: Lucas Santana ([thepianistdirector](https://github.com/thepianistdirector)). The current task ledger is plan/tasks.json; generated task/roadmap views derive from it. This file records the current evidence and handoff, not a second task ledger.
 
+## Active 0.5 delivery
+
+The owner instructed continued development through 0.5 on September 8 and selected
+**local research workbench** scope: multiple numerical objectives/baselines,
+multi-study campaigns, ablations, explicit uncertainty, portable reproduction and
+an interactive offline evidence browser. [The working goal](docs/GOAL-0.5.md) records
+the complete selected scope. The task title is now **Build Research Continuum 0.5**.
+The native Goal still contains the incomplete 0.1 objective: supported tools expose
+no objective editor, and the authorized Mac helper's Computer Use access to the
+Codex app was refused. No goal was deleted, falsely completed or reset.
+
+The local 0.5 candidate is implemented and verified. It includes three reviewed
+objective adapters and four policies, a frozen whole-campaign inventory bound to
+every member ledger, matched ablation contracts, descriptive paired-seed
+uncertainty, atomic portable campaign bundles, fresh source-bound reproduction,
+and an offline browser with filters, stable trial links and full observation
+inspection. The [workbench guide](docs/workbench.md) documents the complete flow.
+
+| 0.5 evidence | Observed result |
+| --- | --- |
+| Automated source checks | [76 tests pass](evidence/workbench/automated-final-source.json), including retained process-death costs, frozen-inventory/derived-claim tampering, cached-reproduction refusal, exhausted-trial pause recovery and completed-campaign runtime checks. All 25 plan falsifiers and generated-view parity pass. |
+| Packaged execution | [Corrected preflight passes](evidence/workbench/packaged-preflight.json) from a new source extraction: full test suite, nine-study draft/freeze/pause/inspect/resume/export/verify, fresh reproduction, overwrite refusal and a real SIGKILL recovery. All packaged source files remained unchanged. |
+| Default campaign | [Nine studies / 216 trials](evidence/workbench/default-campaign/index.html), 27,648 recorded and charged search evaluations, 55,296 reserved units, zero failed attempts. Rosenbrock favours the baseline in all three comparisons; the two quadratic fixtures favour the coordinate candidates. These are fixture-specific descriptive outcomes. |
+| Fresh reproduction | [MATCH](evidence/workbench/reproduction.json) across all nine source-bound member studies, with distinct execution and attempt identities. The [fresh campaign evidence](evidence/workbench/reproduced-campaign/index.html) is retained. This is a fresh execution on the same host/runtime, not independent human or external-machine evidence. |
+| Recovery | [Two-study SIGKILL case](evidence/workbench/recovery-campaign/index.html) retains one failed attempt, 128 recorded evaluations and 136 charged units. The affected comparison stays INCONCLUSIVE and its ablation stays ineligible. |
+| Browser | [Eleven asserted interactions and four inspected screenshots](evidence/workbench/browser-verification.json): filtering, empty-state recovery, stable trial selection, keyboard expansion of all 128 observations, 320/390px reflow, 2× CSS zoom, reduced motion, horizontal table navigation and visible retained failures. Tested axe states have zero violations; clipped-table contrast incompletes are documented with measured color ratios. |
+| Human / scientific review | Pending. Agent checks do not substitute for independent human accessibility or qualified scientific review. |
+| Public 0.5 release | Not published. The exact source archive and verification packet are prepared for the owner's release decision; no 0.5 public distribution is claimed. |
+
+The verified runtime is Linux x86_64, Python 3.12.14 and SQLite 3.53.1. Its runtime
+source identity is `2ee2c5d8fe75373f1aa0835641f46ec16ddd006f5b2e6d7e9d4a15ace8fafb2d`.
+The [design audit](evidence/workbench/design-audit.md) records the tested flow and
+remaining evidence gaps. Native macOS, Windows and external ARM64 support for 0.5
+are not claimed from the older 0.1 observations.
+
+Two additional [regression probes](evidence/workbench/recovery-regressions.json)
+found and fixed exhausted-trial pause accounting and completed-campaign runtime
+admission. Their initial failures and targeted corrected results remain visible.
+The first development preflight is retained locally; the included corrected
+preflight and final-source test record identify the verified runtime above.
+
+No new dependency, paid service, credential or shared-host change was adopted.
+The wider affected task rows remain IN PROGRESS: their 0.5 implementation slices
+do not complete unmet historical training, adaptive-search or review prerequisites.
+The historical gates below remain separate and unfinished where stated.
+
 ## Architecture foundation accepted
 
 The active root accepted the three foundation tasks in dependency order under Lucas Santana's explicit instruction to complete and publish this first architecture round. The reviewed source is the foundation commit on `main` containing this file, whose parent is `f558f21830246d4732bc1e590a83214d480cd94b`. This acceptance covers documentation and executable repository-plan tooling. It does not establish scientific validity, implemented simulation, user validation or a released product.
@@ -51,7 +97,7 @@ The [browser record](evidence/runtime/browser-verification.json) distinguishes a
 
 ## Long-term plan and immutable history
 
-`plan/tasks.json` is the sole current task ledger. Its generated roadmap and contracts contain 228 outcomes across 28 waves: three historical foundation outcomes, 50 narrow 0.1 outcomes and 175 conditional later/exploratory outcomes. Current statuses refer to actual implementation, automated or runtime evidence. Three remaining 0.1 outcomes require human review and native-plan publication/read-back. External-host workflow evidence is recorded with its precise ARM64 limits; an additional source-bound check against the original bundled VPS campaign is queued separately. The owner-reviewed publication decision and public release now have their own evidence; neither advances the independent human-review task. The owner approved public distribution with the missing human review explicitly disclosed. The retained T07 → T08 dependency is still unmet; observed publication evidence does not establish completion of that prerequisite or the full release programme.
+`plan/tasks.json` is the sole current task ledger. Its generated roadmap and contracts contain 228 outcomes across 28 waves: three historical foundation outcomes, 50 narrow 0.1 outcomes and 175 conditional later/exploratory outcomes. Current statuses refer to actual implementation, automated or runtime evidence. Three remaining 0.1 outcomes require human review and native-plan publication/read-back. External-host workflow evidence is recorded with its precise ARM64 limits; the separate source-bound check against the original bundled VPS campaign has now been revalidated and retains an INCONCLUSIVE formal result with all 24 numerical sequences matching. The owner-reviewed publication decision and public release now have their own evidence; neither advances the independent human-review task. The owner approved public distribution with the missing human review explicitly disclosed. The retained T07 → T08 dependency is still unmet; observed publication evidence does not establish completion of that prerequisite or the full release programme.
 
 All 27 original source entries map to successors. Eight exact historical lineage files retain the accepted and predecessor contracts. Historical RC-F01–RC-F03 stay DONE for foundation documentation/tooling only; RC-001–RC-024 remain PLANNED in source history. No broader training, agent search, hostile-code isolation, numerical generality or multi-domain acceptance is silently narrowed or marked complete.
 
@@ -61,9 +107,9 @@ Public reads at 2026-09-08 15:37 UTC confirm that the [roadmap](https://tanduna.
 
 [Native reconciliation](evidence/tanduna-submission.json) records 228 selected outcomes, 28 waves and 538 exact dependency edges in saved/submitted revision 1, option `yes`. The authenticated Mac inventory contains 252 records: 27 original records preserved plus 225 new drafts; three original foundations are reused in the 228-outcome plan. Root checked every new task's embedded JSON contract and mapped lineage against the approved export, all returned task/wave IDs, saved order and graph. Canonical task IDs and wave IDs now retain those real platform mappings. The historical source records still describe their original observation; newly discovered original native IDs are recorded separately.
 
-The reviewer returned “The review did not complete (input).” One supported retry failed the same way. The specific cause is not exposed in current evidence, and no further unchanged retry, task recreation or resubmission is warranted. A read-only Mac diagnostic request is queued. A passing platform review and the owner's approval of the exact frozen `yes` option are still required. That exact-option question is already pending in the Mac task; the general publication approval is not substituted for it. The frozen native revision retains the submitted export's statuses; subsequent Git evidence updates do not rewrite that history.
+The reviewer returned “The review did not complete (input).” One supported retry failed the same way. The specific cause is not exposed in current evidence, and no further unchanged retry, task recreation or resubmission is warranted. The [read-only Mac diagnostic](evidence/tanduna-review-diagnostics.json) completed: the supported UI exposes no job ID, field-level error or input limit, so the cause remains unknown beyond the input category. A passing platform review and the owner's approval of the exact frozen `yes` option are still required. That exact-option question is already pending in the Mac task; the general publication approval is not substituted for it. The frozen native revision retains the submitted export's statuses; subsequent Git evidence updates do not rewrite that history.
 
-The [external ARM64 record](evidence/external-mac-arm64/verification.json) covers a genuinely separate Mac-hosted Linux container using the exact public archive. It retained 24 clean trials / 3,072 recorded and charged evaluations, BASELINE_LOWER, a new matching reproduction, and a real SIGKILL recovery with one failed attempt / 192 recorded / 200 charged units / INCONCLUSIVE. Root independently validated both bundles against returned SQLite snapshots and recomputed the new reproduction record; all 24 VPS/Mac point/value traces also match exactly. The environment was Linux aarch64, Python 3.12.13, SQLite 3.46.1. These results are external-host agent evidence, not native macOS support, external x86_64 parity, a full ARM64 test-suite pass or human review. The fresh MATCH record is bound to the Mac-created bundle; a separate formal reproduction of the original VPS bundle is queued to retain any runtime deviations honestly.
+The [external ARM64 record](evidence/external-mac-arm64/verification.json) covers a genuinely separate Mac-hosted Linux container using the exact public archive. It retained 24 clean trials / 3,072 recorded and charged evaluations, BASELINE_LOWER, a new matching reproduction, and a real SIGKILL recovery with one failed attempt / 192 recorded / 200 charged units / INCONCLUSIVE. Root independently validated both bundles against returned SQLite snapshots and recomputed the new reproduction record; all 24 VPS/Mac point/value traces also match exactly. The environment was Linux aarch64, Python 3.12.13, SQLite 3.46.1. These results are external-host agent evidence, not native macOS support, external x86_64 parity, a full ARM64 test-suite pass or human review. The fresh MATCH record is bound to the Mac-created bundle; the [separate formal reproduction](evidence/external-mac-arm64/formal-vps-reproduction/root-verification.json) of the original VPS bundle now confirms all 24 traces while retaining INCONCLUSIVE because machine, Python and SQLite differ. Root verified its fresh bundle against the returned database/ledger and independently rederived the record using the unchanged public 0.1.0 source.
 
 The Mac helper's native 15-minute schedule was read back as ACTIVE and an actual scheduled wake was observed at 15:30 UTC. Queue read/upload round trips and the executing Darwin ARM64 / GPT-6 Astra identity were recorded. The native tool did not expose the next execution timestamp. The helper stays available for bounded follow-ups; its existence does not replace scientific or platform review. The human worksheet remains unfilled and actual human observations are already requested in that Mac task.
 
@@ -73,4 +119,9 @@ The pinned autoresearch README declares MIT but the refreshed pinned tree still 
 
 ## Next outcome
 
-Complete native-plan publication and independent-observation gates without weakening them. After 0.1 is publicly verified and its native plan is published, the next later-0.x outcome is Wave 06: reproduce the actual pinned autoresearch baseline under separately approved distribution rights, workload/resources and comparison rules. It does not become a prerequisite for this narrow numerical release or authorize training compute now.
+Finish the exact-archive release packet and owner publication decision for the
+verified 0.5 workbench, and preserve the remaining 0.1 human
+and native-publication gates. The [0.5 guide](docs/workbench.md) defines its actual
+workflow. Historical Wave 06 training/upstream reproduction and all later broad
+scientific contracts retain their own unfulfilled prerequisites and authority;
+they are not silently completed by the selected local workbench.

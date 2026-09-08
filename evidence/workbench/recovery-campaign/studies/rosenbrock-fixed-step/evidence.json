@@ -1,0 +1,1805 @@
+{
+  "allocations": [
+    {
+      "capacity": 16,
+      "pool": "development:uniform_random"
+    },
+    {
+      "capacity": 16,
+      "pool": "development:coordinate_fixed_step"
+    },
+    {
+      "capacity": 16,
+      "pool": "confirmation:uniform_random"
+    },
+    {
+      "capacity": 16,
+      "pool": "confirmation:coordinate_fixed_step"
+    },
+    {
+      "capacity": 32,
+      "pool": "reproduction:uniform_random"
+    },
+    {
+      "capacity": 32,
+      "pool": "reproduction:coordinate_fixed_step"
+    }
+  ],
+  "attempts": [
+    {
+      "charged_evaluations": 8,
+      "id": "669878d939214b929ec8175dcc63728d",
+      "number": 1,
+      "observations": [
+        {
+          "index": 0,
+          "point": [
+            -0.1904817859607255,
+            1.2390895443219838
+          ],
+          "value": 146.09153042677897
+        },
+        {
+          "index": 1,
+          "point": [
+            1.6968423360949174,
+            0.8626002803990933
+          ],
+          "value": 407.18284351165164
+        },
+        {
+          "index": 2,
+          "point": [
+            0.03136509224908446,
+            1.3495393153995878
+          ],
+          "value": 182.79845975384185
+        },
+        {
+          "index": 3,
+          "point": [
+            -1.2613586245804935,
+            1.047634556167222
+          ],
+          "value": 34.64112328582304
+        },
+        {
+          "index": 4,
+          "point": [
+            0.5195308808672077,
+            2.1719074900798105
+          ],
+          "value": 361.9894071223092
+        },
+        {
+          "index": 5,
+          "point": [
+            -1.6235061750831261,
+            0.21360505049810197
+          ],
+          "value": 593.5722033648817
+        },
+        {
+          "index": 6,
+          "point": [
+            -1.6373178500326424,
+            2.23857813746871
+          ],
+          "value": 26.51232464987383
+        },
+        {
+          "index": 7,
+          "point": [
+            0.7737539301649563,
+            -0.832478654520616
+          ],
+          "value": 204.8770315688881
+        }
+      ],
+      "retry_of": null,
+      "staged": {
+        "best": 26.51232464987383,
+        "cpu_seconds": 0.0026324689999999984,
+        "elapsed_seconds": 0.02135304902913049,
+        "ended_at": "2026-09-08T16:49:50.886576+00:00",
+        "observed_evaluations": 8,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "started_at": "2026-09-08T16:49:50.862608+00:00",
+      "terminal": {
+        "best": 26.51232464987383,
+        "cpu_seconds": 0.0026324689999999984,
+        "elapsed_seconds": 0.02135304902913049,
+        "ended_at": "2026-09-08T16:49:50.886576+00:00",
+        "observed_evaluations": 8,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "trial_id": "development-uniform_random-11"
+    },
+    {
+      "charged_evaluations": 8,
+      "id": "cb4ac170ce474e7e9e4fb23df41c40d5",
+      "number": 1,
+      "observations": [
+        {
+          "index": 0,
+          "point": [
+            -1.2,
+            1.0
+          ],
+          "value": 24.199999999999996
+        },
+        {
+          "index": 1,
+          "point": [
+            -0.7,
+            1.0
+          ],
+          "value": 28.9
+        },
+        {
+          "index": 2,
+          "point": [
+            -1.7,
+            1.0
+          ],
+          "value": 364.49999999999994
+        },
+        {
+          "index": 3,
+          "point": [
+            -1.2,
+            1.5
+          ],
+          "value": 5.200000000000001
+        },
+        {
+          "index": 4,
+          "point": [
+            -1.2,
+            1.0
+          ],
+          "value": 24.199999999999996
+        },
+        {
+          "index": 5,
+          "point": [
+            -0.7,
+            1.5
+          ],
+          "value": 104.9
+        },
+        {
+          "index": 6,
+          "point": [
+            -1.7,
+            1.5
+          ],
+          "value": 200.4999999999999
+        },
+        {
+          "index": 7,
+          "point": [
+            -1.2,
+            2.0
+          ],
+          "value": 36.2
+        }
+      ],
+      "retry_of": null,
+      "staged": {
+        "best": 5.200000000000001,
+        "cpu_seconds": 0.0019494119999999976,
+        "elapsed_seconds": 0.02285581495380029,
+        "ended_at": "2026-09-08T16:49:50.916972+00:00",
+        "observed_evaluations": 8,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "started_at": "2026-09-08T16:49:50.891567+00:00",
+      "terminal": {
+        "best": 5.200000000000001,
+        "cpu_seconds": 0.0019494119999999976,
+        "elapsed_seconds": 0.02285581495380029,
+        "ended_at": "2026-09-08T16:49:50.916972+00:00",
+        "observed_evaluations": 8,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "trial_id": "development-coordinate_fixed_step-11"
+    },
+    {
+      "charged_evaluations": 8,
+      "id": "e72ac8355f06452ba137e071bf36f966",
+      "number": 1,
+      "observations": [
+        {
+          "index": 0,
+          "point": [
+            0.3246085300182586,
+            -0.22098201786345317
+          ],
+          "value": 11.106763137244469
+        },
+        {
+          "index": 1,
+          "point": [
+            1.8610044282444447,
+            2.695905606707177
+          ],
+          "value": 59.63649693862707
+        },
+        {
+          "index": 2,
+          "point": [
+            -0.13144528721210413,
+            1.6538825781202422
+          ],
+          "value": 269.12766761976604
+        },
+        {
+          "index": 3,
+          "point": [
+            -1.1419081210481279,
+            -0.1132150018950373
+          ],
+          "value": 205.42461286743554
+        },
+        {
+          "index": 4,
+          "point": [
+            -0.8459102664749754,
+            1.76969098398127
+          ],
+          "value": 114.52571682510899
+        },
+        {
+          "index": 5,
+          "point": [
+            -1.1504929265666757,
+            2.8844238054150946
+          ],
+          "value": 248.23110958713093
+        },
+        {
+          "index": 6,
+          "point": [
+            -1.718578062795343,
+            -0.22685348507563585
+          ],
+          "value": 1018.8622112823535
+        },
+        {
+          "index": 7,
+          "point": [
+            -1.6445457206603367,
+            2.0795677464404103
+          ],
+          "value": 46.05148231917264
+        }
+      ],
+      "retry_of": null,
+      "staged": {
+        "best": 11.106763137244469,
+        "cpu_seconds": 0.0018489730000000038,
+        "elapsed_seconds": 0.020055695029441267,
+        "ended_at": "2026-09-08T16:49:50.943622+00:00",
+        "observed_evaluations": 8,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "started_at": "2026-09-08T16:49:50.921434+00:00",
+      "terminal": {
+        "best": 11.106763137244469,
+        "cpu_seconds": 0.0018489730000000038,
+        "elapsed_seconds": 0.020055695029441267,
+        "ended_at": "2026-09-08T16:49:50.943622+00:00",
+        "observed_evaluations": 8,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "trial_id": "confirmation-uniform_random-101"
+    },
+    {
+      "charged_evaluations": 8,
+      "id": "ffdaa1d2abbf47dc860fc669edaf5494",
+      "number": 1,
+      "observations": [
+        {
+          "index": 0,
+          "point": [
+            -1.2,
+            1.0
+          ],
+          "value": 24.199999999999996
+        },
+        {
+          "index": 1,
+          "point": [
+            -0.7,
+            1.0
+          ],
+          "value": 28.9
+        },
+        {
+          "index": 2,
+          "point": [
+            -1.7,
+            1.0
+          ],
+          "value": 364.49999999999994
+        },
+        {
+          "index": 3,
+          "point": [
+            -1.2,
+            1.5
+          ],
+          "value": 5.200000000000001
+        },
+        {
+          "index": 4,
+          "point": [
+            -1.2,
+            1.0
+          ],
+          "value": 24.199999999999996
+        },
+        {
+          "index": 5,
+          "point": [
+            -0.7,
+            1.5
+          ],
+          "value": 104.9
+        },
+        {
+          "index": 6,
+          "point": [
+            -1.7,
+            1.5
+          ],
+          "value": 200.4999999999999
+        },
+        {
+          "index": 7,
+          "point": [
+            -1.2,
+            2.0
+          ],
+          "value": 36.2
+        }
+      ],
+      "retry_of": null,
+      "staged": {
+        "best": 5.200000000000001,
+        "cpu_seconds": 0.002191336000000002,
+        "elapsed_seconds": 0.020463875029236078,
+        "ended_at": "2026-09-08T16:49:50.971445+00:00",
+        "observed_evaluations": 8,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "started_at": "2026-09-08T16:49:50.948551+00:00",
+      "terminal": {
+        "best": 5.200000000000001,
+        "cpu_seconds": 0.002191336000000002,
+        "elapsed_seconds": 0.020463875029236078,
+        "ended_at": "2026-09-08T16:49:50.971445+00:00",
+        "observed_evaluations": 8,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "trial_id": "confirmation-coordinate_fixed_step-101"
+    },
+    {
+      "charged_evaluations": 8,
+      "id": "4bdad8ca135345ef8daf1854942e38ae",
+      "number": 1,
+      "observations": [
+        {
+          "index": 0,
+          "point": [
+            -0.1904817859607255,
+            1.2390895443219838
+          ],
+          "value": 146.09153042677897
+        },
+        {
+          "index": 1,
+          "point": [
+            1.6968423360949174,
+            0.8626002803990933
+          ],
+          "value": 407.18284351165164
+        },
+        {
+          "index": 2,
+          "point": [
+            0.03136509224908446,
+            1.3495393153995878
+          ],
+          "value": 182.79845975384185
+        },
+        {
+          "index": 3,
+          "point": [
+            -1.2613586245804935,
+            1.047634556167222
+          ],
+          "value": 34.64112328582304
+        },
+        {
+          "index": 4,
+          "point": [
+            0.5195308808672077,
+            2.1719074900798105
+          ],
+          "value": 361.9894071223092
+        },
+        {
+          "index": 5,
+          "point": [
+            -1.6235061750831261,
+            0.21360505049810197
+          ],
+          "value": 593.5722033648817
+        },
+        {
+          "index": 6,
+          "point": [
+            -1.6373178500326424,
+            2.23857813746871
+          ],
+          "value": 26.51232464987383
+        },
+        {
+          "index": 7,
+          "point": [
+            0.7737539301649563,
+            -0.832478654520616
+          ],
+          "value": 204.8770315688881
+        }
+      ],
+      "retry_of": null,
+      "staged": {
+        "best": 26.51232464987383,
+        "cpu_seconds": 0.002038296000000009,
+        "elapsed_seconds": 0.04341474600369111,
+        "ended_at": "2026-09-08T16:49:51.021481+00:00",
+        "observed_evaluations": 8,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "started_at": "2026-09-08T16:49:50.975591+00:00",
+      "terminal": {
+        "best": 26.51232464987383,
+        "cpu_seconds": 0.002038296000000009,
+        "elapsed_seconds": 0.04341474600369111,
+        "ended_at": "2026-09-08T16:49:51.021481+00:00",
+        "observed_evaluations": 8,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "trial_id": "reproduction-development-uniform_random-11"
+    },
+    {
+      "charged_evaluations": 8,
+      "id": "bf41c8719c8e400b8e388e2882e30c02",
+      "number": 1,
+      "observations": [
+        {
+          "index": 0,
+          "point": [
+            -1.2,
+            1.0
+          ],
+          "value": 24.199999999999996
+        },
+        {
+          "index": 1,
+          "point": [
+            -0.7,
+            1.0
+          ],
+          "value": 28.9
+        },
+        {
+          "index": 2,
+          "point": [
+            -1.7,
+            1.0
+          ],
+          "value": 364.49999999999994
+        },
+        {
+          "index": 3,
+          "point": [
+            -1.2,
+            1.5
+          ],
+          "value": 5.200000000000001
+        },
+        {
+          "index": 4,
+          "point": [
+            -1.2,
+            1.0
+          ],
+          "value": 24.199999999999996
+        },
+        {
+          "index": 5,
+          "point": [
+            -0.7,
+            1.5
+          ],
+          "value": 104.9
+        },
+        {
+          "index": 6,
+          "point": [
+            -1.7,
+            1.5
+          ],
+          "value": 200.4999999999999
+        },
+        {
+          "index": 7,
+          "point": [
+            -1.2,
+            2.0
+          ],
+          "value": 36.2
+        }
+      ],
+      "retry_of": null,
+      "staged": {
+        "best": 5.200000000000001,
+        "cpu_seconds": 0.0019213680000000066,
+        "elapsed_seconds": 0.02058010100154206,
+        "ended_at": "2026-09-08T16:49:51.049232+00:00",
+        "observed_evaluations": 8,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "started_at": "2026-09-08T16:49:51.026135+00:00",
+      "terminal": {
+        "best": 5.200000000000001,
+        "cpu_seconds": 0.0019213680000000066,
+        "elapsed_seconds": 0.02058010100154206,
+        "ended_at": "2026-09-08T16:49:51.049232+00:00",
+        "observed_evaluations": 8,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "trial_id": "reproduction-development-coordinate_fixed_step-11"
+    },
+    {
+      "charged_evaluations": 8,
+      "id": "93307d33fb9a4fbbb2a8ce6196d9283d",
+      "number": 1,
+      "observations": [
+        {
+          "index": 0,
+          "point": [
+            0.3246085300182586,
+            -0.22098201786345317
+          ],
+          "value": 11.106763137244469
+        },
+        {
+          "index": 1,
+          "point": [
+            1.8610044282444447,
+            2.695905606707177
+          ],
+          "value": 59.63649693862707
+        },
+        {
+          "index": 2,
+          "point": [
+            -0.13144528721210413,
+            1.6538825781202422
+          ],
+          "value": 269.12766761976604
+        },
+        {
+          "index": 3,
+          "point": [
+            -1.1419081210481279,
+            -0.1132150018950373
+          ],
+          "value": 205.42461286743554
+        },
+        {
+          "index": 4,
+          "point": [
+            -0.8459102664749754,
+            1.76969098398127
+          ],
+          "value": 114.52571682510899
+        },
+        {
+          "index": 5,
+          "point": [
+            -1.1504929265666757,
+            2.8844238054150946
+          ],
+          "value": 248.23110958713093
+        },
+        {
+          "index": 6,
+          "point": [
+            -1.718578062795343,
+            -0.22685348507563585
+          ],
+          "value": 1018.8622112823535
+        },
+        {
+          "index": 7,
+          "point": [
+            -1.6445457206603367,
+            2.0795677464404103
+          ],
+          "value": 46.05148231917264
+        }
+      ],
+      "retry_of": null,
+      "staged": {
+        "best": 11.106763137244469,
+        "cpu_seconds": 0.002023760999999999,
+        "elapsed_seconds": 0.019937395001761615,
+        "ended_at": "2026-09-08T16:49:51.076706+00:00",
+        "observed_evaluations": 8,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "started_at": "2026-09-08T16:49:51.054266+00:00",
+      "terminal": {
+        "best": 11.106763137244469,
+        "cpu_seconds": 0.002023760999999999,
+        "elapsed_seconds": 0.019937395001761615,
+        "ended_at": "2026-09-08T16:49:51.076706+00:00",
+        "observed_evaluations": 8,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "trial_id": "reproduction-confirmation-uniform_random-101"
+    },
+    {
+      "charged_evaluations": 8,
+      "id": "090ae7ce51364b6d91cdd61abe174ea1",
+      "number": 1,
+      "observations": [
+        {
+          "index": 0,
+          "point": [
+            -1.2,
+            1.0
+          ],
+          "value": 24.199999999999996
+        },
+        {
+          "index": 1,
+          "point": [
+            -0.7,
+            1.0
+          ],
+          "value": 28.9
+        },
+        {
+          "index": 2,
+          "point": [
+            -1.7,
+            1.0
+          ],
+          "value": 364.49999999999994
+        },
+        {
+          "index": 3,
+          "point": [
+            -1.2,
+            1.5
+          ],
+          "value": 5.200000000000001
+        },
+        {
+          "index": 4,
+          "point": [
+            -1.2,
+            1.0
+          ],
+          "value": 24.199999999999996
+        },
+        {
+          "index": 5,
+          "point": [
+            -0.7,
+            1.5
+          ],
+          "value": 104.9
+        },
+        {
+          "index": 6,
+          "point": [
+            -1.7,
+            1.5
+          ],
+          "value": 200.4999999999999
+        },
+        {
+          "index": 7,
+          "point": [
+            -1.2,
+            2.0
+          ],
+          "value": 36.2
+        }
+      ],
+      "retry_of": null,
+      "staged": {
+        "best": 5.200000000000001,
+        "cpu_seconds": 0.0019300729999999905,
+        "elapsed_seconds": 0.02001163299428299,
+        "ended_at": "2026-09-08T16:49:51.104291+00:00",
+        "observed_evaluations": 8,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "started_at": "2026-09-08T16:49:51.081771+00:00",
+      "terminal": {
+        "best": 5.200000000000001,
+        "cpu_seconds": 0.0019300729999999905,
+        "elapsed_seconds": 0.02001163299428299,
+        "ended_at": "2026-09-08T16:49:51.104291+00:00",
+        "observed_evaluations": 8,
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "trial_id": "reproduction-confirmation-coordinate_fixed_step-101"
+    }
+  ],
+  "campaign_id": "7c535935a3104c0ebc3f8ccf0b1d3e63",
+  "controls": [
+    {
+      "expected": 0.0,
+      "name": "known_minimum",
+      "objectiveCalls": 1,
+      "observed": 0.0,
+      "passed": true
+    },
+    {
+      "expected": 1.0,
+      "name": "known_nonzero",
+      "objectiveCalls": 1,
+      "observed": 1.0,
+      "passed": true
+    },
+    {
+      "expected": "rejected",
+      "name": "reject_nan",
+      "objectiveCalls": 0,
+      "observed": "rejected",
+      "passed": true
+    },
+    {
+      "expected": "rejected",
+      "name": "reject_infinity",
+      "objectiveCalls": 0,
+      "observed": "rejected",
+      "passed": true
+    },
+    {
+      "expected": "rejected",
+      "name": "reject_boolean",
+      "objectiveCalls": 0,
+      "observed": "rejected",
+      "passed": true
+    },
+    {
+      "expected": "rejected",
+      "name": "reject_shape",
+      "objectiveCalls": 0,
+      "observed": "rejected",
+      "passed": true
+    },
+    {
+      "expected": "rejected",
+      "name": "reject_out_of_domain",
+      "objectiveCalls": 0,
+      "observed": "rejected",
+      "passed": true
+    },
+    {
+      "expected": "rejected",
+      "name": "reject_evaluator_mutation",
+      "objectiveCalls": 0,
+      "observed": "rejected",
+      "passed": true
+    }
+  ],
+  "created_at": "2026-09-08T16:49:50.438535+00:00",
+  "environment": {
+    "implementation": "CPython",
+    "machine": "x86_64",
+    "package_version": "0.5.0",
+    "python": "3.12.14",
+    "runtime_digest": "2ee2c5d8fe75373f1aa0835641f46ec16ddd006f5b2e6d7e9d4a15ace8fafb2d",
+    "sqlite": "3.53.1",
+    "system": "Linux"
+  },
+  "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+  "events": [
+    {
+      "at": "2026-09-08T16:49:50.496248+00:00",
+      "attempt_id": null,
+      "kind": "CREATED",
+      "payload": {
+        "evaluator_digest": "d81d66d06dc31624d82927fdb7732efc971c64b0cf25edc3ac935a8ba3c10606",
+        "study_digest": "ea75a1a507856a0adc44f927b5b1c133cdc3cfb754c54854c462f69686443843"
+      },
+      "sequence": 1
+    },
+    {
+      "at": "2026-09-08T16:49:50.862705+00:00",
+      "attempt_id": "669878d939214b929ec8175dcc63728d",
+      "kind": "ADMITTED",
+      "payload": {
+        "charged_evaluations": 8,
+        "number": 1,
+        "trial_id": "development-uniform_random-11"
+      },
+      "sequence": 2
+    },
+    {
+      "at": "2026-09-08T16:49:50.865435+00:00",
+      "attempt_id": "669878d939214b929ec8175dcc63728d",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 0
+      },
+      "sequence": 3
+    },
+    {
+      "at": "2026-09-08T16:49:50.867603+00:00",
+      "attempt_id": "669878d939214b929ec8175dcc63728d",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 1
+      },
+      "sequence": 4
+    },
+    {
+      "at": "2026-09-08T16:49:50.870253+00:00",
+      "attempt_id": "669878d939214b929ec8175dcc63728d",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 2
+      },
+      "sequence": 5
+    },
+    {
+      "at": "2026-09-08T16:49:50.872893+00:00",
+      "attempt_id": "669878d939214b929ec8175dcc63728d",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 3
+      },
+      "sequence": 6
+    },
+    {
+      "at": "2026-09-08T16:49:50.875620+00:00",
+      "attempt_id": "669878d939214b929ec8175dcc63728d",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 4
+      },
+      "sequence": 7
+    },
+    {
+      "at": "2026-09-08T16:49:50.878276+00:00",
+      "attempt_id": "669878d939214b929ec8175dcc63728d",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 5
+      },
+      "sequence": 8
+    },
+    {
+      "at": "2026-09-08T16:49:50.881298+00:00",
+      "attempt_id": "669878d939214b929ec8175dcc63728d",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 6
+      },
+      "sequence": 9
+    },
+    {
+      "at": "2026-09-08T16:49:50.884083+00:00",
+      "attempt_id": "669878d939214b929ec8175dcc63728d",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 7
+      },
+      "sequence": 10
+    },
+    {
+      "at": "2026-09-08T16:49:50.886659+00:00",
+      "attempt_id": "669878d939214b929ec8175dcc63728d",
+      "kind": "STAGED",
+      "payload": {
+        "status": "COMPLETED"
+      },
+      "sequence": 11
+    },
+    {
+      "at": "2026-09-08T16:49:50.889117+00:00",
+      "attempt_id": "669878d939214b929ec8175dcc63728d",
+      "kind": "TERMINATED",
+      "payload": {
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "sequence": 12
+    },
+    {
+      "at": "2026-09-08T16:49:50.891628+00:00",
+      "attempt_id": "cb4ac170ce474e7e9e4fb23df41c40d5",
+      "kind": "ADMITTED",
+      "payload": {
+        "charged_evaluations": 8,
+        "number": 1,
+        "trial_id": "development-coordinate_fixed_step-11"
+      },
+      "sequence": 13
+    },
+    {
+      "at": "2026-09-08T16:49:50.894250+00:00",
+      "attempt_id": "cb4ac170ce474e7e9e4fb23df41c40d5",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 0
+      },
+      "sequence": 14
+    },
+    {
+      "at": "2026-09-08T16:49:50.896798+00:00",
+      "attempt_id": "cb4ac170ce474e7e9e4fb23df41c40d5",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 1
+      },
+      "sequence": 15
+    },
+    {
+      "at": "2026-09-08T16:49:50.899335+00:00",
+      "attempt_id": "cb4ac170ce474e7e9e4fb23df41c40d5",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 2
+      },
+      "sequence": 16
+    },
+    {
+      "at": "2026-09-08T16:49:50.901854+00:00",
+      "attempt_id": "cb4ac170ce474e7e9e4fb23df41c40d5",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 3
+      },
+      "sequence": 17
+    },
+    {
+      "at": "2026-09-08T16:49:50.904363+00:00",
+      "attempt_id": "cb4ac170ce474e7e9e4fb23df41c40d5",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 4
+      },
+      "sequence": 18
+    },
+    {
+      "at": "2026-09-08T16:49:50.906450+00:00",
+      "attempt_id": "cb4ac170ce474e7e9e4fb23df41c40d5",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 5
+      },
+      "sequence": 19
+    },
+    {
+      "at": "2026-09-08T16:49:50.908558+00:00",
+      "attempt_id": "cb4ac170ce474e7e9e4fb23df41c40d5",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 6
+      },
+      "sequence": 20
+    },
+    {
+      "at": "2026-09-08T16:49:50.910608+00:00",
+      "attempt_id": "cb4ac170ce474e7e9e4fb23df41c40d5",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 7
+      },
+      "sequence": 21
+    },
+    {
+      "at": "2026-09-08T16:49:50.917038+00:00",
+      "attempt_id": "cb4ac170ce474e7e9e4fb23df41c40d5",
+      "kind": "STAGED",
+      "payload": {
+        "status": "COMPLETED"
+      },
+      "sequence": 22
+    },
+    {
+      "at": "2026-09-08T16:49:50.919474+00:00",
+      "attempt_id": "cb4ac170ce474e7e9e4fb23df41c40d5",
+      "kind": "TERMINATED",
+      "payload": {
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "sequence": 23
+    },
+    {
+      "at": "2026-09-08T16:49:50.921491+00:00",
+      "attempt_id": "e72ac8355f06452ba137e071bf36f966",
+      "kind": "ADMITTED",
+      "payload": {
+        "charged_evaluations": 8,
+        "number": 1,
+        "trial_id": "confirmation-uniform_random-101"
+      },
+      "sequence": 24
+    },
+    {
+      "at": "2026-09-08T16:49:50.923706+00:00",
+      "attempt_id": "e72ac8355f06452ba137e071bf36f966",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 0
+      },
+      "sequence": 25
+    },
+    {
+      "at": "2026-09-08T16:49:50.926233+00:00",
+      "attempt_id": "e72ac8355f06452ba137e071bf36f966",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 1
+      },
+      "sequence": 26
+    },
+    {
+      "at": "2026-09-08T16:49:50.928731+00:00",
+      "attempt_id": "e72ac8355f06452ba137e071bf36f966",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 2
+      },
+      "sequence": 27
+    },
+    {
+      "at": "2026-09-08T16:49:50.931231+00:00",
+      "attempt_id": "e72ac8355f06452ba137e071bf36f966",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 3
+      },
+      "sequence": 28
+    },
+    {
+      "at": "2026-09-08T16:49:50.933740+00:00",
+      "attempt_id": "e72ac8355f06452ba137e071bf36f966",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 4
+      },
+      "sequence": 29
+    },
+    {
+      "at": "2026-09-08T16:49:50.936253+00:00",
+      "attempt_id": "e72ac8355f06452ba137e071bf36f966",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 5
+      },
+      "sequence": 30
+    },
+    {
+      "at": "2026-09-08T16:49:50.938740+00:00",
+      "attempt_id": "e72ac8355f06452ba137e071bf36f966",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 6
+      },
+      "sequence": 31
+    },
+    {
+      "at": "2026-09-08T16:49:50.941221+00:00",
+      "attempt_id": "e72ac8355f06452ba137e071bf36f966",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 7
+      },
+      "sequence": 32
+    },
+    {
+      "at": "2026-09-08T16:49:50.943684+00:00",
+      "attempt_id": "e72ac8355f06452ba137e071bf36f966",
+      "kind": "STAGED",
+      "payload": {
+        "status": "COMPLETED"
+      },
+      "sequence": 33
+    },
+    {
+      "at": "2026-09-08T16:49:50.946127+00:00",
+      "attempt_id": "e72ac8355f06452ba137e071bf36f966",
+      "kind": "TERMINATED",
+      "payload": {
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "sequence": 34
+    },
+    {
+      "at": "2026-09-08T16:49:50.948608+00:00",
+      "attempt_id": "ffdaa1d2abbf47dc860fc669edaf5494",
+      "kind": "ADMITTED",
+      "payload": {
+        "charged_evaluations": 8,
+        "number": 1,
+        "trial_id": "confirmation-coordinate_fixed_step-101"
+      },
+      "sequence": 35
+    },
+    {
+      "at": "2026-09-08T16:49:50.951105+00:00",
+      "attempt_id": "ffdaa1d2abbf47dc860fc669edaf5494",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 0
+      },
+      "sequence": 36
+    },
+    {
+      "at": "2026-09-08T16:49:50.953709+00:00",
+      "attempt_id": "ffdaa1d2abbf47dc860fc669edaf5494",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 1
+      },
+      "sequence": 37
+    },
+    {
+      "at": "2026-09-08T16:49:50.956421+00:00",
+      "attempt_id": "ffdaa1d2abbf47dc860fc669edaf5494",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 2
+      },
+      "sequence": 38
+    },
+    {
+      "at": "2026-09-08T16:49:50.958540+00:00",
+      "attempt_id": "ffdaa1d2abbf47dc860fc669edaf5494",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 3
+      },
+      "sequence": 39
+    },
+    {
+      "at": "2026-09-08T16:49:50.960633+00:00",
+      "attempt_id": "ffdaa1d2abbf47dc860fc669edaf5494",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 4
+      },
+      "sequence": 40
+    },
+    {
+      "at": "2026-09-08T16:49:50.963187+00:00",
+      "attempt_id": "ffdaa1d2abbf47dc860fc669edaf5494",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 5
+      },
+      "sequence": 41
+    },
+    {
+      "at": "2026-09-08T16:49:50.966092+00:00",
+      "attempt_id": "ffdaa1d2abbf47dc860fc669edaf5494",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 6
+      },
+      "sequence": 42
+    },
+    {
+      "at": "2026-09-08T16:49:50.968629+00:00",
+      "attempt_id": "ffdaa1d2abbf47dc860fc669edaf5494",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 7
+      },
+      "sequence": 43
+    },
+    {
+      "at": "2026-09-08T16:49:50.971510+00:00",
+      "attempt_id": "ffdaa1d2abbf47dc860fc669edaf5494",
+      "kind": "STAGED",
+      "payload": {
+        "status": "COMPLETED"
+      },
+      "sequence": 44
+    },
+    {
+      "at": "2026-09-08T16:49:50.973543+00:00",
+      "attempt_id": "ffdaa1d2abbf47dc860fc669edaf5494",
+      "kind": "TERMINATED",
+      "payload": {
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "sequence": 45
+    },
+    {
+      "at": "2026-09-08T16:49:50.975650+00:00",
+      "attempt_id": "4bdad8ca135345ef8daf1854942e38ae",
+      "kind": "ADMITTED",
+      "payload": {
+        "charged_evaluations": 8,
+        "number": 1,
+        "trial_id": "reproduction-development-uniform_random-11"
+      },
+      "sequence": 46
+    },
+    {
+      "at": "2026-09-08T16:49:50.978208+00:00",
+      "attempt_id": "4bdad8ca135345ef8daf1854942e38ae",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 0
+      },
+      "sequence": 47
+    },
+    {
+      "at": "2026-09-08T16:49:50.980772+00:00",
+      "attempt_id": "4bdad8ca135345ef8daf1854942e38ae",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 1
+      },
+      "sequence": 48
+    },
+    {
+      "at": "2026-09-08T16:49:50.983340+00:00",
+      "attempt_id": "4bdad8ca135345ef8daf1854942e38ae",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 2
+      },
+      "sequence": 49
+    },
+    {
+      "at": "2026-09-08T16:49:50.990947+00:00",
+      "attempt_id": "4bdad8ca135345ef8daf1854942e38ae",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 3
+      },
+      "sequence": 50
+    },
+    {
+      "at": "2026-09-08T16:49:50.997317+00:00",
+      "attempt_id": "4bdad8ca135345ef8daf1854942e38ae",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 4
+      },
+      "sequence": 51
+    },
+    {
+      "at": "2026-09-08T16:49:51.004476+00:00",
+      "attempt_id": "4bdad8ca135345ef8daf1854942e38ae",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 5
+      },
+      "sequence": 52
+    },
+    {
+      "at": "2026-09-08T16:49:51.013130+00:00",
+      "attempt_id": "4bdad8ca135345ef8daf1854942e38ae",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 6
+      },
+      "sequence": 53
+    },
+    {
+      "at": "2026-09-08T16:49:51.019478+00:00",
+      "attempt_id": "4bdad8ca135345ef8daf1854942e38ae",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 7
+      },
+      "sequence": 54
+    },
+    {
+      "at": "2026-09-08T16:49:51.021549+00:00",
+      "attempt_id": "4bdad8ca135345ef8daf1854942e38ae",
+      "kind": "STAGED",
+      "payload": {
+        "status": "COMPLETED"
+      },
+      "sequence": 55
+    },
+    {
+      "at": "2026-09-08T16:49:51.023608+00:00",
+      "attempt_id": "4bdad8ca135345ef8daf1854942e38ae",
+      "kind": "TERMINATED",
+      "payload": {
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "sequence": 56
+    },
+    {
+      "at": "2026-09-08T16:49:51.026194+00:00",
+      "attempt_id": "bf41c8719c8e400b8e388e2882e30c02",
+      "kind": "ADMITTED",
+      "payload": {
+        "charged_evaluations": 8,
+        "number": 1,
+        "trial_id": "reproduction-development-coordinate_fixed_step-11"
+      },
+      "sequence": 57
+    },
+    {
+      "at": "2026-09-08T16:49:51.028779+00:00",
+      "attempt_id": "bf41c8719c8e400b8e388e2882e30c02",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 0
+      },
+      "sequence": 58
+    },
+    {
+      "at": "2026-09-08T16:49:51.031328+00:00",
+      "attempt_id": "bf41c8719c8e400b8e388e2882e30c02",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 1
+      },
+      "sequence": 59
+    },
+    {
+      "at": "2026-09-08T16:49:51.033992+00:00",
+      "attempt_id": "bf41c8719c8e400b8e388e2882e30c02",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 2
+      },
+      "sequence": 60
+    },
+    {
+      "at": "2026-09-08T16:49:51.036564+00:00",
+      "attempt_id": "bf41c8719c8e400b8e388e2882e30c02",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 3
+      },
+      "sequence": 61
+    },
+    {
+      "at": "2026-09-08T16:49:51.039138+00:00",
+      "attempt_id": "bf41c8719c8e400b8e388e2882e30c02",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 4
+      },
+      "sequence": 62
+    },
+    {
+      "at": "2026-09-08T16:49:51.041693+00:00",
+      "attempt_id": "bf41c8719c8e400b8e388e2882e30c02",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 5
+      },
+      "sequence": 63
+    },
+    {
+      "at": "2026-09-08T16:49:51.044245+00:00",
+      "attempt_id": "bf41c8719c8e400b8e388e2882e30c02",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 6
+      },
+      "sequence": 64
+    },
+    {
+      "at": "2026-09-08T16:49:51.046794+00:00",
+      "attempt_id": "bf41c8719c8e400b8e388e2882e30c02",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 7
+      },
+      "sequence": 65
+    },
+    {
+      "at": "2026-09-08T16:49:51.049297+00:00",
+      "attempt_id": "bf41c8719c8e400b8e388e2882e30c02",
+      "kind": "STAGED",
+      "payload": {
+        "status": "COMPLETED"
+      },
+      "sequence": 66
+    },
+    {
+      "at": "2026-09-08T16:49:51.051824+00:00",
+      "attempt_id": "bf41c8719c8e400b8e388e2882e30c02",
+      "kind": "TERMINATED",
+      "payload": {
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "sequence": 67
+    },
+    {
+      "at": "2026-09-08T16:49:51.054324+00:00",
+      "attempt_id": "93307d33fb9a4fbbb2a8ce6196d9283d",
+      "kind": "ADMITTED",
+      "payload": {
+        "charged_evaluations": 8,
+        "number": 1,
+        "trial_id": "reproduction-confirmation-uniform_random-101"
+      },
+      "sequence": 68
+    },
+    {
+      "at": "2026-09-08T16:49:51.056900+00:00",
+      "attempt_id": "93307d33fb9a4fbbb2a8ce6196d9283d",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 0
+      },
+      "sequence": 69
+    },
+    {
+      "at": "2026-09-08T16:49:51.059474+00:00",
+      "attempt_id": "93307d33fb9a4fbbb2a8ce6196d9283d",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 1
+      },
+      "sequence": 70
+    },
+    {
+      "at": "2026-09-08T16:49:51.062375+00:00",
+      "attempt_id": "93307d33fb9a4fbbb2a8ce6196d9283d",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 2
+      },
+      "sequence": 71
+    },
+    {
+      "at": "2026-09-08T16:49:51.064473+00:00",
+      "attempt_id": "93307d33fb9a4fbbb2a8ce6196d9283d",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 3
+      },
+      "sequence": 72
+    },
+    {
+      "at": "2026-09-08T16:49:51.066963+00:00",
+      "attempt_id": "93307d33fb9a4fbbb2a8ce6196d9283d",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 4
+      },
+      "sequence": 73
+    },
+    {
+      "at": "2026-09-08T16:49:51.069532+00:00",
+      "attempt_id": "93307d33fb9a4fbbb2a8ce6196d9283d",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 5
+      },
+      "sequence": 74
+    },
+    {
+      "at": "2026-09-08T16:49:51.071679+00:00",
+      "attempt_id": "93307d33fb9a4fbbb2a8ce6196d9283d",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 6
+      },
+      "sequence": 75
+    },
+    {
+      "at": "2026-09-08T16:49:51.074278+00:00",
+      "attempt_id": "93307d33fb9a4fbbb2a8ce6196d9283d",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 7
+      },
+      "sequence": 76
+    },
+    {
+      "at": "2026-09-08T16:49:51.076776+00:00",
+      "attempt_id": "93307d33fb9a4fbbb2a8ce6196d9283d",
+      "kind": "STAGED",
+      "payload": {
+        "status": "COMPLETED"
+      },
+      "sequence": 77
+    },
+    {
+      "at": "2026-09-08T16:49:51.079269+00:00",
+      "attempt_id": "93307d33fb9a4fbbb2a8ce6196d9283d",
+      "kind": "TERMINATED",
+      "payload": {
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "sequence": 78
+    },
+    {
+      "at": "2026-09-08T16:49:51.081832+00:00",
+      "attempt_id": "090ae7ce51364b6d91cdd61abe174ea1",
+      "kind": "ADMITTED",
+      "payload": {
+        "charged_evaluations": 8,
+        "number": 1,
+        "trial_id": "reproduction-confirmation-coordinate_fixed_step-101"
+      },
+      "sequence": 79
+    },
+    {
+      "at": "2026-09-08T16:49:51.084411+00:00",
+      "attempt_id": "090ae7ce51364b6d91cdd61abe174ea1",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 0
+      },
+      "sequence": 80
+    },
+    {
+      "at": "2026-09-08T16:49:51.086528+00:00",
+      "attempt_id": "090ae7ce51364b6d91cdd61abe174ea1",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 1
+      },
+      "sequence": 81
+    },
+    {
+      "at": "2026-09-08T16:49:51.089096+00:00",
+      "attempt_id": "090ae7ce51364b6d91cdd61abe174ea1",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 2
+      },
+      "sequence": 82
+    },
+    {
+      "at": "2026-09-08T16:49:51.091636+00:00",
+      "attempt_id": "090ae7ce51364b6d91cdd61abe174ea1",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 3
+      },
+      "sequence": 83
+    },
+    {
+      "at": "2026-09-08T16:49:51.094180+00:00",
+      "attempt_id": "090ae7ce51364b6d91cdd61abe174ea1",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 4
+      },
+      "sequence": 84
+    },
+    {
+      "at": "2026-09-08T16:49:51.096733+00:00",
+      "attempt_id": "090ae7ce51364b6d91cdd61abe174ea1",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 5
+      },
+      "sequence": 85
+    },
+    {
+      "at": "2026-09-08T16:49:51.099293+00:00",
+      "attempt_id": "090ae7ce51364b6d91cdd61abe174ea1",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 6
+      },
+      "sequence": 86
+    },
+    {
+      "at": "2026-09-08T16:49:51.101816+00:00",
+      "attempt_id": "090ae7ce51364b6d91cdd61abe174ea1",
+      "kind": "OBSERVED",
+      "payload": {
+        "index": 7
+      },
+      "sequence": 87
+    },
+    {
+      "at": "2026-09-08T16:49:51.104353+00:00",
+      "attempt_id": "090ae7ce51364b6d91cdd61abe174ea1",
+      "kind": "STAGED",
+      "payload": {
+        "status": "COMPLETED"
+      },
+      "sequence": 88
+    },
+    {
+      "at": "2026-09-08T16:49:51.106894+00:00",
+      "attempt_id": "090ae7ce51364b6d91cdd61abe174ea1",
+      "kind": "TERMINATED",
+      "payload": {
+        "reason": "Full frozen observation allowance evaluated",
+        "status": "COMPLETED"
+      },
+      "sequence": 89
+    }
+  ],
+  "schema_version": 1,
+  "source_records": [
+    {
+      "description": "Original implementation of public known-answer rosenbrock-2d-v1 and reviewed search policies",
+      "id": "source-rosenbrock-2d-v1",
+      "license": "AGPL-3.0-only",
+      "locator": "docs/decisions/003-numerical-workbench.md",
+      "schema_version": 1,
+      "type": "SourceRecord"
+    },
+    {
+      "description": "Complete workbench inventory accepted before this study was admitted",
+      "id": "source-workbench-5def4417ca694b63b628a19b34e40f0c-rosenbrock-fixed-step",
+      "license": "AGPL-3.0-only",
+      "locator": "sha256:dd4bcf499189f62672829b8afb00c16a54506617f2cf4c0f066179cbdfbade9d",
+      "schema_version": 1,
+      "type": "SourceRecord"
+    }
+  ],
+  "study": {
+    "attempt_timeout_seconds": 10,
+    "baseline": "uniform_random",
+    "candidate": "coordinate_fixed_step",
+    "comparison": "descriptive-confirmation-median-best-v1",
+    "confirmation_seeds": [
+      101
+    ],
+    "development_seeds": [
+      11
+    ],
+    "domain": [
+      [
+        -2.0,
+        2.0
+      ],
+      [
+        -1.0,
+        3.0
+      ]
+    ],
+    "evaluations_per_policy": 8,
+    "evaluator": "rosenbrock-2d-v1",
+    "falsifier": "The candidate confirmation median is greater than or equal to the baseline median; invalid or missing runs or unequal charged costs make the comparison inconclusive.",
+    "feedback": "own-scalar-only-fresh-policy-per-run",
+    "hypothesis": "coordinate_fixed_step will obtain a lower confirmation median best objective than uniform_random.",
+    "initial_step": 0.5,
+    "max_attempts_per_trial": 2,
+    "quality_threshold": 0.01,
+    "question": "On rosenbrock-2d-v1, does coordinate_fixed_step obtain a lower confirmation median best objective than uniform_random at equal evaluation allowance?",
+    "reproduction_tolerance": 1e-12,
+    "revision": "1",
+    "schema_version": 2,
+    "start": [
+      -1.2,
+      1.0
+    ],
+    "study_id": "rosenbrock-2d-v1-coordinate_fixed_step-v-uniform_random"
+  },
+  "study_digest": "ea75a1a507856a0adc44f927b5b1c133cdc3cfb754c54854c462f69686443843",
+  "trial_specs": [
+    {
+      "allocation": 16,
+      "id": "development-uniform_random-11",
+      "phase": "development",
+      "policy": "uniform_random",
+      "pool": "development:uniform_random",
+      "reproduces": null,
+      "seed": 11,
+      "source_phase": "development"
+    },
+    {
+      "allocation": 16,
+      "id": "development-coordinate_fixed_step-11",
+      "phase": "development",
+      "policy": "coordinate_fixed_step",
+      "pool": "development:coordinate_fixed_step",
+      "reproduces": null,
+      "seed": 11,
+      "source_phase": "development"
+    },
+    {
+      "allocation": 16,
+      "id": "confirmation-uniform_random-101",
+      "phase": "confirmation",
+      "policy": "uniform_random",
+      "pool": "confirmation:uniform_random",
+      "reproduces": null,
+      "seed": 101,
+      "source_phase": "confirmation"
+    },
+    {
+      "allocation": 16,
+      "id": "confirmation-coordinate_fixed_step-101",
+      "phase": "confirmation",
+      "policy": "coordinate_fixed_step",
+      "pool": "confirmation:coordinate_fixed_step",
+      "reproduces": null,
+      "seed": 101,
+      "source_phase": "confirmation"
+    },
+    {
+      "allocation": 16,
+      "id": "reproduction-development-uniform_random-11",
+      "phase": "reproduction",
+      "policy": "uniform_random",
+      "pool": "reproduction:uniform_random",
+      "reproduces": "development-uniform_random-11",
+      "seed": 11,
+      "source_phase": "development"
+    },
+    {
+      "allocation": 16,
+      "id": "reproduction-development-coordinate_fixed_step-11",
+      "phase": "reproduction",
+      "policy": "coordinate_fixed_step",
+      "pool": "reproduction:coordinate_fixed_step",
+      "reproduces": "development-coordinate_fixed_step-11",
+      "seed": 11,
+      "source_phase": "development"
+    },
+    {
+      "allocation": 16,
+      "id": "reproduction-confirmation-uniform_random-101",
+      "phase": "reproduction",
+      "policy": "uniform_random",
+      "pool": "reproduction:uniform_random",
+      "reproduces": "confirmation-uniform_random-101",
+      "seed": 101,
+      "source_phase": "confirmation"
+    },
+    {
+      "allocation": 16,
+      "id": "reproduction-confirmation-coordinate_fixed_step-101",
+      "phase": "reproduction",
+      "policy": "coordinate_fixed_step",
+      "pool": "reproduction:coordinate_fixed_step",
+      "reproduces": "confirmation-coordinate_fixed_step-101",
+      "seed": 101,
+      "source_phase": "confirmation"
+    }
+  ]
+}

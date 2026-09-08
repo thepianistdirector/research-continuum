@@ -1,0 +1,447 @@
+{
+  "created_at": "2026-09-08T16:48:19.867950+00:00",
+  "execution_id": "1e03cbef90854de1b9c75f89ae54f6d0",
+  "plan": {
+    "campaign_id": "numerical-workbench",
+    "question": "How do bounded coordinate search and its step-halving ablation compare with random and grid baselines across three public numerical fixtures?",
+    "schema_version": 1,
+    "studies": [
+      {
+        "ablation_of": null,
+        "factor": null,
+        "id": "rosenbrock",
+        "study": {
+          "attempt_timeout_seconds": 10,
+          "baseline": "uniform_random",
+          "candidate": "coordinate_refinement",
+          "comparison": "descriptive-confirmation-median-best-v1",
+          "confirmation_seeds": [
+            101,
+            202,
+            303
+          ],
+          "development_seeds": [
+            11,
+            22,
+            33
+          ],
+          "domain": [
+            [
+              -2.0,
+              2.0
+            ],
+            [
+              -1.0,
+              3.0
+            ]
+          ],
+          "evaluations_per_policy": 128,
+          "evaluator": "rosenbrock-2d-v1",
+          "falsifier": "The candidate confirmation median is greater than or equal to the baseline median; invalid or missing runs or unequal charged costs make the comparison inconclusive.",
+          "feedback": "own-scalar-only-fresh-policy-per-run",
+          "hypothesis": "coordinate_refinement will obtain a lower confirmation median best objective than uniform_random.",
+          "initial_step": 0.5,
+          "max_attempts_per_trial": 2,
+          "quality_threshold": 0.01,
+          "question": "On rosenbrock-2d-v1, does coordinate_refinement obtain a lower confirmation median best objective than uniform_random at equal evaluation allowance?",
+          "reproduction_tolerance": 1e-12,
+          "revision": "1",
+          "schema_version": 2,
+          "start": [
+            -1.2,
+            1.0
+          ],
+          "study_id": "rosenbrock-2d-v1-coordinate_refinement-v-uniform_random"
+        }
+      },
+      {
+        "ablation_of": "rosenbrock",
+        "factor": "candidate",
+        "id": "rosenbrock-fixed-step",
+        "study": {
+          "attempt_timeout_seconds": 10,
+          "baseline": "uniform_random",
+          "candidate": "coordinate_fixed_step",
+          "comparison": "descriptive-confirmation-median-best-v1",
+          "confirmation_seeds": [
+            101,
+            202,
+            303
+          ],
+          "development_seeds": [
+            11,
+            22,
+            33
+          ],
+          "domain": [
+            [
+              -2.0,
+              2.0
+            ],
+            [
+              -1.0,
+              3.0
+            ]
+          ],
+          "evaluations_per_policy": 128,
+          "evaluator": "rosenbrock-2d-v1",
+          "falsifier": "The candidate confirmation median is greater than or equal to the baseline median; invalid or missing runs or unequal charged costs make the comparison inconclusive.",
+          "feedback": "own-scalar-only-fresh-policy-per-run",
+          "hypothesis": "coordinate_fixed_step will obtain a lower confirmation median best objective than uniform_random.",
+          "initial_step": 0.5,
+          "max_attempts_per_trial": 2,
+          "quality_threshold": 0.01,
+          "question": "On rosenbrock-2d-v1, does coordinate_fixed_step obtain a lower confirmation median best objective than uniform_random at equal evaluation allowance?",
+          "reproduction_tolerance": 1e-12,
+          "revision": "1",
+          "schema_version": 2,
+          "start": [
+            -1.2,
+            1.0
+          ],
+          "study_id": "rosenbrock-2d-v1-coordinate_fixed_step-v-uniform_random"
+        }
+      },
+      {
+        "ablation_of": null,
+        "factor": null,
+        "id": "rosenbrock-grid",
+        "study": {
+          "attempt_timeout_seconds": 10,
+          "baseline": "grid_search",
+          "candidate": "coordinate_refinement",
+          "comparison": "descriptive-confirmation-median-best-v1",
+          "confirmation_seeds": [
+            101,
+            202,
+            303
+          ],
+          "development_seeds": [
+            11,
+            22,
+            33
+          ],
+          "domain": [
+            [
+              -2.0,
+              2.0
+            ],
+            [
+              -1.0,
+              3.0
+            ]
+          ],
+          "evaluations_per_policy": 128,
+          "evaluator": "rosenbrock-2d-v1",
+          "falsifier": "The candidate confirmation median is greater than or equal to the baseline median; invalid or missing runs or unequal charged costs make the comparison inconclusive.",
+          "feedback": "own-scalar-only-fresh-policy-per-run",
+          "hypothesis": "coordinate_refinement will obtain a lower confirmation median best objective than grid_search.",
+          "initial_step": 0.5,
+          "max_attempts_per_trial": 2,
+          "quality_threshold": 0.01,
+          "question": "On rosenbrock-2d-v1, does coordinate_refinement obtain a lower confirmation median best objective than grid_search at equal evaluation allowance?",
+          "reproduction_tolerance": 1e-12,
+          "revision": "1",
+          "schema_version": 2,
+          "start": [
+            -1.2,
+            1.0
+          ],
+          "study_id": "rosenbrock-2d-v1-coordinate_refinement-v-grid_search"
+        }
+      },
+      {
+        "ablation_of": null,
+        "factor": null,
+        "id": "sphere",
+        "study": {
+          "attempt_timeout_seconds": 10,
+          "baseline": "uniform_random",
+          "candidate": "coordinate_refinement",
+          "comparison": "descriptive-confirmation-median-best-v1",
+          "confirmation_seeds": [
+            101,
+            202,
+            303
+          ],
+          "development_seeds": [
+            11,
+            22,
+            33
+          ],
+          "domain": [
+            [
+              -2.0,
+              2.0
+            ],
+            [
+              -2.0,
+              2.0
+            ]
+          ],
+          "evaluations_per_policy": 128,
+          "evaluator": "sphere-2d-v1",
+          "falsifier": "The candidate confirmation median is greater than or equal to the baseline median; invalid or missing runs or unequal charged costs make the comparison inconclusive.",
+          "feedback": "own-scalar-only-fresh-policy-per-run",
+          "hypothesis": "coordinate_refinement will obtain a lower confirmation median best objective than uniform_random.",
+          "initial_step": 0.5,
+          "max_attempts_per_trial": 2,
+          "quality_threshold": 0.01,
+          "question": "On sphere-2d-v1, does coordinate_refinement obtain a lower confirmation median best objective than uniform_random at equal evaluation allowance?",
+          "reproduction_tolerance": 1e-12,
+          "revision": "1",
+          "schema_version": 2,
+          "start": [
+            -1.2,
+            1.0
+          ],
+          "study_id": "sphere-2d-v1-coordinate_refinement-v-uniform_random"
+        }
+      },
+      {
+        "ablation_of": "sphere",
+        "factor": "candidate",
+        "id": "sphere-fixed-step",
+        "study": {
+          "attempt_timeout_seconds": 10,
+          "baseline": "uniform_random",
+          "candidate": "coordinate_fixed_step",
+          "comparison": "descriptive-confirmation-median-best-v1",
+          "confirmation_seeds": [
+            101,
+            202,
+            303
+          ],
+          "development_seeds": [
+            11,
+            22,
+            33
+          ],
+          "domain": [
+            [
+              -2.0,
+              2.0
+            ],
+            [
+              -2.0,
+              2.0
+            ]
+          ],
+          "evaluations_per_policy": 128,
+          "evaluator": "sphere-2d-v1",
+          "falsifier": "The candidate confirmation median is greater than or equal to the baseline median; invalid or missing runs or unequal charged costs make the comparison inconclusive.",
+          "feedback": "own-scalar-only-fresh-policy-per-run",
+          "hypothesis": "coordinate_fixed_step will obtain a lower confirmation median best objective than uniform_random.",
+          "initial_step": 0.5,
+          "max_attempts_per_trial": 2,
+          "quality_threshold": 0.01,
+          "question": "On sphere-2d-v1, does coordinate_fixed_step obtain a lower confirmation median best objective than uniform_random at equal evaluation allowance?",
+          "reproduction_tolerance": 1e-12,
+          "revision": "1",
+          "schema_version": 2,
+          "start": [
+            -1.2,
+            1.0
+          ],
+          "study_id": "sphere-2d-v1-coordinate_fixed_step-v-uniform_random"
+        }
+      },
+      {
+        "ablation_of": null,
+        "factor": null,
+        "id": "sphere-grid",
+        "study": {
+          "attempt_timeout_seconds": 10,
+          "baseline": "grid_search",
+          "candidate": "coordinate_refinement",
+          "comparison": "descriptive-confirmation-median-best-v1",
+          "confirmation_seeds": [
+            101,
+            202,
+            303
+          ],
+          "development_seeds": [
+            11,
+            22,
+            33
+          ],
+          "domain": [
+            [
+              -2.0,
+              2.0
+            ],
+            [
+              -2.0,
+              2.0
+            ]
+          ],
+          "evaluations_per_policy": 128,
+          "evaluator": "sphere-2d-v1",
+          "falsifier": "The candidate confirmation median is greater than or equal to the baseline median; invalid or missing runs or unequal charged costs make the comparison inconclusive.",
+          "feedback": "own-scalar-only-fresh-policy-per-run",
+          "hypothesis": "coordinate_refinement will obtain a lower confirmation median best objective than grid_search.",
+          "initial_step": 0.5,
+          "max_attempts_per_trial": 2,
+          "quality_threshold": 0.01,
+          "question": "On sphere-2d-v1, does coordinate_refinement obtain a lower confirmation median best objective than grid_search at equal evaluation allowance?",
+          "reproduction_tolerance": 1e-12,
+          "revision": "1",
+          "schema_version": 2,
+          "start": [
+            -1.2,
+            1.0
+          ],
+          "study_id": "sphere-2d-v1-coordinate_refinement-v-grid_search"
+        }
+      },
+      {
+        "ablation_of": null,
+        "factor": null,
+        "id": "ellipsoid",
+        "study": {
+          "attempt_timeout_seconds": 10,
+          "baseline": "uniform_random",
+          "candidate": "coordinate_refinement",
+          "comparison": "descriptive-confirmation-median-best-v1",
+          "confirmation_seeds": [
+            101,
+            202,
+            303
+          ],
+          "development_seeds": [
+            11,
+            22,
+            33
+          ],
+          "domain": [
+            [
+              -2.0,
+              2.0
+            ],
+            [
+              -2.0,
+              2.0
+            ]
+          ],
+          "evaluations_per_policy": 128,
+          "evaluator": "ellipsoid-2d-v1",
+          "falsifier": "The candidate confirmation median is greater than or equal to the baseline median; invalid or missing runs or unequal charged costs make the comparison inconclusive.",
+          "feedback": "own-scalar-only-fresh-policy-per-run",
+          "hypothesis": "coordinate_refinement will obtain a lower confirmation median best objective than uniform_random.",
+          "initial_step": 0.5,
+          "max_attempts_per_trial": 2,
+          "quality_threshold": 0.01,
+          "question": "On ellipsoid-2d-v1, does coordinate_refinement obtain a lower confirmation median best objective than uniform_random at equal evaluation allowance?",
+          "reproduction_tolerance": 1e-12,
+          "revision": "1",
+          "schema_version": 2,
+          "start": [
+            -1.2,
+            1.0
+          ],
+          "study_id": "ellipsoid-2d-v1-coordinate_refinement-v-uniform_random"
+        }
+      },
+      {
+        "ablation_of": "ellipsoid",
+        "factor": "candidate",
+        "id": "ellipsoid-fixed-step",
+        "study": {
+          "attempt_timeout_seconds": 10,
+          "baseline": "uniform_random",
+          "candidate": "coordinate_fixed_step",
+          "comparison": "descriptive-confirmation-median-best-v1",
+          "confirmation_seeds": [
+            101,
+            202,
+            303
+          ],
+          "development_seeds": [
+            11,
+            22,
+            33
+          ],
+          "domain": [
+            [
+              -2.0,
+              2.0
+            ],
+            [
+              -2.0,
+              2.0
+            ]
+          ],
+          "evaluations_per_policy": 128,
+          "evaluator": "ellipsoid-2d-v1",
+          "falsifier": "The candidate confirmation median is greater than or equal to the baseline median; invalid or missing runs or unequal charged costs make the comparison inconclusive.",
+          "feedback": "own-scalar-only-fresh-policy-per-run",
+          "hypothesis": "coordinate_fixed_step will obtain a lower confirmation median best objective than uniform_random.",
+          "initial_step": 0.5,
+          "max_attempts_per_trial": 2,
+          "quality_threshold": 0.01,
+          "question": "On ellipsoid-2d-v1, does coordinate_fixed_step obtain a lower confirmation median best objective than uniform_random at equal evaluation allowance?",
+          "reproduction_tolerance": 1e-12,
+          "revision": "1",
+          "schema_version": 2,
+          "start": [
+            -1.2,
+            1.0
+          ],
+          "study_id": "ellipsoid-2d-v1-coordinate_fixed_step-v-uniform_random"
+        }
+      },
+      {
+        "ablation_of": null,
+        "factor": null,
+        "id": "ellipsoid-grid",
+        "study": {
+          "attempt_timeout_seconds": 10,
+          "baseline": "grid_search",
+          "candidate": "coordinate_refinement",
+          "comparison": "descriptive-confirmation-median-best-v1",
+          "confirmation_seeds": [
+            101,
+            202,
+            303
+          ],
+          "development_seeds": [
+            11,
+            22,
+            33
+          ],
+          "domain": [
+            [
+              -2.0,
+              2.0
+            ],
+            [
+              -2.0,
+              2.0
+            ]
+          ],
+          "evaluations_per_policy": 128,
+          "evaluator": "ellipsoid-2d-v1",
+          "falsifier": "The candidate confirmation median is greater than or equal to the baseline median; invalid or missing runs or unequal charged costs make the comparison inconclusive.",
+          "feedback": "own-scalar-only-fresh-policy-per-run",
+          "hypothesis": "coordinate_refinement will obtain a lower confirmation median best objective than grid_search.",
+          "initial_step": 0.5,
+          "max_attempts_per_trial": 2,
+          "quality_threshold": 0.01,
+          "question": "On ellipsoid-2d-v1, does coordinate_refinement obtain a lower confirmation median best objective than grid_search at equal evaluation allowance?",
+          "reproduction_tolerance": 1e-12,
+          "revision": "1",
+          "schema_version": 2,
+          "start": [
+            -1.2,
+            1.0
+          ],
+          "study_id": "ellipsoid-2d-v1-coordinate_refinement-v-grid_search"
+        }
+      }
+    ]
+  },
+  "plan_digest": "cc9766c30e65f9ea8cc9b314c094049f483d9f73324d995b9b832cf292ec86e1",
+  "reproduction_source": "b528e745db07235e34f45528ca0cf3f3db4c59a30575b59e7404f2b3ebcff7ff",
+  "schema_version": 1,
+  "type": "FrozenCampaign"
+}

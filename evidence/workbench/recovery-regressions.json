@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "issue": "Paused campaign recovery after exhausted trials and completed-campaign runtime admission",
+  "before": {
+    "evidence_level": "OBSERVED FAILURES",
+    "output": "test_pause_after_skips_previously_exhausted_trials (test_workbench.CampaignTests.test_pause_after_skips_previously_exhausted_trials) ... FAIL\ntest_completed_campaign_cannot_resume_under_a_changed_runtime (test_workbench.CampaignTests.test_completed_campaign_cannot_resume_under_a_changed_runtime) ... FAIL\n\n======================================================================\nFAIL: test_pause_after_skips_previously_exhausted_trials (test_workbench.CampaignTests.test_pause_after_skips_previously_exhausted_trials)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"$PROJECT/tests/test_workbench.py\", line 308, in test_pause_after_skips_previously_exhausted_trials\n    self.assertEqual(completed_after, completed_before + 1)\nAssertionError: 0 != 1\n\n======================================================================\nFAIL: test_completed_campaign_cannot_resume_under_a_changed_runtime (test_workbench.CampaignTests.test_completed_campaign_cannot_resume_under_a_changed_runtime)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"$PROJECT/tests/test_workbench.py\", line 315, in test_completed_campaign_cannot_resume_under_a_changed_runtime\n    with self.assertRaisesRegex(ValueError, 'Runtime identity changed'):\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n----------------------------------------------------------------------\nRan 2 tests in 4.368s\n\nFAILED (failures=2)\n"
+  },
+  "fixes": [
+    "Previously exhausted trials no longer consume the remaining-trial pause count.",
+    "Campaign run/resume checks every member runtime before returning, including when all members are terminal.",
+    "Campaign reproduction record reconciliation explicitly states that no new execution occurred."
+  ],
+  "targeted_after": {
+    "evidence_level": "AUTOMATED PASS",
+    "output": "test_pause_after_skips_previously_exhausted_trials (test_workbench.CampaignTests.test_pause_after_skips_previously_exhausted_trials) ... ok\ntest_completed_campaign_cannot_resume_under_a_changed_runtime (test_workbench.CampaignTests.test_completed_campaign_cannot_resume_under_a_changed_runtime) ... ok\ntest_cli_full_campaign_workflow_and_record_no_overwrite (test_workbench.CampaignTests.test_cli_full_campaign_workflow_and_record_no_overwrite) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 9.892s\n\nOK\n"
+  },
+  "full_source_verification": "automated-final-source.json",
+  "limitations": [
+    "Regression tests exercise local process death and protocol behavior; no human or platform-review claim."
+  ]
+}

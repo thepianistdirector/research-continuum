@@ -1,0 +1,199 @@
+{
+  "files": {
+    "campaign.json": {
+      "bytes": 15663,
+      "sha256": "a59d0965168a1668d73a6c5499c11da308b39087251d99f8c333b00826d3da36"
+    },
+    "index.html": {
+      "bytes": 2506362,
+      "sha256": "7712abd958614672043fccb4ca46504b8a2779278a9829eaef06ecaee4c1df98"
+    },
+    "studies/ellipsoid-fixed-step/evidence.json": {
+      "bytes": 1226952,
+      "sha256": "2f60541649941a35da14cdf6c79a1167cc3fa4a5815fcf63c0ff645bb689c365"
+    },
+    "studies/ellipsoid-fixed-step/manifest.json": {
+      "bytes": 841,
+      "sha256": "1af8a7c68b4578c1a35fe3c39c500d54f1f57eacd2e2d6e16dc4eb4939d905c3"
+    },
+    "studies/ellipsoid-fixed-step/records.json": {
+      "bytes": 62328,
+      "sha256": "db16c0ad3a4ccef4c2adde959d8002db38a520430df338bf5ff1d2a02cd6e61f"
+    },
+    "studies/ellipsoid-fixed-step/report.html": {
+      "bytes": 28919,
+      "sha256": "df930d4369d4feb2627bb112317a550ac7bde7289ff4812d175b33ef793d6d6b"
+    },
+    "studies/ellipsoid-fixed-step/summary.json": {
+      "bytes": 23703,
+      "sha256": "2c19c8438e075c4253eb88446953c40719095f9cb8436a5e4d016589ff4782bb"
+    },
+    "studies/ellipsoid-grid/evidence.json": {
+      "bytes": 1233657,
+      "sha256": "af1e60c0e85c2b4b3afabed0a5da5ee00b6bbda861e8c5db4d3b22ac9c841b56"
+    },
+    "studies/ellipsoid-grid/manifest.json": {
+      "bytes": 841,
+      "sha256": "b50f2b0cfed54a01653cf9bb137562910ff0a1ddaf4e82aa77ea7d716081552c"
+    },
+    "studies/ellipsoid-grid/records.json": {
+      "bytes": 62074,
+      "sha256": "14c4a61a6bfd20317a577956154b053014f4c90c0e8bc831a5e87db8113c86db"
+    },
+    "studies/ellipsoid-grid/report.html": {
+      "bytes": 28959,
+      "sha256": "9466c5d3ca52c12ea405f1800d046275798a70d4f65fad5b508ba05e6cbb2b12"
+    },
+    "studies/ellipsoid-grid/summary.json": {
+      "bytes": 23472,
+      "sha256": "190c68c56bee76e4fde94d42b5326256241c6f40e1cedf4353bc555ad971ffad"
+    },
+    "studies/ellipsoid/evidence.json": {
+      "bytes": 1251305,
+      "sha256": "84d4ff324340178a667c001241b805058123416aef8e22e16cdeb0f5956c2abd"
+    },
+    "studies/ellipsoid/manifest.json": {
+      "bytes": 841,
+      "sha256": "fb6b4e54d6d99a22d7a67f23522aafec0486a1298d0d446983a46fd22fe7df47"
+    },
+    "studies/ellipsoid/records.json": {
+      "bytes": 62382,
+      "sha256": "d60978fac40c2d4934be0047965afb726009e66d7cd409d3906acb46f6c82b1f"
+    },
+    "studies/ellipsoid/report.html": {
+      "bytes": 29104,
+      "sha256": "cc96bd6e18e58c422dff31c2eb839e0902c79a8dfc005007e029f4515bacfd23"
+    },
+    "studies/ellipsoid/summary.json": {
+      "bytes": 23719,
+      "sha256": "b8fcaa1781c54f654e09b1e87b2b593a2a0f0453df3a2f0a6f88592ff600acb1"
+    },
+    "studies/rosenbrock-fixed-step/evidence.json": {
+      "bytes": 1207774,
+      "sha256": "3999e9182754433e706439993f337996243fe1d10adb991f5c0a035d6f1b96f3"
+    },
+    "studies/rosenbrock-fixed-step/manifest.json": {
+      "bytes": 841,
+      "sha256": "bb5697516f98043d56eb8abc785a3ce68da29371c8f681733ac21750e66328b5"
+    },
+    "studies/rosenbrock-fixed-step/records.json": {
+      "bytes": 62304,
+      "sha256": "6d54d30135f687210a9eba8e04a48dd6a6e21381c8fb35f8b22a92463d7b7579"
+    },
+    "studies/rosenbrock-fixed-step/report.html": {
+      "bytes": 28903,
+      "sha256": "8edcf9de76c7fec59de38895ec5146a06df3d6db46817a43e93e5f0f48bda03f"
+    },
+    "studies/rosenbrock-fixed-step/summary.json": {
+      "bytes": 23653,
+      "sha256": "3bca589650acc2a5b2e6c56e3c690b4dbba8e7e14734ed6aa56ce58783fded5b"
+    },
+    "studies/rosenbrock-grid/evidence.json": {
+      "bytes": 1212833,
+      "sha256": "55db7eeca4158a5ae91c59747aeee07c69bc02e0cafbef203f267ca88f2a90e3"
+    },
+    "studies/rosenbrock-grid/manifest.json": {
+      "bytes": 841,
+      "sha256": "7f793f193852ab1835de8a9c11cd94419ab974982a889e975493e102af2c91a0"
+    },
+    "studies/rosenbrock-grid/records.json": {
+      "bytes": 61994,
+      "sha256": "9459fccaa62443872b2fcb8b8d209eba192fb2421cc7be9998d5a2bc1284807d"
+    },
+    "studies/rosenbrock-grid/report.html": {
+      "bytes": 28907,
+      "sha256": "9078e44f5bf121c8bcf474383fd1337f1e17dd4781800bbd22627dbf961fe14d"
+    },
+    "studies/rosenbrock-grid/summary.json": {
+      "bytes": 23413,
+      "sha256": "7023db40fb916d048b2a98f83b87ae9852aabe6b525d51accb172227631de458"
+    },
+    "studies/rosenbrock/evidence.json": {
+      "bytes": 1230359,
+      "sha256": "d17644f76d56aa365b439ead09486f8cef9414210c3110cbeaf4a92b7f0f6873"
+    },
+    "studies/rosenbrock/manifest.json": {
+      "bytes": 841,
+      "sha256": "b14140fcd83f7ec5af5026d8a3cc533525690a0fb5f757c0adc5cb644ffeeb2d"
+    },
+    "studies/rosenbrock/records.json": {
+      "bytes": 62282,
+      "sha256": "b588054f58a5f56634bce09e5fd26ca1adb9bb9efd0afd1273dc63d1ad9f8682"
+    },
+    "studies/rosenbrock/report.html": {
+      "bytes": 29036,
+      "sha256": "40af5ca25b86ec77770da25438cbb12045702cefa772e4bac4aaca46b3f75cb8"
+    },
+    "studies/rosenbrock/summary.json": {
+      "bytes": 23653,
+      "sha256": "1d3a00a7794c3a1ac3bdb7ed3ca66a846ed823588c61da0cb0dcdd8a8f2e9a73"
+    },
+    "studies/sphere-fixed-step/evidence.json": {
+      "bytes": 1226474,
+      "sha256": "5a4724550aab21ac7f53d6f46711f41c3f4458e77af45846a99a743d7b877c0c"
+    },
+    "studies/sphere-fixed-step/manifest.json": {
+      "bytes": 841,
+      "sha256": "7c5f6aeec45008c59dc1ba94307e445d295b6ffdcded7f2dd98c98482e40b33e"
+    },
+    "studies/sphere-fixed-step/records.json": {
+      "bytes": 62317,
+      "sha256": "64f782f5d85dd86fc28ea45bef28c608b16407e0b01b123f49fd03ca5e1fb4d7"
+    },
+    "studies/sphere-fixed-step/report.html": {
+      "bytes": 28917,
+      "sha256": "7d38f0576bd256593218120a1a63c0621dd668dd65bef689171a62febcfb6864"
+    },
+    "studies/sphere-fixed-step/summary.json": {
+      "bytes": 23722,
+      "sha256": "6c0d41dbe8dfdffcb90693ada07dfdbd51eaab17f3febf840c64a743263c4432"
+    },
+    "studies/sphere-grid/evidence.json": {
+      "bytes": 1235397,
+      "sha256": "84f6a5f7a1cbb97b2e44042f40fc95b7d64e6ae2371763e6d64e019ec52d9188"
+    },
+    "studies/sphere-grid/manifest.json": {
+      "bytes": 841,
+      "sha256": "34494ac30299442a47bf1cd83f5b6ed80c6896ee28d0ba807f855572d0df347e"
+    },
+    "studies/sphere-grid/records.json": {
+      "bytes": 62093,
+      "sha256": "ac54273bb7c32f6a32a2ed4a2e624948f1dbdcf612ea4f95a493a27d32146e7e"
+    },
+    "studies/sphere-grid/report.html": {
+      "bytes": 28968,
+      "sha256": "351a546aa8b020999717e83e5b06e6356518af5544c4f121d747c91003b9f33f"
+    },
+    "studies/sphere-grid/summary.json": {
+      "bytes": 23520,
+      "sha256": "2d32662dcdf89d49658cc9c7718b5ebe71841e831f137466a8cc7aa1ea36ca15"
+    },
+    "studies/sphere/evidence.json": {
+      "bytes": 1252913,
+      "sha256": "ea971b31ff939e94a77bf3788dd8dd0afb4baae080f30c42a63a362e65584009"
+    },
+    "studies/sphere/manifest.json": {
+      "bytes": 841,
+      "sha256": "78e62a063913c5e038f6b3d55b153b279d17551a3ab15e78432afc0789c4ce73"
+    },
+    "studies/sphere/records.json": {
+      "bytes": 62365,
+      "sha256": "d169339b22fe06ab70e1477656748cc13e46b3314fe8f5f5ada7e53c34f3ac2f"
+    },
+    "studies/sphere/report.html": {
+      "bytes": 29108,
+      "sha256": "21115cb6d5b723a4c11becf5f42031e97dad169cab2054786543405f0e2c3758"
+    },
+    "studies/sphere/summary.json": {
+      "bytes": 23738,
+      "sha256": "99918b15a727746c3916197cf0c35b961d5d5838f8a518407d264d58acac0395"
+    },
+    "summary.json": {
+      "bytes": 256747,
+      "sha256": "389655fd7f59a4bcf7b25e362b905d9397d5a5d1a7b2d5add1f8cdf1d0d3c132"
+    }
+  },
+  "schema_version": 1,
+  "source_digest": "4a3f40a3dd2bc8ed971c52545f3d38823408072720de487f6556728936f84527",
+  "type": "CampaignBundle"
+}

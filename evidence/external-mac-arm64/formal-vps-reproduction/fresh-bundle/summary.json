@@ -1,0 +1,652 @@
+{
+  "campaign_complete": true,
+  "campaign_id": "af14aa6aafaa49488ca3ab3ca042a22e",
+  "charged_evaluations": 3072,
+  "claim_status": "UNREVIEWED",
+  "control_objective_calls": 2,
+  "failed_attempts": 0,
+  "groups": [
+    {
+      "charged_evaluations": 384,
+      "completed_trials": 3,
+      "failed_attempts": 0,
+      "median_best": 0.1802121529734757,
+      "phase": "development",
+      "policy": "uniform_random",
+      "quality_met_trials": 0,
+      "recorded_evaluations": 384,
+      "scheduled_trials": 3
+    },
+    {
+      "charged_evaluations": 384,
+      "completed_trials": 3,
+      "failed_attempts": 0,
+      "median_best": 4.655312582291663,
+      "phase": "development",
+      "policy": "coordinate_refinement",
+      "quality_met_trials": 0,
+      "recorded_evaluations": 384,
+      "scheduled_trials": 3
+    },
+    {
+      "charged_evaluations": 384,
+      "completed_trials": 3,
+      "failed_attempts": 0,
+      "median_best": 0.25900796897177875,
+      "phase": "confirmation",
+      "policy": "uniform_random",
+      "quality_met_trials": 0,
+      "recorded_evaluations": 384,
+      "scheduled_trials": 3
+    },
+    {
+      "charged_evaluations": 384,
+      "completed_trials": 3,
+      "failed_attempts": 0,
+      "median_best": 4.655312582291663,
+      "phase": "confirmation",
+      "policy": "coordinate_refinement",
+      "quality_met_trials": 0,
+      "recorded_evaluations": 384,
+      "scheduled_trials": 3
+    },
+    {
+      "charged_evaluations": 768,
+      "completed_trials": 6,
+      "failed_attempts": 0,
+      "median_best": 0.21961006097262722,
+      "phase": "reproduction",
+      "policy": "uniform_random",
+      "quality_met_trials": 0,
+      "recorded_evaluations": 768,
+      "scheduled_trials": 6
+    },
+    {
+      "charged_evaluations": 768,
+      "completed_trials": 6,
+      "failed_attempts": 0,
+      "median_best": 4.655312582291663,
+      "phase": "reproduction",
+      "policy": "coordinate_refinement",
+      "quality_met_trials": 0,
+      "recorded_evaluations": 768,
+      "scheduled_trials": 6
+    }
+  ],
+  "hypothesis_relation": "contradicted",
+  "inconclusive_reasons": [],
+  "independent_human_review": "PENDING",
+  "limitations": [
+    "This is one public, known-answer Rosenbrock fixture, not a secret holdout.",
+    "Coordinate refinement repeats are deterministic checks, not independent stochastic samples.",
+    "Medians are descriptive; no significance, confidence interval, causal, novelty, or general superiority claim is made.",
+    "Equal charged evaluation units do not imply equal CPU or elapsed time.",
+    "Recorded observations can undercount calls lost at process death; full admitted allowance remains charged.",
+    "Operator-invoked audits recompute objectives outside admitted search; campaign counts exclude that verification overhead.",
+    "Reserved reproduction runs use the same coordinator and built-ins; independent external execution is a separate gate.",
+    "Trusted built-ins share a process. Logical interfaces are not adversarial code isolation.",
+    "Checksums detect integrity changes; they are not signatures or scientific validation.",
+    "Independent human and qualified domain review are pending."
+  ],
+  "recorded_evaluations": 3072,
+  "reproductions": [
+    {
+      "attempt_id": "f5b29d42f11540edb3e5d5dfd22282c2",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-development-uniform_random-11",
+      "schema_version": 1,
+      "source_attempt_id": "d5a10614b55b4bd6878db489fe6ef911",
+      "source_trial_id": "development-uniform_random-11",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-development-uniform_random-11",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "42dbd4d30b2f416e9b8fcf35d1a6e130",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-development-uniform_random-22",
+      "schema_version": 1,
+      "source_attempt_id": "f7c458a610874b868e3c3d5884ca557a",
+      "source_trial_id": "development-uniform_random-22",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-development-uniform_random-22",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "860e5419d25f46c5ab6263d874672b4b",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-development-uniform_random-33",
+      "schema_version": 1,
+      "source_attempt_id": "3a1fa6da106444bcbd28aafe18424ad7",
+      "source_trial_id": "development-uniform_random-33",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-development-uniform_random-33",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "597b203c525c4b1b87db5f1dbbcec9eb",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-development-coordinate_refinement-11",
+      "schema_version": 1,
+      "source_attempt_id": "60868cc15bf04024af9cab5aff213a5f",
+      "source_trial_id": "development-coordinate_refinement-11",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-development-coordinate_refinement-11",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "b8eee7e1460d418abbb84ce1a1b55aaa",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-development-coordinate_refinement-22",
+      "schema_version": 1,
+      "source_attempt_id": "11d41cd2eccd4ed89638ee057a1939c6",
+      "source_trial_id": "development-coordinate_refinement-22",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-development-coordinate_refinement-22",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "8b1e6b2f09654a93808b4897202ae21d",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-development-coordinate_refinement-33",
+      "schema_version": 1,
+      "source_attempt_id": "843e9dffb8cf455da394ce4e533210da",
+      "source_trial_id": "development-coordinate_refinement-33",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-development-coordinate_refinement-33",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "2e1cccff50254b718974b1a1e66548d2",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-confirmation-uniform_random-101",
+      "schema_version": 1,
+      "source_attempt_id": "181f19bd50834d37ba8a182a176f9217",
+      "source_trial_id": "confirmation-uniform_random-101",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-confirmation-uniform_random-101",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "653c5e86cfd4487bbff51652fb82da5f",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-confirmation-uniform_random-202",
+      "schema_version": 1,
+      "source_attempt_id": "6538fa39d5644425a875416c68b25136",
+      "source_trial_id": "confirmation-uniform_random-202",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-confirmation-uniform_random-202",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "b63b4070da984f119feb554ff99205f5",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-confirmation-uniform_random-303",
+      "schema_version": 1,
+      "source_attempt_id": "47c636d3829044ffb961791078741065",
+      "source_trial_id": "confirmation-uniform_random-303",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-confirmation-uniform_random-303",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "0b5e02e92d9a4fdca85d7cd5991f242c",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-confirmation-coordinate_refinement-101",
+      "schema_version": 1,
+      "source_attempt_id": "179bd27054fd47ddb2ef9a4e09e9c778",
+      "source_trial_id": "confirmation-coordinate_refinement-101",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-confirmation-coordinate_refinement-101",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "1ef685aa37ed4f53ab02bcb2ea7ff144",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-confirmation-coordinate_refinement-202",
+      "schema_version": 1,
+      "source_attempt_id": "1062c5c274ba40e0a269ff59f3cc42d4",
+      "source_trial_id": "confirmation-coordinate_refinement-202",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-confirmation-coordinate_refinement-202",
+      "type": "ReproductionRecord"
+    },
+    {
+      "attempt_id": "a36c48459f8549a998f1f024023efda7",
+      "context": "reserved fresh execution in the same coordinator; no independent human review",
+      "id": "reproduction-record-reproduction-confirmation-coordinate_refinement-303",
+      "schema_version": 1,
+      "source_attempt_id": "0164a16aa31c44adaef3833edb115b07",
+      "source_trial_id": "confirmation-coordinate_refinement-303",
+      "status": "MATCH",
+      "tolerance": 1e-12,
+      "trial_id": "reproduction-confirmation-coordinate_refinement-303",
+      "type": "ReproductionRecord"
+    }
+  ],
+  "reserved_evaluations": 6144,
+  "schema_version": 1,
+  "study_digest": "625cea9555008c0de81ccf3e7f790027ffb6ccb0f7285b910d10ddc184337ddf",
+  "trials": [
+    {
+      "attempt_ids": [
+        "d5a10614b55b4bd6878db489fe6ef911"
+      ],
+      "best": 0.1731013159801553,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "d5a10614b55b4bd6878db489fe6ef911",
+      "failed_attempts": 0,
+      "phase": "development",
+      "policy": "uniform_random",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 11,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "development-uniform_random-11"
+    },
+    {
+      "attempt_ids": [
+        "f7c458a610874b868e3c3d5884ca557a"
+      ],
+      "best": 0.1802121529734757,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "f7c458a610874b868e3c3d5884ca557a",
+      "failed_attempts": 0,
+      "phase": "development",
+      "policy": "uniform_random",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 22,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "development-uniform_random-22"
+    },
+    {
+      "attempt_ids": [
+        "3a1fa6da106444bcbd28aafe18424ad7"
+      ],
+      "best": 0.7441787749988042,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "3a1fa6da106444bcbd28aafe18424ad7",
+      "failed_attempts": 0,
+      "phase": "development",
+      "policy": "uniform_random",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 33,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "development-uniform_random-33"
+    },
+    {
+      "attempt_ids": [
+        "60868cc15bf04024af9cab5aff213a5f"
+      ],
+      "best": 4.655312582291663,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "60868cc15bf04024af9cab5aff213a5f",
+      "failed_attempts": 0,
+      "phase": "development",
+      "policy": "coordinate_refinement",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 11,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "development-coordinate_refinement-11"
+    },
+    {
+      "attempt_ids": [
+        "11d41cd2eccd4ed89638ee057a1939c6"
+      ],
+      "best": 4.655312582291663,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "11d41cd2eccd4ed89638ee057a1939c6",
+      "failed_attempts": 0,
+      "phase": "development",
+      "policy": "coordinate_refinement",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 22,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "development-coordinate_refinement-22"
+    },
+    {
+      "attempt_ids": [
+        "843e9dffb8cf455da394ce4e533210da"
+      ],
+      "best": 4.655312582291663,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "843e9dffb8cf455da394ce4e533210da",
+      "failed_attempts": 0,
+      "phase": "development",
+      "policy": "coordinate_refinement",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 33,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "development-coordinate_refinement-33"
+    },
+    {
+      "attempt_ids": [
+        "181f19bd50834d37ba8a182a176f9217"
+      ],
+      "best": 0.37070710657631817,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "181f19bd50834d37ba8a182a176f9217",
+      "failed_attempts": 0,
+      "phase": "confirmation",
+      "policy": "uniform_random",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 101,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "confirmation-uniform_random-101"
+    },
+    {
+      "attempt_ids": [
+        "6538fa39d5644425a875416c68b25136"
+      ],
+      "best": 0.25900796897177875,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "6538fa39d5644425a875416c68b25136",
+      "failed_attempts": 0,
+      "phase": "confirmation",
+      "policy": "uniform_random",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 202,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "confirmation-uniform_random-202"
+    },
+    {
+      "attempt_ids": [
+        "47c636d3829044ffb961791078741065"
+      ],
+      "best": 0.03865770457327981,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "47c636d3829044ffb961791078741065",
+      "failed_attempts": 0,
+      "phase": "confirmation",
+      "policy": "uniform_random",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 303,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "confirmation-uniform_random-303"
+    },
+    {
+      "attempt_ids": [
+        "179bd27054fd47ddb2ef9a4e09e9c778"
+      ],
+      "best": 4.655312582291663,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "179bd27054fd47ddb2ef9a4e09e9c778",
+      "failed_attempts": 0,
+      "phase": "confirmation",
+      "policy": "coordinate_refinement",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 101,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "confirmation-coordinate_refinement-101"
+    },
+    {
+      "attempt_ids": [
+        "1062c5c274ba40e0a269ff59f3cc42d4"
+      ],
+      "best": 4.655312582291663,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "1062c5c274ba40e0a269ff59f3cc42d4",
+      "failed_attempts": 0,
+      "phase": "confirmation",
+      "policy": "coordinate_refinement",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 202,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "confirmation-coordinate_refinement-202"
+    },
+    {
+      "attempt_ids": [
+        "0164a16aa31c44adaef3833edb115b07"
+      ],
+      "best": 4.655312582291663,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "0164a16aa31c44adaef3833edb115b07",
+      "failed_attempts": 0,
+      "phase": "confirmation",
+      "policy": "coordinate_refinement",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 303,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "confirmation-coordinate_refinement-303"
+    },
+    {
+      "attempt_ids": [
+        "f5b29d42f11540edb3e5d5dfd22282c2"
+      ],
+      "best": 0.1731013159801553,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "f5b29d42f11540edb3e5d5dfd22282c2",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "uniform_random",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 11,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-development-uniform_random-11"
+    },
+    {
+      "attempt_ids": [
+        "42dbd4d30b2f416e9b8fcf35d1a6e130"
+      ],
+      "best": 0.1802121529734757,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "42dbd4d30b2f416e9b8fcf35d1a6e130",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "uniform_random",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 22,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-development-uniform_random-22"
+    },
+    {
+      "attempt_ids": [
+        "860e5419d25f46c5ab6263d874672b4b"
+      ],
+      "best": 0.7441787749988042,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "860e5419d25f46c5ab6263d874672b4b",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "uniform_random",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 33,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-development-uniform_random-33"
+    },
+    {
+      "attempt_ids": [
+        "597b203c525c4b1b87db5f1dbbcec9eb"
+      ],
+      "best": 4.655312582291663,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "597b203c525c4b1b87db5f1dbbcec9eb",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "coordinate_refinement",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 11,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-development-coordinate_refinement-11"
+    },
+    {
+      "attempt_ids": [
+        "b8eee7e1460d418abbb84ce1a1b55aaa"
+      ],
+      "best": 4.655312582291663,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "b8eee7e1460d418abbb84ce1a1b55aaa",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "coordinate_refinement",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 22,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-development-coordinate_refinement-22"
+    },
+    {
+      "attempt_ids": [
+        "8b1e6b2f09654a93808b4897202ae21d"
+      ],
+      "best": 4.655312582291663,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "8b1e6b2f09654a93808b4897202ae21d",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "coordinate_refinement",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 33,
+      "source_phase": "development",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-development-coordinate_refinement-33"
+    },
+    {
+      "attempt_ids": [
+        "2e1cccff50254b718974b1a1e66548d2"
+      ],
+      "best": 0.37070710657631817,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "2e1cccff50254b718974b1a1e66548d2",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "uniform_random",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 101,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-confirmation-uniform_random-101"
+    },
+    {
+      "attempt_ids": [
+        "653c5e86cfd4487bbff51652fb82da5f"
+      ],
+      "best": 0.25900796897177875,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "653c5e86cfd4487bbff51652fb82da5f",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "uniform_random",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 202,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-confirmation-uniform_random-202"
+    },
+    {
+      "attempt_ids": [
+        "b63b4070da984f119feb554ff99205f5"
+      ],
+      "best": 0.03865770457327981,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "b63b4070da984f119feb554ff99205f5",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "uniform_random",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 303,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-confirmation-uniform_random-303"
+    },
+    {
+      "attempt_ids": [
+        "0b5e02e92d9a4fdca85d7cd5991f242c"
+      ],
+      "best": 4.655312582291663,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "0b5e02e92d9a4fdca85d7cd5991f242c",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "coordinate_refinement",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 101,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-confirmation-coordinate_refinement-101"
+    },
+    {
+      "attempt_ids": [
+        "1ef685aa37ed4f53ab02bcb2ea7ff144"
+      ],
+      "best": 4.655312582291663,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "1ef685aa37ed4f53ab02bcb2ea7ff144",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "coordinate_refinement",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 202,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-confirmation-coordinate_refinement-202"
+    },
+    {
+      "attempt_ids": [
+        "a36c48459f8549a998f1f024023efda7"
+      ],
+      "best": 4.655312582291663,
+      "charged_evaluations": 128,
+      "completed_attempt_id": "a36c48459f8549a998f1f024023efda7",
+      "failed_attempts": 0,
+      "phase": "reproduction",
+      "policy": "coordinate_refinement",
+      "quality_met": false,
+      "recorded_evaluations": 128,
+      "seed": 303,
+      "source_phase": "confirmation",
+      "status": "COMPLETED",
+      "trial_id": "reproduction-confirmation-coordinate_refinement-303"
+    }
+  ],
+  "verdict": "BASELINE_LOWER"
+}
