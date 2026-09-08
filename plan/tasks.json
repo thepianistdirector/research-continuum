@@ -38,7 +38,8 @@
         "RC-F03"
       ],
       "exitEvidence": "Exact accepted STATUS.md and original task objects in immutable lineage.",
-      "targetRelease": "foundation"
+      "targetRelease": "foundation",
+      "platformId": "wave_4e1a5659daa92d3acd20bd4f8c2a00da"
     },
     {
       "id": "RC-W01",
@@ -61,7 +62,8 @@
         "RC-W01-T10"
       ],
       "exitEvidence": "The frozen example and decision agree on all policies, seeds, controls, limits and interpretation; numerical and coordinator owners review their interface before implementation.",
-      "targetRelease": "0.1"
+      "targetRelease": "0.1",
+      "platformId": "wave_22237be1e709ea0c2417441f25257be6"
     },
     {
       "id": "RC-W02",
@@ -84,7 +86,8 @@
         "RC-W02-T10"
       ],
       "exitEvidence": "Budget totals reconcile with all admitted attempts and remaining reserves; terminal campaign states prevent further unauthorized admission.",
-      "targetRelease": "0.1"
+      "targetRelease": "0.1",
+      "platformId": "wave_f3a34a4da5e5fd6afbd594e4d01b3bd0"
     },
     {
       "id": "RC-W03",
@@ -105,7 +108,8 @@
         "RC-W03-T08"
       ],
       "exitEvidence": "The real campaign reaches a terminal decision from actual evaluations within its resource envelope; no precomputed finding or optimizer-only output substitutes.",
-      "targetRelease": "0.1"
+      "targetRelease": "0.1",
+      "platformId": "wave_c7b80c31ffa4af77b298be9814c59e35"
     },
     {
       "id": "RC-W04",
@@ -128,7 +132,8 @@
         "RC-W04-T10"
       ],
       "exitEvidence": "The integrated fault matrix proves one terminal record per attempt, unchanged accepted evidence and no erased costs, including exhausted retries.",
-      "targetRelease": "0.1"
+      "targetRelease": "0.1",
+      "platformId": "wave_f0911a8c96962e622c38f619652b4d52"
     },
     {
       "id": "RC-W05",
@@ -153,7 +158,8 @@
         "RC-W05-T12"
       ],
       "exitEvidence": "Public wave counts, task order, dependency links, scope/status and actual 0.1 download instructions match the canonical export; partial publication remains incomplete.",
-      "targetRelease": "0.1"
+      "targetRelease": "0.1",
+      "platformId": "wave_32c1c502f2a919a5dedbe742acb06d02"
     },
     {
       "id": "RC-W06",
@@ -173,7 +179,8 @@
         "RC-W06-T07"
       ],
       "exitEvidence": "Baseline source, rights decisions, total cost, expected observable outputs and proposed extensions form one reviewable protocol without claiming execution.",
-      "targetRelease": "later 0.x"
+      "targetRelease": "later 0.x",
+      "platformId": "wave_1b4641edbe4f038affdc954014a065af"
     },
     {
       "id": "RC-W07",
@@ -197,7 +204,8 @@
         "RC-W07-T10"
       ],
       "exitEvidence": "Independent adversarial tests reproduce denials on the supported platform; unresolved material escapes keep untrusted execution disabled.",
-      "targetRelease": "later 0.x"
+      "targetRelease": "later 0.x",
+      "platformId": "wave_66fcdfacb2bb6b8824286e0e30a6051c"
     },
     {
       "id": "RC-W08",
@@ -219,7 +227,8 @@
         "RC-W08-T09"
       ],
       "exitEvidence": "Cross-identity probing, request replay and record-tampering tests fail while a legitimate trial completes and is reproducible.",
-      "targetRelease": "later 0.x"
+      "targetRelease": "later 0.x",
+      "platformId": "wave_4499aa91e60fc79269c5c11eac5a978f"
     },
     {
       "id": "RC-W09",
@@ -243,7 +252,8 @@
         "RC-W09-T08"
       ],
       "exitEvidence": "Training completes using registry/coordinator/evaluator seams without bypassing isolation or mutating generic scientific records.",
-      "targetRelease": "later 0.x"
+      "targetRelease": "later 0.x",
+      "platformId": "wave_db6f66b82966178636c4a510978ffa7b"
     },
     {
       "id": "RC-W10",
@@ -264,7 +274,8 @@
         "RC-W10-T08"
       ],
       "exitEvidence": "A real patch runs through isolation, accounting and evaluation while a rejected patch does not; both decisions remain in evidence history.",
-      "targetRelease": "later 0.x"
+      "targetRelease": "later 0.x",
+      "platformId": "wave_4ff67c0022180962290223e4d0b99c4f"
     },
     {
       "id": "RC-W11",
@@ -285,7 +296,8 @@
         "RC-W11-T08"
       ],
       "exitEvidence": "Equal-cost totals, uncertainty limits and all outcomes support a precise positive, null or adverse conclusion without general-superiority language.",
-      "targetRelease": "later 0.x"
+      "targetRelease": "later 0.x",
+      "platformId": "wave_5bd56e1c1c1656acd2fa723d024371f0"
     },
     {
       "id": "RC-W12",
@@ -305,7 +317,8 @@
         "RC-W12-T07"
       ],
       "exitEvidence": "Claims identify which mechanisms survived ablation and which remain unsupported; adverse reruns and alternatives remain linked.",
-      "targetRelease": "later 0.x"
+      "targetRelease": "later 0.x",
+      "platformId": "wave_8ab175d4974bf9ec1ba173ff63f591f9"
     },
     {
       "id": "RC-W13",
@@ -327,7 +340,8 @@
         "RC-W13-T08"
       ],
       "exitEvidence": "The final report states method, assumptions, estimation limits and inconclusive findings; deterministic reruns are not independent samples.",
-      "targetRelease": "later 0.x"
+      "targetRelease": "later 0.x",
+      "platformId": "wave_973b5b806ec177cd67da1a1df83361fc"
     },
     {
       "id": "RC-W14",
@@ -349,7 +363,8 @@
         "RC-W14-T07"
       ],
       "exitEvidence": "An independent reviewer can reproduce reported calculations and reject an injected unsupported conclusion; human disposition is retained.",
-      "targetRelease": "later 0.x"
+      "targetRelease": "later 0.x",
+      "platformId": "wave_1785fe161f0ef52c4374d2de4fbc3e4b"
     },
     {
       "id": "RC-W15",
@@ -370,7 +385,8 @@
         "RC-W15-T08"
       ],
       "exitEvidence": "Only a reviewed public versioned contract may exchange permitted artifacts; absent sibling releases do not block standalone operation.",
-      "targetRelease": "long-term"
+      "targetRelease": "long-term",
+      "platformId": "wave_94c850e25965c04bc51980ad17b74d31"
     },
     {
       "id": "RC-W16",
@@ -391,7 +407,8 @@
         "RC-W16-T08"
       ],
       "exitEvidence": "A clean worker recreates permitted inputs/index and the full metric table; missing restricted inputs remain an explicit limitation.",
-      "targetRelease": "long-term"
+      "targetRelease": "long-term",
+      "platformId": "wave_abe3acde69b437d00721e41fd10a20ff"
     },
     {
       "id": "RC-W17",
@@ -412,7 +429,8 @@
         "RC-W17-T08"
       ],
       "exitEvidence": "Training and distinct numerical evidence demonstrate which contracts transfer and which remain domain-specific; no fixture-only generality claim passes.",
-      "targetRelease": "long-term"
+      "targetRelease": "long-term",
+      "platformId": "wave_3da2a572a0bcd348ba9f9439949dc509"
     },
     {
       "id": "RC-W18",
@@ -435,7 +453,8 @@
         "RC-W18-T08"
       ],
       "exitEvidence": "A versioned graph export maps entity/activity/derivation relationships without pretending generic provenance proves scientific support.",
-      "targetRelease": "long-term"
+      "targetRelease": "long-term",
+      "platformId": "wave_e932da90463e7fe63bcb49cc6af6cf34"
     },
     {
       "id": "RC-W19",
@@ -458,7 +477,8 @@
         "RC-W19-T08"
       ],
       "exitEvidence": "Cancellation releases unused reservations while preserving consumption; total exhaustion yields one finite terminal campaign outcome.",
-      "targetRelease": "long-term"
+      "targetRelease": "long-term",
+      "platformId": "wave_dc19e0c4f43c2ec41146e9f9be866a87"
     },
     {
       "id": "RC-W20",
@@ -481,7 +501,8 @@
         "RC-W20-T07"
       ],
       "exitEvidence": "A reviewed result, bounded scope and rollback decision are recorded; a policy cannot deploy itself based on its own prose.",
-      "targetRelease": "long-term"
+      "targetRelease": "long-term",
+      "platformId": "wave_777af2873f20cbefdbfc00822359261b"
     },
     {
       "id": "RC-W21",
@@ -504,7 +525,8 @@
         "RC-W21-T08"
       ],
       "exitEvidence": "Another researcher can execute the permitted protocol and report an observation without private access or original author assistance.",
-      "targetRelease": "long-term"
+      "targetRelease": "long-term",
+      "platformId": "wave_e4eae2ca064c194c7d4dac27f19a9c25"
     },
     {
       "id": "RC-W22",
@@ -527,7 +549,8 @@
         "RC-W22-T08"
       ],
       "exitEvidence": "Workbench export uses the same complete versioned bundle as the CLI and reports exactly which evidence and limitations are included.",
-      "targetRelease": "long-term"
+      "targetRelease": "long-term",
+      "platformId": "wave_8fd5b82e2cc754a462540072f21b99c5"
     },
     {
       "id": "RC-W23",
@@ -552,7 +575,8 @@
         "RC-W23-T09"
       ],
       "exitEvidence": "A bounded end-to-end remote campaign, failure matrix and rollback review pass before expanding concurrency or credentials.",
-      "targetRelease": "long-term"
+      "targetRelease": "long-term",
+      "platformId": "wave_cec58860a532aa5da5515b1bab7dab44"
     },
     {
       "id": "RC-W24",
@@ -575,7 +599,8 @@
         "RC-W24-T07"
       ],
       "exitEvidence": "Shared-library adoption requires demonstrated costly duplication and approved governance; small versioned schemas remain a supported alternative.",
-      "targetRelease": "long-term"
+      "targetRelease": "long-term",
+      "platformId": "wave_d4655bb85f05caf8c4a9186480ef8b1c"
     },
     {
       "id": "RC-W25",
@@ -600,7 +625,8 @@
         "RC-W25-T08"
       ],
       "exitEvidence": "Versioned migrations or original-runtime instructions preserve old evidence; corrected packages link predecessors without erasing them.",
-      "targetRelease": "long-term"
+      "targetRelease": "long-term",
+      "platformId": "wave_a5db018e46046b7c552bb98114463bee"
     },
     {
       "id": "RC-W26",
@@ -622,7 +648,8 @@
         "RC-W26-T07"
       ],
       "exitEvidence": "Approved public artifacts include all outcomes, protocol deviations, reviewer observations and bounded generality conclusions.",
-      "targetRelease": "long-term"
+      "targetRelease": "long-term",
+      "platformId": "wave_75d6679dad6b453fae0158c5883cc269"
     },
     {
       "id": "RC-W27",
@@ -647,7 +674,8 @@
         "RC-W27-T09"
       ],
       "exitEvidence": "Public access, clean reproduction, independent evaluation and native plan state match approved scope; missing gates keep release incomplete.",
-      "targetRelease": "long-term"
+      "targetRelease": "long-term",
+      "platformId": "wave_62f6117389616b9a0ec212a1403306c8"
     }
   ],
   "tasks": [
@@ -678,7 +706,7 @@
         "plan/lineage/architecture-foundation-2026-09-07/STATUS.md"
       ],
       "basis": "retained requirement",
-      "platformId": null,
+      "platformId": "tsk_b6365a2b85d8e55303e4f96d5a5803ce",
       "dependencyRationale": {}
     },
     {
@@ -709,7 +737,7 @@
         "plan/lineage/architecture-foundation-2026-09-07/STATUS.md"
       ],
       "basis": "retained requirement",
-      "platformId": null,
+      "platformId": "tsk_8f1b2a7a99567236bb722181d372424f",
       "dependencyRationale": {
         "RC-F01": "Accepted historical predecessor; exact original graph remains in lineage."
       }
@@ -741,7 +769,7 @@
         "plan/lineage/architecture-foundation-2026-09-07/STATUS.md"
       ],
       "basis": "retained requirement",
-      "platformId": null,
+      "platformId": "tsk_6721de0c0efb411bb9e161a3f618af54",
       "dependencyRationale": {
         "RC-F02": "Accepted historical predecessor; exact original graph remains in lineage."
       }
@@ -773,7 +801,7 @@
         "evidence/source-retrievals.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_ff17008788c2a266ef834ea928c17b00",
       "dependencyRationale": {
         "RC-F03": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated."
       }
@@ -806,7 +834,7 @@
         "examples/rosenbrock-study.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_cdf6e5cabee8740c5b4bf3cbc31e3e90",
       "dependencyRationale": {
         "RC-W01-T01": "Provides the shared contract for this wave."
       }
@@ -841,7 +869,7 @@
         "evidence/runtime/automated-checks.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_c2b226dd82073c555dac68c9ab795444",
       "dependencyRationale": {
         "RC-W01-T01": "Provides the shared contract for this wave."
       }
@@ -876,7 +904,7 @@
         "evidence/runtime/automated-checks.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_1e092820eeaff33ad774c3e3708cadd5",
       "dependencyRationale": {
         "RC-W01-T01": "Provides the shared contract for this wave."
       }
@@ -911,7 +939,7 @@
         "evidence/runtime/automated-checks.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_e6467dccdcb8eb78de78bd651398a487",
       "dependencyRationale": {
         "RC-W01-T01": "Provides the shared contract for this wave."
       }
@@ -946,7 +974,7 @@
         "evidence/runtime/automated-checks.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_41db721d5e9e90b25537b9f9202f7624",
       "dependencyRationale": {
         "RC-W01-T01": "Provides the shared contract for this wave."
       }
@@ -979,7 +1007,7 @@
         "examples/rosenbrock-study.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_0503fb01a2dfde197c56113155073f31",
       "dependencyRationale": {
         "RC-W01-T01": "Provides the shared contract for this wave."
       }
@@ -1012,7 +1040,7 @@
         "examples/rosenbrock-study.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_6c2923b7e0c50c261b4d7dbc33fcd45f",
       "dependencyRationale": {
         "RC-W01-T01": "Provides the shared contract for this wave."
       }
@@ -1047,7 +1075,7 @@
         "evidence/runtime/automated-checks.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_d1490f0a6213cae946523090033d9791",
       "dependencyRationale": {
         "RC-W01-T01": "Provides the shared contract for this wave."
       }
@@ -1089,7 +1117,7 @@
         "examples/rosenbrock-study.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_6055822fc13555c727864c2799fda001",
       "dependencyRationale": {
         "RC-F03": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W01-T01": "Provides the shared contract for this wave.",
@@ -1131,7 +1159,7 @@
         "evidence/runtime/automated-checks.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_63aebc644bb77ecda49bbe28c8120917",
       "dependencyRationale": {
         "RC-W01-T10": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated."
       }
@@ -1166,7 +1194,7 @@
         "evidence/runtime/packaged-summary.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_cecac7460303c27b763a9d39c72f7ff9",
       "dependencyRationale": {
         "RC-W02-T01": "Provides the shared contract for this wave."
       }
@@ -1202,7 +1230,7 @@
         "evidence/runtime/packaged-summary.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_efd2e2cdbbb5caaf9a55e404fda21859",
       "dependencyRationale": {
         "RC-W02-T01": "Required input outcome: Validate immutable study records.",
         "RC-W02-T02": "Required input outcome: Create durable campaign identity."
@@ -1240,7 +1268,7 @@
         "evidence/runtime/packaged-summary.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_776ebf8acea5989966072804aea3dc71",
       "dependencyRationale": {
         "RC-W02-T01": "Provides the shared contract for this wave.",
         "RC-W02-T02": "Required input outcome: Create durable campaign identity.",
@@ -1277,7 +1305,7 @@
         "evidence/runtime/automated-checks.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_5b15fda0bceb2e105bca5f616bd61aca",
       "dependencyRationale": {
         "RC-W02-T01": "Provides the shared contract for this wave.",
         "RC-W02-T02": "Required input outcome: Create durable campaign identity.",
@@ -1315,7 +1343,7 @@
         "evidence/runtime/packaged-summary.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_9788099b5042e34cb390a0f5e33d94b3",
       "dependencyRationale": {
         "RC-W02-T01": "Provides the shared contract for this wave.",
         "RC-W02-T05": "Required input outcome: Make admission and debit transactional."
@@ -1351,7 +1379,7 @@
         "evidence/runtime/automated-checks.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_62f61a18f075fa3abe5cbecf73d9e433",
       "dependencyRationale": {
         "RC-W02-T01": "Provides the shared contract for this wave.",
         "RC-W02-T05": "Required input outcome: Make admission and debit transactional.",
@@ -1388,7 +1416,7 @@
         "evidence/runtime/automated-checks.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_bd66f6c6524f103480bf312f752cdf6c",
       "dependencyRationale": {
         "RC-W02-T01": "Required input outcome: Validate immutable study records.",
         "RC-W02-T04": "Required input outcome: Reserve capacity before any exploration.",
@@ -1425,7 +1453,7 @@
         "evidence/runtime/automated-checks.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_906d41fc39fb9fa4522040cba6d7e77e",
       "dependencyRationale": {
         "RC-W02-T01": "Provides the shared contract for this wave.",
         "RC-W02-T02": "Required input outcome: Create durable campaign identity.",
@@ -1471,7 +1499,7 @@
         "evidence/runtime/packaged-summary.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_5d23405b4fdb8e17f2a72b4d16c6153a",
       "dependencyRationale": {
         "RC-W01-T10": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W02-T01": "Provides the shared contract for this wave.",
@@ -1515,7 +1543,7 @@
         "evidence/runtime/default-study/summary.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_5295a5ee39bcee0c68719b02a9c7954b",
       "dependencyRationale": {
         "RC-W02-T10": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated."
       }
@@ -1550,7 +1578,7 @@
         "evidence/runtime/default-study/summary.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_c882540ddd58f2a8c2bd03bd792db2f2",
       "dependencyRationale": {
         "RC-W03-T01": "Provides the shared contract for this wave."
       }
@@ -1585,7 +1613,7 @@
         "evidence/runtime/default-study/summary.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_2ba1b34703f25f4a000068eb5eca22c1",
       "dependencyRationale": {
         "RC-W03-T01": "Provides the shared contract for this wave."
       }
@@ -1620,7 +1648,7 @@
         "evidence/runtime/automated-checks.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_2f285ea28a17501a5e700334d69d9893",
       "dependencyRationale": {
         "RC-W03-T01": "Provides the shared contract for this wave.",
         "RC-W03-T02": "Required input outcome: Execute seeded uniform random search.",
@@ -1660,7 +1688,7 @@
         "evidence/runtime/default-study/summary.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_25a56ad1daaa35dce66335b40c0f3a48",
       "dependencyRationale": {
         "RC-W03-T01": "Provides the shared contract for this wave.",
         "RC-W03-T02": "Required input outcome: Execute seeded uniform random search.",
@@ -1702,7 +1730,7 @@
         "evidence/runtime/default-study/summary.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_334b60ceb7641834cdcfc799bb02b713",
       "dependencyRationale": {
         "RC-W03-T01": "Provides the shared contract for this wave.",
         "RC-W03-T02": "Required input outcome: Execute seeded uniform random search.",
@@ -1741,7 +1769,7 @@
         "evidence/runtime/automated-checks.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_3a1d73edf17251c9911f894ca54297f5",
       "dependencyRationale": {
         "RC-W03-T01": "Provides the shared contract for this wave.",
         "RC-W03-T05": "Required input outcome: Retain complete observations and runtime identity.",
@@ -1785,7 +1813,7 @@
         "evidence/runtime/default-study/summary.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_b1ac7640309f967f862a7e2e4ad34737",
       "dependencyRationale": {
         "RC-W02-T10": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W03-T01": "Provides the shared contract for this wave.",
@@ -1827,7 +1855,7 @@
         "evidence/runtime/automated-checks.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_457b3662228a4cd3586c15e9a46315c7",
       "dependencyRationale": {
         "RC-W03-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated."
       }
@@ -1862,7 +1890,7 @@
         "evidence/runtime/automated-checks.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_f679720e011b1f348518638a955080b3",
       "dependencyRationale": {
         "RC-W04-T01": "Required input outcome: Challenge evaluator validity controls."
       }
@@ -1898,7 +1926,7 @@
         "evidence/runtime/automated-checks.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_eff522416dc5d0522fef7837403834cf",
       "dependencyRationale": {
         "RC-W04-T01": "Required input outcome: Challenge evaluator validity controls.",
         "RC-W04-T02": "Required input outcome: Reject evaluator source or callable mutation."
@@ -1937,7 +1965,7 @@
         "evidence/runtime/packaged-summary.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_f45c3de618e72c7038f753aa6a7d1a9d",
       "dependencyRationale": {
         "RC-W04-T01": "Provides the shared contract for this wave.",
         "RC-W04-T02": "Required input outcome: Reject evaluator source or callable mutation.",
@@ -1975,7 +2003,7 @@
         "evidence/runtime/automated-checks.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_4647d4c0ea62014f0fc5f39782aa8e20",
       "dependencyRationale": {
         "RC-W04-T01": "Provides the shared contract for this wave.",
         "RC-W04-T04": "Required input outcome: Recover after admission interruption."
@@ -2012,7 +2040,7 @@
         "evidence/runtime/automated-checks.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_0ec032514e692a719bdb168758be839e",
       "dependencyRationale": {
         "RC-W04-T01": "Provides the shared contract for this wave.",
         "RC-W04-T05": "Required input outcome: Recover after execution interruption."
@@ -2051,7 +2079,7 @@
         "evidence/runtime/automated-checks.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_9df1c8af826063d8f095f8fd0e79cfae",
       "dependencyRationale": {
         "RC-W04-T01": "Provides the shared contract for this wave.",
         "RC-W04-T04": "Required input outcome: Recover after admission interruption.",
@@ -2091,7 +2119,7 @@
         "evidence/runtime/packaged-summary.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_7140e16703777ccc87a894714b8cb986",
       "dependencyRationale": {
         "RC-W04-T01": "Provides the shared contract for this wave.",
         "RC-W04-T07": "Required input outcome: Fence stale coordinator authority."
@@ -2131,7 +2159,7 @@
         "evidence/runtime/packaged-summary.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_dedc8cdc90c692b018e46d9c7b74bef7",
       "dependencyRationale": {
         "RC-W04-T01": "Required input outcome: Challenge evaluator validity controls.",
         "RC-W04-T02": "Required input outcome: Reject evaluator source or callable mutation.",
@@ -2178,7 +2206,7 @@
         "evidence/runtime/automated-checks.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_c9b6952bc400249f41171fb9ad422ce4",
       "dependencyRationale": {
         "RC-W03-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W04-T01": "Provides the shared contract for this wave.",
@@ -2221,7 +2249,7 @@
         "evidence/runtime/packaged-summary.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_b1a11fe6fd12c7b66b040764dd9b1750",
       "dependencyRationale": {
         "RC-W04-T10": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated."
       }
@@ -2255,7 +2283,7 @@
         "evidence/runtime/packaged-summary.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_edaebb3080e293011fae1d30572dea71",
       "dependencyRationale": {
         "RC-W05-T01": "Required input outcome: Expose the complete ledger for inspection."
       }
@@ -2292,7 +2320,7 @@
         "evidence/runtime/default-study/report.html"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_aa66eebf609c2d403cd98ec822c941f7",
       "dependencyRationale": {
         "RC-W05-T01": "Required input outcome: Expose the complete ledger for inspection.",
         "RC-W05-T02": "Required input outcome: Derive bounded claims from retained evidence."
@@ -2329,7 +2357,7 @@
         "evidence/runtime/packaged-summary.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_3b0b51e3087fbc6feeda372480f4e32f",
       "dependencyRationale": {
         "RC-W05-T01": "Provides the shared contract for this wave.",
         "RC-W05-T02": "Required input outcome: Derive bounded claims from retained evidence.",
@@ -2368,7 +2396,7 @@
         "LICENSE"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_4bc925b889c0cc572809c324fd4080c0",
       "dependencyRationale": {
         "RC-W05-T01": "Provides the shared contract for this wave.",
         "RC-W05-T04": "Required input outcome: Export a versioned portable evidence bundle."
@@ -2404,7 +2432,7 @@
         "evidence/runtime/packaged-summary.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_360fb0f0330660b2888f90f34bee4ef1",
       "dependencyRationale": {
         "RC-W05-T01": "Provides the shared contract for this wave.",
         "RC-W05-T05": "Required input outcome: Build an executable source release package."
@@ -2438,7 +2466,7 @@
         "docs/publication.md"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_7095cb902d325f7cfac9f8f9ea6648ba",
       "dependencyRationale": {
         "RC-W05-T01": "Provides the shared contract for this wave.",
         "RC-W05-T06": "Required input outcome: Verify the packaged user workflow."
@@ -2474,7 +2502,7 @@
         "evidence/public-release.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_fc0c2438daa2db13a91574df63ad9722",
       "dependencyRationale": {
         "RC-W05-T01": "Provides the shared contract for this wave.",
         "RC-W05-T06": "Required input outcome: Verify the packaged user workflow.",
@@ -2510,7 +2538,7 @@
         "evidence/public-release.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_e56be9907616b2708eb5423dde404d5c",
       "dependencyRationale": {
         "RC-W05-T01": "Provides the shared contract for this wave.",
         "RC-W05-T08": "Required input outcome: Prepare the concrete public release decision."
@@ -2539,12 +2567,14 @@
         "NUMERICAL-001"
       ],
       "riskEvidenceNeeds": "Permission, public availability and independent human evidence are distinct gates; local artifacts and unaccepted proposals do not satisfy them.",
-      "status": "NOT TESTED",
+      "status": "RUNTIME VERIFIED",
       "evidenceRefs": [
-        "docs/publication.md"
+        "evidence/external-mac-arm64/verification.json",
+        "evidence/external-mac-arm64/default-bundle/summary.json",
+        "evidence/external-mac-arm64/reproduction.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_9334484d0e39ddbda2f0303e48b11e56",
       "dependencyRationale": {
         "RC-W05-T01": "Provides the shared contract for this wave.",
         "RC-W05-T09": "Required input outcome: Publish and read back the authorized 0.1."
@@ -2574,13 +2604,12 @@
         "NUMERICAL-001"
       ],
       "riskEvidenceNeeds": "Permission, public availability and independent human evidence are distinct gates; local artifacts and unaccepted proposals do not satisfy them.",
-      "status": "IN PROGRESS",
+      "status": "BLOCKED",
       "evidenceRefs": [
-        "docs/publication.md",
-        "plan/exports/tanduna-plan.json"
+        "evidence/tanduna-submission.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_38e9b4706dd66eb8c8e019cb7b6ebbc9",
       "dependencyRationale": {
         "RC-W05-T01": "Provides the shared contract for this wave.",
         "RC-W05-T08": "Required input outcome: Prepare the concrete public release decision.",
@@ -2620,12 +2649,12 @@
         "NUMERICAL-001"
       ],
       "riskEvidenceNeeds": "Permission, public availability and independent human evidence are distinct gates; local artifacts and unaccepted proposals do not satisfy them.",
-      "status": "NOT TESTED",
+      "status": "BLOCKED",
       "evidenceRefs": [
-        "docs/publication.md"
+        "evidence/tanduna-submission.json"
       ],
       "basis": "owner-authorized narrow outcome",
-      "platformId": null,
+      "platformId": "tsk_72e38bd46793b90b545e0341002c9c16",
       "dependencyRationale": {
         "RC-W04-T10": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W05-T01": "Provides the shared contract for this wave.",
@@ -2662,7 +2691,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_a16268a9309ef593f83ef210ce329e10",
       "dependencyRationale": {
         "RC-W01-T01": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated."
       }
@@ -2688,7 +2717,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_0fd3f398a1e9a7924fbad6b6638c7066",
       "dependencyRationale": {
         "RC-W06-T01": "Provides the shared contract for this wave."
       }
@@ -2714,7 +2743,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_3bebba90587fcf5173091171a072a268",
       "dependencyRationale": {
         "RC-W06-T01": "Provides the shared contract for this wave."
       }
@@ -2740,7 +2769,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_82224d3a0489c89862a3f49ea0260eee",
       "dependencyRationale": {
         "RC-W06-T01": "Provides the shared contract for this wave."
       }
@@ -2766,7 +2795,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_22912fdf19f49893d608203d08ad10a0",
       "dependencyRationale": {
         "RC-W06-T01": "Provides the shared contract for this wave."
       }
@@ -2792,7 +2821,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_50336a6c740241a6e0a039a6f1dc0af6",
       "dependencyRationale": {
         "RC-W06-T01": "Provides the shared contract for this wave."
       }
@@ -2824,7 +2853,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_c3f38764da61fed750f2fa6cfaaea524",
       "dependencyRationale": {
         "RC-W01-T01": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W06-T01": "Provides the shared contract for this wave.",
@@ -2858,7 +2887,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_00fc7565c74eeac48ddf14c580da4e1d",
       "dependencyRationale": {
         "RC-W02-T10": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W06-T07": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated."
@@ -2886,7 +2915,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_dae2070bedb4448b8dffb7f46e932022",
       "dependencyRationale": {
         "RC-W07-T01": "Provides the shared contract for this wave."
       }
@@ -2913,7 +2942,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_7bd967ea7bbcef40a5d32090c569d4cd",
       "dependencyRationale": {
         "RC-W07-T01": "Provides the shared contract for this wave."
       }
@@ -2940,7 +2969,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_55bf030ffa86a5f211654742ecd9dd14",
       "dependencyRationale": {
         "RC-W07-T01": "Provides the shared contract for this wave."
       }
@@ -2967,7 +2996,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_554c127b6b113e637f56e588935df112",
       "dependencyRationale": {
         "RC-W07-T01": "Provides the shared contract for this wave."
       }
@@ -2994,7 +3023,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_be0e8bd04d3e5e1980226018c7763810",
       "dependencyRationale": {
         "RC-W07-T01": "Provides the shared contract for this wave."
       }
@@ -3021,7 +3050,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_e7b38b217cbe42c26aa084c7879d2f7a",
       "dependencyRationale": {
         "RC-W07-T01": "Provides the shared contract for this wave."
       }
@@ -3048,7 +3077,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_e5f8458b55ae170087de5bb52e44e123",
       "dependencyRationale": {
         "RC-W07-T01": "Provides the shared contract for this wave."
       }
@@ -3075,7 +3104,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_3c62f814ce5e580caa48bc7d6d6e2398",
       "dependencyRationale": {
         "RC-W07-T01": "Provides the shared contract for this wave."
       }
@@ -3112,7 +3141,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_90cbea3f086ac7cc3b3b24b216d0a9aa",
       "dependencyRationale": {
         "RC-W02-T10": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W06-T07": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
@@ -3149,7 +3178,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_1e59a478b46b291ca2bf414df47c07e7",
       "dependencyRationale": {
         "RC-W07-T10": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated."
       }
@@ -3176,7 +3205,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_edaaacf206fc3e0e2e66c02a7ff3458d",
       "dependencyRationale": {
         "RC-W08-T01": "Provides the shared contract for this wave."
       }
@@ -3203,7 +3232,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_763d91a91ab51a4722bba156e7bf0c9e",
       "dependencyRationale": {
         "RC-W08-T01": "Provides the shared contract for this wave."
       }
@@ -3230,7 +3259,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_64f001b31b4dda2633240e2054641edf",
       "dependencyRationale": {
         "RC-W08-T01": "Provides the shared contract for this wave."
       }
@@ -3257,7 +3286,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_0c16b879ea676293241e4899150ffe1c",
       "dependencyRationale": {
         "RC-W08-T01": "Provides the shared contract for this wave."
       }
@@ -3284,7 +3313,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_9c87ed614df2df63f8c6e9f11dc8fcfe",
       "dependencyRationale": {
         "RC-W08-T01": "Provides the shared contract for this wave."
       }
@@ -3311,7 +3340,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_a08711e31c28919ef00469c6d2dc6b89",
       "dependencyRationale": {
         "RC-W08-T01": "Provides the shared contract for this wave."
       }
@@ -3338,7 +3367,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_de6c07be3b2e3d23323037823025e140",
       "dependencyRationale": {
         "RC-W08-T01": "Provides the shared contract for this wave."
       }
@@ -3373,7 +3402,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_fa470661406bc079292422d037e4195e",
       "dependencyRationale": {
         "RC-W07-T10": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W08-T01": "Provides the shared contract for this wave.",
@@ -3410,7 +3439,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_d30ecc10ddfd55b79d94bcde7f51273a",
       "dependencyRationale": {
         "RC-W06-T07": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W07-T10": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
@@ -3439,7 +3468,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_c88a4a940ece969c6b8851438b846780",
       "dependencyRationale": {
         "RC-W09-T01": "Provides the shared contract for this wave."
       }
@@ -3465,7 +3494,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_5f88baccba9acd335997c65b378540f6",
       "dependencyRationale": {
         "RC-W09-T01": "Provides the shared contract for this wave."
       }
@@ -3491,7 +3520,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_1dc3f8bff95d04dadce6d59640e0899d",
       "dependencyRationale": {
         "RC-W09-T01": "Provides the shared contract for this wave."
       }
@@ -3517,7 +3546,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_0c9f711e930795a90a3913a2bb337e1d",
       "dependencyRationale": {
         "RC-W09-T01": "Provides the shared contract for this wave."
       }
@@ -3543,7 +3572,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_3fb87c8f289c6ab5fcd35d7741d690f2",
       "dependencyRationale": {
         "RC-W09-T01": "Provides the shared contract for this wave."
       }
@@ -3569,7 +3598,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_14884669ea2e8f9c43244c3f1671e41b",
       "dependencyRationale": {
         "RC-W09-T01": "Provides the shared contract for this wave."
       }
@@ -3605,7 +3634,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_f1fed39bf34d2bb92b13d3cf62726bb7",
       "dependencyRationale": {
         "RC-W06-T07": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W07-T10": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
@@ -3641,7 +3670,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_64ece43d62744fb3df805a7a607adcd2",
       "dependencyRationale": {
         "RC-W09-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated."
       }
@@ -3667,7 +3696,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_a631db42cc2138db80e3296ef0aab382",
       "dependencyRationale": {
         "RC-W10-T01": "Provides the shared contract for this wave."
       }
@@ -3693,7 +3722,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_ee1774e0faabba46d18ddb8b4c951a3c",
       "dependencyRationale": {
         "RC-W10-T01": "Provides the shared contract for this wave."
       }
@@ -3719,7 +3748,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_efdff0e7e4c9dfc928d043806095d22f",
       "dependencyRationale": {
         "RC-W10-T01": "Provides the shared contract for this wave."
       }
@@ -3745,7 +3774,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_4029d7dbf09cb8900df7c832712542b7",
       "dependencyRationale": {
         "RC-W10-T01": "Provides the shared contract for this wave."
       }
@@ -3771,7 +3800,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_7d323f1fbdcb31f507b5ea6491837080",
       "dependencyRationale": {
         "RC-W10-T01": "Provides the shared contract for this wave."
       }
@@ -3797,7 +3826,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_073bf5fac806e0089b9cfe6dc75bc162",
       "dependencyRationale": {
         "RC-W10-T01": "Provides the shared contract for this wave."
       }
@@ -3830,7 +3859,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_6c7c49ed4a85fa0491913b9330e4e4a5",
       "dependencyRationale": {
         "RC-W09-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W10-T01": "Provides the shared contract for this wave.",
@@ -3863,7 +3892,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_6ef12fce910f5947507c8bf4bab3e4e5",
       "dependencyRationale": {
         "RC-W10-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated."
       }
@@ -3889,7 +3918,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_36a19dea6c5076bf395504031e362f57",
       "dependencyRationale": {
         "RC-W11-T01": "Provides the shared contract for this wave."
       }
@@ -3915,7 +3944,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_ca3700ed845553b77beee675f4ae54e4",
       "dependencyRationale": {
         "RC-W11-T01": "Provides the shared contract for this wave."
       }
@@ -3941,7 +3970,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_9f7ae6aabf7afd7a17d1a17014791aa2",
       "dependencyRationale": {
         "RC-W11-T01": "Provides the shared contract for this wave."
       }
@@ -3967,7 +3996,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_d3e099a316e1e20d65e0a260b3f8d36f",
       "dependencyRationale": {
         "RC-W11-T01": "Provides the shared contract for this wave."
       }
@@ -3993,7 +4022,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_c1d25c95555b39a76e990c8662065b0d",
       "dependencyRationale": {
         "RC-W11-T01": "Provides the shared contract for this wave."
       }
@@ -4019,7 +4048,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_0d94ef9d7aff6027eb0972d284658b74",
       "dependencyRationale": {
         "RC-W11-T01": "Provides the shared contract for this wave."
       }
@@ -4052,7 +4081,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_74cf11efd1f00c2a103a4b9b60380d72",
       "dependencyRationale": {
         "RC-W10-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W11-T01": "Provides the shared contract for this wave.",
@@ -4085,7 +4114,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_ea16407589027c98033f76e193bd6f92",
       "dependencyRationale": {
         "RC-W11-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated."
       }
@@ -4111,7 +4140,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_b099531ff195b05e274f9196b8344b59",
       "dependencyRationale": {
         "RC-W12-T01": "Provides the shared contract for this wave."
       }
@@ -4137,7 +4166,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_c420a8bc8d91a7747419b3c1a5a81400",
       "dependencyRationale": {
         "RC-W12-T01": "Provides the shared contract for this wave."
       }
@@ -4163,7 +4192,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_a95ae0a00ae7dce93190da061bd8319a",
       "dependencyRationale": {
         "RC-W12-T01": "Provides the shared contract for this wave."
       }
@@ -4189,7 +4218,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_6e655c64f578f650ffd55b188e370920",
       "dependencyRationale": {
         "RC-W12-T01": "Provides the shared contract for this wave."
       }
@@ -4215,7 +4244,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_fc72fb94d3e9944a7eff2f7d25e7d764",
       "dependencyRationale": {
         "RC-W12-T01": "Provides the shared contract for this wave."
       }
@@ -4247,7 +4276,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_d2453b4170a86d42dc2cab3d17d3a4b2",
       "dependencyRationale": {
         "RC-W11-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W12-T01": "Provides the shared contract for this wave.",
@@ -4280,7 +4309,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_2b84b154d474124aea697af01bcac182",
       "dependencyRationale": {
         "RC-W11-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W08-T09": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated."
@@ -4307,7 +4336,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_16a84cc1557a502f06a063c82475acb3",
       "dependencyRationale": {
         "RC-W13-T01": "Provides the shared contract for this wave."
       }
@@ -4333,7 +4362,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_a89c676734dc8b047d9fc9fbbcc67a2f",
       "dependencyRationale": {
         "RC-W13-T01": "Provides the shared contract for this wave."
       }
@@ -4359,7 +4388,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_4184ddc279085d7a791ad439a1a37ce0",
       "dependencyRationale": {
         "RC-W13-T01": "Provides the shared contract for this wave."
       }
@@ -4385,7 +4414,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_6354d15c9e33d2747a0fb6027724ff4d",
       "dependencyRationale": {
         "RC-W13-T01": "Provides the shared contract for this wave."
       }
@@ -4411,7 +4440,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_535dee9bdd4acb61cebd3a739e4ff2cb",
       "dependencyRationale": {
         "RC-W13-T01": "Provides the shared contract for this wave."
       }
@@ -4437,7 +4466,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_2e9e7c6adce5e6936da6b068fe760841",
       "dependencyRationale": {
         "RC-W13-T01": "Provides the shared contract for this wave."
       }
@@ -4471,7 +4500,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_6f45352eca6c0032f7fb237c1490846d",
       "dependencyRationale": {
         "RC-W11-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W08-T09": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
@@ -4507,7 +4536,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_0ec25e5d0bcbded81cbb23faf671b1d5",
       "dependencyRationale": {
         "RC-W11-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W12-T07": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
@@ -4535,7 +4564,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_7d25ce9204c3d8b48d2ff0bce7b34c48",
       "dependencyRationale": {
         "RC-W14-T01": "Provides the shared contract for this wave."
       }
@@ -4561,7 +4590,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_3638bcae6f229d4e4241d861c27455ad",
       "dependencyRationale": {
         "RC-W14-T01": "Provides the shared contract for this wave."
       }
@@ -4587,7 +4616,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_bf211c6345aefe84e0e2f301186c653d",
       "dependencyRationale": {
         "RC-W14-T01": "Provides the shared contract for this wave."
       }
@@ -4613,7 +4642,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_e8b957d5222958ed890b298f97adcda5",
       "dependencyRationale": {
         "RC-W14-T01": "Provides the shared contract for this wave."
       }
@@ -4639,7 +4668,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_41057e4c6e17829445fd99f55ea6d716",
       "dependencyRationale": {
         "RC-W14-T01": "Provides the shared contract for this wave."
       }
@@ -4673,7 +4702,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_5d6ff6ec8d62121b9607cc1768b8da9b",
       "dependencyRationale": {
         "RC-W11-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W12-T07": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
@@ -4707,7 +4736,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_088d3a34e6cf47eea2faa0923aa85ea5",
       "dependencyRationale": {
         "RC-W14-T07": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated."
       }
@@ -4733,7 +4762,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_16db4b8bc0493a355c74a24e27cf51d4",
       "dependencyRationale": {
         "RC-W15-T01": "Provides the shared contract for this wave."
       }
@@ -4759,7 +4788,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_4f76262a2b0e3547741dcff9945c3d6d",
       "dependencyRationale": {
         "RC-W15-T01": "Provides the shared contract for this wave."
       }
@@ -4785,7 +4814,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_45180cf5aceacdeb52a14a14e8a402c3",
       "dependencyRationale": {
         "RC-W15-T01": "Provides the shared contract for this wave."
       }
@@ -4811,7 +4840,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_e65943ebbd67cb8b24d5fe329bfb8203",
       "dependencyRationale": {
         "RC-W15-T01": "Provides the shared contract for this wave."
       }
@@ -4837,7 +4866,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_a9a799e7f34a0d849b51b2064d3fd5d8",
       "dependencyRationale": {
         "RC-W15-T01": "Provides the shared contract for this wave."
       }
@@ -4863,7 +4892,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_2466518ac5c5d6b69e10e4be5fb599fc",
       "dependencyRationale": {
         "RC-W15-T01": "Provides the shared contract for this wave."
       }
@@ -4896,7 +4925,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "conditional source requirement; no dependency on an unreleased sibling",
-      "platformId": null,
+      "platformId": "tsk_317f89428d960f8d399ebed494b3624b",
       "dependencyRationale": {
         "RC-W14-T07": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W15-T01": "Provides the shared contract for this wave.",
@@ -4929,7 +4958,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_92f5bfec1121bba378a303adccc5489f",
       "dependencyRationale": {
         "RC-W14-T07": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated."
       }
@@ -4955,7 +4984,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_1656bdaee1e8540bcc9fdf4754b05126",
       "dependencyRationale": {
         "RC-W16-T01": "Provides the shared contract for this wave."
       }
@@ -4981,7 +5010,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_c5c3f62cf85a1c9b943d60c2d6aee2a8",
       "dependencyRationale": {
         "RC-W16-T01": "Provides the shared contract for this wave."
       }
@@ -5007,7 +5036,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_d5e101ead57a210119b734f87769aae6",
       "dependencyRationale": {
         "RC-W16-T01": "Provides the shared contract for this wave."
       }
@@ -5033,7 +5062,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_6ec4cac341836167297b435035ec76a0",
       "dependencyRationale": {
         "RC-W16-T01": "Provides the shared contract for this wave."
       }
@@ -5059,7 +5088,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_c3969770629fd7ec71ae407732b1153f",
       "dependencyRationale": {
         "RC-W16-T01": "Provides the shared contract for this wave."
       }
@@ -5085,7 +5114,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_07d321717eaca185c7471b6904ef4464",
       "dependencyRationale": {
         "RC-W16-T01": "Provides the shared contract for this wave."
       }
@@ -5118,7 +5147,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_1102c38904b5729049425a7d4c248bb2",
       "dependencyRationale": {
         "RC-W14-T07": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W16-T01": "Provides the shared contract for this wave.",
@@ -5151,7 +5180,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_1b7c89b31e84f2f606305a817e39d098",
       "dependencyRationale": {
         "RC-W14-T07": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated."
       }
@@ -5177,7 +5206,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_cb1a4edc3b67d449ab06ef5173ebdb83",
       "dependencyRationale": {
         "RC-W17-T01": "Provides the shared contract for this wave."
       }
@@ -5203,7 +5232,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_0f0e667291be3a76806dfa1d2ee46605",
       "dependencyRationale": {
         "RC-W17-T01": "Provides the shared contract for this wave."
       }
@@ -5229,7 +5258,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_d940fb9ac38ad709ebc1fd546671ebbd",
       "dependencyRationale": {
         "RC-W17-T01": "Provides the shared contract for this wave."
       }
@@ -5255,7 +5284,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_8d9b237377214cceb320757cc25f22a3",
       "dependencyRationale": {
         "RC-W17-T01": "Provides the shared contract for this wave."
       }
@@ -5281,7 +5310,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_15870d121189f99a790f7228dbfe880a",
       "dependencyRationale": {
         "RC-W17-T01": "Provides the shared contract for this wave."
       }
@@ -5307,7 +5336,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_9d9a9efa47a0f11f99b1d756f7c10b30",
       "dependencyRationale": {
         "RC-W17-T01": "Provides the shared contract for this wave."
       }
@@ -5340,7 +5369,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_1cb23801bd65900efdf9143901ad65b4",
       "dependencyRationale": {
         "RC-W14-T07": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W17-T01": "Provides the shared contract for this wave.",
@@ -5375,7 +5404,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_388289b60a9b903cb536c43eb4e86ecb",
       "dependencyRationale": {
         "RC-W15-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W16-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
@@ -5403,7 +5432,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_46f2cea868066ffadd478fe42fc7f08f",
       "dependencyRationale": {
         "RC-W18-T01": "Provides the shared contract for this wave."
       }
@@ -5429,7 +5458,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_6d1dbef096b2f9897ad2ab6f9ec4b165",
       "dependencyRationale": {
         "RC-W18-T01": "Provides the shared contract for this wave."
       }
@@ -5455,7 +5484,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_6174695e1b770011ef89e1f1795bc9c9",
       "dependencyRationale": {
         "RC-W18-T01": "Provides the shared contract for this wave."
       }
@@ -5481,7 +5510,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_c3d1b113bd61210cf58edb0326bee8ac",
       "dependencyRationale": {
         "RC-W18-T01": "Provides the shared contract for this wave."
       }
@@ -5507,7 +5536,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_64db3adbcca764368e893b0f8f394387",
       "dependencyRationale": {
         "RC-W18-T01": "Provides the shared contract for this wave."
       }
@@ -5533,7 +5562,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_794e3f0d3162c0ed41ca7b498c9933bf",
       "dependencyRationale": {
         "RC-W18-T01": "Provides the shared contract for this wave."
       }
@@ -5568,7 +5597,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_0cd59524206d0bc3f7b078a90ab9e602",
       "dependencyRationale": {
         "RC-W15-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W16-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
@@ -5605,7 +5634,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_c6e0c96188b75100943535a6e60835c2",
       "dependencyRationale": {
         "RC-W15-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W16-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
@@ -5633,7 +5662,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_a87eb27970689f6ebc4ba8d02e681872",
       "dependencyRationale": {
         "RC-W19-T01": "Provides the shared contract for this wave."
       }
@@ -5659,7 +5688,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_d438f0d0004f97f39eaf0dc541540623",
       "dependencyRationale": {
         "RC-W19-T01": "Provides the shared contract for this wave."
       }
@@ -5685,7 +5714,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_2ffd9d11c54a840bd33eec62c70644b9",
       "dependencyRationale": {
         "RC-W19-T01": "Provides the shared contract for this wave."
       }
@@ -5711,7 +5740,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_6d6e3159b79170b9e04eb2f4c2de8d55",
       "dependencyRationale": {
         "RC-W19-T01": "Provides the shared contract for this wave."
       }
@@ -5737,7 +5766,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_97043be88ead7c973ed9a3fdb963f99e",
       "dependencyRationale": {
         "RC-W19-T01": "Provides the shared contract for this wave."
       }
@@ -5763,7 +5792,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "exploratory option; adoption requires a separate evidence and owner decision",
-      "platformId": null,
+      "platformId": "tsk_20a9e6ce8ac4a57b9f802733239174b5",
       "dependencyRationale": {
         "RC-W19-T01": "Provides the shared contract for this wave."
       }
@@ -5798,7 +5827,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_d129b662e8ccd5547256c46bf5490f51",
       "dependencyRationale": {
         "RC-W15-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W16-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
@@ -5836,7 +5865,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_6cf697d7ef0638d9482e2093c7995cec",
       "dependencyRationale": {
         "RC-W15-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W16-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
@@ -5865,7 +5894,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_1d3bf554197523dd17df8a3507ea7bdb",
       "dependencyRationale": {
         "RC-W20-T01": "Provides the shared contract for this wave."
       }
@@ -5891,7 +5920,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_262682651c1f0269fcee4cb7f94010bc",
       "dependencyRationale": {
         "RC-W20-T01": "Provides the shared contract for this wave."
       }
@@ -5917,7 +5946,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_33f0b06e94614900b8112c6c60af8e2d",
       "dependencyRationale": {
         "RC-W20-T01": "Provides the shared contract for this wave."
       }
@@ -5943,7 +5972,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_3bd28eeef6cb34483762b3f5207e7ac8",
       "dependencyRationale": {
         "RC-W20-T01": "Provides the shared contract for this wave."
       }
@@ -5969,7 +5998,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_9dc9223ebebe79d3e3303b77d297b6bf",
       "dependencyRationale": {
         "RC-W20-T01": "Provides the shared contract for this wave."
       }
@@ -6004,7 +6033,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_844d9102cbcd87866f23d65f8bd8f5be",
       "dependencyRationale": {
         "RC-W15-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W16-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
@@ -6042,7 +6071,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_dc39a8c5654aa7cc2c2c801ef3f1d4f6",
       "dependencyRationale": {
         "RC-W12-T07": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W18-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
@@ -6071,7 +6100,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_6669d9b35fffc0e4c69e869d48a8c97b",
       "dependencyRationale": {
         "RC-W21-T01": "Provides the shared contract for this wave."
       }
@@ -6098,7 +6127,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_c7c8a3c25224c47403da10ea0b9e4f39",
       "dependencyRationale": {
         "RC-W21-T01": "Provides the shared contract for this wave."
       }
@@ -6125,7 +6154,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_409fbede4c3a536e5615fd30bde1fb8e",
       "dependencyRationale": {
         "RC-W21-T01": "Provides the shared contract for this wave."
       }
@@ -6152,7 +6181,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_4ed82039227da2fbde23a4b86365bcf0",
       "dependencyRationale": {
         "RC-W21-T01": "Provides the shared contract for this wave."
       }
@@ -6179,7 +6208,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_f039df4024f49bab937d4fff4096703d",
       "dependencyRationale": {
         "RC-W21-T01": "Provides the shared contract for this wave."
       }
@@ -6206,7 +6235,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_a965db12d4f55e8159bb8cc8bc7cd2aa",
       "dependencyRationale": {
         "RC-W21-T01": "Provides the shared contract for this wave."
       }
@@ -6242,7 +6271,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_818ba18131149e95d35d0741493b3d0c",
       "dependencyRationale": {
         "RC-W12-T07": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W18-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
@@ -6279,7 +6308,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_d1d4e767b9a493e6cc248258c9346078",
       "dependencyRationale": {
         "RC-W18-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W19-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
@@ -6307,7 +6336,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_da170779e07fb3294dc3a2e3a83e7dc7",
       "dependencyRationale": {
         "RC-W22-T01": "Provides the shared contract for this wave."
       }
@@ -6333,7 +6362,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_595faa076627561d691192b150963cba",
       "dependencyRationale": {
         "RC-W22-T01": "Provides the shared contract for this wave."
       }
@@ -6359,7 +6388,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_478a5fdc23ac47972d2b5ef41fbea1a0",
       "dependencyRationale": {
         "RC-W22-T01": "Provides the shared contract for this wave."
       }
@@ -6385,7 +6414,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_6b97871b3ca8e9a92581d87e79812be2",
       "dependencyRationale": {
         "RC-W22-T01": "Provides the shared contract for this wave."
       }
@@ -6411,7 +6440,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_df0a98b7c6e5b7e1cca8861d6ce1589e",
       "dependencyRationale": {
         "RC-W22-T01": "Provides the shared contract for this wave."
       }
@@ -6437,7 +6466,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_02ca584c50836e66464eacb8d3d308ef",
       "dependencyRationale": {
         "RC-W22-T01": "Provides the shared contract for this wave."
       }
@@ -6472,7 +6501,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_0c0b6edbe2da5de9d149a44e05a060f7",
       "dependencyRationale": {
         "RC-W18-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W19-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
@@ -6510,7 +6539,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_61d926a9469c4532bc11ee9e213879d3",
       "dependencyRationale": {
         "RC-W18-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W19-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
@@ -6539,7 +6568,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_a19fa4086e6c135573ca2f5fae3d0fbc",
       "dependencyRationale": {
         "RC-W23-T01": "Provides the shared contract for this wave."
       }
@@ -6565,7 +6594,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_86464b173deea9126bf3b0c093c10aaa",
       "dependencyRationale": {
         "RC-W23-T01": "Provides the shared contract for this wave."
       }
@@ -6591,7 +6620,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_5640539eebf5e74032b422c925deb632",
       "dependencyRationale": {
         "RC-W23-T01": "Provides the shared contract for this wave."
       }
@@ -6617,7 +6646,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_c268a368febdcab8b6106e8b80389ff3",
       "dependencyRationale": {
         "RC-W23-T01": "Provides the shared contract for this wave."
       }
@@ -6643,7 +6672,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_f7b18124b00758cf1abcd1f7a390171b",
       "dependencyRationale": {
         "RC-W23-T01": "Provides the shared contract for this wave."
       }
@@ -6669,7 +6698,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_24ccdde7dd9bbddceb8f032964457544",
       "dependencyRationale": {
         "RC-W23-T01": "Provides the shared contract for this wave."
       }
@@ -6695,7 +6724,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_d57eb0fdd258e7d7274d2820685c4332",
       "dependencyRationale": {
         "RC-W23-T01": "Provides the shared contract for this wave."
       }
@@ -6732,7 +6761,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_e8634504644690e95255386eae8d4f4e",
       "dependencyRationale": {
         "RC-W18-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W19-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
@@ -6774,7 +6803,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_0ed81f9a635202df983dfa09a62a1e28",
       "dependencyRationale": {
         "RC-W18-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W21-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
@@ -6805,7 +6834,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_2f49dfa84da5f330f491d00d99b5194c",
       "dependencyRationale": {
         "RC-W24-T01": "Provides the shared contract for this wave."
       }
@@ -6833,7 +6862,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_b644ccdd8479f0bac0755b4e4a4e9bed",
       "dependencyRationale": {
         "RC-W24-T01": "Provides the shared contract for this wave."
       }
@@ -6861,7 +6890,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_2f7cf3fe00da65f5c57c6043d19e312a",
       "dependencyRationale": {
         "RC-W24-T01": "Provides the shared contract for this wave."
       }
@@ -6889,7 +6918,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_4e29d56dcd5925c23e8e25bcbd635672",
       "dependencyRationale": {
         "RC-W24-T01": "Provides the shared contract for this wave."
       }
@@ -6917,7 +6946,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_5ff37fa118f32b07d3bfccb393cea7b8",
       "dependencyRationale": {
         "RC-W24-T01": "Provides the shared contract for this wave."
       }
@@ -6954,7 +6983,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "exploratory option; adoption requires a separate evidence and owner decision",
-      "platformId": null,
+      "platformId": "tsk_a379270dfea56761b6e58c6a0ca7b3e7",
       "dependencyRationale": {
         "RC-W18-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W21-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
@@ -6993,7 +7022,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_e1de7d5b06c4a65d658e9506e3556f43",
       "dependencyRationale": {
         "RC-W18-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W19-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
@@ -7023,7 +7052,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_5c00c934f36832e844ed2f17e8e983ce",
       "dependencyRationale": {
         "RC-W25-T01": "Provides the shared contract for this wave."
       }
@@ -7049,7 +7078,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_f35dc9597433cf980a92fe59e5302c28",
       "dependencyRationale": {
         "RC-W25-T01": "Provides the shared contract for this wave."
       }
@@ -7075,7 +7104,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_03509f0efec982981da39f5440c35b63",
       "dependencyRationale": {
         "RC-W25-T01": "Provides the shared contract for this wave."
       }
@@ -7101,7 +7130,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_df8126fd7360883c7cf417f41758a21e",
       "dependencyRationale": {
         "RC-W25-T01": "Provides the shared contract for this wave."
       }
@@ -7127,7 +7156,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_48588e8d991ed0ce7c1d55e0aeb0dd64",
       "dependencyRationale": {
         "RC-W25-T01": "Provides the shared contract for this wave."
       }
@@ -7153,7 +7182,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_a4e4d8ce0b77d7dd902600db9e483523",
       "dependencyRationale": {
         "RC-W25-T01": "Provides the shared contract for this wave."
       }
@@ -7190,7 +7219,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_ae06479edcbd89df3da0c4c1d9578873",
       "dependencyRationale": {
         "RC-W18-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W19-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
@@ -7229,7 +7258,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_2a31a07f95c67badffaf374b80c5bb45",
       "dependencyRationale": {
         "RC-W22-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W23-T09": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
@@ -7257,7 +7286,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_1aa2dff88991a242f69197aa379cbfee",
       "dependencyRationale": {
         "RC-W26-T01": "Provides the shared contract for this wave."
       }
@@ -7283,7 +7312,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_65579b847689ff3424c8e9d8ab5d16f7",
       "dependencyRationale": {
         "RC-W26-T01": "Provides the shared contract for this wave."
       }
@@ -7309,7 +7338,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_b6188969b48baaf53909baec78bbc106",
       "dependencyRationale": {
         "RC-W26-T01": "Provides the shared contract for this wave."
       }
@@ -7335,7 +7364,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_da60803615133e8de99eee1fa1b55c0c",
       "dependencyRationale": {
         "RC-W26-T01": "Provides the shared contract for this wave."
       }
@@ -7361,7 +7390,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_ea5dccfddde06d04f8b1ceb86d2d4e1c",
       "dependencyRationale": {
         "RC-W26-T01": "Provides the shared contract for this wave."
       }
@@ -7395,7 +7424,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_81f9f11ae1eb471bd97986bd724fc1db",
       "dependencyRationale": {
         "RC-W22-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W23-T09": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
@@ -7433,7 +7462,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_f03093ca74a608af9ac1b72e3ae03979",
       "dependencyRationale": {
         "RC-W22-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W23-T09": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
@@ -7463,7 +7492,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_f331daa345fa07a7f15f29e87de0dd68",
       "dependencyRationale": {
         "RC-W27-T01": "Provides the shared contract for this wave."
       }
@@ -7490,7 +7519,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_475d8aa6ad945934031f60bf323f32b0",
       "dependencyRationale": {
         "RC-W27-T01": "Provides the shared contract for this wave."
       }
@@ -7517,7 +7546,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_77d7a3eb4bcaf9632d6087b4994918e7",
       "dependencyRationale": {
         "RC-W27-T01": "Provides the shared contract for this wave."
       }
@@ -7544,7 +7573,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_4ba625c7f673667a12ead188c771bd60",
       "dependencyRationale": {
         "RC-W27-T01": "Provides the shared contract for this wave."
       }
@@ -7571,7 +7600,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_204b51c3e5d87fe81ad5acd26743d775",
       "dependencyRationale": {
         "RC-W27-T01": "Provides the shared contract for this wave."
       }
@@ -7598,7 +7627,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_2d290efc88b93d50a31e0a160e868a1d",
       "dependencyRationale": {
         "RC-W27-T01": "Provides the shared contract for this wave."
       }
@@ -7625,7 +7654,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_333d842f3df9303fc365fed07aed85d8",
       "dependencyRationale": {
         "RC-W27-T01": "Provides the shared contract for this wave."
       }
@@ -7663,7 +7692,7 @@
       "status": "PLANNED",
       "evidenceRefs": [],
       "basis": "expanded source requirement",
-      "platformId": null,
+      "platformId": "tsk_e81d7bd223dff9b29ec3da05588f4fb8",
       "dependencyRationale": {
         "RC-W22-T08": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
         "RC-W23-T09": "Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.",
@@ -10554,14 +10583,14 @@
     }
   ],
   "publication": {
-    "status": "NOT TESTED",
+    "status": "BLOCKED",
     "projectId": "prj_def88c61770d94181ab97d1c2e2125a0",
-    "observedAt": "2026-09-08T11:39:13Z",
+    "observedAt": "2026-09-08T15:37:19Z",
     "roadmapUrl": "https://tanduna.com/projects/research-continuum/roadmap",
     "tasksUrl": "https://tanduna.com/p/research-continuum/tasks",
-    "proposalId": "prp_d83436915d973e65338f4a367f70541f",
-    "proposalRevision": 1,
-    "proposalState": "Discussion; not accepted",
+    "proposalId": "prp_df7f3bd9e870117e57f01e5c8937764c",
+    "proposalRevision": null,
+    "proposalState": "Saved plan revision 1 submitted/frozen; reviewer failed with input error twice; exact yes-option approval pending; not published",
     "observedNativeTaskCount": 0,
     "observedNativePlan": "No task plan has been published yet",
     "workflow": "tasks.create produces unpublished drafts; task_plans.save_draft exists. Submission requires owner agreement, passing review and exact poll-option approval. No platform write authorized by this export.",
@@ -10569,237 +10598,285 @@
       "status": "RELEASE VERIFIED",
       "version": "0.1.0",
       "url": "https://github.com/thepianistdirector/research-continuum/releases/tag/v0.1.0",
-      "instructions": "Download research-continuum-0.1.0.tar.gz and SHA256SUMS from the public v0.1.0 release; check SHA-256 72027ecd84a06d20445e9fd6d604dee2393b03d78255f679652e2f331585bc3b; extract and run the packaged README commands from research-continuum-0.1.0. Verified runtime: Linux x86_64, Python 3.12.14, SQLite 3.53.1. All four public assets were downloaded anonymously and matched the approved bytes. Independent external-host execution and human/qualified review remain pending. The frozen archive records preparation-time publication status; current STATUS.md records read-back evidence."
+      "instructions": "Download research-continuum-0.1.0.tar.gz and SHA256SUMS from the public v0.1.0 release; check SHA-256 72027ecd84a06d20445e9fd6d604dee2393b03d78255f679652e2f331585bc3b; extract and run the packaged README commands from research-continuum-0.1.0. Verified runtime: Linux x86_64, Python 3.12.14, SQLite 3.53.1. All four public assets were downloaded anonymously and matched the approved bytes. The packaged primary/recovery workflow and fresh reproduction of its new campaign also passed on a separate Mac-hosted Linux ARM64 environment (Python 3.12.13, SQLite 3.46.1). This is external-host agent evidence; human/qualified review, native macOS support and external x86_64 parity are not established. The frozen archive records preparation-time publication status; current STATUS.md records read-back evidence."
     },
     "platformMapping": {
-      "RC-F01": null,
-      "RC-F02": null,
-      "RC-F03": null,
-      "RC-W01-T01": null,
-      "RC-W01-T02": null,
-      "RC-W01-T03": null,
-      "RC-W01-T04": null,
-      "RC-W01-T05": null,
-      "RC-W01-T06": null,
-      "RC-W01-T07": null,
-      "RC-W01-T08": null,
-      "RC-W01-T09": null,
-      "RC-W01-T10": null,
-      "RC-W02-T01": null,
-      "RC-W02-T02": null,
-      "RC-W02-T03": null,
-      "RC-W02-T04": null,
-      "RC-W02-T05": null,
-      "RC-W02-T06": null,
-      "RC-W02-T07": null,
-      "RC-W02-T08": null,
-      "RC-W02-T09": null,
-      "RC-W02-T10": null,
-      "RC-W03-T01": null,
-      "RC-W03-T02": null,
-      "RC-W03-T03": null,
-      "RC-W03-T04": null,
-      "RC-W03-T05": null,
-      "RC-W03-T06": null,
-      "RC-W03-T07": null,
-      "RC-W03-T08": null,
-      "RC-W04-T01": null,
-      "RC-W04-T02": null,
-      "RC-W04-T03": null,
-      "RC-W04-T04": null,
-      "RC-W04-T05": null,
-      "RC-W04-T06": null,
-      "RC-W04-T07": null,
-      "RC-W04-T08": null,
-      "RC-W04-T09": null,
-      "RC-W04-T10": null,
-      "RC-W05-T01": null,
-      "RC-W05-T02": null,
-      "RC-W05-T03": null,
-      "RC-W05-T04": null,
-      "RC-W05-T05": null,
-      "RC-W05-T06": null,
-      "RC-W05-T07": null,
-      "RC-W05-T08": null,
-      "RC-W05-T09": null,
-      "RC-W05-T10": null,
-      "RC-W05-T11": null,
-      "RC-W05-T12": null,
-      "RC-W06-T01": null,
-      "RC-W06-T02": null,
-      "RC-W06-T03": null,
-      "RC-W06-T04": null,
-      "RC-W06-T05": null,
-      "RC-W06-T06": null,
-      "RC-W06-T07": null,
-      "RC-W07-T01": null,
-      "RC-W07-T02": null,
-      "RC-W07-T03": null,
-      "RC-W07-T04": null,
-      "RC-W07-T05": null,
-      "RC-W07-T06": null,
-      "RC-W07-T07": null,
-      "RC-W07-T08": null,
-      "RC-W07-T09": null,
-      "RC-W07-T10": null,
-      "RC-W08-T01": null,
-      "RC-W08-T02": null,
-      "RC-W08-T03": null,
-      "RC-W08-T04": null,
-      "RC-W08-T05": null,
-      "RC-W08-T06": null,
-      "RC-W08-T07": null,
-      "RC-W08-T08": null,
-      "RC-W08-T09": null,
-      "RC-W09-T01": null,
-      "RC-W09-T02": null,
-      "RC-W09-T03": null,
-      "RC-W09-T04": null,
-      "RC-W09-T05": null,
-      "RC-W09-T06": null,
-      "RC-W09-T07": null,
-      "RC-W09-T08": null,
-      "RC-W10-T01": null,
-      "RC-W10-T02": null,
-      "RC-W10-T03": null,
-      "RC-W10-T04": null,
-      "RC-W10-T05": null,
-      "RC-W10-T06": null,
-      "RC-W10-T07": null,
-      "RC-W10-T08": null,
-      "RC-W11-T01": null,
-      "RC-W11-T02": null,
-      "RC-W11-T03": null,
-      "RC-W11-T04": null,
-      "RC-W11-T05": null,
-      "RC-W11-T06": null,
-      "RC-W11-T07": null,
-      "RC-W11-T08": null,
-      "RC-W12-T01": null,
-      "RC-W12-T02": null,
-      "RC-W12-T03": null,
-      "RC-W12-T04": null,
-      "RC-W12-T05": null,
-      "RC-W12-T06": null,
-      "RC-W12-T07": null,
-      "RC-W13-T01": null,
-      "RC-W13-T02": null,
-      "RC-W13-T03": null,
-      "RC-W13-T04": null,
-      "RC-W13-T05": null,
-      "RC-W13-T06": null,
-      "RC-W13-T07": null,
-      "RC-W13-T08": null,
-      "RC-W14-T01": null,
-      "RC-W14-T02": null,
-      "RC-W14-T03": null,
-      "RC-W14-T04": null,
-      "RC-W14-T05": null,
-      "RC-W14-T06": null,
-      "RC-W14-T07": null,
-      "RC-W15-T01": null,
-      "RC-W15-T02": null,
-      "RC-W15-T03": null,
-      "RC-W15-T04": null,
-      "RC-W15-T05": null,
-      "RC-W15-T06": null,
-      "RC-W15-T07": null,
-      "RC-W15-T08": null,
-      "RC-W16-T01": null,
-      "RC-W16-T02": null,
-      "RC-W16-T03": null,
-      "RC-W16-T04": null,
-      "RC-W16-T05": null,
-      "RC-W16-T06": null,
-      "RC-W16-T07": null,
-      "RC-W16-T08": null,
-      "RC-W17-T01": null,
-      "RC-W17-T02": null,
-      "RC-W17-T03": null,
-      "RC-W17-T04": null,
-      "RC-W17-T05": null,
-      "RC-W17-T06": null,
-      "RC-W17-T07": null,
-      "RC-W17-T08": null,
-      "RC-W18-T01": null,
-      "RC-W18-T02": null,
-      "RC-W18-T03": null,
-      "RC-W18-T04": null,
-      "RC-W18-T05": null,
-      "RC-W18-T06": null,
-      "RC-W18-T07": null,
-      "RC-W18-T08": null,
-      "RC-W19-T01": null,
-      "RC-W19-T02": null,
-      "RC-W19-T03": null,
-      "RC-W19-T04": null,
-      "RC-W19-T05": null,
-      "RC-W19-T06": null,
-      "RC-W19-T07": null,
-      "RC-W19-T08": null,
-      "RC-W20-T01": null,
-      "RC-W20-T02": null,
-      "RC-W20-T03": null,
-      "RC-W20-T04": null,
-      "RC-W20-T05": null,
-      "RC-W20-T06": null,
-      "RC-W20-T07": null,
-      "RC-W21-T01": null,
-      "RC-W21-T02": null,
-      "RC-W21-T03": null,
-      "RC-W21-T04": null,
-      "RC-W21-T05": null,
-      "RC-W21-T06": null,
-      "RC-W21-T07": null,
-      "RC-W21-T08": null,
-      "RC-W22-T01": null,
-      "RC-W22-T02": null,
-      "RC-W22-T03": null,
-      "RC-W22-T04": null,
-      "RC-W22-T05": null,
-      "RC-W22-T06": null,
-      "RC-W22-T07": null,
-      "RC-W22-T08": null,
-      "RC-W23-T01": null,
-      "RC-W23-T02": null,
-      "RC-W23-T03": null,
-      "RC-W23-T04": null,
-      "RC-W23-T05": null,
-      "RC-W23-T06": null,
-      "RC-W23-T07": null,
-      "RC-W23-T08": null,
-      "RC-W23-T09": null,
-      "RC-W24-T01": null,
-      "RC-W24-T02": null,
-      "RC-W24-T03": null,
-      "RC-W24-T04": null,
-      "RC-W24-T05": null,
-      "RC-W24-T06": null,
-      "RC-W24-T07": null,
-      "RC-W25-T01": null,
-      "RC-W25-T02": null,
-      "RC-W25-T03": null,
-      "RC-W25-T04": null,
-      "RC-W25-T05": null,
-      "RC-W25-T06": null,
-      "RC-W25-T07": null,
-      "RC-W25-T08": null,
-      "RC-W26-T01": null,
-      "RC-W26-T02": null,
-      "RC-W26-T03": null,
-      "RC-W26-T04": null,
-      "RC-W26-T05": null,
-      "RC-W26-T06": null,
-      "RC-W26-T07": null,
-      "RC-W27-T01": null,
-      "RC-W27-T02": null,
-      "RC-W27-T03": null,
-      "RC-W27-T04": null,
-      "RC-W27-T05": null,
-      "RC-W27-T06": null,
-      "RC-W27-T07": null,
-      "RC-W27-T08": null,
-      "RC-W27-T09": null
+      "RC-W01-T01": "tsk_ff17008788c2a266ef834ea928c17b00",
+      "RC-W01-T02": "tsk_cdf6e5cabee8740c5b4bf3cbc31e3e90",
+      "RC-W01-T03": "tsk_c2b226dd82073c555dac68c9ab795444",
+      "RC-W01-T04": "tsk_1e092820eeaff33ad774c3e3708cadd5",
+      "RC-W01-T05": "tsk_e6467dccdcb8eb78de78bd651398a487",
+      "RC-W01-T06": "tsk_41db721d5e9e90b25537b9f9202f7624",
+      "RC-W01-T07": "tsk_0503fb01a2dfde197c56113155073f31",
+      "RC-W01-T08": "tsk_6c2923b7e0c50c261b4d7dbc33fcd45f",
+      "RC-W01-T09": "tsk_d1490f0a6213cae946523090033d9791",
+      "RC-W01-T10": "tsk_6055822fc13555c727864c2799fda001",
+      "RC-W02-T01": "tsk_63aebc644bb77ecda49bbe28c8120917",
+      "RC-W02-T02": "tsk_cecac7460303c27b763a9d39c72f7ff9",
+      "RC-W02-T03": "tsk_efd2e2cdbbb5caaf9a55e404fda21859",
+      "RC-W02-T04": "tsk_776ebf8acea5989966072804aea3dc71",
+      "RC-W02-T05": "tsk_5b15fda0bceb2e105bca5f616bd61aca",
+      "RC-W02-T06": "tsk_9788099b5042e34cb390a0f5e33d94b3",
+      "RC-W02-T07": "tsk_62f61a18f075fa3abe5cbecf73d9e433",
+      "RC-W02-T08": "tsk_bd66f6c6524f103480bf312f752cdf6c",
+      "RC-W02-T09": "tsk_906d41fc39fb9fa4522040cba6d7e77e",
+      "RC-W02-T10": "tsk_5d23405b4fdb8e17f2a72b4d16c6153a",
+      "RC-W03-T01": "tsk_5295a5ee39bcee0c68719b02a9c7954b",
+      "RC-W03-T02": "tsk_c882540ddd58f2a8c2bd03bd792db2f2",
+      "RC-W03-T03": "tsk_2ba1b34703f25f4a000068eb5eca22c1",
+      "RC-W03-T04": "tsk_2f285ea28a17501a5e700334d69d9893",
+      "RC-W03-T05": "tsk_25a56ad1daaa35dce66335b40c0f3a48",
+      "RC-W03-T06": "tsk_334b60ceb7641834cdcfc799bb02b713",
+      "RC-W03-T07": "tsk_3a1d73edf17251c9911f894ca54297f5",
+      "RC-W03-T08": "tsk_b1ac7640309f967f862a7e2e4ad34737",
+      "RC-W04-T01": "tsk_457b3662228a4cd3586c15e9a46315c7",
+      "RC-W04-T02": "tsk_f679720e011b1f348518638a955080b3",
+      "RC-W04-T03": "tsk_eff522416dc5d0522fef7837403834cf",
+      "RC-W04-T04": "tsk_f45c3de618e72c7038f753aa6a7d1a9d",
+      "RC-W04-T05": "tsk_4647d4c0ea62014f0fc5f39782aa8e20",
+      "RC-W04-T06": "tsk_0ec032514e692a719bdb168758be839e",
+      "RC-W04-T07": "tsk_9df1c8af826063d8f095f8fd0e79cfae",
+      "RC-W04-T08": "tsk_7140e16703777ccc87a894714b8cb986",
+      "RC-W04-T09": "tsk_dedc8cdc90c692b018e46d9c7b74bef7",
+      "RC-W04-T10": "tsk_c9b6952bc400249f41171fb9ad422ce4",
+      "RC-W05-T01": "tsk_b1a11fe6fd12c7b66b040764dd9b1750",
+      "RC-W05-T02": "tsk_edaebb3080e293011fae1d30572dea71",
+      "RC-W05-T03": "tsk_aa66eebf609c2d403cd98ec822c941f7",
+      "RC-W05-T04": "tsk_3b0b51e3087fbc6feeda372480f4e32f",
+      "RC-W05-T05": "tsk_4bc925b889c0cc572809c324fd4080c0",
+      "RC-W05-T06": "tsk_360fb0f0330660b2888f90f34bee4ef1",
+      "RC-W05-T07": "tsk_7095cb902d325f7cfac9f8f9ea6648ba",
+      "RC-W05-T08": "tsk_fc0c2438daa2db13a91574df63ad9722",
+      "RC-W05-T09": "tsk_e56be9907616b2708eb5423dde404d5c",
+      "RC-W05-T10": "tsk_9334484d0e39ddbda2f0303e48b11e56",
+      "RC-W05-T11": "tsk_38e9b4706dd66eb8c8e019cb7b6ebbc9",
+      "RC-W05-T12": "tsk_72e38bd46793b90b545e0341002c9c16",
+      "RC-W06-T01": "tsk_a16268a9309ef593f83ef210ce329e10",
+      "RC-W06-T02": "tsk_0fd3f398a1e9a7924fbad6b6638c7066",
+      "RC-W06-T03": "tsk_3bebba90587fcf5173091171a072a268",
+      "RC-W06-T04": "tsk_82224d3a0489c89862a3f49ea0260eee",
+      "RC-W06-T05": "tsk_22912fdf19f49893d608203d08ad10a0",
+      "RC-W06-T06": "tsk_50336a6c740241a6e0a039a6f1dc0af6",
+      "RC-W06-T07": "tsk_c3f38764da61fed750f2fa6cfaaea524",
+      "RC-W07-T01": "tsk_00fc7565c74eeac48ddf14c580da4e1d",
+      "RC-W07-T02": "tsk_dae2070bedb4448b8dffb7f46e932022",
+      "RC-W07-T03": "tsk_7bd967ea7bbcef40a5d32090c569d4cd",
+      "RC-W07-T04": "tsk_55bf030ffa86a5f211654742ecd9dd14",
+      "RC-W07-T05": "tsk_554c127b6b113e637f56e588935df112",
+      "RC-W07-T06": "tsk_be0e8bd04d3e5e1980226018c7763810",
+      "RC-W07-T07": "tsk_e7b38b217cbe42c26aa084c7879d2f7a",
+      "RC-W07-T08": "tsk_e5f8458b55ae170087de5bb52e44e123",
+      "RC-W07-T09": "tsk_3c62f814ce5e580caa48bc7d6d6e2398",
+      "RC-W07-T10": "tsk_90cbea3f086ac7cc3b3b24b216d0a9aa",
+      "RC-W08-T01": "tsk_1e59a478b46b291ca2bf414df47c07e7",
+      "RC-W08-T02": "tsk_edaaacf206fc3e0e2e66c02a7ff3458d",
+      "RC-W08-T03": "tsk_763d91a91ab51a4722bba156e7bf0c9e",
+      "RC-W08-T04": "tsk_64f001b31b4dda2633240e2054641edf",
+      "RC-W08-T05": "tsk_0c16b879ea676293241e4899150ffe1c",
+      "RC-W08-T06": "tsk_9c87ed614df2df63f8c6e9f11dc8fcfe",
+      "RC-W08-T07": "tsk_a08711e31c28919ef00469c6d2dc6b89",
+      "RC-W08-T08": "tsk_de6c07be3b2e3d23323037823025e140",
+      "RC-W08-T09": "tsk_fa470661406bc079292422d037e4195e",
+      "RC-W09-T01": "tsk_d30ecc10ddfd55b79d94bcde7f51273a",
+      "RC-W09-T02": "tsk_c88a4a940ece969c6b8851438b846780",
+      "RC-W09-T03": "tsk_5f88baccba9acd335997c65b378540f6",
+      "RC-W09-T04": "tsk_1dc3f8bff95d04dadce6d59640e0899d",
+      "RC-W09-T05": "tsk_0c9f711e930795a90a3913a2bb337e1d",
+      "RC-W09-T06": "tsk_3fb87c8f289c6ab5fcd35d7741d690f2",
+      "RC-W09-T07": "tsk_14884669ea2e8f9c43244c3f1671e41b",
+      "RC-W09-T08": "tsk_f1fed39bf34d2bb92b13d3cf62726bb7",
+      "RC-W10-T01": "tsk_64ece43d62744fb3df805a7a607adcd2",
+      "RC-W10-T02": "tsk_a631db42cc2138db80e3296ef0aab382",
+      "RC-W10-T03": "tsk_ee1774e0faabba46d18ddb8b4c951a3c",
+      "RC-W10-T04": "tsk_efdff0e7e4c9dfc928d043806095d22f",
+      "RC-W10-T05": "tsk_4029d7dbf09cb8900df7c832712542b7",
+      "RC-W10-T06": "tsk_7d323f1fbdcb31f507b5ea6491837080",
+      "RC-W10-T07": "tsk_073bf5fac806e0089b9cfe6dc75bc162",
+      "RC-W10-T08": "tsk_6c7c49ed4a85fa0491913b9330e4e4a5",
+      "RC-W11-T01": "tsk_6ef12fce910f5947507c8bf4bab3e4e5",
+      "RC-W11-T02": "tsk_36a19dea6c5076bf395504031e362f57",
+      "RC-W11-T03": "tsk_ca3700ed845553b77beee675f4ae54e4",
+      "RC-W11-T04": "tsk_9f7ae6aabf7afd7a17d1a17014791aa2",
+      "RC-W11-T05": "tsk_d3e099a316e1e20d65e0a260b3f8d36f",
+      "RC-W11-T06": "tsk_c1d25c95555b39a76e990c8662065b0d",
+      "RC-W11-T07": "tsk_0d94ef9d7aff6027eb0972d284658b74",
+      "RC-W11-T08": "tsk_74cf11efd1f00c2a103a4b9b60380d72",
+      "RC-W12-T01": "tsk_ea16407589027c98033f76e193bd6f92",
+      "RC-W12-T02": "tsk_b099531ff195b05e274f9196b8344b59",
+      "RC-W12-T03": "tsk_c420a8bc8d91a7747419b3c1a5a81400",
+      "RC-W12-T04": "tsk_a95ae0a00ae7dce93190da061bd8319a",
+      "RC-W12-T05": "tsk_6e655c64f578f650ffd55b188e370920",
+      "RC-W12-T06": "tsk_fc72fb94d3e9944a7eff2f7d25e7d764",
+      "RC-W12-T07": "tsk_d2453b4170a86d42dc2cab3d17d3a4b2",
+      "RC-W13-T01": "tsk_2b84b154d474124aea697af01bcac182",
+      "RC-W13-T02": "tsk_16a84cc1557a502f06a063c82475acb3",
+      "RC-W13-T03": "tsk_a89c676734dc8b047d9fc9fbbcc67a2f",
+      "RC-W13-T04": "tsk_4184ddc279085d7a791ad439a1a37ce0",
+      "RC-W13-T05": "tsk_6354d15c9e33d2747a0fb6027724ff4d",
+      "RC-W13-T06": "tsk_535dee9bdd4acb61cebd3a739e4ff2cb",
+      "RC-W13-T07": "tsk_2e9e7c6adce5e6936da6b068fe760841",
+      "RC-W13-T08": "tsk_6f45352eca6c0032f7fb237c1490846d",
+      "RC-W14-T01": "tsk_0ec25e5d0bcbded81cbb23faf671b1d5",
+      "RC-W14-T02": "tsk_7d25ce9204c3d8b48d2ff0bce7b34c48",
+      "RC-W14-T03": "tsk_3638bcae6f229d4e4241d861c27455ad",
+      "RC-W14-T04": "tsk_bf211c6345aefe84e0e2f301186c653d",
+      "RC-W14-T05": "tsk_e8b957d5222958ed890b298f97adcda5",
+      "RC-W14-T06": "tsk_41057e4c6e17829445fd99f55ea6d716",
+      "RC-W14-T07": "tsk_5d6ff6ec8d62121b9607cc1768b8da9b",
+      "RC-W15-T01": "tsk_088d3a34e6cf47eea2faa0923aa85ea5",
+      "RC-W15-T02": "tsk_16db4b8bc0493a355c74a24e27cf51d4",
+      "RC-W15-T03": "tsk_4f76262a2b0e3547741dcff9945c3d6d",
+      "RC-W15-T04": "tsk_45180cf5aceacdeb52a14a14e8a402c3",
+      "RC-W15-T05": "tsk_e65943ebbd67cb8b24d5fe329bfb8203",
+      "RC-W15-T06": "tsk_a9a799e7f34a0d849b51b2064d3fd5d8",
+      "RC-W15-T07": "tsk_2466518ac5c5d6b69e10e4be5fb599fc",
+      "RC-W15-T08": "tsk_317f89428d960f8d399ebed494b3624b",
+      "RC-W16-T01": "tsk_92f5bfec1121bba378a303adccc5489f",
+      "RC-W16-T02": "tsk_1656bdaee1e8540bcc9fdf4754b05126",
+      "RC-W16-T03": "tsk_c5c3f62cf85a1c9b943d60c2d6aee2a8",
+      "RC-W16-T04": "tsk_d5e101ead57a210119b734f87769aae6",
+      "RC-W16-T05": "tsk_6ec4cac341836167297b435035ec76a0",
+      "RC-W16-T06": "tsk_c3969770629fd7ec71ae407732b1153f",
+      "RC-W16-T07": "tsk_07d321717eaca185c7471b6904ef4464",
+      "RC-W16-T08": "tsk_1102c38904b5729049425a7d4c248bb2",
+      "RC-W17-T01": "tsk_1b7c89b31e84f2f606305a817e39d098",
+      "RC-W17-T02": "tsk_cb1a4edc3b67d449ab06ef5173ebdb83",
+      "RC-W17-T03": "tsk_0f0e667291be3a76806dfa1d2ee46605",
+      "RC-W17-T04": "tsk_d940fb9ac38ad709ebc1fd546671ebbd",
+      "RC-W17-T05": "tsk_8d9b237377214cceb320757cc25f22a3",
+      "RC-W17-T06": "tsk_15870d121189f99a790f7228dbfe880a",
+      "RC-W17-T07": "tsk_9d9a9efa47a0f11f99b1d756f7c10b30",
+      "RC-W17-T08": "tsk_1cb23801bd65900efdf9143901ad65b4",
+      "RC-W18-T01": "tsk_388289b60a9b903cb536c43eb4e86ecb",
+      "RC-W18-T02": "tsk_46f2cea868066ffadd478fe42fc7f08f",
+      "RC-W18-T03": "tsk_6d1dbef096b2f9897ad2ab6f9ec4b165",
+      "RC-W18-T04": "tsk_6174695e1b770011ef89e1f1795bc9c9",
+      "RC-W18-T05": "tsk_c3d1b113bd61210cf58edb0326bee8ac",
+      "RC-W18-T06": "tsk_64db3adbcca764368e893b0f8f394387",
+      "RC-W18-T07": "tsk_794e3f0d3162c0ed41ca7b498c9933bf",
+      "RC-W18-T08": "tsk_0cd59524206d0bc3f7b078a90ab9e602",
+      "RC-W19-T01": "tsk_c6e0c96188b75100943535a6e60835c2",
+      "RC-W19-T02": "tsk_a87eb27970689f6ebc4ba8d02e681872",
+      "RC-W19-T03": "tsk_d438f0d0004f97f39eaf0dc541540623",
+      "RC-W19-T04": "tsk_2ffd9d11c54a840bd33eec62c70644b9",
+      "RC-W19-T05": "tsk_6d6e3159b79170b9e04eb2f4c2de8d55",
+      "RC-W19-T06": "tsk_97043be88ead7c973ed9a3fdb963f99e",
+      "RC-W19-T07": "tsk_20a9e6ce8ac4a57b9f802733239174b5",
+      "RC-W19-T08": "tsk_d129b662e8ccd5547256c46bf5490f51",
+      "RC-W20-T01": "tsk_6cf697d7ef0638d9482e2093c7995cec",
+      "RC-W20-T02": "tsk_1d3bf554197523dd17df8a3507ea7bdb",
+      "RC-W20-T03": "tsk_262682651c1f0269fcee4cb7f94010bc",
+      "RC-W20-T04": "tsk_33f0b06e94614900b8112c6c60af8e2d",
+      "RC-W20-T05": "tsk_3bd28eeef6cb34483762b3f5207e7ac8",
+      "RC-W20-T06": "tsk_9dc9223ebebe79d3e3303b77d297b6bf",
+      "RC-W20-T07": "tsk_844d9102cbcd87866f23d65f8bd8f5be",
+      "RC-W21-T01": "tsk_dc39a8c5654aa7cc2c2c801ef3f1d4f6",
+      "RC-W21-T02": "tsk_6669d9b35fffc0e4c69e869d48a8c97b",
+      "RC-W21-T03": "tsk_c7c8a3c25224c47403da10ea0b9e4f39",
+      "RC-W21-T04": "tsk_409fbede4c3a536e5615fd30bde1fb8e",
+      "RC-W21-T05": "tsk_4ed82039227da2fbde23a4b86365bcf0",
+      "RC-W21-T06": "tsk_f039df4024f49bab937d4fff4096703d",
+      "RC-W21-T07": "tsk_a965db12d4f55e8159bb8cc8bc7cd2aa",
+      "RC-W21-T08": "tsk_818ba18131149e95d35d0741493b3d0c",
+      "RC-W22-T01": "tsk_d1d4e767b9a493e6cc248258c9346078",
+      "RC-W22-T02": "tsk_da170779e07fb3294dc3a2e3a83e7dc7",
+      "RC-W22-T03": "tsk_595faa076627561d691192b150963cba",
+      "RC-W22-T04": "tsk_478a5fdc23ac47972d2b5ef41fbea1a0",
+      "RC-W22-T05": "tsk_6b97871b3ca8e9a92581d87e79812be2",
+      "RC-W22-T06": "tsk_df0a98b7c6e5b7e1cca8861d6ce1589e",
+      "RC-W22-T07": "tsk_02ca584c50836e66464eacb8d3d308ef",
+      "RC-W22-T08": "tsk_0c0b6edbe2da5de9d149a44e05a060f7",
+      "RC-W23-T01": "tsk_61d926a9469c4532bc11ee9e213879d3",
+      "RC-W23-T02": "tsk_a19fa4086e6c135573ca2f5fae3d0fbc",
+      "RC-W23-T03": "tsk_86464b173deea9126bf3b0c093c10aaa",
+      "RC-W23-T04": "tsk_5640539eebf5e74032b422c925deb632",
+      "RC-W23-T05": "tsk_c268a368febdcab8b6106e8b80389ff3",
+      "RC-W23-T06": "tsk_f7b18124b00758cf1abcd1f7a390171b",
+      "RC-W23-T07": "tsk_24ccdde7dd9bbddceb8f032964457544",
+      "RC-W23-T08": "tsk_d57eb0fdd258e7d7274d2820685c4332",
+      "RC-W23-T09": "tsk_e8634504644690e95255386eae8d4f4e",
+      "RC-W24-T01": "tsk_0ed81f9a635202df983dfa09a62a1e28",
+      "RC-W24-T02": "tsk_2f49dfa84da5f330f491d00d99b5194c",
+      "RC-W24-T03": "tsk_b644ccdd8479f0bac0755b4e4a4e9bed",
+      "RC-W24-T04": "tsk_2f7cf3fe00da65f5c57c6043d19e312a",
+      "RC-W24-T05": "tsk_4e29d56dcd5925c23e8e25bcbd635672",
+      "RC-W24-T06": "tsk_5ff37fa118f32b07d3bfccb393cea7b8",
+      "RC-W24-T07": "tsk_a379270dfea56761b6e58c6a0ca7b3e7",
+      "RC-W25-T01": "tsk_e1de7d5b06c4a65d658e9506e3556f43",
+      "RC-W25-T02": "tsk_5c00c934f36832e844ed2f17e8e983ce",
+      "RC-W25-T03": "tsk_f35dc9597433cf980a92fe59e5302c28",
+      "RC-W25-T04": "tsk_03509f0efec982981da39f5440c35b63",
+      "RC-W25-T05": "tsk_df8126fd7360883c7cf417f41758a21e",
+      "RC-W25-T06": "tsk_48588e8d991ed0ce7c1d55e0aeb0dd64",
+      "RC-W25-T07": "tsk_a4e4d8ce0b77d7dd902600db9e483523",
+      "RC-W25-T08": "tsk_ae06479edcbd89df3da0c4c1d9578873",
+      "RC-W26-T01": "tsk_2a31a07f95c67badffaf374b80c5bb45",
+      "RC-W26-T02": "tsk_1aa2dff88991a242f69197aa379cbfee",
+      "RC-W26-T03": "tsk_65579b847689ff3424c8e9d8ab5d16f7",
+      "RC-W26-T04": "tsk_b6188969b48baaf53909baec78bbc106",
+      "RC-W26-T05": "tsk_da60803615133e8de99eee1fa1b55c0c",
+      "RC-W26-T06": "tsk_ea5dccfddde06d04f8b1ceb86d2d4e1c",
+      "RC-W26-T07": "tsk_81f9f11ae1eb471bd97986bd724fc1db",
+      "RC-W27-T01": "tsk_f03093ca74a608af9ac1b72e3ae03979",
+      "RC-W27-T02": "tsk_f331daa345fa07a7f15f29e87de0dd68",
+      "RC-W27-T03": "tsk_475d8aa6ad945934031f60bf323f32b0",
+      "RC-W27-T04": "tsk_77d7a3eb4bcaf9632d6087b4994918e7",
+      "RC-W27-T05": "tsk_4ba625c7f673667a12ead188c771bd60",
+      "RC-W27-T06": "tsk_204b51c3e5d87fe81ad5acd26743d775",
+      "RC-W27-T07": "tsk_2d290efc88b93d50a31e0a160e868a1d",
+      "RC-W27-T08": "tsk_333d842f3df9303fc365fed07aed85d8",
+      "RC-W27-T09": "tsk_e81d7bd223dff9b29ec3da05588f4fb8",
+      "RC-F01": "tsk_b6365a2b85d8e55303e4f96d5a5803ce",
+      "RC-F02": "tsk_8f1b2a7a99567236bb722181d372424f",
+      "RC-F03": "tsk_6721de0c0efb411bb9e161a3f618af54"
+    },
+    "savedPlanRevision": 1,
+    "pollOption": "yes",
+    "previousProposal": {
+      "id": "prp_d83436915d973e65338f4a367f70541f",
+      "revision": 1,
+      "state": "Original Discussion proposal preserved; no acceptance inferred"
+    },
+    "draftInventory": {
+      "selectedTasks": 228,
+      "allAuthenticatedRecords": 252,
+      "createdTasks": 225,
+      "reusedFoundationTasks": 3,
+      "preservedOriginalRecords": 27,
+      "waves": 28,
+      "dependencies": 538,
+      "savedRevision": 1,
+      "submittedExportSha256": "3654e6ed4285394870dfcb807a3b13920dd6724d856df06da62b9ef12c9cdaf1",
+      "evidenceRef": "evidence/tanduna-submission.json"
+    },
+    "observedOriginalPlatformMapping": {
+      "RC-001": "tsk_a4b8c7257df88f46c7aa18063b25efeb",
+      "RC-002": "tsk_a1b72cf992317dbbf8810b1918a81533",
+      "RC-003": "tsk_4c089e8a59ba4c716740c2c468a1b0de",
+      "RC-004": "tsk_1f42df0134a1ee01abe7dbb56b3ce298",
+      "RC-005": "tsk_ac289bc0155bb721a9505635a3817a0b",
+      "RC-006": "tsk_5213709d7f04290b84423de751a31a80",
+      "RC-007": "tsk_02b24e6f7f4ae674d58e50bd6ed5f7bd",
+      "RC-008": "tsk_e11d9a4b8afa1e2421fec92801398b42",
+      "RC-009": "tsk_e4cd56432b58a65cb0b2792182078c7f",
+      "RC-010": "tsk_ec62102d2d7d7bcf16cea7ce6ce1144d",
+      "RC-011": "tsk_35d25bacf50f7f15b988c76d028631e7",
+      "RC-012": "tsk_b71a7941d8ad990fb20325fdbfe44919",
+      "RC-013": "tsk_38dce5b3e12e2bbf1c8803d18e177f77",
+      "RC-014": "tsk_b5832f30aca8b02ca0164a65e820015e",
+      "RC-015": "tsk_57bfa14654c7bf018f2294340171ad34",
+      "RC-016": "tsk_388a04d9b745b7bdc59b4b32011d8e55",
+      "RC-017": "tsk_493f9f7c24f6ad37a44875a9a63b3ad8",
+      "RC-018": "tsk_915ca53f1a385e9ee9b6d6f74398cc2b",
+      "RC-019": "tsk_053ffd501a86ab0843ce17fda7ceecca",
+      "RC-020": "tsk_f5a756f30928354732b9aa30abb09f8c",
+      "RC-021": "tsk_7acc8a359acb1a82042034cb04146134",
+      "RC-022": "tsk_c9ac6627899c39eb929d734490e5fe59",
+      "RC-023": "tsk_8878e975677d4682679c3c5e4131125a",
+      "RC-024": "tsk_10424eb193f9fabbfd5bb84f2ba29948",
+      "RC-F01": "tsk_b6365a2b85d8e55303e4f96d5a5803ce",
+      "RC-F02": "tsk_8f1b2a7a99567236bb722181d372424f",
+      "RC-F03": "tsk_6721de0c0efb411bb9e161a3f618af54"
     }
   },
   "terminalOutcomes": [

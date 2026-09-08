@@ -1,0 +1,173 @@
+{
+  "comparisons": [
+    {
+      "fresh_attempt_id": "0b1d6f12d8bd4a2a842ffd717118aa31",
+      "source_attempt_id": "fb3cdde68ac24dc1a37901ae90eb5cb8",
+      "status": "MATCH",
+      "trial_id": "development-uniform_random-11"
+    },
+    {
+      "fresh_attempt_id": "766c84361f7448d48231759d8438caaf",
+      "source_attempt_id": "104a90f21517435f96c50d3782775cad",
+      "status": "MATCH",
+      "trial_id": "development-uniform_random-22"
+    },
+    {
+      "fresh_attempt_id": "2c8c920b9500412087215c08145a0864",
+      "source_attempt_id": "e08970c6326c4c29af3d9f45def95d8c",
+      "status": "MATCH",
+      "trial_id": "development-uniform_random-33"
+    },
+    {
+      "fresh_attempt_id": "fe2991912e544c1abd192412f14165e3",
+      "source_attempt_id": "a57120bb76524b64873ab0fe098fe8f5",
+      "status": "MATCH",
+      "trial_id": "development-coordinate_refinement-11"
+    },
+    {
+      "fresh_attempt_id": "c6421a86e6f646ea84acf6151586460d",
+      "source_attempt_id": "e476ca03f4b24e72b3466b7a3f6c5b81",
+      "status": "MATCH",
+      "trial_id": "development-coordinate_refinement-22"
+    },
+    {
+      "fresh_attempt_id": "0bbbebde52734012b46621279b440474",
+      "source_attempt_id": "bf55da48f57c41dba6e7a3e36dcb37ce",
+      "status": "MATCH",
+      "trial_id": "development-coordinate_refinement-33"
+    },
+    {
+      "fresh_attempt_id": "2ea85d8062ac4177932438a7f116d3f4",
+      "source_attempt_id": "a3d3029d62784989a52c2b3bd4684ef4",
+      "status": "MATCH",
+      "trial_id": "confirmation-uniform_random-101"
+    },
+    {
+      "fresh_attempt_id": "37df85cb5dc24b2db113b252ca8411cf",
+      "source_attempt_id": "17a17e21ea0348499e60b2f28901812e",
+      "status": "MATCH",
+      "trial_id": "confirmation-uniform_random-202"
+    },
+    {
+      "fresh_attempt_id": "815e14e2f8fd4a0a860af78f626111f1",
+      "source_attempt_id": "ee1638312b634f70a524178633b326f5",
+      "status": "MATCH",
+      "trial_id": "confirmation-uniform_random-303"
+    },
+    {
+      "fresh_attempt_id": "c81ea4752cee4604924b2a2365abb212",
+      "source_attempt_id": "8dea34f2c13a49ba80df991b681f5090",
+      "status": "MATCH",
+      "trial_id": "confirmation-coordinate_refinement-101"
+    },
+    {
+      "fresh_attempt_id": "d9484fc274374af39e7235e4c4526498",
+      "source_attempt_id": "285c91b960ca45e8b89f20d9ac9c2d7c",
+      "status": "MATCH",
+      "trial_id": "confirmation-coordinate_refinement-202"
+    },
+    {
+      "fresh_attempt_id": "beacc052ca7145b6b0a626dd47890615",
+      "source_attempt_id": "f6164ca6abba4f81b50638a9a2d3402e",
+      "status": "MATCH",
+      "trial_id": "confirmation-coordinate_refinement-303"
+    },
+    {
+      "fresh_attempt_id": "bf80e56586df435f87b68df1d0cddf2c",
+      "source_attempt_id": "863e84ffca5f4c4eb18f15d74910a732",
+      "status": "MATCH",
+      "trial_id": "reproduction-development-uniform_random-11"
+    },
+    {
+      "fresh_attempt_id": "8c773f274c2e4dadad1004751e70d433",
+      "source_attempt_id": "a1f81b4e2c044920a04cf3f79142e83f",
+      "status": "MATCH",
+      "trial_id": "reproduction-development-uniform_random-22"
+    },
+    {
+      "fresh_attempt_id": "d89e7cd7a3864b5c9a303db636dc69b4",
+      "source_attempt_id": "6908a0cf89fb46c581e4d119217f30b0",
+      "status": "MATCH",
+      "trial_id": "reproduction-development-uniform_random-33"
+    },
+    {
+      "fresh_attempt_id": "e152bc8e65c446b1876f787d33878766",
+      "source_attempt_id": "8c8f451388334e0dab0c269860173f9a",
+      "status": "MATCH",
+      "trial_id": "reproduction-development-coordinate_refinement-11"
+    },
+    {
+      "fresh_attempt_id": "518f617c917e4d52b1cb1cf5e23d3212",
+      "source_attempt_id": "2fa89ae12e3740389d7f48265d73a4d4",
+      "status": "MATCH",
+      "trial_id": "reproduction-development-coordinate_refinement-22"
+    },
+    {
+      "fresh_attempt_id": "cf90981f353a4a0893808b3c1e6373d9",
+      "source_attempt_id": "c634d3211eb84d258d2e5654dfb8ee62",
+      "status": "MATCH",
+      "trial_id": "reproduction-development-coordinate_refinement-33"
+    },
+    {
+      "fresh_attempt_id": "6cd702a702964212b31cab2a1ed1003a",
+      "source_attempt_id": "68fa4d01e8164df3acda8fb2c10767b3",
+      "status": "MATCH",
+      "trial_id": "reproduction-confirmation-uniform_random-101"
+    },
+    {
+      "fresh_attempt_id": "cb214545c11d485f8e69e13a89b8cd9d",
+      "source_attempt_id": "f276ec22710e444abc1906d5f625a0df",
+      "status": "MATCH",
+      "trial_id": "reproduction-confirmation-uniform_random-202"
+    },
+    {
+      "fresh_attempt_id": "e09e9adf84274ee3af3f9eb63d3d1d3f",
+      "source_attempt_id": "d580eef7ab2e4f38b2659377b8621a66",
+      "status": "MATCH",
+      "trial_id": "reproduction-confirmation-uniform_random-303"
+    },
+    {
+      "fresh_attempt_id": "8aade03d72354e7cb08117c63a1a912b",
+      "source_attempt_id": "9670b4f5570a434b8d25f7ce557c31f8",
+      "status": "MATCH",
+      "trial_id": "reproduction-confirmation-coordinate_refinement-101"
+    },
+    {
+      "fresh_attempt_id": "43de5180da0e4e48b0539453700e9040",
+      "source_attempt_id": "fe12f1a97f894419b88c473593321b18",
+      "status": "MATCH",
+      "trial_id": "reproduction-confirmation-coordinate_refinement-202"
+    },
+    {
+      "fresh_attempt_id": "a150256a79264c1a9692e34b38cf69bc",
+      "source_attempt_id": "1811f6372a194724837366158406f96d",
+      "status": "MATCH",
+      "trial_id": "reproduction-confirmation-coordinate_refinement-303"
+    }
+  ],
+  "deviations": [],
+  "evaluator_digest": "f08c6eca517099a4435b0a43ecdaa85a3869e7c1e8528634faf966d1c8194600",
+  "execution_created_at": "2026-09-08T12:51:00.282321+00:00",
+  "fresh_campaign_id": "cbfcaea03b2d4781bc1434f13ae5a05e",
+  "fresh_environment": {
+    "implementation": "CPython",
+    "machine": "aarch64",
+    "package_version": "0.1.0",
+    "python": "3.12.13",
+    "runtime_digest": "74245e190f1a711677ec38dce61401ba1bd475bfeaa72895b8a5c50b1bb95fe0",
+    "sqlite": "3.46.1",
+    "system": "Linux"
+  },
+  "fresh_evidence_digest": "7335b04086cbdb06989babc2387c945cce55e705b13e0673e34dfc8ece2c8566",
+  "independent_human_review": "PENDING",
+  "observation_context": "fresh local execution; independence not established",
+  "publication_context": "record from this new or resumed source-bound execution",
+  "review_status": "UNREVIEWED",
+  "schema_version": 1,
+  "source_campaign_id": "0fb40b09c0ee433c920666389483e786",
+  "source_evidence_digest": "65c2cca46f746e5025f17d874ba434fb088f213b4b83300ba95c920f38dd58d4",
+  "status": "MATCH",
+  "study_digest": "625cea9555008c0de81ccf3e7f790027ffb6ccb0f7285b910d10ddc184337ddf",
+  "tolerance": 1e-12,
+  "type": "ReproductionRecord"
+}

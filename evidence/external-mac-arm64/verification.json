@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "observed_at": "2026-09-08T15:44:44.473902+00:00",
+  "evidence_level": "RUNTIME VERIFIED",
+  "observation_source": "Separate local Mac Codex helper, verified Darwin ARM64 task, executing the publicly obtained release in an already available Mac-hosted Colima Linux ARM64 container. Root revalidated returned JSON bundles and matching SQLite snapshots without executing archived helper code.",
+  "release_url": "https://github.com/thepianistdirector/research-continuum/releases/tag/v0.1.0",
+  "archive_sha256": "72027ecd84a06d20445e9fd6d604dee2393b03d78255f679652e2f331585bc3b",
+  "source_commit": "cb34650eb69df0769222623d515daef91aac0e20",
+  "runtime": {
+    "host": "Mac-hosted Colima Linux ARM64",
+    "python": "3.12.13",
+    "sqlite": "3.46.1",
+    "model": "gpt-6-astra",
+    "model_evidence": "actual task turn_context"
+  },
+  "execution_started_at": "2026-09-08T12:50:30.739401+00:00",
+  "execution_finished_at": "2026-09-08T12:51:15.844293+00:00",
+  "source_receipt_sha256": "77815828eaf6fd1246ff5cf14a3390c2cc38d70ee3b794b62339584cf0774c97",
+  "source_evidence_archive": {
+    "sha256": "69301ff5204eec9f076d388ed19be3727687c382d1120dd8453e7b5f768286b7",
+    "bytes": 733333,
+    "readback": true
+  },
+  "checks": {
+    "request_and_archive_hashes": "PASS",
+    "package_manifest_entries_verified_by_helper": 52,
+    "workflow_commands": 19,
+    "expected_SIGKILL_exit_code": -9,
+    "default_bundle_matches_sqlite": "PASS",
+    "recovery_bundle_matches_sqlite": "PASS",
+    "fresh_reproduction_record_recomputed": "MATCH",
+    "vps_mac_and_reproduction_attempt_ids": "disjoint",
+    "vps_mac_point_value_traces_exactly_matching": 24
+  },
+  "default": {
+    "campaign_id": "0fb40b09c0ee433c920666389483e786",
+    "trials": 24,
+    "recorded_evaluations": 3072,
+    "charged_evaluations": 3072,
+    "failed_attempts": 0,
+    "verdict": "BASELINE_LOWER"
+  },
+  "recovery": {
+    "campaign_id": "5a192034ab1a42c1b497574b8e1b691f",
+    "attempts": 25,
+    "recorded_evaluations": 192,
+    "charged_evaluations": 200,
+    "failed_attempts": 1,
+    "verdict": "INCONCLUSIVE"
+  },
+  "limitations": [
+    "External-host agent workflow evidence, not human scientific or accessibility review.",
+    "Linux ARM64 / Python 3.12.13 / SQLite 3.46.1 differ from the original x86_64 / Python 3.12.14 / SQLite 3.53.1 environment. Native macOS support and external x86_64 parity are not established.",
+    "The 19 commands cover the packaged workflow; they do not assert that the full 53-test suite ran on ARM64.",
+    "The fresh MATCH reproduction is of the Mac-generated bundle. A formal source-bound reproduction of the VPS campaign bundled in the release is requested separately; matching point-value traces do not erase runtime differences."
+  ]
+}

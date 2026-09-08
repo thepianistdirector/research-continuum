@@ -26,7 +26,7 @@ Release horizons express scope, not dates or approved hardware/spend. Later outc
 | long-term | 101 |
 | exploratory | 2 |
 
-Current row states: DONE: 3; IMPLEMENTED: 5; AUTOMATED PASS: 19; RUNTIME VERIFIED: 20; NOT TESTED: 3; USER VALIDATED: 1; RELEASE VERIFIED: 1; IN PROGRESS: 1; PLANNED: 175.
+Current row states: DONE: 3; IMPLEMENTED: 5; AUTOMATED PASS: 19; RUNTIME VERIFIED: 21; NOT TESTED: 1; USER VALIDATED: 1; RELEASE VERIFIED: 1; BLOCKED: 2; PLANNED: 175.
 
 ## Execution and replanning
 
@@ -145,9 +145,9 @@ Horizon: **0.1**. Entry dependencies: RC-W04-T10. Assigned rows: 12.
 - **RC-W05-T07 — Obtain independent human or qualified review** (NOT TESTED).
 - **RC-W05-T08 — Prepare the concrete public release decision** (USER VALIDATED).
 - **RC-W05-T09 — Publish and read back the authorized 0.1** (RELEASE VERIFIED).
-- **RC-W05-T10 — Verify external use of the public artifact** (NOT TESTED).
-- **RC-W05-T11 — Publish the native Tanduna programme** (IN PROGRESS).
-- **RC-W05-T12 — Read back public plan and access instructions** (NOT TESTED).
+- **RC-W05-T10 — Verify external use of the public artifact** (RUNTIME VERIFIED).
+- **RC-W05-T11 — Publish the native Tanduna programme** (BLOCKED).
+- **RC-W05-T12 — Read back public plan and access instructions** (BLOCKED).
 
 Exit evidence: Public wave counts, task order, dependency links, scope/status and actual 0.1 download instructions match the canonical export; partial publication remains incomplete.
 
@@ -606,9 +606,9 @@ The [full generated task contracts](TASKS.md) and [publication export](plan/expo
 
 ## Publication and access
 
-Native publication evidence: **NOT TESTED**. The live observation at 2026-09-08T11:39:13Z found 0 native tasks and “No task plan has been published yet”. The recorded proposal is Discussion; not accepted.
+Native publication evidence: **BLOCKED**. The live observation at 2026-09-08T15:37:19Z found 0 native tasks and “No task plan has been published yet”. The recorded proposal is Saved plan revision 1 submitted/frozen; reviewer failed with input error twice; exact yes-option approval pending; not published.
 
-0.1 access: **RELEASE VERIFIED**. Download research-continuum-0.1.0.tar.gz and SHA256SUMS from the public v0.1.0 release; check SHA-256 72027ecd84a06d20445e9fd6d604dee2393b03d78255f679652e2f331585bc3b; extract and run the packaged README commands from research-continuum-0.1.0. Verified runtime: Linux x86_64, Python 3.12.14, SQLite 3.53.1. All four public assets were downloaded anonymously and matched the approved bytes. Independent external-host execution and human/qualified review remain pending. The frozen archive records preparation-time publication status; current STATUS.md records read-back evidence.
+0.1 access: **RELEASE VERIFIED**. Download research-continuum-0.1.0.tar.gz and SHA256SUMS from the public v0.1.0 release; check SHA-256 72027ecd84a06d20445e9fd6d604dee2393b03d78255f679652e2f331585bc3b; extract and run the packaged README commands from research-continuum-0.1.0. Verified runtime: Linux x86_64, Python 3.12.14, SQLite 3.53.1. All four public assets were downloaded anonymously and matched the approved bytes. The packaged primary/recovery workflow and fresh reproduction of its new campaign also passed on a separate Mac-hosted Linux ARM64 environment (Python 3.12.13, SQLite 3.46.1). This is external-host agent evidence; human/qualified review, native macOS support and external x86_64 parity are not established. The frozen archive records preparation-time publication status; current STATUS.md records read-back evidence.
 
 Public artifact: [0.1.0](https://github.com/thepianistdirector/research-continuum/releases/tag/v0.1.0).
 

@@ -18,7 +18,7 @@ Every row below is a bounded outcome contract. `evidenceRefs` must identify actu
 - Source contracts: RC-F01; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Historical documentation/tooling acceptance only; not runtime or scientific completion.
 - Recorded evidence: plan/lineage/architecture-foundation-2026-09-07/STATUS.md.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_b6365a2b85d8e55303e4f96d5a5803ce.
 
 ## RC-F02 — Convert the vision into an outcome and dependency roadmap
 
@@ -30,7 +30,7 @@ Every row below is a bounded outcome contract. `evidenceRefs` must identify actu
 - Source contracts: RC-F02; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Historical documentation/tooling acceptance only; not runtime or scientific completion.
 - Recorded evidence: plan/lineage/architecture-foundation-2026-09-07/STATUS.md.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_8f1b2a7a99567236bb722181d372424f.
 
 Prerequisite RC-F01: Accepted historical predecessor; exact original graph remains in lineage.
 
@@ -44,7 +44,7 @@ Prerequisite RC-F01: Accepted historical predecessor; exact original graph remai
 - Source contracts: RC-F03; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Historical documentation/tooling acceptance only; not runtime or scientific completion.
 - Recorded evidence: plan/lineage/architecture-foundation-2026-09-07/STATUS.md.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_6721de0c0efb411bb9e161a3f618af54.
 
 Prerequisite RC-F02: Accepted historical predecessor; exact original graph remains in lineage.
 
@@ -58,7 +58,7 @@ Prerequisite RC-F02: Accepted historical predecessor; exact original graph remai
 - Source contracts: RC-001, RC-002, RC-015; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Study changes after results or deterministic repeats presented as independent evidence; retain dated protocol and independent analytic checks.
 - Recorded evidence: docs/baselines/autoresearch-2026-09-07.md, evidence/source-retrievals.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_ff17008788c2a266ef834ea928c17b00.
 
 Prerequisite RC-F03: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -72,7 +72,7 @@ Prerequisite RC-F03: Provides the frozen contract and accepted predecessor evide
 - Source contracts: RC-001, RC-002, RC-015; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Study changes after results or deterministic repeats presented as independent evidence; retain dated protocol and independent analytic checks.
 - Recorded evidence: docs/decisions/001-numerical-study.md, docs/decisions/002-durable-local-campaign.md, examples/rosenbrock-study.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_cdf6e5cabee8740c5b4bf3cbc31e3e90.
 
 Prerequisite RC-W01-T01: Provides the shared contract for this wave.
 
@@ -86,7 +86,7 @@ Prerequisite RC-W01-T01: Provides the shared contract for this wave.
 - Source contracts: RC-001, RC-002, RC-015; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Study changes after results or deterministic repeats presented as independent evidence; retain dated protocol and independent analytic checks.
 - Recorded evidence: docs/decisions/001-numerical-study.md, docs/decisions/002-durable-local-campaign.md, examples/rosenbrock-study.json, tests/test_numerical.py, evidence/runtime/automated-checks.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_c2b226dd82073c555dac68c9ab795444.
 
 Prerequisite RC-W01-T01: Provides the shared contract for this wave.
 
@@ -100,7 +100,7 @@ Prerequisite RC-W01-T01: Provides the shared contract for this wave.
 - Source contracts: RC-001, RC-002, RC-015; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Study changes after results or deterministic repeats presented as independent evidence; retain dated protocol and independent analytic checks.
 - Recorded evidence: docs/decisions/001-numerical-study.md, docs/decisions/002-durable-local-campaign.md, examples/rosenbrock-study.json, tests/test_numerical.py, evidence/runtime/automated-checks.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_1e092820eeaff33ad774c3e3708cadd5.
 
 Prerequisite RC-W01-T01: Provides the shared contract for this wave.
 
@@ -114,7 +114,7 @@ Prerequisite RC-W01-T01: Provides the shared contract for this wave.
 - Source contracts: RC-001, RC-002, RC-015; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Study changes after results or deterministic repeats presented as independent evidence; retain dated protocol and independent analytic checks.
 - Recorded evidence: docs/decisions/001-numerical-study.md, docs/decisions/002-durable-local-campaign.md, examples/rosenbrock-study.json, tests/test_numerical.py, evidence/runtime/automated-checks.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_e6467dccdcb8eb78de78bd651398a487.
 
 Prerequisite RC-W01-T01: Provides the shared contract for this wave.
 
@@ -128,7 +128,7 @@ Prerequisite RC-W01-T01: Provides the shared contract for this wave.
 - Source contracts: RC-001, RC-002, RC-015; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Study changes after results or deterministic repeats presented as independent evidence; retain dated protocol and independent analytic checks.
 - Recorded evidence: docs/decisions/001-numerical-study.md, docs/decisions/002-durable-local-campaign.md, examples/rosenbrock-study.json, tests/test_numerical.py, evidence/runtime/automated-checks.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_41db721d5e9e90b25537b9f9202f7624.
 
 Prerequisite RC-W01-T01: Provides the shared contract for this wave.
 
@@ -142,7 +142,7 @@ Prerequisite RC-W01-T01: Provides the shared contract for this wave.
 - Source contracts: RC-001, RC-002, RC-015; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Study changes after results or deterministic repeats presented as independent evidence; retain dated protocol and independent analytic checks.
 - Recorded evidence: docs/decisions/001-numerical-study.md, docs/decisions/002-durable-local-campaign.md, examples/rosenbrock-study.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_0503fb01a2dfde197c56113155073f31.
 
 Prerequisite RC-W01-T01: Provides the shared contract for this wave.
 
@@ -156,7 +156,7 @@ Prerequisite RC-W01-T01: Provides the shared contract for this wave.
 - Source contracts: RC-001, RC-002, RC-015; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Study changes after results or deterministic repeats presented as independent evidence; retain dated protocol and independent analytic checks.
 - Recorded evidence: docs/decisions/001-numerical-study.md, docs/decisions/002-durable-local-campaign.md, examples/rosenbrock-study.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_6c2923b7e0c50c261b4d7dbc33fcd45f.
 
 Prerequisite RC-W01-T01: Provides the shared contract for this wave.
 
@@ -170,7 +170,7 @@ Prerequisite RC-W01-T01: Provides the shared contract for this wave.
 - Source contracts: RC-001, RC-002, RC-015; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Study changes after results or deterministic repeats presented as independent evidence; retain dated protocol and independent analytic checks.
 - Recorded evidence: docs/decisions/001-numerical-study.md, docs/decisions/002-durable-local-campaign.md, examples/rosenbrock-study.json, tests/test_numerical.py, evidence/runtime/automated-checks.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_d1490f0a6213cae946523090033d9791.
 
 Prerequisite RC-W01-T01: Provides the shared contract for this wave.
 
@@ -184,7 +184,7 @@ Prerequisite RC-W01-T01: Provides the shared contract for this wave.
 - Source contracts: RC-001, RC-002, RC-015; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Study changes after results or deterministic repeats presented as independent evidence; retain dated protocol and independent analytic checks.
 - Recorded evidence: docs/decisions/001-numerical-study.md, docs/decisions/002-durable-local-campaign.md, examples/rosenbrock-study.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_6055822fc13555c727864c2799fda001.
 
 Prerequisite RC-F03: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -216,7 +216,7 @@ Prerequisite RC-W01-T09: Provides the shared contract for this wave.
 - Source contracts: RC-002, RC-003, RC-006; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Lost debits, mutable accepted state or implied hostile-code isolation; fault probes and transaction-level assertions are required.
 - Recorded evidence: continuum/store.py, tests/test_store.py, evidence/runtime/automated-checks.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_63aebc644bb77ecda49bbe28c8120917.
 
 Prerequisite RC-W01-T10: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -230,7 +230,7 @@ Prerequisite RC-W01-T10: Provides the frozen contract and accepted predecessor e
 - Source contracts: RC-002, RC-003, RC-006; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Lost debits, mutable accepted state or implied hostile-code isolation; fault probes and transaction-level assertions are required.
 - Recorded evidence: continuum/store.py, tests/test_store.py, evidence/runtime/automated-checks.json, evidence/runtime/default-study/evidence.json, evidence/runtime/packaged-summary.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_cecac7460303c27b763a9d39c72f7ff9.
 
 Prerequisite RC-W02-T01: Provides the shared contract for this wave.
 
@@ -244,7 +244,7 @@ Prerequisite RC-W02-T01: Provides the shared contract for this wave.
 - Source contracts: RC-002, RC-003, RC-006; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Lost debits, mutable accepted state or implied hostile-code isolation; fault probes and transaction-level assertions are required.
 - Recorded evidence: continuum/store.py, tests/test_store.py, evidence/runtime/automated-checks.json, evidence/runtime/default-study/evidence.json, evidence/runtime/packaged-summary.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_efd2e2cdbbb5caaf9a55e404fda21859.
 
 Prerequisite RC-W02-T01: Required input outcome: Validate immutable study records.
 
@@ -260,7 +260,7 @@ Prerequisite RC-W02-T02: Required input outcome: Create durable campaign identit
 - Source contracts: RC-002, RC-003, RC-006; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Lost debits, mutable accepted state or implied hostile-code isolation; fault probes and transaction-level assertions are required.
 - Recorded evidence: continuum/store.py, tests/test_store.py, evidence/runtime/automated-checks.json, evidence/runtime/default-study/evidence.json, evidence/runtime/packaged-summary.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_776ebf8acea5989966072804aea3dc71.
 
 Prerequisite RC-W02-T01: Provides the shared contract for this wave.
 
@@ -278,7 +278,7 @@ Prerequisite RC-W02-T03: Required input outcome: Link the compact research recor
 - Source contracts: RC-002, RC-003, RC-006; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Lost debits, mutable accepted state or implied hostile-code isolation; fault probes and transaction-level assertions are required.
 - Recorded evidence: continuum/store.py, tests/test_store.py, evidence/runtime/automated-checks.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_5b15fda0bceb2e105bca5f616bd61aca.
 
 Prerequisite RC-W02-T01: Provides the shared contract for this wave.
 
@@ -296,7 +296,7 @@ Prerequisite RC-W02-T04: Required input outcome: Reserve capacity before any exp
 - Source contracts: RC-002, RC-003, RC-006; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Lost debits, mutable accepted state or implied hostile-code isolation; fault probes and transaction-level assertions are required.
 - Recorded evidence: continuum/store.py, tests/test_store.py, evidence/runtime/automated-checks.json, evidence/runtime/default-study/evidence.json, evidence/runtime/packaged-summary.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_9788099b5042e34cb390a0f5e33d94b3.
 
 Prerequisite RC-W02-T01: Provides the shared contract for this wave.
 
@@ -312,7 +312,7 @@ Prerequisite RC-W02-T05: Required input outcome: Make admission and debit transa
 - Source contracts: RC-002, RC-003, RC-006; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Lost debits, mutable accepted state or implied hostile-code isolation; fault probes and transaction-level assertions are required.
 - Recorded evidence: continuum/store.py, tests/test_store.py, evidence/runtime/automated-checks.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_62f61a18f075fa3abe5cbecf73d9e433.
 
 Prerequisite RC-W02-T01: Provides the shared contract for this wave.
 
@@ -330,7 +330,7 @@ Prerequisite RC-W02-T06: Required input outcome: Charge failed attempts conserva
 - Source contracts: RC-002, RC-003, RC-006; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Lost debits, mutable accepted state or implied hostile-code isolation; fault probes and transaction-level assertions are required.
 - Recorded evidence: continuum/store.py, tests/test_store.py, evidence/runtime/automated-checks.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_bd66f6c6524f103480bf312f752cdf6c.
 
 Prerequisite RC-W02-T01: Required input outcome: Validate immutable study records.
 
@@ -348,7 +348,7 @@ Prerequisite RC-W02-T05: Required input outcome: Make admission and debit transa
 - Source contracts: RC-002, RC-003, RC-006; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Lost debits, mutable accepted state or implied hostile-code isolation; fault probes and transaction-level assertions are required.
 - Recorded evidence: continuum/store.py, tests/test_store.py, evidence/runtime/automated-checks.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_906d41fc39fb9fa4522040cba6d7e77e.
 
 Prerequisite RC-W02-T01: Provides the shared contract for this wave.
 
@@ -366,7 +366,7 @@ Prerequisite RC-W02-T05: Required input outcome: Make admission and debit transa
 - Source contracts: RC-002, RC-003, RC-006; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Lost debits, mutable accepted state or implied hostile-code isolation; fault probes and transaction-level assertions are required.
 - Recorded evidence: continuum/store.py, tests/test_store.py, evidence/runtime/automated-checks.json, evidence/runtime/default-study/evidence.json, evidence/runtime/packaged-summary.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_5d23405b4fdb8e17f2a72b4d16c6153a.
 
 Prerequisite RC-W01-T10: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -398,7 +398,7 @@ Prerequisite RC-W02-T09: Provides the shared contract for this wave.
 - Source contracts: RC-003, RC-015, RC-017; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Wrong evaluation accounting, incomplete observations or tuned outcomes; replay point sequences and inspect all raw arm results.
 - Recorded evidence: tests/test_numerical.py, tests/test_store.py, evidence/runtime/automated-checks.json, evidence/runtime/default-study/evidence.json, evidence/runtime/default-study/summary.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_5295a5ee39bcee0c68719b02a9c7954b.
 
 Prerequisite RC-W02-T10: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -412,7 +412,7 @@ Prerequisite RC-W02-T10: Provides the frozen contract and accepted predecessor e
 - Source contracts: RC-003, RC-015, RC-017; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Wrong evaluation accounting, incomplete observations or tuned outcomes; replay point sequences and inspect all raw arm results.
 - Recorded evidence: tests/test_numerical.py, tests/test_store.py, evidence/runtime/automated-checks.json, evidence/runtime/default-study/evidence.json, evidence/runtime/default-study/summary.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_c882540ddd58f2a8c2bd03bd792db2f2.
 
 Prerequisite RC-W03-T01: Provides the shared contract for this wave.
 
@@ -426,7 +426,7 @@ Prerequisite RC-W03-T01: Provides the shared contract for this wave.
 - Source contracts: RC-003, RC-015, RC-017; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Wrong evaluation accounting, incomplete observations or tuned outcomes; replay point sequences and inspect all raw arm results.
 - Recorded evidence: tests/test_numerical.py, tests/test_store.py, evidence/runtime/automated-checks.json, evidence/runtime/default-study/evidence.json, evidence/runtime/default-study/summary.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_2ba1b34703f25f4a000068eb5eca22c1.
 
 Prerequisite RC-W03-T01: Provides the shared contract for this wave.
 
@@ -440,7 +440,7 @@ Prerequisite RC-W03-T01: Provides the shared contract for this wave.
 - Source contracts: RC-003, RC-015, RC-017; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Wrong evaluation accounting, incomplete observations or tuned outcomes; replay point sequences and inspect all raw arm results.
 - Recorded evidence: tests/test_numerical.py, tests/test_store.py, evidence/runtime/automated-checks.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_2f285ea28a17501a5e700334d69d9893.
 
 Prerequisite RC-W03-T01: Provides the shared contract for this wave.
 
@@ -458,7 +458,7 @@ Prerequisite RC-W03-T03: Required input outcome: Execute fixed coordinate refine
 - Source contracts: RC-003, RC-015, RC-017; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Wrong evaluation accounting, incomplete observations or tuned outcomes; replay point sequences and inspect all raw arm results.
 - Recorded evidence: tests/test_numerical.py, tests/test_store.py, evidence/runtime/automated-checks.json, evidence/runtime/default-study/evidence.json, evidence/runtime/default-study/summary.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_25a56ad1daaa35dce66335b40c0f3a48.
 
 Prerequisite RC-W03-T01: Provides the shared contract for this wave.
 
@@ -478,7 +478,7 @@ Prerequisite RC-W03-T04: Required input outcome: Enforce proposal and feedback s
 - Source contracts: RC-003, RC-015, RC-017; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Wrong evaluation accounting, incomplete observations or tuned outcomes; replay point sequences and inspect all raw arm results.
 - Recorded evidence: tests/test_numerical.py, tests/test_store.py, evidence/runtime/automated-checks.json, evidence/runtime/default-study/evidence.json, evidence/runtime/default-study/summary.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_334b60ceb7641834cdcfc799bb02b713.
 
 Prerequisite RC-W03-T01: Provides the shared contract for this wave.
 
@@ -500,7 +500,7 @@ Prerequisite RC-W03-T05: Required input outcome: Retain complete observations an
 - Source contracts: RC-003, RC-015, RC-017; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Wrong evaluation accounting, incomplete observations or tuned outcomes; replay point sequences and inspect all raw arm results.
 - Recorded evidence: tests/test_numerical.py, tests/test_store.py, evidence/runtime/automated-checks.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_3a1d73edf17251c9911f894ca54297f5.
 
 Prerequisite RC-W03-T01: Provides the shared contract for this wave.
 
@@ -518,7 +518,7 @@ Prerequisite RC-W03-T06: Required input outcome: Run both arms in development an
 - Source contracts: RC-003, RC-015, RC-017; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Wrong evaluation accounting, incomplete observations or tuned outcomes; replay point sequences and inspect all raw arm results.
 - Recorded evidence: tests/test_numerical.py, tests/test_store.py, evidence/runtime/automated-checks.json, evidence/runtime/default-study/evidence.json, evidence/runtime/default-study/summary.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_b1ac7640309f967f862a7e2e4ad34737.
 
 Prerequisite RC-W02-T10: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -546,7 +546,7 @@ Prerequisite RC-W03-T07: Provides the shared contract for this wave.
 - Source contracts: RC-005, RC-006, RC-010, RC-011; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Crash windows and false assurance from happy-path tests; use process termination and representative mutations on the actual candidate.
 - Recorded evidence: tests/test_store.py, tests/test_evidence.py, tests/test_cli.py, evidence/runtime/automated-checks.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_457b3662228a4cd3586c15e9a46315c7.
 
 Prerequisite RC-W03-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -560,7 +560,7 @@ Prerequisite RC-W03-T08: Provides the frozen contract and accepted predecessor e
 - Source contracts: RC-005, RC-006, RC-010, RC-011; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Crash windows and false assurance from happy-path tests; use process termination and representative mutations on the actual candidate.
 - Recorded evidence: tests/test_store.py, tests/test_evidence.py, tests/test_cli.py, evidence/runtime/automated-checks.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_f679720e011b1f348518638a955080b3.
 
 Prerequisite RC-W04-T01: Required input outcome: Challenge evaluator validity controls.
 
@@ -574,7 +574,7 @@ Prerequisite RC-W04-T01: Required input outcome: Challenge evaluator validity co
 - Source contracts: RC-005, RC-006, RC-010, RC-011; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Crash windows and false assurance from happy-path tests; use process termination and representative mutations on the actual candidate.
 - Recorded evidence: tests/test_store.py, tests/test_evidence.py, tests/test_cli.py, evidence/runtime/automated-checks.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_eff522416dc5d0522fef7837403834cf.
 
 Prerequisite RC-W04-T01: Required input outcome: Challenge evaluator validity controls.
 
@@ -590,7 +590,7 @@ Prerequisite RC-W04-T02: Required input outcome: Reject evaluator source or call
 - Source contracts: RC-005, RC-006, RC-010, RC-011; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Crash windows and false assurance from happy-path tests; use process termination and representative mutations on the actual candidate.
 - Recorded evidence: tests/test_store.py, tests/test_evidence.py, tests/test_cli.py, evidence/runtime/automated-checks.json, evidence/runtime/packaged-summary.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_f45c3de618e72c7038f753aa6a7d1a9d.
 
 Prerequisite RC-W04-T01: Provides the shared contract for this wave.
 
@@ -608,7 +608,7 @@ Prerequisite RC-W04-T03: Required input outcome: Reject misleading complete resu
 - Source contracts: RC-005, RC-006, RC-010, RC-011; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Crash windows and false assurance from happy-path tests; use process termination and representative mutations on the actual candidate.
 - Recorded evidence: tests/test_store.py, tests/test_evidence.py, tests/test_cli.py, evidence/runtime/automated-checks.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_4647d4c0ea62014f0fc5f39782aa8e20.
 
 Prerequisite RC-W04-T01: Provides the shared contract for this wave.
 
@@ -624,7 +624,7 @@ Prerequisite RC-W04-T04: Required input outcome: Recover after admission interru
 - Source contracts: RC-005, RC-006, RC-010, RC-011; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Crash windows and false assurance from happy-path tests; use process termination and representative mutations on the actual candidate.
 - Recorded evidence: tests/test_store.py, tests/test_evidence.py, tests/test_cli.py, evidence/runtime/automated-checks.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_0ec032514e692a719bdb168758be839e.
 
 Prerequisite RC-W04-T01: Provides the shared contract for this wave.
 
@@ -640,7 +640,7 @@ Prerequisite RC-W04-T05: Required input outcome: Recover after execution interru
 - Source contracts: RC-005, RC-006, RC-010, RC-011; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Crash windows and false assurance from happy-path tests; use process termination and representative mutations on the actual candidate.
 - Recorded evidence: tests/test_store.py, tests/test_evidence.py, tests/test_cli.py, evidence/runtime/automated-checks.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_9df1c8af826063d8f095f8fd0e79cfae.
 
 Prerequisite RC-W04-T01: Provides the shared contract for this wave.
 
@@ -660,7 +660,7 @@ Prerequisite RC-W04-T06: Required input outcome: Recover after artifact staging 
 - Source contracts: RC-005, RC-006, RC-010, RC-011; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Crash windows and false assurance from happy-path tests; use process termination and representative mutations on the actual candidate.
 - Recorded evidence: tests/test_store.py, tests/test_evidence.py, tests/test_cli.py, evidence/runtime/automated-checks.json, evidence/runtime/packaged-summary.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_7140e16703777ccc87a894714b8cb986.
 
 Prerequisite RC-W04-T01: Provides the shared contract for this wave.
 
@@ -676,7 +676,7 @@ Prerequisite RC-W04-T07: Required input outcome: Fence stale coordinator authori
 - Source contracts: RC-005, RC-006, RC-010, RC-011; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Crash windows and false assurance from happy-path tests; use process termination and representative mutations on the actual candidate.
 - Recorded evidence: tests/test_store.py, tests/test_evidence.py, tests/test_cli.py, evidence/runtime/automated-checks.json, evidence/runtime/packaged-summary.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_dedc8cdc90c692b018e46d9c7b74bef7.
 
 Prerequisite RC-W04-T01: Required input outcome: Challenge evaluator validity controls.
 
@@ -696,7 +696,7 @@ Prerequisite RC-W04-T08: Required input outcome: Keep reproduction capacity sepa
 - Source contracts: RC-005, RC-006, RC-010, RC-011; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Crash windows and false assurance from happy-path tests; use process termination and representative mutations on the actual candidate.
 - Recorded evidence: tests/test_store.py, tests/test_evidence.py, tests/test_cli.py, evidence/runtime/automated-checks.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_c9b6952bc400249f41171fb9ad422ce4.
 
 Prerequisite RC-W03-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -728,7 +728,7 @@ Prerequisite RC-W04-T09: Provides the shared contract for this wave.
 - Source contracts: RC-012, RC-019, RC-021, RC-024; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Permission, public availability and independent human evidence are distinct gates; local artifacts and unaccepted proposals do not satisfy them.
 - Recorded evidence: evidence/runtime/default-study/records.json, evidence/runtime/default-study/summary.json, evidence/runtime/packaged-summary.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_b1a11fe6fd12c7b66b040764dd9b1750.
 
 Prerequisite RC-W04-T10: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -742,7 +742,7 @@ Prerequisite RC-W04-T10: Provides the frozen contract and accepted predecessor e
 - Source contracts: RC-012, RC-019, RC-021, RC-024; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Permission, public availability and independent human evidence are distinct gates; local artifacts and unaccepted proposals do not satisfy them.
 - Recorded evidence: evidence/runtime/default-study/records.json, evidence/runtime/default-study/summary.json, evidence/runtime/packaged-summary.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_edaebb3080e293011fae1d30572dea71.
 
 Prerequisite RC-W05-T01: Required input outcome: Expose the complete ledger for inspection.
 
@@ -756,7 +756,7 @@ Prerequisite RC-W05-T01: Required input outcome: Expose the complete ledger for 
 - Source contracts: RC-012, RC-019, RC-021, RC-024; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Permission, public availability and independent human evidence are distinct gates; local artifacts and unaccepted proposals do not satisfy them.
 - Recorded evidence: evidence/runtime/default-study/records.json, evidence/runtime/default-study/summary.json, evidence/runtime/packaged-summary.json, evidence/runtime/browser-verification.json, evidence/runtime/default-study/report.html.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_aa66eebf609c2d403cd98ec822c941f7.
 
 Prerequisite RC-W05-T01: Required input outcome: Expose the complete ledger for inspection.
 
@@ -772,7 +772,7 @@ Prerequisite RC-W05-T02: Required input outcome: Derive bounded claims from reta
 - Source contracts: RC-012, RC-019, RC-021, RC-024; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Permission, public availability and independent human evidence are distinct gates; local artifacts and unaccepted proposals do not satisfy them.
 - Recorded evidence: evidence/runtime/default-study/records.json, evidence/runtime/default-study/summary.json, evidence/runtime/packaged-summary.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_3b0b51e3087fbc6feeda372480f4e32f.
 
 Prerequisite RC-W05-T01: Provides the shared contract for this wave.
 
@@ -790,7 +790,7 @@ Prerequisite RC-W05-T03: Required input outcome: Render an accessible evidence r
 - Source contracts: RC-012, RC-019, RC-021, RC-024; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Permission, public availability and independent human evidence are distinct gates; local artifacts and unaccepted proposals do not satisfy them.
 - Recorded evidence: evidence/runtime/default-study/records.json, evidence/runtime/default-study/summary.json, evidence/runtime/packaged-summary.json, tools/build_release.py, LICENSE.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_4bc925b889c0cc572809c324fd4080c0.
 
 Prerequisite RC-W05-T01: Provides the shared contract for this wave.
 
@@ -806,7 +806,7 @@ Prerequisite RC-W05-T04: Required input outcome: Export a versioned portable evi
 - Source contracts: RC-012, RC-019, RC-021, RC-024; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Permission, public availability and independent human evidence are distinct gates; local artifacts and unaccepted proposals do not satisfy them.
 - Recorded evidence: evidence/runtime/default-study/records.json, evidence/runtime/default-study/summary.json, evidence/runtime/packaged-summary.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_360fb0f0330660b2888f90f34bee4ef1.
 
 Prerequisite RC-W05-T01: Provides the shared contract for this wave.
 
@@ -822,7 +822,7 @@ Prerequisite RC-W05-T05: Required input outcome: Build an executable source rele
 - Source contracts: RC-012, RC-019, RC-021, RC-024; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Permission, public availability and independent human evidence are distinct gates; local artifacts and unaccepted proposals do not satisfy them.
 - Recorded evidence: docs/publication.md.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_7095cb902d325f7cfac9f8f9ea6648ba.
 
 Prerequisite RC-W05-T01: Provides the shared contract for this wave.
 
@@ -838,7 +838,7 @@ Prerequisite RC-W05-T06: Required input outcome: Verify the packaged user workfl
 - Source contracts: RC-012, RC-019, RC-021, RC-024; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Permission, public availability and independent human evidence are distinct gates; local artifacts and unaccepted proposals do not satisfy them.
 - Recorded evidence: evidence/publication-approval.json, evidence/public-release.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_fc0c2438daa2db13a91574df63ad9722.
 
 Prerequisite RC-W05-T01: Provides the shared contract for this wave.
 
@@ -856,7 +856,7 @@ Prerequisite RC-W05-T07: Required input outcome: Obtain independent human or qua
 - Source contracts: RC-012, RC-019, RC-021, RC-024; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Permission, public availability and independent human evidence are distinct gates; local artifacts and unaccepted proposals do not satisfy them.
 - Recorded evidence: evidence/publication-approval.json, evidence/public-release.json.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_e56be9907616b2708eb5423dde404d5c.
 
 Prerequisite RC-W05-T01: Provides the shared contract for this wave.
 
@@ -866,13 +866,13 @@ Prerequisite RC-W05-T08: Required input outcome: Prepare the concrete public rel
 
 - Outcome: Researchers can verify external use of the public artifact.
 - Area: 0.1 release and publication; wave: RC-W05; release horizon: 0.1.
-- Status: **NOT TESTED**; basis: owner-authorized narrow outcome.
+- Status: **RUNTIME VERIFIED**; basis: owner-authorized narrow outcome.
 - Prerequisites: RC-W05-T01, RC-W05-T09.
 - Acceptance: A fresh external environment obtains the public download and completes the primary and recovery paths; source of observation and environment limits are recorded.
 - Source contracts: RC-012, RC-019, RC-021, RC-024; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Permission, public availability and independent human evidence are distinct gates; local artifacts and unaccepted proposals do not satisfy them.
-- Recorded evidence: docs/publication.md.
-- Native platform ID: not assigned.
+- Recorded evidence: evidence/external-mac-arm64/verification.json, evidence/external-mac-arm64/default-bundle/summary.json, evidence/external-mac-arm64/reproduction.json.
+- Native platform ID: tsk_9334484d0e39ddbda2f0303e48b11e56.
 
 Prerequisite RC-W05-T01: Provides the shared contract for this wave.
 
@@ -882,13 +882,13 @@ Prerequisite RC-W05-T09: Required input outcome: Publish and read back the autho
 
 - Outcome: Researchers can publish the native Tanduna programme.
 - Area: 0.1 release and publication; wave: RC-W05; release horizon: 0.1.
-- Status: **IN PROGRESS**; basis: owner-authorized narrow outcome.
+- Status: **BLOCKED**; basis: owner-authorized narrow outcome.
 - Prerequisites: RC-W05-T01, RC-W05-T08, RC-W05-T09.
 - Acceptance: Supported draft/review/approval workflow publishes waves, tasks and dependencies with real platform IDs; immutable historical records are preserved.
 - Source contracts: RC-012, RC-019, RC-021, RC-024; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Permission, public availability and independent human evidence are distinct gates; local artifacts and unaccepted proposals do not satisfy them.
-- Recorded evidence: docs/publication.md, plan/exports/tanduna-plan.json.
-- Native platform ID: not assigned.
+- Recorded evidence: evidence/tanduna-submission.json.
+- Native platform ID: tsk_38e9b4706dd66eb8c8e019cb7b6ebbc9.
 
 Prerequisite RC-W05-T01: Provides the shared contract for this wave.
 
@@ -900,13 +900,13 @@ Prerequisite RC-W05-T09: Required input outcome: Publish and read back the autho
 
 - Outcome: Researchers can read back public plan and access instructions.
 - Area: 0.1 release and publication; wave: RC-W05; release horizon: 0.1.
-- Status: **NOT TESTED**; basis: owner-authorized narrow outcome.
+- Status: **BLOCKED**; basis: owner-authorized narrow outcome.
 - Prerequisites: RC-W04-T10, RC-W05-T01, RC-W05-T02, RC-W05-T03, RC-W05-T04, RC-W05-T05, RC-W05-T06, RC-W05-T07, RC-W05-T08, RC-W05-T09, RC-W05-T10, RC-W05-T11.
 - Acceptance: Public wave counts, task order, dependency links, scope/status and actual 0.1 download instructions match the canonical export; partial publication remains incomplete.
 - Source contracts: RC-012, RC-019, RC-021, RC-024; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Permission, public availability and independent human evidence are distinct gates; local artifacts and unaccepted proposals do not satisfy them.
-- Recorded evidence: docs/publication.md.
-- Native platform ID: not assigned.
+- Recorded evidence: evidence/tanduna-submission.json.
+- Native platform ID: tsk_72e38bd46793b90b545e0341002c9c16.
 
 Prerequisite RC-W04-T10: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -942,7 +942,7 @@ Prerequisite RC-W05-T11: Provides the shared contract for this wave.
 - Source contracts: RC-001; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Upstream rights, dependency approval and hardware comparability remain unresolved until fresh exact evidence is reviewed.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_a16268a9309ef593f83ef210ce329e10.
 
 Prerequisite RC-W01-T01: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -956,7 +956,7 @@ Prerequisite RC-W01-T01: Provides the frozen contract and accepted predecessor e
 - Source contracts: RC-001; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Upstream rights, dependency approval and hardware comparability remain unresolved until fresh exact evidence is reviewed.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_0fd3f398a1e9a7924fbad6b6638c7066.
 
 Prerequisite RC-W06-T01: Provides the shared contract for this wave.
 
@@ -970,7 +970,7 @@ Prerequisite RC-W06-T01: Provides the shared contract for this wave.
 - Source contracts: RC-001; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Upstream rights, dependency approval and hardware comparability remain unresolved until fresh exact evidence is reviewed.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_3bebba90587fcf5173091171a072a268.
 
 Prerequisite RC-W06-T01: Provides the shared contract for this wave.
 
@@ -984,7 +984,7 @@ Prerequisite RC-W06-T01: Provides the shared contract for this wave.
 - Source contracts: RC-001; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Upstream rights, dependency approval and hardware comparability remain unresolved until fresh exact evidence is reviewed.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_82224d3a0489c89862a3f49ea0260eee.
 
 Prerequisite RC-W06-T01: Provides the shared contract for this wave.
 
@@ -998,7 +998,7 @@ Prerequisite RC-W06-T01: Provides the shared contract for this wave.
 - Source contracts: RC-001; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Upstream rights, dependency approval and hardware comparability remain unresolved until fresh exact evidence is reviewed.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_22912fdf19f49893d608203d08ad10a0.
 
 Prerequisite RC-W06-T01: Provides the shared contract for this wave.
 
@@ -1012,7 +1012,7 @@ Prerequisite RC-W06-T01: Provides the shared contract for this wave.
 - Source contracts: RC-001; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Upstream rights, dependency approval and hardware comparability remain unresolved until fresh exact evidence is reviewed.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_50336a6c740241a6e0a039a6f1dc0af6.
 
 Prerequisite RC-W06-T01: Provides the shared contract for this wave.
 
@@ -1026,7 +1026,7 @@ Prerequisite RC-W06-T01: Provides the shared contract for this wave.
 - Source contracts: RC-001; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Upstream rights, dependency approval and hardware comparability remain unresolved until fresh exact evidence is reviewed.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_c3f38764da61fed750f2fa6cfaaea524.
 
 Prerequisite RC-W01-T01: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -1052,7 +1052,7 @@ Prerequisite RC-W06-T06: Provides the shared contract for this wave.
 - Source contracts: RC-002, RC-004; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Needs exact platform mechanism, scoped resource approval and adversarial denial evidence; this is outside trusted numerical 0.1.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_00fc7565c74eeac48ddf14c580da4e1d.
 
 Prerequisite RC-W02-T10: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -1068,7 +1068,7 @@ Prerequisite RC-W06-T07: Provides the frozen contract and accepted predecessor e
 - Source contracts: RC-002, RC-004; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Needs exact platform mechanism, scoped resource approval and adversarial denial evidence; this is outside trusted numerical 0.1.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_dae2070bedb4448b8dffb7f46e932022.
 
 Prerequisite RC-W07-T01: Provides the shared contract for this wave.
 
@@ -1082,7 +1082,7 @@ Prerequisite RC-W07-T01: Provides the shared contract for this wave.
 - Source contracts: RC-002, RC-004; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Needs exact platform mechanism, scoped resource approval and adversarial denial evidence; this is outside trusted numerical 0.1.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_7bd967ea7bbcef40a5d32090c569d4cd.
 
 Prerequisite RC-W07-T01: Provides the shared contract for this wave.
 
@@ -1096,7 +1096,7 @@ Prerequisite RC-W07-T01: Provides the shared contract for this wave.
 - Source contracts: RC-002, RC-004; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Needs exact platform mechanism, scoped resource approval and adversarial denial evidence; this is outside trusted numerical 0.1.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_55bf030ffa86a5f211654742ecd9dd14.
 
 Prerequisite RC-W07-T01: Provides the shared contract for this wave.
 
@@ -1110,7 +1110,7 @@ Prerequisite RC-W07-T01: Provides the shared contract for this wave.
 - Source contracts: RC-002, RC-004; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Needs exact platform mechanism, scoped resource approval and adversarial denial evidence; this is outside trusted numerical 0.1.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_554c127b6b113e637f56e588935df112.
 
 Prerequisite RC-W07-T01: Provides the shared contract for this wave.
 
@@ -1124,7 +1124,7 @@ Prerequisite RC-W07-T01: Provides the shared contract for this wave.
 - Source contracts: RC-002, RC-004; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Needs exact platform mechanism, scoped resource approval and adversarial denial evidence; this is outside trusted numerical 0.1.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_be0e8bd04d3e5e1980226018c7763810.
 
 Prerequisite RC-W07-T01: Provides the shared contract for this wave.
 
@@ -1138,7 +1138,7 @@ Prerequisite RC-W07-T01: Provides the shared contract for this wave.
 - Source contracts: RC-002, RC-004; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Needs exact platform mechanism, scoped resource approval and adversarial denial evidence; this is outside trusted numerical 0.1.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_e7b38b217cbe42c26aa084c7879d2f7a.
 
 Prerequisite RC-W07-T01: Provides the shared contract for this wave.
 
@@ -1152,7 +1152,7 @@ Prerequisite RC-W07-T01: Provides the shared contract for this wave.
 - Source contracts: RC-002, RC-004; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Needs exact platform mechanism, scoped resource approval and adversarial denial evidence; this is outside trusted numerical 0.1.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_e5f8458b55ae170087de5bb52e44e123.
 
 Prerequisite RC-W07-T01: Provides the shared contract for this wave.
 
@@ -1166,7 +1166,7 @@ Prerequisite RC-W07-T01: Provides the shared contract for this wave.
 - Source contracts: RC-002, RC-004; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Needs exact platform mechanism, scoped resource approval and adversarial denial evidence; this is outside trusted numerical 0.1.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_3c62f814ce5e580caa48bc7d6d6e2398.
 
 Prerequisite RC-W07-T01: Provides the shared contract for this wave.
 
@@ -1180,7 +1180,7 @@ Prerequisite RC-W07-T01: Provides the shared contract for this wave.
 - Source contracts: RC-002, RC-004; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Needs exact platform mechanism, scoped resource approval and adversarial denial evidence; this is outside trusted numerical 0.1.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_90cbea3f086ac7cc3b3b24b216d0a9aa.
 
 Prerequisite RC-W02-T10: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -1214,7 +1214,7 @@ Prerequisite RC-W07-T09: Provides the shared contract for this wave.
 - Source contracts: RC-005, RC-011; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Logical API separation is insufficient; protected execution and study-specific feedback semantics need independent evidence.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_1e59a478b46b291ca2bf414df47c07e7.
 
 Prerequisite RC-W07-T10: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -1228,7 +1228,7 @@ Prerequisite RC-W07-T10: Provides the frozen contract and accepted predecessor e
 - Source contracts: RC-005, RC-011; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Logical API separation is insufficient; protected execution and study-specific feedback semantics need independent evidence.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_edaaacf206fc3e0e2e66c02a7ff3458d.
 
 Prerequisite RC-W08-T01: Provides the shared contract for this wave.
 
@@ -1242,7 +1242,7 @@ Prerequisite RC-W08-T01: Provides the shared contract for this wave.
 - Source contracts: RC-005, RC-011; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Logical API separation is insufficient; protected execution and study-specific feedback semantics need independent evidence.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_763d91a91ab51a4722bba156e7bf0c9e.
 
 Prerequisite RC-W08-T01: Provides the shared contract for this wave.
 
@@ -1256,7 +1256,7 @@ Prerequisite RC-W08-T01: Provides the shared contract for this wave.
 - Source contracts: RC-005, RC-011; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Logical API separation is insufficient; protected execution and study-specific feedback semantics need independent evidence.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_64f001b31b4dda2633240e2054641edf.
 
 Prerequisite RC-W08-T01: Provides the shared contract for this wave.
 
@@ -1270,7 +1270,7 @@ Prerequisite RC-W08-T01: Provides the shared contract for this wave.
 - Source contracts: RC-005, RC-011; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Logical API separation is insufficient; protected execution and study-specific feedback semantics need independent evidence.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_0c16b879ea676293241e4899150ffe1c.
 
 Prerequisite RC-W08-T01: Provides the shared contract for this wave.
 
@@ -1284,7 +1284,7 @@ Prerequisite RC-W08-T01: Provides the shared contract for this wave.
 - Source contracts: RC-005, RC-011; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Logical API separation is insufficient; protected execution and study-specific feedback semantics need independent evidence.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_9c87ed614df2df63f8c6e9f11dc8fcfe.
 
 Prerequisite RC-W08-T01: Provides the shared contract for this wave.
 
@@ -1298,7 +1298,7 @@ Prerequisite RC-W08-T01: Provides the shared contract for this wave.
 - Source contracts: RC-005, RC-011; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Logical API separation is insufficient; protected execution and study-specific feedback semantics need independent evidence.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_a08711e31c28919ef00469c6d2dc6b89.
 
 Prerequisite RC-W08-T01: Provides the shared contract for this wave.
 
@@ -1312,7 +1312,7 @@ Prerequisite RC-W08-T01: Provides the shared contract for this wave.
 - Source contracts: RC-005, RC-011; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Logical API separation is insufficient; protected execution and study-specific feedback semantics need independent evidence.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_de6c07be3b2e3d23323037823025e140.
 
 Prerequisite RC-W08-T01: Provides the shared contract for this wave.
 
@@ -1326,7 +1326,7 @@ Prerequisite RC-W08-T01: Provides the shared contract for this wave.
 - Source contracts: RC-005, RC-011; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Logical API separation is insufficient; protected execution and study-specific feedback semantics need independent evidence.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_fa470661406bc079292422d037e4195e.
 
 Prerequisite RC-W07-T10: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -1356,7 +1356,7 @@ Prerequisite RC-W08-T08: Provides the shared contract for this wave.
 - Source contracts: RC-007; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Requires reviewed dependencies, lawful inputs and explicitly allocated suitable hardware; numerical fixture evidence cannot discharge these gates.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_d30ecc10ddfd55b79d94bcde7f51273a.
 
 Prerequisite RC-W06-T07: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -1376,7 +1376,7 @@ Prerequisite RC-W04-T10: Provides the frozen contract and accepted predecessor e
 - Source contracts: RC-007; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Requires reviewed dependencies, lawful inputs and explicitly allocated suitable hardware; numerical fixture evidence cannot discharge these gates.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_c88a4a940ece969c6b8851438b846780.
 
 Prerequisite RC-W09-T01: Provides the shared contract for this wave.
 
@@ -1390,7 +1390,7 @@ Prerequisite RC-W09-T01: Provides the shared contract for this wave.
 - Source contracts: RC-007; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Requires reviewed dependencies, lawful inputs and explicitly allocated suitable hardware; numerical fixture evidence cannot discharge these gates.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_5f88baccba9acd335997c65b378540f6.
 
 Prerequisite RC-W09-T01: Provides the shared contract for this wave.
 
@@ -1404,7 +1404,7 @@ Prerequisite RC-W09-T01: Provides the shared contract for this wave.
 - Source contracts: RC-007; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Requires reviewed dependencies, lawful inputs and explicitly allocated suitable hardware; numerical fixture evidence cannot discharge these gates.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_1dc3f8bff95d04dadce6d59640e0899d.
 
 Prerequisite RC-W09-T01: Provides the shared contract for this wave.
 
@@ -1418,7 +1418,7 @@ Prerequisite RC-W09-T01: Provides the shared contract for this wave.
 - Source contracts: RC-007; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Requires reviewed dependencies, lawful inputs and explicitly allocated suitable hardware; numerical fixture evidence cannot discharge these gates.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_0c9f711e930795a90a3913a2bb337e1d.
 
 Prerequisite RC-W09-T01: Provides the shared contract for this wave.
 
@@ -1432,7 +1432,7 @@ Prerequisite RC-W09-T01: Provides the shared contract for this wave.
 - Source contracts: RC-007; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Requires reviewed dependencies, lawful inputs and explicitly allocated suitable hardware; numerical fixture evidence cannot discharge these gates.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_3fb87c8f289c6ab5fcd35d7741d690f2.
 
 Prerequisite RC-W09-T01: Provides the shared contract for this wave.
 
@@ -1446,7 +1446,7 @@ Prerequisite RC-W09-T01: Provides the shared contract for this wave.
 - Source contracts: RC-007; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Requires reviewed dependencies, lawful inputs and explicitly allocated suitable hardware; numerical fixture evidence cannot discharge these gates.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_14884669ea2e8f9c43244c3f1671e41b.
 
 Prerequisite RC-W09-T01: Provides the shared contract for this wave.
 
@@ -1460,7 +1460,7 @@ Prerequisite RC-W09-T01: Provides the shared contract for this wave.
 - Source contracts: RC-007; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Requires reviewed dependencies, lawful inputs and explicitly allocated suitable hardware; numerical fixture evidence cannot discharge these gates.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_f1fed39bf34d2bb92b13d3cf62726bb7.
 
 Prerequisite RC-W06-T07: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -1494,7 +1494,7 @@ Prerequisite RC-W09-T07: Provides the shared contract for this wave.
 - Source contracts: RC-008; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Prompt injection, scope drift and hidden dependency adoption require hostile-input tests and content-bound acceptance.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_64ece43d62744fb3df805a7a607adcd2.
 
 Prerequisite RC-W09-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -1508,7 +1508,7 @@ Prerequisite RC-W09-T08: Provides the frozen contract and accepted predecessor e
 - Source contracts: RC-008; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Prompt injection, scope drift and hidden dependency adoption require hostile-input tests and content-bound acceptance.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_a631db42cc2138db80e3296ef0aab382.
 
 Prerequisite RC-W10-T01: Provides the shared contract for this wave.
 
@@ -1522,7 +1522,7 @@ Prerequisite RC-W10-T01: Provides the shared contract for this wave.
 - Source contracts: RC-008; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Prompt injection, scope drift and hidden dependency adoption require hostile-input tests and content-bound acceptance.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_ee1774e0faabba46d18ddb8b4c951a3c.
 
 Prerequisite RC-W10-T01: Provides the shared contract for this wave.
 
@@ -1536,7 +1536,7 @@ Prerequisite RC-W10-T01: Provides the shared contract for this wave.
 - Source contracts: RC-008; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Prompt injection, scope drift and hidden dependency adoption require hostile-input tests and content-bound acceptance.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_efdff0e7e4c9dfc928d043806095d22f.
 
 Prerequisite RC-W10-T01: Provides the shared contract for this wave.
 
@@ -1550,7 +1550,7 @@ Prerequisite RC-W10-T01: Provides the shared contract for this wave.
 - Source contracts: RC-008; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Prompt injection, scope drift and hidden dependency adoption require hostile-input tests and content-bound acceptance.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_4029d7dbf09cb8900df7c832712542b7.
 
 Prerequisite RC-W10-T01: Provides the shared contract for this wave.
 
@@ -1564,7 +1564,7 @@ Prerequisite RC-W10-T01: Provides the shared contract for this wave.
 - Source contracts: RC-008; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Prompt injection, scope drift and hidden dependency adoption require hostile-input tests and content-bound acceptance.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_7d323f1fbdcb31f507b5ea6491837080.
 
 Prerequisite RC-W10-T01: Provides the shared contract for this wave.
 
@@ -1578,7 +1578,7 @@ Prerequisite RC-W10-T01: Provides the shared contract for this wave.
 - Source contracts: RC-008; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Prompt injection, scope drift and hidden dependency adoption require hostile-input tests and content-bound acceptance.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_073bf5fac806e0089b9cfe6dc75bc162.
 
 Prerequisite RC-W10-T01: Provides the shared contract for this wave.
 
@@ -1592,7 +1592,7 @@ Prerequisite RC-W10-T01: Provides the shared contract for this wave.
 - Source contracts: RC-008; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Prompt injection, scope drift and hidden dependency adoption require hostile-input tests and content-bound acceptance.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_6c7c49ed4a85fa0491913b9330e4e4a5.
 
 Prerequisite RC-W09-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -1620,7 +1620,7 @@ Prerequisite RC-W10-T07: Provides the shared contract for this wave.
 - Source contracts: RC-009; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Requires explicit model/compute approval, complete overhead metering and fresh confirmation; the numerical 0.1 result is not this comparison.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_6ef12fce910f5947507c8bf4bab3e4e5.
 
 Prerequisite RC-W10-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -1634,7 +1634,7 @@ Prerequisite RC-W10-T08: Provides the frozen contract and accepted predecessor e
 - Source contracts: RC-009; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Requires explicit model/compute approval, complete overhead metering and fresh confirmation; the numerical 0.1 result is not this comparison.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_36a19dea6c5076bf395504031e362f57.
 
 Prerequisite RC-W11-T01: Provides the shared contract for this wave.
 
@@ -1648,7 +1648,7 @@ Prerequisite RC-W11-T01: Provides the shared contract for this wave.
 - Source contracts: RC-009; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Requires explicit model/compute approval, complete overhead metering and fresh confirmation; the numerical 0.1 result is not this comparison.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_ca3700ed845553b77beee675f4ae54e4.
 
 Prerequisite RC-W11-T01: Provides the shared contract for this wave.
 
@@ -1662,7 +1662,7 @@ Prerequisite RC-W11-T01: Provides the shared contract for this wave.
 - Source contracts: RC-009; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Requires explicit model/compute approval, complete overhead metering and fresh confirmation; the numerical 0.1 result is not this comparison.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_9f7ae6aabf7afd7a17d1a17014791aa2.
 
 Prerequisite RC-W11-T01: Provides the shared contract for this wave.
 
@@ -1676,7 +1676,7 @@ Prerequisite RC-W11-T01: Provides the shared contract for this wave.
 - Source contracts: RC-009; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Requires explicit model/compute approval, complete overhead metering and fresh confirmation; the numerical 0.1 result is not this comparison.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_d3e099a316e1e20d65e0a260b3f8d36f.
 
 Prerequisite RC-W11-T01: Provides the shared contract for this wave.
 
@@ -1690,7 +1690,7 @@ Prerequisite RC-W11-T01: Provides the shared contract for this wave.
 - Source contracts: RC-009; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Requires explicit model/compute approval, complete overhead metering and fresh confirmation; the numerical 0.1 result is not this comparison.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_c1d25c95555b39a76e990c8662065b0d.
 
 Prerequisite RC-W11-T01: Provides the shared contract for this wave.
 
@@ -1704,7 +1704,7 @@ Prerequisite RC-W11-T01: Provides the shared contract for this wave.
 - Source contracts: RC-009; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Requires explicit model/compute approval, complete overhead metering and fresh confirmation; the numerical 0.1 result is not this comparison.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_0d94ef9d7aff6027eb0972d284658b74.
 
 Prerequisite RC-W11-T01: Provides the shared contract for this wave.
 
@@ -1718,7 +1718,7 @@ Prerequisite RC-W11-T01: Provides the shared contract for this wave.
 - Source contracts: RC-009; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Requires explicit model/compute approval, complete overhead metering and fresh confirmation; the numerical 0.1 result is not this comparison.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_74cf11efd1f00c2a103a4b9b60380d72.
 
 Prerequisite RC-W10-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -1746,7 +1746,7 @@ Prerequisite RC-W11-T07: Provides the shared contract for this wave.
 - Source contracts: RC-010; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Ablations can change more than one cause; reviewer judgment and registered interventions are required before causal language.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_ea16407589027c98033f76e193bd6f92.
 
 Prerequisite RC-W11-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -1760,7 +1760,7 @@ Prerequisite RC-W11-T08: Provides the frozen contract and accepted predecessor e
 - Source contracts: RC-010; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Ablations can change more than one cause; reviewer judgment and registered interventions are required before causal language.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_b099531ff195b05e274f9196b8344b59.
 
 Prerequisite RC-W12-T01: Provides the shared contract for this wave.
 
@@ -1774,7 +1774,7 @@ Prerequisite RC-W12-T01: Provides the shared contract for this wave.
 - Source contracts: RC-010; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Ablations can change more than one cause; reviewer judgment and registered interventions are required before causal language.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_c420a8bc8d91a7747419b3c1a5a81400.
 
 Prerequisite RC-W12-T01: Provides the shared contract for this wave.
 
@@ -1788,7 +1788,7 @@ Prerequisite RC-W12-T01: Provides the shared contract for this wave.
 - Source contracts: RC-010; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Ablations can change more than one cause; reviewer judgment and registered interventions are required before causal language.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_a95ae0a00ae7dce93190da061bd8319a.
 
 Prerequisite RC-W12-T01: Provides the shared contract for this wave.
 
@@ -1802,7 +1802,7 @@ Prerequisite RC-W12-T01: Provides the shared contract for this wave.
 - Source contracts: RC-010; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Ablations can change more than one cause; reviewer judgment and registered interventions are required before causal language.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_6e655c64f578f650ffd55b188e370920.
 
 Prerequisite RC-W12-T01: Provides the shared contract for this wave.
 
@@ -1816,7 +1816,7 @@ Prerequisite RC-W12-T01: Provides the shared contract for this wave.
 - Source contracts: RC-010; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Ablations can change more than one cause; reviewer judgment and registered interventions are required before causal language.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_fc72fb94d3e9944a7eff2f7d25e7d764.
 
 Prerequisite RC-W12-T01: Provides the shared contract for this wave.
 
@@ -1830,7 +1830,7 @@ Prerequisite RC-W12-T01: Provides the shared contract for this wave.
 - Source contracts: RC-010; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Ablations can change more than one cause; reviewer judgment and registered interventions are required before causal language.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_d2453b4170a86d42dc2cab3d17d3a4b2.
 
 Prerequisite RC-W11-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -1856,7 +1856,7 @@ Prerequisite RC-W12-T06: Provides the shared contract for this wave.
 - Source contracts: RC-011; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Needs qualified methodological review; no universal p-value or reusable-holdout guarantee is promised.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_2b84b154d474124aea697af01bcac182.
 
 Prerequisite RC-W11-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -1872,7 +1872,7 @@ Prerequisite RC-W08-T09: Provides the frozen contract and accepted predecessor e
 - Source contracts: RC-011; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Needs qualified methodological review; no universal p-value or reusable-holdout guarantee is promised.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_16a84cc1557a502f06a063c82475acb3.
 
 Prerequisite RC-W13-T01: Provides the shared contract for this wave.
 
@@ -1886,7 +1886,7 @@ Prerequisite RC-W13-T01: Provides the shared contract for this wave.
 - Source contracts: RC-011; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Needs qualified methodological review; no universal p-value or reusable-holdout guarantee is promised.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_a89c676734dc8b047d9fc9fbbcc67a2f.
 
 Prerequisite RC-W13-T01: Provides the shared contract for this wave.
 
@@ -1900,7 +1900,7 @@ Prerequisite RC-W13-T01: Provides the shared contract for this wave.
 - Source contracts: RC-011; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Needs qualified methodological review; no universal p-value or reusable-holdout guarantee is promised.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_4184ddc279085d7a791ad439a1a37ce0.
 
 Prerequisite RC-W13-T01: Provides the shared contract for this wave.
 
@@ -1914,7 +1914,7 @@ Prerequisite RC-W13-T01: Provides the shared contract for this wave.
 - Source contracts: RC-011; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Needs qualified methodological review; no universal p-value or reusable-holdout guarantee is promised.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_6354d15c9e33d2747a0fb6027724ff4d.
 
 Prerequisite RC-W13-T01: Provides the shared contract for this wave.
 
@@ -1928,7 +1928,7 @@ Prerequisite RC-W13-T01: Provides the shared contract for this wave.
 - Source contracts: RC-011; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Needs qualified methodological review; no universal p-value or reusable-holdout guarantee is promised.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_535dee9bdd4acb61cebd3a739e4ff2cb.
 
 Prerequisite RC-W13-T01: Provides the shared contract for this wave.
 
@@ -1942,7 +1942,7 @@ Prerequisite RC-W13-T01: Provides the shared contract for this wave.
 - Source contracts: RC-011; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Needs qualified methodological review; no universal p-value or reusable-holdout guarantee is promised.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_2e9e7c6adce5e6936da6b068fe760841.
 
 Prerequisite RC-W13-T01: Provides the shared contract for this wave.
 
@@ -1956,7 +1956,7 @@ Prerequisite RC-W13-T01: Provides the shared contract for this wave.
 - Source contracts: RC-011; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Needs qualified methodological review; no universal p-value or reusable-holdout guarantee is promised.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_6f45352eca6c0032f7fb237c1490846d.
 
 Prerequisite RC-W11-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -1986,7 +1986,7 @@ Prerequisite RC-W13-T07: Provides the shared contract for this wave.
 - Source contracts: RC-012; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Citation presence and fluent prose do not establish validity; completeness and reviewer disposition need direct evidence.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_0ec25e5d0bcbded81cbb23faf671b1d5.
 
 Prerequisite RC-W11-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -2004,7 +2004,7 @@ Prerequisite RC-W13-T08: Provides the frozen contract and accepted predecessor e
 - Source contracts: RC-012; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Citation presence and fluent prose do not establish validity; completeness and reviewer disposition need direct evidence.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_7d25ce9204c3d8b48d2ff0bce7b34c48.
 
 Prerequisite RC-W14-T01: Provides the shared contract for this wave.
 
@@ -2018,7 +2018,7 @@ Prerequisite RC-W14-T01: Provides the shared contract for this wave.
 - Source contracts: RC-012; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Citation presence and fluent prose do not establish validity; completeness and reviewer disposition need direct evidence.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_3638bcae6f229d4e4241d861c27455ad.
 
 Prerequisite RC-W14-T01: Provides the shared contract for this wave.
 
@@ -2032,7 +2032,7 @@ Prerequisite RC-W14-T01: Provides the shared contract for this wave.
 - Source contracts: RC-012; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Citation presence and fluent prose do not establish validity; completeness and reviewer disposition need direct evidence.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_bf211c6345aefe84e0e2f301186c653d.
 
 Prerequisite RC-W14-T01: Provides the shared contract for this wave.
 
@@ -2046,7 +2046,7 @@ Prerequisite RC-W14-T01: Provides the shared contract for this wave.
 - Source contracts: RC-012; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Citation presence and fluent prose do not establish validity; completeness and reviewer disposition need direct evidence.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_e8b957d5222958ed890b298f97adcda5.
 
 Prerequisite RC-W14-T01: Provides the shared contract for this wave.
 
@@ -2060,7 +2060,7 @@ Prerequisite RC-W14-T01: Provides the shared contract for this wave.
 - Source contracts: RC-012; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Citation presence and fluent prose do not establish validity; completeness and reviewer disposition need direct evidence.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_41057e4c6e17829445fd99f55ea6d716.
 
 Prerequisite RC-W14-T01: Provides the shared contract for this wave.
 
@@ -2074,7 +2074,7 @@ Prerequisite RC-W14-T01: Provides the shared contract for this wave.
 - Source contracts: RC-012; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Citation presence and fluent prose do not establish validity; completeness and reviewer disposition need direct evidence.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_5d6ff6ec8d62121b9607cc1768b8da9b.
 
 Prerequisite RC-W11-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -2104,7 +2104,7 @@ Prerequisite RC-W14-T06: Provides the shared contract for this wave.
 - Source contracts: RC-013; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Hardware variability, quality leakage and model/data licensing require separate evidence and resource approval.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_088d3a34e6cf47eea2faa0923aa85ea5.
 
 Prerequisite RC-W14-T07: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -2118,7 +2118,7 @@ Prerequisite RC-W14-T07: Provides the frozen contract and accepted predecessor e
 - Source contracts: RC-013; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Hardware variability, quality leakage and model/data licensing require separate evidence and resource approval.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_16db4b8bc0493a355c74a24e27cf51d4.
 
 Prerequisite RC-W15-T01: Provides the shared contract for this wave.
 
@@ -2132,7 +2132,7 @@ Prerequisite RC-W15-T01: Provides the shared contract for this wave.
 - Source contracts: RC-013; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Hardware variability, quality leakage and model/data licensing require separate evidence and resource approval.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_4f76262a2b0e3547741dcff9945c3d6d.
 
 Prerequisite RC-W15-T01: Provides the shared contract for this wave.
 
@@ -2146,7 +2146,7 @@ Prerequisite RC-W15-T01: Provides the shared contract for this wave.
 - Source contracts: RC-013; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Hardware variability, quality leakage and model/data licensing require separate evidence and resource approval.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_45180cf5aceacdeb52a14a14e8a402c3.
 
 Prerequisite RC-W15-T01: Provides the shared contract for this wave.
 
@@ -2160,7 +2160,7 @@ Prerequisite RC-W15-T01: Provides the shared contract for this wave.
 - Source contracts: RC-013; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Hardware variability, quality leakage and model/data licensing require separate evidence and resource approval.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_e65943ebbd67cb8b24d5fe329bfb8203.
 
 Prerequisite RC-W15-T01: Provides the shared contract for this wave.
 
@@ -2174,7 +2174,7 @@ Prerequisite RC-W15-T01: Provides the shared contract for this wave.
 - Source contracts: RC-013; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Hardware variability, quality leakage and model/data licensing require separate evidence and resource approval.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_a9a799e7f34a0d849b51b2064d3fd5d8.
 
 Prerequisite RC-W15-T01: Provides the shared contract for this wave.
 
@@ -2188,7 +2188,7 @@ Prerequisite RC-W15-T01: Provides the shared contract for this wave.
 - Source contracts: RC-013; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Hardware variability, quality leakage and model/data licensing require separate evidence and resource approval.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_2466518ac5c5d6b69e10e4be5fb599fc.
 
 Prerequisite RC-W15-T01: Provides the shared contract for this wave.
 
@@ -2202,7 +2202,7 @@ Prerequisite RC-W15-T01: Provides the shared contract for this wave.
 - Source contracts: RC-013; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Hardware variability, quality leakage and model/data licensing require separate evidence and resource approval.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_317f89428d960f8d399ebed494b3624b.
 
 Prerequisite RC-W14-T07: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -2230,7 +2230,7 @@ Prerequisite RC-W15-T07: Provides the shared contract for this wave.
 - Source contracts: RC-014; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Lawful inputs, contamination, privacy and judgment quality require domain-specific controls, not only generic schema validity.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_92f5bfec1121bba378a303adccc5489f.
 
 Prerequisite RC-W14-T07: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -2244,7 +2244,7 @@ Prerequisite RC-W14-T07: Provides the frozen contract and accepted predecessor e
 - Source contracts: RC-014; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Lawful inputs, contamination, privacy and judgment quality require domain-specific controls, not only generic schema validity.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_1656bdaee1e8540bcc9fdf4754b05126.
 
 Prerequisite RC-W16-T01: Provides the shared contract for this wave.
 
@@ -2258,7 +2258,7 @@ Prerequisite RC-W16-T01: Provides the shared contract for this wave.
 - Source contracts: RC-014; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Lawful inputs, contamination, privacy and judgment quality require domain-specific controls, not only generic schema validity.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_c5c3f62cf85a1c9b943d60c2d6aee2a8.
 
 Prerequisite RC-W16-T01: Provides the shared contract for this wave.
 
@@ -2272,7 +2272,7 @@ Prerequisite RC-W16-T01: Provides the shared contract for this wave.
 - Source contracts: RC-014; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Lawful inputs, contamination, privacy and judgment quality require domain-specific controls, not only generic schema validity.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_d5e101ead57a210119b734f87769aae6.
 
 Prerequisite RC-W16-T01: Provides the shared contract for this wave.
 
@@ -2286,7 +2286,7 @@ Prerequisite RC-W16-T01: Provides the shared contract for this wave.
 - Source contracts: RC-014; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Lawful inputs, contamination, privacy and judgment quality require domain-specific controls, not only generic schema validity.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_6ec4cac341836167297b435035ec76a0.
 
 Prerequisite RC-W16-T01: Provides the shared contract for this wave.
 
@@ -2300,7 +2300,7 @@ Prerequisite RC-W16-T01: Provides the shared contract for this wave.
 - Source contracts: RC-014; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Lawful inputs, contamination, privacy and judgment quality require domain-specific controls, not only generic schema validity.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_c3969770629fd7ec71ae407732b1153f.
 
 Prerequisite RC-W16-T01: Provides the shared contract for this wave.
 
@@ -2314,7 +2314,7 @@ Prerequisite RC-W16-T01: Provides the shared contract for this wave.
 - Source contracts: RC-014; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Lawful inputs, contamination, privacy and judgment quality require domain-specific controls, not only generic schema validity.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_07d321717eaca185c7471b6904ef4464.
 
 Prerequisite RC-W16-T01: Provides the shared contract for this wave.
 
@@ -2328,7 +2328,7 @@ Prerequisite RC-W16-T01: Provides the shared contract for this wave.
 - Source contracts: RC-014; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Lawful inputs, contamination, privacy and judgment quality require domain-specific controls, not only generic schema validity.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_1102c38904b5729049425a7d4c248bb2.
 
 Prerequisite RC-W14-T07: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -2356,7 +2356,7 @@ Prerequisite RC-W16-T07: Provides the shared contract for this wave.
 - Source contracts: RC-015; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: The 0.1 fixture is partial lineage only; genuine cross-domain portability and numerical applicability require this wider evidence.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_1b7c89b31e84f2f606305a817e39d098.
 
 Prerequisite RC-W14-T07: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -2370,7 +2370,7 @@ Prerequisite RC-W14-T07: Provides the frozen contract and accepted predecessor e
 - Source contracts: RC-015; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: The 0.1 fixture is partial lineage only; genuine cross-domain portability and numerical applicability require this wider evidence.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_cb1a4edc3b67d449ab06ef5173ebdb83.
 
 Prerequisite RC-W17-T01: Provides the shared contract for this wave.
 
@@ -2384,7 +2384,7 @@ Prerequisite RC-W17-T01: Provides the shared contract for this wave.
 - Source contracts: RC-015; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: The 0.1 fixture is partial lineage only; genuine cross-domain portability and numerical applicability require this wider evidence.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_0f0e667291be3a76806dfa1d2ee46605.
 
 Prerequisite RC-W17-T01: Provides the shared contract for this wave.
 
@@ -2398,7 +2398,7 @@ Prerequisite RC-W17-T01: Provides the shared contract for this wave.
 - Source contracts: RC-015; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: The 0.1 fixture is partial lineage only; genuine cross-domain portability and numerical applicability require this wider evidence.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_d940fb9ac38ad709ebc1fd546671ebbd.
 
 Prerequisite RC-W17-T01: Provides the shared contract for this wave.
 
@@ -2412,7 +2412,7 @@ Prerequisite RC-W17-T01: Provides the shared contract for this wave.
 - Source contracts: RC-015; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: The 0.1 fixture is partial lineage only; genuine cross-domain portability and numerical applicability require this wider evidence.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_8d9b237377214cceb320757cc25f22a3.
 
 Prerequisite RC-W17-T01: Provides the shared contract for this wave.
 
@@ -2426,7 +2426,7 @@ Prerequisite RC-W17-T01: Provides the shared contract for this wave.
 - Source contracts: RC-015; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: The 0.1 fixture is partial lineage only; genuine cross-domain portability and numerical applicability require this wider evidence.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_15870d121189f99a790f7228dbfe880a.
 
 Prerequisite RC-W17-T01: Provides the shared contract for this wave.
 
@@ -2440,7 +2440,7 @@ Prerequisite RC-W17-T01: Provides the shared contract for this wave.
 - Source contracts: RC-015; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: The 0.1 fixture is partial lineage only; genuine cross-domain portability and numerical applicability require this wider evidence.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_9d9a9efa47a0f11f99b1d756f7c10b30.
 
 Prerequisite RC-W17-T01: Provides the shared contract for this wave.
 
@@ -2454,7 +2454,7 @@ Prerequisite RC-W17-T01: Provides the shared contract for this wave.
 - Source contracts: RC-015; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: The 0.1 fixture is partial lineage only; genuine cross-domain portability and numerical applicability require this wider evidence.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_1cb23801bd65900efdf9143901ad65b4.
 
 Prerequisite RC-W14-T07: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -2482,7 +2482,7 @@ Prerequisite RC-W17-T07: Provides the shared contract for this wave.
 - Source contracts: RC-016; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Graph completeness, stale citations and semantic overreach require invalid-edge probes and independent record inspection.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_388289b60a9b903cb536c43eb4e86ecb.
 
 Prerequisite RC-W15-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -2500,7 +2500,7 @@ Prerequisite RC-W17-T08: Provides the frozen contract and accepted predecessor e
 - Source contracts: RC-016; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Graph completeness, stale citations and semantic overreach require invalid-edge probes and independent record inspection.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_46f2cea868066ffadd478fe42fc7f08f.
 
 Prerequisite RC-W18-T01: Provides the shared contract for this wave.
 
@@ -2514,7 +2514,7 @@ Prerequisite RC-W18-T01: Provides the shared contract for this wave.
 - Source contracts: RC-016; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Graph completeness, stale citations and semantic overreach require invalid-edge probes and independent record inspection.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_6d1dbef096b2f9897ad2ab6f9ec4b165.
 
 Prerequisite RC-W18-T01: Provides the shared contract for this wave.
 
@@ -2528,7 +2528,7 @@ Prerequisite RC-W18-T01: Provides the shared contract for this wave.
 - Source contracts: RC-016; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Graph completeness, stale citations and semantic overreach require invalid-edge probes and independent record inspection.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_6174695e1b770011ef89e1f1795bc9c9.
 
 Prerequisite RC-W18-T01: Provides the shared contract for this wave.
 
@@ -2542,7 +2542,7 @@ Prerequisite RC-W18-T01: Provides the shared contract for this wave.
 - Source contracts: RC-016; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Graph completeness, stale citations and semantic overreach require invalid-edge probes and independent record inspection.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_c3d1b113bd61210cf58edb0326bee8ac.
 
 Prerequisite RC-W18-T01: Provides the shared contract for this wave.
 
@@ -2556,7 +2556,7 @@ Prerequisite RC-W18-T01: Provides the shared contract for this wave.
 - Source contracts: RC-016; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Graph completeness, stale citations and semantic overreach require invalid-edge probes and independent record inspection.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_64db3adbcca764368e893b0f8f394387.
 
 Prerequisite RC-W18-T01: Provides the shared contract for this wave.
 
@@ -2570,7 +2570,7 @@ Prerequisite RC-W18-T01: Provides the shared contract for this wave.
 - Source contracts: RC-016; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Graph completeness, stale citations and semantic overreach require invalid-edge probes and independent record inspection.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_794e3f0d3162c0ed41ca7b498c9933bf.
 
 Prerequisite RC-W18-T01: Provides the shared contract for this wave.
 
@@ -2584,7 +2584,7 @@ Prerequisite RC-W18-T01: Provides the shared contract for this wave.
 - Source contracts: RC-016; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Graph completeness, stale citations and semantic overreach require invalid-edge probes and independent record inspection.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_0cd59524206d0bc3f7b078a90ab9e602.
 
 Prerequisite RC-W15-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -2616,7 +2616,7 @@ Prerequisite RC-W18-T07: Provides the shared contract for this wave.
 - Source contracts: RC-017; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Adaptive allocation is a proposed experiment, not promised advantage; resource accounting and starvation controls are load-bearing.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_c6e0c96188b75100943535a6e60835c2.
 
 Prerequisite RC-W15-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -2634,7 +2634,7 @@ Prerequisite RC-W17-T08: Provides the frozen contract and accepted predecessor e
 - Source contracts: RC-017; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Adaptive allocation is a proposed experiment, not promised advantage; resource accounting and starvation controls are load-bearing.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_a87eb27970689f6ebc4ba8d02e681872.
 
 Prerequisite RC-W19-T01: Provides the shared contract for this wave.
 
@@ -2648,7 +2648,7 @@ Prerequisite RC-W19-T01: Provides the shared contract for this wave.
 - Source contracts: RC-017; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Adaptive allocation is a proposed experiment, not promised advantage; resource accounting and starvation controls are load-bearing.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_d438f0d0004f97f39eaf0dc541540623.
 
 Prerequisite RC-W19-T01: Provides the shared contract for this wave.
 
@@ -2662,7 +2662,7 @@ Prerequisite RC-W19-T01: Provides the shared contract for this wave.
 - Source contracts: RC-017; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Adaptive allocation is a proposed experiment, not promised advantage; resource accounting and starvation controls are load-bearing.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_2ffd9d11c54a840bd33eec62c70644b9.
 
 Prerequisite RC-W19-T01: Provides the shared contract for this wave.
 
@@ -2676,7 +2676,7 @@ Prerequisite RC-W19-T01: Provides the shared contract for this wave.
 - Source contracts: RC-017; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Adaptive allocation is a proposed experiment, not promised advantage; resource accounting and starvation controls are load-bearing.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_6d6e3159b79170b9e04eb2f4c2de8d55.
 
 Prerequisite RC-W19-T01: Provides the shared contract for this wave.
 
@@ -2690,7 +2690,7 @@ Prerequisite RC-W19-T01: Provides the shared contract for this wave.
 - Source contracts: RC-017; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Adaptive allocation is a proposed experiment, not promised advantage; resource accounting and starvation controls are load-bearing.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_97043be88ead7c973ed9a3fdb963f99e.
 
 Prerequisite RC-W19-T01: Provides the shared contract for this wave.
 
@@ -2704,7 +2704,7 @@ Prerequisite RC-W19-T01: Provides the shared contract for this wave.
 - Source contracts: RC-017; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Adaptive allocation is a proposed experiment, not promised advantage; resource accounting and starvation controls are load-bearing.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_20a9e6ce8ac4a57b9f802733239174b5.
 
 Prerequisite RC-W19-T01: Provides the shared contract for this wave.
 
@@ -2718,7 +2718,7 @@ Prerequisite RC-W19-T01: Provides the shared contract for this wave.
 - Source contracts: RC-017; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Adaptive allocation is a proposed experiment, not promised advantage; resource accounting and starvation controls are load-bearing.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_d129b662e8ccd5547256c46bf5490f51.
 
 Prerequisite RC-W15-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -2750,7 +2750,7 @@ Prerequisite RC-W19-T07: Provides the shared contract for this wave.
 - Source contracts: RC-018; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Fresh evaluation and independent adoption review prevent recursive self-promotion; no unbounded self-improvement is authorized.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_6cf697d7ef0638d9482e2093c7995cec.
 
 Prerequisite RC-W15-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -2770,7 +2770,7 @@ Prerequisite RC-W19-T08: Provides the frozen contract and accepted predecessor e
 - Source contracts: RC-018; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Fresh evaluation and independent adoption review prevent recursive self-promotion; no unbounded self-improvement is authorized.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_1d3bf554197523dd17df8a3507ea7bdb.
 
 Prerequisite RC-W20-T01: Provides the shared contract for this wave.
 
@@ -2784,7 +2784,7 @@ Prerequisite RC-W20-T01: Provides the shared contract for this wave.
 - Source contracts: RC-018; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Fresh evaluation and independent adoption review prevent recursive self-promotion; no unbounded self-improvement is authorized.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_262682651c1f0269fcee4cb7f94010bc.
 
 Prerequisite RC-W20-T01: Provides the shared contract for this wave.
 
@@ -2798,7 +2798,7 @@ Prerequisite RC-W20-T01: Provides the shared contract for this wave.
 - Source contracts: RC-018; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Fresh evaluation and independent adoption review prevent recursive self-promotion; no unbounded self-improvement is authorized.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_33f0b06e94614900b8112c6c60af8e2d.
 
 Prerequisite RC-W20-T01: Provides the shared contract for this wave.
 
@@ -2812,7 +2812,7 @@ Prerequisite RC-W20-T01: Provides the shared contract for this wave.
 - Source contracts: RC-018; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Fresh evaluation and independent adoption review prevent recursive self-promotion; no unbounded self-improvement is authorized.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_3bd28eeef6cb34483762b3f5207e7ac8.
 
 Prerequisite RC-W20-T01: Provides the shared contract for this wave.
 
@@ -2826,7 +2826,7 @@ Prerequisite RC-W20-T01: Provides the shared contract for this wave.
 - Source contracts: RC-018; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Fresh evaluation and independent adoption review prevent recursive self-promotion; no unbounded self-improvement is authorized.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_9dc9223ebebe79d3e3303b77d297b6bf.
 
 Prerequisite RC-W20-T01: Provides the shared contract for this wave.
 
@@ -2840,7 +2840,7 @@ Prerequisite RC-W20-T01: Provides the shared contract for this wave.
 - Source contracts: RC-018; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Fresh evaluation and independent adoption review prevent recursive self-promotion; no unbounded self-improvement is authorized.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_844d9102cbcd87866f23d65f8bd8f5be.
 
 Prerequisite RC-W15-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -2872,7 +2872,7 @@ Prerequisite RC-W20-T06: Provides the shared contract for this wave.
 - Source contracts: RC-010, RC-021; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: An agent rerun is runtime evidence, not fabricated human or external validation; source of every observation must be recorded.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_dc39a8c5654aa7cc2c2c801ef3f1d4f6.
 
 Prerequisite RC-W12-T07: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -2890,7 +2890,7 @@ Prerequisite RC-W20-T07: Provides the frozen contract and accepted predecessor e
 - Source contracts: RC-010, RC-021; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: An agent rerun is runtime evidence, not fabricated human or external validation; source of every observation must be recorded.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_6669d9b35fffc0e4c69e869d48a8c97b.
 
 Prerequisite RC-W21-T01: Provides the shared contract for this wave.
 
@@ -2904,7 +2904,7 @@ Prerequisite RC-W21-T01: Provides the shared contract for this wave.
 - Source contracts: RC-010, RC-021; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: An agent rerun is runtime evidence, not fabricated human or external validation; source of every observation must be recorded.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_c7c8a3c25224c47403da10ea0b9e4f39.
 
 Prerequisite RC-W21-T01: Provides the shared contract for this wave.
 
@@ -2918,7 +2918,7 @@ Prerequisite RC-W21-T01: Provides the shared contract for this wave.
 - Source contracts: RC-010, RC-021; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: An agent rerun is runtime evidence, not fabricated human or external validation; source of every observation must be recorded.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_409fbede4c3a536e5615fd30bde1fb8e.
 
 Prerequisite RC-W21-T01: Provides the shared contract for this wave.
 
@@ -2932,7 +2932,7 @@ Prerequisite RC-W21-T01: Provides the shared contract for this wave.
 - Source contracts: RC-010, RC-021; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: An agent rerun is runtime evidence, not fabricated human or external validation; source of every observation must be recorded.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_4ed82039227da2fbde23a4b86365bcf0.
 
 Prerequisite RC-W21-T01: Provides the shared contract for this wave.
 
@@ -2946,7 +2946,7 @@ Prerequisite RC-W21-T01: Provides the shared contract for this wave.
 - Source contracts: RC-010, RC-021; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: An agent rerun is runtime evidence, not fabricated human or external validation; source of every observation must be recorded.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_f039df4024f49bab937d4fff4096703d.
 
 Prerequisite RC-W21-T01: Provides the shared contract for this wave.
 
@@ -2960,7 +2960,7 @@ Prerequisite RC-W21-T01: Provides the shared contract for this wave.
 - Source contracts: RC-010, RC-021; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: An agent rerun is runtime evidence, not fabricated human or external validation; source of every observation must be recorded.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_a965db12d4f55e8159bb8cc8bc7cd2aa.
 
 Prerequisite RC-W21-T01: Provides the shared contract for this wave.
 
@@ -2974,7 +2974,7 @@ Prerequisite RC-W21-T01: Provides the shared contract for this wave.
 - Source contracts: RC-010, RC-021; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: An agent rerun is runtime evidence, not fabricated human or external validation; source of every observation must be recorded.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_818ba18131149e95d35d0741493b3d0c.
 
 Prerequisite RC-W12-T07: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -3006,7 +3006,7 @@ Prerequisite RC-W21-T07: Provides the shared contract for this wave.
 - Source contracts: RC-019; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: A usable workbench needs actual interaction and accessibility observations; static screenshots are insufficient.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_d1d4e767b9a493e6cc248258c9346078.
 
 Prerequisite RC-W18-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -3024,7 +3024,7 @@ Prerequisite RC-W20-T07: Provides the frozen contract and accepted predecessor e
 - Source contracts: RC-019; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: A usable workbench needs actual interaction and accessibility observations; static screenshots are insufficient.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_da170779e07fb3294dc3a2e3a83e7dc7.
 
 Prerequisite RC-W22-T01: Provides the shared contract for this wave.
 
@@ -3038,7 +3038,7 @@ Prerequisite RC-W22-T01: Provides the shared contract for this wave.
 - Source contracts: RC-019; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: A usable workbench needs actual interaction and accessibility observations; static screenshots are insufficient.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_595faa076627561d691192b150963cba.
 
 Prerequisite RC-W22-T01: Provides the shared contract for this wave.
 
@@ -3052,7 +3052,7 @@ Prerequisite RC-W22-T01: Provides the shared contract for this wave.
 - Source contracts: RC-019; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: A usable workbench needs actual interaction and accessibility observations; static screenshots are insufficient.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_478a5fdc23ac47972d2b5ef41fbea1a0.
 
 Prerequisite RC-W22-T01: Provides the shared contract for this wave.
 
@@ -3066,7 +3066,7 @@ Prerequisite RC-W22-T01: Provides the shared contract for this wave.
 - Source contracts: RC-019; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: A usable workbench needs actual interaction and accessibility observations; static screenshots are insufficient.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_6b97871b3ca8e9a92581d87e79812be2.
 
 Prerequisite RC-W22-T01: Provides the shared contract for this wave.
 
@@ -3080,7 +3080,7 @@ Prerequisite RC-W22-T01: Provides the shared contract for this wave.
 - Source contracts: RC-019; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: A usable workbench needs actual interaction and accessibility observations; static screenshots are insufficient.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_df0a98b7c6e5b7e1cca8861d6ce1589e.
 
 Prerequisite RC-W22-T01: Provides the shared contract for this wave.
 
@@ -3094,7 +3094,7 @@ Prerequisite RC-W22-T01: Provides the shared contract for this wave.
 - Source contracts: RC-019; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: A usable workbench needs actual interaction and accessibility observations; static screenshots are insufficient.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_02ca584c50836e66464eacb8d3d308ef.
 
 Prerequisite RC-W22-T01: Provides the shared contract for this wave.
 
@@ -3108,7 +3108,7 @@ Prerequisite RC-W22-T01: Provides the shared contract for this wave.
 - Source contracts: RC-019; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: A usable workbench needs actual interaction and accessibility observations; static screenshots are insufficient.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_0c0b6edbe2da5de9d149a44e05a060f7.
 
 Prerequisite RC-W18-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -3140,7 +3140,7 @@ Prerequisite RC-W22-T07: Provides the shared contract for this wave.
 - Source contracts: RC-020; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Requires explicit infrastructure/spend allocation and real remote failure evidence; no public VPS exposure is implied.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_61d926a9469c4532bc11ee9e213879d3.
 
 Prerequisite RC-W18-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -3160,7 +3160,7 @@ Prerequisite RC-W07-T10: Provides the frozen contract and accepted predecessor e
 - Source contracts: RC-020; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Requires explicit infrastructure/spend allocation and real remote failure evidence; no public VPS exposure is implied.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_a19fa4086e6c135573ca2f5fae3d0fbc.
 
 Prerequisite RC-W23-T01: Provides the shared contract for this wave.
 
@@ -3174,7 +3174,7 @@ Prerequisite RC-W23-T01: Provides the shared contract for this wave.
 - Source contracts: RC-020; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Requires explicit infrastructure/spend allocation and real remote failure evidence; no public VPS exposure is implied.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_86464b173deea9126bf3b0c093c10aaa.
 
 Prerequisite RC-W23-T01: Provides the shared contract for this wave.
 
@@ -3188,7 +3188,7 @@ Prerequisite RC-W23-T01: Provides the shared contract for this wave.
 - Source contracts: RC-020; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Requires explicit infrastructure/spend allocation and real remote failure evidence; no public VPS exposure is implied.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_5640539eebf5e74032b422c925deb632.
 
 Prerequisite RC-W23-T01: Provides the shared contract for this wave.
 
@@ -3202,7 +3202,7 @@ Prerequisite RC-W23-T01: Provides the shared contract for this wave.
 - Source contracts: RC-020; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Requires explicit infrastructure/spend allocation and real remote failure evidence; no public VPS exposure is implied.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_c268a368febdcab8b6106e8b80389ff3.
 
 Prerequisite RC-W23-T01: Provides the shared contract for this wave.
 
@@ -3216,7 +3216,7 @@ Prerequisite RC-W23-T01: Provides the shared contract for this wave.
 - Source contracts: RC-020; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Requires explicit infrastructure/spend allocation and real remote failure evidence; no public VPS exposure is implied.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_f7b18124b00758cf1abcd1f7a390171b.
 
 Prerequisite RC-W23-T01: Provides the shared contract for this wave.
 
@@ -3230,7 +3230,7 @@ Prerequisite RC-W23-T01: Provides the shared contract for this wave.
 - Source contracts: RC-020; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Requires explicit infrastructure/spend allocation and real remote failure evidence; no public VPS exposure is implied.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_24ccdde7dd9bbddceb8f032964457544.
 
 Prerequisite RC-W23-T01: Provides the shared contract for this wave.
 
@@ -3244,7 +3244,7 @@ Prerequisite RC-W23-T01: Provides the shared contract for this wave.
 - Source contracts: RC-020; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Requires explicit infrastructure/spend allocation and real remote failure evidence; no public VPS exposure is implied.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_d57eb0fdd258e7d7274d2820685c4332.
 
 Prerequisite RC-W23-T01: Provides the shared contract for this wave.
 
@@ -3258,7 +3258,7 @@ Prerequisite RC-W23-T01: Provides the shared contract for this wave.
 - Source contracts: RC-020; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Requires explicit infrastructure/spend allocation and real remote failure evidence; no public VPS exposure is implied.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_e8634504644690e95255386eae8d4f4e.
 
 Prerequisite RC-W18-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -3294,7 +3294,7 @@ Prerequisite RC-W23-T08: Provides the shared contract for this wave.
 - Source contracts: RC-013, RC-015, RC-021; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Interoperability is an optional reviewed proposal and cannot become a dependency on an unreleased sibling.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_0ed81f9a635202df983dfa09a62a1e28.
 
 Prerequisite RC-W18-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -3314,7 +3314,7 @@ Prerequisite RC-W17-T08: Provides the frozen contract and accepted predecessor e
 - Source contracts: RC-013, RC-015, RC-021; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Interoperability is an optional reviewed proposal and cannot become a dependency on an unreleased sibling.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_2f49dfa84da5f330f491d00d99b5194c.
 
 Prerequisite RC-W24-T01: Provides the shared contract for this wave.
 
@@ -3328,7 +3328,7 @@ Prerequisite RC-W24-T01: Provides the shared contract for this wave.
 - Source contracts: RC-013, RC-015, RC-021; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Interoperability is an optional reviewed proposal and cannot become a dependency on an unreleased sibling.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_b644ccdd8479f0bac0755b4e4a4e9bed.
 
 Prerequisite RC-W24-T01: Provides the shared contract for this wave.
 
@@ -3342,7 +3342,7 @@ Prerequisite RC-W24-T01: Provides the shared contract for this wave.
 - Source contracts: RC-013, RC-015, RC-021; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Interoperability is an optional reviewed proposal and cannot become a dependency on an unreleased sibling.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_2f7cf3fe00da65f5c57c6043d19e312a.
 
 Prerequisite RC-W24-T01: Provides the shared contract for this wave.
 
@@ -3356,7 +3356,7 @@ Prerequisite RC-W24-T01: Provides the shared contract for this wave.
 - Source contracts: RC-013, RC-015, RC-021; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Interoperability is an optional reviewed proposal and cannot become a dependency on an unreleased sibling.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_4e29d56dcd5925c23e8e25bcbd635672.
 
 Prerequisite RC-W24-T01: Provides the shared contract for this wave.
 
@@ -3370,7 +3370,7 @@ Prerequisite RC-W24-T01: Provides the shared contract for this wave.
 - Source contracts: RC-013, RC-015, RC-021; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Interoperability is an optional reviewed proposal and cannot become a dependency on an unreleased sibling.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_5ff37fa118f32b07d3bfccb393cea7b8.
 
 Prerequisite RC-W24-T01: Provides the shared contract for this wave.
 
@@ -3384,7 +3384,7 @@ Prerequisite RC-W24-T01: Provides the shared contract for this wave.
 - Source contracts: RC-013, RC-015, RC-021; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Interoperability is an optional reviewed proposal and cannot become a dependency on an unreleased sibling.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_a379270dfea56761b6e58c6a0ca7b3e7.
 
 Prerequisite RC-W18-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -3416,7 +3416,7 @@ Prerequisite RC-W24-T06: Provides the shared contract for this wave.
 - Source contracts: RC-021; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Availability, integrity, safe parsing, rights and actual reproduction are independent acceptance dimensions.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_e1de7d5b06c4a65d658e9506e3556f43.
 
 Prerequisite RC-W18-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -3438,7 +3438,7 @@ Prerequisite RC-W24-T07: Provides the frozen contract and accepted predecessor e
 - Source contracts: RC-021; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Availability, integrity, safe parsing, rights and actual reproduction are independent acceptance dimensions.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_5c00c934f36832e844ed2f17e8e983ce.
 
 Prerequisite RC-W25-T01: Provides the shared contract for this wave.
 
@@ -3452,7 +3452,7 @@ Prerequisite RC-W25-T01: Provides the shared contract for this wave.
 - Source contracts: RC-021; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Availability, integrity, safe parsing, rights and actual reproduction are independent acceptance dimensions.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_f35dc9597433cf980a92fe59e5302c28.
 
 Prerequisite RC-W25-T01: Provides the shared contract for this wave.
 
@@ -3466,7 +3466,7 @@ Prerequisite RC-W25-T01: Provides the shared contract for this wave.
 - Source contracts: RC-021; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Availability, integrity, safe parsing, rights and actual reproduction are independent acceptance dimensions.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_03509f0efec982981da39f5440c35b63.
 
 Prerequisite RC-W25-T01: Provides the shared contract for this wave.
 
@@ -3480,7 +3480,7 @@ Prerequisite RC-W25-T01: Provides the shared contract for this wave.
 - Source contracts: RC-021; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Availability, integrity, safe parsing, rights and actual reproduction are independent acceptance dimensions.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_df8126fd7360883c7cf417f41758a21e.
 
 Prerequisite RC-W25-T01: Provides the shared contract for this wave.
 
@@ -3494,7 +3494,7 @@ Prerequisite RC-W25-T01: Provides the shared contract for this wave.
 - Source contracts: RC-021; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Availability, integrity, safe parsing, rights and actual reproduction are independent acceptance dimensions.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_48588e8d991ed0ce7c1d55e0aeb0dd64.
 
 Prerequisite RC-W25-T01: Provides the shared contract for this wave.
 
@@ -3508,7 +3508,7 @@ Prerequisite RC-W25-T01: Provides the shared contract for this wave.
 - Source contracts: RC-021; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Availability, integrity, safe parsing, rights and actual reproduction are independent acceptance dimensions.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_a4e4d8ce0b77d7dd902600db9e483523.
 
 Prerequisite RC-W25-T01: Provides the shared contract for this wave.
 
@@ -3522,7 +3522,7 @@ Prerequisite RC-W25-T01: Provides the shared contract for this wave.
 - Source contracts: RC-021; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Availability, integrity, safe parsing, rights and actual reproduction are independent acceptance dimensions.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_ae06479edcbd89df3da0c4c1d9578873.
 
 Prerequisite RC-W18-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -3558,7 +3558,7 @@ Prerequisite RC-W25-T07: Provides the shared contract for this wave.
 - Source contracts: RC-022; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Generality requires actual independent multi-domain execution and publication permission, not adapter counts or roadmap prose.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_2a31a07f95c67badffaf374b80c5bb45.
 
 Prerequisite RC-W22-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -3576,7 +3576,7 @@ Prerequisite RC-W25-T08: Provides the frozen contract and accepted predecessor e
 - Source contracts: RC-022; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Generality requires actual independent multi-domain execution and publication permission, not adapter counts or roadmap prose.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_1aa2dff88991a242f69197aa379cbfee.
 
 Prerequisite RC-W26-T01: Provides the shared contract for this wave.
 
@@ -3590,7 +3590,7 @@ Prerequisite RC-W26-T01: Provides the shared contract for this wave.
 - Source contracts: RC-022; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Generality requires actual independent multi-domain execution and publication permission, not adapter counts or roadmap prose.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_65579b847689ff3424c8e9d8ab5d16f7.
 
 Prerequisite RC-W26-T01: Provides the shared contract for this wave.
 
@@ -3604,7 +3604,7 @@ Prerequisite RC-W26-T01: Provides the shared contract for this wave.
 - Source contracts: RC-022; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Generality requires actual independent multi-domain execution and publication permission, not adapter counts or roadmap prose.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_b6188969b48baaf53909baec78bbc106.
 
 Prerequisite RC-W26-T01: Provides the shared contract for this wave.
 
@@ -3618,7 +3618,7 @@ Prerequisite RC-W26-T01: Provides the shared contract for this wave.
 - Source contracts: RC-022; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Generality requires actual independent multi-domain execution and publication permission, not adapter counts or roadmap prose.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_da60803615133e8de99eee1fa1b55c0c.
 
 Prerequisite RC-W26-T01: Provides the shared contract for this wave.
 
@@ -3632,7 +3632,7 @@ Prerequisite RC-W26-T01: Provides the shared contract for this wave.
 - Source contracts: RC-022; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Generality requires actual independent multi-domain execution and publication permission, not adapter counts or roadmap prose.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_ea5dccfddde06d04f8b1ceb86d2d4e1c.
 
 Prerequisite RC-W26-T01: Provides the shared contract for this wave.
 
@@ -3646,7 +3646,7 @@ Prerequisite RC-W26-T01: Provides the shared contract for this wave.
 - Source contracts: RC-022; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Generality requires actual independent multi-domain execution and publication permission, not adapter counts or roadmap prose.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_81f9f11ae1eb471bd97986bd724fc1db.
 
 Prerequisite RC-W22-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -3676,7 +3676,7 @@ Prerequisite RC-W26-T06: Provides the shared contract for this wave.
 - Source contracts: RC-023, RC-024; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Security/scientific audits, qualified review and publication approvals are independent and cannot be substituted by generated prose.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_f03093ca74a608af9ac1b72e3ae03979.
 
 Prerequisite RC-W22-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 
@@ -3696,7 +3696,7 @@ Prerequisite RC-W26-T07: Provides the frozen contract and accepted predecessor e
 - Source contracts: RC-023, RC-024; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Security/scientific audits, qualified review and publication approvals are independent and cannot be substituted by generated prose.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_f331daa345fa07a7f15f29e87de0dd68.
 
 Prerequisite RC-W27-T01: Provides the shared contract for this wave.
 
@@ -3710,7 +3710,7 @@ Prerequisite RC-W27-T01: Provides the shared contract for this wave.
 - Source contracts: RC-023, RC-024; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Security/scientific audits, qualified review and publication approvals are independent and cannot be substituted by generated prose.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_475d8aa6ad945934031f60bf323f32b0.
 
 Prerequisite RC-W27-T01: Provides the shared contract for this wave.
 
@@ -3724,7 +3724,7 @@ Prerequisite RC-W27-T01: Provides the shared contract for this wave.
 - Source contracts: RC-023, RC-024; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Security/scientific audits, qualified review and publication approvals are independent and cannot be substituted by generated prose.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_77d7a3eb4bcaf9632d6087b4994918e7.
 
 Prerequisite RC-W27-T01: Provides the shared contract for this wave.
 
@@ -3738,7 +3738,7 @@ Prerequisite RC-W27-T01: Provides the shared contract for this wave.
 - Source contracts: RC-023, RC-024; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Security/scientific audits, qualified review and publication approvals are independent and cannot be substituted by generated prose.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_4ba625c7f673667a12ead188c771bd60.
 
 Prerequisite RC-W27-T01: Provides the shared contract for this wave.
 
@@ -3752,7 +3752,7 @@ Prerequisite RC-W27-T01: Provides the shared contract for this wave.
 - Source contracts: RC-023, RC-024; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Security/scientific audits, qualified review and publication approvals are independent and cannot be substituted by generated prose.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_204b51c3e5d87fe81ad5acd26743d775.
 
 Prerequisite RC-W27-T01: Provides the shared contract for this wave.
 
@@ -3766,7 +3766,7 @@ Prerequisite RC-W27-T01: Provides the shared contract for this wave.
 - Source contracts: RC-023, RC-024; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Security/scientific audits, qualified review and publication approvals are independent and cannot be substituted by generated prose.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_2d290efc88b93d50a31e0a160e868a1d.
 
 Prerequisite RC-W27-T01: Provides the shared contract for this wave.
 
@@ -3780,7 +3780,7 @@ Prerequisite RC-W27-T01: Provides the shared contract for this wave.
 - Source contracts: RC-023, RC-024; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Security/scientific audits, qualified review and publication approvals are independent and cannot be substituted by generated prose.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_333d842f3df9303fc365fed07aed85d8.
 
 Prerequisite RC-W27-T01: Provides the shared contract for this wave.
 
@@ -3794,7 +3794,7 @@ Prerequisite RC-W27-T01: Provides the shared contract for this wave.
 - Source contracts: RC-023, RC-024; decisions: OWNER-LAUNCH-2026-09-07.
 - Risk and evidence needs: Security/scientific audits, qualified review and publication approvals are independent and cannot be substituted by generated prose.
 - Recorded evidence: none.
-- Native platform ID: not assigned.
+- Native platform ID: tsk_e81d7bd223dff9b29ec3da05588f4fb8.
 
 Prerequisite RC-W22-T08: Provides the frozen contract and accepted predecessor evidence needed before this outcome can be evaluated.
 

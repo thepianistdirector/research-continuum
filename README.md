@@ -6,13 +6,13 @@ Research Continuum 0.1 compares seeded uniform random search with fixed coordina
 
 Created and maintained by **Lucas Santana** ([thepianistdirector](https://github.com/thepianistdirector)). [Tanduna campaign](https://tanduna.com/projects/research-continuum) · [Source repository](https://github.com/thepianistdirector/research-continuum)
 
-**Release status:** [0.1.0 is publicly available](https://github.com/thepianistdirector/research-continuum/releases/tag/v0.1.0). All four release assets were downloaded without credentials and match the approved checksums. Independent external-host execution, human/qualified review, and native Tanduna publication remain pending. See [STATUS.md](STATUS.md) for the separate evidence levels.
+**Release status:** [0.1.0 is publicly available](https://github.com/thepianistdirector/research-continuum/releases/tag/v0.1.0). All four release assets were downloaded without credentials and match the approved checksums. The primary/recovery workflow also passed on a separate Mac-hosted Linux ARM64 environment. Human/qualified review and native Tanduna publication remain pending. See [STATUS.md](STATUS.md) for the separate evidence levels.
 
 Download the [source archive](https://github.com/thepianistdirector/research-continuum/releases/download/v0.1.0/research-continuum-0.1.0.tar.gz) and [SHA256SUMS](https://github.com/thepianistdirector/research-continuum/releases/download/v0.1.0/SHA256SUMS). The archive's SHA-256 is `72027ecd84a06d20445e9fd6d604dee2393b03d78255f679652e2f331585bc3b`. Extract it and follow the commands below from `research-continuum-0.1.0`. The immutable archive retains the preparation-time status; this repository records subsequent publication evidence.
 
 ## Run a study
 
-Use Linux and Python 3.12 or newer. The currently verified environment is Linux x86_64 with Python 3.12.14 and SQLite 3.53.1. Other environments are unverified. There is no pip install, model, dataset, network or paid compute requirement. Run these commands from the source archive's extracted directory:
+Use Linux and Python 3.12 or newer. The currently verified environment is Linux x86_64 with Python 3.12.14 and SQLite 3.53.1. An additional [external agent observation](evidence/external-mac-arm64/verification.json) covers the packaged workflow on Linux ARM64, Python 3.12.13 and SQLite 3.46.1; it does not establish native macOS support, external x86_64 parity or a full ARM64 test-suite pass. Other environments are unverified. There is no pip install, model, dataset, network or paid compute requirement. Run these commands from the source archive's extracted directory:
 
 ```bash
 python3 -m continuum --version
