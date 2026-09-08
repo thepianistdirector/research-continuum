@@ -6,7 +6,9 @@ Research Continuum 0.1 compares seeded uniform random search with fixed coordina
 
 Created and maintained by **Lucas Santana** ([thepianistdirector](https://github.com/thepianistdirector)). [Tanduna campaign](https://tanduna.com/projects/research-continuum) · [Source repository](https://github.com/thepianistdirector/research-continuum)
 
-**Release status:** the local 0.1 candidate passes automated and packaged workflow checks. Public release, independent external execution, human/qualified review, and native Tanduna publication are separate pending gates. See [STATUS.md](STATUS.md) for actual evidence. No public 0.1 download is claimed yet.
+**Release status:** [0.1.0 is publicly available](https://github.com/thepianistdirector/research-continuum/releases/tag/v0.1.0). All four release assets were downloaded without credentials and match the approved checksums. Independent external-host execution, human/qualified review, and native Tanduna publication remain pending. See [STATUS.md](STATUS.md) for the separate evidence levels.
+
+Download the [source archive](https://github.com/thepianistdirector/research-continuum/releases/download/v0.1.0/research-continuum-0.1.0.tar.gz) and [SHA256SUMS](https://github.com/thepianistdirector/research-continuum/releases/download/v0.1.0/SHA256SUMS). The archive's SHA-256 is `72027ecd84a06d20445e9fd6d604dee2393b03d78255f679652e2f331585bc3b`. Extract it and follow the commands below from `research-continuum-0.1.0`. The immutable archive retains the preparation-time status; this repository records subsequent publication evidence.
 
 ## Run a study
 

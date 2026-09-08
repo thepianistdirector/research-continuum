@@ -832,12 +832,12 @@ Prerequisite RC-W05-T06: Required input outcome: Verify the packaged user workfl
 
 - Outcome: Researchers can prepare the concrete public release decision.
 - Area: 0.1 release and publication; wave: RC-W05; release horizon: 0.1.
-- Status: **IN PROGRESS**; basis: owner-authorized narrow outcome.
+- Status: **USER VALIDATED**; basis: owner-authorized narrow outcome.
 - Prerequisites: RC-W05-T01, RC-W05-T06, RC-W05-T07.
 - Acceptance: Owner reviews exact destination, tag, artifact/diff, account, exposure, costs and remaining limitations; approval is recorded before external publication.
 - Source contracts: RC-012, RC-019, RC-021, RC-024; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Permission, public availability and independent human evidence are distinct gates; local artifacts and unaccepted proposals do not satisfy them.
-- Recorded evidence: docs/publication.md, plan/exports/tanduna-plan.json.
+- Recorded evidence: evidence/publication-approval.json, evidence/public-release.json.
 - Native platform ID: not assigned.
 
 Prerequisite RC-W05-T01: Provides the shared contract for this wave.
@@ -850,12 +850,12 @@ Prerequisite RC-W05-T07: Required input outcome: Obtain independent human or qua
 
 - Outcome: Researchers can publish and read back the authorized 0.1.
 - Area: 0.1 release and publication; wave: RC-W05; release horizon: 0.1.
-- Status: **NOT TESTED**; basis: owner-authorized narrow outcome.
+- Status: **RELEASE VERIFIED**; basis: owner-authorized narrow outcome.
 - Prerequisites: RC-W05-T01, RC-W05-T08.
 - Acceptance: The approved executable assets and evidence are publicly downloadable at the recorded version; read-back hashes and access checks match the reviewed artifacts.
 - Source contracts: RC-012, RC-019, RC-021, RC-024; decisions: OWNER-LAUNCH-2026-09-07, NUMERICAL-001.
 - Risk and evidence needs: Permission, public availability and independent human evidence are distinct gates; local artifacts and unaccepted proposals do not satisfy them.
-- Recorded evidence: docs/publication.md.
+- Recorded evidence: evidence/publication-approval.json, evidence/public-release.json.
 - Native platform ID: not assigned.
 
 Prerequisite RC-W05-T01: Provides the shared contract for this wave.

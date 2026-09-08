@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "observed_at": "2026-09-08T12:14:52.876620+00:00",
+  "observation_source": "Astra agent; anonymous urllib HTTPS requests from the development host. Public access evidence, not independent human or external-host execution.",
+  "release_id": 384701002,
+  "release_url": "https://github.com/thepianistdirector/research-continuum/releases/tag/v0.1.0",
+  "tag": "v0.1.0",
+  "published_at": "2026-09-08T12:14:06Z",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "name": "research-continuum-0.1.0.tar.gz",
+      "id": 550429827,
+      "url": "https://github.com/thepianistdirector/research-continuum/releases/download/v0.1.0/research-continuum-0.1.0.tar.gz",
+      "http_status": 200,
+      "bytes": 380581,
+      "sha256": "72027ecd84a06d20445e9fd6d604dee2393b03d78255f679652e2f331585bc3b"
+    },
+    {
+      "name": "packaged-verification.json",
+      "id": 550429831,
+      "url": "https://github.com/thepianistdirector/research-continuum/releases/download/v0.1.0/packaged-verification.json",
+      "http_status": 200,
+      "bytes": 1537145,
+      "sha256": "805e1e2995a57a8895349aa7e6110f50b89a602d34e8cbe962e55ea212f14f99"
+    },
+    {
+      "name": "final-browser-verification.json",
+      "id": 550429828,
+      "url": "https://github.com/thepianistdirector/research-continuum/releases/download/v0.1.0/final-browser-verification.json",
+      "http_status": 200,
+      "bytes": 7529,
+      "sha256": "bc72f639bf3f1e5904b62960dfaaaacd32c3430f491042b9dd43bffa3b5725d6"
+    },
+    {
+      "name": "SHA256SUMS",
+      "id": 550429829,
+      "url": "https://github.com/thepianistdirector/research-continuum/releases/download/v0.1.0/SHA256SUMS",
+      "http_status": 200,
+      "bytes": 289,
+      "sha256": "6c1ceda3df38b8c4ebaaccfe1a533f4b6e31ec99b8b0db94144f331854914773"
+    }
+  ],
+  "remaining": [
+    "Fresh external-host workflow/recovery observation",
+    "Independent human/qualified review",
+    "Verified native Tanduna plan publication"
+  ],
+  "source_commit": "cb34650eb69df0769222623d515daef91aac0e20",
+  "runtime_evidence": "evidence/public-download-runtime.json",
+  "runtime_observation": "All 18 commands passed from the anonymously obtained public archive on the same host. External-host and human gates remain open."
+}

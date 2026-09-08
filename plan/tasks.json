@@ -2468,10 +2468,10 @@
         "NUMERICAL-001"
       ],
       "riskEvidenceNeeds": "Permission, public availability and independent human evidence are distinct gates; local artifacts and unaccepted proposals do not satisfy them.",
-      "status": "IN PROGRESS",
+      "status": "USER VALIDATED",
       "evidenceRefs": [
-        "docs/publication.md",
-        "plan/exports/tanduna-plan.json"
+        "evidence/publication-approval.json",
+        "evidence/public-release.json"
       ],
       "basis": "owner-authorized narrow outcome",
       "platformId": null,
@@ -2504,9 +2504,10 @@
         "NUMERICAL-001"
       ],
       "riskEvidenceNeeds": "Permission, public availability and independent human evidence are distinct gates; local artifacts and unaccepted proposals do not satisfy them.",
-      "status": "NOT TESTED",
+      "status": "RELEASE VERIFIED",
       "evidenceRefs": [
-        "docs/publication.md"
+        "evidence/publication-approval.json",
+        "evidence/public-release.json"
       ],
       "basis": "owner-authorized narrow outcome",
       "platformId": null,
@@ -10565,10 +10566,10 @@
     "observedNativePlan": "No task plan has been published yet",
     "workflow": "tasks.create produces unpublished drafts; task_plans.save_draft exists. Submission requires owner agreement, passing review and exact poll-option approval. No platform write authorized by this export.",
     "releaseAccess": {
-      "status": "NOT TESTED",
-      "version": null,
-      "url": null,
-      "instructions": "No public 0.1 download is claimed. Local candidate passes 53 tests and the packaged CLI/recovery/reproduction workflow on Linux x86_64, Python 3.12.14 and SQLite 3.53.1. Publication permission, human review and external execution remain pending; see STATUS.md and docs/publication.md. After authorized release, record the real version and download URL here and follow the packaged README."
+      "status": "RELEASE VERIFIED",
+      "version": "0.1.0",
+      "url": "https://github.com/thepianistdirector/research-continuum/releases/tag/v0.1.0",
+      "instructions": "Download research-continuum-0.1.0.tar.gz and SHA256SUMS from the public v0.1.0 release; check SHA-256 72027ecd84a06d20445e9fd6d604dee2393b03d78255f679652e2f331585bc3b; extract and run the packaged README commands from research-continuum-0.1.0. Verified runtime: Linux x86_64, Python 3.12.14, SQLite 3.53.1. All four public assets were downloaded anonymously and matched the approved bytes. Independent external-host execution and human/qualified review remain pending. The frozen archive records preparation-time publication status; current STATUS.md records read-back evidence."
     },
     "platformMapping": {
       "RC-F01": null,

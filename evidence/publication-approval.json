@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "decision_date": "2026-09-08",
+  "decision_source": "Explicit owner approval of the prepared publication packet in this project task. No private conversation content is reproduced.",
+  "owner": "Lucas Santana",
+  "decision": "APPROVED",
+  "repository": "https://github.com/thepianistdirector/research-continuum",
+  "branch": "main",
+  "tag": "v0.1.0",
+  "base_sha": "c127193dacea9915e848b9492816787aa2490bb7",
+  "reviewed_git_tree": "ff7f345d6ab300fea5345f3fa3a74b5416263848",
+  "review_diff_sha256": "6295bff4185fb05e5ef041891968a08a6d8db8ce6a109539f9a4b461821ad6cc",
+  "release_notes_sha256": "3e15fa5a960894bdd572ad41ea680947c34ae246d8c6eaa5174d9b8962c74779",
+  "assets": [
+    {
+      "filename": "research-continuum-0.1.0.tar.gz",
+      "bytes": 380581,
+      "sha256": "72027ecd84a06d20445e9fd6d604dee2393b03d78255f679652e2f331585bc3b"
+    },
+    {
+      "filename": "packaged-verification.json",
+      "bytes": 1537145,
+      "sha256": "805e1e2995a57a8895349aa7e6110f50b89a602d34e8cbe962e55ea212f14f99"
+    },
+    {
+      "filename": "final-browser-verification.json",
+      "bytes": 7529,
+      "sha256": "bc72f639bf3f1e5904b62960dfaaaacd32c3430f491042b9dd43bffa3b5725d6"
+    },
+    {
+      "filename": "SHA256SUMS",
+      "bytes": 289,
+      "sha256": "6c1ceda3df38b8c4ebaaccfe1a533f4b6e31ec99b8b0db94144f331854914773"
+    }
+  ],
+  "approved_scope": "Commit and push this reviewed source tree to main without force, create v0.1.0 and publish listed assets with the prepared release notes; read public assets back, verify anonymous bytes, and record evidence-only status/URL updates. No paid resources, outreach or unrelated changes. Tanduna scope is separately stated.",
+  "tanduna_scope": "Prepare/reconcile maintainer draft tasks and the exact exported plan, then submit the saved owner-agreed revision for textual review via supported controls when authenticated. Preserve returned IDs and source history. Actual passing review and owner approval of the exact linked poll option remain required for native publication.",
+  "limits": [
+    "No authorization to invent platform approval, reviewer results, votes or returned IDs.",
+    "No new purchases, paid compute, external outreach or unrelated changes.",
+    "Owner publication approval is not independent human scientific or accessibility validation."
+  ]
+}
