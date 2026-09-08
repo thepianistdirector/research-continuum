@@ -1,0 +1,365 @@
+{
+  "schemaVersion": 1,
+  "project": "research-continuum",
+  "contractVersion": "initial-2026-09-07",
+  "stateAuthority": "../STATUS.md",
+  "tasks": [
+    {
+      "id": "RC-001",
+      "wave": 1,
+      "title": "Analyze and scope the autoresearch baseline",
+      "status": "PLANNED",
+      "dependsOn": [],
+      "ownedPaths": [
+        "docs/baselines/"
+      ],
+      "acceptance": "Record the upstream reference, attribution, narrow reproduction target and proposed differences; no superiority claim without tests."
+    },
+    {
+      "id": "RC-002",
+      "wave": 1,
+      "title": "Define budgets, safety and evaluation boundaries",
+      "status": "PLANNED",
+      "dependsOn": [
+        "RC-001"
+      ],
+      "ownedPaths": [
+        "docs/decisions/"
+      ],
+      "acceptance": "Specify permitted edits/tools, total resource accounting, protected evaluator, holdout access and stop conditions."
+    },
+    {
+      "id": "RC-003",
+      "wave": 1,
+      "title": "Build the durable experiment skeleton",
+      "status": "PLANNED",
+      "dependsOn": [
+        "RC-001",
+        "RC-002"
+      ],
+      "ownedPaths": [
+        "src/",
+        "tests/",
+        "examples/"
+      ],
+      "acceptance": "A local synthetic campaign survives restart with unique experiment IDs and explicit invalid/failed states; no model or cloud dependency is required."
+    },
+    {
+      "id": "RC-004",
+      "wave": 2,
+      "title": "Implement bounded workspace execution",
+      "status": "PLANNED",
+      "dependsOn": [
+        "RC-001",
+        "RC-002",
+        "RC-003"
+      ],
+      "ownedPaths": [
+        "src/sandbox/"
+      ],
+      "acceptance": "Restrict owned paths, processes, network and resources; adversarial escape/write attempts fail under the supported threat model."
+    },
+    {
+      "id": "RC-005",
+      "wave": 2,
+      "title": "Implement the evaluator boundary",
+      "status": "PLANNED",
+      "dependsOn": [
+        "RC-001",
+        "RC-002",
+        "RC-003"
+      ],
+      "ownedPaths": [
+        "src/evaluator/"
+      ],
+      "acceptance": "Keep test data/code outside producer access and enforce development/final feedback separation and query limits."
+    },
+    {
+      "id": "RC-006",
+      "wave": 2,
+      "title": "Implement atomic result persistence",
+      "status": "PLANNED",
+      "dependsOn": [
+        "RC-001",
+        "RC-002",
+        "RC-003"
+      ],
+      "ownedPaths": [
+        "src/store/"
+      ],
+      "acceptance": "Crash and duplicate-event tests preserve one terminal result and complete cost accounting without overwriting accepted evidence."
+    },
+    {
+      "id": "RC-007",
+      "wave": 3,
+      "title": "Integrate one small training domain",
+      "status": "PLANNED",
+      "dependsOn": [
+        "RC-004",
+        "RC-005",
+        "RC-006"
+      ],
+      "ownedPaths": [
+        "adapters/training/"
+      ],
+      "acceptance": "Use lawful data and a pinned baseline; run/reproduce contracts capture exact code, environment, seeds and metrics."
+    },
+    {
+      "id": "RC-008",
+      "wave": 3,
+      "title": "Add hypothesis and patch proposals",
+      "status": "PLANNED",
+      "dependsOn": [
+        "RC-004",
+        "RC-005",
+        "RC-006",
+        "RC-007"
+      ],
+      "ownedPaths": [
+        "src/agents/"
+      ],
+      "acceptance": "Each proposal includes evidence, control, predicted outcome and falsifier; only accepted bounded patches execute."
+    },
+    {
+      "id": "RC-009",
+      "wave": 3,
+      "title": "Compare autonomous and random search",
+      "status": "PLANNED",
+      "dependsOn": [
+        "RC-004",
+        "RC-005",
+        "RC-006",
+        "RC-008"
+      ],
+      "ownedPaths": [
+        "experiments/first-campaign/"
+      ],
+      "acceptance": "Run equal-total-budget campaigns, retain all failures and independently rerun every claimed finalist improvement."
+    },
+    {
+      "id": "RC-010",
+      "wave": 4,
+      "title": "Add independent replication and ablations",
+      "status": "PLANNED",
+      "dependsOn": [
+        "RC-007",
+        "RC-008",
+        "RC-009"
+      ],
+      "ownedPaths": [
+        "src/replication/"
+      ],
+      "acceptance": "A fresh worker reruns candidates and removes individual changes to test attribution; report failures."
+    },
+    {
+      "id": "RC-011",
+      "wave": 4,
+      "title": "Control repeated selection and leakage",
+      "status": "PLANNED",
+      "dependsOn": [
+        "RC-007",
+        "RC-008",
+        "RC-009"
+      ],
+      "ownedPaths": [
+        "src/evaluation/"
+      ],
+      "acceptance": "Limit final holdout queries, separate selection from confirmation and report uncertainty after repeated search."
+    },
+    {
+      "id": "RC-012",
+      "wave": 4,
+      "title": "Build evidence-linked research reports",
+      "status": "PLANNED",
+      "dependsOn": [
+        "RC-007",
+        "RC-008",
+        "RC-009"
+      ],
+      "ownedPaths": [
+        "src/reports/"
+      ],
+      "acceptance": "Every conclusion resolves to sources and experiments; contradictions, null findings and resource totals remain visible."
+    },
+    {
+      "id": "RC-013",
+      "wave": 5,
+      "title": "Add an inference-efficiency domain",
+      "status": "PLANNED",
+      "dependsOn": [
+        "RC-010",
+        "RC-011",
+        "RC-012"
+      ],
+      "ownedPaths": [
+        "adapters/inference/"
+      ],
+      "acceptance": "Use quality-constrained latency/memory objectives and a protected evaluator; integrate Lean Model Lab only through a versioned contract when available."
+    },
+    {
+      "id": "RC-014",
+      "wave": 5,
+      "title": "Add retrieval or data-selection research",
+      "status": "PLANNED",
+      "dependsOn": [
+        "RC-010",
+        "RC-011",
+        "RC-012"
+      ],
+      "ownedPaths": [
+        "adapters/retrieval/"
+      ],
+      "acceptance": "Use lawful corpora, train/development/holdout separation and relevance/quality checks without prompt leakage."
+    },
+    {
+      "id": "RC-015",
+      "wave": 5,
+      "title": "Add a numerical optimization domain",
+      "status": "PLANNED",
+      "dependsOn": [
+        "RC-010",
+        "RC-011",
+        "RC-012"
+      ],
+      "ownedPaths": [
+        "adapters/optimization/"
+      ],
+      "acceptance": "Reproduce a non-LLM numerical benchmark to test genuine adapter generality and domain safety boundaries."
+    },
+    {
+      "id": "RC-016",
+      "wave": 6,
+      "title": "Build the question-evidence graph",
+      "status": "PLANNED",
+      "dependsOn": [
+        "RC-013",
+        "RC-014",
+        "RC-015"
+      ],
+      "ownedPaths": [
+        "src/knowledge/"
+      ],
+      "acceptance": "Track source versions, hypotheses and contradiction links; reject unsupported citations and stale evidence reuse."
+    },
+    {
+      "id": "RC-017",
+      "wave": 6,
+      "title": "Add bounded campaign allocation",
+      "status": "PLANNED",
+      "dependsOn": [
+        "RC-013",
+        "RC-014",
+        "RC-015"
+      ],
+      "ownedPaths": [
+        "src/scheduling/"
+      ],
+      "acceptance": "Allocate fixed budgets across hypotheses with simple baselines, starvation controls and explicit stop/pivot decisions."
+    },
+    {
+      "id": "RC-018",
+      "wave": 6,
+      "title": "Evaluate research-policy improvements",
+      "status": "PLANNED",
+      "dependsOn": [
+        "RC-013",
+        "RC-014",
+        "RC-015"
+      ],
+      "ownedPaths": [
+        "experiments/policy/"
+      ],
+      "acceptance": "Compare new orchestration policies on fresh campaigns with equal cost; keep evaluators and accepted records immutable."
+    },
+    {
+      "id": "RC-019",
+      "wave": 7,
+      "title": "Build a local campaign inspection view",
+      "status": "PLANNED",
+      "dependsOn": [
+        "RC-016",
+        "RC-017",
+        "RC-018"
+      ],
+      "ownedPaths": [
+        "apps/workbench/"
+      ],
+      "acceptance": "Show question-to-evidence lineage, full costs, failures and stop controls with accessible navigation."
+    },
+    {
+      "id": "RC-020",
+      "wave": 7,
+      "title": "Add isolated remote workers",
+      "status": "PLANNED",
+      "dependsOn": [
+        "RC-016",
+        "RC-017",
+        "RC-018"
+      ],
+      "ownedPaths": [
+        "src/workers/"
+      ],
+      "acceptance": "Use scoped jobs with no inherited personal credentials, explicit budgets and verified cancellation/recovery."
+    },
+    {
+      "id": "RC-021",
+      "wave": 7,
+      "title": "Export portable research packages",
+      "status": "PLANNED",
+      "dependsOn": [
+        "RC-016",
+        "RC-017",
+        "RC-018"
+      ],
+      "ownedPaths": [
+        "src/export/"
+      ],
+      "acceptance": "Another researcher can inspect and reproduce accepted evidence without the original agent conversation."
+    },
+    {
+      "id": "RC-022",
+      "wave": 8,
+      "title": "Run a blind multi-domain evaluation",
+      "status": "PLANNED",
+      "dependsOn": [
+        "RC-019",
+        "RC-020",
+        "RC-021"
+      ],
+      "ownedPaths": [
+        "benchmarks/replication/"
+      ],
+      "acceptance": "Independent evaluators test at least two distinct domains against equal-budget simple baselines and publish all outcomes."
+    },
+    {
+      "id": "RC-023",
+      "wave": 8,
+      "title": "Audit safety and scientific integrity",
+      "status": "PLANNED",
+      "dependsOn": [
+        "RC-019",
+        "RC-020",
+        "RC-021"
+      ],
+      "ownedPaths": [
+        "docs/review/"
+      ],
+      "acceptance": "Test evaluator tampering, prompt injection, runaway cost and unsupported conclusions; resolve material defects."
+    },
+    {
+      "id": "RC-024",
+      "wave": 8,
+      "title": "Prepare a bounded autonomous-research release",
+      "status": "PLANNED",
+      "dependsOn": [
+        "RC-019",
+        "RC-020",
+        "RC-021"
+      ],
+      "ownedPaths": [
+        "docs/releases/"
+      ],
+      "acceptance": "State supported domains, actual comparative results, known limitations and maintainer-approved release scope."
+    }
+  ]
+}

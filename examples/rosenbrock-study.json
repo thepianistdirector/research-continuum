@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "study_id": "rosenbrock-coordinate-v-random",
+  "revision": "1",
+  "question": "On this bounded Rosenbrock fixture, does fixed coordinate refinement obtain a lower confirmation median best objective than seeded uniform random search at equal evaluation allowance?",
+  "hypothesis": "Fixed coordinate refinement will obtain a lower median best objective in the reserved confirmation runs.",
+  "falsifier": "The candidate confirmation median is greater than or equal to the baseline median; invalid or missing runs or unequal charged costs make the comparison inconclusive.",
+  "evaluator": "rosenbrock-2d-v1",
+  "baseline": "uniform_random",
+  "candidate": "coordinate_refinement",
+  "domain": [[-2.0, 2.0], [-1.0, 3.0]],
+  "start": [-1.2, 1.0],
+  "initial_step": 0.5,
+  "quality_threshold": 0.01,
+  "evaluations_per_policy": 128,
+  "development_seeds": [11, 22, 33],
+  "confirmation_seeds": [101, 202, 303],
+  "feedback": "own-scalar-only-fresh-policy-per-run",
+  "comparison": "descriptive-confirmation-median-best-v1",
+  "reproduction_tolerance": 1e-12,
+  "max_attempts_per_trial": 2,
+  "attempt_timeout_seconds": 10
+}

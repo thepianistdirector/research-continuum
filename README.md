@@ -1,103 +1,75 @@
 # Research Continuum
 
-**A local-first research system for turning questions into bounded studies, independently checked experiments and durable evidence.**
+**Run a bounded computational study. Keep the entire evidence trail.**
 
-Research Continuum is an ambitious general software research project, starting with AI training, inference, retrieval, data and numerical optimization. It is designed to let people and coding agents explore hypotheses without letting the same agent rewrite the budget, evaluator, confirmation evidence or research record that judges its work.
+Research Continuum 0.1 compares seeded uniform random search with fixed coordinate refinement on a public, known-answer two-dimensional Rosenbrock objective. You freeze a question and protocol, run finite trials, inspect failures and costs, recover interruptions, and export a report with replayable raw evidence.
 
-Created and maintained by **Lucas Santana** ([thepianistdirector](https://github.com/thepianistdirector)). [Tanduna project](https://tanduna.com/p/research-continuum) · [Public repository](https://github.com/thepianistdirector/research-continuum)
+Created and maintained by **Lucas Santana** ([thepianistdirector](https://github.com/thepianistdirector)). [Tanduna campaign](https://tanduna.com/projects/research-continuum) · [Source repository](https://github.com/thepianistdirector/research-continuum)
 
-> **Architecture foundation completed.** The three Wave 0 tasks are **DONE**: the architecture contract, outcome/dependency roadmap, and executable next-work packet with a standard-library plan validator. The original 24 scientific/build tasks remain **PLANNED**. No simulator, model integration, application, autonomous research runtime or scientific result is implemented. Acceptance and reproduced checks are recorded in [STATUS.md](STATUS.md).
+**Release status:** the local 0.1 candidate passes automated and packaged workflow checks. Public release, independent external execution, human/qualified review, and native Tanduna publication are separate pending gates. See [STATUS.md](STATUS.md) for actual evidence. No public 0.1 download is claimed yet.
 
-## The research programme
+## Run a study
 
-The core object is a research question, not a patch loop or a manuscript. A future campaign should connect:
-
-```text
-sources -> question -> competing hypotheses -> accepted study design
-        -> controlled trials -> development search -> bounded confirmation
-        -> independent reproduction and ablation -> qualified claim package
-```
-
-Each link is versioned and inspectable. The study declares its baseline, controls, search space, falsifier, metrics, uncertainty method, multiple-comparison policy, quality constraints and finite resource budget before confirmation. Negative, inconclusive, invalid and failed outcomes remain visible. A generated explanation is an interpretation, not evidence.
-
-## Inspired by autoresearch, designed for a broader question
-
-[Karpathy's autoresearch](https://github.com/karpathy/autoresearch/tree/228791fb499afffb54b46200aca536f79142f117) is the first comparison baseline and an important design inspiration. Its current official repository uses a compact single-GPU nanochat setup: an agent changes one `train.py`, fixed `prepare.py` code supplies data/evaluation, every trial receives five minutes, lower validation bits per byte wins, and results are kept, discarded or marked as crashes. That is a sharp, reviewable optimization loop.
-
-Research Continuum proposes to retain that small-loop discipline while testing a different system around it:
-
-- multiple versioned questions and competing hypotheses rather than one cumulative branch alone;
-- study designs with baselines, controls, ablations and reproduction contracts;
-- development search separated from protected, query-limited confirmation;
-- adapters for training, inference, retrieval, data research and numerical optimization;
-- durable campaign state, atomic results, cost accounting, cancellation and restart recovery;
-- untrusted proposal/code/data isolation from evaluators, credentials and unrelated networks/files;
-- explicit allocation, stop, pivot and scale policies under finite budgets;
-- evidence packages that can support a reviewed publication later, rather than paper generation as the objective.
-
-These are proposed extensions. The project has not reproduced autoresearch, shown a superior method, demonstrated generality or produced research evidence. The inspected upstream revision and licensing unknowns are recorded in [SOURCES.md](SOURCES.md).
-
-## First useful experiment
-
-The first integrated milestone is to reproduce a tiny bounded training-search loop and compare it with fixed random search under the same total budget. A proposal worker may edit one accepted experiment module. It cannot access or change the final evaluator, confirmation cases, accepted evidence or resource ceilings. A separately prepared worker reruns every claimed finalist.
-
-The result can be “agent-guided search showed no confirmed advantage.” That is a successful research-system exercise if the controls, complete outcome record, costs, limitations and reproduction are credible.
-
-Before any GPU experiment, Wave 1 must resolve the exact upstream source/license, dependency/data terms, compatible hardware, resource allocation and evaluator boundary. No GPU, cloud resource, paid model or dataset download is authorized by this plan.
-
-## Planned architecture
-
-The bounded local-first design begins with Python standard-library contracts, filesystem bundles and one coordinator writer. SQLite becomes a likely local index only when durable scheduling needs transactions. A candidate runs in a fresh bounded workspace with network denied by default and no evaluator source, confirmation data, personal credentials, coordinator database or unrelated files mounted. A distinct evaluator identity returns only protocol-approved development or confirmation results.
-
-The planned registry tracks immutable revisions and events for questions, hypotheses, studies, trials, evaluations, reproductions and claims. Completed result bundles publish atomically; interrupted attempts retain clearly labelled partial diagnostics. Finite campaign budgets cover trial count, wall time, CPU/GPU, storage, evaluator queries, agent inference and monetary cost. Exploration cannot consume confirmation or reproduction reserves.
-
-Remote workers, workflow platforms and distributed storage are deliberately later decisions. They require evidence that local replay, cancellation, isolation, fencing, budget accounting and concurrent scheduling work and that measured workload justifies the operational cost. See [ARCHITECTURE.md](ARCHITECTURE.md) for the trust zones, state machines, adapter interface and scale gates.
-
-## Build plan
-
-| Wave | Outcome | Gate |
-| --- | --- | --- |
-| 0 | Architecture and research-programme foundation | The proposed contract, outcome roadmap and next local packet are coherent and accepted by the active root under delegated authority. |
-| 1 | Research contract and baseline | One question, budget and falsification protocol are fixed. |
-| 2 | Isolation and protected evaluation | The producer cannot tamper with the rules or retained evidence under the supported threat model. |
-| 3 | First autonomous research loop | A real bounded AI experiment is compared with simple search. |
-| 4 | Scientific reliability | Promising results withstand protected confirmation, reproduction and alternate explanations. |
-| 5 | General AI research adapters | The same contract works beyond one training script without erasing domain constraints. |
-| 6 | Research memory and allocation | Longer campaigns learn from retained evidence without rewriting it or self-allocating resources. |
-| 7 | Research workbench and distributed runs | Humans can inspect, pause and recover a research programme before remote scale. |
-| 8 | Independent research-system preview | Generality, safety and value are demonstrated on exact evidence rather than advertised. |
-
-Wave order expresses dependencies, not dates. Read the [outcome roadmap](ROADMAP.md), [27 task contracts](TASKS.md), [experiment and evaluation contract](EXPERIMENTS.md), [sources and data policy](SOURCES.md) and [current state](STATUS.md).
-
-## Executable next packet
-
-After maintainer acceptance of Wave 0, RC-001 is a documentation and source-analysis packet that can run without paid compute, model weights or dataset downloads. It will create a precise autoresearch baseline record from the pinned official revision, inventory its mutable/fixed boundaries and observable protocol, resolve or escalate licensing ambiguity, and define the smallest later reproduction target. It will not run the GPU benchmark.
-
-The current planning contract can be checked with the system Python:
+Use Linux and Python 3.12 or newer. The currently verified environment is Linux x86_64 with Python 3.12.14 and SQLite 3.53.1. Other environments are unverified. There is no pip install, model, dataset, network or paid compute requirement. Run these commands from the source archive's extracted directory:
 
 ```bash
-python3 tools/validate_plan.py
-python3 tools/validate_plan.py --self-test
+python3 -m continuum --version
+python3 -m continuum study --out my-study.json
 ```
 
-The second command proves the validator rejects a syntactically valid but missing dependency and a malformed in-memory plan without crashing. These commands validate repository planning consistency only; they do not validate the proposed architecture or any scientific claim.
+Read `my-study.json` before accepting it. The [protocol decision](docs/decisions/001-numerical-study.md) explains every field, the hypothesis and its falsifier. The default freezes 128 objective evaluations per policy, development seeds 11/22/33 and confirmation seeds 101/202/303. Reserved reproduction runs replay both phases.
 
-## Scientific and operating boundaries
+```bash
+python3 -m continuum init --study my-study.json --db runs/study.sqlite
+python3 -m continuum run --db runs/study.sqlite --pause-after 1
+python3 -m continuum resume --db runs/study.sqlite
+python3 -m continuum inspect --db runs/study.sqlite
+python3 -m continuum evaluate --db runs/study.sqlite
+```
 
-Agents cannot alter evaluator code, confirmation evidence, scoring rules, accepted records, permissions or resource ceilings. Source text, model output, candidate code, datasets and serialized artifacts are untrusted inputs. No unattended publication, outreach, cloud spend, credential use, production deployment or physical-system action is permitted.
+The deliberate pause gives you a chance to inspect progress. You can also interrupt with Ctrl+C and resume the same database. Every admitted attempt retains its full charge. A process killed before validated staging becomes a failed attempt and may receive one separately charged retry; a validated staged result is finalized exactly once. Exhausted retries remain visible. Another active coordinator cannot take the same campaign lock.
 
-Repeated development selection is accounted for; untouched confirmation is query-limited and separate. Statistical choices depend on each study's sampling and dependency structure. No generic significance threshold or correction establishes validity. The system must preserve null and adverse outcomes and stop on budget exhaustion, evaluator compromise, unrecoverable provenance, missing rights or out-of-domain work.
+```bash
+python3 -m continuum inspect --db runs/study.sqlite --json > full-ledger.json
+python3 -m continuum export --db runs/study.sqlite --out evidence/my-study
+python3 -m continuum verify --bundle evidence/my-study
+python3 -m continuum reproduce --bundle evidence/my-study --db runs/reproduced.sqlite --record evidence/reproduction.json
+```
 
-No autonomous recursion is unlimited. Proposed scheduler or “research org” changes are versioned hypotheses evaluated on fresh campaigns under a declared budget. Publication export follows supported claims and human review; publication count is not a success metric.
+Open `evidence/my-study/report.html` in a browser. The standalone report uses no remote assets or scripts. The bundle includes the frozen protocol, every trial/attempt/observation/event, derived evaluations, contradiction links, reproduction records, limitations and a checksummed manifest. `reproduce` executes the study in a new campaign and writes a new record; it does not reuse a cached verdict. If interrupted, repeat the reproduction command with its pre-bound database. If trials already finished but record publication failed, this reconciles the missing record and explicitly claims no additional execution. An unrelated cached campaign cannot be adopted as reproduction; choose a new database for a new run.
 
-## Six independent laboratories
+Commands refuse to overwrite accepted databases, bundles or output records. Keep interrupted evidence and choose a new output name when an existing artifact must be preserved. Database corruption, evaluator changes and runtime changes fail closed; use the original unchanged release to resume. A bundle is data, never a source of shell commands or executable plugins.
 
-Research Continuum may eventually exchange versioned experiment and evidence bundles with [Lean Model Lab](https://github.com/thepianistdirector/lean-model-lab), [Vital Rehearsal](https://github.com/thepianistdirector/vital-rehearsal), [Grid Horizons](https://github.com/thepianistdirector/grid-horizons), [Earth Rehearsal](https://github.com/thepianistdirector/earth-rehearsal) and [Civic Safelab](https://github.com/thepianistdirector/civic-safelab).
+## Read the answer honestly
 
-They remain six independently buildable repositories with their own evaluators, safety rules, source rights and claims. There is no shared service, monorepo, database or package dependency today. A common library is considered only after two real implementations expose the same costly duplication and maintainers accept the coupling.
+The descriptive verdict can be `CANDIDATE_LOWER`, `BASELINE_LOWER`, `TIE` or `INCONCLUSIVE`. A baseline advantage is a valid outcome against the candidate hypothesis. The quality threshold (best objective at most 0.01) is a separate proximity diagnostic. Unequal charged costs, incomplete trials or failed reproduction prevent a complete comparison.
 
-## Contribute
+The included [default study report](evidence/runtime/default-study/report.html) records **BASELINE_LOWER**: confirmation median best objective 0.25900796897177875 for random search and 4.655312582291663 for coordinate refinement. Neither reaches the 0.01 threshold. All 24 trials complete, including 12 reserved reproduction runs, with 3,072 search evaluations and matching reproduction traces. This is evidence against the frozen candidate hypothesis for this fixture.
 
-Start with [CONTRIBUTING.md](CONTRIBUTING.md). The next implementation/research task is gated on Wave 0 review and RC-001. There are no install or experiment-runtime commands yet; proposed paths and interfaces are not existing software.
+The fixture is public. Its minimum at (1,1) is directly checkable from two nonnegative square terms. Confirmation uses fresh frozen seeds, not secret holdout data. Coordinate refinement is deterministic: repeated candidate runs are implementation checks, not independent stochastic samples. These results do not establish statistical significance, novelty, general optimizer superiority, performance versus autoresearch, or an autonomous scientist.
 
-Original repository content is licensed under **AGPL-3.0-only**; see [LICENSE](LICENSE). Third-party data, models, papers and code retain their own terms and are not relicensed here. No third-party dataset, weights or upstream code is bundled in this foundation candidate.
+Counts distinguish reserved allowance, conservatively charged attempt units, recorded search evaluations and initial controls. Validation and report generation recompute evidence as operator-requested audit work; they are not additional adaptive policy feedback. Trial CPU/wall measurements are separate from command startup and audit overhead. Unknown interrupted duration stays unknown.
+
+## Create a different supported study
+
+Edit a **new draft** and use a new study revision/database. Version 1 permits bounded question text, domain/start/step, threshold, evaluation allowance and seed lists. The rectangle stays within `[-10,10]²` and contains the controls; each phase has 1–16 disjoint seeds and each run has 8–4096 evaluations. Aggregate clean search work, including reproduction, cannot exceed 65,536 evaluations. Policies, objective, retry limit, timeout, feedback and comparison rules are fixed. Unknown fields, expressions, booleans as numbers and non-finite values are rejected.
+
+Reviewed built-ins run in one trusted local process. The API supplies no ledger or evaluator-mutation capability to policies. This is **not an adversarial sandbox**. Arbitrary contributed code, protected holdouts, remote workers, LLMs and credential access are outside 0.1.
+
+## Build and verify the source package
+
+```bash
+python3 tools/validate_plan.py --self-test
+python3 -m unittest discover -s tests -v
+python3 tools/build_release.py --out .build/research-continuum-0.1.0.tar.gz
+```
+
+The tests include actual killed coordinator processes and forged-evidence rejection. They do not replace independent scientific review, human accessibility observations or publicly obtained artifact verification. Build into a new filename if a previous archive exists.
+
+## The longer programme
+
+The [canonical roadmap](ROADMAP.md) and [task contracts](TASKS.md) retain training/inference/retrieval research, protected evaluation, agent proposals, ablations, research memory, finite allocation, accessible workbench, remote workers and multi-domain evaluation as later outcomes. [Architecture](ARCHITECTURE.md) and [experiment requirements](EXPERIMENTS.md) preserve those boundaries.
+
+The original 27 source entries remain mapped with immutable lineage; the three completed foundation entries describe documentation/tooling. Historical RC-001–RC-024 remain PLANNED. The numerical 0.1 does not complete historical training/agent-search, hostile-code isolation, or broad numerical adapter-generality requirements. [Autoresearch source analysis](docs/baselines/autoresearch-2026-09-07.md) preserves the exact inspiration and unresolved code-reuse rights. No upstream implementation is reused.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) and [SOURCES.md](SOURCES.md). Original material is **AGPL-3.0-only**, with the full [license](LICENSE). No third-party runtime binaries, weights, datasets or upstream source are bundled. Research Continuum owns no sibling project's roadmap or infrastructure.

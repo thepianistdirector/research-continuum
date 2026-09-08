@@ -1,426 +1,288 @@
 #!/usr/bin/env python3
-"""Validate the documentation-only Research Continuum task contract.
-
-This checks plan structure and navigation. It does not run an experiment or
-validate an architecture or scientific claim.
-"""
-
+"""Validate canonical planning, lineage and generated views; not scientific validity."""
 from __future__ import annotations
-
 import argparse
 import copy
+import hashlib
 import json
 import re
 import sys
+import shutil
+import tempfile
 from pathlib import Path, PurePosixPath
-from typing import Any
-
+from render_plan import generated_files
 
 ROOT = Path(__file__).resolve().parents[1]
-PLAN_PATH = ROOT / "plan" / "tasks.json"
-TASK_ID_PATTERN = re.compile(r"RC-(?:F\d{2}|\d{3}(?:-[A-Z0-9]+)?)")
-FOUNDATION_IDS = ["RC-F01", "RC-F02", "RC-F03"]
-ORIGINAL_IDS = [f"RC-{number:03d}" for number in range(1, 25)]
-REQUIRED_SEED_IDS = FOUNDATION_IDS + ORIGINAL_IDS
-
-STATUS_VOCABULARY = {
-    "PLANNED",
-    "READY_FOR_REVIEW",
-    "IN_PROGRESS",
-    "IMPLEMENTED",
-    "AUTOMATED_PASS",
-    "RUNTIME_VERIFIED",
-    "USER_VALIDATED",
-    "RELEASE_VERIFIED",
-    "BLOCKED",
-    "FAILED",
-    "NOT_TESTED",
-    "DONE",
+PLAN_PATH = ROOT / 'plan/tasks.json'
+FOUNDATION_IDS = ['RC-F01', 'RC-F02', 'RC-F03']
+SOURCE_IDS = FOUNDATION_IDS + [f'RC-{n:03d}' for n in range(1, 25)]
+STATUSES = {'PLANNED', 'IN PROGRESS', 'IMPLEMENTED', 'AUTOMATED PASS', 'RUNTIME VERIFIED', 'USER VALIDATED', 'RELEASE VERIFIED', 'BLOCKED', 'FAILED', 'NOT TESTED', 'DONE'}
+RELEASES = {'foundation', '0.1', 'later 0.x', 'long-term', 'exploratory'}
+LINEAGE_HASHES = {
+ 'architecture-foundation-2026-09-07/tasks.json': 'f6f600eb5b6b449a0d1efeb7297cf99d5a0d2b65fb0b82f112ec46df0a4bf512',
+ 'architecture-foundation-2026-09-07/TASKS.md': '365c7b46e7baa4d54b5d18b5b85e452fa04fe4604f47355c221f9a3acceb29b9',
+ 'architecture-foundation-2026-09-07/ROADMAP.md': '12e2218c8748ff326ffa0e7fc19a47312f174794b4307229b0c75a77fcd2e2f9',
+ 'architecture-foundation-2026-09-07/STATUS.md': 'bebac26b2037bdd7e76f16e80c7eaaed1e92fb98ac97720695208292d7885c2d',
+ 'pre-foundation/tasks.json': '94cf19e780277ede37db6e5045c64708932b537700651e923e3aec33a9ebb299',
+ 'pre-foundation/TASKS.md': 'fc2cf64d2aa0beeadf7e38fbc1028f81a0b7f967ef84a349de44ee19e05f26f2',
+ 'pre-foundation/ROADMAP.md': '5f239b487d59420946bd3d6d13f31b1a8af31c122b494cc6f76c4be1edff3f86',
+ 'pre-foundation/STATUS.md': '2018e3351a0c805ab48c99d4d8ef54cbdf446c45416bd615a38544a6f19646c9',
+}
+# Reviewed load-bearing 0.1 prerequisites. The exact original DAG is preserved
+# separately; these new edges cannot complete an old scientific contract.
+CRITICAL_EDGES = {
+ 'RC-W02-T05': ['RC-W02-T02', 'RC-W02-T04'],
+ 'RC-W02-T07': ['RC-W02-T05', 'RC-W02-T06'],
+ 'RC-W03-T06': ['RC-W03-T02', 'RC-W03-T03', 'RC-W03-T04', 'RC-W03-T05'],
+ 'RC-W05-T04': ['RC-W05-T02', 'RC-W05-T03'], 'RC-W05-T05': ['RC-W05-T04'],
+ 'RC-W05-T06': ['RC-W05-T05'], 'RC-W05-T07': ['RC-W05-T06'],
+ 'RC-W05-T08': ['RC-W05-T06', 'RC-W05-T07'], 'RC-W05-T09': ['RC-W05-T08'],
+ 'RC-W05-T10': ['RC-W05-T09'], 'RC-W05-T11': ['RC-W05-T08', 'RC-W05-T09'],
 }
 
-# These are the original dependency edges, plus the reviewed Wave 0 entry edge.
-# Later task decomposition may add prerequisite edges and new tasks, but cannot
-# silently remove the seed programme's dependency logic.
-REQUIRED_DEPENDENCIES = {
-    "RC-F01": [],
-    "RC-F02": ["RC-F01"],
-    "RC-F03": ["RC-F02"],
-    "RC-001": ["RC-F03"],
-    "RC-002": ["RC-001"],
-    "RC-003": ["RC-001", "RC-002"],
-    "RC-004": ["RC-001", "RC-002", "RC-003"],
-    "RC-005": ["RC-001", "RC-002", "RC-003"],
-    "RC-006": ["RC-001", "RC-002", "RC-003"],
-    "RC-007": ["RC-004", "RC-005", "RC-006"],
-    "RC-008": ["RC-004", "RC-005", "RC-006", "RC-007"],
-    "RC-009": ["RC-004", "RC-005", "RC-006", "RC-008"],
-    "RC-010": ["RC-007", "RC-008", "RC-009"],
-    "RC-011": ["RC-007", "RC-008", "RC-009"],
-    "RC-012": ["RC-007", "RC-008", "RC-009"],
-    "RC-013": ["RC-010", "RC-011", "RC-012"],
-    "RC-014": ["RC-010", "RC-011", "RC-012"],
-    "RC-015": ["RC-010", "RC-011", "RC-012"],
-    "RC-016": ["RC-013", "RC-014", "RC-015"],
-    "RC-017": ["RC-013", "RC-014", "RC-015"],
-    "RC-018": ["RC-013", "RC-014", "RC-015"],
-    "RC-019": ["RC-016", "RC-017", "RC-018"],
-    "RC-020": ["RC-016", "RC-017", "RC-018"],
-    "RC-021": ["RC-016", "RC-017", "RC-018"],
-    "RC-022": ["RC-019", "RC-020", "RC-021"],
-    "RC-023": ["RC-019", "RC-020", "RC-021"],
-    "RC-024": ["RC-019", "RC-020", "RC-021"],
-}
+def nonempty(value):
+ return isinstance(value, str) and bool(value.strip())
 
+def text_list(value, allow_empty=True):
+ return isinstance(value, list) and (allow_empty or bool(value)) and all(nonempty(v) for v in value) and len(value) == len(set(value))
 
-def is_nonempty_text(value: Any) -> bool:
-    return isinstance(value, str) and bool(value.strip())
+def normalized(value):
+ return re.sub(r'[^a-z0-9]+', ' ', value.casefold()).strip()
 
+def local_path(value):
+ return nonempty(value) and not value.startswith('/') and '\\' not in value and all(p not in {'.', '..'} for p in PurePosixPath(value).parts)
 
-def normalize(value: str) -> str:
-    return " ".join(value.split())
+def validate_plan_dict(plan):
+ if not isinstance(plan, dict): return ['plan root must be a JSON object']
+ errors = []
+ if type(plan.get('schemaVersion')) is not int or plan.get('schemaVersion') != 2: errors.append('schemaVersion must be integer 2')
+ if plan.get('project') != 'research-continuum': errors.append('project identity must be research-continuum')
+ if plan.get('stateAuthority') != 'tasks.json' or plan.get('statusNarrative') != '../STATUS.md': errors.append('canonical stateAuthority or statusNarrative invalid')
+ for field in ('contractVersion', 'objective', 'lineageManifest'):
+  if not nonempty(plan.get(field)): errors.append(f'{field} must be non-empty text')
+ for field in ('tasks', 'waves', 'sourceMappings', 'sourceRecords', 'planningDecisions'):
+  if not isinstance(plan.get(field), list) or not plan[field] or not all(isinstance(v, dict) for v in plan[field]): errors.append(f'{field} must be a non-empty object list')
+ if not isinstance(plan.get('publication'), dict): errors.append('publication must be an object')
+ if not text_list(plan.get('terminalOutcomes'), False): errors.append('terminalOutcomes must name programme exits')
+ if errors: return errors
+ tasks = plan['tasks']
+ if not 200 <= len(tasks) <= 400: errors.append('task count must be 200–400; shortfall remains a visible gate')
+ for index, task in enumerate(tasks):
+  for field in ('id', 'title', 'outcome', 'featureArea', 'acceptance', 'riskEvidenceNeeds', 'basis'):
+   if not nonempty(task.get(field)): errors.append(f'task[{index}].{field} must be non-empty text')
+  for field in ('dependsOn', 'sourceRefs', 'decisionRefs', 'evidenceRefs'):
+   if not text_list(task.get(field), field in {'dependsOn', 'evidenceRefs'}): errors.append(f'task[{index}].{field} must be a unique text list')
+  if type(task.get('wave')) is not int or task['wave'] < 0: errors.append(f'task[{index}].wave must be a non-negative integer, not boolean')
+  if not isinstance(task.get('status'), str) or task['status'] not in STATUSES: errors.append(f'task[{index}].status invalid')
+  if not isinstance(task.get('targetRelease'), str) or task['targetRelease'] not in RELEASES: errors.append(f'task[{index}].targetRelease invalid')
+  if not isinstance(task.get('dependencyRationale'), dict) or not all(nonempty(k) and nonempty(v) for k,v in task['dependencyRationale'].items()): errors.append(f'task[{index}].dependencyRationale must explain prerequisite outcomes')
+  if task.get('platformId') is not None and not nonempty(task['platformId']): errors.append(f'task[{index}].platformId invalid')
+ for index,wave in enumerate(plan['waves']):
+  for field in ('id', 'title', 'outcome', 'exitEvidence', 'targetRelease'):
+   if not nonempty(wave.get(field)): errors.append(f'wave[{index}].{field} must be non-empty text')
+  if type(wave.get('number')) is not int: errors.append(f'wave[{index}].number must be integer')
+  for field in ('taskIds', 'entryDependencies'):
+   if not text_list(wave.get(field), field=='entryDependencies'): errors.append(f'wave[{index}].{field} must be unique IDs')
+ if errors: return errors
+ ids=[t['id'] for t in tasks]; by_id={t['id']:t for t in tasks}; position={v:i for i,v in enumerate(ids)}
+ if len(by_id)!=len(ids): errors.append('duplicate task ID')
+ if ids[:3]!=FOUNDATION_IDS: errors.append('retained foundation identities/order changed')
+ for field in ('title','outcome','acceptance'):
+  seen={}
+  for task in tasks:
+   key=normalized(task[field])
+   if key in seen: errors.append(f'duplicate {field}/outcome: {seen[key]} and {task["id"]}')
+   seen[key]=task['id']
+ for task in tasks:
+  identifier=task['id']
+  if re.fullmatch(r'RC-(?:F0[123]|W\d{2}-T\d{2})',identifier) is None: errors.append(f'unsupported task identity {identifier}')
+  if set(task['dependencyRationale'])!=set(task['dependsOn']): errors.append(f'{identifier} prerequisite explanations differ from dependencies')
+  if identifier not in FOUNDATION_IDS and task['status']=='DONE': errors.append(f'{identifier} cannot acquire historical DONE by planning')
+  if task['status'] not in {'PLANNED','NOT TESTED'} and not task['evidenceRefs']: errors.append(f'{identifier} advanced status needs actual evidence references')
+  if task['wave'] in range(1,6) and task['targetRelease']!='0.1': errors.append(f'{identifier} release-scope mismatch')
+  if task['targetRelease']=='0.1' and task['wave'] not in range(1,6): errors.append(f'{identifier} expands 0.1 beyond five waves')
+  for dependency in task['dependsOn']:
+   if dependency not in by_id: errors.append(f'{identifier} missing dependency {dependency}')
+   elif position[dependency]>=position[identifier]: errors.append(f'{identifier} dependency {dependency} is not earlier in plan order')
+   elif task['targetRelease']=='0.1' and by_id[dependency]['targetRelease'] not in {'foundation','0.1'}: errors.append(f'{identifier} later-scope prerequisite on narrow path')
+  if any(v not in SOURCE_IDS for v in task['sourceRefs']): errors.append(f'{identifier} unknown historical source reference')
+ for identifier,dependencies in CRITICAL_EDGES.items():
+  if identifier not in by_id or not set(dependencies)<=set(by_id[identifier]['dependsOn']): errors.append(f'{identifier} missing critical prerequisite outcome coverage')
+ visiting,visited=set(),set()
+ def visit(identifier):
+  if identifier in visiting: errors.append(f'dependency cycle reaches {identifier}'); return
+  if identifier in visited: return
+  visiting.add(identifier)
+  for dependency in by_id[identifier]['dependsOn']:
+   if dependency in by_id: visit(dependency)
+  visiting.remove(identifier); visited.add(identifier)
+ for identifier in by_id: visit(identifier)
+ waves=plan['waves']
+ if not 20<=len(waves)<=32: errors.append('wave count outside outcome/platform envelope 20–32')
+ if [w['number'] for w in waves]!=list(range(len(waves))): errors.append('wave numbers must be contiguous and ordered')
+ if [i for w in waves for i in w['taskIds']]!=ids: errors.append('wave assignment/order has orphan, duplicate or misplaced tasks')
+ for wave in waves:
+  if wave['id']!=f'RC-W{wave["number"]:02d}' or len(wave['title'])>80: errors.append(f'{wave["id"]} identity/title exceeds native contract')
+  for identifier in wave['taskIds']:
+   if identifier not in by_id: errors.append(f'{wave["id"]} unknown task {identifier}')
+   elif by_id[identifier]['wave']!=wave['number']: errors.append(f'{identifier} wave membership mismatch')
+   elif by_id[identifier]['targetRelease'] not in {wave['targetRelease'],'exploratory'}: errors.append(f'{identifier} horizon differs from wave')
+  if any(i not in by_id for i in wave['entryDependencies']): errors.append(f'{wave["id"]} dangling entry dependency')
+ mappings=plan['sourceMappings']
+ if [m.get('sourceId') for m in mappings]!=SOURCE_IDS: errors.append('missing, duplicate or reordered source mappings')
+ mapping_by_id={m.get('sourceId'):m for m in mappings if isinstance(m.get('sourceId'),str)}
+ try:
+  original=json.loads((ROOT/'plan/lineage/architecture-foundation-2026-09-07/tasks.json').read_text())
+  original_by_id={t['id']:t for t in original['tasks']}
+ except (OSError,ValueError,KeyError,TypeError) as exc: return errors+[f'cannot read historical contracts: {exc}']
+ referenced=set()
+ for mapping in mappings:
+  identifier=mapping.get('sourceId')
+  if not isinstance(identifier,str) or identifier not in original_by_id: errors.append('unsupported source mapping identity'); continue
+  source=original_by_id[identifier]
+  expected={'sourceKey':'research-continuum:'+identifier,'sourceRevision':original['contractVersion'],'originalStatus':source['status'],'originalAcceptance':source['acceptance'],'structuredPrerequisites':source['dependsOn'],'textualPrerequisites':[],'frozenPredecessor':None}
+  for field,value in expected.items():
+   if mapping.get(field)!=value: errors.append(f'{identifier} historical {field} changed or omitted')
+  if not isinstance(mapping.get('treatment'),str) or mapping['treatment'] not in {'retained','expanded','split','merged','deferred','superseded'}: errors.append(f'{identifier} invalid treatment')
+  for field in ('reason','textualPrerequisiteEvidence','prerequisiteCoverage','sourceContract'):
+   if not nonempty(mapping.get(field)): errors.append(f'{identifier} lacks {field}')
+  for field in ('successorIds','narrowSuccessorIds','expandedSuccessorIds','historyRefs'):
+   if not text_list(mapping.get(field),field in {'narrowSuccessorIds','expandedSuccessorIds'}): errors.append(f'{identifier} invalid or missing {field}')
+  if not text_list(mapping.get('successorIds'),False): continue
+  referenced.update(mapping['successorIds'])
+  for successor in mapping['successorIds']:
+   if successor not in by_id: errors.append(f'{identifier} dangling successor {successor}')
+   elif identifier not in by_id[successor]['sourceRefs']: errors.append(f'{identifier}/{successor} missing reciprocal source reference')
+  expected_narrow=[i for i in mapping['successorIds'] if i in by_id and by_id[i]['targetRelease']=='0.1']
+  if mapping.get('narrowSuccessorIds')!=expected_narrow: errors.append(f'{identifier} narrow mapping misrepresents original scope')
+  coverage={d:mapping_by_id.get(d,{}).get('successorIds') for d in source['dependsOn']}
+  if mapping.get('prerequisiteOutcomeCoverage')!=coverage: errors.append(f'{identifier} missing original prerequisite outcome coverage')
+ if referenced!=set(ids): errors.append('orphan tasks or dangling IDs in complete source mapping coverage')
+ for identifier in FOUNDATION_IDS:
+  if identifier in by_id:
+   for field,value in original_by_id[identifier].items():
+    if by_id[identifier].get(field)!=value: errors.append(f'{identifier} retained foundation {field} changed')
+ decision_ids={s.get('id') for s in plan['sourceRecords'] if isinstance(s.get('id'),str)}
+ for task in tasks:
+  if any(d not in decision_ids for d in task['decisionRefs']): errors.append(f'{task["id"]} dangling decision reference')
+ pub=plan['publication']
+ if not isinstance(pub.get('platformMapping'),dict) or pub['platformMapping']!={t['id']:t['platformId'] for t in tasks}: errors.append('native platform mapping differs from row identities')
+ if not isinstance(pub.get('status'),str) or pub['status'] not in STATUSES: errors.append('publication status invalid')
+ access=pub.get('releaseAccess')
+ if not isinstance(access,dict) or not nonempty(access.get('instructions')): errors.append('release access instructions missing')
+ elif access.get('status')=='RELEASE VERIFIED' and not all(nonempty(access.get(k)) for k in ('version','url')): errors.append('verified release needs actual version and URL')
+ if not any('cycle' in e for e in errors):
+  ancestors={}
+  def predecessors(identifier):
+   if identifier not in ancestors:
+    result=set()
+    for dependency in by_id[identifier]['dependsOn']:
+     if dependency in by_id:
+      result.add(dependency); result.update(predecessors(dependency))
+    ancestors[identifier]=result
+   return ancestors[identifier]
+  for wave in waves:
+   for identifier in wave['taskIds']:
+    if identifier in by_id and not set(wave['entryDependencies'])<=predecessors(identifier): errors.append(f'{identifier} lacks wave-entry prerequisite outcome coverage')
+  reachable=set()
+  def collect(identifier):
+   if identifier in reachable or identifier not in by_id: return
+   reachable.add(identifier)
+   for dependency in by_id[identifier]['dependsOn']: collect(dependency)
+  for identifier in plan['terminalOutcomes']:
+   if identifier not in by_id: errors.append('dangling terminal outcome')
+   collect(identifier)
+  if reachable!=set(ids): errors.append('orphan task outcomes do not feed intended programme exits')
+ return errors
 
+def validate_lineage(root=ROOT):
+ errors=[]; expected={}
+ for relative,digest in LINEAGE_HASHES.items():
+  expected['plan/lineage/'+relative]=digest
+  try:
+   if hashlib.sha256((root/'plan/lineage'/relative).read_bytes()).hexdigest()!=digest: errors.append(f'immutable lineage changed: {relative}')
+  except OSError: errors.append(f'immutable lineage missing: {relative}')
+ try:
+  records=json.loads((root/'plan/lineage/manifest.json').read_text())['records']
+  if {r['path']:r['sha256'] for r in records}!=expected or len(records)!=len(expected): errors.append('lineage manifest differs from retained historical identities')
+ except (OSError,ValueError,KeyError,TypeError): errors.append('lineage manifest malformed or missing')
+ return errors
 
-def is_repository_relative_path(value: str) -> bool:
-    path = PurePosixPath(value)
-    return (
-        bool(value.strip())
-        and not value.startswith("/")
-        and "\\" not in value
-        and all(part not in {"", ".", ".."} for part in path.parts)
-    )
+def validate_documents(plan, root=ROOT):
+ errors=[]
+ for relative,expected in generated_files(plan).items():
+  try:
+   if (root/relative).read_text(encoding='utf-8')!=expected: errors.append(f'generated document/export parity failed: {relative}')
+  except OSError: errors.append(f'generated document/export missing: {relative}')
+ for source in plan['sourceRecords']:
+  locator=source.get('locator')
+  if not local_path(locator) or not (root/locator).is_file(): errors.append(f'source decision locator missing or unsafe: {locator}')
+ for document in root.glob('*.md'):
+  for target in re.findall(r'\[[^\]]*\]\(([^)]+)\)',document.read_text(encoding='utf-8')):
+   if '://' in target or target.startswith(('#','mailto:')): continue
+   relative=target.split('#',1)[0]
+   if relative and not (document.parent/relative).exists(): errors.append(f'broken local link in {document.name}: {target}')
+ return errors
 
+def run_self_tests(plan):
+ failures=[]; count=0
+ def probe(name,mutate,expected):
+  nonlocal count
+  candidate=copy.deepcopy(plan); mutate(candidate)
+  try: errors=validate_plan_dict(candidate)
+  except Exception as exc: failures.append(f'{name} crashed instead of rejecting: {type(exc).__name__}: {exc}'); return
+  count+=1
+  if not any(expected in e for e in errors): failures.append(f'{name} failed to reject {expected}')
+ probe('missing dependency',lambda p:p['tasks'][3]['dependsOn'].append('RC-W99-T99'),'missing dependency')
+ probe('cycle',lambda p:p['tasks'][3]['dependsOn'].append(p['tasks'][-1]['id']),'cycle')
+ probe('malformed task',lambda p:p['tasks'][3].update(wave=True,dependsOn=[{}]),'must be')
+ probe('duplicate outcome',lambda p:p['tasks'][4].update(outcome=p['tasks'][3]['outcome']),'duplicate outcome')
+ probe('missing mapping',lambda p:p['sourceMappings'].pop(),'source mappings')
+ probe('historical acceptance rewrite',lambda p:p['sourceMappings'][3].update(originalAcceptance='narrowed away'),'historical originalAcceptance')
+ probe('historical status rewrite',lambda p:p['sourceMappings'][3].update(originalStatus='DONE'),'historical originalStatus')
+ probe('prerequisite coverage loss',lambda p:p['sourceMappings'][4].update(prerequisiteOutcomeCoverage={}),'original prerequisite outcome coverage')
+ probe('orphan task',lambda p:p['waves'][1]['taskIds'].pop(),'orphan')
+ probe('scope expansion',lambda p:p['tasks'][-1].update(targetRelease='0.1'),'expands 0.1')
+ probe('missing evidence',lambda p:p['tasks'][3].update(status='RUNTIME VERIFIED',evidenceRefs=[]),'actual evidence references')
+ probe('invented completion',lambda p:p['tasks'][3].update(status='DONE'),'historical DONE')
+ probe('wrong identity',lambda p:p.update(project='sibling-project'),'project identity')
+ probe('outcome order',lambda p:p['tasks'].reverse(),'not earlier')
+ def remove_critical(p):
+  t=next(t for t in p['tasks'] if t['id']=='RC-W05-T09'); t['dependsOn'].remove('RC-W05-T08'); del t['dependencyRationale']['RC-W05-T08']
+ probe('publication without approval prerequisite',remove_critical,'critical prerequisite outcome coverage')
+ probe('false platform ID',lambda p:p['tasks'][3].update(platformId='fabricated'),'platform mapping differs')
+ probe('malformed metadata',lambda p:p.update(schemaVersion=True),'schemaVersion')
+ probe('malformed source treatment',lambda p:p['sourceMappings'][3].update(treatment=[]),'invalid treatment')
+ probe('invalid source identity',lambda p:p['sourceMappings'][3].update(sourceId=[]),'unsupported source mapping identity')
+ probe('malformed publication state',lambda p:p['publication'].update(status=[]),'publication status invalid')
+ probe('unknown wave entry',lambda p:p['waves'][1]['entryDependencies'].append('RC-W99-T99'),'dangling entry dependency')
+ if not validate_plan_dict([]): failures.append('non-object root accepted')
+ changed=copy.deepcopy(plan); changed['tasks'][3]['title']+=' [deliberate drift]'
+ if generated_files(changed)==generated_files(plan): failures.append('generated drift did not affect outputs')
+ with tempfile.TemporaryDirectory(prefix='.validation-probe-',dir=ROOT/'plan') as directory:
+  scratch=Path(directory)
+  shutil.copytree(ROOT/'plan/lineage',scratch/'plan/lineage')
+  target=scratch/'plan/lineage/architecture-foundation-2026-09-07/tasks.json'
+  target.write_bytes(target.read_bytes()+b' ')
+  if not any('immutable lineage changed' in e for e in validate_lineage(scratch)): failures.append('lineage byte mutation accepted')
+  for relative,content in generated_files(plan).items():
+   target=scratch/relative; target.parent.mkdir(parents=True,exist_ok=True); target.write_text(content)
+  (scratch/'TASKS.md').write_text('A deliberately stale generated document.\n')
+  if not any('parity failed: TASKS.md' in e for e in validate_documents(plan,scratch)): failures.append('stale document accepted')
+ if not failures: print(f'PASS: {count+4} negative plan/view/lineage probes rejected')
+ return failures
 
-def validate_metadata(plan: Any) -> list[str]:
-    if not isinstance(plan, dict):
-        return ["plan root must be a JSON object"]
+def main():
+ parser=argparse.ArgumentParser(description=__doc__); parser.add_argument('--self-test',action='store_true'); args=parser.parse_args()
+ try: plan=json.loads(PLAN_PATH.read_text(encoding='utf-8'))
+ except (OSError,ValueError) as exc: print(f'FAIL: cannot load plan: {exc}',file=sys.stderr); return 1
+ errors=validate_plan_dict(plan)+validate_lineage()
+ if not errors: errors+=validate_documents(plan)
+ if not errors and args.self_test: errors+=run_self_tests(plan)
+ if errors:
+  for error in errors: print('FAIL: '+error,file=sys.stderr)
+  return 1
+ print(f'PASS: {len(plan["tasks"])} task contracts, {len(plan["waves"])} waves, 27 immutable source mappings, outcome coverage, scope, DAG/order, generated exports and local links')
+ return 0
 
-    errors: list[str] = []
-    schema_version = plan.get("schemaVersion")
-    if isinstance(schema_version, bool) or not isinstance(schema_version, int):
-        errors.append("plan.schemaVersion must be an integer")
-    elif schema_version != 1:
-        errors.append(f"unsupported plan.schemaVersion {schema_version!r}; expected 1")
-
-    if plan.get("project") != "research-continuum":
-        errors.append("plan.project must be the non-empty repository identifier 'research-continuum'")
-    if not is_nonempty_text(plan.get("contractVersion")):
-        errors.append("plan.contractVersion must be non-empty text")
-
-    state_authority = plan.get("stateAuthority")
-    if not is_nonempty_text(state_authority):
-        errors.append("plan.stateAuthority must be non-empty text")
-    elif state_authority != "../STATUS.md":
-        errors.append("plan.stateAuthority must be '../STATUS.md'")
-    elif not (ROOT / "STATUS.md").is_file():
-        errors.append("plan.stateAuthority target does not exist")
-    return errors
-
-
-def validate_plan_dict(plan: Any) -> list[str]:
-    errors = validate_metadata(plan)
-    if not isinstance(plan, dict):
-        return errors
-
-    tasks = plan.get("tasks")
-    if not isinstance(tasks, list):
-        return errors + ["plan.tasks must be a list"]
-    if not tasks:
-        errors.append("plan.tasks must not be empty")
-
-    valid_tasks: list[tuple[str, dict[str, Any]]] = []
-    ids: list[str] = []
-    seen_ids: set[str] = set()
-    for index, task in enumerate(tasks):
-        if not isinstance(task, dict):
-            errors.append(f"task[{index}] must be a JSON object")
-            continue
-        task_id = task.get("id")
-        if not is_nonempty_text(task_id):
-            errors.append(f"task[{index}].id must be non-empty text")
-            continue
-        if TASK_ID_PATTERN.fullmatch(task_id) is None:
-            errors.append(f"task[{index}].id has unsupported format {task_id!r}")
-            continue
-        if task_id in seen_ids:
-            errors.append(f"task ID {task_id} is duplicated")
-            continue
-        seen_ids.add(task_id)
-        ids.append(task_id)
-        valid_tasks.append((task_id, task))
-
-    if ids[: len(FOUNDATION_IDS)] != FOUNDATION_IDS:
-        errors.append("the three Wave 0 foundation tasks must remain first and ordered")
-    missing_seed_ids = [task_id for task_id in REQUIRED_SEED_IDS if task_id not in seen_ids]
-    if missing_seed_ids:
-        errors.append(f"required seed task IDs are missing: {missing_seed_ids}")
-    original_positions = [ids.index(task_id) for task_id in ORIGINAL_IDS if task_id in seen_ids]
-    if original_positions != sorted(original_positions):
-        errors.append("the original RC-001 through RC-024 order changed")
-
-    by_id = dict(valid_tasks)
-    position = {task_id: index for index, task_id in enumerate(ids)}
-    dependency_map: dict[str, list[str]] = {}
-    required_fields = {"id", "wave", "title", "status", "dependsOn", "ownedPaths", "acceptance"}
-
-    for task_id, task in valid_tasks:
-        missing_fields = sorted(required_fields - task.keys())
-        if missing_fields:
-            errors.append(f"{task_id} missing fields: {', '.join(missing_fields)}")
-
-        if not is_nonempty_text(task.get("title")):
-            errors.append(f"{task_id} title must be non-empty text")
-        status = task.get("status")
-        if not isinstance(status, str) or status not in STATUS_VOCABULARY:
-            errors.append(f"{task_id} uses unknown status {status!r}")
-        wave = task.get("wave")
-        valid_wave = isinstance(wave, int) and not isinstance(wave, bool) and wave >= 0
-        if not valid_wave:
-            errors.append(f"{task_id} wave must be a non-negative integer, not a boolean")
-        if not is_nonempty_text(task.get("acceptance")):
-            errors.append(f"{task_id} acceptance must be non-empty text")
-
-        dependencies_value = task.get("dependsOn")
-        dependencies: list[str] = []
-        if not isinstance(dependencies_value, list):
-            errors.append(f"{task_id} dependsOn must be a list")
-        else:
-            seen_dependencies: set[str] = set()
-            for dependency_index, dependency in enumerate(dependencies_value):
-                if not is_nonempty_text(dependency):
-                    errors.append(
-                        f"{task_id} dependency entries must be non-empty text; "
-                        f"entry {dependency_index} is {dependency!r}"
-                    )
-                    continue
-                if TASK_ID_PATTERN.fullmatch(dependency) is None:
-                    errors.append(f"{task_id} dependency has unsupported format {dependency!r}")
-                    continue
-                if dependency in seen_dependencies:
-                    errors.append(f"{task_id} repeats dependency {dependency}")
-                    continue
-                seen_dependencies.add(dependency)
-                dependencies.append(dependency)
-        dependency_map[task_id] = dependencies
-
-        owned_paths_value = task.get("ownedPaths")
-        if not isinstance(owned_paths_value, list) or not owned_paths_value:
-            errors.append(f"{task_id} ownedPaths must be a non-empty list")
-        else:
-            seen_paths: set[str] = set()
-            for path_index, owned_path in enumerate(owned_paths_value):
-                if not isinstance(owned_path, str):
-                    errors.append(
-                        f"{task_id} ownedPaths entries must be text; "
-                        f"entry {path_index} is {owned_path!r}"
-                    )
-                    continue
-                if not is_repository_relative_path(owned_path):
-                    errors.append(f"{task_id} owned path is not repository-relative: {owned_path!r}")
-                    continue
-                if owned_path in seen_paths:
-                    errors.append(f"{task_id} repeats owned path {owned_path!r}")
-                    continue
-                seen_paths.add(owned_path)
-
-        if task_id in REQUIRED_SEED_IDS:
-            expected_wave = 0 if task_id in FOUNDATION_IDS else (int(task_id[-3:]) - 1) // 3 + 1
-            if valid_wave and wave != expected_wave:
-                errors.append(f"{task_id} must remain in Wave {expected_wave}")
-            required_dependencies = REQUIRED_DEPENDENCIES[task_id]
-            if task_id in FOUNDATION_IDS and dependencies != required_dependencies:
-                errors.append(f"{task_id} foundation dependencies must remain {required_dependencies}")
-            elif not all(dependency in dependencies for dependency in required_dependencies):
-                errors.append(f"{task_id} dropped required dependencies {required_dependencies}")
-
-        for dependency in dependencies:
-            if dependency not in by_id:
-                errors.append(f"{task_id} has missing dependency {dependency}")
-            elif position[dependency] >= position[task_id]:
-                errors.append(f"{task_id} dependency {dependency} is not earlier in plan order")
-
-    visiting: set[str] = set()
-    visited: set[str] = set()
-
-    def visit(task_id: str) -> None:
-        if task_id in visiting:
-            errors.append(f"dependency cycle reaches {task_id}")
-            return
-        if task_id in visited:
-            return
-        visiting.add(task_id)
-        for dependency in dependency_map.get(task_id, []):
-            if dependency in by_id:
-                visit(dependency)
-        visiting.remove(task_id)
-        visited.add(task_id)
-
-    for task_id in ids:
-        visit(task_id)
-    return errors
-
-
-def parse_task_contract(markdown: str) -> dict[str, dict[str, Any]]:
-    id_pattern = TASK_ID_PATTERN.pattern
-    headings = list(re.finditer(rf"^## ({id_pattern}) — (.+)$", markdown, re.MULTILINE))
-    parsed: dict[str, dict[str, Any]] = {}
-    for index, match in enumerate(headings):
-        task_id = match.group(1)
-        end = headings[index + 1].start() if index + 1 < len(headings) else len(markdown)
-        block = markdown[match.end() : end]
-        status_match = re.search(r"^- Wave: (\d+); status: \*\*([^*]+)\*\*;", block, re.MULTILINE)
-        dependencies_match = re.search(r"^- Dependencies: (.+)$", block, re.MULTILINE)
-        acceptance_match = re.search(r"^- Acceptance: (.+)$", block, re.MULTILINE)
-        dependencies = []
-        if dependencies_match:
-            dependencies = re.findall(id_pattern, dependencies_match.group(1))
-        parsed[task_id] = {
-            "title": match.group(2).strip(),
-            "wave": int(status_match.group(1)) if status_match else None,
-            "status": status_match.group(2).strip() if status_match else None,
-            "dependsOn": dependencies,
-            "acceptance": acceptance_match.group(1).strip() if acceptance_match else None,
-        }
-    return parsed
-
-
-def validate_documents(plan: dict[str, Any]) -> list[str]:
-    errors: list[str] = []
-    try:
-        tasks_markdown = (ROOT / "TASKS.md").read_text(encoding="utf-8")
-        roadmap = (ROOT / "ROADMAP.md").read_text(encoding="utf-8")
-        status = (ROOT / "STATUS.md").read_text(encoding="utf-8")
-    except OSError as error:
-        return [f"cannot read required planning document: {error}"]
-
-    tasks = plan["tasks"]
-    plan_ids = [task["id"] for task in tasks]
-    plan_by_id = {task["id"]: task for task in tasks}
-    parsed = parse_task_contract(tasks_markdown)
-
-    if list(parsed) != plan_ids:
-        errors.append("TASKS.md task identity/order differs from plan/tasks.json")
-    for task_id, plan_task in plan_by_id.items():
-        if task_id not in parsed:
-            continue
-        document_task = parsed[task_id]
-        for field in ("title", "wave", "status", "dependsOn"):
-            if document_task[field] != plan_task[field]:
-                errors.append(f"{task_id} {field} differs between TASKS.md and plan/tasks.json")
-        if normalize(document_task.get("acceptance") or "") != normalize(plan_task["acceptance"]):
-            errors.append(f"{task_id} acceptance differs between TASKS.md and plan/tasks.json")
-
-    declared_waves = sorted({task["wave"] for task in tasks})
-    roadmap_waves = [int(value) for value in re.findall(r"^## Wave (\d+):", roadmap, re.MULTILINE)]
-    if roadmap_waves != declared_waves:
-        errors.append(
-            f"ROADMAP.md wave headers {roadmap_waves} differ from declared waves {declared_waves}"
-        )
-    roadmap_ids = re.findall(rf"\*\*({TASK_ID_PATTERN.pattern}):", roadmap)
-    if roadmap_ids != plan_ids:
-        errors.append("ROADMAP.md task identity/order differs from plan/tasks.json")
-    if roadmap.count("Gate decision:") != len(declared_waves):
-        errors.append("ROADMAP.md must have one gate decision for every declared wave")
-
-    for task_id in FOUNDATION_IDS:
-        status_value = re.escape(str(plan_by_id[task_id]["status"]))
-        status_pattern = rf"\|\s*{re.escape(task_id)}\s*\|\s*\*\*{status_value}\*\*"
-        if not re.search(status_pattern, status):
-            errors.append(f"STATUS.md does not match the plan status for {task_id}")
-
-    link_pattern = re.compile(r"\[[^\]]+\]\(([^)]+)\)")
-    for document in sorted(ROOT.glob("*.md")):
-        try:
-            contents = document.read_text(encoding="utf-8")
-        except OSError as error:
-            errors.append(f"cannot inspect links in {document.name}: {error}")
-            continue
-        for target in link_pattern.findall(contents):
-            if "://" in target or target.startswith("#") or target.startswith("mailto:"):
-                continue
-            relative_target = target.split("#", 1)[0]
-            if relative_target:
-                try:
-                    target_exists = (document.parent / relative_target).exists()
-                except OSError:
-                    target_exists = False
-                if not target_exists:
-                    errors.append(f"broken local link in {document.name}: {target}")
-    return errors
-
-
-def run_self_tests(plan: dict[str, Any]) -> list[str]:
-    failures: list[str] = []
-
-    missing_dependency = copy.deepcopy(plan)
-    missing_dependency["tasks"][2]["dependsOn"] = ["RC-999"]
-    dependency_errors = validate_plan_dict(missing_dependency)
-    if not any("missing dependency RC-999" in error for error in dependency_errors):
-        failures.append("missing-dependency self-test did not reject RC-999")
-
-    malformed = copy.deepcopy(plan)
-    malformed["schemaVersion"] = True
-    malformed["project"] = []
-    malformed["stateAuthority"] = {}
-    malformed["tasks"][0]["id"] = ["RC-F01"]
-    malformed["tasks"][1]["wave"] = True
-    malformed["tasks"][1]["title"] = ""
-    malformed["tasks"][1]["dependsOn"] = [{}]
-    malformed["tasks"][1]["ownedPaths"] = [42]
-    malformed_errors = validate_plan_dict(malformed)
-    expected_fragments = [
-        "schemaVersion",
-        "plan.project",
-        "plan.stateAuthority",
-        "task[0].id",
-        "title must be non-empty text",
-        "wave must be a non-negative integer",
-        "dependency entries must be non-empty text",
-        "ownedPaths entries must be text",
-    ]
-    for fragment in expected_fragments:
-        if not any(fragment in error for error in malformed_errors):
-            failures.append(f"malformed-plan self-test did not report {fragment!r}")
-    return failures
-
-
-def main() -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument(
-        "--self-test",
-        action="store_true",
-        help="also prove missing-dependency and malformed-plan rejection",
-    )
-    args = parser.parse_args()
-
-    try:
-        plan: Any = json.loads(PLAN_PATH.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError) as error:
-        print(f"FAIL: cannot load {PLAN_PATH}: {error}", file=sys.stderr)
-        return 1
-
-    errors = validate_plan_dict(plan)
-    if not errors and isinstance(plan, dict):
-        errors.extend(validate_documents(plan))
-    if errors:
-        for error in errors:
-            print(f"FAIL: {error}", file=sys.stderr)
-        return 1
-
-    if args.self_test:
-        self_test_failures = run_self_tests(plan)
-        if self_test_failures:
-            for failure in self_test_failures:
-                print(f"FAIL: {failure}", file=sys.stderr)
-            return 1
-        print("PASS: missing-dependency self-test rejected an unknown dependency")
-        print("PASS: malformed-plan self-test rejected invalid metadata and task fields without crashing")
-
-    print(
-        f"PASS: {len(plan['tasks'])} task contracts, metadata, wave order, DAG, "
-        "document parity, and local links are valid"
-    )
-    return 0
-
-
-if __name__ == "__main__":
-    raise SystemExit(main())
+if __name__=='__main__': raise SystemExit(main())

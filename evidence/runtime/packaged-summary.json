@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "evidence_level": "RUNTIME VERIFIED",
+  "observation_source": "Astra agent in fresh project-scoped extraction, minimal environment, no development PYTHONPATH; same host/runtime, not independent external or human evidence",
+  "summary": {
+    "verdict": "BASELINE_LOWER",
+    "recorded_evaluations": 3072,
+    "charged_evaluations": 3072,
+    "failed_attempts": 0
+  },
+  "recovered_variant": {
+    "verdict": "INCONCLUSIVE",
+    "recorded_evaluations": 192,
+    "charged_evaluations": 200,
+    "failed_attempts": 1
+  },
+  "reproduction_status": "MATCH"
+}

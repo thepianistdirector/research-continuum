@@ -1,0 +1,35 @@
+{
+  "observedAt": "2026-09-07T23:46:24.977068+00:00",
+  "scope": "Planning consistency and preservation only; no scientific, human or public release evidence supplied by these checks.",
+  "canonicalPlanSha256": "f4504387df06aa733257277017d334e81767bde1faa160a126683654eb7922b3",
+  "taskCount": 228,
+  "waveCount": 28,
+  "narrow01Count": 50,
+  "sourceMappingCount": 27,
+  "checks": [
+    {
+      "command": "python3 tools/validate_plan.py --self-test",
+      "exitCode": 0,
+      "stdout": "PASS: 25 negative plan/view/lineage probes rejected\nPASS: 228 task contracts, 28 waves, 27 immutable source mappings, outcome coverage, scope, DAG/order, generated exports and local links\n",
+      "stderr": ""
+    },
+    {
+      "command": "python3 tools/render_plan.py --check",
+      "exitCode": 0,
+      "stdout": "PASS: generated plan views and publication exports match canonical state\n",
+      "stderr": ""
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "limits": [
+    "Exact normalized duplicate detection does not replace semantic review.",
+    "Historical prerequisite traceability does not mean the original prerequisite is satisfied.",
+    "Task evidence references require owner review for actual scientific or human validity.",
+    "Exports are local publication material; no external write was performed."
+  ]
+}

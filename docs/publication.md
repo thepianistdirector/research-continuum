@@ -1,0 +1,31 @@
+# Release and native-plan publication handoff
+
+This document describes the remaining publication path for the verified local 0.1 candidate. It grants no authority and asserts no public release. The owner launch requires a concrete publication decision before external writes.
+
+## GitHub release
+
+Proposed destination: `thepianistdirector/research-continuum`, reviewed source changes based on `c127193dacea9915e848b9492816787aa2490bb7`, target branch `main`, tag `v0.1.0`. Use the existing `thepianistdirector` account and existing Lucas Santana commit identity. Check the remote again before publication; a changed remote requires reconciliation, never a force push. The final decision packet outside the archive binds the exact diff and source archive hashes.
+
+The assets are the executable `research-continuum-0.1.0.tar.gz`, its checksum list, and a sanitized packaged-verification record. The archive contains the original standard-library runtime, frozen numerical fixture, full default campaign evidence/report, tests, license/notices, and canonical roadmap/lineage. It contains no development databases, raw third-party source downloads, credentials, model weights or browser binaries. No paid resources or public VPS listener are needed.
+
+After authorization, create the reviewed source commit and tag, publish the approved assets and release notes, then read back the public version and asset inventory. Obtain the assets without GitHub credentials and verify their bytes. Run the README workflow and recovery path from that publicly obtained archive in a genuinely fresh external environment. Same-host extraction evidence remains separately labelled. Removing a release/tag can stop distribution at that URL but cannot recall public copies.
+
+## Tanduna native programme
+
+The canonical `plan/tasks.json` renders [JSON](../plan/exports/tanduna-plan.json) and [CSV](../plan/exports/tasks.csv) review/import material: 228 task outcomes, 28 ordered waves, 50 narrow 0.1 outcomes, every prerequisite, and mappings from all 27 original source entries. All native task mappings remain null until returned by the platform. This export is not a claimed native API request.
+
+Before any write, refresh the [project](https://tanduna.com/projects/research-continuum), [roadmap](https://tanduna.com/projects/research-continuum/roadmap), [all task pages](https://tanduna.com/p/research-continuum/tasks), [proposals](https://tanduna.com/p/research-continuum/proposals) and relevant full proposal contracts. Resolve the project identity and current accepted/draft revisions through supported controls. Preserve the existing discussion proposal and immutable source history; no approval is inferred from its presence.
+
+The [observed public tool documentation](https://tanduna.com/docs) exposes `tanduna.tasks.create` for unpublished maintainer drafts and `tanduna.task_plans.save_draft` for ordered waves and dependencies. Plan saving uses an exact `expectedRevision`, preserves returned wave IDs, and requires re-reading on conflict. The observed limit is 32 waves with wave titles up to 80 characters; the current export fits. `tanduna.task_plans.submit_draft` freezes the saved poll-bound revision for textual review; it requires explicit owner agreement. Native publication still requires actual passing review and approval of the exact linked poll option. No unavailable reviewer result, vote, task ID or endpoint may be invented.
+
+With authenticated supported tools or the maintainer web flow, select the owner-approved proposal/option, create or reconcile draft tasks in dependency order, retain the complete contract and evidence level in each body, and record every returned task ID in both the task row and `publication.platformMapping`. Save the 28 waves with real task IDs and dependency links. Read the saved draft back before submission. Handle partial creation through returned IDs; never replay all creation calls blindly. Render the canonical export again after real IDs are recorded.
+
+Update `publication.releaseAccess` with the actual GitHub version, URL and tested extraction/CLI instructions once those exist. After the platform's review and approval, read the public pages back: 228 tasks, 28 waves, ordering, dependency edges, release horizons, honest status and actual 0.1 access. An accepted native publication with matching content is the exit condition. Draft saving, submission alone, a static GitHub link, or a stale public page leaves this gate open.
+
+No Tanduna connector or authenticated maintainer session is currently available in this task. The exact proposal option, live native revisions and platform task IDs must be obtained through an authorized connection. No direct database modification or change to Tanduna's application is part of this project.
+
+## Independent review and external observation
+
+Required observations remain pending. An independent researcher or qualified reviewer should identify the exact archive checksum and platform, read the frozen question and falsifier, derive the analytic controls, inspect the bounded comparison and its negative finding, and review the accounting and claim limits. They should complete the README workflow, vary a supported field in a new revision, interrupt/resume, and freshly reproduce. Record actual outcomes, unexpected behavior and remaining concerns; do not record personal data that is unnecessary for the evidence.
+
+For the report, record real keyboard navigation, visible focus, narrow layout/zoom and comprehension of failures/costs. Existing agent browser checks and automated accessibility scans remain useful but do not substitute for a human observation. Do not contact participants or acquire external compute without authority. Publication approval alone does not fabricate these observations or complete the Goal.

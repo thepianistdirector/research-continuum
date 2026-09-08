@@ -1,0 +1,53 @@
+{
+  "purpose": "Exact immutable historical bytes; not current progress authority.",
+  "records": [
+    {
+      "path": "plan/lineage/architecture-foundation-2026-09-07/tasks.json",
+      "sourceRevision": "c127193dacea9915e848b9492816787aa2490bb7",
+      "sourcePath": "plan/tasks.json",
+      "sha256": "f6f600eb5b6b449a0d1efeb7297cf99d5a0d2b65fb0b82f112ec46df0a4bf512"
+    },
+    {
+      "path": "plan/lineage/architecture-foundation-2026-09-07/TASKS.md",
+      "sourceRevision": "c127193dacea9915e848b9492816787aa2490bb7",
+      "sourcePath": "TASKS.md",
+      "sha256": "365c7b46e7baa4d54b5d18b5b85e452fa04fe4604f47355c221f9a3acceb29b9"
+    },
+    {
+      "path": "plan/lineage/architecture-foundation-2026-09-07/ROADMAP.md",
+      "sourceRevision": "c127193dacea9915e848b9492816787aa2490bb7",
+      "sourcePath": "ROADMAP.md",
+      "sha256": "12e2218c8748ff326ffa0e7fc19a47312f174794b4307229b0c75a77fcd2e2f9"
+    },
+    {
+      "path": "plan/lineage/architecture-foundation-2026-09-07/STATUS.md",
+      "sourceRevision": "c127193dacea9915e848b9492816787aa2490bb7",
+      "sourcePath": "STATUS.md",
+      "sha256": "bebac26b2037bdd7e76f16e80c7eaaed1e92fb98ac97720695208292d7885c2d"
+    },
+    {
+      "path": "plan/lineage/pre-foundation/tasks.json",
+      "sourceRevision": "f558f21830246d4732bc1e590a83214d480cd94b",
+      "sourcePath": "plan/tasks.json",
+      "sha256": "94cf19e780277ede37db6e5045c64708932b537700651e923e3aec33a9ebb299"
+    },
+    {
+      "path": "plan/lineage/pre-foundation/TASKS.md",
+      "sourceRevision": "f558f21830246d4732bc1e590a83214d480cd94b",
+      "sourcePath": "TASKS.md",
+      "sha256": "fc2cf64d2aa0beeadf7e38fbc1028f81a0b7f967ef84a349de44ee19e05f26f2"
+    },
+    {
+      "path": "plan/lineage/pre-foundation/ROADMAP.md",
+      "sourceRevision": "f558f21830246d4732bc1e590a83214d480cd94b",
+      "sourcePath": "ROADMAP.md",
+      "sha256": "5f239b487d59420946bd3d6d13f31b1a8af31c122b494cc6f76c4be1edff3f86"
+    },
+    {
+      "path": "plan/lineage/pre-foundation/STATUS.md",
+      "sourceRevision": "f558f21830246d4732bc1e590a83214d480cd94b",
+      "sourcePath": "STATUS.md",
+      "sha256": "2018e3351a0c805ab48c99d4d8ef54cbdf446c45416bd615a38544a6f19646c9"
+    }
+  ]
+}

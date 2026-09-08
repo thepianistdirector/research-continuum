@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "evidence_level": "agent browser observations; no human accessibility claim",
+  "browser_tool": "agent-browser0.36.0; existing Chromium1193",
+  "scope": "exact final source archive report; source paths redacted",
+  "records": [
+    {
+      "args": [
+        "open",
+        "file://$PROJECT/.build/final2-extract/research-continuum-0.1.0/evidence/runtime/default-study/report.html"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Research Continuum \u2014 rosenbrock-coordinate-v-random\n  file://$PROJECT/.build/final2-extract/research-continuum-0.1.0/evidence/runtime/default-study/report.html\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "set",
+        "viewport",
+        "390",
+        "844"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Done\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "press",
+        "Tab"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Done\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "eval",
+        "JSON.stringify({focus:document.activeElement.textContent,href:document.activeElement.getAttribute(\"href\"),top:document.activeElement.getBoundingClientRect().top})"
+      ],
+      "exit_code": 0,
+      "stdout": "\"{\\\"focus\\\":\\\"Skip to evidence\\\",\\\"href\\\":\\\"#main\\\",\\\"top\\\":16}\"\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "press",
+        "Enter"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Done\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "eval",
+        "JSON.stringify({focusedId:document.activeElement.id,hash:location.hash})"
+      ],
+      "exit_code": 0,
+      "stdout": "\"{\\\"focusedId\\\":\\\"main\\\",\\\"hash\\\":\\\"#main\\\"}\"\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "focus",
+        "[role=region]"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Done\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "press",
+        "ArrowRight"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Done\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "wait",
+        "250"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Done\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "eval",
+        "JSON.stringify({role:document.activeElement.getAttribute(\"role\"),scrollLeft:document.activeElement.scrollLeft,scrollWidth:document.activeElement.scrollWidth,clientWidth:document.activeElement.clientWidth})"
+      ],
+      "exit_code": 0,
+      "stdout": "\"{\\\"role\\\":\\\"region\\\",\\\"scrollLeft\\\":40,\\\"scrollWidth\\\":650,\\\"clientWidth\\\":358}\"\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "focus",
+        "summary"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Done\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "press",
+        "Enter"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Done\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "eval",
+        "JSON.stringify({detailsOpen:document.querySelector(\"details\").open})"
+      ],
+      "exit_code": 0,
+      "stdout": "\"{\\\"detailsOpen\\\":true}\"\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "set",
+        "media",
+        "light",
+        "reduced-motion"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Done\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "set",
+        "viewport",
+        "320",
+        "800"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Done\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "eval",
+        "JSON.stringify({width:innerWidth,scrollWidth:document.documentElement.scrollWidth,reducedMotion:matchMedia(\"(prefers-reduced-motion: reduce)\").matches})"
+      ],
+      "exit_code": 0,
+      "stdout": "\"{\\\"width\\\":320,\\\"scrollWidth\\\":320,\\\"reducedMotion\\\":true}\"\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "eval",
+        "document.documentElement.style.zoom=\"2\""
+      ],
+      "exit_code": 0,
+      "stdout": "\"2\"\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "eval",
+        "JSON.stringify({zoom:getComputedStyle(document.documentElement).zoom,width:innerWidth,bodyRight:document.body.getBoundingClientRect().right,regions:[...document.querySelectorAll(\"[role=region]\")].map(x=>({client:x.clientWidth,scroll:x.scrollWidth}))})"
+      ],
+      "exit_code": 0,
+      "stdout": "\"{\\\"zoom\\\":\\\"2\\\",\\\"width\\\":320,\\\"bodyRight\\\":320,\\\"regions\\\":[{\\\"client\\\":128,\\\"scroll\\\":650},{\\\"client\\\":128,\\\"scroll\\\":488},{\\\"client\\\":128,\\\"scroll\\\":820},{\\\"client\\\":128,\\\"scroll\\\":368},{\\\"client\\\":128,\\\"scroll\\\":450}]}\"\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "eval",
+        "document.documentElement.style.zoom=\"1\""
+      ],
+      "exit_code": 0,
+      "stdout": "\"1\"\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "screenshot",
+        "$PROJECT/.cache/final-phone.png"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Screenshot saved to $PROJECT/.cache/final-phone.png\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "a11y",
+        "--json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"success\":true,\"data\":{\"axeVersion\":\"4.12.1\",\"counts\":{\"inapplicable\":42,\"incomplete\":0,\"passes\":47,\"violations\":0},\"incomplete\":[],\"lifecycle\":{\"effectiveLaunch\":{\"browserLaunched\":true,\"engine\":\"chrome\",\"launchHash\":5875283793867614931},\"launched\":false,\"relaunchedBrowser\":false,\"restartedBackground\":false,\"restoreStatus\":\"not_configured\",\"reused\":true,\"saveStatus\":\"not_attempted\"},\"url\":\"file://$PROJECT/.build/final2-extract/research-continuum-0.1.0/evidence/runtime/default-study/report.html#main\",\"violations\":[]},\"error\":null}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "set",
+        "viewport",
+        "1440",
+        "1000"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Done\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "open",
+        "file://$PROJECT/.build/final2-extract/research-continuum-0.1.0/evidence/runtime/default-study/report.html"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Research Continuum \u2014 rosenbrock-coordinate-v-random\n  file://$PROJECT/.build/final2-extract/research-continuum-0.1.0/evidence/runtime/default-study/report.html\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "screenshot",
+        "$PROJECT/.cache/final-desktop.png"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2713 Screenshot saved to $PROJECT/.cache/final-desktop.png\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "a11y",
+        "--json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"success\":true,\"data\":{\"axeVersion\":\"4.12.1\",\"counts\":{\"inapplicable\":44,\"incomplete\":0,\"passes\":45,\"violations\":0},\"incomplete\":[],\"lifecycle\":{\"effectiveLaunch\":{\"browserLaunched\":true,\"engine\":\"chrome\",\"launchHash\":5875283793867614931},\"launched\":false,\"relaunchedBrowser\":false,\"restartedBackground\":false,\"restoreStatus\":\"not_configured\",\"reused\":true,\"saveStatus\":\"not_attempted\"},\"url\":\"file://$PROJECT/.build/final2-extract/research-continuum-0.1.0/evidence/runtime/default-study/report.html\",\"violations\":[]},\"error\":null}\n",
+      "stderr": ""
+    }
+  ],
+  "observed_at": "2026-09-08T11:45:47.135340+00:00",
+  "archive_sha256": "72027ecd84a06d20445e9fd6d604dee2393b03d78255f679652e2f331585bc3b"
+}

@@ -1,30 +1,24 @@
 {
-  "schemaVersion": 2,
+  "format": "research-continuum-native-plan-review-v1",
+  "notice": "Review/import material only. Not a platform API request, publication approval or completion claim.",
   "project": "research-continuum",
+  "projectId": "prj_def88c61770d94181ab97d1c2e2125a0",
   "contractVersion": "owner-numerical-0.1-2026-09-07",
-  "stateAuthority": "tasks.json",
-  "statusNarrative": "../STATUS.md",
   "objective": "Publish a useful bounded numerical 0.1 with complete reproducible evidence and a verified native public Tanduna programme; preserve the wider scientific roadmap.",
   "limits": [
     "No autonomous-scientist, optimizer novelty, generality or autoresearch-superiority claim from 0.1.",
     "No new dependencies, cloud spend, untrusted execution, external outreach or publication without exact authority.",
     "Later and exploratory outcomes are conditional on their evidence, resource and owner decisions, not promised release dates."
   ],
-  "sourceRecords": [
-    {
-      "id": "OWNER-LAUNCH-2026-09-07",
-      "kind": "owner decision",
-      "locator": "docs/decisions/002-durable-local-campaign.md",
-      "description": "Owner-authorized narrow numerical 0.1 and 200–400-row roadmap; full original contracts retained."
-    },
-    {
-      "id": "NUMERICAL-001",
-      "kind": "implementation decision",
-      "locator": "docs/decisions/001-numerical-study.md",
-      "description": "Frozen known-answer comparison, strict customization and descriptive-only interpretation."
-    }
-  ],
-  "lineageManifest": "lineage/manifest.json",
+  "taskCount": 228,
+  "waveCount": 28,
+  "horizonCounts": {
+    "foundation": 3,
+    "0.1": 50,
+    "later 0.x": 72,
+    "long-term": 101,
+    "exploratory": 2
+  },
   "waves": [
     {
       "id": "RC-W00",
@@ -10801,10 +10795,6 @@
       "RC-W27-T09": null
     }
   },
-  "terminalOutcomes": [
-    "RC-W05-T12",
-    "RC-W27-T09"
-  ],
   "planningDecisions": [
     {
       "id": "PLAN-001",

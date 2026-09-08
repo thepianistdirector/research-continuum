@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "note": "Raw external text/code retained locally only and excluded from Git/release; locators and hashes are retrieval evidence, not redistribution permission.",
+  "records": [
+    {
+      "name": "campaign",
+      "url": "https://tanduna.com/projects/research-continuum",
+      "retrieved_date": "2026-09-07",
+      "status": 200,
+      "bytes": 43645,
+      "sha256": "4a22ebaac203626392c57cc4c65cbdf107d993facec7cf551750461b6cbd2a78"
+    },
+    {
+      "name": "roadmap",
+      "url": "https://tanduna.com/projects/research-continuum/roadmap",
+      "retrieved_date": "2026-09-07",
+      "status": 200,
+      "bytes": 13893,
+      "sha256": "0411ac6a3fda0ff2c51ea33f56638894cbbd79407b6b81a871ceefda4f33c370"
+    },
+    {
+      "name": "tasks",
+      "url": "https://tanduna.com/p/research-continuum/tasks",
+      "retrieved_date": "2026-09-07",
+      "status": 200,
+      "bytes": 37038,
+      "sha256": "b0b0b831652c7d9d6a628961783a273a96e98146d4c261f734d11936d0e3ef12"
+    },
+    {
+      "name": "proposals",
+      "url": "https://tanduna.com/p/research-continuum/proposals",
+      "retrieved_date": "2026-09-07",
+      "status": 200,
+      "bytes": 38533,
+      "sha256": "505195c153d044a8250ef9cd3c74abef66e4eb02230dd6160f1f5893c403a8a8"
+    },
+    {
+      "name": "proposal-detail",
+      "url": "https://tanduna.com/p/research-continuum/proposals/prp_d83436915d973e65338f4a367f70541f",
+      "retrieved_date": "2026-09-07",
+      "status": 200,
+      "bytes": 46901,
+      "sha256": "bb125f3972290b8afd08d5afe3cc087a04742f8a7a824f2532615038399acd2d"
+    },
+    {
+      "name": "tanduna-docs",
+      "url": "https://tanduna.com/docs",
+      "retrieved_date": "2026-09-07",
+      "status": 200,
+      "bytes": 207483,
+      "sha256": "2304d2a51af7fe7189a090a18c5b84a113d65b6a85d0653eea41dfabd3955b5d"
+    },
+    {
+      "name": "autoresearch-tree",
+      "url": "https://api.github.com/repos/karpathy/autoresearch/git/trees/228791fb499afffb54b46200aca536f79142f117",
+      "retrieved_date": "2026-09-07",
+      "status": 200,
+      "bytes": 2427,
+      "sha256": "60d0e83267248e739dd56b5adbdb197a627e4f3c03171dcfe16c771dbf3a7784"
+    },
+    {
+      "name": "autoresearch-readme",
+      "url": "https://raw.githubusercontent.com/karpathy/autoresearch/228791fb499afffb54b46200aca536f79142f117/README.md",
+      "retrieved_date": "2026-09-07",
+      "status": 200,
+      "bytes": 8039,
+      "sha256": "3958fd4195ac2f98ed35c4eaa4f3028a335165ee24945e96426c408d25793a41"
+    },
+    {
+      "name": "autoresearch-program",
+      "url": "https://raw.githubusercontent.com/karpathy/autoresearch/228791fb499afffb54b46200aca536f79142f117/program.md",
+      "retrieved_date": "2026-09-07",
+      "status": 200,
+      "bytes": 7039,
+      "sha256": "86cf987a5c381e46eefe0d0a82765223fd766d8d7acdc2afacfbbce15ecacece"
+    },
+    {
+      "name": "autoresearch-pyproject.toml",
+      "url": "https://raw.githubusercontent.com/karpathy/autoresearch/228791fb499afffb54b46200aca536f79142f117/pyproject.toml",
+      "retrieved_date": "2026-09-07",
+      "status": 200,
+      "bytes": 543,
+      "sha256": "675c150a9e0769f0e39a43eb7d836934266fa348d6e2403521f1ff99f9b9f1af"
+    },
+    {
+      "name": "autoresearch-prepare.py",
+      "url": "https://raw.githubusercontent.com/karpathy/autoresearch/228791fb499afffb54b46200aca536f79142f117/prepare.py",
+      "retrieved_date": "2026-09-07",
+      "status": 200,
+      "bytes": 15043,
+      "sha256": "4f2ba9cbb8ba8c4a3d35be405a913e2f3be3af9aea103ed52ef7b2a662058150"
+    },
+    {
+      "name": "autoresearch-train.py",
+      "url": "https://raw.githubusercontent.com/karpathy/autoresearch/228791fb499afffb54b46200aca536f79142f117/train.py",
+      "retrieved_date": "2026-09-07",
+      "status": 200,
+      "bytes": 26230,
+      "sha256": "2954175f4ac42ad65164aef40910ef953789abcd05a5cc886ac9ba5a00814414"
+    },
+    {
+      "name": "campaign",
+      "url": "https://tanduna.com/projects/research-continuum",
+      "retrieved_at": "2026-09-08T11:39:12.729278+00:00",
+      "status": 200,
+      "bytes": 44235,
+      "sha256": "0cfe34f65e9e6ee847312f858f94823fde76a17a7ba44d0eeccf91232719d31c"
+    },
+    {
+      "name": "roadmap",
+      "url": "https://tanduna.com/projects/research-continuum/roadmap",
+      "retrieved_at": "2026-09-08T11:39:12.567083+00:00",
+      "status": 200,
+      "bytes": 17207,
+      "sha256": "a4353fa1193815ab4743b7f0b467866d38a4a818182dbf2401c9ff8419221496"
+    },
+    {
+      "name": "tasks",
+      "url": "https://tanduna.com/p/research-continuum/tasks",
+      "retrieved_at": "2026-09-08T11:39:12.104661+00:00",
+      "status": 200,
+      "bytes": 37038,
+      "sha256": "1966d963af563e8cedd96a1c497b4f2e196c83a0f6ff7fb106ed010762885021"
+    },
+    {
+      "name": "proposals",
+      "url": "https://tanduna.com/p/research-continuum/proposals",
+      "retrieved_at": "2026-09-08T11:39:12.527987+00:00",
+      "status": 200,
+      "bytes": 38533,
+      "sha256": "28e00aa85dbd918a2148402f0a622731f569fc0a011f67d4aff0306e8563bb91"
+    },
+    {
+      "name": "proposal-detail",
+      "url": "https://tanduna.com/p/research-continuum/proposals/prp_d83436915d973e65338f4a367f70541f",
+      "retrieved_at": "2026-09-08T11:39:12.960486+00:00",
+      "status": 200,
+      "bytes": 46901,
+      "sha256": "1aafc2638e7c122c6da23111405a27c2d576d79047f4602cd54fdeeb0f1052ae"
+    }
+  ]
+}

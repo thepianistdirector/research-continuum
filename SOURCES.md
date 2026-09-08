@@ -48,3 +48,12 @@ Serialized models and data are executable-risk inputs until proven otherwise. Pr
 Every source-derived statement in a `HypothesisRevision`, `StudyDesign` or `ResearchClaim` resolves to a `SourceRecord` and exact location when available. Record contradictory evidence and source limitations. Citation presence does not establish source quality or applicability; automated citation checks can reject missing/mismatched references but cannot replace scientific review.
 
 The project's original content is AGPL-3.0-only. Referenced code, papers, datasets, models and standards retain their own terms. No third-party dataset, model weights or upstream implementation is bundled in this foundation candidate. A future public evidence package must include rights/redistribution status for every contained artifact and provide locators rather than copying material when redistribution is unavailable.
+
+
+## 0.1 source refresh — 2026-09-07
+
+The owner-authorized 0.1 is an independently implemented numerical fixture. Exact pinned autoresearch tree/README/program retrieval and the unresolved standalone license artifact are recorded in [the baseline audit](docs/baselines/autoresearch-2026-09-07.md). No upstream implementation is reused or bundled. Original numerical code and synthetic coordinates use this repository's AGPL-3.0-only terms; mathematical formula attribution is distinct from copying an implementation.
+
+The [JMLR reproducibility programme report](https://www.jmlr.org/papers/v22/20-303.html) was freshly read. It motivates explicit artifacts, experiments and reporting; it does not certify our results. ACM's artifact-review page could not be freshly fetched (403), so earlier source interpretation remains dated. The public fixture has no secret holdout and candidate seed repetitions are not independent random samples.
+
+Python 3.12.14 with standard-library sqlite3/SQLite 3.53.1 was already present. No production dependencies, models, weights, datasets or assets are installed or redistributed. The release source package requires the user's Python runtime. SQLite transactions and Linux flock are the adopted local mechanism; see [decision 002](docs/decisions/002-durable-local-campaign.md).

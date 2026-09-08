@@ -1,8 +1,8 @@
 # Research Continuum experiment and evaluation contract
 
-Status: accepted architecture-foundation requirements; no experiment has run in this repository.
+Status: accepted historical architecture requirements plus a separately frozen owner-authorized numerical 0.1 protocol. Actual execution evidence is in STATUS.md.
 
-## First programme question
+## Historical training programme question (later release)
 
 Can a bounded proposal agent find a training change that improves a tiny language-model objective more reliably or efficiently than fixed random search under the same total resource budget, while preserving quality constraints and surviving untouched confirmation and independent reproduction?
 
@@ -176,3 +176,12 @@ Evaluator errors fail closed. Any suspected leak marks affected confirmation evi
 ## Evidence limits
 
 Primary methodological sources in [SOURCES.md](SOURCES.md) motivate provenance, guarded adaptive analysis, multiple-comparison planning, transparent ML reporting and independent artifact review. They do not validate this architecture or prescribe one universal statistical method. Every future result is limited by its study, data, evaluator, implementation, hardware and reviewer evidence.
+
+
+## Numerical 0.1 protocol — frozen before execution
+
+The executable example is [rosenbrock-study.json](examples/rosenbrock-study.json), explained in [decision 001](docs/decisions/001-numerical-study.md). The baseline is seeded uniform random search and the candidate is deterministic coordinate refinement. The public Rosenbrock objective has a directly checked zero at (1,1). Both arms receive 128 observations per attempt, with three development seeds and three different confirmation seeds. No state carries between trials. Reproduction capacity reruns both phases. Threshold and descriptive median comparison are frozen; no significance or generality is claimed. Candidate repetitions are identical deterministic checks.
+
+All attempts, including failures, consume their entire admitted allowance conservatively; actual durable observations are counted separately. Recovery never refunds costs. Unequal charged costs or missing/invalid trials makes the comparison inconclusive. The complete ledger and report retain every outcome. A valid random-search advantage falsifies the candidate hypothesis and must remain visible.
+
+The logical built-in evaluator API does not satisfy the protected hostile-code/holdout obligations of the original training programme. Public known-answer seeds are not secret confirmation data. Human/domain review and externally obtained release reproduction remain separately required evidence, never replaced by an agent walkthrough.

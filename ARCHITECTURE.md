@@ -1,6 +1,6 @@
 # Research Continuum architecture
 
-Status: **architecture foundation accepted; research runtime not implemented**. Owner: Lucas Santana. Foundation date: 2026-09-07. Acceptance evidence: [STATUS.md](STATUS.md).
+Status: **architecture foundation accepted; narrow numerical 0.1 implementation in progress**. Owner: Lucas Santana. Foundation date: 2026-09-07. Acceptance evidence: [STATUS.md](STATUS.md).
 
 ## Product contract
 
@@ -8,7 +8,7 @@ Research Continuum is intended to be a local-first system for running bounded co
 
 The system is not an autonomous scientist, a self-improving intelligence or a paper factory. An agent may propose a hypothesis, code change, search policy or interpretation. It cannot grant itself compute, widen its domain, reveal confirmation material, replace an evaluator, erase an outcome or promote its own prose to evidence. Better research-system policies are ordinary hypotheses evaluated on fresh campaigns under fixed budgets; there is no unbounded recursive improvement loop.
 
-The first useful outcome remains deliberately small: reproduce a tiny training-search loop, compare agent-guided proposals with fixed random search under equal total budget, and preserve a credible negative result if no advantage survives confirmation and reproduction.
+The first public 0.1 outcome is the owner-authorized trusted numerical comparison in decisions 001 and 002 below. The original tiny training-search/agent-versus-random programme remains a later outcome with its complete historical prerequisites.
 
 ## Inspected autoresearch baseline and proposed extension
 
@@ -196,7 +196,7 @@ Stop a trial on invalid inputs, limit breach, unsafe behavior or missing declare
 | Remote workers | Narrow job protocol, artifact transfer and separately provisioned worker identity | Sustained local workload, measured elapsed-time benefit, reproducible environment packaging, revocation and partition recovery; explicit hardware/spend approval |
 | Public research preview | Exported evidence packages and local workbench | At least two distinct domains, independent reproduction, rights review, material safety defects resolved and exact release approval |
 
-Do not add Kubernetes, a workflow framework, graph/vector database, hosted model provider or distributed object store until measured scale or reliability evidence names the limitation it solves. SQLite is a likely local index, not a current dependency. The first RC-001 packet is source and baseline analysis and requires no paid compute. Any autoresearch runtime reproduction waits for an approved compatible GPU route, dependency/license review and bounded data acquisition.
+Do not add Kubernetes, a workflow framework, graph/vector database, hosted model provider or distributed object store until measured scale or reliability evidence names the limitation it solves. SQLite through the existing Python standard library is adopted for the numerical 0.1 in decision 002; server storage remains deferred. The first RC-001 packet is source and baseline analysis and requires no paid compute. Any autoresearch runtime reproduction waits for an approved compatible GPU route, dependency/license review and bounded data acquisition.
 
 ## Relationship to the six independent laboratories
 
@@ -226,4 +226,9 @@ Interchange means versioned JSON schemas or exported bundles linked by documente
 
 The main design risks are overfitting to evaluator feedback, data contamination, false discovery through repeated search, irreproducible hardware-dependent performance, unsafe candidate execution, hidden resource costs, adapter contracts that erase domain validity, and infrastructure work displacing actual questions. The roadmap tests those risks in dependency order.
 
-This architecture does not establish that agent-guided research beats random search, that any hypothesis is novel, that any result is scientifically valid, that isolation is secure, that adapters are general, or that the six laboratories integrate. It contains no simulator, agent runtime, model weights, data, evaluator, database or deployment. Those claims remain gated by the tasks and evidence in [ROADMAP.md](ROADMAP.md), [EXPERIMENTS.md](EXPERIMENTS.md) and [STATUS.md](STATUS.md).
+This architecture does not establish that agent-guided research beats random search, that any hypothesis is novel, that any result is scientifically valid, that isolation is secure, that adapters are general, or that the six laboratories integrate. The historical foundation contained no runtime. Current narrow implementation and evidence levels are recorded in STATUS.md; no agent runtime, weights, protected holdout, multi-domain validity or deployment is implied. Broader claims remain gated by the tasks and evidence in [ROADMAP.md](ROADMAP.md), [EXPERIMENTS.md](EXPERIMENTS.md) and [STATUS.md](STATUS.md).
+
+
+## Owner-authorized numerical 0.1 decision path
+
+[Decision 001](docs/decisions/001-numerical-study.md) freezes the exact question, objective, policies, seeds, quality threshold, feedback and falsifier before computation. [Decision 002](docs/decisions/002-durable-local-campaign.md) adopts a trusted built-in API, SQLite append-only attempt/evaluation records, conservative finite reserved debits, flock liveness, terminal reconciliation and atomic exports. This narrow path derives from RC-015 while leaving its adapter-generality obligation and RC-004/005 adversarial isolation unfulfilled. The original training/agent-search requirements above remain historical/future contracts.

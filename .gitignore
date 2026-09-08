@@ -6,3 +6,10 @@ __pycache__/
 !.env.example
 runs/
 .cache/
+evidence/sources/
+.build/
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite.lock
